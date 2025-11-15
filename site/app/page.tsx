@@ -1,14 +1,14 @@
-import { getRecipes, getWeeks, getRecipesByWeek, getLatestWeek } from '@/lib/data';
+import { getProcessedRecipes, getProcessedWeeks, getProcessedRecipesByWeek, getLatestProcessedWeek } from '@/lib/data';
 import RecipeCard from '@/components/RecipeCard';
 
 export default function HomePage() {
-  const allRecipes = getRecipes();
-  const weeks = getWeeks();
-  const latestWeek = getLatestWeek();
+  const allRecipes = getProcessedRecipes();
+  const weeks = getProcessedWeeks();
+  const latestWeek = getLatestProcessedWeek();
 
   // Get recipes for latest week, or all if no week labels
   const featuredRecipes = latestWeek
-    ? getRecipesByWeek(latestWeek)
+    ? getProcessedRecipesByWeek(latestWeek)
     : allRecipes;
 
   return (
@@ -53,7 +53,7 @@ export default function HomePage() {
       </section>
 
       {weeks.map(week => {
-        const weekRecipes = getRecipesByWeek(week);
+        const weekRecipes = getProcessedRecipesByWeek(week);
         if (week === latestWeek || weekRecipes.length === 0) return null;
 
         return (
