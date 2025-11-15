@@ -92,6 +92,7 @@ def main():
         # Write upcoming recipes as temporary raw_recipes.json
         with open(raw_file, "w", encoding="utf-8") as f:
             json.dump(upcoming_recipes, f, indent=2, ensure_ascii=False)
+            f.write("\n")
 
         # Step 1: Parse with LLM
         print("\nStep 1: Parsing with LLM...")
@@ -103,6 +104,7 @@ def main():
         parsed_file = project_root / "data" / "recipes_parsed.json"
         with open(parsed_file, "w", encoding="utf-8") as f:
             json.dump([r.__dict__ for r in parsed_recipes], f, indent=2, ensure_ascii=False)
+            f.write("\n")
 
         # Step 2: Generate schedules
         print("\nStep 2: Generating Gantt charts...")

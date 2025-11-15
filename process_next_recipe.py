@@ -47,6 +47,7 @@ def save_processing_status(status):
 
     with open(status_file, "w", encoding="utf-8") as f:
         json.dump(status, f, indent=2, ensure_ascii=False)
+        f.write("\n")
 
 
 def get_next_unprocessed_recipe():
@@ -163,9 +164,11 @@ def merge_with_existing_recipes(new_parsed, new_scheduled, recipe_id):
     # Save merged results
     with open(parsed_file, "w", encoding="utf-8") as f:
         json.dump(existing_parsed, f, indent=2, ensure_ascii=False)
+        f.write("\n")
 
     with open(scheduled_file, "w", encoding="utf-8") as f:
         json.dump(existing_scheduled, f, indent=2, ensure_ascii=False)
+        f.write("\n")
 
     print("\nSaved to data files")
     print(f"   Total parsed recipes: {len(existing_parsed)}")

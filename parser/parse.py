@@ -104,6 +104,7 @@ class RecipeCache:
         try:
             with open(cache_file, "w", encoding="utf-8") as f:
                 json.dump(steps, f, indent=2, ensure_ascii=False)
+                f.write("\n")
         except Exception as e:
             print(f"Cache write error: {e}")
 
@@ -278,6 +279,7 @@ def main():
             indent=2,
             ensure_ascii=False,
         )
+        f.write("\n")
 
     print(f"\n{'=' * 60}")
     print(f"Parsed {len(parsed_recipes)} recipes")

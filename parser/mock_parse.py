@@ -187,6 +187,7 @@ def main():
             indent=2,
             ensure_ascii=False,
         )
+        f.write("\n")
 
     print(f"\n{'=' * 60}")
     print(f"Parsed {len(parsed_recipes)} recipes")

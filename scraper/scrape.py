@@ -353,6 +353,7 @@ def main():
     # Save recipes to JSON
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump([asdict(r) for r in recipes], f, indent=2, ensure_ascii=False)
+        f.write("\n")
 
     # Save manifest tracking all URLs and their status
     manifest = {
@@ -374,6 +375,7 @@ def main():
     try:
         with open(manifest_path, "w", encoding="utf-8") as f:
             json.dump(manifest, f, indent=2, ensure_ascii=False)
+            f.write("\n")
     except Exception as e:
         print(f"\nWarning: Failed to write manifest file: {e}")
         print(f"Recipe data was saved to {output_path}, but manifest tracking may be incomplete.")
