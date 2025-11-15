@@ -90,3 +90,41 @@ export function getLatestWeek(): string | null {
   const weeks = getWeeks();
   return weeks.length > 0 ? weeks[0] : null;
 }
+
+/**
+ * Get only processed recipes (have steps and schedule)
+ */
+export function getProcessedRecipes(): Recipe[] {
+  return loadRecipes().filter(
+    r => r.steps?.length > 0 && r.total_time_min > 0
+  );
+}
+
+/**
+ * Get processed recipes for a specific week
+ */
+export function getProcessedRecipesByWeek(week: string): Recipe[] {
+  return getProcessedRecipes().filter(r => r.week_label === week);
+}
+
+/**
+ * Get weeks that have processed recipes
+ */
+export function getProcessedWeeks(): string[] {
+  return Array.from(
+    new Set(
+      getProcessedRecipes()
+        .map(r => r.week_label)
+        .filter(Boolean)
+    )
+  )
+    .sort()
+    .reverse();
+}
+
+/**
+ * Get the most recent week that has processed recipes
+ */
+export function getLatestProcessedWeek(): string | null {
+  return getProcessedWeeks()[0] ?? null;
+}
