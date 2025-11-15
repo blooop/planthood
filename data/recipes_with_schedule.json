@@ -1,30 +1,33 @@
 [
   {
-    "id": "example-recipe",
-    "title": "Example Recipe",
-    "source_url": "https://planthood.co.uk",
-    "category": "Nourish",
+    "id": "weekend-box",
+    "title": "Meal Kit Box",
+    "source_url": "https://planthood.co.uk/products/weekend-box",
     "week_label": null,
-    "ingredients": [
-      "This is a placeholder recipe",
-      "Real recipes will appear after the scraper runs"
-    ],
-    "steps": [
-      {
-        "id": "step-1",
-        "label": "Waiting for data",
-        "type": "prep",
-        "duration_min": 5,
-        "start_min": 0,
-        "end_min": 5,
-        "raw_text": "This site will display real recipes once the data pipeline runs.",
-        "equipment": [],
-        "requires": [],
-        "can_overlap_with": []
-      }
-    ],
-    "total_time_min": 5,
-    "active_time_min": 5,
-    "nutrition": {}
+    "category": null,
+    "ingredients": [],
+    "nutrition": {},
+    "steps": [],
+    "total_time_min": 0,
+    "active_time_min": 0
+  },
+  {
+    "id": "turmeric-lemongrass-broth",
+    "title": "Thai Noodle Salad with Broccolini, Spicy Cashews, Pickles, Coriander & Satay Sauce",
+    "source_url": "https://planthood.co.uk/products/turmeric-lemongrass-broth",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 638.0,
+      "protein_g": 28.5,
+      "fat_g": 22.2,
+      "carbs_g": 93.1,
+      "fibre_g": 34.7,
+      "salt_g": 0.25
+    },
+    "steps": [],
+    "total_time_min": 0,
+    "active_time_min": 0
   }
 ]
