@@ -181,11 +181,12 @@ out/
 site/.next/
 site/out/
 site/node_modules/
-data/raw_recipes.json
-data/recipes_parsed.json
-# Keep the placeholder data file in git
-# data/recipes_with_schedule.json
-data/.cache/
+# Track recipe data files for incremental scraping in GitHub Actions
+# data/raw_recipes.json  # Keep in git for incremental updates
+# data/recipes_parsed.json  # Keep in git for caching
+# data/recipes_with_schedule.json  # Keep in git for site generation
+# data/recipe_manifest.json  # Keep in git for tracking
+data/.cache/  # Cache files are temporary
 .env.local
 .env.*.local
 npm-debug.log*

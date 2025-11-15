@@ -1408,7 +1408,7 @@ packages:
 - pypi: ./
   name: planthood
   version: 0.2.0
-  sha256: 0ed2ee8700689f54f9907d39f7790fd6f200ac696f514ad6ba0d0dc7e45e56bb
+  sha256: 37d7633cee24870064bbd26fff42b35b1ed14aa367360307962b02d1f226096e
   requires_dist:
   - requests>=2.31.0
   - beautifulsoup4>=4.12.0
@@ -1419,11 +1419,11 @@ packages:
   - pydantic>=2.5.0
   - python-dotenv>=1.0.0
   - tenacity>=8.2.0
-  - pylint>=3.2.5,<=4.0.2 ; extra == 'test'
+  - pylint>=3.2.5,<=4.0.3 ; extra == 'test'
   - pytest-cov>=4.1,<=7.0.0 ; extra == 'test'
-  - pytest>=7.4,<=9.0.0 ; extra == 'test'
-  - hypothesis>=6.104.2,<=6.147.0 ; extra == 'test'
-  - ruff>=0.5.0,<=0.14.4 ; extra == 'test'
+  - pytest>=7.4,<=9.0.1 ; extra == 'test'
+  - hypothesis>=6.104.2,<=6.148.0 ; extra == 'test'
+  - ruff>=0.5.0,<=0.14.5 ; extra == 'test'
   - coverage>=7.5.4,<=7.11.3 ; extra == 'test'
   - pre-commit<=4.4.0 ; extra == 'test'
   editable: true
