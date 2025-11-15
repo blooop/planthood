@@ -1,0 +1,25 @@
+{
+  "name": "planthood-recipe-site",
+  "version": "1.0.0",
+  "description": "Static site generator for Planthood recipes with Gantt chart visualization",
+  "private": true,
+  "scripts": {
+    "scrape": "python scraper/scrape.py",
+    "parse": "python parser/parse.py",
+    "schedule": "python scheduler/schedule.py",
+    "build-data": "npm run scrape && npm run parse && npm run schedule",
+    "build-site": "cd site && npm run build",
+    "build": "npm run build-data && npm run build-site",
+    "dev-site": "cd site && npm run dev",
+    "setup": "pip install -r requirements.txt && cd site && npm install",
+    "test": "pytest"
+  },
+  "keywords": [
+    "recipes",
+    "planthood",
+    "gantt",
+    "static-site"
+  ],
+  "author": "",
+  "license": "MIT"
+}

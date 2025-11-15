@@ -1,0 +1,2 @@
+# This file tells GitHub Pages not to process the site with Jekyll
+# Next.js builds include files starting with underscore (_next) that would be ignored by Jekyll
