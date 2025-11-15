@@ -21,6 +21,23 @@ COOKING_INSTRUCTIONS_URL = f"{BASE_URL}/collections/cooking-instructions"
 project_root = Path(__file__).parent
 
 
+def _is_recipe_url(url: str) -> bool:
+    """Check if URL is a recipe (not a non-recipe product)"""
+    exclude_patterns = ["gift-card", "monday-deliveries", "thursday-deliveries"]
+    return not any(pattern in url.lower() for pattern in exclude_patterns)
+
+
+def _extract_product_urls(soup: BeautifulSoup) -> set:
+    """Extract all product URLs from page"""
+    product_urls = set()
+    for link in soup.find_all("a", href=True):
+        href = link["href"]
+        if "/products/" in href:
+            full_url = href if href.startswith("http") else f"{BASE_URL}{href}"
+            product_urls.add(full_url)
+    return product_urls
+
+
 def fetch_upcoming_recipes_from_page():
     """Fetch recipes displayed on the cooking instructions page"""
     print(f"🔍 Fetching: {COOKING_INSTRUCTIONS_URL}")
@@ -34,18 +51,9 @@ def fetch_upcoming_recipes_from_page():
         response.raise_for_status()
         soup = BeautifulSoup(response.text, "lxml")
 
-        # Find all product links on the page
-        recipe_urls = set()
-        for link in soup.find_all("a", href=True):
-            href = link["href"]
-            if "/products/" in href:
-                full_url = href if href.startswith("http") else f"{BASE_URL}{href}"
-                # Filter out non-recipe products
-                if not any(
-                    x in full_url.lower()
-                    for x in ["gift-card", "monday-deliveries", "thursday-deliveries"]
-                ):
-                    recipe_urls.add(full_url)
+        # Extract and filter product URLs
+        product_urls = _extract_product_urls(soup)
+        recipe_urls = {url for url in product_urls if _is_recipe_url(url)}
 
         print(f"✅ Found {len(recipe_urls)} recipe URLs on cooking instructions page")
         return list(recipe_urls)
@@ -66,14 +74,13 @@ def fetch_recent_menu_collections():
         data = response.json()
 
         # Find menu collections
-        menu_collections = []
-        for coll in data.get("collections", []):
-            title = coll.get("title", "")
-            handle = coll.get("handle", "")
-            if "menu" in title.lower() or "menu" in handle.lower():
-                menu_collections.append(
-                    {"title": title, "handle": handle, "published_at": coll.get("published_at", "")}
-                )
+        menu_collections = [
+            {"title": title, "handle": handle, "published_at": published_at}
+            for coll in data.get("collections", [])
+            if "menu" in (title := coll.get("title", "")).lower()
+            or "menu" in (handle := coll.get("handle", "")).lower()
+            for published_at in [coll.get("published_at", "")]
+        ]
 
         # Sort by published date (most recent first)
         menu_collections.sort(key=lambda x: x.get("published_at", ""), reverse=True)
@@ -126,12 +133,7 @@ def match_recipes_to_scraped_data(upcoming_urls):
     url_to_recipe = {recipe["source_url"]: recipe for recipe in all_recipes}
 
     # Find matching recipes
-    upcoming_recipes = []
-    for url in upcoming_urls:
-        if url in url_to_recipe:
-            upcoming_recipes.append(url_to_recipe[url])
-
-    return upcoming_recipes
+    return [url_to_recipe[url] for url in upcoming_urls if url in url_to_recipe]
 
 
 def main():

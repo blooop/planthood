@@ -54,13 +54,7 @@ def parse_single_recipe(recipe_id: str):
         recipes = json.load(f)
 
     # Find the recipe
-    recipe = None
-    for r in recipes:
-        if r["id"] == recipe_id:
-            recipe = r
-            break
-
-    if not recipe:
+    if not (recipe := next((r for r in recipes if r["id"] == recipe_id), None)):
         print(f"❌ Recipe '{recipe_id}' not found")
         return False
 

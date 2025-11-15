@@ -14,6 +14,16 @@ from pathlib import Path
 project_root = Path(__file__).parent
 
 
+def _handle_error(error: Exception, prefix: str = "Error") -> str:
+    """Handle and display error with traceback"""
+    error_msg = str(error)
+    print(f"❌ {prefix}: {error_msg}")
+    import traceback
+
+    traceback.print_exc()
+    return error_msg
+
+
 def load_processing_status():
     """Load the processing status metadata"""
     status_file = project_root / "data" / "processing_status.json"
@@ -89,18 +99,13 @@ def parse_single_recipe(recipe):
             }
             print(f"✅ Parsed {len(steps)} steps")
             return parsed_recipe, None
-        else:
-            error = "No steps extracted"
-            print(f"❌ {error}")
-            return None, error
+
+        error = "No steps extracted"
+        print(f"❌ {error}")
+        return None, error
 
     except Exception as e:
-        error = str(e)
-        print(f"❌ Error: {error}")
-        import traceback
-
-        traceback.print_exc()
-        return None, error
+        return None, _handle_error(e)
 
 
 def schedule_single_recipe(parsed_recipe):
@@ -123,12 +128,7 @@ def schedule_single_recipe(parsed_recipe):
         return scheduled_recipe, None
 
     except Exception as e:
-        error = str(e)
-        print(f"❌ Error: {error}")
-        import traceback
-
-        traceback.print_exc()
-        return None, error
+        return None, _handle_error(e)
 
 
 def merge_with_existing_recipes(new_parsed, new_scheduled, recipe_id):
@@ -183,8 +183,7 @@ def main():
             print(f"\n✅ All recipes processed! ({total} total)")
             print("   Run 'pixi run python find_upcoming_recipes.py' to refresh the queue")
             return 0
-        else:
-            return 1
+        return 1
 
     recipe, recipe_id, status = result
 
@@ -202,7 +201,7 @@ def main():
     with open(upcoming_file, "r") as f:
         total_upcoming = len(json.load(f))
 
-    processed_count = sum(1 for r in status["recipes"].values() if r.get("processed"))
+    processed_count = sum(r.get("processed", False) for r in status["recipes"].values())
     remaining_count = total_upcoming - processed_count
 
     print("\n📊 Progress:")

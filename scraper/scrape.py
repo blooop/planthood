@@ -53,6 +53,7 @@ class PlanthoodScraper:
         self.session = requests.Session()
         self.session.headers.update({"User-Agent": USER_AGENT})
         self.visited_urls = set()
+        self.failed_urls: Dict[str, str] = {}  # url -> error message
 
     def fetch_page(self, url: str) -> Optional[BeautifulSoup]:
         """Fetch and parse a page with rate limiting"""
@@ -70,12 +71,44 @@ class PlanthoodScraper:
             print(f"Error fetching {url}: {e}")
             return None
 
+    def _fetch_products_page(self, page: int, limit: int = 250) -> Optional[List[Dict]]:
+        """Fetch a single page of products from Shopify API"""
+        url = f"{self.BASE_URL}/products.json?page={page}&limit={limit}"
+        print(f"Fetching page {page}...")
+
+        try:
+            response = self.session.get(url, timeout=30)
+            response.raise_for_status()
+            data = response.json()
+            return data.get("products", [])
+        except Exception as e:
+            print(f"Error fetching page {page}: {e}")
+            return None
+
+    def _paginate_products(self, max_pages: int = 50, products_per_page: int = 250):
+        """Generator that yields all products from paginated Shopify API"""
+        for page in range(1, max_pages + 1):
+            products = self._fetch_products_page(page, products_per_page)
+
+            if products is None:
+                break
+
+            if not products:
+                print(f"No products on page {page}, stopping")
+                break
+
+            yield page, products
+
+            # If we got fewer products than the limit, we're on the last page
+            if len(products) < products_per_page:
+                print(f"Last page reached ({len(products)} < {products_per_page})")
+                break
+
+            time.sleep(REQUEST_DELAY)
+
     def discover_recipe_urls(self) -> List[str]:
         """Discover recipe URLs using Shopify's products.json API with pagination"""
         recipe_urls = set()
-        page = 1
-        max_pages = 50  # Safety limit
-        products_per_page = 250  # Shopify max
 
         # Non-recipe product patterns to filter out
         exclude_patterns = [
@@ -89,51 +122,25 @@ class PlanthoodScraper:
 
         print("Discovering recipes via Shopify API...")
 
-        while page <= max_pages:
-            url = f"{self.BASE_URL}/products.json?page={page}&limit={products_per_page}"
-            print(f"Fetching page {page}...")
+        for page, products in self._paginate_products():
+            found_on_page = 0
+            for product in products:
+                handle = product.get("handle", "")
 
-            try:
-                response = self.session.get(url, timeout=30)
-                response.raise_for_status()
-                data = response.json()
-                products = data.get("products", [])
+                # Skip non-recipe products
+                if any(pattern in handle.lower() for pattern in exclude_patterns):
+                    continue
 
-                if not products:
-                    print(f"No products on page {page}, stopping")
-                    break
+                # Build product URL
+                product_url = f"{self.BASE_URL}/products/{handle}"
 
-                found_on_page = 0
-                for product in products:
-                    handle = product.get("handle", "")
-                    title = product.get("title", "")
+                if product_url not in recipe_urls:
+                    found_on_page += 1
+                    recipe_urls.add(product_url)
 
-                    # Skip non-recipe products
-                    if any(pattern in handle.lower() for pattern in exclude_patterns):
-                        continue
-
-                    # Build product URL
-                    product_url = f"{self.BASE_URL}/products/{handle}"
-
-                    if product_url not in recipe_urls:
-                        found_on_page += 1
-                        recipe_urls.add(product_url)
-
-                print(
-                    f"  Found {found_on_page} recipes on page {page} (total: {len(products)} products)"
-                )
-
-                # If we got fewer products than the limit, we're on the last page
-                if len(products) < products_per_page:
-                    print(f"Last page reached ({len(products)} < {products_per_page})")
-                    break
-
-                page += 1
-                time.sleep(REQUEST_DELAY)
-
-            except Exception as e:
-                print(f"Error fetching page {page}: {e}")
-                break
+            print(
+                f"  Found {found_on_page} recipes on page {page} (total: {len(products)} products)"
+            )
 
         print(f"\nTotal discovered: {len(recipe_urls)} recipe URLs")
         return sorted(list(recipe_urls))
@@ -160,6 +167,7 @@ class PlanthoodScraper:
         """Extract recipe data from a recipe page"""
         soup = self.fetch_page(url)
         if not soup:
+            self.failed_urls[url] = "Failed to fetch page"
             return None
 
         try:
@@ -261,7 +269,9 @@ class PlanthoodScraper:
             return recipe
 
         except Exception as e:
-            print(f"Error extracting recipe from {url}: {e}")
+            error_msg = f"Error extracting recipe: {e}"
+            print(f"{error_msg} from {url}")
+            self.failed_urls[url] = error_msg
             return None
 
     def scrape_all(self, existing_recipes: Optional[List[Dict]] = None) -> List[Recipe]:
@@ -270,8 +280,7 @@ class PlanthoodScraper:
         existing_by_url = {}
         if existing_recipes:
             for recipe_data in existing_recipes:
-                url = recipe_data.get("source_url")
-                if url:
+                if url := recipe_data.get("source_url"):
                     existing_by_url[url] = recipe_data
 
         print(f"Loaded {len(existing_by_url)} existing recipes")
@@ -348,6 +357,7 @@ def main():
     # Save manifest tracking all URLs and their status
     manifest = {
         "total_recipes": len(recipes),
+        "failed_recipes": len(scraper.failed_urls),
         "last_updated": time.strftime("%Y-%m-%d %H:%M:%S"),
         "recipes": [
             {
@@ -359,9 +369,14 @@ def main():
             }
             for recipe in recipes
         ],
+        "failed_urls": [{"url": url, "error": error} for url, error in scraper.failed_urls.items()],
     }
-    with open(manifest_path, "w", encoding="utf-8") as f:
-        json.dump(manifest, f, indent=2, ensure_ascii=False)
+    try:
+        with open(manifest_path, "w", encoding="utf-8") as f:
+            json.dump(manifest, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        print(f"\nWarning: Failed to write manifest file: {e}")
+        print(f"Recipe data was saved to {output_path}, but manifest tracking may be incomplete.")
 
     print(f"\n{'=' * 60}")
     print(f"Total recipes: {len(recipes)}")
@@ -369,6 +384,12 @@ def main():
         new_count = len(recipes) - len(existing_recipes)
         print(f"  Previously scraped: {len(existing_recipes)}")
         print(f"  Newly added: {new_count}")
+    if scraper.failed_urls:
+        print(f"  Failed to scrape: {len(scraper.failed_urls)}")
+        print("\nFailed URLs:")
+        for url, error in scraper.failed_urls.items():
+            print(f"  - {url}")
+            print(f"    Error: {error}")
     print(f"Saved to: {output_path}")
     print(f"Manifest saved to: {manifest_path}")
     print(f"{'=' * 60}")
