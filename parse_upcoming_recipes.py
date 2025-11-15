@@ -26,7 +26,7 @@ def main():
         return 1
 
     # Load upcoming recipes
-    with open(upcoming_file, "r") as f:
+    with open(upcoming_file, "r", encoding="utf-8") as f:
         upcoming_recipes = json.load(f)
 
     print(f"📚 Loaded {len(upcoming_recipes)} upcoming recipes")
@@ -85,16 +85,21 @@ def main():
 
     try:
         # Write upcoming recipes as temporary raw_recipes.json
-        with open(raw_file, "w") as f:
+        with open(raw_file, "w", encoding="utf-8") as f:
             json.dump(upcoming_recipes, f, indent=2, ensure_ascii=False)
 
         # Step 1: Parse with LLM
         print("\n📝 Step 1: Parsing with LLM...")
         print("=" * 80)
 
-        from parser.parse import main as parser_main
+        from parser.parse import RecipeParser
 
-        parser_main()
+        parser = RecipeParser()
+        # Parse all recipes and save to recipes_parsed.json
+        parsed_recipes = parser.parse_all_recipes(upcoming_recipes)
+        parsed_file = project_root / "data" / "recipes_parsed.json"
+        with open(parsed_file, "w", encoding="utf-8") as f:
+            json.dump([r.__dict__ for r in parsed_recipes], f, indent=2, ensure_ascii=False)
 
         # Step 2: Generate schedules
         print("\n📅 Step 2: Generating Gantt charts...")
@@ -109,7 +114,7 @@ def main():
 
         # Display results
         if parsed_file.exists():
-            with open(parsed_file, "r") as f:
+            with open(parsed_file, "r", encoding="utf-8") as f:
                 parsed = json.load(f)
 
             total_steps = sum(len(r.get("steps", [])) for r in parsed)
@@ -119,7 +124,7 @@ def main():
             print(f"   Average steps per recipe: {total_steps / len(parsed):.1f}")
 
         if scheduled_file.exists():
-            with open(scheduled_file, "r") as f:
+            with open(scheduled_file, "r", encoding="utf-8") as f:
                 scheduled = json.load(f)
 
             total_time = sum(r.get("total_time_min", 0) for r in scheduled)

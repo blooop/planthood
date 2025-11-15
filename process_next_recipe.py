@@ -31,7 +31,7 @@ def load_processing_status():
     if not status_file.exists():
         return {"recipes": {}, "last_updated": None, "total_processed": 0}
 
-    with open(status_file, "r") as f:
+    with open(status_file, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -40,7 +40,7 @@ def save_processing_status(status):
     status_file = project_root / "data" / "processing_status.json"
     status["last_updated"] = datetime.now().isoformat()
 
-    with open(status_file, "w") as f:
+    with open(status_file, "w", encoding="utf-8") as f:
         json.dump(status, f, indent=2, ensure_ascii=False)
 
 
@@ -52,7 +52,7 @@ def get_next_unprocessed_recipe():
         print("❌ No upcoming recipes found. Run: pixi run python find_upcoming_recipes.py")
         return None
 
-    with open(upcoming_file, "r") as f:
+    with open(upcoming_file, "r", encoding="utf-8") as f:
         upcoming_recipes = json.load(f)
 
     if not upcoming_recipes:
@@ -141,11 +141,11 @@ def merge_with_existing_recipes(new_parsed, new_scheduled, recipe_id):
     existing_scheduled = []
 
     if parsed_file.exists():
-        with open(parsed_file, "r") as f:
+        with open(parsed_file, "r", encoding="utf-8") as f:
             existing_parsed = json.load(f)
 
     if scheduled_file.exists():
-        with open(scheduled_file, "r") as f:
+        with open(scheduled_file, "r", encoding="utf-8") as f:
             existing_scheduled = json.load(f)
 
     # Remove old version of this recipe if it exists
@@ -157,10 +157,10 @@ def merge_with_existing_recipes(new_parsed, new_scheduled, recipe_id):
     existing_scheduled.append(new_scheduled)
 
     # Save merged results
-    with open(parsed_file, "w") as f:
+    with open(parsed_file, "w", encoding="utf-8") as f:
         json.dump(existing_parsed, f, indent=2, ensure_ascii=False)
 
-    with open(scheduled_file, "w") as f:
+    with open(scheduled_file, "w", encoding="utf-8") as f:
         json.dump(existing_scheduled, f, indent=2, ensure_ascii=False)
 
     print("\n💾 Saved to data files")
@@ -198,7 +198,7 @@ def main():
 
     # Count processed vs remaining
     upcoming_file = project_root / "data" / "upcoming_recipes.json"
-    with open(upcoming_file, "r") as f:
+    with open(upcoming_file, "r", encoding="utf-8") as f:
         total_upcoming = len(json.load(f))
 
     processed_count = sum(r.get("processed", False) for r in status["recipes"].values())

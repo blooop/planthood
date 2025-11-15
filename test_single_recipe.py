@@ -21,7 +21,7 @@ def list_recipes(limit=20):
         print("❌ No scraped recipes found. Run 'pixi run scrape' first.")
         return []
 
-    with open(data_file, "r") as f:
+    with open(data_file, "r", encoding="utf-8") as f:
         recipes = json.load(f)
 
     print(f"\n📚 Found {len(recipes)} scraped recipes")
@@ -50,7 +50,7 @@ def parse_single_recipe(recipe_id: str):
 
     # Load raw recipes
     data_file = project_root / "data" / "raw_recipes.json"
-    with open(data_file, "r") as f:
+    with open(data_file, "r", encoding="utf-8") as f:
         recipes = json.load(f)
 
     # Find the recipe
@@ -69,11 +69,11 @@ def parse_single_recipe(recipe_id: str):
     print("\n📝 Step 1: Parsing with LLM (Gemini)...")
     print("-" * 80)
 
-    from parser.parse import main as parser_main
+    from parser.parse import RecipeParser
 
     # Create a temporary file with just this recipe
     temp_raw = project_root / "data" / "temp_raw_recipes.json"
-    with open(temp_raw, "w") as f:
+    with open(temp_raw, "w", encoding="utf-8") as f:
         json.dump([recipe], f, indent=2)
 
     # Run parser (it will read from raw_recipes.json)
@@ -90,8 +90,14 @@ def parse_single_recipe(recipe_id: str):
         # Replace with single recipe
         shutil.copy(temp_raw, raw_file)
 
-        # Run parser
-        parser_main()
+        # Run parser using the class interface
+        parser = RecipeParser()
+        with open(raw_file, "r", encoding="utf-8") as f:
+            raw_recipes = json.load(f)
+        parsed_recipes = parser.parse_all_recipes(raw_recipes)
+        parsed_file = project_root / "data" / "recipes_parsed.json"
+        with open(parsed_file, "w", encoding="utf-8") as f:
+            json.dump([r.__dict__ for r in parsed_recipes], f, indent=2, ensure_ascii=False)
 
         # Step 2: Run scheduler
         print("\n📅 Step 2: Generating Gantt chart timeline...")
@@ -105,11 +111,10 @@ def parse_single_recipe(recipe_id: str):
         print("\n✅ Processing complete!")
         print("=" * 80)
 
-        parsed_file = project_root / "data" / "recipes_parsed.json"
         scheduled_file = project_root / "data" / "recipes_with_schedule.json"
 
         if parsed_file.exists():
-            with open(parsed_file, "r") as f:
+            with open(parsed_file, "r", encoding="utf-8") as f:
                 parsed = json.load(f)
 
             if parsed:
@@ -123,7 +128,7 @@ def parse_single_recipe(recipe_id: str):
                     print()
 
         if scheduled_file.exists():
-            with open(scheduled_file, "r") as f:
+            with open(scheduled_file, "r", encoding="utf-8") as f:
                 scheduled = json.load(f)
 
             if scheduled:

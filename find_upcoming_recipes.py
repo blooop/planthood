@@ -126,7 +126,7 @@ def match_recipes_to_scraped_data(upcoming_urls):
         print("❌ No scraped recipes found. Run 'pixi run scrape' first.")
         return []
 
-    with open(data_file, "r") as f:
+    with open(data_file, "r", encoding="utf-8") as f:
         all_recipes = json.load(f)
 
     # Create URL to recipe mapping
@@ -172,7 +172,7 @@ def main():
 
     # Save to file
     output_file = project_root / "data" / "upcoming_recipes.json"
-    with open(output_file, "w") as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         json.dump(upcoming_recipes, f, indent=2, ensure_ascii=False)
 
     print(f"💾 Saved to: {output_file}")
