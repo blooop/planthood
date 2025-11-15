@@ -1,0 +1,30 @@
+[
+  {
+    "id": "example-recipe",
+    "title": "Example Recipe",
+    "source_url": "https://planthood.co.uk",
+    "category": "Nourish",
+    "week_label": null,
+    "ingredients": [
+      "This is a placeholder recipe",
+      "Real recipes will appear after the scraper runs"
+    ],
+    "steps": [
+      {
+        "id": "step-1",
+        "label": "Waiting for data",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "raw_text": "This site will display real recipes once the data pipeline runs.",
+        "equipment": [],
+        "requires": [],
+        "can_overlap_with": []
+      }
+    ],
+    "total_time_min": 5,
+    "active_time_min": 5,
+    "nutrition": {}
+  }
+]

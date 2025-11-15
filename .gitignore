@@ -75,6 +75,9 @@ docs/_build/
 .pybuilder/
 target/
 
+# IMPORTANT: Allow site/lib for Next.js data utilities (override below)
+!site/lib/
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
@@ -180,7 +183,8 @@ site/out/
 site/node_modules/
 data/raw_recipes.json
 data/recipes_parsed.json
-data/recipes_with_schedule.json
+# Keep the placeholder data file in git
+# data/recipes_with_schedule.json
 data/.cache/
 .env.local
 .env.*.local
