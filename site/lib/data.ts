@@ -115,7 +115,7 @@ export function getProcessedWeeks(): string[] {
     new Set(
       getProcessedRecipes()
         .map(r => r.week_label)
-        .filter(Boolean)
+        .filter((week): week is string => week !== undefined)
     )
   )
     .sort()
