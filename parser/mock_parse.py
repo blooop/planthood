@@ -107,7 +107,9 @@ class MockRecipeParser:
                 "label": label.strip(),
                 "type": step_type,
                 "estimated_duration_minutes": duration,
-                "requires": [f"step-{step_num-1}"] if step_num > 1 and step_type != "prep" else [],
+                "requires": [f"step-{step_num - 1}"]
+                if step_num > 1 and step_type != "prep"
+                else [],
                 "can_overlap_with": [],
                 "equipment": equipment,
                 "temperature_c": temp,
