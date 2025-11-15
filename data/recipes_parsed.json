@@ -1636,5 +1636,219 @@
         "notes": "Layer black beans, shredded lettuce, cashew crema, avocado slices, and salsa macha. Finish with a squeeze of fresh lime juice."
       }
     ]
+  },
+  {
+    "id": "mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme",
+    "title": "Mushroom Birria Tacos With Melted Vegan Mozzarella, Onion Salsa & Rich Dipping Consommé",
+    "source_url": "https://planthood.co.uk/products/mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 543.0,
+      "protein_g": 19.3,
+      "fat_g": 19.2,
+      "carbs_g": 91.2,
+      "fibre_g": 14.9,
+      "salt_g": 1.2
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Rehydrate dried chillies",
+        "label": "Rehydrate dried chillies",
+        "type": "prep",
+        "estimated_duration_minutes": 20,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Rehydrate chipotle, chilli de arbol, and guajillo chillies in hot water until softened."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Sauté aromatics for consommé",
+        "label": "Sauté aromatics for consommé",
+        "type": "prep",
+        "estimated_duration_minutes": 8,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Sauté red onion and garlic until softened and fragrant."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Blend consommé base",
+        "label": "Blend consommé base",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
+        "requires": [
+          "step-1",
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "blender"
+        ],
+        "temperature_c": null,
+        "notes": "Blend rehydrated chillies, sautéed aromatics, tomato puree, vegan bouillon, and spices (cloves, cumin, oregano, cinnamon, allspice, bay leaf) with water until smooth."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Simmer consommé",
+        "label": "Simmer consommé",
+        "type": "cook",
+        "estimated_duration_minutes": 90,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large pot"
+        ],
+        "temperature_c": null,
+        "notes": "Slow-cook the blended consommé base to develop rich, deep flavors. This will be used for mushroom marinade and dipping."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Shred oyster mushrooms",
+        "label": "Shred oyster mushrooms",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
+        "equipment": [
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Shred oyster mushrooms into bite-sized pieces, mimicking pulled meat texture."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Marinate shredded mushrooms",
+        "label": "Marinate shredded mushrooms",
+        "type": "prep",
+        "estimated_duration_minutes": 30,
+        "requires": [
+          "step-4",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Marinate shredded mushrooms in a portion of the finished consommé for flavor absorption."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Cook marinated mushrooms",
+        "label": "Cook marinated mushrooms",
+        "type": "cook",
+        "estimated_duration_minutes": 15,
+        "requires": [
+          "step-6"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Sauté or cook the marinated mushrooms until tender and slightly browned."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Prepare onion, coriander, lime salsa",
+        "label": "Prepare onion, coriander, lime salsa",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
+        "equipment": [
+          "cutting board",
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Finely chop white onion and coriander, then mix with fresh lime juice to create a vibrant salsa."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Warm tortillas",
+        "label": "Warm tortillas",
+        "type": "cook",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-7"
+        ],
+        "equipment": [
+          "frying pan",
+          "comal"
+        ],
+        "temperature_c": null,
+        "notes": "Warm corn tortillas until pliable and slightly toasted."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Assemble birria tacos",
+        "label": "Assemble birria tacos",
+        "type": "prep",
+        "estimated_duration_minutes": 15,
+        "requires": [
+          "step-4",
+          "step-7",
+          "step-9"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "shallow dish"
+        ],
+        "temperature_c": null,
+        "notes": "Dip warm tortillas in the consommé, then fill with cooked mushrooms and vegan mozzarella."
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Fry birria tacos",
+        "label": "Fry birria tacos",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
+        "requires": [
+          "step-10"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Fry the assembled tacos until crispy and the vegan mozzarella is melted and gooey."
+      },
+      {
+        "id": "step-12",
+        "raw_text": "Serve birria tacos",
+        "label": "Serve birria tacos",
+        "type": "finish",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-4",
+          "step-8",
+          "step-11"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "plate"
+        ],
+        "temperature_c": null,
+        "notes": "Serve the fried birria tacos immediately with the fresh onion salsa and a side of warm consommé for dipping."
+      }
+    ]
   }
 ]
