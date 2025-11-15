@@ -31,6 +31,7 @@ concurrency:
 jobs:
   process-and-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 30  # Prevent jobs from running indefinitely
 
     environment:
       name: github-pages
@@ -66,6 +67,7 @@ jobs:
           npm ci
 
       - name: Process next recipe
+        timeout-minutes: 10  # LLM API calls should complete quickly
         env:
           LLM_PROVIDER: ${{ secrets.LLM_PROVIDER || 'gemini' }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -77,6 +79,7 @@ jobs:
         continue-on-error: false  # Stop if processing fails
 
       - name: Build Next.js site
+        timeout-minutes: 10  # Next.js builds should complete within this time
         working-directory: site
         run: |
           npm run build
@@ -94,6 +97,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Commit updated data
+        timeout-minutes: 5  # Git operations should be fast
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
