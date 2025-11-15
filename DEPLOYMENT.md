@@ -62,16 +62,16 @@ The workflow will automatically run.
 1. Go to **Actions** tab
 2. Click the running workflow
 3. Watch each step complete:
-   - ✅ Checkout repository
-   - ✅ Set up Python & Node.js
-   - ✅ Install dependencies
-   - ⚠️ Run scraper (may fail if site down)
-   - ⚠️ Run parser (may fail without API key)
-   - ⚠️ Run scheduler
-   - ✅ Build Next.js site (must succeed)
-   - ✅ Deploy to GitHub Pages
+   - Checkout repository
+   - Set up Python & Node.js
+   - Install dependencies
+   - Run scraper (may fail if site down)
+   - Run parser (may fail without API key)
+   - Run scheduler
+   - Build Next.js site (must succeed)
+   - Deploy to GitHub Pages
 
-**Note**: Steps marked with ⚠️ have `continue-on-error: true`, so the build will continue even if they fail.
+**Note**: Some steps have `continue-on-error: true`, so the build will continue even if they fail.
 
 ## Step 5: Verify Deployment
 
@@ -223,4 +223,4 @@ gh run list --workflow="Build and Deploy to GitHub Pages"
 
 ---
 
-**Ready to deploy?** Follow Steps 1-5 above. The entire process takes ~5 minutes. 🚀
+**Ready to deploy?** Follow Steps 1-5 above. The entire process takes ~5 minutes.

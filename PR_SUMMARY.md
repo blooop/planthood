@@ -6,7 +6,7 @@ This PR adds complete support for automated recipe scraping, LLM-powered parsing
 
 ## What's New
 
-### 1. **Recipe Scraping** ✅
+### 1. **Recipe Scraping**
 - Scrapes all 237 recipes from Planthood using Shopify API
 - Identifies upcoming recipes from current menu collections
 - Tracks already-scraped recipes to avoid re-processing
@@ -19,7 +19,7 @@ This PR adds complete support for automated recipe scraping, LLM-powered parsing
 - `data/recipe_manifest.json` - Tracking metadata
 - `data/upcoming_recipes.json` - Current week's queue (21 recipes)
 
-### 2. **LLM-Powered Recipe Parsing** 🤖
+### 2. **LLM-Powered Recipe Parsing**
 - Parses recipe method text into structured steps
 - Extracts timing, dependencies, equipment, temperatures
 - Supports OpenAI, Anthropic Claude, and Google Gemini
@@ -30,7 +30,7 @@ This PR adds complete support for automated recipe scraping, LLM-powered parsing
 - `parser/llm_providers.py` - Multi-provider LLM support
 - `.env.example` - Configuration template
 
-### 3. **Gantt Chart Generation** 📅
+### 3. **Gantt Chart Generation**
 - Converts parsed recipes into timeline schedules
 - Handles dependencies and parallel tasks
 - Calculates total time and active time
@@ -38,7 +38,7 @@ This PR adds complete support for automated recipe scraping, LLM-powered parsing
 **Files:**
 - `scheduler/schedule.py` - Gantt chart scheduler
 
-### 4. **Incremental Processing** 🔄
+### 4. **Incremental Processing**
 - Processes ONE recipe at a time (avoids rate limits)
 - Tracks processing status with metadata
 - Ideal for GitHub Actions scheduled runs
@@ -56,7 +56,7 @@ pixi run process-next-recipe  # Process 1 recipe from queue
 pixi run process-and-deploy   # Process + build site
 ```
 
-### 5. **GitHub Actions Workflows** ⚙️
+### 5. **GitHub Actions Workflows**
 
 #### A. Daily Incremental Processing (NEW)
 **`.github/workflows/process-next-recipe.yml`**
@@ -77,11 +77,11 @@ pixi run process-and-deploy   # Process + build site
 - Parses all new/changed recipes
 - Builds & deploys site
 
-### 6. **Testing Scripts** 🧪
+### 6. **Testing Scripts**
 - `test_single_recipe.py` - Test LLM parsing on individual recipes
 - `parse_upcoming_recipes.py` - Parse all upcoming recipes at once (for local testing)
 
-### 7. **Documentation** 📚
+### 7. **Documentation**
 - `GITHUB_PAGES_SETUP.md` - GitHub Pages deployment guide
 - `INCREMENTAL_PROCESSING.md` - Incremental processing guide
 - `INCREMENTAL_SCRAPING.md` - Scraping documentation
@@ -90,16 +90,16 @@ pixi run process-and-deploy   # Process + build site
 ## Current Status
 
 ### Already Processed Locally
-✅ **2 recipes processed** (out of 21 upcoming):
+**2 recipes processed** (out of 21 upcoming):
 1. Tandoori Tofu Naan Wraps - 10 steps, 48 min
 2. Creamy Kimchi Macaroni - 17 steps, 27.5 min
 
 ### Ready to Deploy
-- ✅ Scraped: 237 recipes
-- ✅ Parsed: 2 recipes
-- ✅ Scheduled: 2 recipes
-- ✅ Site builds successfully
-- 🔄 Remaining: 19 recipes (will process incrementally)
+- Scraped: 237 recipes
+- Parsed: 2 recipes
+- Scheduled: 2 recipes
+- Site builds successfully
+- Remaining: 19 recipes (will process incrementally)
 
 ## Configuration Required
 
@@ -108,7 +108,7 @@ Add these in **Settings → Secrets and variables → Actions**:
 
 | Secret | Required | Purpose |
 |--------|----------|---------|
-| `GEMINI_API_KEY` | ✅ Yes | Google Gemini API key for LLM parsing |
+| `GEMINI_API_KEY` | Yes | Google Gemini API key for LLM parsing |
 | `LLM_PROVIDER` | No | Defaults to `gemini` |
 | `GEMINI_MODEL` | No | Defaults to `gemini-2.5-flash` |
 
@@ -192,12 +192,12 @@ pixi.lock                           # Updated dependencies
 
 ## Testing Checklist
 
-- [ ] GitHub Secrets configured (GEMINI_API_KEY)
-- [ ] GitHub Pages enabled (Source: GitHub Actions)
-- [ ] Workflow runs successfully
-- [ ] Site deploys to `blooop.github.io/planthood`
-- [ ] Site displays processed recipes with Gantt charts
-- [ ] Data files committed back to repo after run
+- GitHub Secrets configured (GEMINI_API_KEY)
+- GitHub Pages enabled (Source: GitHub Actions)
+- Workflow runs successfully
+- Site deploys to `blooop.github.io/planthood`
+- Site displays processed recipes with Gantt charts
+- Data files committed back to repo after run
 
 ## Expected Site Content
 
@@ -266,12 +266,12 @@ git push origin HEAD
 ## Success Metrics
 
 After merge and first workflow run:
-- ✅ Workflow completes without errors
-- ✅ Site accessible at blooop.github.io/planthood
-- ✅ Shows 3 recipes with Gantt charts
-- ✅ `processing_status.json` updated in repo
-- ✅ Daily runs scheduled
+- Workflow completes without errors
+- Site accessible at blooop.github.io/planthood
+- Shows 3 recipes with Gantt charts
+- `processing_status.json` updated in repo
+- Daily runs scheduled
 
 ---
 
-**Ready to merge!** 🚀
+**Ready to merge!**

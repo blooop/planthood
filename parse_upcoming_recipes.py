@@ -19,14 +19,14 @@ from parser.parse import RecipeParser  # noqa: E402 # pylint: disable=deprecated
 
 def main():
     """Main entry point"""
-    print("\n🤖 Planthood Upcoming Recipe Parser")
+    print("\nPlanthood Upcoming Recipe Parser")
     print("=" * 80)
     print()
 
     # Check for upcoming recipes file
     upcoming_file = project_root / "data" / "upcoming_recipes.json"
     if not upcoming_file.exists():
-        print("❌ No upcoming recipes file found.")
+        print("No upcoming recipes file found.")
         print("   Run: pixi run python find_upcoming_recipes.py")
         return 1
 
@@ -34,24 +34,24 @@ def main():
     with open(upcoming_file, "r", encoding="utf-8") as f:
         upcoming_recipes = json.load(f)
 
-    print(f"📚 Loaded {len(upcoming_recipes)} upcoming recipes")
+    print(f"Loaded {len(upcoming_recipes)} upcoming recipes")
     print()
 
     if not upcoming_recipes:
-        print("❌ No upcoming recipes to parse")
+        print("No upcoming recipes to parse")
         return 1
 
     # Display what will be parsed
-    print("📋 Recipes to parse:")
+    print("Recipes to parse:")
     print("=" * 80)
     for i, recipe in enumerate(upcoming_recipes, 1):
         title = recipe.get("title", "Untitled")
         has_method = len(recipe.get("method", "")) > 0
-        status = "✅" if has_method else "❌"
+        status = "[OK]" if has_method else "[NO METHOD]"
         print(f"{i:3d}. {status} {title}")
 
     print()
-    print("⚙️  This will:")
+    print("This will:")
     print(f"   1. Parse {len(upcoming_recipes)} recipes with LLM (Gemini)")
     print("   2. Generate Gantt chart timelines")
     print("   3. Save to data/recipes_parsed.json and data/recipes_with_schedule.json")
@@ -65,7 +65,7 @@ def main():
             return 0
 
     # Backup existing files
-    print("\n💾 Backing up existing parsed data...")
+    print("\nBacking up existing parsed data...")
     raw_file = project_root / "data" / "raw_recipes.json"
     parsed_file = project_root / "data" / "recipes_parsed.json"
     scheduled_file = project_root / "data" / "recipes_with_schedule.json"
@@ -77,16 +77,16 @@ def main():
     # Backup raw_recipes.json
     if raw_file.exists():
         shutil.copy(raw_file, backup_raw)
-        print("   ✓ Backed up raw_recipes.json")
+        print("   Backed up raw_recipes.json")
 
     # Backup existing parsed files if they exist
     if parsed_file.exists():
         shutil.copy(parsed_file, backup_parsed)
-        print("   ✓ Backed up recipes_parsed.json")
+        print("   Backed up recipes_parsed.json")
 
     if scheduled_file.exists():
         shutil.copy(scheduled_file, backup_scheduled)
-        print("   ✓ Backed up recipes_with_schedule.json")
+        print("   Backed up recipes_with_schedule.json")
 
     try:
         # Write upcoming recipes as temporary raw_recipes.json
@@ -94,7 +94,7 @@ def main():
             json.dump(upcoming_recipes, f, indent=2, ensure_ascii=False)
 
         # Step 1: Parse with LLM
-        print("\n📝 Step 1: Parsing with LLM...")
+        print("\nStep 1: Parsing with LLM...")
         print("=" * 80)
 
         parser = RecipeParser()
@@ -105,14 +105,14 @@ def main():
             json.dump([r.__dict__ for r in parsed_recipes], f, indent=2, ensure_ascii=False)
 
         # Step 2: Generate schedules
-        print("\n📅 Step 2: Generating Gantt charts...")
+        print("\nStep 2: Generating Gantt charts...")
         print("=" * 80)
 
         from scheduler.schedule import main as scheduler_main
 
         scheduler_main()
 
-        print("\n✅ Processing complete!")
+        print("\nProcessing complete!")
         print("=" * 80)
 
         # Display results
@@ -121,7 +121,7 @@ def main():
                 parsed = json.load(f)
 
             total_steps = sum(len(r.get("steps", [])) for r in parsed)
-            print("\n📊 Results:")
+            print("\nResults:")
             print(f"   Recipes parsed: {len(parsed)}")
             print(f"   Total steps extracted: {total_steps}")
             print(f"   Average steps per recipe: {total_steps / len(parsed):.1f}")
@@ -133,14 +133,14 @@ def main():
             total_time = sum(r.get("total_time_min", 0) for r in scheduled)
             avg_time = total_time / len(scheduled) if scheduled else 0
 
-            print("\n📅 Timing:")
+            print("\nTiming:")
             print(f"   Average cook time: {avg_time:.1f} minutes")
 
-        print("\n💾 Output files:")
+        print("\nOutput files:")
         print("   - data/recipes_parsed.json")
         print("   - data/recipes_with_schedule.json")
         print()
-        print("💡 Next steps:")
+        print("Next steps:")
         print("   1. Review the parsed recipes in data/recipes_parsed.json")
         print("   2. Build the site: pixi run build-site")
         print("   3. Test locally: pixi run dev-site")
@@ -150,7 +150,7 @@ def main():
         if backup_raw.exists():
             shutil.copy(backup_raw, raw_file)
             backup_raw.unlink()
-            print("\n🔄 Restored original raw_recipes.json")
+            print("\nRestored original raw_recipes.json")
 
     return 0
 

@@ -162,13 +162,13 @@ Parse this into structured steps as JSON array."""
         method = recipe.get("method", "").strip()
 
         if not method:
-            print(f"⚠️  No method text for {recipe_id}, skipping")
+            print(f"Warning: No method text for {recipe_id}, skipping")
             return []
 
         # Check cache
         cached_steps = self.cache.get(recipe_id, method)
         if cached_steps:
-            print(f"✓ Cache hit for {recipe_id}")
+            print(f"Cache hit for {recipe_id}")
             return [RecipeStep(**step) for step in cached_steps]
 
         # Build prompt
@@ -180,7 +180,7 @@ Parse this into structured steps as JSON array."""
         )
 
         try:
-            print(f"🤖 Parsing {recipe_id} with LLM...")
+            print(f"Parsing {recipe_id} with LLM...")
             response = self._call_llm(prompt)
 
             # Extract JSON from response (in case LLM adds extra text)
@@ -206,7 +206,7 @@ Parse this into structured steps as JSON array."""
                 # Validate required fields
                 required = ["label", "type", "estimated_duration_minutes"]
                 if not all(k in step_data for k in required):
-                    print(f"⚠️  Step {i} missing required fields, skipping")
+                    print(f"Warning: Step {i} missing required fields, skipping")
                     continue
 
                 steps.append(RecipeStep(**step_data))
@@ -214,15 +214,15 @@ Parse this into structured steps as JSON array."""
             # Cache successful parse
             self.cache.set(recipe_id, method, [asdict(s) for s in steps])
 
-            print(f"✓ Parsed {len(steps)} steps for {recipe_id}")
+            print(f"Parsed {len(steps)} steps for {recipe_id}")
             return steps
 
         except json.JSONDecodeError as e:
-            print(f"❌ Failed to parse JSON response for {recipe_id}: {e}")
+            print(f"Failed to parse JSON response for {recipe_id}: {e}")
             print(f"Response: {response[:200]}...")
             return []
         except Exception as e:
-            print(f"❌ Error parsing {recipe_id}: {e}")
+            print(f"Error parsing {recipe_id}: {e}")
             return []
 
     def parse_all_recipes(self, raw_recipes: List[Dict]) -> List[ParsedRecipe]:
@@ -256,7 +256,7 @@ def main():
     # Load raw recipes
     raw_recipes_path = DATA_DIR / "raw_recipes.json"
     if not raw_recipes_path.exists():
-        print(f"❌ Error: {raw_recipes_path} not found")
+        print(f"Error: {raw_recipes_path} not found")
         print("Run the scraper first: npm run scrape")
         return
 
