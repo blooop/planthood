@@ -1,12 +1,86 @@
 import { getRecipeById, getRecipes } from '@/lib/data';
 import GanttChart from '@/components/GanttChart';
 import { notFound } from 'next/navigation';
+import { cache } from 'react';
 
 interface RecipePageProps {
   params: {
     id: string;
   };
 }
+
+const decodeHtmlEntities = (value: string) =>
+  value
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'");
+
+const extractMetaContent = (html: string, key: string) => {
+  const metaRegex = new RegExp(
+    `<meta[^>]+(?:property|name)=["']${key}["'][^>]*>`,
+    'i'
+  );
+  const match = html.match(metaRegex);
+  if (!match) {
+    return null;
+  }
+
+  const contentMatch = match[0].match(/content=["']([^"']+)["']/i);
+  return contentMatch ? decodeHtmlEntities(contentMatch[1]) : null;
+};
+
+const extractFallbackImage = (html: string) => {
+  const match = html.match(/<img[^>]+src=["']([^"']+)["'][^>]*>/i);
+  return match ? decodeHtmlEntities(match[1]) : null;
+};
+
+const resolveImageUrl = (imageUrl: string, baseUrl: string) => {
+  try {
+    return new URL(imageUrl, baseUrl).toString();
+  } catch {
+    return imageUrl;
+  }
+};
+
+const fetchRecipeHeroImage = cache(async (sourceUrl: string): Promise<string | null> => {
+  if (!sourceUrl) {
+    return null;
+  }
+
+  try {
+    const response = await fetch(sourceUrl, {
+      headers: {
+        'User-Agent': 'Planthood timeline viewer',
+      },
+      next: {
+        revalidate: 60 * 60 * 24,
+      },
+    });
+
+    if (!response.ok) {
+      return null;
+    }
+
+    const html = await response.text();
+    const metaImage =
+      extractMetaContent(html, 'og:image') ||
+      extractMetaContent(html, 'twitter:image') ||
+      extractMetaContent(html, 'image');
+    const fallbackImage = extractFallbackImage(html);
+    const rawImage = metaImage || fallbackImage;
+
+    if (!rawImage) {
+      return null;
+    }
+
+    return resolveImageUrl(rawImage, sourceUrl);
+  } catch (error) {
+    console.warn('Failed to fetch hero image for recipe', sourceUrl, error);
+    return null;
+  }
+});
 
 // Generate static paths for all recipes
 export async function generateStaticParams() {
@@ -16,48 +90,69 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function RecipePage({ params }: RecipePageProps) {
+export default async function RecipePage({ params }: RecipePageProps) {
   const recipe = getRecipeById(params.id);
 
   if (!recipe) {
     notFound();
   }
 
+  const heroImage = await fetchRecipeHeroImage(recipe.source_url);
+
   return (
     <div className="recipe-page">
-      <div className="recipe-header">
-        <a href="/" className="back-link">← Back to all recipes</a>
+      <a href="/" className="back-link">← Back to all recipes</a>
 
-        <h1>{recipe.title}</h1>
-
-        <div className="recipe-meta-bar">
-          {recipe.category && (
-            <span className={`recipe-category ${recipe.category.toLowerCase()}`}>
-              {recipe.category}
-            </span>
-          )}
-          {recipe.week_label && (
-            <span className="recipe-week">{recipe.week_label}</span>
+      <div className="recipe-hero-card">
+        <div className="recipe-hero-media">
+          {heroImage ? (
+            <img
+              src={heroImage}
+              alt={`Dish photo for ${recipe.title}`}
+              loading="lazy"
+            />
+          ) : (
+            <div className="recipe-hero-placeholder">
+              <span>Photo coming soon</span>
+            </div>
           )}
         </div>
 
-        <div className="recipe-times">
-          <div className="time-badge">
-            <strong>Total Time:</strong> {recipe.total_time_min} minutes
+        <div className="recipe-header">
+          <div className="recipe-meta-top">
+            <div className="recipe-meta-bar">
+              {recipe.category && (
+                <span className={`recipe-category ${recipe.category.toLowerCase()}`}>
+                  {recipe.category}
+                </span>
+              )}
+              {recipe.week_label && (
+                <span className="recipe-week">{recipe.week_label}</span>
+              )}
+            </div>
+            <a
+              href={recipe.source_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="source-link"
+            >
+              View original recipe →
+            </a>
           </div>
-          <div className="time-badge">
-            <strong>Active Time:</strong> {recipe.active_time_min} minutes
+
+          <h1>{recipe.title}</h1>
+
+          <div className="recipe-times">
+            <div className="time-badge">
+              <strong>Total time</strong>
+              <span>{recipe.total_time_min} minutes</span>
+            </div>
+            <div className="time-badge">
+              <strong>Active time</strong>
+              <span>{recipe.active_time_min} minutes</span>
+            </div>
           </div>
         </div>
-
-        <a
-          href={recipe.source_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="source-link"
-        >
-          View original recipe →
-        </a>
       </div>
 
       {recipe.nutrition && Object.keys(recipe.nutrition).length > 0 && (

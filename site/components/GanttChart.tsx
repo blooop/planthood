@@ -1,21 +1,31 @@
 'use client';
 
 import { RecipeStep } from '@/lib/types';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 
 interface GanttChartProps {
   steps: RecipeStep[];
 }
 
-const STEP_TYPE_COLORS = {
-  prep: '#3B82F6',    // Blue
-  cook: '#F97316',    // Orange
-  finish: '#10B981',  // Green
+const STEP_TYPE_COLORS: Record<RecipeStep['type'], string> = {
+  prep: '#3B82F6',
+  cook: '#F97316',
+  finish: '#10B981',
 };
+
+const STEP_TYPE_LABELS: Record<RecipeStep['type'], string> = {
+  prep: 'Prep',
+  cook: 'Cooking',
+  finish: 'Finishing',
+};
+
+const ROW_MULTIPLIER = 10; // tenths of a minute
+const MIN_ROW_HEIGHT = 4; // px per tenth
+const MIN_TIMELINE_HEIGHT = 480;
 
 export default function GanttChart({ steps }: GanttChartProps) {
   const [selectedStep, setSelectedStep] = useState<RecipeStep | null>(null);
-  const [orientation, setOrientation] = useState<'horizontal' | 'vertical'>('horizontal');
+  const [orientation, setOrientation] = useState<'horizontal' | 'vertical'>('vertical');
 
   if (!steps || steps.length === 0) {
     return (
@@ -26,52 +36,69 @@ export default function GanttChart({ steps }: GanttChartProps) {
   }
 
   const maxTime = Math.max(...steps.map(s => s.end_min), 0);
-  const timeMarks: number[] = [];
-  const markInterval = 5;
-  for (let i = 0; i <= maxTime; i += markInterval) {
-    timeMarks.push(i);
-  }
+  const safeMaxTime = Math.max(maxTime, 1);
+
+  const timeMarks = useMemo(() => {
+    const marks: number[] = [];
+    const interval = safeMaxTime > 40 ? 10 : 5;
+    for (let i = 0; i <= safeMaxTime; i += interval) {
+      marks.push(i);
+    }
+    if (marks[marks.length - 1] !== safeMaxTime) {
+      marks.push(safeMaxTime);
+    }
+    return marks;
+  }, [safeMaxTime]);
+
+  const totalRows = Math.ceil(safeMaxTime * ROW_MULTIPLIER);
+  const rowHeight = Math.max(MIN_ROW_HEIGHT, MIN_TIMELINE_HEIGHT / totalRows);
+  const verticalHeight = totalRows * rowHeight;
+  const gridTemplateRows = `repeat(${totalRows}, ${rowHeight}px)`;
+
+  const handleStepClick = (step: RecipeStep) => {
+    setSelectedStep(step);
+  };
 
   const renderHorizontalChart = () => (
-    <div className="gantt-chart horizontal">
-      <div className="gantt-controls">
-        <button
-          onClick={() => setOrientation('vertical')}
-          className="gantt-toggle-btn"
-        >
-          Switch to Vertical
-        </button>
+    <div className="gantt-horizontal">
+      <div className="gantt-axis gantt-axis-horizontal">
+        {timeMarks.map(mark => (
+          <div
+            key={mark}
+            className="gantt-axis-mark"
+            style={{ left: `${(mark / safeMaxTime) * 100}%` }}
+          >
+            <span>{mark} min</span>
+          </div>
+        ))}
       </div>
 
-      <div className="gantt-timeline">
-        {/* Time axis */}
-        <div className="gantt-axis">
-          {timeMarks.map(mark => (
+      <div className="gantt-rows">
+        {steps.map(step => {
+          const leftPercent = (step.start_min / safeMaxTime) * 100;
+          const widthPercent = Math.max(
+            ((step.end_min - step.start_min) / safeMaxTime) * 100,
+            0.5
+          );
+
+          return (
             <div
-              key={mark}
-              className="gantt-axis-mark"
-              style={{ left: `${(mark / maxTime) * 100}%` }}
+              key={step.id}
+              className={`gantt-row ${selectedStep?.id === step.id ? 'selected' : ''}`}
+              onClick={() => handleStepClick(step)}
             >
-              <span>{mark} min</span>
-            </div>
-          ))}
-        </div>
-
-        {/* Steps */}
-        <div className="gantt-steps">
-          {steps.map(step => {
-            const leftPercent = (step.start_min / maxTime) * 100;
-            const widthPercent = (step.duration_min / maxTime) * 100;
-
-            return (
-              <div
-                key={step.id}
-                className={`gantt-step ${selectedStep?.id === step.id ? 'selected' : ''}`}
-                onClick={() => setSelectedStep(step)}
-              >
-                <div className="gantt-step-label">
-                  {step.label}
+              <div className="gantt-row-info">
+                <div>
+                  <p className="gantt-row-label">{step.label}</p>
+                  <p className="gantt-row-meta">
+                    {STEP_TYPE_LABELS[step.type]} • {step.duration_min} min • Start {step.start_min}m
+                  </p>
                 </div>
+                <span className={`gantt-step-type ${step.type}`}>
+                  {STEP_TYPE_LABELS[step.type]}
+                </span>
+              </div>
+              <div className="gantt-row-track">
                 <div
                   className="gantt-step-bar"
                   style={{
@@ -79,122 +106,66 @@ export default function GanttChart({ steps }: GanttChartProps) {
                     width: `${widthPercent}%`,
                     backgroundColor: STEP_TYPE_COLORS[step.type],
                   }}
-                >
-                  <span className="gantt-step-duration">
-                    {step.duration_min} MIN
-                  </span>
-                </div>
+                />
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
       </div>
-
-      {/* Step details */}
-      {selectedStep && (
-        <div className="gantt-details">
-          <h3>{selectedStep.label}</h3>
-          <div className="gantt-details-grid">
-            <div>
-              <strong>Type:</strong> {selectedStep.type}
-            </div>
-            <div>
-              <strong>Duration:</strong> {selectedStep.duration_min} minutes
-            </div>
-            <div>
-              <strong>Time:</strong> {selectedStep.start_min}–{selectedStep.end_min} min
-            </div>
-            {selectedStep.equipment.length > 0 && (
-              <div>
-                <strong>Equipment:</strong> {selectedStep.equipment.join(', ')}
-              </div>
-            )}
-            {selectedStep.temperature_c && (
-              <div>
-                <strong>Temperature:</strong> {selectedStep.temperature_c}°C
-              </div>
-            )}
-            {selectedStep.requires.length > 0 && (
-              <div>
-                <strong>Requires:</strong> {selectedStep.requires.join(', ')}
-              </div>
-            )}
-            {selectedStep.can_overlap_with.length > 0 && (
-              <div>
-                <strong>Can overlap with:</strong> {selectedStep.can_overlap_with.join(', ')}
-              </div>
-            )}
-            {selectedStep.notes && (
-              <div>
-                <strong>Notes:</strong> {selectedStep.notes}
-              </div>
-            )}
-          </div>
-          <div className="gantt-details-text">
-            {selectedStep.raw_text}
-          </div>
-          <button
-            onClick={() => setSelectedStep(null)}
-            className="gantt-close-btn"
-          >
-            Close
-          </button>
-        </div>
-      )}
     </div>
   );
 
   const renderVerticalChart = () => (
-    <div className="gantt-chart vertical">
-      <div className="gantt-controls">
-        <button
-          onClick={() => setOrientation('horizontal')}
-          className="gantt-toggle-btn"
-        >
-          Switch to Horizontal
-        </button>
-      </div>
-
-      <div className="gantt-timeline-vertical">
-        {/* Time axis */}
-        <div className="gantt-axis-vertical">
+    <div className="gantt-vertical">
+      <div className="gantt-timeline-vertical" style={{ height: verticalHeight }}>
+        <div className="gantt-axis-vertical" style={{ height: verticalHeight }}>
           {timeMarks.map(mark => (
             <div
               key={mark}
               className="gantt-axis-mark-vertical"
-              style={{ top: `${(mark / maxTime) * 100}%` }}
+              style={{ top: `${(mark / safeMaxTime) * 100}%` }}
             >
-              <span>{mark}</span>
+              <span>{mark}m</span>
             </div>
           ))}
           <div className="gantt-axis-label">Minutes</div>
         </div>
 
-        {/* Steps */}
-        <div className="gantt-steps-vertical">
+        <div
+          className="gantt-steps-vertical"
+          style={{ gridTemplateRows, height: verticalHeight }}
+        >
           {steps.map(step => {
-            const topPercent = (step.start_min / maxTime) * 100;
-            const heightPercent = (step.duration_min / maxTime) * 100;
+            const startIndex = Math.min(
+              Math.floor(step.start_min * ROW_MULTIPLIER),
+              totalRows - 1
+            );
+            const endIndex = Math.max(
+              startIndex + 1,
+              Math.ceil(step.end_min * ROW_MULTIPLIER)
+            );
+            const rowStart = startIndex + 1;
+            const rowEnd = Math.min(endIndex + 1, totalRows + 1);
 
             return (
               <div
                 key={step.id}
                 className={`gantt-step-vertical ${selectedStep?.id === step.id ? 'selected' : ''}`}
-                onClick={() => setSelectedStep(step)}
+                style={{ gridRow: `${rowStart} / ${rowEnd}` }}
+                onClick={() => handleStepClick(step)}
               >
                 <div
                   className="gantt-step-bar-vertical"
-                  style={{
-                    top: `${topPercent}%`,
-                    height: `${heightPercent}%`,
-                    backgroundColor: STEP_TYPE_COLORS[step.type],
-                  }}
+                  style={{ backgroundColor: STEP_TYPE_COLORS[step.type] }}
                 >
-                  <span className="gantt-step-label-vertical">
-                    {step.label}
-                  </span>
-                  <span className="gantt-step-duration-vertical">
-                    {step.duration_min}m
+                  <div className="gantt-step-label-vertical">
+                    <span>{step.label}</span>
+                    <span className="gantt-step-duration-vertical">
+                      {step.duration_min} min • {step.start_min}–{step.end_min} min
+                    </span>
+                  </div>
+                  <span className={`gantt-step-type contrast ${step.type}`}>
+                    {STEP_TYPE_LABELS[step.type]}
                   </span>
                 </div>
               </div>
@@ -202,40 +173,85 @@ export default function GanttChart({ steps }: GanttChartProps) {
           })}
         </div>
       </div>
+    </div>
+  );
 
-      {/* Step details */}
+  return (
+    <div className={`gantt-chart ${orientation}`}>
+      <div className="gantt-controls">
+        <div className="gantt-runtime">
+          Timeline length <strong>{safeMaxTime} min</strong>
+        </div>
+        <button
+          onClick={() =>
+            setOrientation(prev => (prev === 'vertical' ? 'horizontal' : 'vertical'))
+          }
+          className="gantt-toggle-btn"
+        >
+          Switch to {orientation === 'vertical' ? 'Horizontal' : 'Vertical'}
+        </button>
+      </div>
+
+      {orientation === 'vertical' ? renderVerticalChart() : renderHorizontalChart()}
+
       {selectedStep && (
         <div className="gantt-details">
-          <h3>{selectedStep.label}</h3>
+          <div className="gantt-details-header">
+            <h3>{selectedStep.label}</h3>
+            <span className={`gantt-step-type ${selectedStep.type}`}>
+              {STEP_TYPE_LABELS[selectedStep.type]}
+            </span>
+          </div>
           <div className="gantt-details-grid">
             <div>
-              <strong>Type:</strong> {selectedStep.type}
+              <strong>Duration</strong>
+              <span>{selectedStep.duration_min} minutes</span>
             </div>
             <div>
-              <strong>Duration:</strong> {selectedStep.duration_min} minutes
+              <strong>Timing</strong>
+              <span>{selectedStep.start_min}–{selectedStep.end_min} min</span>
             </div>
-            <div>
-              <strong>Time:</strong> {selectedStep.start_min}–{selectedStep.end_min} min
-            </div>
+            {selectedStep.temperature_c && (
+              <div>
+                <strong>Temperature</strong>
+                <span>{selectedStep.temperature_c}°C</span>
+              </div>
+            )}
             {selectedStep.equipment.length > 0 && (
               <div>
-                <strong>Equipment:</strong> {selectedStep.equipment.join(', ')}
+                <strong>Equipment</strong>
+                <span>{selectedStep.equipment.join(', ')}</span>
+              </div>
+            )}
+            {selectedStep.requires.length > 0 && (
+              <div>
+                <strong>Requires</strong>
+                <span>{selectedStep.requires.join(', ')}</span>
+              </div>
+            )}
+            {selectedStep.can_overlap_with.length > 0 && (
+              <div>
+                <strong>Can overlap with</strong>
+                <span>{selectedStep.can_overlap_with.join(', ')}</span>
               </div>
             )}
           </div>
           <div className="gantt-details-text">
             {selectedStep.raw_text}
           </div>
+          {selectedStep.notes && (
+            <div className="gantt-details-text note">
+              {selectedStep.notes}
+            </div>
+          )}
           <button
             onClick={() => setSelectedStep(null)}
             className="gantt-close-btn"
           >
-            Close
+            Clear selection
           </button>
         </div>
       )}
     </div>
   );
-
-  return orientation === 'horizontal' ? renderHorizontalChart() : renderVerticalChart();
 }
