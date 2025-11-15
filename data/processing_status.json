@@ -13,8 +13,15 @@
       "steps_extracted": 17,
       "total_time_min": 27.5,
       "error": null
+    },
+    "peanut-butter-curry-with-sweet-potato-tenderstem-broccoli-crushed-peanuts-chilli-lime": {
+      "processed": true,
+      "timestamp": "2025-11-15T14:35:29.969444",
+      "steps_extracted": 11,
+      "total_time_min": 43,
+      "error": null
     }
   },
-  "last_updated": "2025-11-15T13:04:17.176415",
-  "total_processed": 2
+  "last_updated": "2025-11-15T14:35:29.969463",
+  "total_processed": 3
 }

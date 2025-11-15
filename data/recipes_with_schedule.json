@@ -837,5 +837,239 @@
     ],
     "total_time_min": 27.5,
     "active_time_min": 30
+  },
+  {
+    "id": "peanut-butter-curry-with-sweet-potato-tenderstem-broccoli-crushed-peanuts-chilli-lime",
+    "title": "Peanut Butter Curry With Charred Red Peppers, Sugar Snap Peas, Lime & Toasted Peanuts",
+    "source_url": "https://planthood.co.uk/products/peanut-butter-curry-with-sweet-potato-tenderstem-broccoli-crushed-peanuts-chilli-lime",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 695.0,
+      "protein_g": 22.7,
+      "fat_g": 31.1,
+      "carbs_g": 107.8,
+      "fibre_g": 12.2,
+      "salt_g": 1.25
+    },
+    "steps": [
+      {
+        "id": "step-3",
+        "raw_text": "Char Red Peppers",
+        "label": "Char Red Peppers",
+        "type": "cook",
+        "duration_min": 15,
+        "start_min": 0,
+        "end_min": 15,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "oven",
+          "baking sheet"
+        ],
+        "temperature_c": 200,
+        "notes": "Inferred from 'charred red peppers'. Assumed oven broiler for charring. Peel and chop after charring (implied)."
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Cook Basmati Rice",
+        "label": "Cook Basmati Rice",
+        "type": "cook",
+        "duration_min": 15,
+        "start_min": 0,
+        "end_min": 15,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Assumed standard rice cooking time."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Toast Peanuts",
+        "label": "Toast Peanuts",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'toasted crushed peanuts'. Assumed dry pan toasting."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Prepare Curry Aromatics",
+        "label": "Prepare Curry Aromatics",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Chop/mince lemongrass, garlic, ginger, and measure spices (cumin, coriander, cloves, cinnamon, nutmeg)."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Prepare Potatoes & Sugar Snap Peas",
+        "label": "Prepare Potatoes & Sugar Snap Peas",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Peel/chop new potatoes, trim sugar snap peas."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Crush Toasted Peanuts",
+        "label": "Crush Toasted Peanuts",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 5,
+        "end_min": 7,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "mortar and pestle"
+        ],
+        "temperature_c": null,
+        "notes": "Requires peanuts to be toasted first."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Sauté Curry Aromatics",
+        "label": "Sauté Curry Aromatics",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 10,
+        "end_min": 15,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-6"
+        ],
+        "equipment": [
+          "large pot"
+        ],
+        "temperature_c": null,
+        "notes": "Sauté prepared lemongrass, garlic, ginger, and spices."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Simmer Curry Base",
+        "label": "Simmer Curry Base",
+        "type": "cook",
+        "duration_min": 15,
+        "start_min": 15,
+        "end_min": 30,
+        "requires": [
+          "step-7"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large pot"
+        ],
+        "temperature_c": null,
+        "notes": "Add coconut milk, water, vegan bouillon, peanut butter, and soy sauce. Simmer gently to combine flavors."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Add Vegetables to Curry",
+        "label": "Add Vegetables to Curry",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 30,
+        "end_min": 40,
+        "requires": [
+          "step-8",
+          "step-3",
+          "step-6"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large pot"
+        ],
+        "temperature_c": null,
+        "notes": "Add prepared potatoes, sugar snap peas, and charred red peppers. Cook until potatoes are tender."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Squeeze Fresh Lime",
+        "label": "Squeeze Fresh Lime",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 40,
+        "end_min": 41,
+        "requires": [
+          "step-9"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "citrus juicer"
+        ],
+        "temperature_c": null,
+        "notes": "Added just before serving for freshness."
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Serve Curry with Rice & Toppings",
+        "label": "Serve Curry with Rice & Toppings",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 41,
+        "end_min": 43,
+        "requires": [
+          "step-1",
+          "step-9",
+          "step-5",
+          "step-10"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Plate curry with basmati rice, topped with crushed peanuts and a lime wedge."
+      }
+    ],
+    "total_time_min": 43,
+    "active_time_min": 25
   }
 ]
