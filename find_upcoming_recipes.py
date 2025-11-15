@@ -40,7 +40,7 @@ def _extract_product_urls(soup: BeautifulSoup) -> set:
 
 def fetch_upcoming_recipes_from_page():
     """Fetch recipes displayed on the cooking instructions page"""
-    print(f"🔍 Fetching: {COOKING_INSTRUCTIONS_URL}")
+    print(f"Fetching: {COOKING_INSTRUCTIONS_URL}")
     print("=" * 80)
 
     session = requests.Session()
@@ -55,17 +55,17 @@ def fetch_upcoming_recipes_from_page():
         product_urls = _extract_product_urls(soup)
         recipe_urls = {url for url in product_urls if _is_recipe_url(url)}
 
-        print(f"✅ Found {len(recipe_urls)} recipe URLs on cooking instructions page")
+        print(f"Found {len(recipe_urls)} recipe URLs on cooking instructions page")
         return list(recipe_urls)
 
     except Exception as e:
-        print(f"❌ Error fetching page: {e}")
+        print(f"Error fetching page: {e}")
         return []
 
 
 def fetch_recent_menu_collections():
     """Fetch recipes from recent weekly menu collections"""
-    print("\n🔍 Fetching recent menu collections from API")
+    print("\nFetching recent menu collections from API")
     print("=" * 80)
 
     try:
@@ -85,12 +85,12 @@ def fetch_recent_menu_collections():
         # Sort by published date (most recent first)
         menu_collections.sort(key=lambda x: x.get("published_at", ""), reverse=True)
 
-        print(f"✅ Found {len(menu_collections)} menu collections")
+        print(f"Found {len(menu_collections)} menu collections")
 
         # Get recipes from the 3 most recent menus
         recent_recipe_urls = set()
         for menu in menu_collections[:3]:
-            print(f"\n📋 Checking: {menu['title']}")
+            print(f"\nChecking: {menu['title']}")
             collection_url = f"{BASE_URL}/collections/{menu['handle']}/products.json"
 
             try:
@@ -108,13 +108,13 @@ def fetch_recent_menu_collections():
                 print(f"   Found {len(products)} recipes")
 
             except Exception as e:
-                print(f"   ⚠️  Error fetching collection: {e}")
+                print(f"   Warning: Error fetching collection: {e}")
 
-        print(f"\n✅ Total recipes from recent menus: {len(recent_recipe_urls)}")
+        print(f"\nTotal recipes from recent menus: {len(recent_recipe_urls)}")
         return list(recent_recipe_urls)
 
     except Exception as e:
-        print(f"❌ Error fetching menu collections: {e}")
+        print(f"Error fetching menu collections: {e}")
         return []
 
 
@@ -123,7 +123,7 @@ def match_recipes_to_scraped_data(upcoming_urls):
     data_file = project_root / "data" / "raw_recipes.json"
 
     if not data_file.exists():
-        print("❌ No scraped recipes found. Run 'pixi run scrape' first.")
+        print("No scraped recipes found. Run 'pixi run scrape' first.")
         return []
 
     with open(data_file, "r", encoding="utf-8") as f:
@@ -138,7 +138,7 @@ def match_recipes_to_scraped_data(upcoming_urls):
 
 def main():
     """Main entry point"""
-    print("\n🍽️  Planthood Upcoming Recipe Finder")
+    print("\nPlanthood Upcoming Recipe Finder")
     print("=" * 80)
     print()
 
@@ -151,23 +151,23 @@ def main():
     # Combine both methods
     all_upcoming_urls = set(page_urls + menu_urls)
 
-    print("\n📊 Summary:")
+    print("\nSummary:")
     print("=" * 80)
     print(f"Recipes from cooking instructions page: {len(page_urls)}")
     print(f"Recipes from recent menu collections: {len(menu_urls)}")
     print(f"Total unique upcoming recipes: {len(all_upcoming_urls)}")
 
     # Match to scraped data
-    print("\n🔎 Matching to scraped recipes...")
+    print("\nMatching to scraped recipes...")
     print("=" * 80)
 
     upcoming_recipes = match_recipes_to_scraped_data(all_upcoming_urls)
 
     if not upcoming_recipes:
-        print("❌ No matching recipes found in scraped data")
+        print("No matching recipes found in scraped data")
         return
 
-    print(f"✅ Matched {len(upcoming_recipes)} upcoming recipes")
+    print(f"Matched {len(upcoming_recipes)} upcoming recipes")
     print()
 
     # Save to file
@@ -175,23 +175,23 @@ def main():
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(upcoming_recipes, f, indent=2, ensure_ascii=False)
 
-    print(f"💾 Saved to: {output_file}")
+    print(f"Saved to: {output_file}")
     print()
 
     # Display recipes
-    print("📋 Upcoming Recipes:")
+    print("Upcoming Recipes:")
     print("=" * 80)
     for i, recipe in enumerate(upcoming_recipes, 1):
         title = recipe.get("title", "Untitled")
         recipe_id = recipe.get("id", "unknown")
         has_method = len(recipe.get("method", "")) > 0
-        status = "✅" if has_method else "❌"
+        status = "[OK]" if has_method else "[NO METHOD]"
 
         print(f"{i:3d}. {status} {title}")
         print(f"      ID: {recipe_id}")
         print()
 
-    print("\n💡 Next steps:")
+    print("\nNext steps:")
     print("   1. Review the upcoming recipes above")
     print("   2. Run: pixi run python parse_upcoming_recipes.py")
     print("      (This will parse only the upcoming recipes with LLM)")

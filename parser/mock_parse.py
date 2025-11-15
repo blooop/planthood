@@ -150,9 +150,9 @@ class MockRecipeParser:
             try:
                 parsed = self.parse_recipe(recipe)
                 parsed_recipes.append(parsed)
-                print(f"✓ Parsed {recipe['title']}: {len(parsed.steps)} steps")
+                print(f"Parsed {recipe['title']}: {len(parsed.steps)} steps")
             except Exception as e:
-                print(f"❌ Error parsing {recipe['title']}: {e}")
+                print(f"Error parsing {recipe['title']}: {e}")
 
         return parsed_recipes
 
@@ -166,7 +166,7 @@ def main():
     # Load raw recipes
     raw_recipes_path = DATA_DIR / "raw_recipes.json"
     if not raw_recipes_path.exists():
-        print(f"❌ Error: {raw_recipes_path} not found")
+        print(f"Error: {raw_recipes_path} not found")
         return
 
     with open(raw_recipes_path, "r", encoding="utf-8") as f:

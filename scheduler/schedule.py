@@ -92,7 +92,7 @@ class RecipeScheduler:
 
         # Check for cycles
         if len(sorted_steps) != len(all_step_ids):
-            print("⚠️  Warning: Cycle detected in dependencies. Using fallback ordering.")
+            print("Warning: Cycle detected in dependencies. Using fallback ordering.")
             # Fallback: use original order
             return [step["id"] for step in steps]
 
@@ -194,9 +194,9 @@ class RecipeScheduler:
             try:
                 scheduled = self.schedule_recipe(recipe)
                 scheduled_recipes.append(scheduled)
-                print(f"✓ Scheduled {recipe['title']}: {scheduled.total_time_min} min total")
+                print(f"Scheduled {recipe['title']}: {scheduled.total_time_min} min total")
             except Exception as e:
-                print(f"❌ Error scheduling {recipe['title']}: {e}")
+                print(f"Error scheduling {recipe['title']}: {e}")
 
         return scheduled_recipes
 
@@ -210,7 +210,7 @@ def main():
     # Load parsed recipes
     parsed_recipes_path = DATA_DIR / "recipes_parsed.json"
     if not parsed_recipes_path.exists():
-        print(f"❌ Error: {parsed_recipes_path} not found")
+        print(f"Error: {parsed_recipes_path} not found")
         print("Run the parser first: npm run parse")
         return
 

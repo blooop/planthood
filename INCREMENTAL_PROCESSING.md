@@ -33,16 +33,16 @@ pixi run process-next-recipe
 
 Output:
 ```
-📋 Next Recipe: Tandoori Tofu Naan Wraps
-📊 Progress: Processed: 0/21, Remaining: 21
+Next Recipe: Tandoori Tofu Naan Wraps
+Progress: Processed: 0/21, Remaining: 21
 
-🤖 Parsing with LLM...
-✅ Parsed 10 steps
+Parsing with LLM...
+Parsed 10 steps
 
-📅 Generating Gantt chart schedule...
-✅ Scheduled: 48 minutes total
+Generating Gantt chart schedule...
+Scheduled: 48 minutes total
 
-✅ Successfully processed recipe!
+Successfully processed recipe!
    Progress: 1/21 recipes
 ```
 
@@ -58,7 +58,7 @@ pixi run process-next-recipe  # Processes recipe #3
 
 When all recipes are processed:
 ```
-✅ All recipes processed! (21 total)
+All recipes processed! (21 total)
    Run 'pixi run find-upcoming' to refresh the queue
 ```
 
@@ -291,9 +291,9 @@ data = json.load(sys.stdin)
 print(f'Total processed: {data.get(\"total_processed\", 0)}')
 for rid, status in data.get('recipes', {}).items():
     if status.get('error'):
-        print(f'  ❌ {rid}: {status[\"error\"]}')
+        print(f'  [ERROR] {rid}: {status[\"error\"]}')
     else:
-        print(f'  ✅ {rid}: {status.get(\"steps_extracted\", 0)} steps')
+        print(f'  [OK] {rid}: {status.get(\"steps_extracted\", 0)} steps')
 "
 ```
 

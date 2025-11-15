@@ -22,7 +22,7 @@ from parser.parse import RecipeParser  # noqa: E402 # pylint: disable=deprecated
 def _handle_error(error: Exception, prefix: str = "Error") -> str:
     """Handle and display error with traceback"""
     error_msg = str(error)
-    print(f"❌ {prefix}: {error_msg}")
+    print(f"{prefix}: {error_msg}")
     import traceback
 
     traceback.print_exc()
@@ -54,14 +54,14 @@ def get_next_unprocessed_recipe():
     upcoming_file = project_root / "data" / "upcoming_recipes.json"
 
     if not upcoming_file.exists():
-        print("❌ No upcoming recipes found. Run: pixi run python find_upcoming_recipes.py")
+        print("No upcoming recipes found. Run: pixi run python find_upcoming_recipes.py")
         return None
 
     with open(upcoming_file, "r", encoding="utf-8") as f:
         upcoming_recipes = json.load(f)
 
     if not upcoming_recipes:
-        print("❌ No upcoming recipes in queue")
+        print("No upcoming recipes in queue")
         return None
 
     # Load processing status
@@ -82,7 +82,7 @@ def parse_single_recipe(recipe):
     """Parse a single recipe with LLM"""
     from dataclasses import asdict
 
-    print("\n🤖 Parsing with LLM...")
+    print("\nParsing with LLM...")
     print("-" * 80)
 
     try:
@@ -101,11 +101,11 @@ def parse_single_recipe(recipe):
                 "nutrition": recipe.get("nutrition"),
                 "steps": [asdict(step) for step in steps],
             }
-            print(f"✅ Parsed {len(steps)} steps")
+            print(f"Parsed {len(steps)} steps")
             return parsed_recipe, None
 
         error = "No steps extracted"
-        print(f"❌ {error}")
+        print(f"Error: {error}")
         return None, error
 
     except Exception as e:
@@ -117,7 +117,7 @@ def schedule_single_recipe(parsed_recipe):
     from scheduler.schedule import RecipeScheduler
     from dataclasses import asdict
 
-    print("\n📅 Generating Gantt chart schedule...")
+    print("\nGenerating Gantt chart schedule...")
     print("-" * 80)
 
     try:
@@ -128,7 +128,7 @@ def schedule_single_recipe(parsed_recipe):
         scheduled_recipe = asdict(scheduled_recipe_obj)
 
         total_time = scheduled_recipe.get("total_time_min", 0)
-        print(f"✅ Scheduled: {total_time} minutes total")
+        print(f"Scheduled: {total_time} minutes total")
         return scheduled_recipe, None
 
     except Exception as e:
@@ -167,14 +167,14 @@ def merge_with_existing_recipes(new_parsed, new_scheduled, recipe_id):
     with open(scheduled_file, "w", encoding="utf-8") as f:
         json.dump(existing_scheduled, f, indent=2, ensure_ascii=False)
 
-    print("\n💾 Saved to data files")
+    print("\nSaved to data files")
     print(f"   Total parsed recipes: {len(existing_parsed)}")
     print(f"   Total scheduled recipes: {len(existing_scheduled)}")
 
 
 def main():
     """Main entry point"""
-    print("\n🔄 Process Next Recipe")
+    print("\nProcess Next Recipe")
     print("=" * 80)
 
     # Get next unprocessed recipe
@@ -184,7 +184,7 @@ def main():
         if result[2]:  # Have status but no unprocessed recipes
             status = result[2]
             total = status.get("total_processed", 0)
-            print(f"\n✅ All recipes processed! ({total} total)")
+            print(f"\nAll recipes processed! ({total} total)")
             print("   Run 'pixi run python find_upcoming_recipes.py' to refresh the queue")
             return 0
         return 1
@@ -194,7 +194,7 @@ def main():
     title = recipe.get("title", "Untitled")
     method_len = len(recipe.get("method", ""))
 
-    print("\n📋 Next Recipe:")
+    print("\nNext Recipe:")
     print("=" * 80)
     print(f"   ID: {recipe_id}")
     print(f"   Title: {title}")
@@ -208,13 +208,13 @@ def main():
     processed_count = sum(r.get("processed", False) for r in status["recipes"].values())
     remaining_count = total_upcoming - processed_count
 
-    print("\n📊 Progress:")
+    print("\nProgress:")
     print(f"   Processed: {processed_count}/{total_upcoming}")
     print(f"   Remaining: {remaining_count}")
 
     # Check if recipe has method text
     if not recipe.get("method"):
-        print("\n⚠️  Skipping: Recipe has no method text")
+        print("\nSkipping: Recipe has no method text")
         # Mark as processed but with error
         status["recipes"][recipe_id] = {
             "processed": True,
@@ -237,7 +237,7 @@ def main():
             "steps_extracted": 0,
         }
         save_processing_status(status)
-        print("\n❌ Failed to parse recipe")
+        print("\nFailed to parse recipe")
         return 1
 
     # Schedule the recipe
@@ -252,7 +252,7 @@ def main():
             "steps_extracted": len(parsed_recipe.get("steps", [])),
         }
         save_processing_status(status)
-        print("\n❌ Failed to schedule recipe")
+        print("\nFailed to schedule recipe")
         return 1
 
     # Merge with existing recipes
@@ -269,14 +269,14 @@ def main():
     status["total_processed"] = processed_count + 1
     save_processing_status(status)
 
-    print("\n✅ Successfully processed recipe!")
+    print("\nSuccessfully processed recipe!")
     print("=" * 80)
     print(f"   Steps extracted: {len(parsed_recipe.get('steps', []))}")
     print(f"   Total time: {scheduled_recipe.get('total_time_min', 0)} minutes")
     print(f"   Progress: {processed_count + 1}/{total_upcoming} recipes")
 
     if remaining_count > 1:
-        print("\n💡 Run again to process the next recipe:")
+        print("\nRun again to process the next recipe:")
         print("   pixi run process-next-recipe")
         print("\n   Or let GitHub Actions run it on schedule")
 

@@ -21,13 +21,13 @@ def list_recipes(limit=20):
     data_file = project_root / "data" / "raw_recipes.json"
 
     if not data_file.exists():
-        print("❌ No scraped recipes found. Run 'pixi run scrape' first.")
+        print("No scraped recipes found. Run 'pixi run scrape' first.")
         return []
 
     with open(data_file, "r", encoding="utf-8") as f:
         recipes = json.load(f)
 
-    print(f"\n📚 Found {len(recipes)} scraped recipes")
+    print(f"\nFound {len(recipes)} scraped recipes")
     print(f"\nShowing first {min(limit, len(recipes))} recipes:")
     print("=" * 80)
 
@@ -36,7 +36,7 @@ def list_recipes(limit=20):
         recipe_id = recipe.get("id", "unknown")
         has_method = len(recipe.get("method", "")) > 0
         method_len = len(recipe.get("method", ""))
-        status = "✅" if has_method else "❌"
+        status = "[OK]" if has_method else "[NO METHOD]"
 
         print(f"{i:3d}. {status} {title}")
         print(f"      ID: {recipe_id}")
@@ -48,7 +48,7 @@ def list_recipes(limit=20):
 
 def parse_single_recipe(recipe_id: str):
     """Parse a single recipe using LLM and generate Gantt chart data"""
-    print(f"\n🔄 Processing recipe: {recipe_id}")
+    print(f"\nProcessing recipe: {recipe_id}")
     print("=" * 80)
 
     # Load raw recipes
@@ -58,18 +58,18 @@ def parse_single_recipe(recipe_id: str):
 
     # Find the recipe
     if not (recipe := next((r for r in recipes if r["id"] == recipe_id), None)):
-        print(f"❌ Recipe '{recipe_id}' not found")
+        print(f"Recipe '{recipe_id}' not found")
         return False
 
-    print(f"✅ Found recipe: {recipe.get('title', 'Untitled')}")
+    print(f"Found recipe: {recipe.get('title', 'Untitled')}")
     print(f"   Method length: {len(recipe.get('method', ''))} chars")
 
     if not recipe.get("method"):
-        print("❌ Recipe has no method text to parse")
+        print("Recipe has no method text to parse")
         return False
 
     # Step 1: Parse with LLM
-    print("\n📝 Step 1: Parsing with LLM (Gemini)...")
+    print("\nStep 1: Parsing with LLM (Gemini)...")
     print("-" * 80)
 
     # Create a temporary file with just this recipe
@@ -101,7 +101,7 @@ def parse_single_recipe(recipe_id: str):
             json.dump([r.__dict__ for r in parsed_recipes], f, indent=2, ensure_ascii=False)
 
         # Step 2: Run scheduler
-        print("\n📅 Step 2: Generating Gantt chart timeline...")
+        print("\nStep 2: Generating Gantt chart timeline...")
         print("-" * 80)
 
         from scheduler.schedule import main as scheduler_main
@@ -109,7 +109,7 @@ def parse_single_recipe(recipe_id: str):
         scheduler_main()
 
         # Load and display results
-        print("\n✅ Processing complete!")
+        print("\nProcessing complete!")
         print("=" * 80)
 
         scheduled_file = project_root / "data" / "recipes_with_schedule.json"
@@ -119,7 +119,7 @@ def parse_single_recipe(recipe_id: str):
                 parsed = json.load(f)
 
             if parsed:
-                print("\n📊 Parsed Recipe Data:")
+                print("\nParsed Recipe Data:")
                 print(f"   Steps extracted: {len(parsed[0].get('steps', []))}")
                 print("\n   First few steps:")
                 for i, step in enumerate(parsed[0].get("steps", [])[:5], 1):
@@ -133,7 +133,7 @@ def parse_single_recipe(recipe_id: str):
                 scheduled = json.load(f)
 
             if scheduled:
-                print("\n📅 Gantt Chart Data:")
+                print("\nGantt Chart Data:")
                 print(f"   Total time: {scheduled[0].get('total_time_min', '?')} minutes")
                 print(f"   Active time: {scheduled[0].get('active_time_min', '?')} minutes")
                 print("\n   Timeline:")
@@ -143,7 +143,7 @@ def parse_single_recipe(recipe_id: str):
                     label = step.get("label", "No label")
                     print(f"   {start:3d}-{end:3d} min: {label}")
 
-        print("\n💾 Output files:")
+        print("\nOutput files:")
         print("   - data/recipes_parsed.json")
         print("   - data/recipes_with_schedule.json")
 
@@ -169,7 +169,7 @@ def main():
         if not recipes:
             return
 
-        print("\n💡 Usage:")
+        print("\nUsage:")
         print(f"   python {sys.argv[0]} <recipe-id>")
         print("\nExample:")
         print(f"   python {sys.argv[0]} {recipes[0]['id']}")

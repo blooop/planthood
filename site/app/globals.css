@@ -391,7 +391,7 @@ body {
 }
 
 .ingredients-list li:before {
-  content: '✓';
+  content: '•';
   position: absolute;
   left: 0.75rem;
   color: var(--color-primary);

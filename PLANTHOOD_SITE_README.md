@@ -2,17 +2,17 @@
 
 An end-to-end static website generator for Planthood recipes with interactive Gantt chart visualizations. Automatically scrapes recipes weekly, parses them using LLM into structured dependency-aware steps, and generates a beautiful static site hosted on GitHub Pages.
 
-## 🌟 Features
+## Features
 
-- **📊 Interactive Gantt Charts**: Visual cooking timelines showing dependencies and parallel tasks
-- **🤖 LLM-Powered Parsing**: Converts free-form recipe text into structured, timed steps
-- **⚡ Fully Static**: Pure HTML/CSS/JS output, no runtime server required
-- **🔄 Automated Weekly Updates**: GitHub Actions scrapes and rebuilds weekly
-- **🎨 Beautiful UI**: Clean, responsive design optimized for tablets and desktops
-- **🔌 Provider-Agnostic**: Supports OpenAI, Anthropic Claude, Google Gemini
-- **💾 Smart Caching**: Avoids re-parsing unchanged recipes
+- **Interactive Gantt Charts**: Visual cooking timelines showing dependencies and parallel tasks
+- **LLM-Powered Parsing**: Converts free-form recipe text into structured, timed steps
+- **Fully Static**: Pure HTML/CSS/JS output, no runtime server required
+- **Automated Weekly Updates**: GitHub Actions scrapes and rebuilds weekly
+- **Beautiful UI**: Clean, responsive design optimized for tablets and desktops
+- **Provider-Agnostic**: Supports OpenAI, Anthropic Claude, Google Gemini
+- **Smart Caching**: Avoids re-parsing unchanged recipes
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────┐
@@ -40,7 +40,7 @@ An end-to-end static website generator for Planthood recipes with interactive Ga
 └─────────────┘
 ```
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Python 3.11+**
 - **Node.js 20+**
@@ -49,7 +49,7 @@ An end-to-end static website generator for Planthood recipes with interactive Ga
   - Anthropic API key
   - Google Gemini API key
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone and Install
 
@@ -109,7 +109,7 @@ npm run dev
 # Open http://localhost:3000
 ```
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 planthood-site/
@@ -142,7 +142,7 @@ planthood-site/
 └── .env.example            # Environment variables template
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### LLM Provider Configuration
 
@@ -173,7 +173,7 @@ Set these in `.env` or as environment variables:
 | `SKIP_CACHE` | Skip cache and re-parse all | `false` |
 | `MAX_RETRIES` | Max retries for LLM calls | `3` |
 
-## 🤖 LLM Usage & Cost Estimation
+## LLM Usage & Cost Estimation
 
 ### Token Usage per Recipe
 
@@ -201,7 +201,7 @@ Assuming ~10 new/changed recipes per week:
 - **Google Gemini**: Generous free tier with 1500 requests/day
 - **Anthropic**: $5 free credits for new accounts
 
-## 📅 GitHub Actions Workflow
+## GitHub Actions Workflow
 
 The workflow runs automatically:
 
@@ -226,14 +226,14 @@ Add these secrets in **Settings → Secrets and variables → Actions**:
 
 The workflow will automatically deploy to your GitHub Pages URL.
 
-## 🎨 Gantt Chart Features
+## Gantt Chart Features
 
 The interactive Gantt chart visualization includes:
 
 - **Color-coded steps**:
-  - 🔵 Blue = Prep
-  - 🟠 Orange = Cooking
-  - 🟢 Green = Finishing
+  - Blue = Prep
+  - Orange = Cooking
+  - Green = Finishing
 - **Click any step** to see:
   - Full instructions
   - Equipment needed
@@ -243,7 +243,7 @@ The interactive Gantt chart visualization includes:
 - **Toggle layouts**: Switch between horizontal and vertical views
 - **Bold, readable text**: Optimized for 10" tablets and up
 
-## 🧪 Development
+## Development
 
 ### Run Scraper Only
 
@@ -274,7 +274,7 @@ npm run dev
 
 Set `SKIP_CACHE=true` and the parser will skip recipes it can't parse without an LLM.
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "No recipes available"
 
@@ -305,7 +305,7 @@ Set `SKIP_CACHE=true` and the parser will skip recipes it can't parse without an
 3. Clear browser cache
 4. Try manual workflow trigger
 
-## 📊 Data Format
+## Data Format
 
 ### Raw Recipe (from scraper)
 
@@ -359,27 +359,27 @@ Set `SKIP_CACHE=true` and the parser will skip recipes it can't parse without an
 }
 ```
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
-- [ ] Multi-week menu planning view
-- [ ] Shopping list generator
-- [ ] Nutritional analysis charts
-- [ ] Recipe search and filtering
-- [ ] Export timeline as PDF/image
-- [ ] Voice-guided cooking mode
-- [ ] Ingredient substitution suggestions
+- Multi-week menu planning view
+- Shopping list generator
+- Nutritional analysis charts
+- Recipe search and filtering
+- Export timeline as PDF/image
+- Voice-guided cooking mode
+- Ingredient substitution suggestions
 
-## 📄 License
+## License
 
 MIT License - see LICENSE file
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Recipe data from [Planthood](https://planthood.co.uk)
 - Built with [Next.js](https://nextjs.org)
 - Deployed on [GitHub Pages](https://pages.github.com)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Please:
 
@@ -389,7 +389,7 @@ Contributions welcome! Please:
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📧 Support
+## Support
 
 For issues or questions:
 
@@ -403,4 +403,4 @@ For issues or questions:
 
 ---
 
-**Built with 💚 for easier, clearer cooking**
+**Built with care for easier, clearer cooking**
