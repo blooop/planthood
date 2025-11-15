@@ -1,5 +1,5 @@
 # Changelog
 
-## python_template
+## planthood
 
 ## [0.2.0]
