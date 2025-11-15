@@ -11,7 +11,12 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+# Ensure local parser module is found before stdlib's deprecated parser module
 project_root = Path(__file__).parent
+if str(project_root) not in sys.path:
+    sys.path.insert(0, str(project_root))
+
+from parser.parse import RecipeParser  # noqa: E402 # pylint: disable=deprecated-module
 
 
 def _handle_error(error: Exception, prefix: str = "Error") -> str:
@@ -75,7 +80,6 @@ def get_next_unprocessed_recipe():
 
 def parse_single_recipe(recipe):
     """Parse a single recipe with LLM"""
-    from parser.parse import RecipeParser
     from dataclasses import asdict
 
     print("\n🤖 Parsing with LLM...")

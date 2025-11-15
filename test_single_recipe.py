@@ -8,9 +8,12 @@ import json
 import sys
 from pathlib import Path
 
-# Add project root to path
+# Ensure local parser module is found before stdlib's deprecated parser module
 project_root = Path(__file__).parent
-sys.path.insert(0, str(project_root))
+if str(project_root) not in sys.path:
+    sys.path.insert(0, str(project_root))
+
+from parser.parse import RecipeParser  # noqa: E402 # pylint: disable=deprecated-module
 
 
 def list_recipes(limit=20):
@@ -68,8 +71,6 @@ def parse_single_recipe(recipe_id: str):
     # Step 1: Parse with LLM
     print("\n📝 Step 1: Parsing with LLM (Gemini)...")
     print("-" * 80)
-
-    from parser.parse import RecipeParser
 
     # Create a temporary file with just this recipe
     temp_raw = project_root / "data" / "temp_raw_recipes.json"

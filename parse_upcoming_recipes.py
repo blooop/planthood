@@ -9,7 +9,12 @@ import shutil
 import sys
 from pathlib import Path
 
+# Ensure local parser module is found before stdlib's deprecated parser module
 project_root = Path(__file__).parent
+if str(project_root) not in sys.path:
+    sys.path.insert(0, str(project_root))
+
+from parser.parse import RecipeParser  # noqa: E402 # pylint: disable=deprecated-module
 
 
 def main():
@@ -91,8 +96,6 @@ def main():
         # Step 1: Parse with LLM
         print("\n📝 Step 1: Parsing with LLM...")
         print("=" * 80)
-
-        from parser.parse import RecipeParser
 
         parser = RecipeParser()
         # Parse all recipes and save to recipes_parsed.json
