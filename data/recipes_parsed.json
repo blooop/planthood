@@ -967,5 +967,415 @@
         "notes": "Plate curry with basmati rice, topped with crushed peanuts and a lime wedge."
       }
     ]
+  },
+  {
+    "id": "tahini-miso-ramen-with-crispy-chilli-tempeh-pak-choi-gluten-free-brown-rice-noodles",
+    "title": "Tahini Miso Ramen With Crispy Chilli Tempeh, Pak Choi & Flat Rice Noodles",
+    "source_url": "https://planthood.co.uk/products/tahini-miso-ramen-with-crispy-chilli-tempeh-pak-choi-gluten-free-brown-rice-noodles",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 650.0,
+      "protein_g": 29.0,
+      "fat_g": 37.9,
+      "carbs_g": 62.1,
+      "fibre_g": 7.0,
+      "salt_g": 3.8
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Take out all ingredients",
+        "label": "Take out all ingredients",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Gather all necessary ingredients before starting."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Rinse raw ingredients",
+        "label": "Rinse raw ingredients",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "sink"
+        ],
+        "temperature_c": null,
+        "notes": "Rinse any raw grains, herbs, or vegetables."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Boil kettle",
+        "label": "Boil kettle",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "kettle"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Gather cooking equipment",
+        "label": "Gather cooking equipment",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "large frying pan",
+          "saucepan",
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Take out a large frying pan and two saucepans."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Crumble tempeh",
+        "label": "Crumble tempeh",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "hands"
+        ],
+        "temperature_c": null,
+        "notes": "Crumble tempeh with hands until minced."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Remove pak choi leaves",
+        "label": "Remove pak choi leaves",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "hands"
+        ],
+        "temperature_c": null,
+        "notes": "Remove pak choi leaves from the base of the stem."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Dice chilli and spring onions",
+        "label": "Dice chilli and spring onions",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Finely dice chilli and spring onions (including green bits)."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Heat frying pan with oil",
+        "label": "Heat frying pan with oil",
+        "type": "cook",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-5",
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [
+          "large frying pan",
+          "oil"
+        ],
+        "temperature_c": 200,
+        "notes": "Place frying pan over high heat and add a generous drizzle of oil."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Fry tempeh",
+        "label": "Fry tempeh",
+        "type": "cook",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-5",
+          "step-8"
+        ],
+        "can_overlap_with": [
+          "step-7"
+        ],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": 200,
+        "notes": "Add crumbled tempeh and fry until crispy."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Stir in black bean rayu and keep warm",
+        "label": "Stir in black bean rayu and keep warm",
+        "type": "cook",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-9"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Stir through half of the black bean rayu, then remove from pan and keep warm."
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Prepare water for noodles",
+        "label": "Prepare water for noodles",
+        "type": "cook",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-3",
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": 100,
+        "notes": "Pour boiling water from kettle into first saucepan and place over medium-high heat."
+      },
+      {
+        "id": "step-12",
+        "raw_text": "Cook flat rice noodles",
+        "label": "Cook flat rice noodles",
+        "type": "cook",
+        "estimated_duration_minutes": 4.5,
+        "requires": [
+          "step-11"
+        ],
+        "can_overlap_with": [
+          "step-9",
+          "step-10"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": 100,
+        "notes": "Cook for 4-5 minutes or until tender but al dente. Keep checking as rice noodles can be easily overcooked."
+      },
+      {
+        "id": "step-13",
+        "raw_text": "Drain and rinse noodles",
+        "label": "Drain and rinse noodles",
+        "type": "cook",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-12"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "colander",
+          "sink"
+        ],
+        "temperature_c": null,
+        "notes": "Drain and rinse well under cold running water, then leave in a colander to drain."
+      },
+      {
+        "id": "step-14",
+        "raw_text": "Prepare miso tahini broth",
+        "label": "Prepare miso tahini broth",
+        "type": "cook",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-9",
+          "step-10",
+          "step-12"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Pour miso tahini broth into other saucepan and add 300ml of water."
+      },
+      {
+        "id": "step-15",
+        "raw_text": "Heat and simmer broth",
+        "label": "Heat and simmer broth",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
+        "requires": [
+          "step-14"
+        ],
+        "can_overlap_with": [
+          "step-10",
+          "step-12",
+          "step-13"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": 90,
+        "notes": "Place over medium-high heat and bring to a boil, then reduce to a light simmer until ready to serve."
+      },
+      {
+        "id": "step-16",
+        "raw_text": "Clean frying pan",
+        "label": "Clean frying pan",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-10"
+        ],
+        "can_overlap_with": [
+          "step-13",
+          "step-15"
+        ],
+        "equipment": [
+          "large frying pan",
+          "kitchen towel"
+        ],
+        "temperature_c": null,
+        "notes": "Wipe clean the same frying pan used for tempeh."
+      },
+      {
+        "id": "step-17",
+        "raw_text": "Cook pak choi",
+        "label": "Cook pak choi",
+        "type": "cook",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-6",
+          "step-16"
+        ],
+        "can_overlap_with": [
+          "step-18",
+          "step-19",
+          "step-20",
+          "step-21"
+        ],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": 200,
+        "notes": "Add pak choi and cook until tender. This can be done while serving."
+      },
+      {
+        "id": "step-18",
+        "raw_text": "Divide noodles into bowls",
+        "label": "Divide noodles into bowls",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-13"
+        ],
+        "can_overlap_with": [
+          "step-17"
+        ],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-19",
+        "raw_text": "Pour hot broth over noodles",
+        "label": "Pour hot broth over noodles",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-15",
+          "step-18"
+        ],
+        "can_overlap_with": [
+          "step-17"
+        ],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-20",
+        "raw_text": "Top with pak choi and tempeh",
+        "label": "Top with pak choi and tempeh",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-10",
+          "step-17",
+          "step-19"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-21",
+        "raw_text": "Garnish ramen",
+        "label": "Garnish ramen",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-7",
+          "step-20"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Garnish with chilli, spring onions, and a drizzle of remaining black bean rayu."
+      }
+    ]
   }
 ]
