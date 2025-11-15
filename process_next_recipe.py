@@ -8,7 +8,6 @@ Designed to run on a schedule (e.g., GitHub Actions cron) to process one recipe 
 
 import json
 import sys
-import time
 from datetime import datetime
 from pathlib import Path
 
@@ -69,7 +68,7 @@ def parse_single_recipe(recipe):
     from parser.parse import RecipeParser
     from dataclasses import asdict
 
-    print(f"\n🤖 Parsing with LLM...")
+    print("\n🤖 Parsing with LLM...")
     print("-" * 80)
 
     try:
@@ -109,7 +108,7 @@ def schedule_single_recipe(parsed_recipe):
     from scheduler.schedule import RecipeScheduler
     from dataclasses import asdict
 
-    print(f"\n📅 Generating Gantt chart schedule...")
+    print("\n📅 Generating Gantt chart schedule...")
     print("-" * 80)
 
     try:
@@ -164,7 +163,7 @@ def merge_with_existing_recipes(new_parsed, new_scheduled, recipe_id):
     with open(scheduled_file, "w") as f:
         json.dump(existing_scheduled, f, indent=2, ensure_ascii=False)
 
-    print(f"\n💾 Saved to data files")
+    print("\n💾 Saved to data files")
     print(f"   Total parsed recipes: {len(existing_parsed)}")
     print(f"   Total scheduled recipes: {len(existing_scheduled)}")
 
@@ -182,7 +181,7 @@ def main():
             status = result[2]
             total = status.get("total_processed", 0)
             print(f"\n✅ All recipes processed! ({total} total)")
-            print(f"   Run 'pixi run python find_upcoming_recipes.py' to refresh the queue")
+            print("   Run 'pixi run python find_upcoming_recipes.py' to refresh the queue")
             return 0
         else:
             return 1
@@ -192,7 +191,7 @@ def main():
     title = recipe.get("title", "Untitled")
     method_len = len(recipe.get("method", ""))
 
-    print(f"\n📋 Next Recipe:")
+    print("\n📋 Next Recipe:")
     print("=" * 80)
     print(f"   ID: {recipe_id}")
     print(f"   Title: {title}")
@@ -206,13 +205,13 @@ def main():
     processed_count = sum(1 for r in status["recipes"].values() if r.get("processed"))
     remaining_count = total_upcoming - processed_count
 
-    print(f"\n📊 Progress:")
+    print("\n📊 Progress:")
     print(f"   Processed: {processed_count}/{total_upcoming}")
     print(f"   Remaining: {remaining_count}")
 
     # Check if recipe has method text
     if not recipe.get("method"):
-        print(f"\n⚠️  Skipping: Recipe has no method text")
+        print("\n⚠️  Skipping: Recipe has no method text")
         # Mark as processed but with error
         status["recipes"][recipe_id] = {
             "processed": True,
@@ -235,7 +234,7 @@ def main():
             "steps_extracted": 0,
         }
         save_processing_status(status)
-        print(f"\n❌ Failed to parse recipe")
+        print("\n❌ Failed to parse recipe")
         return 1
 
     # Schedule the recipe
@@ -250,7 +249,7 @@ def main():
             "steps_extracted": len(parsed_recipe.get("steps", [])),
         }
         save_processing_status(status)
-        print(f"\n❌ Failed to schedule recipe")
+        print("\n❌ Failed to schedule recipe")
         return 1
 
     # Merge with existing recipes
@@ -267,16 +266,16 @@ def main():
     status["total_processed"] = processed_count + 1
     save_processing_status(status)
 
-    print(f"\n✅ Successfully processed recipe!")
+    print("\n✅ Successfully processed recipe!")
     print("=" * 80)
     print(f"   Steps extracted: {len(parsed_recipe.get('steps', []))}")
     print(f"   Total time: {scheduled_recipe.get('total_time_min', 0)} minutes")
     print(f"   Progress: {processed_count + 1}/{total_upcoming} recipes")
 
     if remaining_count > 1:
-        print(f"\n💡 Run again to process the next recipe:")
-        print(f"   pixi run process-next-recipe")
-        print(f"\n   Or let GitHub Actions run it on schedule")
+        print("\n💡 Run again to process the next recipe:")
+        print("   pixi run process-next-recipe")
+        print("\n   Or let GitHub Actions run it on schedule")
 
     return 0
 

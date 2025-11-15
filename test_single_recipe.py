@@ -5,7 +5,6 @@ Useful for testing before processing all 237 recipes.
 """
 
 import json
-import os
 import sys
 from pathlib import Path
 
@@ -120,9 +119,9 @@ def parse_single_recipe(recipe_id: str):
                 parsed = json.load(f)
 
             if parsed:
-                print(f"\n📊 Parsed Recipe Data:")
+                print("\n📊 Parsed Recipe Data:")
                 print(f"   Steps extracted: {len(parsed[0].get('steps', []))}")
-                print(f"\n   First few steps:")
+                print("\n   First few steps:")
                 for i, step in enumerate(parsed[0].get("steps", [])[:5], 1):
                     print(f"   {i}. {step.get('label', 'No label')}")
                     print(f"      Type: {step.get('type', 'unknown')}")
@@ -134,19 +133,19 @@ def parse_single_recipe(recipe_id: str):
                 scheduled = json.load(f)
 
             if scheduled:
-                print(f"\n📅 Gantt Chart Data:")
+                print("\n📅 Gantt Chart Data:")
                 print(f"   Total time: {scheduled[0].get('total_time_min', '?')} minutes")
                 print(f"   Active time: {scheduled[0].get('active_time_min', '?')} minutes")
-                print(f"\n   Timeline:")
+                print("\n   Timeline:")
                 for step in scheduled[0].get("steps", [])[:10]:
                     start = step.get("start_min", 0)
                     end = step.get("end_min", 0)
                     label = step.get("label", "No label")
                     print(f"   {start:3d}-{end:3d} min: {label}")
 
-        print(f"\n💾 Output files:")
-        print(f"   - data/recipes_parsed.json")
-        print(f"   - data/recipes_with_schedule.json")
+        print("\n💾 Output files:")
+        print("   - data/recipes_parsed.json")
+        print("   - data/recipes_with_schedule.json")
 
         return True
 

@@ -6,7 +6,6 @@ This identifies which recipes are currently being delivered or will be delivered
 
 import json
 import os
-import sys
 from pathlib import Path
 
 import requests
@@ -58,7 +57,7 @@ def fetch_upcoming_recipes_from_page():
 
 def fetch_recent_menu_collections():
     """Fetch recipes from recent weekly menu collections"""
-    print(f"\n🔍 Fetching recent menu collections from API")
+    print("\n🔍 Fetching recent menu collections from API")
     print("=" * 80)
 
     try:
@@ -150,14 +149,14 @@ def main():
     # Combine both methods
     all_upcoming_urls = set(page_urls + menu_urls)
 
-    print(f"\n📊 Summary:")
+    print("\n📊 Summary:")
     print("=" * 80)
     print(f"Recipes from cooking instructions page: {len(page_urls)}")
     print(f"Recipes from recent menu collections: {len(menu_urls)}")
     print(f"Total unique upcoming recipes: {len(all_upcoming_urls)}")
 
     # Match to scraped data
-    print(f"\n🔎 Matching to scraped recipes...")
+    print("\n🔎 Matching to scraped recipes...")
     print("=" * 80)
 
     upcoming_recipes = match_recipes_to_scraped_data(all_upcoming_urls)
@@ -190,7 +189,7 @@ def main():
         print(f"      ID: {recipe_id}")
         print()
 
-    print(f"\n💡 Next steps:")
+    print("\n💡 Next steps:")
     print("   1. Review the upcoming recipes above")
     print("   2. Run: pixi run python parse_upcoming_recipes.py")
     print("      (This will parse only the upcoming recipes with LLM)")

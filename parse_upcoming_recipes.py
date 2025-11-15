@@ -46,10 +46,10 @@ def main():
         print(f"{i:3d}. {status} {title}")
 
     print()
-    print(f"⚙️  This will:")
+    print("⚙️  This will:")
     print(f"   1. Parse {len(upcoming_recipes)} recipes with LLM (Gemini)")
-    print(f"   2. Generate Gantt chart timelines")
-    print(f"   3. Save to data/recipes_parsed.json and data/recipes_with_schedule.json")
+    print("   2. Generate Gantt chart timelines")
+    print("   3. Save to data/recipes_parsed.json and data/recipes_with_schedule.json")
     print()
 
     # Confirm
@@ -72,16 +72,16 @@ def main():
     # Backup raw_recipes.json
     if raw_file.exists():
         shutil.copy(raw_file, backup_raw)
-        print(f"   ✓ Backed up raw_recipes.json")
+        print("   ✓ Backed up raw_recipes.json")
 
     # Backup existing parsed files if they exist
     if parsed_file.exists():
         shutil.copy(parsed_file, backup_parsed)
-        print(f"   ✓ Backed up recipes_parsed.json")
+        print("   ✓ Backed up recipes_parsed.json")
 
     if scheduled_file.exists():
         shutil.copy(scheduled_file, backup_scheduled)
-        print(f"   ✓ Backed up recipes_with_schedule.json")
+        print("   ✓ Backed up recipes_with_schedule.json")
 
     try:
         # Write upcoming recipes as temporary raw_recipes.json
@@ -113,7 +113,7 @@ def main():
                 parsed = json.load(f)
 
             total_steps = sum(len(r.get("steps", [])) for r in parsed)
-            print(f"\n📊 Results:")
+            print("\n📊 Results:")
             print(f"   Recipes parsed: {len(parsed)}")
             print(f"   Total steps extracted: {total_steps}")
             print(f"   Average steps per recipe: {total_steps / len(parsed):.1f}")
@@ -125,24 +125,24 @@ def main():
             total_time = sum(r.get("total_time_min", 0) for r in scheduled)
             avg_time = total_time / len(scheduled) if scheduled else 0
 
-            print(f"\n📅 Timing:")
+            print("\n📅 Timing:")
             print(f"   Average cook time: {avg_time:.1f} minutes")
 
-        print(f"\n💾 Output files:")
-        print(f"   - data/recipes_parsed.json")
-        print(f"   - data/recipes_with_schedule.json")
+        print("\n💾 Output files:")
+        print("   - data/recipes_parsed.json")
+        print("   - data/recipes_with_schedule.json")
         print()
-        print(f"💡 Next steps:")
-        print(f"   1. Review the parsed recipes in data/recipes_parsed.json")
-        print(f"   2. Build the site: pixi run build-site")
-        print(f"   3. Test locally: pixi run dev-site")
+        print("💡 Next steps:")
+        print("   1. Review the parsed recipes in data/recipes_parsed.json")
+        print("   2. Build the site: pixi run build-site")
+        print("   3. Test locally: pixi run dev-site")
 
     finally:
         # Restore original raw_recipes.json
         if backup_raw.exists():
             shutil.copy(backup_raw, raw_file)
             backup_raw.unlink()
-            print(f"\n🔄 Restored original raw_recipes.json")
+            print("\n🔄 Restored original raw_recipes.json")
 
     return 0
 
