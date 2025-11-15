@@ -1,6 +1,7 @@
 {
   "total_recipes": 237,
-  "last_updated": "2025-11-15 12:45:47",
+  "failed_recipes": 0,
+  "last_updated": "2025-11-15 17:11:50",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -1661,5 +1662,6 @@
       "scraped": true,
       "week_label": null
     }
-  ]
+  ],
+  "failed_urls": []
 }
