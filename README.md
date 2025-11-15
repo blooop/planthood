@@ -1,17 +1,23 @@
-# planthood
-A template repo for python projects that is set up using [pixi](https://pixi.sh). 
+# Planthood Recipe Site Generator
 
-This has basic setup for
+An automated static website generator for Planthood recipes with interactive Gantt chart visualizations. This project scrapes recipes weekly, parses them using LLM into structured dependency-aware steps, and generates a beautiful static site hosted on GitHub Pages.
 
-* pylint
-* ruff (formatting and linting)
-* pytest
-* git-lfs
-* basic github actions ci
-* pulling updates from this template
-* codecov
-* pypi upload
-* dependabot
+## Features
+
+### Recipe Site Generator
+* **Interactive Gantt Charts**: Visual cooking timelines showing dependencies and parallel tasks
+* **LLM-Powered Parsing**: Converts free-form recipe text into structured, timed steps
+* **Fully Static**: Pure HTML/CSS/JS output, no runtime server required
+* **Automated Weekly Updates**: GitHub Actions scrapes and rebuilds weekly
+* **Provider-Agnostic**: Supports OpenAI, Anthropic Claude, Google Gemini
+* **Smart Caching**: Avoids re-parsing unchanged recipes
+
+### Development Tools
+* Python development with [pixi](https://pixi.sh)
+* pylint & ruff (formatting and linting)
+* pytest for testing
+* GitHub Actions CI/CD
+* Automated deployments to GitHub Pages
 
 ## Continuous Integration Status
 
@@ -24,8 +30,75 @@ This has basic setup for
 [![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)](https://www.python.org/downloads/)
 [![Pixi Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/prefix-dev/pixi/main/assets/badge/v0.json)](https://pixi.sh)
 
+## Quick Start
 
-# Install
+### For GitHub Pages Deployment
+
+See **[GITHUB_PAGES_SETUP.md](./GITHUB_PAGES_SETUP.md)** for complete GitHub Pages setup instructions.
+
+Quick steps:
+1. Configure GitHub Secrets (LLM API key)
+2. Enable GitHub Pages with source: GitHub Actions
+3. Push to main or manually trigger the workflow
+
+Your site will be live at: **https://blooop.github.io/planthood/**
+
+### For Local Development
+
+```bash
+# Install dependencies
+pixi install
+
+# Set up environment
+cp .env.example .env
+# Edit .env and add your LLM API key
+
+# Run the pipeline
+pixi run scrape      # Scrape recipes from planthood.co.uk
+pixi run parse       # Parse with LLM into structured steps
+pixi run schedule    # Compute Gantt timelines
+pixi run dev-site    # Start development server
+
+# Or run all data steps at once
+pixi run build-data
+```
+
+## Documentation
+
+- **[GITHUB_PAGES_SETUP.md](./GITHUB_PAGES_SETUP.md)** - Complete GitHub Pages deployment guide
+- **[PLANTHOOD_SITE_README.md](./PLANTHOOD_SITE_README.md)** - Detailed site generator documentation
+- **[SETUP.md](./SETUP.md)** - Development setup instructions
+- **[DEPLOYMENT.md](./DEPLOYMENT.md)** - Advanced deployment options
+
+## Architecture
+
+```
+┌─────────────┐
+│   Scraper   │  Fetches recipes from planthood.co.uk
+└──────┬──────┘
+       │ raw_recipes.json
+       ▼
+┌─────────────┐
+│   Parser    │  LLM converts method text → structured steps
+└──────┬──────┘
+       │ recipes_parsed.json
+       ▼
+┌─────────────┐
+│  Scheduler  │  Computes Gantt timelines from dependencies
+└──────┬──────┘
+       │ recipes_with_schedule.json
+       ▼
+┌─────────────┐
+│  Next.js    │  Generates static site with Gantt charts
+└──────┬──────┘
+       │ out/
+       ▼
+┌─────────────┐
+│GitHub Pages │  Hosts static site
+└─────────────┘
+```
+
+# Install (Legacy/Template Info)
 
 There are two methods of using this project.  
 
@@ -36,24 +109,59 @@ If you want to use docker you may want to run the `scripts/setup_host.sh` script
 
 If you are using pixi, look at the available tasks in pyproject.toml  If you are new to pixi follow the instructions on the pixi [website](https://prefix.dev/)
 
-# Github setup
+# GitHub Setup
 
-There are github workflows for CI, codecov and automated pypi publishing in `ci.yml` and `publish.yml`.
+## Planthood Site Workflow
 
-ci.yml uses pixi tasks to set up the environment matrix and run the various CI tasks. To set up codecov on github, you need to get a `CODECOV_TOKEN` and add it to your actions secrets.
+The main workflow is `build-and-deploy.yml` which:
+- Scrapes recipes from planthood.co.uk weekly
+- Parses them using LLM (OpenAI/Anthropic/Gemini)
+- Generates Gantt chart timelines
+- Builds and deploys the static site to GitHub Pages
 
-publish.yml uses [pypy-auto-publish](https://github.com/marketplace/actions/python-auto-release-pypi-github) to automatically publish to pypi if the package version number changes. You need to add a `PYPI_API_TOKEN` to your github secrets to enable this.     
+**See [GITHUB_PAGES_SETUP.md](./GITHUB_PAGES_SETUP.md) for complete setup instructions.**
+
+## Legacy CI Workflows
+
+There are also github workflows for CI, codecov and automated pypi publishing in `ci.yml` and `publish.yml`.
+
+- `ci.yml` uses pixi tasks to set up the environment matrix and run the various CI tasks. To set up codecov on github, you need to get a `CODECOV_TOKEN` and add it to your actions secrets.
+- `publish.yml` uses [pypy-auto-publish](https://github.com/marketplace/actions/python-auto-release-pypi-github) to automatically publish to pypi if the package version number changes. You need to add a `PYPI_API_TOKEN` to your github secrets to enable this.     
 
 
 # Usage
 
-There are currently two ways of running code.  The preferred way is to use pixi to manage your environment and dependencies. 
+## Planthood Site Generator Tasks
+
+Use pixi to run the site generator pipeline:
+
+```bash
+# Run individual steps
+pixi run scrape      # Scrape recipes from planthood.co.uk
+pixi run parse       # Parse recipes with LLM
+pixi run schedule    # Compute Gantt timelines
+pixi run dev-site    # Start development server
+
+# Run complete pipeline
+pixi run build-data       # Scrape + parse + schedule
+pixi run build-planthood  # Complete build (data + site)
+
+# Setup and build
+pixi run setup-site  # Install Node.js dependencies
+pixi run build-site  # Build static site for production
+```
+
+## Development Tasks
+
+The preferred way is to use pixi to manage your environment and dependencies:
 
 ```bash
 cd project
 
-$pixi run ci
-pixi run arbitrary_task
+pixi run ci          # Run CI tasks (format, lint, test)
+pixi run format      # Format code with ruff
+pixi run lint        # Lint code
+pixi run test        # Run tests
 ```
 
 If you have dependencies or configuration that cannot be managed by pixi, you can use alternative tools:

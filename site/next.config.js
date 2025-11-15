@@ -4,8 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // For GitHub Pages: set basePath to your repo name if not using custom domain
-  // basePath: '/planthood-recipe-site',
+  // For GitHub Pages: basePath set to repo name (blooop.github.io/planthood)
+  // Comment out if using custom domain
+  basePath: '/planthood',
   trailingSlash: true,
 }
 
