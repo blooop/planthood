@@ -1,23 +1,34 @@
 [
   {
-    "id": "weekend-box",
-    "title": "Meal Kit Box",
-    "source_url": "https://planthood.co.uk/products/weekend-box",
-    "week_label": null,
-    "category": null,
-    "ingredients": [],
-    "nutrition": {},
-    "steps": [],
-    "total_time_min": 0,
-    "active_time_min": 0
-  },
-  {
-    "id": "turmeric-lemongrass-broth",
+    "id": "thai-noodle-salad",
     "title": "Thai Noodle Salad with Broccolini, Spicy Cashews, Pickles, Coriander & Satay Sauce",
     "source_url": "https://planthood.co.uk/products/turmeric-lemongrass-broth",
-    "week_label": null,
-    "category": null,
-    "ingredients": [],
+    "week_label": "Week 45 2024",
+    "category": "Nourish",
+    "ingredients": [
+      "200g vermicelli rice noodles",
+      "300g tenderstem broccoli",
+      "100g cashews",
+      "2 tsp paprika",
+      "1 tsp garlic powder",
+      "1 tsp onion powder",
+      "2 tbsp sesame seeds",
+      "1 tsp ground ginger",
+      "1 tsp turmeric",
+      "2 tbsp maple syrup",
+      "3 tbsp peanut butter",
+      "2 limes",
+      "3 tbsp soy sauce",
+      "200ml water",
+      "2cm fresh ginger",
+      "1 tbsp sesame oil",
+      "Fresh coriander bunch",
+      "1 large carrot",
+      "100g daikon radish",
+      "3 tbsp rice vinegar",
+      "1 tbsp raw cane sugar",
+      "Salt to taste"
+    ],
     "nutrition": {
       "calories": 638.0,
       "protein_g": 28.5,
@@ -26,8 +37,562 @@
       "fibre_g": 34.7,
       "salt_g": 0.25
     },
-    "steps": [],
-    "total_time_min": 0,
-    "active_time_min": 0
+    "steps": [
+      {
+        "id": "step-2",
+        "raw_text": "Bring a large pot of water to boil for the noodles. Once boiling, add the vermicelli noodles and cook for 3-4 minutes until tender but still with a slight bite. Drain and rinse under cold water, then set aside.",
+        "label": "Boil water and cook noodles",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3"
+        ],
+        "equipment": [
+          "large pot",
+          "colander"
+        ],
+        "temperature_c": 100,
+        "notes": "Water takes 5-7 minutes to boil, noodles cook for 3-4 minutes"
+      },
+      {
+        "id": "step-3",
+        "raw_text": "While the noodles cook, heat a large frying pan or wok over high heat. Once very hot, add the broccolini (no oil needed) and char for 5-6 minutes, turning occasionally until nicely blackened in spots. Remove from heat and set aside.",
+        "label": "Char broccolini",
+        "type": "cook",
+        "duration_min": 8,
+        "start_min": 0,
+        "end_min": 8,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "frying pan",
+          "wok"
+        ],
+        "temperature_c": null,
+        "notes": "Can be done while noodles are cooking. High heat is essential for charring."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "To make the satay sauce, combine peanut butter, soy sauce, water, juice of 1 lime, grated fresh ginger, sesame oil, maple syrup, and sesame seeds in a bowl. Whisk until smooth and creamy, adding more water if needed to reach desired consistency.",
+        "label": "Make satay sauce",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "bowl",
+          "whisk",
+          "grater"
+        ],
+        "temperature_c": null,
+        "notes": "Can be prepared at any point while other components cook"
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Start by preparing the pickles - thinly slice the carrot and daikon using a peeler or mandoline into ribbons. Place in a bowl with rice vinegar, sugar, and a pinch of salt, mixing well and setting aside to pickle while you cook.",
+        "label": "Prepare pickled vegetables",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "peeler",
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Can be prepared first and left to pickle while other steps are completed"
+      },
+      {
+        "id": "step-4",
+        "raw_text": "In a small pan over medium heat, toast the cashews for 2-3 minutes until fragrant. Add paprika, garlic powder, onion powder, and a pinch of salt, tossing to coat. Cook for another minute, then remove from heat.",
+        "label": "Toast and season cashews",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 8,
+        "end_min": 13,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "small pan"
+        ],
+        "temperature_c": null,
+        "notes": "Use the same pan as the broccolini after it's done. Watch carefully to avoid burning."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Assemble the salad by placing noodles in a large serving bowl. Top with charred broccolini, pickled vegetables (drained), spicy cashews, and torn coriander leaves. Drizzle generously with satay sauce and serve with lime wedges on the side.",
+        "label": "Assemble and serve",
+        "type": "finish",
+        "duration_min": 5,
+        "start_min": 13,
+        "end_min": 18,
+        "requires": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Final assembly once all components are ready"
+      }
+    ],
+    "total_time_min": 18,
+    "active_time_min": 20
+  },
+  {
+    "id": "roasted-vegetable-curry",
+    "title": "Roasted Vegetable Curry with Coconut Rice",
+    "source_url": "https://planthood.co.uk/products/roasted-vegetable-curry",
+    "week_label": "Week 45 2024",
+    "category": "Feast",
+    "ingredients": [
+      "1 medium cauliflower, cut into florets",
+      "2 sweet potatoes, cubed",
+      "1 red bell pepper, sliced",
+      "2 tbsp olive oil",
+      "2 tbsp curry powder",
+      "1 can coconut milk (400ml)",
+      "1 can chickpeas, drained",
+      "2 cups basmati rice",
+      "1 can coconut cream (100ml)",
+      "1 onion, diced",
+      "3 cloves garlic, minced",
+      "2cm fresh ginger, grated",
+      "2 tbsp tomato paste",
+      "1 tsp cumin",
+      "1 tsp coriander",
+      "Fresh cilantro for garnish",
+      "Salt and pepper to taste"
+    ],
+    "nutrition": {
+      "calories": 685.0,
+      "protein_g": 18.2,
+      "fat_g": 28.5,
+      "carbs_g": 92.0,
+      "fibre_g": 16.3,
+      "salt_g": 0.45
+    },
+    "steps": [
+      {
+        "id": "step-2",
+        "raw_text": "While the oven heats, prepare your vegetables - cut the cauliflower into bite-sized florets and cube the sweet potatoes into 2cm pieces. Toss them on a large baking tray with olive oil, salt, pepper, and 1 tbsp of curry powder.",
+        "label": "Prep and season vegetables",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board",
+          "baking tray"
+        ],
+        "temperature_c": null,
+        "notes": "Can be done while oven preheats"
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Preheat your oven to 200°C (400°F).",
+        "label": "Preheat oven",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
+        "equipment": [
+          "oven"
+        ],
+        "temperature_c": 200,
+        "notes": "Oven typically takes 10 minutes to reach temperature"
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Once the oven is hot, roast the vegetables for 25-30 minutes, turning halfway through, until golden and tender with crispy edges.",
+        "label": "Roast vegetables",
+        "type": "cook",
+        "duration_min": 28,
+        "start_min": 10,
+        "end_min": 38,
+        "requires": [
+          "step-1",
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-4",
+          "step-5",
+          "step-6"
+        ],
+        "equipment": [
+          "oven",
+          "baking tray"
+        ],
+        "temperature_c": 200,
+        "notes": "Turn vegetables at 15-minute mark. This can be done while rice and sauce are cooking."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "While the vegetables roast, start the rice. Rinse the basmati rice under cold water until the water runs clear. In a medium pot, combine rice with 3 cups of water and the coconut cream. Bring to a boil, then reduce heat to low, cover, and simmer for 15 minutes without lifting the lid.",
+        "label": "Cook coconut rice",
+        "type": "cook",
+        "duration_min": 20,
+        "start_min": 38,
+        "end_min": 58,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-5"
+        ],
+        "equipment": [
+          "medium pot",
+          "lid"
+        ],
+        "temperature_c": 100,
+        "notes": "Start this about 5-10 minutes after vegetables go in the oven. Takes 3-5 minutes to boil, then 15 minutes to simmer."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "For the curry sauce, heat a large pan over medium heat. Add a splash of oil, then sauté the diced onion for 5 minutes until softened. Add minced garlic and grated ginger, cooking for another 2 minutes until fragrant.",
+        "label": "Sauté aromatics for curry",
+        "type": "cook",
+        "duration_min": 7,
+        "start_min": 38,
+        "end_min": 45,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "large pan"
+        ],
+        "temperature_c": null,
+        "notes": "Can start this while vegetables are roasting and rice is cooking"
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Stir in the remaining curry powder, cumin, coriander, and tomato paste to the onion mixture. Cook for 1 minute to toast the spices, then pour in the coconut milk. Bring to a gentle simmer.",
+        "label": "Add spices and coconut milk",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 45,
+        "end_min": 50,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "large pan"
+        ],
+        "temperature_c": null,
+        "notes": "Continue building the curry sauce"
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Add the drained chickpeas to the curry sauce and let simmer for 10 minutes to thicken and develop flavors. Season with salt and pepper to taste.",
+        "label": "Simmer chickpeas in sauce",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 50,
+        "end_min": 60,
+        "requires": [
+          "step-6"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "large pan"
+        ],
+        "temperature_c": null,
+        "notes": "Sauce should thicken during this time"
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Once the vegetables are roasted, add them to the curry sauce and stir gently to coat. Let everything simmer together for 2-3 minutes.",
+        "label": "Combine vegetables with curry",
+        "type": "cook",
+        "duration_min": 3,
+        "start_min": 60,
+        "end_min": 63,
+        "requires": [
+          "step-3",
+          "step-7"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large pan"
+        ],
+        "temperature_c": null,
+        "notes": "Brings all curry components together"
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Fluff the coconut rice with a fork and serve in bowls. Ladle the roasted vegetable curry over the rice and garnish with fresh cilantro. Serve immediately.",
+        "label": "Plate and serve",
+        "type": "finish",
+        "duration_min": 3,
+        "start_min": 63,
+        "end_min": 66,
+        "requires": [
+          "step-4",
+          "step-8"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls",
+          "fork",
+          "ladle"
+        ],
+        "temperature_c": null,
+        "notes": "Final plating and garnish"
+      }
+    ],
+    "total_time_min": 66,
+    "active_time_min": 23
+  },
+  {
+    "id": "mediterranean-quinoa-bowl",
+    "title": "Mediterranean Quinoa Bowl with Roasted Chickpeas and Tahini Dressing",
+    "source_url": "https://planthood.co.uk/products/mediterranean-bowl",
+    "week_label": "Week 45 2024",
+    "category": "Nourish",
+    "ingredients": [
+      "1 cup quinoa",
+      "2 cups vegetable stock",
+      "1 can chickpeas, drained",
+      "2 tsp smoked paprika",
+      "1 tsp cumin",
+      "200g cherry tomatoes, halved",
+      "1 cucumber, diced",
+      "100g kalamata olives, pitted",
+      "1 red onion, thinly sliced",
+      "100g baby spinach",
+      "3 tbsp tahini",
+      "2 lemons",
+      "2 cloves garlic, minced",
+      "3 tbsp olive oil",
+      "Fresh parsley, chopped",
+      "Salt and pepper to taste"
+    ],
+    "nutrition": {
+      "calories": 520.0,
+      "protein_g": 22.0,
+      "fat_g": 24.5,
+      "carbs_g": 58.0,
+      "fibre_g": 14.5,
+      "salt_g": 0.85
+    },
+    "steps": [
+      {
+        "id": "step-6",
+        "raw_text": "While the chickpeas roast, prepare the vegetables. Halve the cherry tomatoes, dice the cucumber, thinly slice the red onion, and chop the parsley.",
+        "label": "Prep fresh vegetables",
+        "type": "prep",
+        "duration_min": 8,
+        "start_min": 0,
+        "end_min": 8,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-5"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Can be done while quinoa and chickpeas are cooking"
+      },
+      {
+        "id": "step-4",
+        "raw_text": "While the quinoa cooks, prepare the roasted chickpeas. Pat the drained chickpeas completely dry with a kitchen towel. Toss them on a baking tray with 1 tbsp olive oil, smoked paprika, cumin, salt, and pepper.",
+        "label": "Prep chickpeas for roasting",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3"
+        ],
+        "equipment": [
+          "kitchen towel",
+          "baking tray"
+        ],
+        "temperature_c": null,
+        "notes": "Drying chickpeas thoroughly is important for crispiness"
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Rinse the quinoa thoroughly under cold water in a fine mesh sieve.",
+        "label": "Rinse quinoa",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "sieve"
+        ],
+        "temperature_c": null,
+        "notes": "Rinsing removes bitter coating from quinoa"
+      },
+      {
+        "id": "step-7",
+        "raw_text": "For the tahini dressing, combine tahini, juice of 2 lemons, minced garlic, 2 tbsp olive oil, and 3-4 tbsp water in a small bowl. Whisk until smooth and pourable, adding more water if needed. Season with salt and pepper.",
+        "label": "Make tahini dressing",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-5",
+          "step-6"
+        ],
+        "equipment": [
+          "small bowl",
+          "whisk"
+        ],
+        "temperature_c": null,
+        "notes": "Can be made while other components are cooking"
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Preheat the oven to 200°C.",
+        "label": "Preheat oven",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
+        "equipment": [
+          "oven"
+        ],
+        "temperature_c": 200,
+        "notes": "Oven needs to preheat for roasting chickpeas"
+      },
+      {
+        "id": "step-3",
+        "raw_text": "In a medium saucepan, bring the vegetable stock to a boil. Add the rinsed quinoa, reduce heat to low, cover, and simmer for 15 minutes until all liquid is absorbed. Remove from heat and let stand covered for 5 minutes, then fluff with a fork.",
+        "label": "Cook quinoa",
+        "type": "cook",
+        "duration_min": 25,
+        "start_min": 2,
+        "end_min": 27,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-1",
+          "step-4"
+        ],
+        "equipment": [
+          "medium saucepan",
+          "lid"
+        ],
+        "temperature_c": 100,
+        "notes": "15 minutes cooking plus 5 minutes resting, plus 5 minutes to boil"
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Roast the chickpeas in the preheated oven for 20-25 minutes, shaking the tray halfway through, until golden and crispy.",
+        "label": "Roast chickpeas",
+        "type": "cook",
+        "duration_min": 23,
+        "start_min": 10,
+        "end_min": 33,
+        "requires": [
+          "step-1",
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [
+          "oven",
+          "baking tray"
+        ],
+        "temperature_c": 200,
+        "notes": "Shake tray at 10-12 minute mark. Can be done while quinoa cooks."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "To assemble, divide the cooked quinoa among serving bowls. Top with baby spinach, cherry tomatoes, cucumber, red onion, olives, and crispy roasted chickpeas. Drizzle generously with tahini dressing and garnish with fresh parsley. Serve immediately.",
+        "label": "Assemble bowls and serve",
+        "type": "finish",
+        "duration_min": 5,
+        "start_min": 33,
+        "end_min": 38,
+        "requires": [
+          "step-3",
+          "step-5",
+          "step-6",
+          "step-7"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Final assembly once all components are ready"
+      }
+    ],
+    "total_time_min": 38,
+    "active_time_min": 35
   }
 ]
