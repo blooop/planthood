@@ -9,7 +9,7 @@ interface RecipePageProps {
 }
 
 // Generate static paths for all recipes
-export function generateStaticParams() {
+export async function generateStaticParams() {
   const recipes = getRecipes();
   return recipes.map(recipe => ({
     id: recipe.id,

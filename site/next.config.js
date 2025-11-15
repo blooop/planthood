@@ -8,6 +8,13 @@ const nextConfig = {
   // Comment out if using custom domain
   basePath: '/planthood',
   trailingSlash: true,
+  // Skip validation during build to allow empty generateStaticParams
+  typescript: {
+    ignoreBuildErrors: false,
+  },
+  eslint: {
+    ignoreDuringBuilds: false,
+  },
 }
 
 module.exports = nextConfig
