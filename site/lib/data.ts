@@ -14,6 +14,7 @@ function loadRecipes(): Recipe[] {
 
   // Try multiple possible paths for the data file
   const possiblePaths = [
+    path.join(process.cwd(), 'public', 'data', 'recipes_with_schedule.json'),
     path.join(process.cwd(), '..', 'data', 'recipes_with_schedule.json'),
     path.join(process.cwd(), 'data', 'recipes_with_schedule.json'),
     path.join(__dirname, '..', '..', '..', 'data', 'recipes_with_schedule.json'),

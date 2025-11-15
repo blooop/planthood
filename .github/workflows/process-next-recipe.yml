@@ -73,6 +73,11 @@ jobs:
           python process_next_recipe.py
         continue-on-error: false  # Stop if processing fails
 
+      - name: Copy recipe data to site public folder
+        run: |
+          mkdir -p site/public/data
+          cp data/recipes_with_schedule.json site/public/data/
+
       - name: Build Next.js site
         timeout-minutes: 10  # Next.js builds should complete within this time
         working-directory: site
