@@ -121,8 +121,15 @@
       "timestamp": "2025-11-15T17:22:24.690866",
       "error": "No steps extracted",
       "steps_extracted": 0
+    },
+    "sticky-black-pepper-tofu": {
+      "processed": true,
+      "timestamp": "2025-11-15T18:20:55.974833",
+      "steps_extracted": 29,
+      "total_time_min": 25.0,
+      "error": null
     }
   },
-  "last_updated": "2025-11-15T17:22:24.690903",
-  "total_processed": 16
+  "last_updated": "2025-11-15T18:20:55.974854",
+  "total_processed": 19
 }
