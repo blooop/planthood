@@ -1,0 +1,20 @@
+{
+  "recipes": {
+    "tandoori-tofu-with-pickled-red-cabbage-minted-oat-yoghurt-fresh-spinach-wrapped-in-soft-naan": {
+      "processed": true,
+      "timestamp": "2025-11-15T13:03:34.342055",
+      "steps_extracted": 10,
+      "total_time_min": 48,
+      "error": null
+    },
+    "creamy-kimchi-macaroni-with-roasted-broccoli-garlic-panko-breadcrumbs": {
+      "processed": true,
+      "timestamp": "2025-11-15T13:04:17.176384",
+      "steps_extracted": 17,
+      "total_time_min": 27.5,
+      "error": null
+    }
+  },
+  "last_updated": "2025-11-15T13:04:17.176415",
+  "total_processed": 2
+}

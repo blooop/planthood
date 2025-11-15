@@ -16,33 +16,25 @@
     },
     "steps": [
       {
-        "id": "step-7",
-        "raw_text": "Mix yoghurt, garlic, and lemon",
-        "label": "Mix yoghurt, garlic, and lemon",
+        "id": "step-1",
+        "raw_text": "Preheat oven to 200°C",
+        "label": "Preheat oven to 200°C",
         "type": "prep",
-        "duration_min": 2,
-        "start_min": 0,
-        "end_min": 2,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [
-          "step-3",
-          "step-6"
-        ],
+        "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "spoon"
+          "oven"
         ],
-        "temperature_c": null,
-        "notes": "Inferred for the garlic yoghurt topping. Ingredients include: soy yoghurt, lemon, garlic."
+        "temperature_c": 200,
+        "notes": "Inferred for roasting aubergine. Assuming a quick preheat to fit total time."
       },
       {
         "id": "step-2",
         "raw_text": "Slice aubergine",
         "label": "Slice aubergine",
         "type": "prep",
-        "duration_min": 2,
-        "start_min": 0,
-        "end_min": 2,
+        "estimated_duration_minutes": 2,
         "requires": [],
         "can_overlap_with": [
           "step-1"
@@ -55,90 +47,11 @@
         "notes": "Inferred from 'Crispy roasted aubergine'. The stated 'Prep time 1' is very short for all prep, so this is an estimate."
       },
       {
-        "id": "step-9",
-        "raw_text": "Heat flatbreads",
-        "label": "Heat flatbreads",
-        "type": "cook",
-        "duration_min": 2,
-        "start_min": 0,
-        "end_min": 2,
-        "requires": [],
-        "can_overlap_with": [
-          "step-3",
-          "step-6"
-        ],
-        "equipment": [
-          "oven",
-          "frying pan"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred for serving with flatbreads. Best done towards the end of cooking."
-      },
-      {
-        "id": "step-1",
-        "raw_text": "Preheat oven to 200°C",
-        "label": "Preheat oven to 200°C",
-        "type": "prep",
-        "duration_min": 5,
-        "start_min": 0,
-        "end_min": 5,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [
-          "oven"
-        ],
-        "temperature_c": 200,
-        "notes": "Inferred for roasting aubergine. Assuming a quick preheat to fit total time."
-      },
-      {
-        "id": "step-4",
-        "raw_text": "Chop onion and garlic, measure spices",
-        "label": "Chop onion and garlic, measure spices",
-        "type": "prep",
-        "duration_min": 3,
-        "start_min": 0,
-        "end_min": 3,
-        "requires": [],
-        "can_overlap_with": [
-          "step-3"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board",
-          "measuring spoons"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred for the lentil sauce base. Can be done while aubergine roasts."
-      },
-      {
-        "id": "step-8",
-        "raw_text": "Chop fresh mint",
-        "label": "Chop fresh mint",
-        "type": "prep",
-        "duration_min": 1,
-        "start_min": 0,
-        "end_min": 1,
-        "requires": [],
-        "can_overlap_with": [
-          "step-3",
-          "step-6",
-          "step-7"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred for the fresh mint topping."
-      },
-      {
         "id": "step-3",
         "raw_text": "Roast aubergine until crispy",
         "label": "Roast aubergine until crispy",
         "type": "cook",
-        "duration_min": 15,
-        "start_min": 5,
-        "end_min": 20,
+        "estimated_duration_minutes": 15,
         "requires": [
           "step-1",
           "step-2"
@@ -152,13 +65,29 @@
         "notes": "Adjusted duration to fit the stated 'Total time 20' minutes. This is the main cooking step."
       },
       {
+        "id": "step-4",
+        "raw_text": "Chop onion and garlic, measure spices",
+        "label": "Chop onion and garlic, measure spices",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board",
+          "measuring spoons"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred for the lentil sauce base. Can be done while aubergine roasts."
+      },
+      {
         "id": "step-5",
         "raw_text": "Sauté onion, garlic, and spices",
         "label": "Sauté onion, garlic, and spices",
         "type": "cook",
-        "duration_min": 3,
-        "start_min": 3,
-        "end_min": 6,
+        "estimated_duration_minutes": 3,
         "requires": [
           "step-4"
         ],
@@ -176,9 +105,7 @@
         "raw_text": "Add lentils, tomato, and sauce ingredients; simmer",
         "label": "Add lentils, tomato, and sauce ingredients; simmer",
         "type": "cook",
-        "duration_min": 10,
-        "start_min": 6,
-        "end_min": 16,
+        "estimated_duration_minutes": 10,
         "requires": [
           "step-5"
         ],
@@ -192,13 +119,66 @@
         "notes": "Inferred for the lentil sauce. Assumes quick-cook or canned lentils to fit the total time. Ingredients include: black lentils, tomato, balsamic vinegar, soy sauce, agave nectar, tomato puree, sea salt, paprika, cumin, coriander, fennel, chilli, cinnamon, allspice."
       },
       {
+        "id": "step-7",
+        "raw_text": "Mix yoghurt, garlic, and lemon",
+        "label": "Mix yoghurt, garlic, and lemon",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-6"
+        ],
+        "equipment": [
+          "bowl",
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred for the garlic yoghurt topping. Ingredients include: soy yoghurt, lemon, garlic."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Chop fresh mint",
+        "label": "Chop fresh mint",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred for the fresh mint topping."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Heat flatbreads",
+        "label": "Heat flatbreads",
+        "type": "cook",
+        "estimated_duration_minutes": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-6"
+        ],
+        "equipment": [
+          "oven",
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred for serving with flatbreads. Best done towards the end of cooking."
+      },
+      {
         "id": "step-10",
         "raw_text": "Assemble and serve",
         "label": "Assemble and serve",
         "type": "finish",
-        "duration_min": 1,
-        "start_min": 20,
-        "end_min": 21,
+        "estimated_duration_minutes": 1,
         "requires": [
           "step-3",
           "step-6",
@@ -213,9 +193,7 @@
         "temperature_c": null,
         "notes": "Serve roasted aubergine over lentil sauce, topped with garlic yoghurt and mint, with flatbreads."
       }
-    ],
-    "total_time_min": 21,
-    "active_time_min": 14
+    ]
   },
   {
     "id": "tandoori-tofu-with-pickled-red-cabbage-minted-oat-yoghurt-fresh-spinach-wrapped-in-soft-naan",
@@ -234,13 +212,25 @@
     },
     "steps": [
       {
+        "id": "step-1",
+        "raw_text": "Prepare Tandoori Marinade",
+        "label": "Prepare Tandoori Marinade",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "mixing bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Mix garlic, ginger, lemon juice, and spices (paprika, cumin, cayenne, coriander, turmeric, maple syrup, salt) for the tandoori marinade."
+      },
+      {
         "id": "step-2",
         "raw_text": "Cut Tofu into Bites",
         "label": "Cut Tofu into Bites",
         "type": "prep",
-        "duration_min": 5,
-        "start_min": 0,
-        "end_min": 5,
+        "estimated_duration_minutes": 5,
         "requires": [],
         "can_overlap_with": [
           "step-1"
@@ -253,13 +243,33 @@
         "notes": "Dice or cube tofu into bite-sized pieces."
       },
       {
+        "id": "step-3",
+        "raw_text": "Marinate Tofu",
+        "label": "Marinate Tofu",
+        "type": "prep",
+        "estimated_duration_minutes": 15,
+        "requires": [
+          "step-1",
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [
+          "mixing bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Toss tofu in the prepared tandoori marinade. An estimated 15 minutes is used for marination, though longer is possible."
+      },
+      {
         "id": "step-4",
         "raw_text": "Preheat Oven",
         "label": "Preheat Oven",
         "type": "prep",
-        "duration_min": 10,
-        "start_min": 0,
-        "end_min": 10,
+        "estimated_duration_minutes": 10,
         "requires": [],
         "can_overlap_with": [
           "step-1",
@@ -276,77 +286,11 @@
         "notes": "Preheat oven to 200°C for roasting the tofu."
       },
       {
-        "id": "step-1",
-        "raw_text": "Prepare Tandoori Marinade",
-        "label": "Prepare Tandoori Marinade",
-        "type": "prep",
-        "duration_min": 5,
-        "start_min": 0,
-        "end_min": 5,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [
-          "mixing bowl"
-        ],
-        "temperature_c": null,
-        "notes": "Mix garlic, ginger, lemon juice, and spices (paprika, cumin, cayenne, coriander, turmeric, maple syrup, salt) for the tandoori marinade."
-      },
-      {
-        "id": "step-7",
-        "raw_text": "Wash and Prep Spinach",
-        "label": "Wash and Prep Spinach",
-        "type": "prep",
-        "duration_min": 2,
-        "start_min": 0,
-        "end_min": 2,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-5",
-          "step-6"
-        ],
-        "equipment": [
-          "colander"
-        ],
-        "temperature_c": null,
-        "notes": "Rinse and prepare fresh spinach leaves."
-      },
-      {
-        "id": "step-6",
-        "raw_text": "Prepare Pickled Red Cabbage",
-        "label": "Prepare Pickled Red Cabbage",
-        "type": "prep",
-        "duration_min": 10,
-        "start_min": 0,
-        "end_min": 10,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-5",
-          "step-7"
-        ],
-        "equipment": [
-          "cutting board",
-          "knife",
-          "small bowl"
-        ],
-        "temperature_c": null,
-        "notes": "Thinly slice red onion/cabbage and prepare a quick pickle with red wine vinegar, water, sugar, mustard seeds, fennel seeds, and coriander seeds."
-      },
-      {
         "id": "step-5",
         "raw_text": "Prepare Mint Yoghurt",
         "label": "Prepare Mint Yoghurt",
         "type": "prep",
-        "duration_min": 5,
-        "start_min": 0,
-        "end_min": 5,
+        "estimated_duration_minutes": 5,
         "requires": [],
         "can_overlap_with": [
           "step-1",
@@ -365,37 +309,55 @@
         "notes": "Chop fresh mint and mix with oat yoghurt for the cooling sauce."
       },
       {
-        "id": "step-3",
-        "raw_text": "Marinate Tofu",
-        "label": "Marinate Tofu",
+        "id": "step-6",
+        "raw_text": "Prepare Pickled Red Cabbage",
+        "label": "Prepare Pickled Red Cabbage",
         "type": "prep",
-        "duration_min": 15,
-        "start_min": 5,
-        "end_min": 20,
-        "requires": [
-          "step-1",
-          "step-2"
-        ],
+        "estimated_duration_minutes": 10,
+        "requires": [],
         "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
           "step-4",
           "step-5",
-          "step-6",
           "step-7"
         ],
         "equipment": [
-          "mixing bowl"
+          "cutting board",
+          "knife",
+          "small bowl"
         ],
         "temperature_c": null,
-        "notes": "Toss tofu in the prepared tandoori marinade. An estimated 15 minutes is used for marination, though longer is possible."
+        "notes": "Thinly slice red onion/cabbage and prepare a quick pickle with red wine vinegar, water, sugar, mustard seeds, fennel seeds, and coriander seeds."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Wash and Prep Spinach",
+        "label": "Wash and Prep Spinach",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6"
+        ],
+        "equipment": [
+          "colander"
+        ],
+        "temperature_c": null,
+        "notes": "Rinse and prepare fresh spinach leaves."
       },
       {
         "id": "step-8",
         "raw_text": "Roast Tofu",
         "label": "Roast Tofu",
         "type": "cook",
-        "duration_min": 20,
-        "start_min": 20,
-        "end_min": 40,
+        "estimated_duration_minutes": 20,
         "requires": [
           "step-3",
           "step-4"
@@ -417,9 +379,7 @@
         "raw_text": "Warm Naan",
         "label": "Warm Naan",
         "type": "cook",
-        "duration_min": 3,
-        "start_min": 40,
-        "end_min": 43,
+        "estimated_duration_minutes": 3,
         "requires": [
           "step-8"
         ],
@@ -436,9 +396,7 @@
         "raw_text": "Assemble Wraps",
         "label": "Assemble Wraps",
         "type": "finish",
-        "duration_min": 5,
-        "start_min": 43,
-        "end_min": 48,
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-8",
           "step-9",
@@ -451,9 +409,7 @@
         "temperature_c": null,
         "notes": "Fill warm naan with roasted tandoori tofu, cooling mint yoghurt, tangy pickled red cabbage, and fresh spinach."
       }
-    ],
-    "total_time_min": 48,
-    "active_time_min": 57
+    ]
   },
   {
     "id": "creamy-kimchi-macaroni-with-roasted-broccoli-garlic-panko-breadcrumbs",
@@ -475,9 +431,7 @@
         "raw_text": "General Prep",
         "label": "General Prep",
         "type": "prep",
-        "duration_min": 2,
-        "start_min": 0,
-        "end_min": 2,
+        "estimated_duration_minutes": 2,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [],
@@ -489,9 +443,7 @@
         "raw_text": "Boil Kettle",
         "label": "Boil Kettle",
         "type": "prep",
-        "duration_min": 3,
-        "start_min": 2,
-        "end_min": 5,
+        "estimated_duration_minutes": 3,
         "requires": [
           "step-1"
         ],
@@ -511,9 +463,7 @@
         "raw_text": "Preheat Oven",
         "label": "Preheat Oven",
         "type": "prep",
-        "duration_min": 10,
-        "start_min": 2,
-        "end_min": 12,
+        "estimated_duration_minutes": 10,
         "requires": [
           "step-1"
         ],
@@ -533,9 +483,7 @@
         "raw_text": "Gather Equipment",
         "label": "Gather Equipment",
         "type": "prep",
-        "duration_min": 1,
-        "start_min": 2,
-        "end_min": 3,
+        "estimated_duration_minutes": 1,
         "requires": [
           "step-1"
         ],
@@ -557,9 +505,7 @@
         "raw_text": "Cut Broccoli",
         "label": "Cut Broccoli",
         "type": "prep",
-        "duration_min": 3,
-        "start_min": 2,
-        "end_min": 5,
+        "estimated_duration_minutes": 3,
         "requires": [
           "step-1"
         ],
@@ -576,13 +522,115 @@
         "notes": ""
       },
       {
+        "id": "step-6",
+        "raw_text": "Prepare Broccoli for Roasting",
+        "label": "Prepare Broccoli for Roasting",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-5",
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "roasting tray",
+          "olive oil",
+          "salt",
+          "pepper"
+        ],
+        "temperature_c": null,
+        "notes": "Cut into bite-sized pieces, lay on tray, drizzle with olive oil, season."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Roast Broccoli",
+        "label": "Roast Broccoli",
+        "type": "cook",
+        "estimated_duration_minutes": 12.5,
+        "requires": [
+          "step-3",
+          "step-6"
+        ],
+        "can_overlap_with": [
+          "step-8",
+          "step-10",
+          "step-11",
+          "step-12"
+        ],
+        "equipment": [
+          "oven",
+          "roasting tray"
+        ],
+        "temperature_c": 200,
+        "notes": "Roast for 10-15 mins until golden, tossing once. Using midpoint duration."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Boil Macaroni Pasta",
+        "label": "Boil Macaroni Pasta",
+        "type": "cook",
+        "estimated_duration_minutes": 8,
+        "requires": [
+          "step-2",
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-7",
+          "step-10",
+          "step-11",
+          "step-12"
+        ],
+        "equipment": [
+          "large saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Pour boiling water into saucepan, add macaroni pasta, salt water well. Boil for 8 minutes or until al dente."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Scoop Pasta Water & Drain Macaroni",
+        "label": "Scoop Pasta Water & Drain Macaroni",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-8"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "mug",
+          "colander",
+          "large saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Scoop out a mug of pasta water, then drain and return the pasta to the pan."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Dry Fry Garlic Breadcrumbs",
+        "label": "Dry Fry Garlic Breadcrumbs",
+        "type": "cook",
+        "estimated_duration_minutes": 4,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-7",
+          "step-8",
+          "step-11",
+          "step-12"
+        ],
+        "equipment": [
+          "small frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Place frying pan over medium heat, dry fry (without oil) until lightly toasted."
+      },
+      {
         "id": "step-11",
         "raw_text": "Chop Spring Onion",
         "label": "Chop Spring Onion",
         "type": "prep",
-        "duration_min": 2,
-        "start_min": 2,
-        "end_min": 4,
+        "estimated_duration_minutes": 2,
         "requires": [
           "step-1"
         ],
@@ -604,9 +652,7 @@
         "raw_text": "Chop Kimchi",
         "label": "Chop Kimchi",
         "type": "prep",
-        "duration_min": 2,
-        "start_min": 2,
-        "end_min": 4,
+        "estimated_duration_minutes": 2,
         "requires": [
           "step-1"
         ],
@@ -624,127 +670,11 @@
         "notes": "Chop vegan kimchi into smaller bite-sized pieces. Keep the juices."
       },
       {
-        "id": "step-8",
-        "raw_text": "Boil Macaroni Pasta",
-        "label": "Boil Macaroni Pasta",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 5,
-        "end_min": 13,
-        "requires": [
-          "step-2",
-          "step-4"
-        ],
-        "can_overlap_with": [
-          "step-7",
-          "step-10",
-          "step-11",
-          "step-12"
-        ],
-        "equipment": [
-          "large saucepan"
-        ],
-        "temperature_c": null,
-        "notes": "Pour boiling water into saucepan, add macaroni pasta, salt water well. Boil for 8 minutes or until al dente."
-      },
-      {
-        "id": "step-10",
-        "raw_text": "Dry Fry Garlic Breadcrumbs",
-        "label": "Dry Fry Garlic Breadcrumbs",
-        "type": "cook",
-        "duration_min": 4,
-        "start_min": 3,
-        "end_min": 7,
-        "requires": [
-          "step-4"
-        ],
-        "can_overlap_with": [
-          "step-7",
-          "step-8",
-          "step-11",
-          "step-12"
-        ],
-        "equipment": [
-          "small frying pan"
-        ],
-        "temperature_c": null,
-        "notes": "Place frying pan over medium heat, dry fry (without oil) until lightly toasted."
-      },
-      {
-        "id": "step-6",
-        "raw_text": "Prepare Broccoli for Roasting",
-        "label": "Prepare Broccoli for Roasting",
-        "type": "prep",
-        "duration_min": 2,
-        "start_min": 5,
-        "end_min": 7,
-        "requires": [
-          "step-5",
-          "step-4"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "roasting tray",
-          "olive oil",
-          "salt",
-          "pepper"
-        ],
-        "temperature_c": null,
-        "notes": "Cut into bite-sized pieces, lay on tray, drizzle with olive oil, season."
-      },
-      {
-        "id": "step-9",
-        "raw_text": "Scoop Pasta Water & Drain Macaroni",
-        "label": "Scoop Pasta Water & Drain Macaroni",
-        "type": "finish",
-        "duration_min": 1,
-        "start_min": 13,
-        "end_min": 14,
-        "requires": [
-          "step-8"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "mug",
-          "colander",
-          "large saucepan"
-        ],
-        "temperature_c": null,
-        "notes": "Scoop out a mug of pasta water, then drain and return the pasta to the pan."
-      },
-      {
-        "id": "step-7",
-        "raw_text": "Roast Broccoli",
-        "label": "Roast Broccoli",
-        "type": "cook",
-        "duration_min": 12.5,
-        "start_min": 12,
-        "end_min": 24.5,
-        "requires": [
-          "step-3",
-          "step-6"
-        ],
-        "can_overlap_with": [
-          "step-8",
-          "step-10",
-          "step-11",
-          "step-12"
-        ],
-        "equipment": [
-          "oven",
-          "roasting tray"
-        ],
-        "temperature_c": 200,
-        "notes": "Roast for 10-15 mins until golden, tossing once. Using midpoint duration."
-      },
-      {
         "id": "step-13",
         "raw_text": "Combine Macaroni with Sauce & Kimchi",
         "label": "Combine Macaroni with Sauce & Kimchi",
         "type": "cook",
-        "duration_min": 2,
-        "start_min": 14,
-        "end_min": 16,
+        "estimated_duration_minutes": 2,
         "requires": [
           "step-9",
           "step-11",
@@ -763,9 +693,7 @@
         "raw_text": "Adjust Sauce Consistency",
         "label": "Adjust Sauce Consistency",
         "type": "finish",
-        "duration_min": 1,
-        "start_min": 16,
-        "end_min": 17,
+        "estimated_duration_minutes": 1,
         "requires": [
           "step-13"
         ],
@@ -782,9 +710,7 @@
         "raw_text": "Add Roasted Broccoli to Macaroni",
         "label": "Add Roasted Broccoli to Macaroni",
         "type": "finish",
-        "duration_min": 1,
-        "start_min": 24.5,
-        "end_min": 25.5,
+        "estimated_duration_minutes": 1,
         "requires": [
           "step-7",
           "step-14"
@@ -802,9 +728,7 @@
         "raw_text": "Ladle Macaroni into Bowls",
         "label": "Ladle Macaroni into Bowls",
         "type": "finish",
-        "duration_min": 1,
-        "start_min": 25.5,
-        "end_min": 26.5,
+        "estimated_duration_minutes": 1,
         "requires": [
           "step-15"
         ],
@@ -821,9 +745,7 @@
         "raw_text": "Garnish Macaroni",
         "label": "Garnish Macaroni",
         "type": "finish",
-        "duration_min": 1,
-        "start_min": 26.5,
-        "end_min": 27.5,
+        "estimated_duration_minutes": 1,
         "requires": [
           "step-16",
           "step-10",
@@ -834,8 +756,6 @@
         "temperature_c": null,
         "notes": "Top with the crispy garlic breadcrumbs and the spring onion greens."
       }
-    ],
-    "total_time_min": 27.5,
-    "active_time_min": 30
+    ]
   }
 ]

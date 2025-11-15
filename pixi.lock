@@ -1408,7 +1408,7 @@ packages:
 - pypi: ./
   name: planthood
   version: 0.2.0
-  sha256: 37d7633cee24870064bbd26fff42b35b1ed14aa367360307962b02d1f226096e
+  sha256: 09457bc2b8db0f166dba4abfac80c2f989cf9aa53c87f95dca43bc82c7581dc4
   requires_dist:
   - requests>=2.31.0
   - beautifulsoup4>=4.12.0

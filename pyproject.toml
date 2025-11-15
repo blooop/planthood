@@ -112,6 +112,24 @@ build-site = "cd site && npm run build"
 build-planthood = { depends-on = ["build-data", "build-site"] }
 dev-site = "cd site && npm run dev"
 
+# Incremental recipe processing (for rate-limit-safe scheduled runs)
+find-upcoming = "python find_upcoming_recipes.py"
+process-next-recipe = "python process_next_recipe.py"
+process-and-deploy = { depends-on = ["process-next-recipe", "build-site"] }
+
+# PR preparation
+commit-pr = """git add -A && git commit -m 'feat: add incremental recipe processing and GitHub Pages deployment
+
+- Add automated scraping for 237 Planthood recipes
+- Implement LLM-powered recipe parsing (Gemini/OpenAI/Claude)
+- Generate Gantt chart timelines for recipes
+- Add incremental processing (1 recipe/day to avoid rate limits)
+- Set up GitHub Actions for daily processing and deployment
+- Configure GitHub Pages deployment
+- Process 2 recipes initially (19 remaining)
+
+See PR_SUMMARY.md for details' && git push origin HEAD"""
+
 [tool.pylint]
 extension-pkg-whitelist = ["numpy"]
 jobs = 16                           #detect number of cores

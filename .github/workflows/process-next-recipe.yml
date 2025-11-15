@@ -1,0 +1,102 @@
+name: Process Next Recipe
+
+# Process one recipe at a time to avoid rate limits
+# Runs daily to gradually process all upcoming recipes
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC
+    - cron: '0 2 * * *'
+
+  # Run on push to main (for testing and immediate updates)
+  push:
+    branches:
+      - main
+
+  # Allow manual triggering
+  workflow_dispatch:
+
+# Required permissions
+permissions:
+  contents: write  # To commit processing status back to repo
+  pages: write     # To deploy to GitHub Pages
+  id-token: write  # For Pages deployment
+
+# Allow one concurrent run
+concurrency:
+  group: "process-recipe"
+  cancel-in-progress: false  # Let it finish
+
+jobs:
+  process-and-deploy:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for proper git operations
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: 'requirements.txt'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: 'site/package-lock.json'
+
+      - name: Install Python dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Install Node dependencies
+        working-directory: site
+        run: |
+          npm ci
+
+      - name: Process next recipe
+        env:
+          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER || 'gemini' }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL || 'gemini-2.5-flash' }}
+        run: |
+          python process_next_recipe.py
+        continue-on-error: false  # Stop if processing fails
+
+      - name: Build Next.js site
+        working-directory: site
+        run: |
+          npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './site/out'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Commit updated data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/processing_status.json data/recipes_parsed.json data/recipes_with_schedule.json
+          git diff --quiet && git diff --staged --quiet || \
+            (git commit -m "chore: process next recipe [skip ci]" && git push)
+        continue-on-error: true  # OK if no changes to commit

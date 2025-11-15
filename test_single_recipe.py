@@ -1,0 +1,182 @@
+#!/usr/bin/env python3
+"""
+Test LLM parsing and Gantt chart generation on a single recipe.
+Useful for testing before processing all 237 recipes.
+"""
+
+import json
+import os
+import sys
+from pathlib import Path
+
+# Add project root to path
+project_root = Path(__file__).parent
+sys.path.insert(0, str(project_root))
+
+
+def list_recipes(limit=20):
+    """List available scraped recipes"""
+    data_file = project_root / "data" / "raw_recipes.json"
+
+    if not data_file.exists():
+        print("❌ No scraped recipes found. Run 'pixi run scrape' first.")
+        return []
+
+    with open(data_file, "r") as f:
+        recipes = json.load(f)
+
+    print(f"\n📚 Found {len(recipes)} scraped recipes")
+    print(f"\nShowing first {min(limit, len(recipes))} recipes:")
+    print("=" * 80)
+
+    for i, recipe in enumerate(recipes[:limit], 1):
+        title = recipe.get("title", "Untitled")
+        recipe_id = recipe.get("id", "unknown")
+        has_method = len(recipe.get("method", "")) > 0
+        method_len = len(recipe.get("method", ""))
+        status = "✅" if has_method else "❌"
+
+        print(f"{i:3d}. {status} {title}")
+        print(f"      ID: {recipe_id}")
+        print(f"      Method text: {method_len} chars")
+        print()
+
+    return recipes
+
+
+def parse_single_recipe(recipe_id: str):
+    """Parse a single recipe using LLM and generate Gantt chart data"""
+    print(f"\n🔄 Processing recipe: {recipe_id}")
+    print("=" * 80)
+
+    # Load raw recipes
+    data_file = project_root / "data" / "raw_recipes.json"
+    with open(data_file, "r") as f:
+        recipes = json.load(f)
+
+    # Find the recipe
+    recipe = None
+    for r in recipes:
+        if r["id"] == recipe_id:
+            recipe = r
+            break
+
+    if not recipe:
+        print(f"❌ Recipe '{recipe_id}' not found")
+        return False
+
+    print(f"✅ Found recipe: {recipe.get('title', 'Untitled')}")
+    print(f"   Method length: {len(recipe.get('method', ''))} chars")
+
+    if not recipe.get("method"):
+        print("❌ Recipe has no method text to parse")
+        return False
+
+    # Step 1: Parse with LLM
+    print("\n📝 Step 1: Parsing with LLM (Gemini)...")
+    print("-" * 80)
+
+    from parser.parse import main as parser_main
+
+    # Create a temporary file with just this recipe
+    temp_raw = project_root / "data" / "temp_raw_recipes.json"
+    with open(temp_raw, "w") as f:
+        json.dump([recipe], f, indent=2)
+
+    # Run parser (it will read from raw_recipes.json)
+    # We need to temporarily replace raw_recipes.json
+    backup_file = project_root / "data" / "raw_recipes.backup.json"
+    raw_file = project_root / "data" / "raw_recipes.json"
+
+    # Backup original
+    import shutil
+
+    shutil.copy(raw_file, backup_file)
+
+    try:
+        # Replace with single recipe
+        shutil.copy(temp_raw, raw_file)
+
+        # Run parser
+        parser_main()
+
+        # Step 2: Run scheduler
+        print("\n📅 Step 2: Generating Gantt chart timeline...")
+        print("-" * 80)
+
+        from scheduler.schedule import main as scheduler_main
+
+        scheduler_main()
+
+        # Load and display results
+        print("\n✅ Processing complete!")
+        print("=" * 80)
+
+        parsed_file = project_root / "data" / "recipes_parsed.json"
+        scheduled_file = project_root / "data" / "recipes_with_schedule.json"
+
+        if parsed_file.exists():
+            with open(parsed_file, "r") as f:
+                parsed = json.load(f)
+
+            if parsed:
+                print(f"\n📊 Parsed Recipe Data:")
+                print(f"   Steps extracted: {len(parsed[0].get('steps', []))}")
+                print(f"\n   First few steps:")
+                for i, step in enumerate(parsed[0].get("steps", [])[:5], 1):
+                    print(f"   {i}. {step.get('label', 'No label')}")
+                    print(f"      Type: {step.get('type', 'unknown')}")
+                    print(f"      Duration: {step.get('estimated_duration_minutes', '?')} min")
+                    print()
+
+        if scheduled_file.exists():
+            with open(scheduled_file, "r") as f:
+                scheduled = json.load(f)
+
+            if scheduled:
+                print(f"\n📅 Gantt Chart Data:")
+                print(f"   Total time: {scheduled[0].get('total_time_min', '?')} minutes")
+                print(f"   Active time: {scheduled[0].get('active_time_min', '?')} minutes")
+                print(f"\n   Timeline:")
+                for step in scheduled[0].get("steps", [])[:10]:
+                    start = step.get("start_min", 0)
+                    end = step.get("end_min", 0)
+                    label = step.get("label", "No label")
+                    print(f"   {start:3d}-{end:3d} min: {label}")
+
+        print(f"\n💾 Output files:")
+        print(f"   - data/recipes_parsed.json")
+        print(f"   - data/recipes_with_schedule.json")
+
+        return True
+
+    finally:
+        # Restore original raw_recipes.json
+        shutil.copy(backup_file, raw_file)
+        backup_file.unlink()
+        temp_raw.unlink()
+
+
+def main():
+    """Main entry point"""
+    if len(sys.argv) > 1:
+        # Recipe ID provided as argument
+        recipe_id = sys.argv[1]
+        parse_single_recipe(recipe_id)
+    else:
+        # Interactive mode
+        recipes = list_recipes(limit=30)
+
+        if not recipes:
+            return
+
+        print("\n💡 Usage:")
+        print(f"   python {sys.argv[0]} <recipe-id>")
+        print("\nExample:")
+        print(f"   python {sys.argv[0]} {recipes[0]['id']}")
+        print("\nOr use pixi:")
+        print(f"   pixi run python {sys.argv[0]} {recipes[0]['id']}")
+
+
+if __name__ == "__main__":
+    main()
