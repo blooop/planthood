@@ -97,7 +97,7 @@ class PlanthoodScraper:
             # Look for product handles in JavaScript objects
             # Common patterns: {"handle":"product-name"} or /products/product-name
             product_handles = re.findall(r'["\']handle["\']\s*:\s*["\']([^"\']+)["\']', script_text)
-            product_urls_in_js = re.findall(r'/products/([a-z0-9\-]+)', script_text)
+            product_urls_in_js = re.findall(r"/products/([a-z0-9\-]+)", script_text)
 
             for handle in product_handles:
                 if handle and handle not in ["monday-deliveries", "thursday-deliveries"]:
