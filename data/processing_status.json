@@ -1,0 +1,48 @@
+{
+  "recipes": {
+    "tandoori-tofu-with-pickled-red-cabbage-minted-oat-yoghurt-fresh-spinach-wrapped-in-soft-naan": {
+      "processed": true,
+      "timestamp": "2025-11-15T13:03:34.342055",
+      "steps_extracted": 10,
+      "total_time_min": 48,
+      "error": null
+    },
+    "creamy-kimchi-macaroni-with-roasted-broccoli-garlic-panko-breadcrumbs": {
+      "processed": true,
+      "timestamp": "2025-11-15T13:04:17.176384",
+      "steps_extracted": 17,
+      "total_time_min": 27.5,
+      "error": null
+    },
+    "peanut-butter-curry-with-sweet-potato-tenderstem-broccoli-crushed-peanuts-chilli-lime": {
+      "processed": true,
+      "timestamp": "2025-11-15T14:35:29.969444",
+      "steps_extracted": 11,
+      "total_time_min": 43,
+      "error": null
+    },
+    "tahini-miso-ramen-with-crispy-chilli-tempeh-pak-choi-gluten-free-brown-rice-noodles": {
+      "processed": true,
+      "timestamp": "2025-11-15T15:19:50.910197",
+      "steps_extracted": 21,
+      "total_time_min": 19,
+      "error": null
+    },
+    "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha": {
+      "processed": true,
+      "timestamp": "2025-11-15T16:30:29.720116",
+      "steps_extracted": 11,
+      "total_time_min": 21,
+      "error": null
+    },
+    "mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme": {
+      "processed": true,
+      "timestamp": "2025-11-15T16:43:15.572682",
+      "steps_extracted": 12,
+      "total_time_min": 192,
+      "error": null
+    }
+  },
+  "last_updated": "2025-11-15T16:43:15.572701",
+  "total_processed": 6
+}
