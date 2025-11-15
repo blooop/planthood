@@ -92,50 +92,39 @@ export function getLatestWeek(): string | null {
 }
 
 /**
- * Check if a recipe has been processed (has steps and schedule)
- */
-function isRecipeProcessed(recipe: Recipe): boolean {
-  return recipe.steps && recipe.steps.length > 0 && recipe.total_time_min > 0;
-}
-
-/**
- * Get only processed recipes
+ * Get only processed recipes (have steps and schedule)
  */
 export function getProcessedRecipes(): Recipe[] {
-  const recipes = loadRecipes();
-  return recipes.filter(isRecipeProcessed);
+  return loadRecipes().filter(
+    r => r.steps?.length > 0 && r.total_time_min > 0
+  );
 }
 
 /**
  * Get processed recipes for a specific week
  */
 export function getProcessedRecipesByWeek(week: string): Recipe[] {
-  const recipes = loadRecipes();
-  return recipes.filter(recipe =>
-    recipe.week_label === week && isRecipeProcessed(recipe)
-  );
+  return getProcessedRecipes().filter(r => r.week_label === week);
 }
 
 /**
  * Get weeks that have processed recipes
  */
 export function getProcessedWeeks(): string[] {
-  const recipes = getProcessedRecipes();
-  const weeks = new Set<string>();
-
-  recipes.forEach(recipe => {
-    if (recipe.week_label) {
-      weeks.add(recipe.week_label);
-    }
-  });
-
-  return Array.from(weeks).sort().reverse();
+  return Array.from(
+    new Set(
+      getProcessedRecipes()
+        .map(r => r.week_label)
+        .filter(Boolean)
+    )
+  )
+    .sort()
+    .reverse();
 }
 
 /**
  * Get the most recent week that has processed recipes
  */
 export function getLatestProcessedWeek(): string | null {
-  const weeks = getProcessedWeeks();
-  return weeks.length > 0 ? weeks[0] : null;
+  return getProcessedWeeks()[0] ?? null;
 }
