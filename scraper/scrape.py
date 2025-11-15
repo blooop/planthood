@@ -79,13 +79,36 @@ class PlanthoodScraper:
 
         recipe_urls = set()
 
-        # Find all product links in the collection
+        # Method 1: Find all product links in the HTML
         for link in soup.find_all("a", href=True):
             href = link["href"]
             # Look for product pages (recipes)
             if "/products/" in href:
                 full_url = urljoin(self.BASE_URL, href)
                 recipe_urls.add(full_url)
+
+        # Method 2: Extract from JavaScript data (for dynamically loaded pages)
+        # Look for script tags containing product data
+        for script in soup.find_all("script"):
+            script_text = script.string
+            if not script_text:
+                continue
+
+            # Look for product handles in JavaScript objects
+            # Common patterns: {"handle":"product-name"} or /products/product-name
+            product_handles = re.findall(r'["\']handle["\']\s*:\s*["\']([^"\']+)["\']', script_text)
+            product_urls_in_js = re.findall(r"/products/([a-z0-9\-]+)", script_text)
+
+            for handle in product_handles:
+                if handle and handle not in ["monday-deliveries", "thursday-deliveries"]:
+                    # Skip subscription boxes, focus on actual recipes
+                    full_url = f"{self.BASE_URL}/products/{handle}"
+                    recipe_urls.add(full_url)
+
+            for url_path in product_urls_in_js:
+                if url_path and url_path not in ["monday-deliveries", "thursday-deliveries"]:
+                    full_url = f"{self.BASE_URL}/products/{url_path}"
+                    recipe_urls.add(full_url)
 
         print(f"Discovered {len(recipe_urls)} recipe URLs")
         return list(recipe_urls)
