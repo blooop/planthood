@@ -41,8 +41,22 @@
       "steps_extracted": 12,
       "total_time_min": 192,
       "error": null
+    },
+    "miso-kimchi-farro-bowl": {
+      "processed": true,
+      "timestamp": "2025-11-15T17:12:48.755140",
+      "steps_extracted": 7,
+      "total_time_min": 26,
+      "error": null
+    },
+    "smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread": {
+      "processed": true,
+      "timestamp": "2025-11-15T17:13:20.202383",
+      "steps_extracted": 9,
+      "total_time_min": 17.5,
+      "error": null
     }
   },
-  "last_updated": "2025-11-15T16:43:15.572701",
-  "total_processed": 6
+  "last_updated": "2025-11-15T17:13:20.202524",
+  "total_processed": 8
 }

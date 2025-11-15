@@ -2048,5 +2048,355 @@
     ],
     "total_time_min": 192,
     "active_time_min": 105
+  },
+  {
+    "id": "miso-kimchi-farro-bowl",
+    "title": "Kimchi Miso Nourish Bowl With Farro, Charred Purple Sprouting Broccoli & Pak Choi",
+    "source_url": "https://planthood.co.uk/products/miso-kimchi-farro-bowl",
+    "week_label": null,
+    "category": "Nourish",
+    "ingredients": [],
+    "nutrition": {
+      "calories": 586.0,
+      "protein_g": 31.8,
+      "fat_g": 10.5,
+      "carbs_g": 95.2,
+      "fibre_g": 25.5,
+      "salt_g": 2.5
+    },
+    "steps": [
+      {
+        "id": "step-4",
+        "raw_text": "Prepare Miso Dressing",
+        "label": "Prepare Miso Dressing",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "bowl",
+          "whisk"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'umami-rich miso dressing'."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Slice Spring Onion & Red Chilli",
+        "label": "Slice Spring Onion & Red Chilli",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'sliced spring onion and red chilli'."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Cook Broccoli, Pak Choi & Peas",
+        "label": "Cook Broccoli, Pak Choi & Peas",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'purple sprouting broccoli, pak choi and peas are cooked until tender'. Title mentions 'Charred Purple Sprouting Broccoli', suggesting a frying pan or grill."
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Cook Farro",
+        "label": "Cook Farro",
+        "type": "cook",
+        "duration_min": 20,
+        "start_min": 0,
+        "end_min": 20,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'farro grains' being a key component of the dish."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Chop Kimchi",
+        "label": "Chop Kimchi",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'tangy chopped kimchi'."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Combine Bowl Ingredients",
+        "label": "Combine Bowl Ingredients",
+        "type": "finish",
+        "duration_min": 5,
+        "start_min": 20,
+        "end_min": 25,
+        "requires": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'tossed through nutty brown rice grains, along with tangy chopped kimchi and an umami-rich miso dressing'. Assumes 'brown rice grains' refers to the cooked farro or is a pre-prepared component not detailed in the method."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Garnish and Serve",
+        "label": "Garnish and Serve",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 25,
+        "end_min": 26,
+        "requires": [
+          "step-5",
+          "step-6"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'All freshened up with sliced spring onion and red chilli'."
+      }
+    ],
+    "total_time_min": 26,
+    "active_time_min": 14
+  },
+  {
+    "id": "smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread",
+    "title": "Sweet & Smoky Butter Bean Shakshuka With Whipped Tahini, Toasted Dukkah & Soft Garlic Flatbread",
+    "source_url": "https://planthood.co.uk/products/smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 649.0,
+      "protein_g": 26.8,
+      "fat_g": 27.0,
+      "carbs_g": 80.6,
+      "fibre_g": 15.4,
+      "salt_g": 1.25
+    },
+    "steps": [
+      {
+        "id": "step-2",
+        "raw_text": "Heat oil in large frying pan",
+        "label": "Heat oil in large frying pan",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 0,
+        "end_min": 1,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Place over medium-high heat. Based on STEP 2"
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Warm flatbreads (oven)",
+        "label": "Warm flatbreads (oven)",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-8"
+        ],
+        "equipment": [
+          "oven"
+        ],
+        "temperature_c": null,
+        "notes": "Alternative method to frying pan. Bake or grill until warmed through. Based on STEP 3"
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Pick and chop parsley",
+        "label": "Pick and chop parsley",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Based on STEP 4"
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Warm flatbreads (frying pan)",
+        "label": "Warm flatbreads (frying pan)",
+        "type": "cook",
+        "duration_min": 0.75,
+        "start_min": 0,
+        "end_min": 0.75,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-8"
+        ],
+        "equipment": [
+          "second frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Dry fry on both sides for 30-60 seconds. Based on STEP 3"
+      },
+      {
+        "id": "step-1",
+        "raw_text": "De-stem and slice red pepper",
+        "label": "De-stem and slice red pepper",
+        "type": "prep",
+        "duration_min": 4,
+        "start_min": 0,
+        "end_min": 4,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Based on STEP 1"
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Fry red peppers",
+        "label": "Fry red peppers",
+        "type": "cook",
+        "duration_min": 6,
+        "start_min": 4,
+        "end_min": 10,
+        "requires": [
+          "step-1",
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Fry until lightly charred and starting to go tender. Based on STEP 2"
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Add shakshuka sauce and butter beans",
+        "label": "Add shakshuka sauce and butter beans",
+        "type": "cook",
+        "duration_min": 1,
+        "start_min": 10,
+        "end_min": 11,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Reduce heat to medium before adding. Based on STEP 2"
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Simmer shakshuka",
+        "label": "Simmer shakshuka",
+        "type": "cook",
+        "duration_min": 4.5,
+        "start_min": 11,
+        "end_min": 15.5,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Cook for 4-5 minutes or until piping hot. Add water as needed. Based on STEP 2"
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Serve shakshuka",
+        "label": "Serve shakshuka",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 15.5,
+        "end_min": 17.5,
+        "requires": [
+          "step-5",
+          "step-8",
+          "step-6"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Divide shakshuka, drizzle whipped tahini, scatter dukkah and fresh parsley. Use warm flatbread. Based on STEP 5"
+      }
+    ],
+    "total_time_min": 17.5,
+    "active_time_min": 10
   }
 ]
