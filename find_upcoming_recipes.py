@@ -174,6 +174,7 @@ def main():
     output_file = project_root / "data" / "upcoming_recipes.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(upcoming_recipes, f, indent=2, ensure_ascii=False)
+        f.write("\n")
 
     print(f"Saved to: {output_file}")
     print()

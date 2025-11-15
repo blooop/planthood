@@ -76,6 +76,7 @@ def parse_single_recipe(recipe_id: str):
     temp_raw = project_root / "data" / "temp_raw_recipes.json"
     with open(temp_raw, "w", encoding="utf-8") as f:
         json.dump([recipe], f, indent=2)
+        f.write("\n")
 
     # Run parser (it will read from raw_recipes.json)
     # We need to temporarily replace raw_recipes.json
@@ -99,6 +100,7 @@ def parse_single_recipe(recipe_id: str):
         parsed_file = project_root / "data" / "recipes_parsed.json"
         with open(parsed_file, "w", encoding="utf-8") as f:
             json.dump([r.__dict__ for r in parsed_recipes], f, indent=2, ensure_ascii=False)
+            f.write("\n")
 
         # Step 2: Run scheduler
         print("\nStep 2: Generating Gantt chart timeline...")

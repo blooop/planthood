@@ -232,6 +232,7 @@ def main():
             indent=2,
             ensure_ascii=False,
         )
+        f.write("\n")
 
     # Print summary
     print(f"\n{'=' * 60}")
