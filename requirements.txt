@@ -1,0 +1,20 @@
+# Web scraping
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# LLM providers (support multiple)
+openai>=1.3.0
+anthropic>=0.7.0
+google-generativeai>=0.3.0
+
+# Data handling
+pydantic>=2.5.0
+
+# Utilities
+python-dotenv>=1.0.0
+tenacity>=8.2.0
+
+# Development
+pytest>=7.4.0
+black>=23.0.0
