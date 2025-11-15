@@ -9,11 +9,6 @@ on:
     # twice-weekly recipe releases (Mon/Thu) while respecting Gemini free tier limits
     - cron: '0 2 * * 1,3,5'
 
-  # Run on push to main (for testing and immediate updates)
-  push:
-    branches:
-      - main
-
   # Allow manual triggering
   workflow_dispatch:
 
