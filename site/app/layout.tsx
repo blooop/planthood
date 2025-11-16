@@ -1,4 +1,6 @@
 import './globals.css';
+import ThemeToggle from '@/components/ThemeToggle';
+import { themeInitScript } from '@/lib/theme';
 
 export const metadata = {
   title: 'Planthood Recipes',
@@ -12,13 +14,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body>
         <header className="site-header">
           <div className="container">
-            <h1 className="site-title">
-              <a href="/">Planthood Recipes</a>
-            </h1>
-            <p className="site-tagline">Interactive cooking timelines</p>
+            <div className="site-header-content">
+              <h1 className="site-title">
+                <a href="/">Planthood Recipes</a>
+              </h1>
+              <p className="site-tagline">Interactive cooking timelines</p>
+            </div>
+            <ThemeToggle />
           </div>
         </header>
 
