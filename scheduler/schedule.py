@@ -102,9 +102,7 @@ class RecipeScheduler:
 
         return sorted_steps
 
-    def compute_critical_path(
-        self, scheduled_steps: List[ScheduledStep]
-    ) -> List[ScheduledStep]:
+    def compute_critical_path(self, scheduled_steps: List[ScheduledStep]) -> List[ScheduledStep]:
         """
         Compute critical path using backward pass.
         Updates each step with latest_start_min, latest_end_min, slack_min, and is_critical.
@@ -123,8 +121,10 @@ class RecipeScheduler:
                 if dep_id in dependents:
                     dependents[dep_id].append(step)
                 else:
-                    print(f"Warning: Step '{step.id}' requires dependency '{dep_id}' "
-                          f"which is not present in scheduled_steps")
+                    print(
+                        f"Warning: Step '{step.id}' requires dependency '{dep_id}' "
+                        f"which is not present in scheduled_steps"
+                    )
 
         # Find project end time (maximum end time)
         project_end = max(step.end_min for step in scheduled_steps)
