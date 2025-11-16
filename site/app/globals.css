@@ -721,7 +721,7 @@ body {
 .gantt-chart {
   background: white;
   border-radius: 18px;
-  padding: 3rem;
+  padding: 1rem;
   border: 1px solid var(--color-border);
   box-shadow: 0 8px 24px rgba(212, 133, 157, 0.1);
   margin-top: 1.5rem;
@@ -732,39 +732,41 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
-.gantt-runtime {
-  font-size: 0.95rem;
+.gantt-metadata {
+  font-size: 0.75rem;
   color: var(--color-text-light);
+  font-weight: 500;
 }
 
 .gantt-toggle-btn {
-  padding: 0.75rem 1.5rem;
+  padding: 0.35rem 0.6rem;
   background: linear-gradient(135deg, #a86584, #8b4d6b);
   color: white;
   border: none;
-  border-radius: 10px;
-  font-size: 0.95rem;
+  border-radius: 6px;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
-  box-shadow: 0 8px 20px rgba(168, 101, 132, 0.3);
+  box-shadow: 0 4px 12px rgba(168, 101, 132, 0.2);
+  line-height: 1;
 }
 
 .gantt-toggle-btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   opacity: 0.95;
-  box-shadow: 0 12px 32px rgba(212, 133, 157, 0.4);
+  box-shadow: 0 6px 16px rgba(212, 133, 157, 0.3);
 }
 
 /* Horizontal Gantt */
 .gantt-horizontal {
   border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: 18px;
-  padding: 1.25rem 1.25rem 1.75rem;
+  padding: 0.5rem;
   background: linear-gradient(135deg, #f8fafc, #ffffff);
   overflow-x: auto;
 }
@@ -1448,17 +1450,17 @@ body {
     justify-content: space-between;
     gap: 0.5rem;
     margin-bottom: 0.5rem;
-    padding: 0 8px;
+    padding: 0 4px;
   }
 
-  .gantt-runtime {
-    font-size: 0.75rem;
+  .gantt-metadata {
+    font-size: 0.65rem;
   }
 
   .gantt-toggle-btn {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.75rem;
-    border-radius: 6px;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
     box-shadow: none;
   }
 
@@ -1676,18 +1678,18 @@ body {
   }
 
   .gantt-controls {
-    padding: 0 6px;
-    gap: 0.4rem;
-    margin-bottom: 0.4rem;
+    padding: 0 4px;
+    gap: 0.3rem;
+    margin-bottom: 0.3rem;
   }
 
-  .gantt-runtime {
-    font-size: 0.7rem;
+  .gantt-metadata {
+    font-size: 0.6rem;
   }
 
   .gantt-toggle-btn {
-    padding: 0.35rem 0.7rem;
-    font-size: 0.7rem;
+    padding: 0.25rem 0.4rem;
+    font-size: 0.85rem;
   }
 
   .gantt-timeline-vertical {
