@@ -483,6 +483,27 @@ body {
   gap: 0.25rem;
 }
 
+.time-badge.compact {
+  flex: 0 1 auto;
+  max-width: fit-content;
+  flex-direction: row;
+  padding: 0.875rem 1.25rem;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.time-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.time-divider {
+  width: 1px;
+  height: 2.5rem;
+  background: linear-gradient(180deg, transparent, var(--color-border), transparent);
+}
+
 .time-badge strong {
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -1312,6 +1333,16 @@ body {
   .time-badge {
     padding: 0.75rem 1rem;
     border-radius: 8px;
+  }
+
+  .time-badge.compact {
+    padding: 0.75rem 1rem;
+    gap: 1rem;
+    max-width: 100%;
+  }
+
+  .time-divider {
+    height: 2rem;
   }
 
   .time-badge strong {
