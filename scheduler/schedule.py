@@ -113,7 +113,6 @@ class RecipeScheduler:
 
         # Build reverse dependency graph (who depends on each step)
         # Use dictionary comprehension for cleaner code
-        step_lookup = {s.id: s for s in scheduled_steps}
         dependents = {s.id: [] for s in scheduled_steps}
 
         for step in scheduled_steps:
