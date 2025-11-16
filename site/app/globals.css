@@ -1079,6 +1079,147 @@ body {
   box-shadow: 0 8px 20px rgba(168, 101, 132, 0.3);
 }
 
+/* Critical Path Styles */
+.critical-indicator {
+  font-size: 1em;
+  margin-right: 0.35rem;
+  display: inline-block;
+}
+
+.gantt-critical-path-summary {
+  padding: 2rem;
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  border: 2px solid #fbbf24;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 24px rgba(251, 191, 36, 0.15);
+}
+
+.gantt-critical-path-summary h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #92400e;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.critical-path-description {
+  color: #78350f;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.critical-path-steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.critical-path-steps li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #fcd34d;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.critical-path-steps li:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.2);
+  border-color: #fbbf24;
+}
+
+.critical-path-steps .step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.critical-path-steps .step-name {
+  flex: 1;
+  font-weight: 500;
+  color: #78350f;
+}
+
+.critical-path-steps .step-time {
+  font-weight: 600;
+  color: #92400e;
+  font-size: 0.9rem;
+}
+
+.gantt-control-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.gantt-toggle-btn.active {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+}
+
+.gantt-row.critical,
+.gantt-step-vertical.critical {
+  border-color: #fbbf24;
+  background: linear-gradient(135deg, #fffbeb, #ffffff);
+}
+
+.gantt-row.critical:hover,
+.gantt-step-vertical.critical:hover {
+  box-shadow: 0 8px 24px rgba(251, 191, 36, 0.25);
+}
+
+.gantt-step-bar.critical {
+  box-shadow: 0 12px 25px rgba(251, 191, 36, 0.3), 0 0 0 3px rgba(251, 191, 36, 0.2);
+}
+
+.gantt-step-bar-vertical.critical {
+  box-shadow: 0 16px 35px rgba(251, 191, 36, 0.35), 0 0 0 3px rgba(251, 191, 36, 0.2);
+}
+
+.gantt-step-type.critical {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border-color: #fbbf24;
+  color: #92400e;
+}
+
+.critical-path-badge {
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, #fffbeb, #fef3c7);
+  border: 1px solid #fbbf24;
+  border-radius: 10px;
+  margin-bottom: 1.25rem;
+  color: #78350f;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.critical-path-badge:before {
+  content: '⚡';
+  font-size: 1.2em;
+}
+
+.slack-info {
+  color: #059669;
+  font-weight: 500;
+}
+
 /* No Recipes */
 .no-recipes {
   text-align: center;
@@ -1598,6 +1739,51 @@ body {
   .gantt-close-btn {
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
+  }
+
+  /* Critical Path - Mobile */
+  .gantt-critical-path-summary {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+
+  .gantt-critical-path-summary h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .critical-path-description {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .critical-path-steps li {
+    padding: 0.5rem 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .critical-path-steps .step-number {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.75rem;
+  }
+
+  .critical-path-steps .step-name {
+    font-size: 0.85rem;
+  }
+
+  .critical-path-steps .step-time {
+    font-size: 0.8rem;
+  }
+
+  .critical-path-badge {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .critical-indicator {
+    font-size: 0.9em;
   }
 
   /* No Recipes */
