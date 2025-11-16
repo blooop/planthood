@@ -19,9 +19,9 @@ const STEP_TYPE_LABELS: Record<RecipeStep['type'], string> = {
   finish: 'Finishing',
 };
 
-const ROW_MULTIPLIER = 10; // tenths of a minute
-const MIN_ROW_HEIGHT = 4; // px per tenth
-const MIN_TIMELINE_HEIGHT = 480;
+const ROW_MULTIPLIER = 5; // fifths of a minute (reduced for more compact display)
+const MIN_ROW_HEIGHT = 2; // px per fifth (reduced for mobile optimization)
+const MIN_TIMELINE_HEIGHT = 400; // Reduced minimum height for mobile
 
 export default function GanttChart({ steps }: GanttChartProps) {
   const [selectedStep, setSelectedStep] = useState<RecipeStep | null>(null);

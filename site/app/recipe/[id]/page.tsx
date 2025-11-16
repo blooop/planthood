@@ -83,6 +83,27 @@ export default async function RecipePage({ params }: RecipePageProps) {
         </div>
       </div>
 
+      {recipe.steps.length > 0 && (
+        <section className="recipe-timeline-section">
+          <h2>Cooking Timeline</h2>
+          <p className="timeline-description">
+            Tap steps for details
+          </p>
+          <GanttChart steps={recipe.steps} />
+        </section>
+      )}
+
+      {recipe.ingredients.length > 0 && (
+        <section className="recipe-ingredients-section">
+          <h2>Ingredients</h2>
+          <ul className="ingredients-list">
+            {recipe.ingredients.map((ingredient, idx) => (
+              <li key={idx}>{ingredient}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {recipe.nutrition && Object.keys(recipe.nutrition).length > 0 && (
         <section className="recipe-nutrition-section">
           <h2>Nutrition Information</h2>
@@ -124,32 +145,6 @@ export default async function RecipePage({ params }: RecipePageProps) {
               </div>
             )}
           </div>
-        </section>
-      )}
-
-      {recipe.ingredients.length > 0 && (
-        <section className="recipe-ingredients-section">
-          <h2>Ingredients</h2>
-          <ul className="ingredients-list">
-            {recipe.ingredients.map((ingredient, idx) => (
-              <li key={idx}>{ingredient}</li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {recipe.steps.length > 0 && (
-        <section className="recipe-timeline-section">
-          <h2>Cooking Timeline (Gantt Chart)</h2>
-          <p className="timeline-description">
-            Interactive timeline showing when to start each step. Click any step for details.
-            <br />
-            <strong>Color code:</strong>{' '}
-            <span className="color-legend prep">Blue = Prep</span>{' '}
-            <span className="color-legend cook">Orange = Cooking</span>{' '}
-            <span className="color-legend finish">Green = Finishing</span>
-          </p>
-          <GanttChart steps={recipe.steps} />
         </section>
       )}
 
