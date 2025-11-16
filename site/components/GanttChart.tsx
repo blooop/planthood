@@ -34,7 +34,7 @@ const MOBILE_CONFIG = {
 
 export default function GanttChart({ steps }: GanttChartProps) {
   const [selectedStep, setSelectedStep] = useState<RecipeStep | null>(null);
-  const [orientation, setOrientation] = useState<'horizontal' | 'vertical'>('vertical');
+  const [orientation, setOrientation] = useState<'horizontal' | 'vertical'>('horizontal');
   const [isMobile, setIsMobile] = useState(false);
 
   // Detect screen size on mount and resize
@@ -206,8 +206,8 @@ export default function GanttChart({ steps }: GanttChartProps) {
   return (
     <div className={`gantt-chart ${orientation}`}>
       <div className="gantt-controls">
-        <div className="gantt-runtime">
-          Timeline length <strong>{safeMaxTime} min</strong>
+        <div className="gantt-metadata">
+          {safeMaxTime}m • {orientation === 'vertical' ? 'Vertical' : 'Horizontal'}
         </div>
         <button
           onClick={() =>
@@ -215,7 +215,7 @@ export default function GanttChart({ steps }: GanttChartProps) {
           }
           className="gantt-toggle-btn"
         >
-          Switch to {orientation === 'vertical' ? 'Horizontal' : 'Vertical'}
+          ↔↕
         </button>
       </div>
 
