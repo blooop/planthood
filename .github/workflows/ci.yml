@@ -45,6 +45,38 @@ jobs:
       - name: Install dependencies
         working-directory: site
         run: npm ci
+      - name: Copy recipe data to site public folder
+        run: |
+          mkdir -p site/public/data
+          cp data/recipes_with_schedule.json site/public/data/ || echo "Recipe data not found, using existing data"
       - name: Build Next.js site
         working-directory: site
         run: npm run build
+      - name: Upload site build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-build
+          path: site/out
+          retention-days: 7
+      - name: Create preview instructions
+        run: |
+          echo "## 🌱 Website Preview Available" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "The website has been built successfully! You can preview it by:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Option 1: Download and Preview Locally" >> $GITHUB_STEP_SUMMARY
+          echo "1. Download the \`site-build\` artifact from this workflow run" >> $GITHUB_STEP_SUMMARY
+          echo "2. Extract the ZIP file" >> $GITHUB_STEP_SUMMARY
+          echo "3. Serve the files with any static server:" >> $GITHUB_STEP_SUMMARY
+          echo "   \`\`\`bash" >> $GITHUB_STEP_SUMMARY
+          echo "   npx serve site-build" >> $GITHUB_STEP_SUMMARY
+          echo "   # or" >> $GITHUB_STEP_SUMMARY
+          echo "   python -m http.server 3000 -d site-build" >> $GITHUB_STEP_SUMMARY
+          echo "   \`\`\`" >> $GITHUB_STEP_SUMMARY
+          echo "4. Open http://localhost:3000/planthood in your browser" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Option 2: View Artifact" >> $GITHUB_STEP_SUMMARY
+          echo "📦 [Download site-build artifact](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}#artifacts)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "---" >> $GITHUB_STEP_SUMMARY
+          echo "Once merged to main, the site will be deployed to: https://blooop.github.io/planthood/" >> $GITHUB_STEP_SUMMARY
