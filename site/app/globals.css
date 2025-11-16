@@ -139,7 +139,7 @@ body {
   text-decoration: none;
   color: var(--color-text);
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: border-color 0.3s ease, color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .week-link:hover {
@@ -178,7 +178,7 @@ body {
   border-radius: 16px;
   text-decoration: none;
   color: var(--color-text);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(212, 133, 157, 0.1);
 }
@@ -333,7 +333,7 @@ body {
   border-radius: 14px;
   border: 1px solid var(--color-border);
   box-shadow: 0 4px 16px rgba(212, 133, 157, 0.08);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .stat-card:hover {
@@ -491,12 +491,12 @@ body {
   align-items: center;
   gap: 0.4rem;
   padding: 0.75rem 1.25rem;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  background: linear-gradient(135deg, #a86584, #8b4d6b);
   color: white;
   border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
-  box-shadow: 0 8px 24px rgba(212, 133, 157, 0.3);
+  box-shadow: 0 8px 24px rgba(168, 101, 132, 0.3);
   transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
 }
 
@@ -618,7 +618,7 @@ body {
   border-left: 5px solid var(--color-border);
   counter-increment: step-counter;
   position: relative;
-  transition: all 0.2s ease;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .step-item:hover {
@@ -720,7 +720,7 @@ body {
 
 .gantt-toggle-btn {
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  background: linear-gradient(135deg, #a86584, #8b4d6b);
   color: white;
   border: none;
   border-radius: 10px;
@@ -728,7 +728,7 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
-  box-shadow: 0 8px 20px rgba(212, 133, 157, 0.3);
+  box-shadow: 0 8px 20px rgba(168, 101, 132, 0.3);
 }
 
 .gantt-toggle-btn:hover {
