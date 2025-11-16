@@ -71,20 +71,23 @@ export default async function RecipePage({ params }: RecipePageProps) {
           <h1>{recipe.title}</h1>
 
           <div className="recipe-times">
-            <div className="time-badge">
-              <strong>Total time</strong>
-              <span>{recipe.total_time_min} minutes</span>
-            </div>
-            <div className="time-badge">
-              <strong>Active time</strong>
-              <span>{recipe.active_time_min} minutes</span>
+            <div className="time-badge compact">
+              <div className="time-item">
+                <strong>Total time</strong>
+                <span>{recipe.total_time_min} min</span>
+              </div>
+              <div className="time-divider" aria-hidden="true"></div>
+              <div className="time-item">
+                <strong>Active time</strong>
+                <span>{recipe.active_time_min} min</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       {recipe.steps.length > 0 && (
-        <section className="recipe-timeline-section full-bleed">
+        <section className="recipe-timeline-section">
           <div className="timeline-header">
             <h2>Cooking Timeline</h2>
             <p className="timeline-description">
