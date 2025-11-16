@@ -16,50 +16,6 @@
     },
     "steps": [
       {
-        "id": "step-1",
-        "raw_text": "Preheat oven to 200°C",
-        "label": "Preheat oven to 200°C",
-        "type": "prep",
-        "duration_min": 5,
-        "start_min": 0,
-        "end_min": 5,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [
-          "oven"
-        ],
-        "temperature_c": 200,
-        "notes": "Inferred for roasting aubergine. Assuming a quick preheat to fit total time.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 0,
-        "latest_end_min": 5
-      },
-      {
-        "id": "step-9",
-        "raw_text": "Heat flatbreads",
-        "label": "Heat flatbreads",
-        "type": "cook",
-        "duration_min": 2,
-        "start_min": 0,
-        "end_min": 2,
-        "requires": [],
-        "can_overlap_with": [
-          "step-3",
-          "step-6"
-        ],
-        "equipment": [
-          "oven",
-          "frying pan"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred for serving with flatbreads. Best done towards the end of cooking.",
-        "is_critical": false,
-        "slack_min": 18,
-        "latest_start_min": 18,
-        "latest_end_min": 20
-      },
-      {
         "id": "step-2",
         "raw_text": "Slice aubergine",
         "label": "Slice aubergine",
@@ -81,6 +37,30 @@
         "slack_min": 3,
         "latest_start_min": 3,
         "latest_end_min": 5
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Chop onion and garlic, measure spices",
+        "label": "Chop onion and garlic, measure spices",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board",
+          "measuring spoons"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred for the lentil sauce base. Can be done while aubergine roasts.",
+        "is_critical": false,
+        "slack_min": 4,
+        "latest_start_min": 4,
+        "latest_end_min": 7
       },
       {
         "id": "step-8",
@@ -108,6 +88,50 @@
         "latest_end_min": 20
       },
       {
+        "id": "step-9",
+        "raw_text": "Heat flatbreads",
+        "label": "Heat flatbreads",
+        "type": "cook",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-6"
+        ],
+        "equipment": [
+          "oven",
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred for serving with flatbreads. Best done towards the end of cooking.",
+        "is_critical": false,
+        "slack_min": 18,
+        "latest_start_min": 18,
+        "latest_end_min": 20
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Preheat oven to 200°C",
+        "label": "Preheat oven to 200°C",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "oven"
+        ],
+        "temperature_c": 200,
+        "notes": "Inferred for roasting aubergine. Assuming a quick preheat to fit total time.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 5
+      },
+      {
         "id": "step-7",
         "raw_text": "Mix yoghurt, garlic, and lemon",
         "label": "Mix yoghurt, garlic, and lemon",
@@ -129,54 +153,6 @@
         "is_critical": false,
         "slack_min": 18,
         "latest_start_min": 18,
-        "latest_end_min": 20
-      },
-      {
-        "id": "step-4",
-        "raw_text": "Chop onion and garlic, measure spices",
-        "label": "Chop onion and garlic, measure spices",
-        "type": "prep",
-        "duration_min": 3,
-        "start_min": 0,
-        "end_min": 3,
-        "requires": [],
-        "can_overlap_with": [
-          "step-3"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board",
-          "measuring spoons"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred for the lentil sauce base. Can be done while aubergine roasts.",
-        "is_critical": false,
-        "slack_min": 4,
-        "latest_start_min": 4,
-        "latest_end_min": 7
-      },
-      {
-        "id": "step-3",
-        "raw_text": "Roast aubergine until crispy",
-        "label": "Roast aubergine until crispy",
-        "type": "cook",
-        "duration_min": 15,
-        "start_min": 5,
-        "end_min": 20,
-        "requires": [
-          "step-1",
-          "step-2"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "oven",
-          "baking sheet"
-        ],
-        "temperature_c": 200,
-        "notes": "Adjusted duration to fit the stated 'Total time 20' minutes. This is the main cooking step.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 5,
         "latest_end_min": 20
       },
       {
@@ -202,6 +178,30 @@
         "slack_min": 4,
         "latest_start_min": 7,
         "latest_end_min": 10
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Roast aubergine until crispy",
+        "label": "Roast aubergine until crispy",
+        "type": "cook",
+        "duration_min": 15,
+        "start_min": 5,
+        "end_min": 20,
+        "requires": [
+          "step-1",
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "oven",
+          "baking sheet"
+        ],
+        "temperature_c": 200,
+        "notes": "Adjusted duration to fit the stated 'Total time 20' minutes. This is the main cooking step.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 5,
+        "latest_end_min": 20
       },
       {
         "id": "step-6",
@@ -274,84 +274,6 @@
     },
     "steps": [
       {
-        "id": "step-5",
-        "raw_text": "Prepare Mint Yoghurt",
-        "label": "Prepare Mint Yoghurt",
-        "type": "prep",
-        "duration_min": 5,
-        "start_min": 0,
-        "end_min": 5,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-6",
-          "step-7"
-        ],
-        "equipment": [
-          "small bowl",
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Chop fresh mint and mix with oat yoghurt for the cooling sauce.",
-        "is_critical": false,
-        "slack_min": 38,
-        "latest_start_min": 38,
-        "latest_end_min": 43
-      },
-      {
-        "id": "step-1",
-        "raw_text": "Prepare Tandoori Marinade",
-        "label": "Prepare Tandoori Marinade",
-        "type": "prep",
-        "duration_min": 5,
-        "start_min": 0,
-        "end_min": 5,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [
-          "mixing bowl"
-        ],
-        "temperature_c": null,
-        "notes": "Mix garlic, ginger, lemon juice, and spices (paprika, cumin, cayenne, coriander, turmeric, maple syrup, salt) for the tandoori marinade.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 0,
-        "latest_end_min": 5
-      },
-      {
-        "id": "step-6",
-        "raw_text": "Prepare Pickled Red Cabbage",
-        "label": "Prepare Pickled Red Cabbage",
-        "type": "prep",
-        "duration_min": 10,
-        "start_min": 0,
-        "end_min": 10,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-5",
-          "step-7"
-        ],
-        "equipment": [
-          "cutting board",
-          "knife",
-          "small bowl"
-        ],
-        "temperature_c": null,
-        "notes": "Thinly slice red onion/cabbage and prepare a quick pickle with red wine vinegar, water, sugar, mustard seeds, fennel seeds, and coriander seeds.",
-        "is_critical": false,
-        "slack_min": 33,
-        "latest_start_min": 33,
-        "latest_end_min": 43
-      },
-      {
         "id": "step-2",
         "raw_text": "Cut Tofu into Bites",
         "label": "Cut Tofu into Bites",
@@ -369,6 +291,53 @@
         ],
         "temperature_c": null,
         "notes": "Dice or cube tofu into bite-sized pieces.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 5
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Preheat Oven",
+        "label": "Preheat Oven",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-5",
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [
+          "oven"
+        ],
+        "temperature_c": 200,
+        "notes": "Preheat oven to 200°C for roasting the tofu.",
+        "is_critical": false,
+        "slack_min": 10,
+        "latest_start_min": 10,
+        "latest_end_min": 20
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Prepare Tandoori Marinade",
+        "label": "Prepare Tandoori Marinade",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "mixing bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Mix garlic, ginger, lemon juice, and spices (paprika, cumin, cayenne, coriander, turmeric, maple syrup, salt) for the tandoori marinade.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
@@ -402,9 +371,9 @@
         "latest_end_min": 43
       },
       {
-        "id": "step-4",
-        "raw_text": "Preheat Oven",
-        "label": "Preheat Oven",
+        "id": "step-6",
+        "raw_text": "Prepare Pickled Red Cabbage",
+        "label": "Prepare Pickled Red Cabbage",
         "type": "prep",
         "duration_min": 10,
         "start_min": 0,
@@ -414,19 +383,50 @@
           "step-1",
           "step-2",
           "step-3",
+          "step-4",
           "step-5",
+          "step-7"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife",
+          "small bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Thinly slice red onion/cabbage and prepare a quick pickle with red wine vinegar, water, sugar, mustard seeds, fennel seeds, and coriander seeds.",
+        "is_critical": false,
+        "slack_min": 33,
+        "latest_start_min": 33,
+        "latest_end_min": 43
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Prepare Mint Yoghurt",
+        "label": "Prepare Mint Yoghurt",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
           "step-6",
           "step-7"
         ],
         "equipment": [
-          "oven"
+          "small bowl",
+          "knife",
+          "cutting board"
         ],
-        "temperature_c": 200,
-        "notes": "Preheat oven to 200°C for roasting the tofu.",
+        "temperature_c": null,
+        "notes": "Chop fresh mint and mix with oat yoghurt for the cooling sauce.",
         "is_critical": false,
-        "slack_min": 10,
-        "latest_start_min": 10,
-        "latest_end_min": 20
+        "slack_min": 38,
+        "latest_start_min": 38,
+        "latest_end_min": 43
       },
       {
         "id": "step-3",
@@ -1003,6 +1003,53 @@
     },
     "steps": [
       {
+        "id": "step-2",
+        "raw_text": "Prepare Curry Aromatics",
+        "label": "Prepare Curry Aromatics",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Chop/mince lemongrass, garlic, ginger, and measure spices (cumin, coriander, cloves, cinnamon, nutmeg).",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 10
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Toast Peanuts",
+        "label": "Toast Peanuts",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'toasted crushed peanuts'. Assumed dry pan toasting.",
+        "is_critical": false,
+        "slack_min": 34,
+        "latest_start_min": 34,
+        "latest_end_min": 39
+      },
+      {
         "id": "step-3",
         "raw_text": "Char Red Peppers",
         "label": "Char Red Peppers",
@@ -1071,53 +1118,6 @@
         "slack_min": 20,
         "latest_start_min": 20,
         "latest_end_min": 30
-      },
-      {
-        "id": "step-2",
-        "raw_text": "Prepare Curry Aromatics",
-        "label": "Prepare Curry Aromatics",
-        "type": "prep",
-        "duration_min": 10,
-        "start_min": 0,
-        "end_min": 10,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1"
-        ],
-        "equipment": [
-          "cutting board",
-          "knife"
-        ],
-        "temperature_c": null,
-        "notes": "Chop/mince lemongrass, garlic, ginger, and measure spices (cumin, coriander, cloves, cinnamon, nutmeg).",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 0,
-        "latest_end_min": 10
-      },
-      {
-        "id": "step-4",
-        "raw_text": "Toast Peanuts",
-        "label": "Toast Peanuts",
-        "type": "cook",
-        "duration_min": 5,
-        "start_min": 0,
-        "end_min": 5,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3"
-        ],
-        "equipment": [
-          "frying pan"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred from 'toasted crushed peanuts'. Assumed dry pan toasting.",
-        "is_critical": false,
-        "slack_min": 34,
-        "latest_start_min": 34,
-        "latest_end_min": 39
       },
       {
         "id": "step-7",
@@ -1281,29 +1281,6 @@
     },
     "steps": [
       {
-        "id": "step-3",
-        "raw_text": "Boil kettle",
-        "label": "Boil kettle",
-        "type": "prep",
-        "duration_min": 5,
-        "start_min": 0,
-        "end_min": 5,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2"
-        ],
-        "equipment": [
-          "kettle"
-        ],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": false,
-        "slack_min": 2.5,
-        "latest_start_min": 2.5,
-        "latest_end_min": 7.5
-      },
-      {
         "id": "step-4",
         "raw_text": "Gather cooking equipment",
         "label": "Gather cooking equipment",
@@ -1328,6 +1305,29 @@
         "slack_min": 3,
         "latest_start_min": 3,
         "latest_end_min": 4
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Boil kettle",
+        "label": "Boil kettle",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "kettle"
+        ],
+        "temperature_c": null,
+        "notes": "",
+        "is_critical": false,
+        "slack_min": 2.5,
+        "latest_start_min": 2.5,
+        "latest_end_min": 7.5
       },
       {
         "id": "step-1",
@@ -1375,32 +1375,6 @@
         "latest_end_min": 5
       },
       {
-        "id": "step-11",
-        "raw_text": "Prepare water for noodles",
-        "label": "Prepare water for noodles",
-        "type": "cook",
-        "duration_min": 1,
-        "start_min": 5,
-        "end_min": 6,
-        "requires": [
-          "step-3",
-          "step-4"
-        ],
-        "can_overlap_with": [
-          "step-8",
-          "step-9"
-        ],
-        "equipment": [
-          "saucepan"
-        ],
-        "temperature_c": 100,
-        "notes": "Pour boiling water from kettle into first saucepan and place over medium-high heat.",
-        "is_critical": false,
-        "slack_min": 2.5,
-        "latest_start_min": 7.5,
-        "latest_end_min": 8.5
-      },
-      {
         "id": "step-14",
         "raw_text": "Prepare miso tahini broth",
         "label": "Prepare miso tahini broth",
@@ -1425,6 +1399,32 @@
         "slack_min": 4,
         "latest_start_min": 5,
         "latest_end_min": 6
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Prepare water for noodles",
+        "label": "Prepare water for noodles",
+        "type": "cook",
+        "duration_min": 1,
+        "start_min": 5,
+        "end_min": 6,
+        "requires": [
+          "step-3",
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": 100,
+        "notes": "Pour boiling water from kettle into first saucepan and place over medium-high heat.",
+        "is_critical": false,
+        "slack_min": 2.5,
+        "latest_start_min": 7.5,
+        "latest_end_min": 8.5
       },
       {
         "id": "step-2",
@@ -1528,31 +1528,6 @@
         "latest_end_min": 18
       },
       {
-        "id": "step-12",
-        "raw_text": "Cook flat rice noodles",
-        "label": "Cook flat rice noodles",
-        "type": "cook",
-        "duration_min": 4.5,
-        "start_min": 6,
-        "end_min": 10.5,
-        "requires": [
-          "step-11"
-        ],
-        "can_overlap_with": [
-          "step-9",
-          "step-10"
-        ],
-        "equipment": [
-          "saucepan"
-        ],
-        "temperature_c": 100,
-        "notes": "Cook for 4-5 minutes or until tender but al dente. Keep checking as rice noodles can be easily overcooked.",
-        "is_critical": false,
-        "slack_min": 2.5,
-        "latest_start_min": 8.5,
-        "latest_end_min": 13
-      },
-      {
         "id": "step-15",
         "raw_text": "Heat and simmer broth",
         "label": "Heat and simmer broth",
@@ -1577,6 +1552,31 @@
         "slack_min": 4,
         "latest_start_min": 6,
         "latest_end_min": 16
+      },
+      {
+        "id": "step-12",
+        "raw_text": "Cook flat rice noodles",
+        "label": "Cook flat rice noodles",
+        "type": "cook",
+        "duration_min": 4.5,
+        "start_min": 6,
+        "end_min": 10.5,
+        "requires": [
+          "step-11"
+        ],
+        "can_overlap_with": [
+          "step-9",
+          "step-10"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": 100,
+        "notes": "Cook for 4-5 minutes or until tender but al dente. Keep checking as rice noodles can be easily overcooked.",
+        "is_critical": false,
+        "slack_min": 2.5,
+        "latest_start_min": 8.5,
+        "latest_end_min": 13
       },
       {
         "id": "step-9",
@@ -1819,6 +1819,60 @@
     },
     "steps": [
       {
+        "id": "step-2",
+        "raw_text": "Take out saucepan",
+        "label": "Take out saucepan",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 0,
+        "end_min": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3",
+          "step-4",
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": null,
+        "is_critical": false,
+        "slack_min": 10,
+        "latest_start_min": 10,
+        "latest_end_min": 11
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Drain black beans",
+        "label": "Drain black beans",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 0,
+        "end_min": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "colander"
+        ],
+        "temperature_c": null,
+        "notes": null,
+        "is_critical": false,
+        "slack_min": 10,
+        "latest_start_min": 10,
+        "latest_end_min": 11
+      },
+      {
         "id": "step-3",
         "raw_text": "Preheat oven",
         "label": "Preheat oven",
@@ -1846,82 +1900,6 @@
         "slack_min": 0,
         "latest_start_min": 0,
         "latest_end_min": 10
-      },
-      {
-        "id": "step-1",
-        "raw_text": "Take out and rinse ingredients",
-        "label": "Take out and rinse ingredients",
-        "type": "prep",
-        "duration_min": 2,
-        "start_min": 0,
-        "end_min": 2,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "Take out all ingredients and rinse any raw grains, herbs, or vegetables.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 0,
-        "latest_end_min": 2
-      },
-      {
-        "id": "step-9",
-        "raw_text": "Cut lime into wedges",
-        "label": "Cut lime into wedges",
-        "type": "prep",
-        "duration_min": 2,
-        "start_min": 0,
-        "end_min": 2,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-5",
-          "step-6",
-          "step-7",
-          "step-8",
-          "step-10"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": null,
-        "is_critical": false,
-        "slack_min": 16,
-        "latest_start_min": 16,
-        "latest_end_min": 18
-      },
-      {
-        "id": "step-2",
-        "raw_text": "Take out saucepan",
-        "label": "Take out saucepan",
-        "type": "prep",
-        "duration_min": 1,
-        "start_min": 0,
-        "end_min": 1,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-3",
-          "step-4",
-          "step-7",
-          "step-8",
-          "step-9"
-        ],
-        "equipment": [
-          "saucepan"
-        ],
-        "temperature_c": null,
-        "notes": null,
-        "is_critical": false,
-        "slack_min": 10,
-        "latest_start_min": 10,
-        "latest_end_min": 11
       },
       {
         "id": "step-8",
@@ -1955,6 +1933,55 @@
         "latest_end_min": 18
       },
       {
+        "id": "step-9",
+        "raw_text": "Cut lime into wedges",
+        "label": "Cut lime into wedges",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-8",
+          "step-10"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": null,
+        "is_critical": false,
+        "slack_min": 16,
+        "latest_start_min": 16,
+        "latest_end_min": 18
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Take out and rinse ingredients",
+        "label": "Take out and rinse ingredients",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Take out all ingredients and rinse any raw grains, herbs, or vegetables.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 2
+      },
+      {
         "id": "step-7",
         "raw_text": "Shred lettuce",
         "label": "Shred lettuce",
@@ -1983,62 +2010,6 @@
         "is_critical": false,
         "slack_min": 15,
         "latest_start_min": 15,
-        "latest_end_min": 18
-      },
-      {
-        "id": "step-4",
-        "raw_text": "Drain black beans",
-        "label": "Drain black beans",
-        "type": "prep",
-        "duration_min": 1,
-        "start_min": 0,
-        "end_min": 1,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3",
-          "step-7",
-          "step-8",
-          "step-9"
-        ],
-        "equipment": [
-          "colander"
-        ],
-        "temperature_c": null,
-        "notes": null,
-        "is_critical": false,
-        "slack_min": 10,
-        "latest_start_min": 10,
-        "latest_end_min": 11
-      },
-      {
-        "id": "step-10",
-        "raw_text": "Bake tostadas",
-        "label": "Bake tostadas",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 10,
-        "end_min": 18,
-        "requires": [
-          "step-3"
-        ],
-        "can_overlap_with": [
-          "step-5",
-          "step-6",
-          "step-7",
-          "step-8",
-          "step-9"
-        ],
-        "equipment": [
-          "baking tray",
-          "oven"
-        ],
-        "temperature_c": 200,
-        "notes": "Pop tacos onto a baking tray and bake for 8 minutes or until crispy, flipping halfway. This is the healthier, oil-free version.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 10,
         "latest_end_min": 18
       },
       {
@@ -2071,6 +2042,35 @@
         "slack_min": 10,
         "latest_start_min": 11,
         "latest_end_min": 16
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Bake tostadas",
+        "label": "Bake tostadas",
+        "type": "cook",
+        "duration_min": 8,
+        "start_min": 10,
+        "end_min": 18,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "baking tray",
+          "oven"
+        ],
+        "temperature_c": 200,
+        "notes": "Pop tacos onto a baking tray and bake for 8 minutes or until crispy, flipping halfway. This is the healthier, oil-free version.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 10,
+        "latest_end_min": 18
       },
       {
         "id": "step-6",
@@ -2146,71 +2146,6 @@
     },
     "steps": [
       {
-        "id": "step-5",
-        "raw_text": "Shred oyster mushrooms",
-        "label": "Shred oyster mushrooms",
-        "type": "prep",
-        "duration_min": 10,
-        "start_min": 0,
-        "end_min": 10,
-        "requires": [],
-        "can_overlap_with": [
-          "step-4"
-        ],
-        "equipment": [
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Shred oyster mushrooms into bite-sized pieces, mimicking pulled meat texture.",
-        "is_critical": false,
-        "slack_min": 110,
-        "latest_start_min": 110,
-        "latest_end_min": 120
-      },
-      {
-        "id": "step-1",
-        "raw_text": "Rehydrate dried chillies",
-        "label": "Rehydrate dried chillies",
-        "type": "prep",
-        "duration_min": 20,
-        "start_min": 0,
-        "end_min": 20,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [
-          "bowl"
-        ],
-        "temperature_c": null,
-        "notes": "Rehydrate chipotle, chilli de arbol, and guajillo chillies in hot water until softened.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 0,
-        "latest_end_min": 20
-      },
-      {
-        "id": "step-9",
-        "raw_text": "Warm tortillas",
-        "label": "Warm tortillas",
-        "type": "cook",
-        "duration_min": 5,
-        "start_min": 0,
-        "end_min": 5,
-        "requires": [],
-        "can_overlap_with": [
-          "step-7"
-        ],
-        "equipment": [
-          "frying pan",
-          "comal"
-        ],
-        "temperature_c": null,
-        "notes": "Warm corn tortillas until pliable and slightly toasted.",
-        "is_critical": false,
-        "slack_min": 160,
-        "latest_start_min": 160,
-        "latest_end_min": 165
-      },
-      {
         "id": "step-2",
         "raw_text": "Sauté aromatics for consommé",
         "label": "Sauté aromatics for consommé",
@@ -2252,6 +2187,71 @@
         "slack_min": 180,
         "latest_start_min": 180,
         "latest_end_min": 190
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Warm tortillas",
+        "label": "Warm tortillas",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-7"
+        ],
+        "equipment": [
+          "frying pan",
+          "comal"
+        ],
+        "temperature_c": null,
+        "notes": "Warm corn tortillas until pliable and slightly toasted.",
+        "is_critical": false,
+        "slack_min": 160,
+        "latest_start_min": 160,
+        "latest_end_min": 165
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Rehydrate dried chillies",
+        "label": "Rehydrate dried chillies",
+        "type": "prep",
+        "duration_min": 20,
+        "start_min": 0,
+        "end_min": 20,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Rehydrate chipotle, chilli de arbol, and guajillo chillies in hot water until softened.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 20
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Shred oyster mushrooms",
+        "label": "Shred oyster mushrooms",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
+        "equipment": [
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Shred oyster mushrooms into bite-sized pieces, mimicking pulled meat texture.",
+        "is_critical": false,
+        "slack_min": 110,
+        "latest_start_min": 110,
+        "latest_end_min": 120
       },
       {
         "id": "step-3",
