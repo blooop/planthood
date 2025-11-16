@@ -5,18 +5,18 @@
 }
 
 :root {
-  /* Warm, food-focused color palette */
-  --color-primary: #c97f4f;      /* Warm terracotta/clay */
-  --color-secondary: #d4a574;    /* Warm sand/caramel */
-  --color-accent: #8b7355;       /* Deep brown/espresso */
-  --color-success: #6b9f7f;      /* Sage green - fresh herbs */
-  --color-heat: #d97563;         /* Warm tomato red */
-  --color-bg: #fefbf7;           /* Warm off-white (cream) */
-  --color-bg-alt: #f5ede4;       /* Soft taupe/linen */
-  --color-text: #3d332a;         /* Deep brown */
-  --color-text-light: #8b7f77;   /* Warm gray/khaki */
-  --color-border: #e8dcd1;       /* Warm beige border */
-  --color-light: #f9f5f0;        /* Very light cream */
+  /* Professional red pastel color palette */
+  --color-primary: #d4859d;      /* Dusty rose - primary accent */
+  --color-secondary: #e8a5a0;    /* Soft coral - secondary accent */
+  --color-accent: #a86584;       /* Deep mauve - strong accent */
+  --color-success: #8fb5a5;      /* Muted seafoam - success states */
+  --color-heat: #e89b96;         /* Soft salmon - warm highlights */
+  --color-bg: #fef8f9;           /* Soft cream with pink undertone */
+  --color-bg-alt: #f8eff1;       /* Pale rose background */
+  --color-text: #3d2e33;         /* Deep burgundy-brown */
+  --color-text-light: #9d8389;   /* Muted mauve-gray */
+  --color-border: #f0dde3;       /* Soft rose border */
+  --color-light: #fcf4f6;        /* Very light pink-cream */
   --font-base: 18px;
   --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
@@ -24,9 +24,10 @@
 body {
   font-family: var(--font-family);
   font-size: var(--font-base);
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--color-text);
-  background: linear-gradient(180deg, #fef8f3 0%, #fefbf7 40%);
+  background: linear-gradient(180deg, #fef8f9 0%, #fcf4f6 40%);
+  letter-spacing: 0.01em;
 }
 
 .container {
@@ -37,19 +38,20 @@ body {
 
 /* Header */
 .site-header {
-  background: linear-gradient(135deg, #c97f4f 0%, #8b7355 100%);
+  background: linear-gradient(135deg, #d4859d 0%, #a86584 100%);
   color: white;
-  padding: 2.5rem 0;
+  padding: 3rem 0;
   margin-bottom: 3rem;
-  box-shadow: 0 8px 24px rgba(201, 127, 79, 0.15);
+  box-shadow: 0 8px 32px rgba(212, 133, 157, 0.2);
 }
 
 .site-title a {
   color: white;
   text-decoration: none;
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.2rem;
+  font-weight: 700;
   letter-spacing: -0.5px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .site-tagline {
@@ -85,8 +87,10 @@ body {
 }
 
 .hero h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .hero-week {
@@ -106,11 +110,18 @@ body {
 /* Week Selector */
 .week-selector {
   margin: 2rem 0;
-  padding: 2rem;
-  background: linear-gradient(135deg, #f5ede4 0%, #f9f5f0 100%);
-  border-radius: 12px;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #f8eff1 0%, #fcf4f6 100%);
+  border-radius: 16px;
   border: 1px solid var(--color-border);
-  box-shadow: 0 4px 12px rgba(201, 127, 79, 0.06);
+  box-shadow: 0 4px 16px rgba(212, 133, 157, 0.08);
+}
+
+.week-selector h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-text);
 }
 
 .week-list {
@@ -134,8 +145,9 @@ body {
 .week-link:hover {
   border-color: var(--color-primary);
   color: var(--color-primary);
-  box-shadow: 0 4px 12px rgba(201, 127, 79, 0.12);
-  transform: translateY(-1px);
+  background: linear-gradient(135deg, #fff 0%, #fef8f9 100%);
+  box-shadow: 0 4px 16px rgba(212, 133, 157, 0.15);
+  transform: translateY(-2px);
 }
 
 /* Recipe Grid */
@@ -144,8 +156,11 @@ body {
 }
 
 .recipes-section h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--color-text);
 }
 
 .recipe-grid {
@@ -160,25 +175,25 @@ body {
   flex-direction: column;
   background: white;
   border: 1px solid var(--color-border);
-  border-radius: 12px;
+  border-radius: 16px;
   text-decoration: none;
   color: var(--color-text);
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(201, 127, 79, 0.08);
+  box-shadow: 0 4px 16px rgba(212, 133, 157, 0.1);
 }
 
 .recipe-card:hover {
   border-color: var(--color-primary);
-  box-shadow: 0 12px 28px rgba(201, 127, 79, 0.15);
-  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(212, 133, 157, 0.2);
+  transform: translateY(-6px);
 }
 
 .recipe-card-image {
   width: 100%;
-  height: 200px;
+  height: 220px;
   overflow: hidden;
-  background: linear-gradient(135deg, #f0dcc8, #e8d4c0);
+  background: linear-gradient(135deg, #f8dde5, #f0c8d4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,8 +234,10 @@ body {
 }
 
 .recipe-card-title {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: -0.3px;
 }
 
 .recipe-category {
@@ -233,18 +250,18 @@ body {
 }
 
 .recipe-category.detox {
-  background: #e8f0eb;
-  color: #3d5a47;
+  background: #e8f3f0;
+  color: #3d5a50;
 }
 
 .recipe-category.nourish {
-  background: #eff5e8;
-  color: #4a6b2f;
+  background: #f8e8f0;
+  color: #8b4573;
 }
 
 .recipe-category.feast {
-  background: #fbe8e0;
-  color: #8b4513;
+  background: #ffe8ed;
+  color: #a8456b;
 }
 
 .recipe-card-meta {
@@ -288,10 +305,18 @@ body {
 /* Stats Section */
 .stats-section {
   margin: 3rem 0;
-  padding: 2.5rem;
-  background: linear-gradient(135deg, #f5ede4 0%, #f9f5f0 100%);
-  border-radius: 12px;
+  padding: 3rem;
+  background: linear-gradient(135deg, #f8eff1 0%, #fcf4f6 100%);
+  border-radius: 18px;
   border: 1px solid var(--color-border);
+  box-shadow: 0 4px 20px rgba(212, 133, 157, 0.08);
+}
+
+.stats-section h3 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
 }
 
 .stats-grid {
@@ -303,18 +328,18 @@ body {
 
 .stat-card {
   text-align: center;
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 1.5rem;
   background: white;
-  border-radius: 10px;
+  border-radius: 14px;
   border: 1px solid var(--color-border);
-  box-shadow: 0 4px 12px rgba(201, 127, 79, 0.06);
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(212, 133, 157, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .stat-card:hover {
   border-color: var(--color-primary);
-  box-shadow: 0 8px 20px rgba(201, 127, 79, 0.12);
-  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(212, 133, 157, 0.16);
+  transform: translateY(-4px);
 }
 
 .stat-value {
@@ -356,20 +381,20 @@ body {
 .recipe-hero-card {
   display: grid;
   grid-template-columns: minmax(280px, 420px) 1fr;
-  gap: 2rem;
-  padding: 2.5rem;
+  gap: 2.5rem;
+  padding: 3rem;
   background: white;
-  border-radius: 16px;
+  border-radius: 20px;
   border: 1px solid var(--color-border);
-  box-shadow: 0 8px 24px rgba(201, 127, 79, 0.1);
+  box-shadow: 0 8px 32px rgba(212, 133, 157, 0.12);
   margin-bottom: 2.5rem;
 }
 
 .recipe-hero-media {
-  border-radius: 14px;
+  border-radius: 16px;
   overflow: hidden;
-  background: linear-gradient(135deg, #f0dcc8, #e8d4c0);
-  min-height: 320px;
+  background: linear-gradient(135deg, #f8dde5, #f0c8d4);
+  min-height: 340px;
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -407,9 +432,12 @@ body {
 }
 
 .recipe-page h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   line-height: 1.2;
   margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: var(--color-text);
 }
 
 .recipe-meta-bar {
@@ -462,35 +490,38 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.65rem 1.1rem;
-  background: var(--color-secondary);
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   color: white;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
-  box-shadow: 0 8px 20px rgba(212, 165, 116, 0.25);
+  box-shadow: 0 8px 24px rgba(212, 133, 157, 0.3);
   transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
 }
 
 .source-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(212, 165, 116, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(212, 133, 157, 0.4);
   opacity: 0.95;
 }
 
 /* Recipe Sections */
 .recipe-page section {
   margin: 2.5rem 0;
-  padding: 2.5rem;
+  padding: 3rem;
   background: white;
-  border-radius: 14px;
+  border-radius: 18px;
   border: 1px solid var(--color-border);
-  box-shadow: 0 8px 20px rgba(201, 127, 79, 0.08);
+  box-shadow: 0 8px 24px rgba(212, 133, 157, 0.1);
 }
 
 .recipe-page section h2 {
-  font-size: 1.9rem;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--color-text);
 }
 
 /* Nutrition */
@@ -592,7 +623,7 @@ body {
 
 .step-item:hover {
   background: white;
-  box-shadow: 0 4px 12px rgba(201, 127, 79, 0.08);
+  box-shadow: 0 4px 16px rgba(212, 133, 157, 0.1);
 }
 
 .step-item:before {
@@ -666,10 +697,10 @@ body {
 
 .gantt-chart {
   background: white;
-  border-radius: 14px;
-  padding: 2.5rem;
+  border-radius: 18px;
+  padding: 3rem;
   border: 1px solid var(--color-border);
-  box-shadow: 0 8px 20px rgba(201, 127, 79, 0.08);
+  box-shadow: 0 8px 24px rgba(212, 133, 157, 0.1);
   margin-top: 1.5rem;
 }
 
@@ -688,22 +719,22 @@ body {
 }
 
 .gantt-toggle-btn {
-  padding: 0.6rem 1.25rem;
-  background: var(--color-primary);
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
-  box-shadow: 0 8px 16px rgba(201, 127, 79, 0.25);
+  box-shadow: 0 8px 20px rgba(212, 133, 157, 0.3);
 }
 
 .gantt-toggle-btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   opacity: 0.95;
-  box-shadow: 0 12px 24px rgba(201, 127, 79, 0.3);
+  box-shadow: 0 12px 32px rgba(212, 133, 157, 0.4);
 }
 
 /* Horizontal Gantt */
@@ -749,11 +780,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  padding: 1.1rem 1.2rem;
+  padding: 1.25rem 1.5rem;
   background: white;
-  border-radius: 12px;
+  border-radius: 14px;
   border: 1px solid var(--color-border);
-  box-shadow: 0 4px 12px rgba(201, 127, 79, 0.06);
+  box-shadow: 0 4px 16px rgba(212, 133, 157, 0.08);
   cursor: pointer;
   transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
@@ -761,12 +792,12 @@ body {
 .gantt-row:hover {
   transform: translateY(-2px);
   border-color: var(--color-primary);
-  box-shadow: 0 8px 20px rgba(201, 127, 79, 0.12);
+  box-shadow: 0 8px 24px rgba(212, 133, 157, 0.15);
 }
 
 .gantt-row.selected {
   border-color: var(--color-primary);
-  box-shadow: 0 12px 28px rgba(201, 127, 79, 0.15);
+  box-shadow: 0 12px 36px rgba(212, 133, 157, 0.2);
 }
 
 .gantt-row-info {
@@ -950,11 +981,11 @@ body {
 /* Gantt Details */
 .gantt-details {
   margin-top: 2.5rem;
-  padding: 2rem;
-  background: linear-gradient(135deg, #f5f0eb, #f9f5f0);
-  border-radius: 14px;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #f8eff1, #fcf4f6);
+  border-radius: 16px;
   border: 1px solid var(--color-border);
-  box-shadow: 0 8px 20px rgba(201, 127, 79, 0.1);
+  box-shadow: 0 8px 24px rgba(212, 133, 157, 0.12);
 }
 
 .gantt-details-header {
@@ -1005,20 +1036,22 @@ body {
 }
 
 .gantt-close-btn {
-  padding: 0.65rem 1.4rem;
-  background: #1f2937;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-accent);
   color: white;
   border: none;
-  border-radius: 999px;
+  border-radius: 10px;
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
-  transition: opacity 0.2s, transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 12px rgba(168, 101, 132, 0.25);
 }
 
 .gantt-close-btn:hover {
   opacity: 0.9;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(168, 101, 132, 0.3);
 }
 
 /* No Recipes */
