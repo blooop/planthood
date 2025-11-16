@@ -1074,28 +1074,189 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   :root {
-    --font-base: 16px;
+    --font-base: 15px;
+  }
+
+  /* Container: Reduce horizontal padding significantly */
+  .container {
+    padding: 0 12px;
+  }
+
+  /* Header: Reduce vertical padding */
+  .site-header {
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .site-title a {
+    font-size: 1.6rem;
+  }
+
+  .site-tagline {
+    font-size: 0.95rem;
+  }
+
+  /* Footer: Reduce padding */
+  .site-footer {
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+  }
+
+  /* Hero: Reduce padding and font sizes */
+  .hero {
+    padding: 1rem 0 1.5rem;
   }
 
   .hero h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-week {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  /* Week Selector: Reduce padding dramatically */
+  .week-selector {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .week-selector h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .week-list {
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .week-link {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+  }
+
+  /* Recipes Section: Reduce margins */
+  .recipes-section {
+    margin: 1.5rem 0;
+  }
+
+  .recipes-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
   }
 
   .recipe-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
+  /* Recipe Card: Reduce padding and border radius */
+  .recipe-card {
+    border-radius: 10px;
+  }
+
+  /* Fixed height maintains consistent card layout; img element inside
+     already has object-fit: cover (line 202-206) to preserve aspect ratio */
+  .recipe-card-image {
+    height: 180px;
+  }
+
+  .recipe-card-content {
+    padding: 1rem;
+  }
+
+  .recipe-card-header {
+    margin-bottom: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .recipe-card-title {
+    font-size: 1.15rem;
+  }
+
+  .recipe-category {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .recipe-card-meta {
+    gap: 0.4rem;
+    margin: 0.75rem 0;
+    font-size: 0.85rem;
+  }
+
+  .recipe-nutrition {
+    gap: 0.75rem;
+    font-size: 0.8rem;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+  }
+
+  .recipe-card-footer {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+  }
+
+  /* Stats Section: Reduce padding significantly */
+  .stats-section {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .stats-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .stat-card {
+    padding: 1.25rem 0.75rem;
+    border-radius: 8px;
+  }
+
+  .stat-value {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+  }
+
+  /* Recipe Page: Reduce all padding */
   .recipe-page {
-    padding: 0 1rem 3rem;
+    padding: 0 12px 2rem;
+  }
+
+  .back-link {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
   }
 
   .recipe-page h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .recipe-hero-card {
     grid-template-columns: 1fr;
-    padding: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .recipe-meta-top {
@@ -1104,37 +1265,329 @@ body {
   }
 
   .recipe-hero-media {
-    min-height: 220px;
+    min-height: 200px;
+    border-radius: 8px;
+  }
+
+  .recipe-meta-bar {
+    gap: 0.4rem;
+  }
+
+  .recipe-week {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
   }
 
   .recipe-times {
     flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.4rem;
   }
 
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .time-badge {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+  }
+
+  .time-badge strong {
+    font-size: 0.8rem;
+  }
+
+  .time-badge span {
+    font-size: 1rem;
+  }
+
+  .source-link {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Recipe Sections: Reduce padding dramatically */
+  .recipe-page section {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .recipe-page section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Nutrition Grid */
+  .nutrition-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .nutrition-item {
+    padding: 0.75rem;
+  }
+
+  .nutrition-item strong {
+    font-size: 0.8rem;
+  }
+
+  .nutrition-item span {
+    font-size: 1.1rem;
+  }
+
+  /* Ingredients */
+  .ingredients-list {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .ingredients-list li {
+    padding: 0.6rem;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .ingredients-list li:before {
+    left: 0.6rem;
+  }
+
+  /* Steps */
+  .step-item {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 8px;
+    border-left-width: 3px;
   }
 
   .step-item:before {
     position: static;
     display: inline-flex;
     margin-bottom: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.85rem;
   }
 
+  .step-header {
+    margin-bottom: 0.5rem;
+  }
+
+  .step-header h3 {
+    font-size: 1.05rem;
+  }
+
+  .step-duration {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .step-text {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .step-equipment,
+  .step-temperature {
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+  }
+
+  /* Gantt Chart */
   .gantt-chart {
-    padding: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
   }
 
   .gantt-controls {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .gantt-runtime {
+    font-size: 0.85rem;
+  }
+
+  .gantt-toggle-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
   }
 
   .gantt-horizontal {
-    padding: 1rem;
+    padding: 0.75rem;
+    border-radius: 10px;
+  }
+
+  .gantt-axis {
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+
+  .gantt-axis-mark span {
+    font-size: 0.7rem;
+  }
+
+  .gantt-rows {
+    gap: 0.75rem;
   }
 
   .gantt-row {
+    padding: 0.75rem 1rem;
+    gap: 0.5rem;
+    border-radius: 8px;
+  }
+
+  .gantt-row-info {
+    gap: 0.5rem;
+  }
+
+  .gantt-row-label {
+    font-size: 0.9rem;
+  }
+
+  .gantt-row-meta {
+    font-size: 0.8rem;
+  }
+
+  /* Fixed height required for absolutely positioned step bars inside
+     (see .gantt-step-bar with top: 4px; bottom: 4px) */
+  .gantt-row-track {
+    height: 36px;
+  }
+
+  /* Gantt Vertical */
+  .gantt-steps-vertical {
     padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .gantt-step-bar-vertical {
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    gap: 0.75rem;
+  }
+
+  .gantt-step-label-vertical span:first-child {
+    font-size: 0.9rem;
+  }
+
+  .gantt-step-duration-vertical {
+    font-size: 0.75rem;
+  }
+
+  .gantt-step-type {
+    padding: 0.15rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  /* Gantt Details */
+  .gantt-details {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .gantt-details-header {
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .gantt-details h3 {
+    font-size: 1.2rem;
+  }
+
+  .gantt-details-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .gantt-details-grid strong {
+    font-size: 0.75rem;
+  }
+
+  .gantt-details-text {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .gantt-close-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  /* Color Legend */
+  .color-legend {
+    padding: 0.15rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  /* Timeline Description */
+  .timeline-description {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* No Recipes */
+  .no-recipes {
+    padding: 2rem 1rem;
+  }
+
+  .no-recipes pre {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  :root {
+    --font-base: 14px;
+  }
+
+  .container {
+    padding: 0 8px;
+  }
+
+  .site-header {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+  }
+
+  .site-title a {
+    font-size: 1.4rem;
+  }
+
+  .site-tagline {
+    font-size: 0.85rem;
+  }
+
+  .hero {
+    padding: 0.75rem 0 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .week-selector {
+    padding: 0.75rem;
+  }
+
+  .stats-section {
+    padding: 0.75rem;
+  }
+
+  .recipe-page section {
+    padding: 0.75rem;
+  }
+
+  .recipe-hero-card {
+    padding: 0.75rem;
+  }
+
+  .gantt-chart {
+    padding: 0.75rem;
   }
 }
