@@ -76,7 +76,7 @@ export default async function RecipePage({ params }: RecipePageProps) {
                 <strong>Total time</strong>
                 <span>{recipe.total_time_min} min</span>
               </div>
-              <div className="time-divider"></div>
+              <div className="time-divider" aria-hidden="true"></div>
               <div className="time-item">
                 <strong>Active time</strong>
                 <span>{recipe.active_time_min} min</span>
