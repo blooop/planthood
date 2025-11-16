@@ -36,6 +36,16 @@ body {
   padding: 0 20px;
 }
 
+/* Full-bleed utility for breaking out of container on mobile */
+.full-bleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 /* Header */
 .site-header {
   background: linear-gradient(135deg, #d4859d 0%, #a86584 100%);
@@ -574,10 +584,23 @@ body {
   font-weight: bold;
 }
 
-/* Timeline */
+/* Timeline Section */
+.recipe-timeline-section {
+  margin: 1.5rem 0;
+}
+
+.timeline-header {
+  padding: 0 1rem;
+}
+
+.timeline-header h2 {
+  margin-bottom: 0.5rem;
+}
+
 .timeline-description {
   margin-bottom: 1.5rem;
   line-height: 1.8;
+  color: var(--color-text-light);
 }
 
 .color-legend {
@@ -1389,28 +1412,24 @@ body {
     margin-top: 0.4rem;
   }
 
-  /* Timeline Section - Full width on mobile */
+  /* Timeline Section - Compact on mobile */
   .recipe-timeline-section {
-    margin-left: -12px;
-    margin-right: -12px;
-    padding: 0.5rem 0 !important;
-    border-radius: 0 !important;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
+    margin: 1rem 0;
+    background: #fafafa;
   }
 
-  .recipe-timeline-section h2 {
-    padding: 0 12px;
+  .timeline-header {
+    padding: 0.5rem 12px;
+  }
+
+  .timeline-header h2 {
     font-size: 1.3rem;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.3rem;
   }
 
   .timeline-description {
-    padding: 0 12px;
     margin-bottom: 0.5rem;
     font-size: 0.8rem;
-    color: var(--color-text-light);
   }
 
   /* Gantt Chart - Minimalist full-width design */
@@ -1638,20 +1657,15 @@ body {
   }
 
   /* Timeline Section - Extra compact for small devices */
-  .recipe-timeline-section {
-    margin-left: -8px;
-    margin-right: -8px;
-    padding: 0.4rem 0 !important;
+  .timeline-header {
+    padding: 0.4rem 8px;
   }
 
-  .recipe-timeline-section h2 {
-    padding: 0 8px;
+  .timeline-header h2 {
     font-size: 1.2rem;
-    margin-bottom: 0.3rem;
   }
 
   .timeline-description {
-    padding: 0 8px;
     margin-bottom: 0.4rem;
     font-size: 0.75rem;
   }

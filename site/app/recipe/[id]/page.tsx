@@ -84,11 +84,13 @@ export default async function RecipePage({ params }: RecipePageProps) {
       </div>
 
       {recipe.steps.length > 0 && (
-        <section className="recipe-timeline-section">
-          <h2>Cooking Timeline</h2>
-          <p className="timeline-description">
-            Tap steps for details
-          </p>
+        <section className="recipe-timeline-section full-bleed">
+          <div className="timeline-header">
+            <h2>Cooking Timeline</h2>
+            <p className="timeline-description">
+              Tap steps for details
+            </p>
+          </div>
           <GanttChart steps={recipe.steps} />
         </section>
       )}
