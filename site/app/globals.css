@@ -1164,6 +1164,8 @@ body {
     border-radius: 10px;
   }
 
+  /* Fixed height maintains consistent card layout; img element inside
+     already has object-fit: cover (line 202-206) to preserve aspect ratio */
   .recipe-card-image {
     height: 180px;
   }
@@ -1446,6 +1448,8 @@ body {
     font-size: 0.8rem;
   }
 
+  /* Fixed height required for absolutely positioned step bars inside
+     (see .gantt-step-bar with top: 4px; bottom: 4px) */
   .gantt-row-track {
     height: 36px;
   }
