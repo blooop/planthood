@@ -1079,6 +1079,18 @@ body {
   box-shadow: 0 8px 20px rgba(168, 101, 132, 0.3);
 }
 
+/* Accessibility - Screen reader only text */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
 /* Critical Path Styles */
 .critical-indicator {
   font-size: 1em;
@@ -1161,6 +1173,43 @@ body {
   font-size: 0.9rem;
 }
 
+.critical-path-more-steps {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  color: #92400e;
+  font-style: italic;
+  cursor: default;
+  text-align: center;
+}
+
+.critical-path-more-steps:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.critical-path-toggle-btn {
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.6rem 1rem;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(251, 191, 36, 0.2);
+}
+
+.critical-path-toggle-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+}
+
 .gantt-control-buttons {
   display: flex;
   gap: 0.5rem;
@@ -1210,9 +1259,10 @@ body {
   gap: 0.5rem;
 }
 
-.critical-path-badge:before {
-  content: '⚡';
+.critical-path-badge-icon {
   font-size: 1.2em;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .slack-info {
@@ -1775,6 +1825,12 @@ body {
 
   .critical-path-steps .step-time {
     font-size: 0.8rem;
+  }
+
+  .critical-path-toggle-btn {
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.85rem;
+    font-size: 0.85rem;
   }
 
   .critical-path-badge {

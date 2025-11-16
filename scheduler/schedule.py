@@ -103,84 +103,50 @@ class RecipeScheduler:
         return sorted_steps
 
     def compute_critical_path(
-        self, scheduled_steps: List[ScheduledStep], step_lookup: Dict[str, Dict]
+        self, scheduled_steps: List[ScheduledStep]
     ) -> List[ScheduledStep]:
         """
         Compute critical path using backward pass.
         Updates each step with latest_start_min, latest_end_min, slack_min, and is_critical.
+        Assumes scheduled_steps is already in topological order from compute_schedule.
         """
         if not scheduled_steps:
             return []
 
-        # Create lookup for scheduled steps
-        scheduled_lookup = {step.id: step for step in scheduled_steps}
+        # Build reverse dependency graph (who depends on each step)
+        # Use dictionary comprehension for cleaner code
+        step_lookup = {s.id: s for s in scheduled_steps}
+        dependents = {s.id: [] for s in scheduled_steps}
+
+        for step in scheduled_steps:
+            for dep_id in step.requires:
+                if dep_id in dependents:
+                    dependents[dep_id].append(step)
+                else:
+                    print(f"Warning: Step '{step.id}' requires dependency '{dep_id}' "
+                          f"which is not present in scheduled_steps")
 
         # Find project end time (maximum end time)
         project_end = max(step.end_min for step in scheduled_steps)
 
-        # Build reverse dependency graph (who depends on each step)
-        dependents = defaultdict(list)
+        # Initialize latest_end_min and latest_start_min in place
         for step in scheduled_steps:
-            for dep_id in step.requires:
-                if dep_id in scheduled_lookup:
-                    dependents[dep_id].append(step.id)
+            # Use if expression for cleaner code
+            step.latest_end_min = step.end_min if not dependents[step.id] else project_end
+            step.latest_start_min = step.latest_end_min - step.duration_min
 
-        # Backward pass: calculate latest start and end times
-        # Start from steps with no dependents (leaf nodes)
-        latest_times = {}
+        # Backward pass: update latest times and compute slack/critical in one loop
+        for step in reversed(scheduled_steps):
+            deps = dependents[step.id]
+            if deps:
+                min_succ_start = min(d.latest_start_min for d in deps)
+                step.latest_end_min = min_succ_start
+                step.latest_start_min = min_succ_start - step.duration_min
 
-        # Initialize latest times for all steps to project end
-        for step in scheduled_steps:
-            if step.id not in dependents or len(dependents[step.id]) == 0:
-                # Leaf nodes: latest end = earliest end
-                latest_times[step.id] = {
-                    "latest_end": step.end_min,
-                    "latest_start": step.end_min - step.duration_min,
-                }
-            else:
-                # Initialize with project end for now
-                latest_times[step.id] = {
-                    "latest_end": project_end,
-                    "latest_start": project_end - step.duration_min,
-                }
+            step.slack_min = step.latest_start_min - step.start_min
+            step.is_critical = step.slack_min == 0
 
-        # Process steps in reverse topological order
-        sorted_ids = self.topological_sort([step_lookup[s.id] for s in scheduled_steps])
-        for step_id in reversed(sorted_ids):
-            if step_id not in scheduled_lookup:
-                continue
-
-            step = scheduled_lookup[step_id]
-
-            if step_id in dependents and len(dependents[step_id]) > 0:
-                # Latest end = minimum of latest starts of all dependent steps
-                min_dependent_start = min(
-                    latest_times[dep_id]["latest_start"]
-                    for dep_id in dependents[step_id]
-                    if dep_id in latest_times
-                )
-                latest_times[step_id]["latest_end"] = min_dependent_start
-                latest_times[step_id]["latest_start"] = (
-                    min_dependent_start - step.duration_min
-                )
-
-        # Update steps with critical path information
-        updated_steps = []
-        for step in scheduled_steps:
-            if step.id in latest_times:
-                latest_start = latest_times[step.id]["latest_start"]
-                latest_end = latest_times[step.id]["latest_end"]
-                slack = latest_start - step.start_min
-                is_critical = slack == 0
-
-                step.latest_start_min = latest_start
-                step.latest_end_min = latest_end
-                step.slack_min = slack
-                step.is_critical = is_critical
-
-            updated_steps.append(step)
-
-        return updated_steps
+        return scheduled_steps
 
     def compute_schedule(self, steps: List[Dict]) -> List[ScheduledStep]:
         """
@@ -236,7 +202,7 @@ class RecipeScheduler:
             step_end_times[step_id] = end_time
 
         # Backward pass: compute critical path
-        scheduled_steps = self.compute_critical_path(scheduled_steps, step_lookup)
+        scheduled_steps = self.compute_critical_path(scheduled_steps)
 
         return scheduled_steps
 

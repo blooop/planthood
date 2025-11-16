@@ -32,11 +32,14 @@ const MOBILE_CONFIG = {
   MIN_TIMELINE_HEIGHT: 400,
 };
 
+const CRITICAL_PATH_PREVIEW_COUNT = 5;
+
 export default function GanttChart({ steps }: GanttChartProps) {
   const [selectedStep, setSelectedStep] = useState<RecipeStep | null>(null);
   const [orientation, setOrientation] = useState<'horizontal' | 'vertical'>('horizontal');
   const [isMobile, setIsMobile] = useState(false);
   const [showCriticalOnly, setShowCriticalOnly] = useState(false);
+  const [criticalPathExpanded, setCriticalPathExpanded] = useState(false);
 
   // Detect screen size on mount and resize
   useEffect(() => {
@@ -125,7 +128,16 @@ export default function GanttChart({ steps }: GanttChartProps) {
               <div className="gantt-row-info">
                 <div>
                   <p className="gantt-row-label">
-                    {step.is_critical && <span className="critical-indicator">⚡</span>}
+                    {step.is_critical && (
+                      <span
+                        className="critical-indicator"
+                        aria-label="Critical step"
+                        role="img"
+                      >
+                        ⚡
+                        <span className="sr-only">Critical step</span>
+                      </span>
+                    )}
                     {step.label}
                   </p>
                   <p className="gantt-row-meta">
@@ -201,7 +213,16 @@ export default function GanttChart({ steps }: GanttChartProps) {
                 >
                   <div className="gantt-step-label-vertical">
                     <span>
-                      {step.is_critical && <span className="critical-indicator">⚡</span>}
+                      {step.is_critical && (
+                        <span
+                          className="critical-indicator"
+                          aria-label="Critical step"
+                          role="img"
+                        >
+                          ⚡
+                          <span className="sr-only">Critical step</span>
+                        </span>
+                      )}
                       {step.label}
                     </span>
                     <span className="gantt-step-duration-vertical">
@@ -230,14 +251,27 @@ export default function GanttChart({ steps }: GanttChartProps) {
             These steps determine the minimum cooking time. Any delay here delays the entire recipe.
           </p>
           <ol className="critical-path-steps">
-            {criticalPath.map((step, idx) => (
+            {(criticalPathExpanded ? criticalPath : criticalPath.slice(0, CRITICAL_PATH_PREVIEW_COUNT)).map((step, idx) => (
               <li key={step.id} onClick={() => handleStepClick(step)}>
                 <span className="step-number">{idx + 1}</span>
                 <span className="step-name">{step.label}</span>
                 <span className="step-time">{step.duration_min}m</span>
               </li>
             ))}
+            {!criticalPathExpanded && criticalPath.length > CRITICAL_PATH_PREVIEW_COUNT && (
+              <li className="critical-path-more-steps">
+                ...and {criticalPath.length - CRITICAL_PATH_PREVIEW_COUNT} more steps
+              </li>
+            )}
           </ol>
+          {criticalPath.length > CRITICAL_PATH_PREVIEW_COUNT && (
+            <button
+              className="critical-path-toggle-btn"
+              onClick={() => setCriticalPathExpanded(prev => !prev)}
+            >
+              {criticalPathExpanded ? 'Show less' : 'Show all steps'}
+            </button>
+          )}
         </div>
       )}
 
@@ -272,7 +306,16 @@ export default function GanttChart({ steps }: GanttChartProps) {
         <div className="gantt-details">
           <div className="gantt-details-header">
             <h3>
-              {selectedStep.is_critical && <span className="critical-indicator">⚡</span>}
+              {selectedStep.is_critical && (
+                <span
+                  className="critical-indicator"
+                  aria-label="Critical step"
+                  role="img"
+                >
+                  ⚡
+                  <span className="sr-only">Critical step</span>
+                </span>
+              )}
               {selectedStep.label}
             </h3>
             <span className={`gantt-step-type ${selectedStep.type} ${selectedStep.is_critical ? 'critical' : ''}`}>
@@ -281,6 +324,14 @@ export default function GanttChart({ steps }: GanttChartProps) {
           </div>
           {selectedStep.is_critical && (
             <div className="critical-path-badge">
+              <span
+                className="critical-path-badge-icon"
+                aria-label="Critical path"
+                role="img"
+              >
+                ⚡
+                <span className="sr-only">Critical path</span>
+              </span>
               On Critical Path - Any delay here delays the entire recipe
             </div>
           )}
