@@ -19,6 +19,12 @@
   --color-light: #fcf4f6;        /* Very light pink-cream */
   --font-base: 18px;
   --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Time badge component */
+  --time-badge-padding: 0.875rem 1.25rem;
+  --time-badge-gap: 1.25rem;
+  --time-badge-radius: 0.875rem;
+  --time-divider-height: 2.5rem;
 }
 
 body {
@@ -472,15 +478,36 @@ body {
 }
 
 .time-badge {
-  flex: 1 1 180px;
+  flex: 1 1 11.25rem;
   padding: 1rem 1.25rem;
   background: linear-gradient(135deg, #f1f5f9, #ffffff);
-  border-radius: 14px;
+  border-radius: var(--time-badge-radius);
   border: 1px solid var(--color-border);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+}
+
+.time-badge.compact {
+  flex: 0 1 auto;
+  max-width: fit-content;
+  flex-direction: row;
+  padding: var(--time-badge-padding);
+  gap: var(--time-badge-gap);
+  align-items: center;
+}
+
+.time-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.time-divider {
+  width: 1px;
+  height: var(--time-divider-height);
+  background: linear-gradient(180deg, transparent, var(--color-border), transparent);
 }
 
 .time-badge strong {
@@ -1494,6 +1521,13 @@ body {
     font-size: 0.8rem;
   }
 
+  :root {
+    --time-badge-padding: 0.75rem 1rem;
+    --time-badge-gap: 1rem;
+    --time-badge-radius: 0.5rem;
+    --time-divider-height: 2rem;
+  }
+
   .recipe-times {
     flex-direction: column;
     gap: 0.75rem;
@@ -1502,7 +1536,10 @@ body {
 
   .time-badge {
     padding: 0.75rem 1rem;
-    border-radius: 8px;
+  }
+
+  .time-badge.compact {
+    max-width: 100%;
   }
 
   .time-badge strong {
