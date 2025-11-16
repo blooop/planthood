@@ -1,0 +1,2052 @@
+[
+  {
+    "id": "afghan-aubergine-borani-banjan-with-saucy-spiced-lentils-garlic-yoghurt-fresh-mint-pillowy-flatbreads",
+    "title": "Afghan Aubergine (Borani Banjan) With Saucy Spiced Lentils, Garlic Yoghurt, Fresh Mint & Pillowy Flatbreads",
+    "source_url": "https://planthood.co.uk/products/afghan-aubergine-borani-banjan-with-saucy-spiced-lentils-garlic-yoghurt-fresh-mint-pillowy-flatbreads",
+    "week_label": null,
+    "category": "Feast",
+    "ingredients": [],
+    "nutrition": {
+      "calories": 474.0,
+      "protein_g": 20.2,
+      "fat_g": 6.4,
+      "carbs_g": 79.2,
+      "fibre_g": 16.4,
+      "salt_g": 1.4
+    },
+    "steps": [
+      {
+        "id": "step-7",
+        "raw_text": "Mix yoghurt, garlic, and lemon",
+        "label": "Mix yoghurt, garlic, and lemon",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-6"
+        ],
+        "equipment": [
+          "bowl",
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred for the garlic yoghurt topping. Ingredients include: soy yoghurt, lemon, garlic."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Slice aubergine",
+        "label": "Slice aubergine",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'Crispy roasted aubergine'. The stated 'Prep time 1' is very short for all prep, so this is an estimate."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Heat flatbreads",
+        "label": "Heat flatbreads",
+        "type": "cook",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-6"
+        ],
+        "equipment": [
+          "oven",
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred for serving with flatbreads. Best done towards the end of cooking."
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Preheat oven to 200°C",
+        "label": "Preheat oven to 200°C",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "oven"
+        ],
+        "temperature_c": 200,
+        "notes": "Inferred for roasting aubergine. Assuming a quick preheat to fit total time."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Chop onion and garlic, measure spices",
+        "label": "Chop onion and garlic, measure spices",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board",
+          "measuring spoons"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred for the lentil sauce base. Can be done while aubergine roasts."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Chop fresh mint",
+        "label": "Chop fresh mint",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 0,
+        "end_min": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred for the fresh mint topping."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Roast aubergine until crispy",
+        "label": "Roast aubergine until crispy",
+        "type": "cook",
+        "duration_min": 15,
+        "start_min": 5,
+        "end_min": 20,
+        "requires": [
+          "step-1",
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "oven",
+          "baking sheet"
+        ],
+        "temperature_c": 200,
+        "notes": "Adjusted duration to fit the stated 'Total time 20' minutes. This is the main cooking step."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Sauté onion, garlic, and spices",
+        "label": "Sauté onion, garlic, and spices",
+        "type": "cook",
+        "duration_min": 3,
+        "start_min": 3,
+        "end_min": 6,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-3"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred for building the sauce."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Add lentils, tomato, and sauce ingredients; simmer",
+        "label": "Add lentils, tomato, and sauce ingredients; simmer",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 6,
+        "end_min": 16,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [
+          "step-3"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred for the lentil sauce. Assumes quick-cook or canned lentils to fit the total time. Ingredients include: black lentils, tomato, balsamic vinegar, soy sauce, agave nectar, tomato puree, sea salt, paprika, cumin, coriander, fennel, chilli, cinnamon, allspice."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Assemble and serve",
+        "label": "Assemble and serve",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 20,
+        "end_min": 21,
+        "requires": [
+          "step-3",
+          "step-6",
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving plates"
+        ],
+        "temperature_c": null,
+        "notes": "Serve roasted aubergine over lentil sauce, topped with garlic yoghurt and mint, with flatbreads."
+      }
+    ],
+    "total_time_min": 21,
+    "active_time_min": 14
+  },
+  {
+    "id": "tandoori-tofu-with-pickled-red-cabbage-minted-oat-yoghurt-fresh-spinach-wrapped-in-soft-naan",
+    "title": "Tandoori Tofu Naan Wraps With Cooling Mint Yoghurt, Pickled Red Cabbage & Fresh Spinach",
+    "source_url": "https://planthood.co.uk/products/tandoori-tofu-with-pickled-red-cabbage-minted-oat-yoghurt-fresh-spinach-wrapped-in-soft-naan",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 513.0,
+      "protein_g": 22.8,
+      "fat_g": 24.3,
+      "carbs_g": 56.2,
+      "fibre_g": 7.2,
+      "salt_g": 1.4
+    },
+    "steps": [
+      {
+        "id": "step-2",
+        "raw_text": "Cut Tofu into Bites",
+        "label": "Cut Tofu into Bites",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Dice or cube tofu into bite-sized pieces."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Preheat Oven",
+        "label": "Preheat Oven",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-5",
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [
+          "oven"
+        ],
+        "temperature_c": 200,
+        "notes": "Preheat oven to 200°C for roasting the tofu."
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Prepare Tandoori Marinade",
+        "label": "Prepare Tandoori Marinade",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "mixing bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Mix garlic, ginger, lemon juice, and spices (paprika, cumin, cayenne, coriander, turmeric, maple syrup, salt) for the tandoori marinade."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Wash and Prep Spinach",
+        "label": "Wash and Prep Spinach",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6"
+        ],
+        "equipment": [
+          "colander"
+        ],
+        "temperature_c": null,
+        "notes": "Rinse and prepare fresh spinach leaves."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Prepare Pickled Red Cabbage",
+        "label": "Prepare Pickled Red Cabbage",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-7"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife",
+          "small bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Thinly slice red onion/cabbage and prepare a quick pickle with red wine vinegar, water, sugar, mustard seeds, fennel seeds, and coriander seeds."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Prepare Mint Yoghurt",
+        "label": "Prepare Mint Yoghurt",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [
+          "small bowl",
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Chop fresh mint and mix with oat yoghurt for the cooling sauce."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Marinate Tofu",
+        "label": "Marinate Tofu",
+        "type": "prep",
+        "duration_min": 15,
+        "start_min": 5,
+        "end_min": 20,
+        "requires": [
+          "step-1",
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [
+          "mixing bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Toss tofu in the prepared tandoori marinade. An estimated 15 minutes is used for marination, though longer is possible."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Roast Tofu",
+        "label": "Roast Tofu",
+        "type": "cook",
+        "duration_min": 20,
+        "start_min": 20,
+        "end_min": 40,
+        "requires": [
+          "step-3",
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-5",
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [
+          "baking sheet",
+          "oven"
+        ],
+        "temperature_c": 200,
+        "notes": "Spread marinated tofu on a baking sheet and roast in the preheated oven until charred."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Warm Naan",
+        "label": "Warm Naan",
+        "type": "cook",
+        "duration_min": 3,
+        "start_min": 40,
+        "end_min": 43,
+        "requires": [
+          "step-8"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "oven",
+          "baking sheet"
+        ],
+        "temperature_c": 180,
+        "notes": "Warm the garlic and herb naan bread until soft and pliable. This can be done in the oven during the last few minutes of tofu roasting or immediately after."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Assemble Wraps",
+        "label": "Assemble Wraps",
+        "type": "finish",
+        "duration_min": 5,
+        "start_min": 43,
+        "end_min": 48,
+        "requires": [
+          "step-8",
+          "step-9",
+          "step-5",
+          "step-6",
+          "step-7"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Fill warm naan with roasted tandoori tofu, cooling mint yoghurt, tangy pickled red cabbage, and fresh spinach."
+      }
+    ],
+    "total_time_min": 48,
+    "active_time_min": 57
+  },
+  {
+    "id": "creamy-kimchi-macaroni-with-roasted-broccoli-garlic-panko-breadcrumbs",
+    "title": "Creamy Kimchi Macaroni With Roasted Broccoli & Garlic Panko Breadcrumbs",
+    "source_url": "https://planthood.co.uk/products/creamy-kimchi-macaroni-with-roasted-broccoli-garlic-panko-breadcrumbs",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 767.0,
+      "protein_g": 29.1,
+      "carbs_g": 116.0,
+      "fibre_g": 11.6,
+      "salt_g": 2.4
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "General Prep",
+        "label": "General Prep",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Take out all ingredients and rinse any raw grains, herbs or vegetables."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Boil Kettle",
+        "label": "Boil Kettle",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 2,
+        "end_min": 5,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "kettle"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Preheat Oven",
+        "label": "Preheat Oven",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 2,
+        "end_min": 12,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "oven"
+        ],
+        "temperature_c": 200,
+        "notes": "Preheat to 200°C (180°C fan)."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Gather Equipment",
+        "label": "Gather Equipment",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 2,
+        "end_min": 3,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-5"
+        ],
+        "equipment": [
+          "large saucepan",
+          "small frying pan",
+          "roasting tray"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Cut Broccoli",
+        "label": "Cut Broccoli",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 2,
+        "end_min": 5,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Chop Spring Onion",
+        "label": "Chop Spring Onion",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 2,
+        "end_min": 4,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-7",
+          "step-8",
+          "step-10",
+          "step-12"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Finely chop spring onion, keep white half separate from green."
+      },
+      {
+        "id": "step-12",
+        "raw_text": "Chop Kimchi",
+        "label": "Chop Kimchi",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 2,
+        "end_min": 4,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-7",
+          "step-8",
+          "step-10",
+          "step-11"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Chop vegan kimchi into smaller bite-sized pieces. Keep the juices."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Boil Macaroni Pasta",
+        "label": "Boil Macaroni Pasta",
+        "type": "cook",
+        "duration_min": 8,
+        "start_min": 5,
+        "end_min": 13,
+        "requires": [
+          "step-2",
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-7",
+          "step-10",
+          "step-11",
+          "step-12"
+        ],
+        "equipment": [
+          "large saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Pour boiling water into saucepan, add macaroni pasta, salt water well. Boil for 8 minutes or until al dente."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Dry Fry Garlic Breadcrumbs",
+        "label": "Dry Fry Garlic Breadcrumbs",
+        "type": "cook",
+        "duration_min": 4,
+        "start_min": 3,
+        "end_min": 7,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-7",
+          "step-8",
+          "step-11",
+          "step-12"
+        ],
+        "equipment": [
+          "small frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Place frying pan over medium heat, dry fry (without oil) until lightly toasted."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Prepare Broccoli for Roasting",
+        "label": "Prepare Broccoli for Roasting",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 5,
+        "end_min": 7,
+        "requires": [
+          "step-5",
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "roasting tray",
+          "olive oil",
+          "salt",
+          "pepper"
+        ],
+        "temperature_c": null,
+        "notes": "Cut into bite-sized pieces, lay on tray, drizzle with olive oil, season."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Scoop Pasta Water & Drain Macaroni",
+        "label": "Scoop Pasta Water & Drain Macaroni",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 13,
+        "end_min": 14,
+        "requires": [
+          "step-8"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "mug",
+          "colander",
+          "large saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Scoop out a mug of pasta water, then drain and return the pasta to the pan."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Roast Broccoli",
+        "label": "Roast Broccoli",
+        "type": "cook",
+        "duration_min": 12.5,
+        "start_min": 12,
+        "end_min": 24.5,
+        "requires": [
+          "step-3",
+          "step-6"
+        ],
+        "can_overlap_with": [
+          "step-8",
+          "step-10",
+          "step-11",
+          "step-12"
+        ],
+        "equipment": [
+          "oven",
+          "roasting tray"
+        ],
+        "temperature_c": 200,
+        "notes": "Roast for 10-15 mins until golden, tossing once. Using midpoint duration."
+      },
+      {
+        "id": "step-13",
+        "raw_text": "Combine Macaroni with Sauce & Kimchi",
+        "label": "Combine Macaroni with Sauce & Kimchi",
+        "type": "cook",
+        "duration_min": 2,
+        "start_min": 14,
+        "end_min": 16,
+        "requires": [
+          "step-9",
+          "step-11",
+          "step-12"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large saucepan",
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Add gochujang 'cheese' sauce, spring onion whites, and kimchi to the pot with the macaroni and stir to heat through."
+      },
+      {
+        "id": "step-14",
+        "raw_text": "Adjust Sauce Consistency",
+        "label": "Adjust Sauce Consistency",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 16,
+        "end_min": 17,
+        "requires": [
+          "step-13"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large saucepan",
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Add a few splashes of reserved pasta water as needed to make the sauce silky."
+      },
+      {
+        "id": "step-15",
+        "raw_text": "Add Roasted Broccoli to Macaroni",
+        "label": "Add Roasted Broccoli to Macaroni",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 24.5,
+        "end_min": 25.5,
+        "requires": [
+          "step-7",
+          "step-14"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large saucepan",
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Add the cooked broccoli and stir again until just combined."
+      },
+      {
+        "id": "step-16",
+        "raw_text": "Ladle Macaroni into Bowls",
+        "label": "Ladle Macaroni into Bowls",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 25.5,
+        "end_min": 26.5,
+        "requires": [
+          "step-15"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "bowls",
+          "ladle"
+        ],
+        "temperature_c": null,
+        "notes": "Ladle the creamy macaroni into bowls."
+      },
+      {
+        "id": "step-17",
+        "raw_text": "Garnish Macaroni",
+        "label": "Garnish Macaroni",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 26.5,
+        "end_min": 27.5,
+        "requires": [
+          "step-16",
+          "step-10",
+          "step-11"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Top with the crispy garlic breadcrumbs and the spring onion greens."
+      }
+    ],
+    "total_time_min": 27.5,
+    "active_time_min": 30
+  },
+  {
+    "id": "peanut-butter-curry-with-sweet-potato-tenderstem-broccoli-crushed-peanuts-chilli-lime",
+    "title": "Peanut Butter Curry With Charred Red Peppers, Sugar Snap Peas, Lime & Toasted Peanuts",
+    "source_url": "https://planthood.co.uk/products/peanut-butter-curry-with-sweet-potato-tenderstem-broccoli-crushed-peanuts-chilli-lime",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 695.0,
+      "protein_g": 22.7,
+      "fat_g": 31.1,
+      "carbs_g": 107.8,
+      "fibre_g": 12.2,
+      "salt_g": 1.25
+    },
+    "steps": [
+      {
+        "id": "step-3",
+        "raw_text": "Char Red Peppers",
+        "label": "Char Red Peppers",
+        "type": "cook",
+        "duration_min": 15,
+        "start_min": 0,
+        "end_min": 15,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "oven",
+          "baking sheet"
+        ],
+        "temperature_c": 200,
+        "notes": "Inferred from 'charred red peppers'. Assumed oven broiler for charring. Peel and chop after charring (implied)."
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Cook Basmati Rice",
+        "label": "Cook Basmati Rice",
+        "type": "cook",
+        "duration_min": 15,
+        "start_min": 0,
+        "end_min": 15,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Assumed standard rice cooking time."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Toast Peanuts",
+        "label": "Toast Peanuts",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'toasted crushed peanuts'. Assumed dry pan toasting."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Prepare Curry Aromatics",
+        "label": "Prepare Curry Aromatics",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Chop/mince lemongrass, garlic, ginger, and measure spices (cumin, coriander, cloves, cinnamon, nutmeg)."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Prepare Potatoes & Sugar Snap Peas",
+        "label": "Prepare Potatoes & Sugar Snap Peas",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Peel/chop new potatoes, trim sugar snap peas."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Crush Toasted Peanuts",
+        "label": "Crush Toasted Peanuts",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 5,
+        "end_min": 7,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "mortar and pestle"
+        ],
+        "temperature_c": null,
+        "notes": "Requires peanuts to be toasted first."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Sauté Curry Aromatics",
+        "label": "Sauté Curry Aromatics",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 10,
+        "end_min": 15,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-6"
+        ],
+        "equipment": [
+          "large pot"
+        ],
+        "temperature_c": null,
+        "notes": "Sauté prepared lemongrass, garlic, ginger, and spices."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Simmer Curry Base",
+        "label": "Simmer Curry Base",
+        "type": "cook",
+        "duration_min": 15,
+        "start_min": 15,
+        "end_min": 30,
+        "requires": [
+          "step-7"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large pot"
+        ],
+        "temperature_c": null,
+        "notes": "Add coconut milk, water, vegan bouillon, peanut butter, and soy sauce. Simmer gently to combine flavors."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Add Vegetables to Curry",
+        "label": "Add Vegetables to Curry",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 30,
+        "end_min": 40,
+        "requires": [
+          "step-8",
+          "step-3",
+          "step-6"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large pot"
+        ],
+        "temperature_c": null,
+        "notes": "Add prepared potatoes, sugar snap peas, and charred red peppers. Cook until potatoes are tender."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Squeeze Fresh Lime",
+        "label": "Squeeze Fresh Lime",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 40,
+        "end_min": 41,
+        "requires": [
+          "step-9"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "citrus juicer"
+        ],
+        "temperature_c": null,
+        "notes": "Added just before serving for freshness."
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Serve Curry with Rice & Toppings",
+        "label": "Serve Curry with Rice & Toppings",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 41,
+        "end_min": 43,
+        "requires": [
+          "step-1",
+          "step-9",
+          "step-5",
+          "step-10"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Plate curry with basmati rice, topped with crushed peanuts and a lime wedge."
+      }
+    ],
+    "total_time_min": 43,
+    "active_time_min": 25
+  },
+  {
+    "id": "tahini-miso-ramen-with-crispy-chilli-tempeh-pak-choi-gluten-free-brown-rice-noodles",
+    "title": "Tahini Miso Ramen With Crispy Chilli Tempeh, Pak Choi & Flat Rice Noodles",
+    "source_url": "https://planthood.co.uk/products/tahini-miso-ramen-with-crispy-chilli-tempeh-pak-choi-gluten-free-brown-rice-noodles",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 650.0,
+      "protein_g": 29.0,
+      "fat_g": 37.9,
+      "carbs_g": 62.1,
+      "fibre_g": 7.0,
+      "salt_g": 3.8
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Take out all ingredients",
+        "label": "Take out all ingredients",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Gather all necessary ingredients before starting."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Gather cooking equipment",
+        "label": "Gather cooking equipment",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 0,
+        "end_min": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "large frying pan",
+          "saucepan",
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Take out a large frying pan and two saucepans."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Boil kettle",
+        "label": "Boil kettle",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "kettle"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Rinse raw ingredients",
+        "label": "Rinse raw ingredients",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 2,
+        "end_min": 5,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "sink"
+        ],
+        "temperature_c": null,
+        "notes": "Rinse any raw grains, herbs, or vegetables."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Crumble tempeh",
+        "label": "Crumble tempeh",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 2,
+        "end_min": 5,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "hands"
+        ],
+        "temperature_c": null,
+        "notes": "Crumble tempeh with hands until minced."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Remove pak choi leaves",
+        "label": "Remove pak choi leaves",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 2,
+        "end_min": 4,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "hands"
+        ],
+        "temperature_c": null,
+        "notes": "Remove pak choi leaves from the base of the stem."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Dice chilli and spring onions",
+        "label": "Dice chilli and spring onions",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 2,
+        "end_min": 7,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Finely dice chilli and spring onions (including green bits)."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Heat frying pan with oil",
+        "label": "Heat frying pan with oil",
+        "type": "cook",
+        "duration_min": 1,
+        "start_min": 1,
+        "end_min": 2,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-5",
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [
+          "large frying pan",
+          "oil"
+        ],
+        "temperature_c": 200,
+        "notes": "Place frying pan over high heat and add a generous drizzle of oil."
+      },
+      {
+        "id": "step-14",
+        "raw_text": "Prepare miso tahini broth",
+        "label": "Prepare miso tahini broth",
+        "type": "cook",
+        "duration_min": 1,
+        "start_min": 1,
+        "end_min": 2,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-9",
+          "step-10",
+          "step-12"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Pour miso tahini broth into other saucepan and add 300ml of water."
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Prepare water for noodles",
+        "label": "Prepare water for noodles",
+        "type": "cook",
+        "duration_min": 1,
+        "start_min": 5,
+        "end_min": 6,
+        "requires": [
+          "step-3",
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": 100,
+        "notes": "Pour boiling water from kettle into first saucepan and place over medium-high heat."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Fry tempeh",
+        "label": "Fry tempeh",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 5,
+        "end_min": 10,
+        "requires": [
+          "step-5",
+          "step-8"
+        ],
+        "can_overlap_with": [
+          "step-7"
+        ],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": 200,
+        "notes": "Add crumbled tempeh and fry until crispy."
+      },
+      {
+        "id": "step-15",
+        "raw_text": "Heat and simmer broth",
+        "label": "Heat and simmer broth",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 2,
+        "end_min": 12,
+        "requires": [
+          "step-14"
+        ],
+        "can_overlap_with": [
+          "step-10",
+          "step-12",
+          "step-13"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": 90,
+        "notes": "Place over medium-high heat and bring to a boil, then reduce to a light simmer until ready to serve."
+      },
+      {
+        "id": "step-12",
+        "raw_text": "Cook flat rice noodles",
+        "label": "Cook flat rice noodles",
+        "type": "cook",
+        "duration_min": 4.5,
+        "start_min": 6,
+        "end_min": 10.5,
+        "requires": [
+          "step-11"
+        ],
+        "can_overlap_with": [
+          "step-9",
+          "step-10"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": 100,
+        "notes": "Cook for 4-5 minutes or until tender but al dente. Keep checking as rice noodles can be easily overcooked."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Stir in black bean rayu and keep warm",
+        "label": "Stir in black bean rayu and keep warm",
+        "type": "cook",
+        "duration_min": 1,
+        "start_min": 10,
+        "end_min": 11,
+        "requires": [
+          "step-9"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Stir through half of the black bean rayu, then remove from pan and keep warm."
+      },
+      {
+        "id": "step-13",
+        "raw_text": "Drain and rinse noodles",
+        "label": "Drain and rinse noodles",
+        "type": "cook",
+        "duration_min": 2,
+        "start_min": 10.5,
+        "end_min": 12.5,
+        "requires": [
+          "step-12"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "colander",
+          "sink"
+        ],
+        "temperature_c": null,
+        "notes": "Drain and rinse well under cold running water, then leave in a colander to drain."
+      },
+      {
+        "id": "step-16",
+        "raw_text": "Clean frying pan",
+        "label": "Clean frying pan",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 11,
+        "end_min": 12,
+        "requires": [
+          "step-10"
+        ],
+        "can_overlap_with": [
+          "step-13",
+          "step-15"
+        ],
+        "equipment": [
+          "large frying pan",
+          "kitchen towel"
+        ],
+        "temperature_c": null,
+        "notes": "Wipe clean the same frying pan used for tempeh."
+      },
+      {
+        "id": "step-18",
+        "raw_text": "Divide noodles into bowls",
+        "label": "Divide noodles into bowls",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 12.5,
+        "end_min": 13.5,
+        "requires": [
+          "step-13"
+        ],
+        "can_overlap_with": [
+          "step-17"
+        ],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-17",
+        "raw_text": "Cook pak choi",
+        "label": "Cook pak choi",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 12,
+        "end_min": 17,
+        "requires": [
+          "step-6",
+          "step-16"
+        ],
+        "can_overlap_with": [
+          "step-18",
+          "step-19",
+          "step-20",
+          "step-21"
+        ],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": 200,
+        "notes": "Add pak choi and cook until tender. This can be done while serving."
+      },
+      {
+        "id": "step-19",
+        "raw_text": "Pour hot broth over noodles",
+        "label": "Pour hot broth over noodles",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 13.5,
+        "end_min": 14.5,
+        "requires": [
+          "step-15",
+          "step-18"
+        ],
+        "can_overlap_with": [
+          "step-17"
+        ],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-20",
+        "raw_text": "Top with pak choi and tempeh",
+        "label": "Top with pak choi and tempeh",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 17,
+        "end_min": 18,
+        "requires": [
+          "step-10",
+          "step-17",
+          "step-19"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-21",
+        "raw_text": "Garnish ramen",
+        "label": "Garnish ramen",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 18,
+        "end_min": 19,
+        "requires": [
+          "step-7",
+          "step-20"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Garnish with chilli, spring onions, and a drizzle of remaining black bean rayu."
+      }
+    ],
+    "total_time_min": 19,
+    "active_time_min": 26
+  },
+  {
+    "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
+    "title": "Adobo Black Bean Tostadas With Shredded Lettuce, Lime Cashew Crema, Avocado & Salsa Macha",
+    "source_url": "https://planthood.co.uk/products/adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 753.0,
+      "protein_g": 21.3,
+      "fat_g": 48.4,
+      "carbs_g": 64.9,
+      "fibre_g": 19.4,
+      "salt_g": 1.5
+    },
+    "steps": [
+      {
+        "id": "step-7",
+        "raw_text": "Shred lettuce",
+        "label": "Shred lettuce",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-8",
+          "step-9",
+          "step-10"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Finely shred the baby gem by cutting horizontally across the head."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Slice avocado",
+        "label": "Slice avocado",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-9",
+          "step-10"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "De-stone and cut into thin slices. Option to fan for presentation."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Cut lime into wedges",
+        "label": "Cut lime into wedges",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-8",
+          "step-10"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": null
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Drain black beans",
+        "label": "Drain black beans",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 0,
+        "end_min": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "colander"
+        ],
+        "temperature_c": null,
+        "notes": null
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Preheat oven",
+        "label": "Preheat oven",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "oven"
+        ],
+        "temperature_c": 200,
+        "notes": "Preheat oven to 200°C / 180°C fan."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Take out saucepan",
+        "label": "Take out saucepan",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 0,
+        "end_min": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3",
+          "step-4",
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": null
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Take out and rinse ingredients",
+        "label": "Take out and rinse ingredients",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Take out all ingredients and rinse any raw grains, herbs, or vegetables."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Bake tostadas",
+        "label": "Bake tostadas",
+        "type": "cook",
+        "duration_min": 8,
+        "start_min": 10,
+        "end_min": 18,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "baking tray",
+          "oven"
+        ],
+        "temperature_c": 200,
+        "notes": "Pop tacos onto a baking tray and bake for 8 minutes or until crispy, flipping halfway. This is the healthier, oil-free version."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Warm black beans with adobo sauce",
+        "label": "Warm black beans with adobo sauce",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 1,
+        "end_min": 6,
+        "requires": [
+          "step-2",
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-7",
+          "step-8",
+          "step-9",
+          "step-10"
+        ],
+        "equipment": [
+          "saucepan",
+          "stove",
+          "wooden spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Place over medium heat and warm through, stirring occasionally, until piping hot. Add a splash of water if it starts to stick."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Mash half of the black beans",
+        "label": "Mash half of the black beans",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 6,
+        "end_min": 8,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-7",
+          "step-8",
+          "step-9",
+          "step-10"
+        ],
+        "equipment": [
+          "fork",
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Roughly mash around half of the beans with a fork and set aside."
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Assemble tostadas",
+        "label": "Assemble tostadas",
+        "type": "finish",
+        "duration_min": 3,
+        "start_min": 18,
+        "end_min": 21,
+        "requires": [
+          "step-6",
+          "step-7",
+          "step-8",
+          "step-9",
+          "step-10"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Layer black beans, shredded lettuce, cashew crema, avocado slices, and salsa macha. Finish with a squeeze of fresh lime juice."
+      }
+    ],
+    "total_time_min": 21,
+    "active_time_min": 17
+  },
+  {
+    "id": "mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme",
+    "title": "Mushroom Birria Tacos With Melted Vegan Mozzarella, Onion Salsa & Rich Dipping Consommé",
+    "source_url": "https://planthood.co.uk/products/mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 543.0,
+      "protein_g": 19.3,
+      "fat_g": 19.2,
+      "carbs_g": 91.2,
+      "fibre_g": 14.9,
+      "salt_g": 1.2
+    },
+    "steps": [
+      {
+        "id": "step-2",
+        "raw_text": "Sauté aromatics for consommé",
+        "label": "Sauté aromatics for consommé",
+        "type": "prep",
+        "duration_min": 8,
+        "start_min": 0,
+        "end_min": 8,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Sauté red onion and garlic until softened and fragrant."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Shred oyster mushrooms",
+        "label": "Shred oyster mushrooms",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
+        "equipment": [
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Shred oyster mushrooms into bite-sized pieces, mimicking pulled meat texture."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Prepare onion, coriander, lime salsa",
+        "label": "Prepare onion, coriander, lime salsa",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
+        "equipment": [
+          "cutting board",
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Finely chop white onion and coriander, then mix with fresh lime juice to create a vibrant salsa."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Warm tortillas",
+        "label": "Warm tortillas",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-7"
+        ],
+        "equipment": [
+          "frying pan",
+          "comal"
+        ],
+        "temperature_c": null,
+        "notes": "Warm corn tortillas until pliable and slightly toasted."
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Rehydrate dried chillies",
+        "label": "Rehydrate dried chillies",
+        "type": "prep",
+        "duration_min": 20,
+        "start_min": 0,
+        "end_min": 20,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Rehydrate chipotle, chilli de arbol, and guajillo chillies in hot water until softened."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Blend consommé base",
+        "label": "Blend consommé base",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 20,
+        "end_min": 30,
+        "requires": [
+          "step-1",
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "blender"
+        ],
+        "temperature_c": null,
+        "notes": "Blend rehydrated chillies, sautéed aromatics, tomato puree, vegan bouillon, and spices (cloves, cumin, oregano, cinnamon, allspice, bay leaf) with water until smooth."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Simmer consommé",
+        "label": "Simmer consommé",
+        "type": "cook",
+        "duration_min": 90,
+        "start_min": 30,
+        "end_min": 120,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large pot"
+        ],
+        "temperature_c": null,
+        "notes": "Slow-cook the blended consommé base to develop rich, deep flavors. This will be used for mushroom marinade and dipping."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Marinate shredded mushrooms",
+        "label": "Marinate shredded mushrooms",
+        "type": "prep",
+        "duration_min": 30,
+        "start_min": 120,
+        "end_min": 150,
+        "requires": [
+          "step-4",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Marinate shredded mushrooms in a portion of the finished consommé for flavor absorption."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Cook marinated mushrooms",
+        "label": "Cook marinated mushrooms",
+        "type": "cook",
+        "duration_min": 15,
+        "start_min": 150,
+        "end_min": 165,
+        "requires": [
+          "step-6"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Sauté or cook the marinated mushrooms until tender and slightly browned."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Assemble birria tacos",
+        "label": "Assemble birria tacos",
+        "type": "prep",
+        "duration_min": 15,
+        "start_min": 165,
+        "end_min": 180,
+        "requires": [
+          "step-4",
+          "step-7",
+          "step-9"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "shallow dish"
+        ],
+        "temperature_c": null,
+        "notes": "Dip warm tortillas in the consommé, then fill with cooked mushrooms and vegan mozzarella."
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Fry birria tacos",
+        "label": "Fry birria tacos",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 180,
+        "end_min": 190,
+        "requires": [
+          "step-10"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Fry the assembled tacos until crispy and the vegan mozzarella is melted and gooey."
+      },
+      {
+        "id": "step-12",
+        "raw_text": "Serve birria tacos",
+        "label": "Serve birria tacos",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 190,
+        "end_min": 192,
+        "requires": [
+          "step-4",
+          "step-8",
+          "step-11"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "plate"
+        ],
+        "temperature_c": null,
+        "notes": "Serve the fried birria tacos immediately with the fresh onion salsa and a side of warm consommé for dipping."
+      }
+    ],
+    "total_time_min": 192,
+    "active_time_min": 105
+  }
+]
