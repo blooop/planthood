@@ -1,4 +1,5 @@
 import './globals.css';
+import ThemeToggle from '@/components/ThemeToggle';
 
 export const metadata = {
   title: 'Planthood Recipes',
@@ -12,13 +13,29 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const theme = localStorage.getItem('theme') ||
+                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', theme);
+              })();
+            `,
+          }}
+        />
+      </head>
       <body>
         <header className="site-header">
           <div className="container">
-            <h1 className="site-title">
-              <a href="/">Planthood Recipes</a>
-            </h1>
-            <p className="site-tagline">Interactive cooking timelines</p>
+            <div className="site-header-content">
+              <h1 className="site-title">
+                <a href="/">Planthood Recipes</a>
+              </h1>
+              <p className="site-tagline">Interactive cooking timelines</p>
+            </div>
+            <ThemeToggle />
           </div>
         </header>
 
