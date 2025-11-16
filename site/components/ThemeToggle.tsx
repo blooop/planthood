@@ -1,33 +1,23 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { getInitialTheme, applyTheme, type Theme } from '@/lib/theme';
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [theme, setTheme] = useState<Theme>('light');
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-    // Check if theme is stored in localStorage
-    const storedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
-
-    if (storedTheme) {
-      setTheme(storedTheme);
-      document.documentElement.setAttribute('data-theme', storedTheme);
-    } else {
-      // Check system preference
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const initialTheme = prefersDark ? 'dark' : 'light';
-      setTheme(initialTheme);
-      document.documentElement.setAttribute('data-theme', initialTheme);
-    }
+    // Get and apply the initial theme
+    const initialTheme = getInitialTheme();
+    setTheme(initialTheme);
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
+    const newTheme: Theme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
+    applyTheme(newTheme);
   };
 
   // Avoid hydration mismatch by not rendering until mounted

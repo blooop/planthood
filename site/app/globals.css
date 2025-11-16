@@ -152,6 +152,17 @@ body {
   transform: scale(0.95);
 }
 
+.theme-toggle:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(232, 155, 174, 0.3);
+}
+
+.theme-toggle:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 .theme-toggle-placeholder {
   width: 3rem;
   height: 3rem;

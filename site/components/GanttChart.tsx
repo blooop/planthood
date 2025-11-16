@@ -9,12 +9,12 @@ interface GanttChartProps {
 
 // Using CSS variables for theme-aware colors
 const getStepTypeColor = (type: RecipeStep['type']): string => {
-  const colorMap = {
+  const colorMap: Record<RecipeStep['type'], string> = {
     prep: 'var(--color-gantt-prep)',
     cook: 'var(--color-gantt-cook)',
     finish: 'var(--color-gantt-finish)',
   };
-  return colorMap[type];
+  return colorMap[type] ?? 'var(--color-gantt-prep)'; // Default to prep color
 };
 
 const STEP_TYPE_LABELS: Record<RecipeStep['type'], string> = {
