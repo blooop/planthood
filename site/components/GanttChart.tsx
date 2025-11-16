@@ -1,7 +1,7 @@
 'use client';
 
 import { RecipeStep } from '@/lib/types';
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 
 interface GanttChartProps {
   steps: RecipeStep[];
@@ -19,13 +19,40 @@ const STEP_TYPE_LABELS: Record<RecipeStep['type'], string> = {
   finish: 'Finishing',
 };
 
-const ROW_MULTIPLIER = 10; // tenths of a minute
-const MIN_ROW_HEIGHT = 4; // px per tenth
-const MIN_TIMELINE_HEIGHT = 480;
+// Responsive constants based on screen size
+const MOBILE_BREAKPOINT = 768;
+const DESKTOP_CONFIG = {
+  ROW_MULTIPLIER: 10,
+  MIN_ROW_HEIGHT: 4,
+  MIN_TIMELINE_HEIGHT: 480,
+};
+const MOBILE_CONFIG = {
+  ROW_MULTIPLIER: 5,
+  MIN_ROW_HEIGHT: 2,
+  MIN_TIMELINE_HEIGHT: 400,
+};
 
 export default function GanttChart({ steps }: GanttChartProps) {
   const [selectedStep, setSelectedStep] = useState<RecipeStep | null>(null);
   const [orientation, setOrientation] = useState<'horizontal' | 'vertical'>('vertical');
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect screen size on mount and resize
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= MOBILE_BREAKPOINT);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  // Use responsive configuration
+  const config = isMobile ? MOBILE_CONFIG : DESKTOP_CONFIG;
+  const ROW_MULTIPLIER = config.ROW_MULTIPLIER;
+  const MIN_ROW_HEIGHT = config.MIN_ROW_HEIGHT;
+  const MIN_TIMELINE_HEIGHT = config.MIN_TIMELINE_HEIGHT;
 
   if (!steps || steps.length === 0) {
     return (
