@@ -2048,5 +2048,144 @@
     ],
     "total_time_min": 192,
     "active_time_min": 105
+  },
+  {
+    "id": "miso-kimchi-farro-bowl",
+    "title": "Kimchi Miso Nourish Bowl With Farro, Charred Purple Sprouting Broccoli & Pak Choi",
+    "source_url": "https://planthood.co.uk/products/miso-kimchi-farro-bowl",
+    "week_label": null,
+    "category": "Nourish",
+    "ingredients": [],
+    "nutrition": {
+      "calories": 586.0,
+      "protein_g": 31.8,
+      "fat_g": 10.5,
+      "carbs_g": 95.2,
+      "fibre_g": 25.5,
+      "salt_g": 2.5
+    },
+    "steps": [
+      {
+        "id": "step-4",
+        "raw_text": "Prepare miso dressing",
+        "label": "Prepare miso dressing",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "bowl",
+          "whisk"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'umami-rich miso dressing'."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Cook purple sprouting broccoli, pak choi & peas",
+        "label": "Cook purple sprouting broccoli, pak choi & peas",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'cooked until tender' and 'charred' in the title. Assumed pan-frying for charring."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Chop kimchi",
+        "label": "Chop kimchi",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'tangy chopped kimchi'."
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Cook farro",
+        "label": "Cook farro",
+        "type": "cook",
+        "duration_min": 25,
+        "start_min": 0,
+        "end_min": 25,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Farro is a key grain mentioned as a healthy swap. Assumed standard cooking method."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Slice spring onion & red chilli",
+        "label": "Slice spring onion & red chilli",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'freshened up with sliced spring onion and red chilli'."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Assemble nourish bowl",
+        "label": "Assemble nourish bowl",
+        "type": "finish",
+        "duration_min": 5,
+        "start_min": 25,
+        "end_min": 30,
+        "requires": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large bowl"
+        ],
+        "temperature_c": null,
+        "notes": "All components are tossed together for the final dish."
+      }
+    ],
+    "total_time_min": 30,
+    "active_time_min": 16
   }
 ]
