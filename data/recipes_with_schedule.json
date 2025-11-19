@@ -2187,5 +2187,173 @@
     ],
     "total_time_min": 30,
     "active_time_min": 16
+  },
+  {
+    "id": "smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread",
+    "title": "Sweet & Smoky Butter Bean Shakshuka With Whipped Tahini, Toasted Dukkah & Soft Garlic Flatbread",
+    "source_url": "https://planthood.co.uk/products/smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 649.0,
+      "protein_g": 26.8,
+      "fat_g": 27.0,
+      "carbs_g": 80.6,
+      "fibre_g": 15.4,
+      "salt_g": 1.25
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "De-stem and slice red pepper",
+        "label": "De-stem and slice red pepper",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Cut into 1cm slices."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Heat oil in large frying pan",
+        "label": "Heat oil in large frying pan",
+        "type": "cook",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Place over a medium-high heat and add a drizzle of oil."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Warm flatbreads by dry frying",
+        "label": "Warm flatbreads by dry frying",
+        "type": "cook",
+        "duration_min": 0.75,
+        "start_min": 0,
+        "end_min": 0.75,
+        "requires": [],
+        "can_overlap_with": [
+          "step-6"
+        ],
+        "equipment": [
+          "other frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Dry fry (without oil) on both sides for 30-60 seconds or until lightly toasted. Alternatively, bake or grill in the oven."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Pick and chop parsley",
+        "label": "Pick and chop parsley",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Finely chop."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Fry sliced peppers until charred and tender",
+        "label": "Fry sliced peppers until charred and tender",
+        "type": "cook",
+        "duration_min": 6,
+        "start_min": 5,
+        "end_min": 11,
+        "requires": [
+          "step-1",
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Fry until lightly charred on the outside and starting to go tender."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Add shakshuka sauce and drained butter beans",
+        "label": "Add shakshuka sauce and drained butter beans",
+        "type": "cook",
+        "duration_min": 1,
+        "start_min": 11,
+        "end_min": 12,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Reduce heat to medium before adding."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Simmer shakshuka until piping hot",
+        "label": "Simmer shakshuka until piping hot",
+        "type": "cook",
+        "duration_min": 4.5,
+        "start_min": 12,
+        "end_min": 16.5,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Cook for 4-5 minutes. Add water as needed if it reduces too much or starts to stick."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Serve shakshuka",
+        "label": "Serve shakshuka",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 16.5,
+        "end_min": 18.5,
+        "requires": [
+          "step-6",
+          "step-2",
+          "step-7"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Divide shakshuka, drizzle over whipped tahini, and scatter over dukkah and fresh parsley. Use warm flatbread to scoop."
+      }
+    ],
+    "total_time_min": 18.5,
+    "active_time_min": 10
   }
 ]

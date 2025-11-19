@@ -48,8 +48,15 @@
       "steps_extracted": 6,
       "total_time_min": 30,
       "error": null
+    },
+    "smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread": {
+      "processed": true,
+      "timestamp": "2025-11-19T03:17:25.823298",
+      "steps_extracted": 8,
+      "total_time_min": 18.5,
+      "error": null
     }
   },
-  "last_updated": "2025-11-17T03:21:39.387567",
-  "total_processed": 7
+  "last_updated": "2025-11-19T03:17:25.823319",
+  "total_processed": 8
 }
