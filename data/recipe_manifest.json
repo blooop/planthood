@@ -1,7 +1,7 @@
 {
-  "total_recipes": 237,
+  "total_recipes": 239,
   "failed_recipes": 0,
-  "last_updated": "2025-11-17 03:51:46",
+  "last_updated": "2025-11-23 15:04:15",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -252,13 +252,6 @@
       "id": "chipotle-black-bean-burrito-bowl-with-roasted-sweet-potato-avocado-salsa-roja-lime-crema-tortilla-dippers",
       "title": "Chipotle Black Bean Burrito Bowl With Roasted Sweet Potato, Avocado, Salsa Roja, Lime Crema & Tortilla Dippers",
       "url": "https://planthood.co.uk/products/chipotle-black-bean-burrito-bowl-with-roasted-sweet-potato-avocado-salsa-roja-lime-crema-tortilla-dippers",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "copy-of-creamy-tomato-daal",
-      "title": "Creamy Tomato Daal With Charred Cauliflower, Crispy Kale, Coconut Yoghurt & Fluffy Rice",
-      "url": "https://planthood.co.uk/products/copy-of-creamy-tomato-daal",
       "scraped": true,
       "week_label": null
     },
@@ -1659,6 +1652,27 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "creamy-tomato-daal",
+      "title": "Creamy Tomato Daal With Charred Cauliflower, Crispy Kale, Coconut Yoghurt & Fluffy Rice",
+      "url": "https://planthood.co.uk/products/creamy-tomato-daal",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-grain-bowl-with-roasted-squash-crispy-chickpeas-creamy-garlic-tahini-pomegranate-seeds",
+      "title": "Super Green Grain Bowl With Roasted Squash, Crispy Chickpeas,  Creamy Garlic Tahini & Pomegranate Seeds",
+      "url": "https://planthood.co.uk/products/super-green-grain-bowl-with-roasted-squash-crispy-chickpeas-creamy-garlic-tahini-pomegranate-seeds",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "thai-red-curry-hispi-cabbage-with-black-lentils-lime-yoghurt-toasted-peanuts-fresh-coriander-fluffy-rice",
+      "title": "Thai Red Curry Hispi Cabbage With Black Lentils, Lime Yoghurt, Toasted Peanuts, Fresh Coriander & Fluffy Rice",
+      "url": "https://planthood.co.uk/products/thai-red-curry-hispi-cabbage-with-black-lentils-lime-yoghurt-toasted-peanuts-fresh-coriander-fluffy-rice",
       "scraped": true,
       "week_label": null
     }
