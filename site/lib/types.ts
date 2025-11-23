@@ -11,6 +11,10 @@ export interface RecipeStep {
   requires: string[];
   can_overlap_with: string[];
   notes?: string;
+  is_critical: boolean;
+  slack_min: number;
+  latest_start_min: number;
+  latest_end_min: number;
 }
 
 export interface Recipe {

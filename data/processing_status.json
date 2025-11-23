@@ -55,8 +55,42 @@
       "steps_extracted": 8,
       "total_time_min": 18.5,
       "error": null
+    },
+    "curried-squash-udon-noodle-soup-with-crispy-coconut-chickpeas-green-kale": {
+      "processed": true,
+      "timestamp": "2025-11-23T14:55:45.568746",
+      "error": "No steps extracted",
+      "steps_extracted": 0
+    },
+    "sticky-teriyaki-tofu-bowl-with-purple-sprouting-broccoli-pickled-cabbage-over-sushi-rice": {
+      "processed": true,
+      "timestamp": "2025-11-23T14:56:02.429362",
+      "steps_extracted": 20,
+      "total_time_min": 19.5,
+      "error": null
+    },
+    "crispy-courgette-sweetcorn-fritters-with-garlic-dill-yoghurt-and-sweet-cucumber-pickle": {
+      "processed": true,
+      "timestamp": "2025-11-23T14:56:30.098410",
+      "steps_extracted": 13,
+      "total_time_min": 25,
+      "error": null
+    },
+    "mushroom-shawarma": {
+      "processed": true,
+      "timestamp": "2025-11-23T14:56:35.847952",
+      "steps_extracted": 9,
+      "total_time_min": 26,
+      "error": null
+    },
+    "nourishing-sushi-bowl-with-coconut-sesame-crusted-tofu-gochujang-peanut-sauce": {
+      "processed": true,
+      "timestamp": "2025-11-23T14:56:41.717626",
+      "steps_extracted": 12,
+      "total_time_min": 21.5,
+      "error": null
     }
   },
-  "last_updated": "2025-11-19T03:17:25.823319",
-  "total_processed": 8
+  "last_updated": "2025-11-23T14:56:41.717660",
+  "total_processed": 13
 }
