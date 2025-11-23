@@ -213,7 +213,7 @@ export default function GanttChart({ steps }: GanttChartProps) {
               >
                 <div
                   className={`gantt-step-bar-vertical ${step.is_critical ? 'critical' : ''}`}
-                  style={{ backgroundColor: STEP_TYPE_COLORS[step.type] }}
+                  style={{ backgroundColor: getStepTypeColor(step.type) }}
                 >
                   <div className="gantt-step-label-vertical">
                     <span>
