@@ -1850,5 +1850,280 @@
         "notes": "Serve the fried birria tacos immediately with the fresh onion salsa and a side of warm consommé for dipping."
       }
     ]
+  },
+  {
+    "id": "miso-kimchi-farro-bowl",
+    "title": "Kimchi Miso Nourish Bowl With Farro, Charred Purple Sprouting Broccoli & Pak Choi",
+    "source_url": "https://planthood.co.uk/products/miso-kimchi-farro-bowl",
+    "week_label": null,
+    "category": "Nourish",
+    "ingredients": [],
+    "nutrition": {
+      "calories": 586.0,
+      "protein_g": 31.8,
+      "fat_g": 10.5,
+      "carbs_g": 95.2,
+      "fibre_g": 25.5,
+      "salt_g": 2.5
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Cook farro",
+        "label": "Cook farro",
+        "type": "cook",
+        "estimated_duration_minutes": 25,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Farro is a key grain mentioned as a healthy swap. Assumed standard cooking method."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Cook purple sprouting broccoli, pak choi & peas",
+        "label": "Cook purple sprouting broccoli, pak choi & peas",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'cooked until tender' and 'charred' in the title. Assumed pan-frying for charring."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Chop kimchi",
+        "label": "Chop kimchi",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'tangy chopped kimchi'."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Prepare miso dressing",
+        "label": "Prepare miso dressing",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "bowl",
+          "whisk"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'umami-rich miso dressing'."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Slice spring onion & red chilli",
+        "label": "Slice spring onion & red chilli",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'freshened up with sliced spring onion and red chilli'."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Assemble nourish bowl",
+        "label": "Assemble nourish bowl",
+        "type": "finish",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large bowl"
+        ],
+        "temperature_c": null,
+        "notes": "All components are tossed together for the final dish."
+      }
+    ]
+  },
+  {
+    "id": "smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread",
+    "title": "Sweet & Smoky Butter Bean Shakshuka With Whipped Tahini, Toasted Dukkah & Soft Garlic Flatbread",
+    "source_url": "https://planthood.co.uk/products/smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 649.0,
+      "protein_g": 26.8,
+      "fat_g": 27.0,
+      "carbs_g": 80.6,
+      "fibre_g": 15.4,
+      "salt_g": 1.25
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "De-stem and slice red pepper",
+        "label": "De-stem and slice red pepper",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Cut into 1cm slices."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Pick and chop parsley",
+        "label": "Pick and chop parsley",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Finely chop."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Heat oil in large frying pan",
+        "label": "Heat oil in large frying pan",
+        "type": "cook",
+        "estimated_duration_minutes": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Place over a medium-high heat and add a drizzle of oil."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Fry sliced peppers until charred and tender",
+        "label": "Fry sliced peppers until charred and tender",
+        "type": "cook",
+        "estimated_duration_minutes": 6,
+        "requires": [
+          "step-1",
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Fry until lightly charred on the outside and starting to go tender."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Add shakshuka sauce and drained butter beans",
+        "label": "Add shakshuka sauce and drained butter beans",
+        "type": "cook",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Reduce heat to medium before adding."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Simmer shakshuka until piping hot",
+        "label": "Simmer shakshuka until piping hot",
+        "type": "cook",
+        "estimated_duration_minutes": 4.5,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Cook for 4-5 minutes. Add water as needed if it reduces too much or starts to stick."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Warm flatbreads by dry frying",
+        "label": "Warm flatbreads by dry frying",
+        "type": "cook",
+        "estimated_duration_minutes": 0.75,
+        "requires": [],
+        "can_overlap_with": [
+          "step-6"
+        ],
+        "equipment": [
+          "other frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Dry fry (without oil) on both sides for 30-60 seconds or until lightly toasted. Alternatively, bake or grill in the oven."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Serve shakshuka",
+        "label": "Serve shakshuka",
+        "type": "finish",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-6",
+          "step-2",
+          "step-7"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Divide shakshuka, drizzle over whipped tahini, and scatter over dukkah and fresh parsley. Use warm flatbread to scoop."
+      }
+    ]
   }
 ]

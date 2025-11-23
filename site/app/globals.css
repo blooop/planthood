@@ -17,8 +17,19 @@
   --color-text-light: #9d8389;   /* Muted mauve-gray */
   --color-border: #f0dde3;       /* Soft rose border */
   --color-light: #fcf4f6;        /* Very light pink-cream */
+  --color-bg-gradient-start: #fef8f9;
+  --color-bg-gradient-end: #fcf4f6;
+  --color-header-gradient-start: #d4859d;
+  --color-header-gradient-end: #a86584;
+  --color-card-bg: #ffffff;
+  --color-input-bg: #ffffff;
   --font-base: 18px;
   --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Gantt chart colors */
+  --color-gantt-prep: #7c9eb8;
+  --color-gantt-cook: #d97563;
+  --color-gantt-finish: #6b9f7f;
 
   /* Time badge component */
   --time-badge-padding: 0.875rem 1.25rem;
@@ -27,12 +38,38 @@
   --time-divider-height: 2.5rem;
 }
 
+[data-theme="dark"] {
+  /* Dark theme color palette */
+  --color-primary: #e89bae;      /* Lighter dusty rose for better contrast */
+  --color-secondary: #f0b8b3;    /* Lighter soft coral */
+  --color-accent: #c88ba4;       /* Lighter deep mauve */
+  --color-success: #a8c9ba;      /* Lighter muted seafoam */
+  --color-heat: #f0aea9;         /* Lighter soft salmon */
+  --color-bg: #1a1517;           /* Deep burgundy-black */
+  --color-bg-alt: #251d20;       /* Slightly lighter burgundy-black */
+  --color-text: #f5e6ea;         /* Light rose-cream */
+  --color-text-light: #c4a8af;   /* Light mauve-gray */
+  --color-border: #3d2e33;       /* Deep burgundy-brown for borders */
+  --color-light: #2d2326;        /* Dark burgundy */
+  --color-bg-gradient-start: #1a1517;
+  --color-bg-gradient-end: #251d20;
+  --color-header-gradient-start: #8b4d6b;
+  --color-header-gradient-end: #6b3d55;
+  --color-card-bg: #2d2326;
+  --color-input-bg: #3d2e33;
+
+  /* Gantt chart dark colors */
+  --color-gantt-prep: #5a7c98;
+  --color-gantt-cook: #c96653;
+  --color-gantt-finish: #5b8f6f;
+}
+
 body {
   font-family: var(--font-family);
   font-size: var(--font-base);
   line-height: 1.7;
   color: var(--color-text);
-  background: linear-gradient(180deg, #fef8f9 0%, #fcf4f6 40%);
+  background: linear-gradient(180deg, var(--color-bg-gradient-start) 0%, var(--color-bg-gradient-end) 40%);
   letter-spacing: 0.01em;
 }
 
@@ -54,11 +91,22 @@ body {
 
 /* Header */
 .site-header {
-  background: linear-gradient(135deg, #d4859d 0%, #a86584 100%);
+  background: linear-gradient(135deg, var(--color-header-gradient-start) 0%, var(--color-header-gradient-end) 100%);
   color: white;
   padding: 3rem 0;
   margin-bottom: 3rem;
   box-shadow: 0 8px 32px rgba(212, 133, 157, 0.2);
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-header-content {
+  flex: 1;
 }
 
 .site-title a {
@@ -75,6 +123,50 @@ body {
   opacity: 0.95;
   margin-top: 0.5rem;
   letter-spacing: 0.3px;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.theme-toggle:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(232, 155, 174, 0.3);
+}
+
+.theme-toggle:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle-placeholder {
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
 }
 
 /* Footer */
@@ -149,7 +241,7 @@ body {
 
 .week-link {
   padding: 0.65rem 1.2rem;
-  background: white;
+  background: var(--color-card-bg);
   border: 1.5px solid var(--color-border);
   border-radius: 8px;
   text-decoration: none;
@@ -189,7 +281,7 @@ body {
 .recipe-card {
   display: flex;
   flex-direction: column;
-  background: white;
+  background: var(--color-card-bg);
   border: 1px solid var(--color-border);
   border-radius: 16px;
   text-decoration: none;
@@ -345,7 +437,7 @@ body {
 .stat-card {
   text-align: center;
   padding: 2.5rem 1.5rem;
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 14px;
   border: 1px solid var(--color-border);
   box-shadow: 0 4px 16px rgba(212, 133, 157, 0.08);
@@ -399,7 +491,7 @@ body {
   grid-template-columns: minmax(280px, 420px) 1fr;
   gap: 2.5rem;
   padding: 3rem;
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 20px;
   border: 1px solid var(--color-border);
   box-shadow: 0 8px 32px rgba(212, 133, 157, 0.12);
@@ -547,7 +639,7 @@ body {
 .recipe-page section {
   margin: 2.5rem 0;
   padding: 3rem;
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 18px;
   border: 1px solid var(--color-border);
   box-shadow: 0 8px 24px rgba(212, 133, 157, 0.1);
@@ -572,7 +664,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background: white;
+  background: var(--color-input-bg);
   border-radius: 6px;
 }
 
@@ -597,7 +689,7 @@ body {
 
 .ingredients-list li {
   padding: 0.75rem;
-  background: white;
+  background: var(--color-input-bg);
   border-radius: 6px;
   padding-left: 2rem;
   position: relative;
@@ -640,17 +732,17 @@ body {
 }
 
 .color-legend.prep {
-  background: #7c9eb8;
+  background: var(--color-gantt-prep);
   color: white;
 }
 
 .color-legend.cook {
-  background: #d97563;
+  background: var(--color-gantt-cook);
   color: white;
 }
 
 .color-legend.finish {
-  background: #6b9f7f;
+  background: var(--color-gantt-finish);
   color: white;
 }
 
@@ -672,7 +764,7 @@ body {
 }
 
 .step-item:hover {
-  background: white;
+  background: var(--color-card-bg);
   box-shadow: 0 4px 16px rgba(212, 133, 157, 0.1);
 }
 
@@ -693,15 +785,15 @@ body {
 }
 
 .step-item.step-prep {
-  border-left-color: #7c9eb8;
+  border-left-color: var(--color-gantt-prep);
 }
 
 .step-item.step-cook {
-  border-left-color: #d97563;
+  border-left-color: var(--color-gantt-cook);
 }
 
 .step-item.step-finish {
-  border-left-color: #6b9f7f;
+  border-left-color: var(--color-gantt-finish);
 }
 
 .step-header {
@@ -740,13 +832,13 @@ body {
   padding: 2rem;
   text-align: center;
   color: var(--color-text-light);
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 12px;
   border: 1px dashed var(--color-border);
 }
 
 .gantt-chart {
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 18px;
   padding: 1rem;
   border: 1px solid var(--color-border);
@@ -833,7 +925,7 @@ body {
   flex-direction: column;
   gap: 0.75rem;
   padding: 1.25rem 1.5rem;
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 14px;
   border: 1px solid var(--color-border);
   box-shadow: 0 4px 16px rgba(212, 133, 157, 0.08);
@@ -919,7 +1011,7 @@ body {
   left: 0;
   top: 0;
   transform: translate(-110%, -50%);
-  background: white;
+  background: var(--color-card-bg);
   padding: 0.1rem 0.4rem;
   border-radius: 999px;
   font-size: 0.75rem;
@@ -1076,7 +1168,7 @@ body {
 
 .gantt-details-text {
   padding: 1rem 1.25rem;
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 12px;
   border: 1px solid rgba(148, 163, 184, 0.35);
   margin-bottom: 1rem;
@@ -1301,7 +1393,7 @@ body {
 .no-recipes {
   text-align: center;
   padding: 3rem 2rem;
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 8px;
 }
 

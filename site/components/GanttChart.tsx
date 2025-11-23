@@ -7,10 +7,14 @@ interface GanttChartProps {
   steps: RecipeStep[];
 }
 
-const STEP_TYPE_COLORS: Record<RecipeStep['type'], string> = {
-  prep: '#3B82F6',
-  cook: '#F97316',
-  finish: '#10B981',
+// Using CSS variables for theme-aware colors
+const getStepTypeColor = (type: RecipeStep['type']): string => {
+  const colorMap: Record<RecipeStep['type'], string> = {
+    prep: 'var(--color-gantt-prep)',
+    cook: 'var(--color-gantt-cook)',
+    finish: 'var(--color-gantt-finish)',
+  };
+  return colorMap[type] ?? 'var(--color-gantt-prep)'; // Default to prep color
 };
 
 const STEP_TYPE_LABELS: Record<RecipeStep['type'], string> = {
@@ -157,7 +161,7 @@ export default function GanttChart({ steps }: GanttChartProps) {
                   style={{
                     left: `${leftPercent}%`,
                     width: `${widthPercent}%`,
-                    backgroundColor: STEP_TYPE_COLORS[step.type],
+                    backgroundColor: getStepTypeColor(step.type),
                   }}
                 />
               </div>
