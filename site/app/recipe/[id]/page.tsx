@@ -71,17 +71,43 @@ export default async function RecipePage({ params }: RecipePageProps) {
           <h1>{recipe.title}</h1>
 
           <div className="recipe-times">
-            <div className="time-badge">
-              <strong>Total time</strong>
-              <span>{recipe.total_time_min} minutes</span>
-            </div>
-            <div className="time-badge">
-              <strong>Active time</strong>
-              <span>{recipe.active_time_min} minutes</span>
+            <div className="time-badge compact">
+              <div className="time-item">
+                <strong>Total time</strong>
+                <span>{recipe.total_time_min} min</span>
+              </div>
+              <div className="time-divider" aria-hidden="true"></div>
+              <div className="time-item">
+                <strong>Active time</strong>
+                <span>{recipe.active_time_min} min</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      {recipe.steps.length > 0 && (
+        <section className="recipe-timeline-section">
+          <div className="timeline-header">
+            <h2>Cooking Timeline</h2>
+            <p className="timeline-description">
+              Tap steps for details
+            </p>
+          </div>
+          <GanttChart steps={recipe.steps} />
+        </section>
+      )}
+
+      {recipe.ingredients.length > 0 && (
+        <section className="recipe-ingredients-section">
+          <h2>Ingredients</h2>
+          <ul className="ingredients-list">
+            {recipe.ingredients.map((ingredient, idx) => (
+              <li key={idx}>{ingredient}</li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {recipe.nutrition && Object.keys(recipe.nutrition).length > 0 && (
         <section className="recipe-nutrition-section">
@@ -124,32 +150,6 @@ export default async function RecipePage({ params }: RecipePageProps) {
               </div>
             )}
           </div>
-        </section>
-      )}
-
-      {recipe.ingredients.length > 0 && (
-        <section className="recipe-ingredients-section">
-          <h2>Ingredients</h2>
-          <ul className="ingredients-list">
-            {recipe.ingredients.map((ingredient, idx) => (
-              <li key={idx}>{ingredient}</li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {recipe.steps.length > 0 && (
-        <section className="recipe-timeline-section">
-          <h2>Cooking Timeline (Gantt Chart)</h2>
-          <p className="timeline-description">
-            Interactive timeline showing when to start each step. Click any step for details.
-            <br />
-            <strong>Color code:</strong>{' '}
-            <span className="color-legend prep">Blue = Prep</span>{' '}
-            <span className="color-legend cook">Orange = Cooking</span>{' '}
-            <span className="color-legend finish">Green = Finishing</span>
-          </p>
-          <GanttChart steps={recipe.steps} />
         </section>
       )}
 

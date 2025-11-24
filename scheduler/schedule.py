@@ -30,6 +30,10 @@ class ScheduledStep:
     equipment: List[str]
     temperature_c: Optional[int]
     notes: str
+    is_critical: bool = False
+    slack_min: int = 0
+    latest_start_min: int = 0
+    latest_end_min: int = 0
 
 
 @dataclass
@@ -98,10 +102,56 @@ class RecipeScheduler:
 
         return sorted_steps
 
+    def compute_critical_path(self, scheduled_steps: List[ScheduledStep]) -> List[ScheduledStep]:
+        """
+        Compute critical path using backward pass.
+        Updates each step with latest_start_min, latest_end_min, slack_min, and is_critical.
+        Assumes scheduled_steps is already in topological order from compute_schedule.
+        """
+        if not scheduled_steps:
+            return []
+
+        # Build reverse dependency graph (who depends on each step)
+        # Use dictionary comprehension for cleaner code
+        dependents = {s.id: [] for s in scheduled_steps}
+
+        for step in scheduled_steps:
+            for dep_id in step.requires:
+                if dep_id in dependents:
+                    dependents[dep_id].append(step)
+                else:
+                    print(
+                        f"Warning: Step '{step.id}' requires dependency '{dep_id}' "
+                        f"which is not present in scheduled_steps"
+                    )
+
+        # Find project end time (maximum end time)
+        project_end = max(step.end_min for step in scheduled_steps)
+
+        # Initialize latest_end_min and latest_start_min in place
+        for step in scheduled_steps:
+            # Use if expression for cleaner code
+            step.latest_end_min = step.end_min if not dependents[step.id] else project_end
+            step.latest_start_min = step.latest_end_min - step.duration_min
+
+        # Backward pass: update latest times and compute slack/critical in one loop
+        for step in reversed(scheduled_steps):
+            deps = dependents[step.id]
+            if deps:
+                min_succ_start = min(d.latest_start_min for d in deps)
+                step.latest_end_min = min_succ_start
+                step.latest_start_min = min_succ_start - step.duration_min
+
+            step.slack_min = step.latest_start_min - step.start_min
+            step.is_critical = step.slack_min == 0
+
+        return scheduled_steps
+
     def compute_schedule(self, steps: List[Dict]) -> List[ScheduledStep]:
         """
         Compute start and end times for each step.
         Handles dependencies and allows parallel execution where possible.
+        Also computes critical path using CPM algorithm.
         """
         if not steps:
             return []
@@ -118,6 +168,7 @@ class RecipeScheduler:
         # Track what steps are running at each time point (for overlap checking)
         scheduled_steps = []
 
+        # Forward pass: compute earliest start and end times
         for step_id in sorted_ids:
             step = step_lookup[step_id]
             duration = step.get("estimated_duration_minutes", 0)
@@ -149,7 +200,20 @@ class RecipeScheduler:
             scheduled_steps.append(scheduled_step)
             step_end_times[step_id] = end_time
 
+        # Backward pass: compute critical path
+        scheduled_steps = self.compute_critical_path(scheduled_steps)
+
         return scheduled_steps
+
+    def get_critical_path(self, scheduled_steps: List[ScheduledStep]) -> List[str]:
+        """
+        Extract the critical path as an ordered list of step IDs.
+        Returns steps where is_critical=True in execution order.
+        """
+        critical_steps = [step for step in scheduled_steps if step.is_critical]
+        # Sort by start time to get execution order
+        critical_steps.sort(key=lambda s: s.start_min)
+        return [step.id for step in critical_steps]
 
     def schedule_recipe(self, recipe: Dict) -> ScheduledRecipe:
         """Schedule a single recipe"""
@@ -194,7 +258,17 @@ class RecipeScheduler:
             try:
                 scheduled = self.schedule_recipe(recipe)
                 scheduled_recipes.append(scheduled)
-                print(f"Scheduled {recipe['title']}: {scheduled.total_time_min} min total")
+
+                # Get critical path info
+                critical_path = self.get_critical_path(scheduled.steps)
+                critical_count = len(critical_path)
+                total_count = len(scheduled.steps)
+
+                print(
+                    f"Scheduled {recipe['title']}: "
+                    f"{scheduled.total_time_min} min total, "
+                    f"{critical_count}/{total_count} steps on critical path"
+                )
             except Exception as e:
                 print(f"Error scheduling {recipe['title']}: {e}")
 

@@ -41,8 +41,76 @@
       "steps_extracted": 12,
       "total_time_min": 192,
       "error": null
+    },
+    "miso-kimchi-farro-bowl": {
+      "processed": true,
+      "timestamp": "2025-11-17T03:21:39.387547",
+      "steps_extracted": 6,
+      "total_time_min": 30,
+      "error": null
+    },
+    "smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread": {
+      "processed": true,
+      "timestamp": "2025-11-19T03:17:25.823298",
+      "steps_extracted": 8,
+      "total_time_min": 18.5,
+      "error": null
+    },
+    "curried-squash-udon-noodle-soup-with-crispy-coconut-chickpeas-green-kale": {
+      "processed": true,
+      "timestamp": "2025-11-23T14:55:45.568746",
+      "error": "No steps extracted",
+      "steps_extracted": 0
+    },
+    "sticky-teriyaki-tofu-bowl-with-purple-sprouting-broccoli-pickled-cabbage-over-sushi-rice": {
+      "processed": true,
+      "timestamp": "2025-11-23T14:56:02.429362",
+      "steps_extracted": 20,
+      "total_time_min": 19.5,
+      "error": null
+    },
+    "crispy-courgette-sweetcorn-fritters-with-garlic-dill-yoghurt-and-sweet-cucumber-pickle": {
+      "processed": true,
+      "timestamp": "2025-11-23T14:56:30.098410",
+      "steps_extracted": 13,
+      "total_time_min": 25,
+      "error": null
+    },
+    "mushroom-shawarma": {
+      "processed": true,
+      "timestamp": "2025-11-23T14:56:35.847952",
+      "steps_extracted": 9,
+      "total_time_min": 26,
+      "error": null
+    },
+    "nourishing-sushi-bowl-with-coconut-sesame-crusted-tofu-gochujang-peanut-sauce": {
+      "processed": true,
+      "timestamp": "2025-11-23T14:56:41.717626",
+      "steps_extracted": 12,
+      "total_time_min": 21.5,
+      "error": null
+    },
+    "vietnamese-inspired-salad-with-sweet-chilli-dressing-crispy-tofu-rainbow-vegetables": {
+      "processed": true,
+      "timestamp": "2025-11-24T10:29:13.967716",
+      "error": "No steps extracted",
+      "steps_extracted": 0
+    },
+    "rich-luxurious-black-daal-makhani-with-crispy-bombay-potatoes-coconut-yoghurt": {
+      "processed": true,
+      "timestamp": "2025-11-24T10:30:52.294808",
+      "steps_extracted": 11,
+      "total_time_min": 14,
+      "error": null
+    },
+    "slow-cooked-mushroom-bourguignon-over-creamy-mash-with-green-kale": {
+      "processed": true,
+      "timestamp": "2025-11-24T10:56:09.338887",
+      "steps_extracted": 16,
+      "total_time_min": 22,
+      "error": null
     }
   },
-  "last_updated": "2025-11-15T16:43:15.572701",
-  "total_processed": 6
+  "last_updated": "2025-11-24T10:56:09.338942",
+  "total_processed": 16
 }

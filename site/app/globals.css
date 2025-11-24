@@ -17,8 +17,51 @@
   --color-text-light: #9d8389;   /* Muted mauve-gray */
   --color-border: #f0dde3;       /* Soft rose border */
   --color-light: #fcf4f6;        /* Very light pink-cream */
+  --color-bg-gradient-start: #fef8f9;
+  --color-bg-gradient-end: #fcf4f6;
+  --color-header-gradient-start: #d4859d;
+  --color-header-gradient-end: #a86584;
+  --color-card-bg: #ffffff;
+  --color-input-bg: #ffffff;
   --font-base: 18px;
   --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Gantt chart colors */
+  --color-gantt-prep: #7c9eb8;
+  --color-gantt-cook: #d97563;
+  --color-gantt-finish: #6b9f7f;
+
+  /* Time badge component */
+  --time-badge-padding: 0.875rem 1.25rem;
+  --time-badge-gap: 1.25rem;
+  --time-badge-radius: 0.875rem;
+  --time-divider-height: 2.5rem;
+}
+
+[data-theme="dark"] {
+  /* Dark theme color palette */
+  --color-primary: #e89bae;      /* Lighter dusty rose for better contrast */
+  --color-secondary: #f0b8b3;    /* Lighter soft coral */
+  --color-accent: #c88ba4;       /* Lighter deep mauve */
+  --color-success: #a8c9ba;      /* Lighter muted seafoam */
+  --color-heat: #f0aea9;         /* Lighter soft salmon */
+  --color-bg: #1a1517;           /* Deep burgundy-black */
+  --color-bg-alt: #251d20;       /* Slightly lighter burgundy-black */
+  --color-text: #f5e6ea;         /* Light rose-cream */
+  --color-text-light: #c4a8af;   /* Light mauve-gray */
+  --color-border: #3d2e33;       /* Deep burgundy-brown for borders */
+  --color-light: #2d2326;        /* Dark burgundy */
+  --color-bg-gradient-start: #1a1517;
+  --color-bg-gradient-end: #251d20;
+  --color-header-gradient-start: #8b4d6b;
+  --color-header-gradient-end: #6b3d55;
+  --color-card-bg: #2d2326;
+  --color-input-bg: #3d2e33;
+
+  /* Gantt chart dark colors */
+  --color-gantt-prep: #5a7c98;
+  --color-gantt-cook: #c96653;
+  --color-gantt-finish: #5b8f6f;
 }
 
 body {
@@ -26,7 +69,7 @@ body {
   font-size: var(--font-base);
   line-height: 1.7;
   color: var(--color-text);
-  background: linear-gradient(180deg, #fef8f9 0%, #fcf4f6 40%);
+  background: linear-gradient(180deg, var(--color-bg-gradient-start) 0%, var(--color-bg-gradient-end) 40%);
   letter-spacing: 0.01em;
 }
 
@@ -36,13 +79,34 @@ body {
   padding: 0 20px;
 }
 
+/* Full-bleed utility for breaking out of container on mobile */
+.full-bleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 /* Header */
 .site-header {
-  background: linear-gradient(135deg, #d4859d 0%, #a86584 100%);
+  background: linear-gradient(135deg, var(--color-header-gradient-start) 0%, var(--color-header-gradient-end) 100%);
   color: white;
   padding: 3rem 0;
   margin-bottom: 3rem;
   box-shadow: 0 8px 32px rgba(212, 133, 157, 0.2);
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-header-content {
+  flex: 1;
 }
 
 .site-title a {
@@ -59,6 +123,50 @@ body {
   opacity: 0.95;
   margin-top: 0.5rem;
   letter-spacing: 0.3px;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.theme-toggle:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(232, 155, 174, 0.3);
+}
+
+.theme-toggle:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle-placeholder {
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
 }
 
 /* Footer */
@@ -133,7 +241,7 @@ body {
 
 .week-link {
   padding: 0.65rem 1.2rem;
-  background: white;
+  background: var(--color-card-bg);
   border: 1.5px solid var(--color-border);
   border-radius: 8px;
   text-decoration: none;
@@ -173,7 +281,7 @@ body {
 .recipe-card {
   display: flex;
   flex-direction: column;
-  background: white;
+  background: var(--color-card-bg);
   border: 1px solid var(--color-border);
   border-radius: 16px;
   text-decoration: none;
@@ -329,7 +437,7 @@ body {
 .stat-card {
   text-align: center;
   padding: 2.5rem 1.5rem;
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 14px;
   border: 1px solid var(--color-border);
   box-shadow: 0 4px 16px rgba(212, 133, 157, 0.08);
@@ -383,7 +491,7 @@ body {
   grid-template-columns: minmax(280px, 420px) 1fr;
   gap: 2.5rem;
   padding: 3rem;
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 20px;
   border: 1px solid var(--color-border);
   box-shadow: 0 8px 32px rgba(212, 133, 157, 0.12);
@@ -462,15 +570,36 @@ body {
 }
 
 .time-badge {
-  flex: 1 1 180px;
+  flex: 1 1 11.25rem;
   padding: 1rem 1.25rem;
   background: linear-gradient(135deg, #f1f5f9, #ffffff);
-  border-radius: 14px;
+  border-radius: var(--time-badge-radius);
   border: 1px solid var(--color-border);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+}
+
+.time-badge.compact {
+  flex: 0 1 auto;
+  max-width: fit-content;
+  flex-direction: row;
+  padding: var(--time-badge-padding);
+  gap: var(--time-badge-gap);
+  align-items: center;
+}
+
+.time-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.time-divider {
+  width: 1px;
+  height: var(--time-divider-height);
+  background: linear-gradient(180deg, transparent, var(--color-border), transparent);
 }
 
 .time-badge strong {
@@ -510,7 +639,7 @@ body {
 .recipe-page section {
   margin: 2.5rem 0;
   padding: 3rem;
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 18px;
   border: 1px solid var(--color-border);
   box-shadow: 0 8px 24px rgba(212, 133, 157, 0.1);
@@ -535,7 +664,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background: white;
+  background: var(--color-input-bg);
   border-radius: 6px;
 }
 
@@ -560,7 +689,7 @@ body {
 
 .ingredients-list li {
   padding: 0.75rem;
-  background: white;
+  background: var(--color-input-bg);
   border-radius: 6px;
   padding-left: 2rem;
   position: relative;
@@ -574,10 +703,23 @@ body {
   font-weight: bold;
 }
 
-/* Timeline */
+/* Timeline Section */
+.recipe-timeline-section {
+  margin: 1.5rem 0;
+}
+
+.timeline-header {
+  padding: 0 1rem;
+}
+
+.timeline-header h2 {
+  margin-bottom: 0.5rem;
+}
+
 .timeline-description {
   margin-bottom: 1.5rem;
   line-height: 1.8;
+  color: var(--color-text-light);
 }
 
 .color-legend {
@@ -590,17 +732,17 @@ body {
 }
 
 .color-legend.prep {
-  background: #7c9eb8;
+  background: var(--color-gantt-prep);
   color: white;
 }
 
 .color-legend.cook {
-  background: #d97563;
+  background: var(--color-gantt-cook);
   color: white;
 }
 
 .color-legend.finish {
-  background: #6b9f7f;
+  background: var(--color-gantt-finish);
   color: white;
 }
 
@@ -622,7 +764,7 @@ body {
 }
 
 .step-item:hover {
-  background: white;
+  background: var(--color-card-bg);
   box-shadow: 0 4px 16px rgba(212, 133, 157, 0.1);
 }
 
@@ -643,15 +785,15 @@ body {
 }
 
 .step-item.step-prep {
-  border-left-color: #7c9eb8;
+  border-left-color: var(--color-gantt-prep);
 }
 
 .step-item.step-cook {
-  border-left-color: #d97563;
+  border-left-color: var(--color-gantt-cook);
 }
 
 .step-item.step-finish {
-  border-left-color: #6b9f7f;
+  border-left-color: var(--color-gantt-finish);
 }
 
 .step-header {
@@ -690,15 +832,15 @@ body {
   padding: 2rem;
   text-align: center;
   color: var(--color-text-light);
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 12px;
   border: 1px dashed var(--color-border);
 }
 
 .gantt-chart {
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 18px;
-  padding: 3rem;
+  padding: 1rem;
   border: 1px solid var(--color-border);
   box-shadow: 0 8px 24px rgba(212, 133, 157, 0.1);
   margin-top: 1.5rem;
@@ -709,39 +851,41 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
-.gantt-runtime {
-  font-size: 0.95rem;
+.gantt-metadata {
+  font-size: 0.75rem;
   color: var(--color-text-light);
+  font-weight: 500;
 }
 
 .gantt-toggle-btn {
-  padding: 0.75rem 1.5rem;
+  padding: 0.35rem 0.6rem;
   background: linear-gradient(135deg, #a86584, #8b4d6b);
   color: white;
   border: none;
-  border-radius: 10px;
-  font-size: 0.95rem;
+  border-radius: 6px;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
-  box-shadow: 0 8px 20px rgba(168, 101, 132, 0.3);
+  box-shadow: 0 4px 12px rgba(168, 101, 132, 0.2);
+  line-height: 1;
 }
 
 .gantt-toggle-btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   opacity: 0.95;
-  box-shadow: 0 12px 32px rgba(212, 133, 157, 0.4);
+  box-shadow: 0 6px 16px rgba(212, 133, 157, 0.3);
 }
 
 /* Horizontal Gantt */
 .gantt-horizontal {
   border: 1px solid rgba(148, 163, 184, 0.3);
   border-radius: 18px;
-  padding: 1.25rem 1.25rem 1.75rem;
+  padding: 0.5rem;
   background: linear-gradient(135deg, #f8fafc, #ffffff);
   overflow-x: auto;
 }
@@ -781,7 +925,7 @@ body {
   flex-direction: column;
   gap: 0.75rem;
   padding: 1.25rem 1.5rem;
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 14px;
   border: 1px solid var(--color-border);
   box-shadow: 0 4px 16px rgba(212, 133, 157, 0.08);
@@ -867,7 +1011,7 @@ body {
   left: 0;
   top: 0;
   transform: translate(-110%, -50%);
-  background: white;
+  background: var(--color-card-bg);
   padding: 0.1rem 0.4rem;
   border-radius: 999px;
   font-size: 0.75rem;
@@ -1024,7 +1168,7 @@ body {
 
 .gantt-details-text {
   padding: 1rem 1.25rem;
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 12px;
   border: 1px solid rgba(148, 163, 184, 0.35);
   margin-bottom: 1rem;
@@ -1054,11 +1198,202 @@ body {
   box-shadow: 0 8px 20px rgba(168, 101, 132, 0.3);
 }
 
+/* Accessibility - Screen reader only text */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/* Critical Path Styles */
+.critical-indicator {
+  font-size: 1em;
+  margin-right: 0.35rem;
+  display: inline-block;
+}
+
+.gantt-critical-path-summary {
+  padding: 2rem;
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  border: 2px solid #fbbf24;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 24px rgba(251, 191, 36, 0.15);
+}
+
+.gantt-critical-path-summary h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #92400e;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.critical-path-description {
+  color: #78350f;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.critical-path-steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.critical-path-steps li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #fcd34d;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.critical-path-steps li:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.2);
+  border-color: #fbbf24;
+}
+
+.critical-path-steps .step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.critical-path-steps .step-name {
+  flex: 1;
+  font-weight: 500;
+  color: #78350f;
+}
+
+.critical-path-steps .step-time {
+  font-weight: 600;
+  color: #92400e;
+  font-size: 0.9rem;
+}
+
+.critical-path-more-steps {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  color: #92400e;
+  font-style: italic;
+  cursor: default;
+  text-align: center;
+}
+
+.critical-path-more-steps:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.critical-path-toggle-btn {
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.6rem 1rem;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(251, 191, 36, 0.2);
+}
+
+.critical-path-toggle-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+}
+
+.gantt-control-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.gantt-toggle-btn.active {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+}
+
+.gantt-row.critical,
+.gantt-step-vertical.critical {
+  border-color: #fbbf24;
+  background: linear-gradient(135deg, #fffbeb, #ffffff);
+}
+
+.gantt-row.critical:hover,
+.gantt-step-vertical.critical:hover {
+  box-shadow: 0 8px 24px rgba(251, 191, 36, 0.25);
+}
+
+.gantt-step-bar.critical {
+  box-shadow: 0 12px 25px rgba(251, 191, 36, 0.3), 0 0 0 3px rgba(251, 191, 36, 0.2);
+}
+
+.gantt-step-bar-vertical.critical {
+  box-shadow: 0 16px 35px rgba(251, 191, 36, 0.35), 0 0 0 3px rgba(251, 191, 36, 0.2);
+}
+
+.gantt-step-type.critical {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border-color: #fbbf24;
+  color: #92400e;
+}
+
+.critical-path-badge {
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, #fffbeb, #fef3c7);
+  border: 1px solid #fbbf24;
+  border-radius: 10px;
+  margin-bottom: 1.25rem;
+  color: #78350f;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.critical-path-badge-icon {
+  font-size: 1.2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.slack-info {
+  color: #059669;
+  font-weight: 500;
+}
+
 /* No Recipes */
 .no-recipes {
   text-align: center;
   padding: 3rem 2rem;
-  background: white;
+  background: var(--color-card-bg);
   border-radius: 8px;
 }
 
@@ -1074,28 +1409,189 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   :root {
-    --font-base: 16px;
+    --font-base: 15px;
+  }
+
+  /* Container: Reduce horizontal padding significantly */
+  .container {
+    padding: 0 12px;
+  }
+
+  /* Header: Reduce vertical padding */
+  .site-header {
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .site-title a {
+    font-size: 1.6rem;
+  }
+
+  .site-tagline {
+    font-size: 0.95rem;
+  }
+
+  /* Footer: Reduce padding */
+  .site-footer {
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+  }
+
+  /* Hero: Reduce padding and font sizes */
+  .hero {
+    padding: 1rem 0 1.5rem;
   }
 
   .hero h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-week {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  /* Week Selector: Reduce padding dramatically */
+  .week-selector {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .week-selector h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .week-list {
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .week-link {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+  }
+
+  /* Recipes Section: Reduce margins */
+  .recipes-section {
+    margin: 1.5rem 0;
+  }
+
+  .recipes-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
   }
 
   .recipe-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
+  /* Recipe Card: Reduce padding and border radius */
+  .recipe-card {
+    border-radius: 10px;
+  }
+
+  /* Fixed height maintains consistent card layout; img element inside
+     already has object-fit: cover (line 202-206) to preserve aspect ratio */
+  .recipe-card-image {
+    height: 180px;
+  }
+
+  .recipe-card-content {
+    padding: 1rem;
+  }
+
+  .recipe-card-header {
+    margin-bottom: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .recipe-card-title {
+    font-size: 1.15rem;
+  }
+
+  .recipe-category {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .recipe-card-meta {
+    gap: 0.4rem;
+    margin: 0.75rem 0;
+    font-size: 0.85rem;
+  }
+
+  .recipe-nutrition {
+    gap: 0.75rem;
+    font-size: 0.8rem;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+  }
+
+  .recipe-card-footer {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+  }
+
+  /* Stats Section: Reduce padding significantly */
+  .stats-section {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .stats-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .stat-card {
+    padding: 1.25rem 0.75rem;
+    border-radius: 8px;
+  }
+
+  .stat-value {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+  }
+
+  /* Recipe Page: Reduce all padding */
   .recipe-page {
-    padding: 0 1rem 3rem;
+    padding: 0 12px 2rem;
+  }
+
+  .back-link {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
   }
 
   .recipe-page h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .recipe-hero-card {
     grid-template-columns: 1fr;
-    padding: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .recipe-meta-top {
@@ -1104,37 +1600,494 @@ body {
   }
 
   .recipe-hero-media {
-    min-height: 220px;
+    min-height: 200px;
+    border-radius: 8px;
+  }
+
+  .recipe-meta-bar {
+    gap: 0.4rem;
+  }
+
+  .recipe-week {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  :root {
+    --time-badge-padding: 0.75rem 1rem;
+    --time-badge-gap: 1rem;
+    --time-badge-radius: 0.5rem;
+    --time-divider-height: 2rem;
   }
 
   .recipe-times {
     flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.4rem;
   }
 
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .time-badge {
+    padding: 0.75rem 1rem;
+  }
+
+  .time-badge.compact {
+    max-width: 100%;
+  }
+
+  .time-badge strong {
+    font-size: 0.8rem;
+  }
+
+  .time-badge span {
+    font-size: 1rem;
+  }
+
+  .source-link {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Recipe Sections: Reduce padding dramatically */
+  .recipe-page section {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .recipe-page section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Nutrition Grid */
+  .nutrition-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .nutrition-item {
+    padding: 0.75rem;
+  }
+
+  .nutrition-item strong {
+    font-size: 0.8rem;
+  }
+
+  .nutrition-item span {
+    font-size: 1.1rem;
+  }
+
+  /* Ingredients */
+  .ingredients-list {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .ingredients-list li {
+    padding: 0.6rem;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .ingredients-list li:before {
+    left: 0.6rem;
+  }
+
+  /* Steps */
+  .step-item {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 8px;
+    border-left-width: 3px;
   }
 
   .step-item:before {
     position: static;
     display: inline-flex;
     margin-bottom: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.85rem;
   }
 
+  .step-header {
+    margin-bottom: 0.5rem;
+  }
+
+  .step-header h3 {
+    font-size: 1.05rem;
+  }
+
+  .step-duration {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .step-text {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .step-equipment,
+  .step-temperature {
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+  }
+
+  /* Timeline Section - Compact on mobile */
+  .recipe-timeline-section {
+    margin: 1rem 0;
+    background: #fafafa;
+  }
+
+  .timeline-header {
+    padding: 0.5rem 12px;
+  }
+
+  .timeline-header h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .timeline-description {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  /* Gantt Chart - Minimalist full-width design */
   .gantt-chart {
-    padding: 1.5rem;
+    padding: 0.5rem 0;
+    border-radius: 0;
+    margin-top: 0;
+    border: none;
+    box-shadow: none;
+    background: #fafafa;
   }
 
   .gantt-controls {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0 4px;
+  }
+
+  .gantt-metadata {
+    font-size: 0.65rem;
+  }
+
+  .gantt-toggle-btn {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    box-shadow: none;
   }
 
   .gantt-horizontal {
-    padding: 1rem;
+    padding: 0.5rem 8px;
+    border-radius: 0;
+    border: none;
+    background: transparent;
+  }
+
+  .gantt-axis {
+    height: 30px;
+    margin-bottom: 0.5rem;
+  }
+
+  .gantt-axis-mark span {
+    font-size: 0.65rem;
+  }
+
+  .gantt-rows {
+    gap: 0.4rem;
   }
 
   .gantt-row {
+    padding: 0.5rem 0.75rem;
+    gap: 0.4rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+
+  .gantt-row-info {
+    gap: 0.4rem;
+  }
+
+  .gantt-row-label {
+    font-size: 0.85rem;
+  }
+
+  .gantt-row-meta {
+    font-size: 0.7rem;
+  }
+
+  /* Fixed height required for absolutely positioned step bars inside
+     (see .gantt-step-bar with top: 4px; bottom: 4px) */
+  .gantt-row-track {
+    height: 28px;
+  }
+
+  /* Gantt Vertical - Maximized for mobile */
+  .gantt-vertical {
+    padding: 0;
+  }
+
+  .gantt-timeline-vertical {
+    gap: 8px;
+    padding: 0 8px;
+  }
+
+  .gantt-axis-vertical {
+    display: none; /* Hide axis on mobile for more space */
+  }
+
+  .gantt-steps-vertical {
+    padding: 8px;
+    border-radius: 0;
+    border: none;
+    background: transparent;
+  }
+
+  .gantt-step-bar-vertical {
+    padding: 0.5rem 0.6rem;
+    border-radius: 6px;
+    gap: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  }
+
+  .gantt-step-label-vertical {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .gantt-step-label-vertical span:first-child {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  .gantt-step-duration-vertical {
+    font-size: 0.65rem;
+  }
+
+  .gantt-step-type {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.6rem;
+    flex-shrink: 0;
+  }
+
+  /* Gantt Details */
+  .gantt-details {
+    margin: 0.75rem 8px 0;
+    padding: 0.75rem;
+    border-radius: 8px;
+  }
+
+  .gantt-details-header {
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .gantt-details h3 {
+    font-size: 1.1rem;
+  }
+
+  .gantt-details-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .gantt-details-grid strong {
+    font-size: 0.7rem;
+  }
+
+  .gantt-details-grid span {
+    font-size: 0.85rem;
+  }
+
+  .gantt-details-text {
+    padding: 0.6rem 0.75rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .gantt-close-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  /* Critical Path - Mobile */
+  .gantt-critical-path-summary {
     padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+
+  .gantt-critical-path-summary h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .critical-path-description {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .critical-path-steps li {
+    padding: 0.5rem 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .critical-path-steps .step-number {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.75rem;
+  }
+
+  .critical-path-steps .step-name {
+    font-size: 0.85rem;
+  }
+
+  .critical-path-steps .step-time {
+    font-size: 0.8rem;
+  }
+
+  .critical-path-toggle-btn {
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.85rem;
+    font-size: 0.85rem;
+  }
+
+  .critical-path-badge {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .critical-indicator {
+    font-size: 0.9em;
+  }
+
+  /* No Recipes */
+  .no-recipes {
+    padding: 2rem 1rem;
+  }
+
+  .no-recipes pre {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  :root {
+    --font-base: 14px;
+  }
+
+  .container {
+    padding: 0 8px;
+  }
+
+  .site-header {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+  }
+
+  .site-title a {
+    font-size: 1.4rem;
+  }
+
+  .site-tagline {
+    font-size: 0.85rem;
+  }
+
+  .hero {
+    padding: 0.75rem 0 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .week-selector {
+    padding: 0.75rem;
+  }
+
+  .stats-section {
+    padding: 0.75rem;
+  }
+
+  .recipe-page section {
+    padding: 0.75rem;
+  }
+
+  .recipe-hero-card {
+    padding: 0.75rem;
+  }
+
+  /* Timeline Section - Extra compact for small devices */
+  .timeline-header {
+    padding: 0.4rem 8px;
+  }
+
+  .timeline-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-description {
+    margin-bottom: 0.4rem;
+    font-size: 0.75rem;
+  }
+
+  /* Gantt Chart - Ultra minimalist for small screens */
+  .gantt-chart {
+    padding: 0.4rem 0;
+  }
+
+  .gantt-controls {
+    padding: 0 4px;
+    gap: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .gantt-metadata {
+    font-size: 0.6rem;
+  }
+
+  .gantt-toggle-btn {
+    padding: 0.25rem 0.4rem;
+    font-size: 0.85rem;
+  }
+
+  .gantt-timeline-vertical {
+    padding: 0 6px;
+    gap: 6px;
+  }
+
+  .gantt-steps-vertical {
+    padding: 6px;
+  }
+
+  .gantt-step-bar-vertical {
+    padding: 0.4rem 0.5rem;
+    border-radius: 4px;
+    gap: 0.4rem;
+  }
+
+  .gantt-step-label-vertical span:first-child {
+    font-size: 0.75rem;
+  }
+
+  .gantt-step-duration-vertical {
+    font-size: 0.6rem;
+  }
+
+  .gantt-step-type {
+    padding: 0.15rem 0.35rem;
+    font-size: 0.55rem;
   }
 }

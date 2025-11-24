@@ -1850,5 +1850,1806 @@
         "notes": "Serve the fried birria tacos immediately with the fresh onion salsa and a side of warm consommé for dipping."
       }
     ]
+  },
+  {
+    "id": "miso-kimchi-farro-bowl",
+    "title": "Kimchi Miso Nourish Bowl With Farro, Charred Purple Sprouting Broccoli & Pak Choi",
+    "source_url": "https://planthood.co.uk/products/miso-kimchi-farro-bowl",
+    "week_label": null,
+    "category": "Nourish",
+    "ingredients": [],
+    "nutrition": {
+      "calories": 586.0,
+      "protein_g": 31.8,
+      "fat_g": 10.5,
+      "carbs_g": 95.2,
+      "fibre_g": 25.5,
+      "salt_g": 2.5
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Cook farro",
+        "label": "Cook farro",
+        "type": "cook",
+        "estimated_duration_minutes": 25,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Farro is a key grain mentioned as a healthy swap. Assumed standard cooking method."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Cook purple sprouting broccoli, pak choi & peas",
+        "label": "Cook purple sprouting broccoli, pak choi & peas",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'cooked until tender' and 'charred' in the title. Assumed pan-frying for charring."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Chop kimchi",
+        "label": "Chop kimchi",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'tangy chopped kimchi'."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Prepare miso dressing",
+        "label": "Prepare miso dressing",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "bowl",
+          "whisk"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'umami-rich miso dressing'."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Slice spring onion & red chilli",
+        "label": "Slice spring onion & red chilli",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred from 'freshened up with sliced spring onion and red chilli'."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Assemble nourish bowl",
+        "label": "Assemble nourish bowl",
+        "type": "finish",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large bowl"
+        ],
+        "temperature_c": null,
+        "notes": "All components are tossed together for the final dish."
+      }
+    ]
+  },
+  {
+    "id": "smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread",
+    "title": "Sweet & Smoky Butter Bean Shakshuka With Whipped Tahini, Toasted Dukkah & Soft Garlic Flatbread",
+    "source_url": "https://planthood.co.uk/products/smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 649.0,
+      "protein_g": 26.8,
+      "fat_g": 27.0,
+      "carbs_g": 80.6,
+      "fibre_g": 15.4,
+      "salt_g": 1.25
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "De-stem and slice red pepper",
+        "label": "De-stem and slice red pepper",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Cut into 1cm slices."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Pick and chop parsley",
+        "label": "Pick and chop parsley",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Finely chop."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Heat oil in large frying pan",
+        "label": "Heat oil in large frying pan",
+        "type": "cook",
+        "estimated_duration_minutes": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Place over a medium-high heat and add a drizzle of oil."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Fry sliced peppers until charred and tender",
+        "label": "Fry sliced peppers until charred and tender",
+        "type": "cook",
+        "estimated_duration_minutes": 6,
+        "requires": [
+          "step-1",
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Fry until lightly charred on the outside and starting to go tender."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Add shakshuka sauce and drained butter beans",
+        "label": "Add shakshuka sauce and drained butter beans",
+        "type": "cook",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Reduce heat to medium before adding."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Simmer shakshuka until piping hot",
+        "label": "Simmer shakshuka until piping hot",
+        "type": "cook",
+        "estimated_duration_minutes": 4.5,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Cook for 4-5 minutes. Add water as needed if it reduces too much or starts to stick."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Warm flatbreads by dry frying",
+        "label": "Warm flatbreads by dry frying",
+        "type": "cook",
+        "estimated_duration_minutes": 0.75,
+        "requires": [],
+        "can_overlap_with": [
+          "step-6"
+        ],
+        "equipment": [
+          "other frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Dry fry (without oil) on both sides for 30-60 seconds or until lightly toasted. Alternatively, bake or grill in the oven."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Serve shakshuka",
+        "label": "Serve shakshuka",
+        "type": "finish",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-6",
+          "step-2",
+          "step-7"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Divide shakshuka, drizzle over whipped tahini, and scatter over dukkah and fresh parsley. Use warm flatbread to scoop."
+      }
+    ]
+  },
+  {
+    "id": "sticky-teriyaki-tofu-bowl-with-purple-sprouting-broccoli-pickled-cabbage-over-sushi-rice",
+    "title": "Sticky Teriyaki Tofu Bowl With Purple Sprouting Broccoli & Pickled Cabbage Over Sushi Rice",
+    "source_url": "https://planthood.co.uk/products/sticky-teriyaki-tofu-bowl-with-purple-sprouting-broccoli-pickled-cabbage-over-sushi-rice",
+    "week_label": null,
+    "category": "Feast",
+    "ingredients": [],
+    "nutrition": {
+      "calories": 580.0,
+      "protein_g": 24.7,
+      "fat_g": 13.4,
+      "carbs_g": 41.5,
+      "fibre_g": 5.3,
+      "salt_g": 2.0
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Boil kettle",
+        "label": "Boil kettle",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "kettle"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Gather equipment",
+        "label": "Gather equipment",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan",
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Take out two frying pans and a saucepan."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Shake teriyaki sauce pouch",
+        "label": "Shake teriyaki sauce pouch",
+        "type": "prep",
+        "estimated_duration_minutes": 0.5,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Shake well in case cornflour has separated."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Add sushi rice to saucepan",
+        "label": "Add sushi rice to saucepan",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Add water to sushi rice",
+        "label": "Add water to sushi rice",
+        "type": "prep",
+        "estimated_duration_minutes": 0.5,
+        "requires": [
+          "step-1",
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "kettle",
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Pour 2.5x rice volume in water from kettle."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Bring sushi rice to boil",
+        "label": "Bring sushi rice to boil",
+        "type": "cook",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "saucepan",
+          "stove"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Simmer sushi rice",
+        "label": "Simmer sushi rice",
+        "type": "cook",
+        "estimated_duration_minutes": 9,
+        "requires": [
+          "step-6"
+        ],
+        "can_overlap_with": [
+          "step-8",
+          "step-9",
+          "step-10",
+          "step-12",
+          "step-14",
+          "step-16"
+        ],
+        "equipment": [
+          "saucepan",
+          "stove"
+        ],
+        "temperature_c": null,
+        "notes": "Reduce heat to low, cover and cook for 8-10 minutes or until tender but al dente."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Tear tofu into chunks",
+        "label": "Tear tofu into chunks",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Tear into bite-sized chunks with hands."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Heat oil in two frying pans",
+        "label": "Heat oil in two frying pans",
+        "type": "cook",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-6",
+          "step-7",
+          "step-8"
+        ],
+        "equipment": [
+          "frying pan",
+          "stove"
+        ],
+        "temperature_c": null,
+        "notes": "Heat a drizzle of oil in each pan over a medium heat."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Fry tofu until golden and crispy",
+        "label": "Fry tofu until golden and crispy",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
+        "requires": [
+          "step-8",
+          "step-9"
+        ],
+        "can_overlap_with": [
+          "step-7",
+          "step-14",
+          "step-16"
+        ],
+        "equipment": [
+          "frying pan",
+          "stove"
+        ],
+        "temperature_c": null,
+        "notes": "Add tofu to one frying pan and fry for around 10 minutes."
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Remove fried tofu and set aside",
+        "label": "Remove fried tofu and set aside",
+        "type": "prep",
+        "estimated_duration_minutes": 0.5,
+        "requires": [
+          "step-10"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-12",
+        "raw_text": "Thicken teriyaki sauce",
+        "label": "Thicken teriyaki sauce",
+        "type": "cook",
+        "estimated_duration_minutes": 1.5,
+        "requires": [
+          "step-11",
+          "step-3"
+        ],
+        "can_overlap_with": [
+          "step-7",
+          "step-14",
+          "step-16"
+        ],
+        "equipment": [
+          "frying pan",
+          "stove"
+        ],
+        "temperature_c": null,
+        "notes": "Add teriyaki sauce to the pan and cook until thickened (1-2 minutes)."
+      },
+      {
+        "id": "step-13",
+        "raw_text": "Coat tofu in teriyaki sauce",
+        "label": "Coat tofu in teriyaki sauce",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-12",
+          "step-11"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Take pan off heat, add crispy tofu back and stir until well coated."
+      },
+      {
+        "id": "step-14",
+        "raw_text": "Fry purple sprouting broccoli",
+        "label": "Fry purple sprouting broccoli",
+        "type": "cook",
+        "estimated_duration_minutes": 6,
+        "requires": [
+          "step-9"
+        ],
+        "can_overlap_with": [
+          "step-7",
+          "step-10",
+          "step-12",
+          "step-16"
+        ],
+        "equipment": [
+          "frying pan",
+          "stove"
+        ],
+        "temperature_c": null,
+        "notes": "Add broccoli to the other pan and fry on all sides until tender but al dente."
+      },
+      {
+        "id": "step-15",
+        "raw_text": "Season broccoli",
+        "label": "Season broccoli",
+        "type": "finish",
+        "estimated_duration_minutes": 0.5,
+        "requires": [
+          "step-14"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Season to taste with salt and pepper."
+      },
+      {
+        "id": "step-16",
+        "raw_text": "Finely slice spring onion",
+        "label": "Finely slice spring onion",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-7",
+          "step-10",
+          "step-14"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Slice while other ingredients cook."
+      },
+      {
+        "id": "step-17",
+        "raw_text": "Chop broccoli into bite-sized pieces (optional)",
+        "label": "Chop broccoli into bite-sized pieces (optional)",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-14"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Optional, before serving."
+      },
+      {
+        "id": "step-18",
+        "raw_text": "Divide rice, broccoli, and pickled cabbage into bowls",
+        "label": "Divide rice, broccoli, and pickled cabbage into bowls",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-7",
+          "step-14"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      },
+      {
+        "id": "step-19",
+        "raw_text": "Top with teriyaki tofu and extra sauce",
+        "label": "Top with teriyaki tofu and extra sauce",
+        "type": "finish",
+        "estimated_duration_minutes": 0.5,
+        "requires": [
+          "step-13",
+          "step-18"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Spoon over any extra sauce."
+      },
+      {
+        "id": "step-20",
+        "raw_text": "Garnish with spring onion and sesame seeds",
+        "label": "Garnish with spring onion and sesame seeds",
+        "type": "finish",
+        "estimated_duration_minutes": 0.5,
+        "requires": [
+          "step-16",
+          "step-19"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "id": "crispy-courgette-sweetcorn-fritters-with-garlic-dill-yoghurt-and-sweet-cucumber-pickle",
+    "title": "Crispy Courgette & Sweetcorn Fritters With Garlic & Dill Yoghurt and Sweet Cucumber Pickle",
+    "source_url": "https://planthood.co.uk/products/crispy-courgette-sweetcorn-fritters-with-garlic-dill-yoghurt-and-sweet-cucumber-pickle",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 484.0,
+      "protein_g": 19.3,
+      "fat_g": 4.7,
+      "carbs_g": 101.1,
+      "fibre_g": 12.0,
+      "salt_g": 0.5
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Slice cucumber for pickle",
+        "label": "Slice cucumber for pickle",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Prepare cucumber for the sweet cucumber pickle."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Prepare pickle brine",
+        "label": "Prepare pickle brine",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "bowl",
+          "whisk"
+        ],
+        "temperature_c": null,
+        "notes": "Mix rice vinegar, raw natural cane sugar, sea salt, and water for the pickle brine."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Combine cucumber and brine",
+        "label": "Combine cucumber and brine",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-1",
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Combine sliced cucumber with the prepared brine. Allow to sit."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Chop fresh dill",
+        "label": "Chop fresh dill",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Chop dill for the garlic & dill yoghurt."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Mix garlic & dill yoghurt",
+        "label": "Mix garlic & dill yoghurt",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-3"
+        ],
+        "equipment": [
+          "bowl",
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Combine soy yoghurt, ground garlic, and chopped dill."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Grate courgette for fritters",
+        "label": "Grate courgette for fritters",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-4"
+        ],
+        "equipment": [
+          "grater",
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Grate courgette for the fritter batter."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Chop spring onions for fritters",
+        "label": "Chop spring onions for fritters",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-6"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Chop spring onions for the fritter batter."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Mix dry fritter ingredients",
+        "label": "Mix dry fritter ingredients",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [
+          "bowl",
+          "whisk"
+        ],
+        "temperature_c": null,
+        "notes": "Combine gluten free flour, sweet smoked paprika, ground garlic, chilli flakes, baking powder, brown mustard seeds, and sea salt."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Combine wet fritter ingredients",
+        "label": "Combine wet fritter ingredients",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-6",
+          "step-7"
+        ],
+        "can_overlap_with": [
+          "step-8"
+        ],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Combine grated courgette, sweetcorn, and chopped spring onions."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Make fritter batter",
+        "label": "Make fritter batter",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-8",
+          "step-9"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large bowl",
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Combine the wet and dry fritter ingredients to form a batter."
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Heat oil in frying pan",
+        "label": "Heat oil in frying pan",
+        "type": "cook",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-10"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan",
+          "stove"
+        ],
+        "temperature_c": null,
+        "notes": "Heat cooking oil in a frying pan over medium-high heat."
+      },
+      {
+        "id": "step-12",
+        "raw_text": "Cook fritters",
+        "label": "Cook fritters",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
+        "requires": [
+          "step-11"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan",
+          "spatula"
+        ],
+        "temperature_c": null,
+        "notes": "Spoon batter into the hot pan and cook until crispy and golden brown on both sides. Cook in batches if necessary."
+      },
+      {
+        "id": "step-13",
+        "raw_text": "Serve fritters with accompaniments",
+        "label": "Serve fritters with accompaniments",
+        "type": "finish",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-3",
+          "step-5",
+          "step-12"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "plate"
+        ],
+        "temperature_c": null,
+        "notes": "Serve the crispy courgette & sweetcorn fritters with the garlic & dill yoghurt, sweet cucumber pickle, and a squeeze of fresh lemon."
+      }
+    ]
+  },
+  {
+    "id": "mushroom-shawarma",
+    "title": "Crispy Mushroom Shawarma With Garlic Tahini Sauce, Pickled Radish & Fresh Mint In Soft Flatbread",
+    "source_url": "https://planthood.co.uk/products/mushroom-shawarma",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 648.0,
+      "protein_g": 19.0,
+      "fat_g": 27.5,
+      "carbs_g": 81.7,
+      "fibre_g": 9.4,
+      "salt_g": 0.2
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Gather ingredients",
+        "label": "Gather ingredients",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Take out all the ingredients for this recipe."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Rinse raw ingredients",
+        "label": "Rinse raw ingredients",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-0"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Rinse any raw grains, herbs or vegetables."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Preheat oven",
+        "label": "Preheat oven",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "oven"
+        ],
+        "temperature_c": 220,
+        "notes": "Preheat to 220°C / 200°C fan."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Take out roasting tray",
+        "label": "Take out roasting tray",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
+        "equipment": [
+          "roasting tray"
+        ],
+        "temperature_c": null,
+        "notes": null
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Slice portobello mushrooms",
+        "label": "Slice portobello mushrooms",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Slice 0.5cm thick."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Mix mushrooms with marinade",
+        "label": "Mix mushrooms with marinade",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-3",
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "roasting tray"
+        ],
+        "temperature_c": null,
+        "notes": "Place mushrooms in tray, pour over marinade, olive oil, salt, pepper, and mix until coated."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Roast portobello mushrooms",
+        "label": "Roast portobello mushrooms",
+        "type": "cook",
+        "estimated_duration_minutes": 15,
+        "requires": [
+          "step-2",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "oven",
+          "roasting tray"
+        ],
+        "temperature_c": 220,
+        "notes": "Roast for 15 minutes or until tender."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Warm flatbreads",
+        "label": "Warm flatbreads",
+        "type": "cook",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-6"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "oven"
+        ],
+        "temperature_c": 220,
+        "notes": "Remove mushrooms from oven, then place flatbreads directly onto a shelf to warm through. Be careful not to overcook."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Assemble shawarma",
+        "label": "Assemble shawarma",
+        "type": "finish",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-7"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Lay out warm flatbreads, spread tahini dressing, pile on mushroom shawarma, radish pickle, and jalapeño mint salsa. Wrap up."
+      }
+    ]
+  },
+  {
+    "id": "nourishing-sushi-bowl-with-coconut-sesame-crusted-tofu-gochujang-peanut-sauce",
+    "title": "Sushi Bowl With Coconut Sesame Crusted Tofu, Edamame, Avocado & Gochujang Peanut Sauce",
+    "source_url": "https://planthood.co.uk/products/nourishing-sushi-bowl-with-coconut-sesame-crusted-tofu-gochujang-peanut-sauce",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "fat_g": 41.9,
+      "carbs_g": 97.9,
+      "fibre_g": 15.0,
+      "salt_g": 1.4
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Gather ingredients & Rinse produce",
+        "label": "Gather ingredients & Rinse produce",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Based on 'Before you start' instruction."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Boil kettle",
+        "label": "Boil kettle",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "kettle"
+        ],
+        "temperature_c": null,
+        "notes": "From recipe's STEP 1."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Take out frying pan & saucepan",
+        "label": "Take out frying pan & saucepan",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2"
+        ],
+        "equipment": [
+          "frying pan",
+          "saucepan",
+          "lid",
+          "steamer (optional)"
+        ],
+        "temperature_c": null,
+        "notes": "From recipe's STEP 1."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Cook sushi rice",
+        "label": "Cook sushi rice",
+        "type": "cook",
+        "estimated_duration_minutes": 9,
+        "requires": [
+          "step-2",
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "saucepan",
+          "lid"
+        ],
+        "temperature_c": null,
+        "notes": "Simmer on low heat for 8-10 minutes until water absorbed. Midpoint (9 min) used for duration."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Steam edamame",
+        "label": "Steam edamame",
+        "type": "cook",
+        "estimated_duration_minutes": 2.5,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "steamer (optional)",
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Place steamer over rice for final 2-3 minutes. If no steamer, add to rice for 2-3 minutes. Midpoint (2.5 min) used for duration."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Peel & dress carrots",
+        "label": "Peel & dress carrots",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "peeler",
+          "bowl (optional)"
+        ],
+        "temperature_c": null,
+        "notes": "From recipe's STEP 3. Dress with olive oil, salt and pepper."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Toast sesame coconut mix",
+        "label": "Toast sesame coconut mix",
+        "type": "cook",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [
+          "step-4",
+          "step-5",
+          "step-6"
+        ],
+        "equipment": [
+          "frying pan",
+          "small bowl"
+        ],
+        "temperature_c": null,
+        "notes": "From recipe's STEP 4. Fry on medium low heat for a few minutes until toasted and golden. Season to taste."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Slice tofu",
+        "label": "Slice tofu",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "From recipe's STEP 4. 'Meanwhile, slice the tofu into 6 thin slices'."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Fry tofu",
+        "label": "Fry tofu",
+        "type": "cook",
+        "estimated_duration_minutes": 2.5,
+        "requires": [
+          "step-7",
+          "step-8"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "From recipe's STEP 4. Wipe frying pan clean, add fresh oil, fry until crispy on both sides for about 2-3 minutes. Midpoint (2.5 min) used for duration."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Crust tofu",
+        "label": "Crust tofu",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-9",
+          "step-7"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "From recipe's STEP 5. Spread gochujang peanut sauce onto one side of cooked tofu and press into sesame coconut mix. Repeat for remaining tofu. Save any remaining crumb for topping."
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Slice avocado",
+        "label": "Slice avocado",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-8",
+          "step-9",
+          "step-10"
+        ],
+        "equipment": [
+          "knife",
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "From recipe's STEP 6. Cut in half, scoop out, slice thinly."
+      },
+      {
+        "id": "step-12",
+        "raw_text": "Plate & serve sushi bowls",
+        "label": "Plate & serve sushi bowls",
+        "type": "finish",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-5",
+          "step-6",
+          "step-10",
+          "step-11"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "bowls"
+        ],
+        "temperature_c": null,
+        "notes": "From recipe's STEP 7. Plate rice, edamame, carrot, avocado, and crispy tofu. Drizzle sauce and remaining coconut sesame mix."
+      }
+    ]
+  },
+  {
+    "id": "rich-luxurious-black-daal-makhani-with-crispy-bombay-potatoes-coconut-yoghurt",
+    "title": "Rich & Luxurious Black Daal Makhani With Pickled Red Onion, Coconut Yoghurt & Garlic Naan",
+    "source_url": "https://planthood.co.uk/products/rich-luxurious-black-daal-makhani-with-crispy-bombay-potatoes-coconut-yoghurt",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 705.0,
+      "protein_g": 24.6,
+      "fat_g": 27.8,
+      "carbs_g": 98.3,
+      "fibre_g": 23.8,
+      "salt_g": 0.5
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "rinse any raw grains, herbs or vegetables.",
+        "label": "Rinse lentils and coriander",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "colander",
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred. General instruction to rinse raw grains, herbs or vegetables."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Drain the lentils",
+        "label": "Drain black lentils",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "colander"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Pour theblackdaal makhani sauceinto your large saucepan along with the drainedblacklentils.",
+        "label": "Combine daal sauce and lentils",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Place over a medium heat and cook until piping hot, around 4-5 minutes. Stir occasionally while cooking, adding a splash of water as needed if it starts to stick.",
+        "label": "Cook daal until piping hot",
+        "type": "cook",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large saucepan",
+          "stove"
+        ],
+        "temperature_c": null,
+        "notes": "Cook for 4-5 minutes (midpoint 4.5, rounded to 5). Stir occasionally, add water if needed."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Season with salt to taste.",
+        "label": "Season daal with salt",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Warm thenaanin a dry frying pan for 30 seconds on each side.",
+        "label": "Warm naan in frying pan",
+        "type": "cook",
+        "estimated_duration_minutes": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
+        "equipment": [
+          "frying pan",
+          "stove"
+        ],
+        "temperature_c": null,
+        "notes": "Warm for 30 seconds on each side."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Roughly chop thecorianderleaves.",
+        "label": "Roughly chop coriander leaves",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-4",
+          "step-6"
+        ],
+        "equipment": [
+          "chopping board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "divide thedaalbetween serving bowls",
+        "label": "Divide daal into serving bowls",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls",
+          "ladle"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "top with a dollop ofcoconutyoghurt",
+        "label": "Top daal with coconut yoghurt",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-8"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "somepickledredonion",
+        "label": "Top daal with pickled red onion",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-9"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred."
+      },
+      {
+        "id": "step-11",
+        "raw_text": "and a scattering of freshcoriander.",
+        "label": "Scatter fresh coriander on daal",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-7",
+          "step-10"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Duration inferred."
+      }
+    ]
+  },
+  {
+    "id": "slow-cooked-mushroom-bourguignon-over-creamy-mash-with-green-kale",
+    "title": "Slow-Cooked Mushroom Bourguignon Over Creamy Mash With Green Kale",
+    "source_url": "https://planthood.co.uk/products/slow-cooked-mushroom-bourguignon-over-creamy-mash-with-green-kale",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 430.0,
+      "protein_g": 14.1,
+      "fat_g": 1.7,
+      "carbs_g": 82.0,
+      "fibre_g": 14.5,
+      "salt_g": 0.7
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "rinse any raw grains, herbs or vegetables.",
+        "label": "Rinse vegetables",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Duration inferred."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Boil your kettle",
+        "label": "Boil kettle",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3"
+        ],
+        "equipment": [
+          "kettle"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "take out two saucepans and a frying pan.",
+        "label": "Take out pans",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "saucepan",
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Fill both of your saucepans with boiling water from your kettle",
+        "label": "Fill saucepans with boiling water",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-2",
+          "step-3"
+        ],
+        "can_overlap_with": [
+          "step-6"
+        ],
+        "equipment": [
+          "saucepan",
+          "kettle"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "then place over a medium heat.",
+        "label": "Place saucepans over medium heat",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-6"
+        ],
+        "equipment": [
+          "hob",
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Peel the potatoes, then cut into 2cm cubes.",
+        "label": "Peel and cut potatoes",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-4",
+          "step-5",
+          "step-9"
+        ],
+        "equipment": [
+          "peeler",
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Cut into 2cm cubes. Duration inferred."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Salt your boiling water, then add the potatoes to the water and cook for around 10-12 minutes or until the potato is very soft. It should virtually crumble when you jab it with a fork.",
+        "label": "Boil potatoes until very soft",
+        "type": "cook",
+        "estimated_duration_minutes": 11,
+        "requires": [
+          "step-5",
+          "step-6"
+        ],
+        "can_overlap_with": [
+          "step-8",
+          "step-9",
+          "step-10"
+        ],
+        "equipment": [
+          "saucepan",
+          "fork"
+        ],
+        "temperature_c": null,
+        "notes": "Cook for 10-12 minutes or until very soft, virtually crumbles when jabbed with a fork. Duration range: 10-12 minutes."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Place the kale in your other saucepan and boil for 5-10 minutes or until al dente.",
+        "label": "Boil kale until al dente",
+        "type": "cook",
+        "estimated_duration_minutes": 8,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [
+          "step-7",
+          "step-9",
+          "step-10"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Cook for 5-10 minutes or until al dente. Duration range: 5-10 minutes."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Place your frying pan over a medium heat and add a drizzle of oil.",
+        "label": "Heat frying pan with oil",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [
+          "step-7",
+          "step-8",
+          "step-10"
+        ],
+        "equipment": [
+          "frying pan",
+          "hob"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "While it heats up, slice half of the chestnut mushrooms and cut the other half into quarters to add texture.",
+        "label": "Slice and quarter mushrooms",
+        "type": "prep",
+        "estimated_duration_minutes": 4,
+        "requires": [],
+        "can_overlap_with": [
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Slice half, cut other half into quarters. Duration inferred."
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Fry the mushrooms until golden and caramelised, around 10 minutes",
+        "label": "Fry mushrooms until golden",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
+        "requires": [
+          "step-9",
+          "step-10"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan",
+          "spatula"
+        ],
+        "temperature_c": null,
+        "notes": "Fry until golden and caramelised. Duration: 10 minutes."
+      },
+      {
+        "id": "step-12",
+        "raw_text": "then add the bourguignon sauce and cook for a further 2-3 minutes or until piping hot. Add water as needed if the sauce reduces too much or starts to stick.",
+        "label": "Cook bourguignon sauce with mushrooms",
+        "type": "cook",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-11"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan",
+          "spatula"
+        ],
+        "temperature_c": null,
+        "notes": "Cook for 2-3 minutes or until piping hot. Add water as needed. Duration range: 2-3 minutes."
+      },
+      {
+        "id": "step-13",
+        "raw_text": "Season with salt and pepper to taste before serving.",
+        "label": "Season bourguignon sauce",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-12"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Season with salt and pepper to taste. Duration inferred."
+      },
+      {
+        "id": "step-14",
+        "raw_text": "Once the potatoes are cooked, add a generous drizzle of extra virgin olive oil, then mash until smooth and creamy. You could also add a little plant milk or butter to make it even creamier (optional).",
+        "label": "Mash potatoes until smooth",
+        "type": "finish",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-7"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "potato masher",
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Add generous drizzle of extra virgin olive oil. Optional: add plant milk or butter. Duration inferred."
+      },
+      {
+        "id": "step-15",
+        "raw_text": "Season well with salt and black pepper to taste.",
+        "label": "Season mashed potatoes",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-14"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Season well with salt and black pepper to taste. Duration inferred."
+      },
+      {
+        "id": "step-16",
+        "raw_text": "To serve up, divide the mash between serving bowls, ladle over the mushroom bourguignon and serve alongside the kale.",
+        "label": "Plate mash, bourguignon, and kale",
+        "type": "finish",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-15",
+          "step-13",
+          "step-8"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls",
+          "ladle"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred."
+      }
+    ]
   }
 ]
