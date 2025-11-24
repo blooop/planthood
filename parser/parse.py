@@ -321,7 +321,9 @@ Extract grounded, dependency-aware steps as JSON."""
                     req for req in step_data.get("requires", []) if req in valid_ids
                 ]
                 step_data["can_overlap_with"] = [
-                    overlap for overlap in step_data.get("can_overlap_with", []) if overlap in valid_ids
+                    overlap
+                    for overlap in step_data.get("can_overlap_with", [])
+                    if overlap in valid_ids
                 ]
 
                 steps.append(RecipeStep(**step_data))
