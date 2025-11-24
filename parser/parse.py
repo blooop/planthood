@@ -62,6 +62,7 @@ class ParsedRecipe:
     title: str
     source_url: str
     week_label: Optional[str]
+    weeks: List[str]
     category: Optional[str]
     ingredients: List[str]
     nutrition: Optional[Dict[str, float]]
@@ -215,40 +216,56 @@ Extract grounded, dependency-aware steps as JSON."""
     def _is_template_only_method(method: str) -> bool:
         """Check if method contains only template text without actual cooking instructions"""
         method_lower = method.lower()
-        
+
         # Template indicators that suggest no real content
         template_phrases = [
             "cooking instructions",
-            "what's in your box", 
+            "what's in your box",
             "nutritional info",
             "prep time",
             "total time",
             "cooking mode:",
             "all nutritional values are based on a per person scale",
             "calories total fat",
-            "ingredients / allergens"
+            "ingredients / allergens",
         ]
-        
+
         # Count how much of the text is template vs content
         template_chars = 0
         for phrase in template_phrases:
             if phrase in method_lower:
                 template_chars += len(phrase)
-        
+
         # If method is short and mostly template phrases, it's template-only
         if len(method) < 500 and template_chars > len(method) * 0.4:
             return True
-            
+
         # Check for specific patterns that indicate no instructions
-        has_step_words = any(word in method_lower for word in [
-            "step", "heat", "cook", "add", "mix", "stir", "chop", "slice", 
-            "fry", "bake", "boil", "simmer", "roast", "place", "remove"
-        ])
-        
+        has_step_words = any(
+            word in method_lower
+            for word in [
+                "step",
+                "heat",
+                "cook",
+                "add",
+                "mix",
+                "stir",
+                "chop",
+                "slice",
+                "fry",
+                "bake",
+                "boil",
+                "simmer",
+                "roast",
+                "place",
+                "remove",
+            ]
+        )
+
         # If no cooking action words and short, likely template-only
         if len(method) < 600 and not has_step_words:
             return True
-            
+
         return False
 
     def _run_validation_passes(
@@ -310,10 +327,12 @@ Extract grounded, dependency-aware steps as JSON."""
         if not method:
             print(f"Warning: No method text for {recipe_id}, skipping")
             return []
-        
+
         # Check for template-only content (no actual instructions)
         if self._is_template_only_method(method):
-            print(f"Warning: Recipe {recipe_id} contains only template text, no cooking instructions")
+            print(
+                f"Warning: Recipe {recipe_id} contains only template text, no cooking instructions"
+            )
             return []
 
         # Check cache
@@ -399,6 +418,7 @@ Extract grounded, dependency-aware steps as JSON."""
                 title=recipe["title"],
                 source_url=recipe["source_url"],
                 week_label=recipe.get("week_label"),
+                weeks=recipe.get("weeks", []),
                 category=recipe.get("category"),
                 ingredients=recipe.get("ingredients", []),
                 nutrition=recipe.get("nutrition"),
@@ -409,8 +429,15 @@ Extract grounded, dependency-aware steps as JSON."""
         return parsed_recipes
 
 
+import argparse
+
+
 def main():
     """Main parser execution"""
+    parser = argparse.ArgumentParser(description="Parse recipes with LLM")
+    parser.add_argument("--week", help="Filter recipes by week label (e.g. 'Nov 24, 2025')")
+    args = parser.parse_args()
+
     print("=" * 60)
     print("Recipe Parser (LLM-backed)")
     print("=" * 60)
@@ -427,15 +454,44 @@ def main():
 
     print(f"Loaded {len(raw_recipes)} raw recipes")
 
+    # Filter by week if specified
+    if args.week:
+        print(f"Filtering for week: {args.week}")
+        # Check both weeks array and week_label
+        raw_recipes = [
+            r
+            for r in raw_recipes
+            if args.week in r.get("weeks", []) or r.get("week_label") == args.week
+        ]
+        print(f"Found {len(raw_recipes)} recipes for {args.week}")
+
+    # Load existing parsed recipes to preserve data
+    parsed_recipes_path = DATA_DIR / "recipes_parsed.json"
+    existing_parsed = {}
+    if parsed_recipes_path.exists():
+        try:
+            with open(parsed_recipes_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                existing_parsed = {r["id"]: r for r in data}
+            print(f"Loaded {len(existing_parsed)} existing parsed recipes")
+        except Exception as e:
+            print(f"Warning: Could not load existing parsed recipes: {e}")
+
     # Parse recipes
     parser = RecipeParser()
-    parsed_recipes = parser.parse_all_recipes(raw_recipes)
+    new_parsed_recipes = parser.parse_all_recipes(raw_recipes)
+
+    # Update existing recipes with new ones
+    for recipe in new_parsed_recipes:
+        existing_parsed[recipe.id] = asdict(recipe)
+
+    final_recipes = list(existing_parsed.values())
 
     # Save parsed recipes
     output_path = DATA_DIR / "recipes_parsed.json"
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(
-            [asdict(r) for r in parsed_recipes],
+            final_recipes,
             f,
             indent=2,
             ensure_ascii=False,
@@ -443,8 +499,8 @@ def main():
         f.write("\n")
 
     print(f"\n{'=' * 60}")
-    print(f"Parsed {len(parsed_recipes)} recipes")
-    print(f"Total steps: {sum(len(r.steps) for r in parsed_recipes)}")
+    print(f"Parsed {len(new_parsed_recipes)} new/updated recipes")
+    print(f"Total recipes in database: {len(final_recipes)}")
     print(f"Saved to: {output_path}")
     print(f"{'=' * 60}")
 

@@ -183,7 +183,9 @@ export function getWeeks(): string[] {
   const weeks = new Set<string>();
 
   recipes.forEach(recipe => {
-    if (recipe.week_label) {
+    if (recipe.weeks && recipe.weeks.length > 0) {
+      recipe.weeks.forEach(w => weeks.add(w));
+    } else if (recipe.week_label) {
       weeks.add(recipe.week_label);
     }
   });
@@ -196,7 +198,10 @@ export function getWeeks(): string[] {
  */
 export function getRecipesByWeek(week: string): Recipe[] {
   const recipes = loadRecipes();
-  return recipes.filter(recipe => recipe.week_label === week);
+  return recipes.filter(recipe => {
+    if (recipe.weeks && recipe.weeks.includes(week)) return true;
+    return recipe.week_label === week;
+  });
 }
 
 /**
@@ -214,7 +219,10 @@ export function getProcessedRecipes(): Recipe[] {
   return loadRecipes()
     .filter(r => r.steps?.length > 0 && r.total_time_min > 0)
     .sort((a, b) => {
-      const cmp = compareWeekLabels(a.week_label ?? null, b.week_label ?? null);
+      // Sort by the first available week
+      const weekA = a.weeks?.[0] ?? a.week_label ?? null;
+      const weekB = b.weeks?.[0] ?? b.week_label ?? null;
+      const cmp = compareWeekLabels(weekA, weekB);
       if (cmp !== 0) return cmp;
       return a.title.localeCompare(b.title);
     });
@@ -224,20 +232,28 @@ export function getProcessedRecipes(): Recipe[] {
  * Get processed recipes for a specific week
  */
 export function getProcessedRecipesByWeek(week: string): Recipe[] {
-  return getProcessedRecipes().filter(r => r.week_label === week);
+  return getProcessedRecipes().filter(r => {
+    if (r.weeks && r.weeks.includes(week)) return true;
+    return r.week_label === week;
+  });
 }
 
 /**
  * Get weeks that have processed recipes
  */
 export function getProcessedWeeks(): string[] {
-  return Array.from(
-    new Set(
-      getProcessedRecipes()
-        .map(r => r.week_label)
-        .filter((week): week is string => typeof week === 'string' && week.length > 0)
-    )
-  ).sort((a, b) => compareWeekLabels(a, b));
+  const recipes = getProcessedRecipes();
+  const weeks = new Set<string>();
+
+  recipes.forEach(recipe => {
+    if (recipe.weeks && recipe.weeks.length > 0) {
+      recipe.weeks.forEach(w => weeks.add(w));
+    } else if (recipe.week_label) {
+      weeks.add(recipe.week_label);
+    }
+  });
+
+  return sortWeekLabels(Array.from(weeks));
 }
 
 /**
