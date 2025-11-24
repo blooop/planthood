@@ -109,8 +109,15 @@
       "steps_extracted": 16,
       "total_time_min": 22,
       "error": null
+    },
+    "freshly-made-cavatelli-with-spicy-pumpkin-vegan-nduja-sauce": {
+      "processed": true,
+      "timestamp": "2025-11-24T11:38:05.105897",
+      "steps_extracted": 2,
+      "total_time_min": 4,
+      "error": null
     }
   },
-  "last_updated": "2025-11-24T10:56:09.338942",
-  "total_processed": 16
+  "last_updated": "2025-11-24T11:38:05.105918",
+  "total_processed": 17
 }

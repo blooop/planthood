@@ -4747,5 +4747,70 @@
     ],
     "total_time_min": 22,
     "active_time_min": 26
+  },
+  {
+    "id": "freshly-made-cavatelli-with-spicy-pumpkin-vegan-nduja-sauce",
+    "title": "Freshly Made Tagliolini With Creamy Garlic & Mushroom Sauce & Fresh Parsley",
+    "source_url": "https://planthood.co.uk/products/freshly-made-cavatelli-with-spicy-pumpkin-vegan-nduja-sauce",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 694.0,
+      "protein_g": 33.3,
+      "fat_g": 18.5,
+      "carbs_g": 121.6,
+      "fibre_g": 3.2,
+      "salt_g": 1.5
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Tossed through freshly made scialatielli pasta",
+        "label": "Toss pasta with sauce",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "large bowl",
+          "tongs"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred. This step assumes the 'freshly made scialatielli pasta' and 'garlicky cashew mushroom sauce' are already prepared, as their preparation steps are not provided in the method.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 2
+      },
+      {
+        "id": "step-2",
+        "raw_text": "topped with fresh parsley",
+        "label": "Top with fresh parsley",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 2,
+        "end_min": 4,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "knife",
+          "cutting board",
+          "serving plate"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 2,
+        "latest_end_min": 4
+      }
+    ],
+    "total_time_min": 4,
+    "active_time_min": 4
   }
 ]
