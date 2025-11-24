@@ -1,7 +1,7 @@
 {
   "total_recipes": 239,
   "failed_recipes": 0,
-  "last_updated": "2025-11-23 15:04:15",
+  "last_updated": "2025-11-24 03:59:25",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -357,6 +357,13 @@
       "id": "creamy-tomato-butterbeans-with-baby-spinach-almond-gremolata-pillowy-soft-garlic-herb-flatbread",
       "title": "Creamy Tomato Butter Beans With Baby Spinach, Almond Gremolata & Pillowy Soft Garlic & Herb Flatbread",
       "url": "https://planthood.co.uk/products/creamy-tomato-butterbeans-with-baby-spinach-almond-gremolata-pillowy-soft-garlic-herb-flatbread",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "creamy-tomato-daal",
+      "title": "Creamy Tomato Daal With Charred Cauliflower, Crispy Kale, Coconut Yoghurt & Fluffy Rice",
+      "url": "https://planthood.co.uk/products/creamy-tomato-daal",
       "scraped": true,
       "week_label": null
     },
@@ -1369,6 +1376,13 @@
       "week_label": null
     },
     {
+      "id": "super-green-grain-bowl-with-roasted-squash-crispy-chickpeas-creamy-garlic-tahini-pomegranate-seeds",
+      "title": "Super Green Grain Bowl With Roasted Squash, Crispy Chickpeas,  Creamy Garlic Tahini & Pomegranate Seeds",
+      "url": "https://planthood.co.uk/products/super-green-grain-bowl-with-roasted-squash-crispy-chickpeas-creamy-garlic-tahini-pomegranate-seeds",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "super-green-noodle-soup-with-mangetout-baby-sweetcorn-oyster-mushrooms-gochugaru-sesame-sprinkle",
       "title": "Super Green Noodle Soup With Mangetout, Baby Sweetcorn, Oyster Mushrooms & Gochugaru Sesame Sprinkle",
       "url": "https://planthood.co.uk/products/super-green-noodle-soup-with-mangetout-baby-sweetcorn-oyster-mushrooms-gochugaru-sesame-sprinkle",
@@ -1477,6 +1491,13 @@
       "id": "thai-green-curry-with-mangetout-crispy-tofu-jasmine-rice-chilli-lime",
       "title": "Thai Green Curry With Mangetout, Crispy Tofu, Jasmine Rice, Chilli & Lime",
       "url": "https://planthood.co.uk/products/thai-green-curry-with-mangetout-crispy-tofu-jasmine-rice-chilli-lime",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "thai-red-curry-hispi-cabbage-with-black-lentils-lime-yoghurt-toasted-peanuts-fresh-coriander-fluffy-rice",
+      "title": "Thai Red Curry Hispi Cabbage With Black Lentils, Lime Yoghurt, Toasted Peanuts, Fresh Coriander & Fluffy Rice",
+      "url": "https://planthood.co.uk/products/thai-red-curry-hispi-cabbage-with-black-lentils-lime-yoghurt-toasted-peanuts-fresh-coriander-fluffy-rice",
       "scraped": true,
       "week_label": null
     },
@@ -1652,27 +1673,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "creamy-tomato-daal",
-      "title": "Creamy Tomato Daal With Charred Cauliflower, Crispy Kale, Coconut Yoghurt & Fluffy Rice",
-      "url": "https://planthood.co.uk/products/creamy-tomato-daal",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "super-green-grain-bowl-with-roasted-squash-crispy-chickpeas-creamy-garlic-tahini-pomegranate-seeds",
-      "title": "Super Green Grain Bowl With Roasted Squash, Crispy Chickpeas,  Creamy Garlic Tahini & Pomegranate Seeds",
-      "url": "https://planthood.co.uk/products/super-green-grain-bowl-with-roasted-squash-crispy-chickpeas-creamy-garlic-tahini-pomegranate-seeds",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "thai-red-curry-hispi-cabbage-with-black-lentils-lime-yoghurt-toasted-peanuts-fresh-coriander-fluffy-rice",
-      "title": "Thai Red Curry Hispi Cabbage With Black Lentils, Lime Yoghurt, Toasted Peanuts, Fresh Coriander & Fluffy Rice",
-      "url": "https://planthood.co.uk/products/thai-red-curry-hispi-cabbage-with-black-lentils-lime-yoghurt-toasted-peanuts-fresh-coriander-fluffy-rice",
       "scraped": true,
       "week_label": null
     }
