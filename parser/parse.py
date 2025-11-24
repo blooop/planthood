@@ -9,7 +9,7 @@ import json
 import os
 from dataclasses import dataclass, asdict
 from pathlib import Path
-from typing import List, Optional, Dict
+from typing import List, Optional, Dict, Union
 
 from dotenv import load_dotenv
 from tenacity import retry, stop_after_attempt, wait_exponential
@@ -190,8 +190,8 @@ Extract grounded, dependency-aware steps as JSON."""
             text = "\n".join(line for line in lines if not line.startswith("```"))
         return text.strip()
 
-    def _load_json(self, text: str) -> Optional[Dict]:
-        """Load JSON after stripping markdown fences"""
+    def _load_json(self, text: str) -> Optional[Union[Dict, List]]:
+        """Load parsed JSON (object or array) after stripping markdown fences"""
         try:
             return json.loads(self._strip_code_fences(text))
         except json.JSONDecodeError as e:

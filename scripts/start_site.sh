@@ -16,4 +16,4 @@ fi
 
 echo "Serving static export from ${OUTPUT_DIR} on port ${PORT_VALUE}"
 cd "${SITE_DIR}"
-npx serve@latest -s -l "${PORT_VALUE}" "${OUTPUT_DIR}"
+npx serve -s -l "${PORT_VALUE}" "${OUTPUT_DIR}"
