@@ -117,6 +117,8 @@ view-site = { depends-on = ["build-site", "start-site"] }
 # Incremental recipe processing (for rate-limit-safe scheduled runs)
 find-upcoming = "python find_upcoming_recipes.py"
 process-next-recipe = "python process_next_recipe.py"
+process-specific-recipe = { cmd = "python process_single_url.py", description = "Process a specific recipe by URL. Usage: pixi run process-specific-recipe <recipe_url>" }
+process-recipe = { cmd = "python process_single_url.py", description = "Alias for process-specific-recipe. Process any Planthood recipe by URL." }
 process-and-deploy = { depends-on = ["process-next-recipe", "build-site"] }
 
 # PR preparation

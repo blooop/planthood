@@ -4812,5 +4812,1846 @@
     ],
     "total_time_min": 4,
     "active_time_min": 4
+  },
+  {
+    "id": "three-bean-chilli-enchiladas-topped-with-cashew-cheese-sauce-a-zingy-cherry-tomato-salsa",
+    "title": "Black Bean Chilli Enchiladas Topped With Cashew Cheese Sauce & A Zingy Cherry Tomato Salsa",
+    "source_url": "https://planthood.co.uk/products/three-bean-chilli-enchiladas-topped-with-cashew-cheese-sauce-a-zingy-cherry-tomato-salsa",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 642.0,
+      "protein_g": 31.9,
+      "fat_g": 19.9,
+      "carbs_g": 99.4,
+      "fibre_g": 20.1,
+      "salt_g": 1.5
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Before you start, take out all the ingredients for this recipe... and rinse any raw grains, herbs or vegetables.",
+        "label": "Take out ingredients, rinse produce",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Inferred duration for general preparation.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 5
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a medium sized ovenproof dish or baking tray, around 20cm.",
+        "label": "Preheat oven, take out dish",
+        "type": "prep",
+        "duration_min": 12,
+        "start_min": 5,
+        "end_min": 17,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "oven",
+          "ovenproof dish",
+          "baking tray"
+        ],
+        "temperature_c": 220,
+        "notes": "Oven temperature 220°C / 200°C fan. Inferred duration for preheating.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 5,
+        "latest_end_min": 17
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Set aside around a quarter of the enchilada sauce in a small bowl or ramekin.",
+        "label": "Set aside enchilada sauce",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 5,
+        "end_min": 6,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "small bowl",
+          "ramekin"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": false,
+        "slack_min": 20,
+        "latest_start_min": 25,
+        "latest_end_min": 26
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Pour the remainder of the sauce in a larger bowl along with the black beans in their juices... Give it a good mix to make your enchilada filling.",
+        "label": "Mix enchilada sauce and black beans",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 5,
+        "end_min": 8,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": false,
+        "slack_min": 11,
+        "latest_start_min": 16,
+        "latest_end_min": 19
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Meanwhile, finely dice the red onion and cut the cherry tomatoes into quarters.",
+        "label": "Dice onion, quarter tomatoes",
+        "type": "prep",
+        "duration_min": 4,
+        "start_min": 5,
+        "end_min": 9,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-8"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration. Performed 'Meanwhile' during baking.",
+        "is_critical": false,
+        "slack_min": 36,
+        "latest_start_min": 41,
+        "latest_end_min": 45
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Roughly chop the coriander leaves.",
+        "label": "Roughly chop coriander leaves",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 5,
+        "end_min": 7,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-8"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration. Performed 'Meanwhile' during baking.",
+        "is_critical": false,
+        "slack_min": 40,
+        "latest_start_min": 45,
+        "latest_end_min": 47
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Add a few tablespoons of the enchilada sauce to the bottom of your baking tray along with a splash of water to provide a very shallow layer of liquid...",
+        "label": "Add sauce and water to tray",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 17,
+        "end_min": 19,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "baking tray"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 17,
+        "latest_end_min": 19
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Place into a small bowl and toss in a little extra virgin olive oil, sea salt and a squeeze of fresh lime. This is your cherry tomato salsa.",
+        "label": "Toss salsa ingredients",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 9,
+        "end_min": 11,
+        "requires": [
+          "step-9"
+        ],
+        "can_overlap_with": [
+          "step-8"
+        ],
+        "equipment": [
+          "small bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration. Performed 'Meanwhile' during baking.",
+        "is_critical": false,
+        "slack_min": 36,
+        "latest_start_min": 45,
+        "latest_end_min": 47
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Next spoon the enchilada filling down the middle of each tortilla wrap, roll them up and lay into your ovenproof dish. Repeat with the remaining wrap and arrange next to each other.",
+        "label": "Fill and roll tortilla wraps",
+        "type": "prep",
+        "duration_min": 7,
+        "start_min": 19,
+        "end_min": 26,
+        "requires": [
+          "step-4",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "baking tray",
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 19,
+        "latest_end_min": 26
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Spoon the remaining reserved enchilada sauce over the top of the wraps. Give the cashew cheese sauce a good shake... then pour over the top of the enchiladas.",
+        "label": "Spoon reserved sauce, pour cashew cheese",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 26,
+        "end_min": 29,
+        "requires": [
+          "step-3",
+          "step-6"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 26,
+        "latest_end_min": 29
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Bake in the oven for 15-20 minutes or until the cheese sauce and the wrap have firmed up and turned golden. Check the enchiladas are piping hot in the centre before serving.",
+        "label": "Bake enchiladas until golden",
+        "type": "cook",
+        "duration_min": 18,
+        "start_min": 29,
+        "end_min": 47,
+        "requires": [
+          "step-2",
+          "step-7"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "oven",
+          "ovenproof dish"
+        ],
+        "temperature_c": 220,
+        "notes": "Duration 15-20 minutes. Bake until cheese sauce and wrap have firmed up and turned golden. Check enchiladas are piping hot in the centre.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 29,
+        "latest_end_min": 47
+      },
+      {
+        "id": "step-12",
+        "raw_text": "Once cooked, remove the enchiladas from the oven, spoon over your cherry tomato salsa, scatter over the fresh coriander and squeeze over the remaining fresh lime. Divide between serving plates and enjoy!",
+        "label": "Garnish enchiladas with salsa, coriander, lime",
+        "type": "finish",
+        "duration_min": 4,
+        "start_min": 47,
+        "end_min": 51,
+        "requires": [
+          "step-8",
+          "step-10",
+          "step-11"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving plates"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration. Combines removing from oven, spooning salsa, scattering coriander, squeezing lime, and dividing for serving.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 47,
+        "latest_end_min": 51
+      }
+    ],
+    "total_time_min": 51,
+    "active_time_min": 45
+  },
+  {
+    "id": "sticky-black-pepper-tofu",
+    "title": "Crispy Black Pepper Tofu With Stir Fried Vegetables, Sticky Coconut Rice, Pak Choi & Sesame Seeds",
+    "source_url": "https://planthood.co.uk/products/sticky-black-pepper-tofu",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 764.0,
+      "protein_g": 31.3,
+      "fat_g": 22.6,
+      "carbs_g": 124.7,
+      "fibre_g": 15.2,
+      "salt_g": 2.5
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Before you start, take out all the ingredients for this recipe (see picture above) and rinse any raw grains, herbs or vegetables.",
+        "label": "Gather ingredients and rinse produce",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 3
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Take out a saucepan and a wok (recommended) or large frying pan.",
+        "label": "Gather cooking pans",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 3,
+        "end_min": 4,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "saucepan",
+          "wok",
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration. Wok or large frying pan are alternatives for the main stir-fry pan.",
+        "is_critical": false,
+        "slack_min": 1,
+        "latest_start_min": 4,
+        "latest_end_min": 5
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Tear the tofu into bitesized pieces with your hands, then place into a bowl",
+        "label": "Tear tofu into bitesized pieces",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 3,
+        "end_min": 5,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 3,
+        "latest_end_min": 5
+      },
+      {
+        "id": "step-10",
+        "raw_text": "In the meantime, deseed the red pepper and cut it into bite-sized pieces.",
+        "label": "Deseed and cut red pepper",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 3,
+        "end_min": 6,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-8"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": false,
+        "slack_min": 15,
+        "latest_start_min": 18,
+        "latest_end_min": 21
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Peel the onion, trim the top and base, and cut it into bite-sized pieces as well.",
+        "label": "Peel and cut onion",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 3,
+        "end_min": 6,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-8"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": false,
+        "slack_min": 15,
+        "latest_start_min": 18,
+        "latest_end_min": 21
+      },
+      {
+        "id": "step-17",
+        "raw_text": "Finely slice the spring onions.",
+        "label": "Finely slice spring onions",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 3,
+        "end_min": 5,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-8",
+          "step-14",
+          "step-15",
+          "step-16"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": false,
+        "slack_min": 28,
+        "latest_start_min": 31,
+        "latest_end_min": 33
+      },
+      {
+        "id": "step-18",
+        "raw_text": "Slice the base off the pak choi stem and pull apart the leaves with your hands.",
+        "label": "Prepare pak choi leaves",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 3,
+        "end_min": 5,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-8",
+          "step-14",
+          "step-15",
+          "step-16"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": false,
+        "slack_min": 21,
+        "latest_start_min": 24,
+        "latest_end_min": 26
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Place the rice in your saucepan and cover with 2.5x its volume in water. Bring to the boil, then reduce the heat and cover. Allow to cook for 5 minutes",
+        "label": "Cook rice with water",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 4,
+        "end_min": 9,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Cook for 5 minutes after bringing to boil and covering.",
+        "is_critical": false,
+        "slack_min": 18,
+        "latest_start_min": 22,
+        "latest_end_min": 27
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Add a drizzle of a neutral oil (e.g. vegetable, sunflower or groundnut, but not olive oil) to your frying pan or wok and once hot",
+        "label": "Heat oil for tofu frying",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 4,
+        "end_min": 6,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6"
+        ],
+        "equipment": [
+          "frying pan",
+          "wok"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration. 'Once hot' implies preheating.",
+        "is_critical": false,
+        "slack_min": 1,
+        "latest_start_min": 5,
+        "latest_end_min": 7
+      },
+      {
+        "id": "step-19",
+        "raw_text": "Place a frying pan over a medium heat and add a drizzle of oil. Once hot",
+        "label": "Heat pan for pak choi",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 4,
+        "end_min": 6,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-8",
+          "step-14",
+          "step-15",
+          "step-16",
+          "step-17",
+          "step-18"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration. 'Once hot' implies preheating.",
+        "is_critical": false,
+        "slack_min": 20,
+        "latest_start_min": 24,
+        "latest_end_min": 26
+      },
+      {
+        "id": "step-6",
+        "raw_text": "and toss through the cornflour until evenly coated.",
+        "label": "Toss tofu with cornflour",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 5,
+        "end_min": 7,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 5,
+        "latest_end_min": 7
+      },
+      {
+        "id": "step-4",
+        "raw_text": "then stir through the desiccated coconut and continue cooking for a further 3-5 minutes or until tender but al dente.",
+        "label": "Stir in coconut, finish rice",
+        "type": "cook",
+        "duration_min": 4,
+        "start_min": 9,
+        "end_min": 13,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Cook until tender but al dente. Duration range 3-5 minutes.",
+        "is_critical": false,
+        "slack_min": 18,
+        "latest_start_min": 27,
+        "latest_end_min": 31
+      },
+      {
+        "id": "step-20",
+        "raw_text": "fry the pak choi until tender, around 3-5 minutes.",
+        "label": "Fry pak choi until tender",
+        "type": "cook",
+        "duration_min": 4,
+        "start_min": 6,
+        "end_min": 10,
+        "requires": [
+          "step-18",
+          "step-19"
+        ],
+        "can_overlap_with": [
+          "step-14",
+          "step-15",
+          "step-16"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Duration range 3-5 minutes.",
+        "is_critical": false,
+        "slack_min": 20,
+        "latest_start_min": 26,
+        "latest_end_min": 30
+      },
+      {
+        "id": "step-8",
+        "raw_text": "add the tofu and fry until golden and crunchy on all sides, around 10 minutes.",
+        "label": "Fry tofu until golden and crunchy",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 7,
+        "end_min": 17,
+        "requires": [
+          "step-6",
+          "step-7"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "frying pan",
+          "wok"
+        ],
+        "temperature_c": null,
+        "notes": "Fry until golden and crunchy on all sides.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 7,
+        "latest_end_min": 17
+      },
+      {
+        "id": "step-21",
+        "raw_text": "Season to taste with soy or salt.",
+        "label": "Season pak choi to taste",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 10,
+        "end_min": 11,
+        "requires": [
+          "step-20"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": false,
+        "slack_min": 20,
+        "latest_start_min": 30,
+        "latest_end_min": 31
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Transfer to a bowl lined with kitchen towel.",
+        "label": "Transfer fried tofu to towel-lined bowl",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 17,
+        "end_min": 18,
+        "requires": [
+          "step-8"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "bowl",
+          "kitchen towel"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 17,
+        "latest_end_min": 18
+      },
+      {
+        "id": "step-12",
+        "raw_text": "Wipe the pan clean with a kitchen towel, then place it back on a medium-high heat.",
+        "label": "Clean frying pan for stir-fry",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 18,
+        "end_min": 19,
+        "requires": [
+          "step-9"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan",
+          "wok",
+          "kitchen towel"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 18,
+        "latest_end_min": 19
+      },
+      {
+        "id": "step-13",
+        "raw_text": "place it back on a medium-high heat. Once the oil is hot",
+        "label": "Heat pan for stir-fry",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 19,
+        "end_min": 21,
+        "requires": [
+          "step-12"
+        ],
+        "can_overlap_with": [
+          "step-4",
+          "step-10",
+          "step-11"
+        ],
+        "equipment": [
+          "frying pan",
+          "wok"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration. 'Once the oil is hot' implies preheating.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 19,
+        "latest_end_min": 21
+      },
+      {
+        "id": "step-14",
+        "raw_text": "add the prepared red pepper and onion, and stir-fry until softened and lightly browned.",
+        "label": "Stir-fry red pepper and onion",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 21,
+        "end_min": 26,
+        "requires": [
+          "step-13",
+          "step-10",
+          "step-11"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan",
+          "wok"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration. Cook until softened and lightly browned.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 21,
+        "latest_end_min": 26
+      },
+      {
+        "id": "step-15",
+        "raw_text": "Add the black pepper sauce and cook until simmering, about 2–3 minutes.",
+        "label": "Add black pepper sauce and simmer",
+        "type": "cook",
+        "duration_min": 3,
+        "start_min": 26,
+        "end_min": 29,
+        "requires": [
+          "step-14"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan",
+          "wok"
+        ],
+        "temperature_c": null,
+        "notes": "Cook until simmering. Duration range 2-3 minutes.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 26,
+        "latest_end_min": 29
+      },
+      {
+        "id": "step-16",
+        "raw_text": "Once the sauce is hot, return the tofu to the pan and stir through for 1–2 minutes, then remove from the heat.",
+        "label": "Return tofu to pan and stir through sauce",
+        "type": "cook",
+        "duration_min": 2,
+        "start_min": 29,
+        "end_min": 31,
+        "requires": [
+          "step-15",
+          "step-9"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan",
+          "wok"
+        ],
+        "temperature_c": null,
+        "notes": "Duration range 1-2 minutes.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 29,
+        "latest_end_min": 31
+      },
+      {
+        "id": "step-22",
+        "raw_text": "Serve the black pepper tofu alongside the coconut rice and charred pak choi.",
+        "label": "Serve black pepper tofu, coconut rice, and pak choi",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 31,
+        "end_min": 33,
+        "requires": [
+          "step-4",
+          "step-16",
+          "step-21"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 31,
+        "latest_end_min": 33
+      },
+      {
+        "id": "step-23",
+        "raw_text": "Scatter over the spring onions and sesame seeds to garnish and enjoy!",
+        "label": "Garnish with spring onions and sesame seeds",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 33,
+        "end_min": 34,
+        "requires": [
+          "step-22",
+          "step-17"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 33,
+        "latest_end_min": 34
+      }
+    ],
+    "total_time_min": 34,
+    "active_time_min": 30
+  },
+  {
+    "id": "crispy-buffalo-tofu-tacos-with-cooling-ranch-dressing-shredded-cabbage-pineapple-salsa",
+    "title": "Crispy Buffalo Tofu Tacos With Cooling Ranch Dressing, Shredded Cabbage & Juicy Pineapple",
+    "source_url": "https://planthood.co.uk/products/crispy-buffalo-tofu-tacos-with-cooling-ranch-dressing-shredded-cabbage-pineapple-salsa",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 453.0,
+      "protein_g": 23.4,
+      "fat_g": 17.2,
+      "carbs_g": 48.1,
+      "fibre_g": 7.4,
+      "salt_g": 1.25
+    },
+    "steps": [
+      {
+        "id": "step-10",
+        "raw_text": "You may want to run the sauce pouch under warm water to loosen the texture before opening.",
+        "label": "Warm buffalo sauce pouch (optional)",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Optional step to loosen sauce texture. Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 2
+      },
+      {
+        "id": "step-1",
+        "raw_text": "Before you start, take out all the ingredients for this recipe (see picture above) and rinse any raw grains, herbs or vegetables.",
+        "label": "Take out ingredients, rinse produce",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Inferred duration from recipe's stated 'Prep time'.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 3
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Add a drizzle of oil to your frying pan and place over a medium-high heat. Once hot,",
+        "label": "Heat frying pan with oil",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Heat to 'medium-high heat'. Inferred duration.",
+        "is_critical": false,
+        "slack_min": 4,
+        "latest_start_min": 4,
+        "latest_end_min": 6
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Tear the tofu into bite-sized chunks with your hands",
+        "label": "Tear tofu into chunks",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 3,
+        "end_min": 4,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 3,
+        "latest_end_min": 4
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Meanwhile slice the red cabbage as thinly as you can (use a mandolin if you have one).",
+        "label": "Slice red cabbage thinly",
+        "type": "prep",
+        "duration_min": 4,
+        "start_min": 3,
+        "end_min": 7,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-5"
+        ],
+        "equipment": [
+          "mandolin"
+        ],
+        "temperature_c": null,
+        "notes": "Slice 'as thinly as you can'. Mandolin is optional. Inferred duration.",
+        "is_critical": false,
+        "slack_min": 12,
+        "latest_start_min": 15,
+        "latest_end_min": 19
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Roughly chop the coriander.",
+        "label": "Roughly chop coriander",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 3,
+        "end_min": 5,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-5"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": false,
+        "slack_min": 17,
+        "latest_start_min": 20,
+        "latest_end_min": 22
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Roughly chop the pineapple into smaller pieces.",
+        "label": "Roughly chop pineapple",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 3,
+        "end_min": 6,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-5"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": false,
+        "slack_min": 13,
+        "latest_start_min": 16,
+        "latest_end_min": 19
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Give the cashew ranch sauce a shake in its pouch before opening in case it has separated while sitting in the fridge.",
+        "label": "Shake cashew ranch sauce pouch",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 3,
+        "end_min": 4,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-5"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": false,
+        "slack_min": 15,
+        "latest_start_min": 18,
+        "latest_end_min": 19
+      },
+      {
+        "id": "step-3",
+        "raw_text": "then place into a small bowl with the cornflour and season well with salt and pepper. Mix carefully with your hands to coat the tofu in the cornflour.",
+        "label": "Coat tofu with cornflour, season",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 4,
+        "end_min": 6,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "small bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 4,
+        "latest_end_min": 6
+      },
+      {
+        "id": "step-5",
+        "raw_text": "add the tofu and fry on all sides until golden and crispy. Alternatively, toss in a little oil and air fry for 15 minutes, tossing every 5 minutes.",
+        "label": "Fry tofu until golden and crispy",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 6,
+        "end_min": 16,
+        "requires": [
+          "step-3",
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Fry on all sides until golden and crispy. Air fry alternative is 15 minutes. Inferred duration for pan-frying.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 6,
+        "latest_end_min": 16
+      },
+      {
+        "id": "step-11",
+        "raw_text": "When the tofu is ready, remove it from the pan and place it into a bowl",
+        "label": "Remove tofu from pan",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 16,
+        "end_min": 17,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 16,
+        "latest_end_min": 17
+      },
+      {
+        "id": "step-13",
+        "raw_text": "Wipe your frying pan clean with some kitchen towel,",
+        "label": "Wipe frying pan clean",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 16,
+        "end_min": 17,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan",
+          "kitchen towel"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 16,
+        "latest_end_min": 17
+      },
+      {
+        "id": "step-12",
+        "raw_text": "and toss with the buffalo sauce to coat evenly.",
+        "label": "Toss tofu with buffalo sauce",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 17,
+        "end_min": 19,
+        "requires": [
+          "step-11"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Requires warming sauce if step-10 was performed. Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 17,
+        "latest_end_min": 19
+      },
+      {
+        "id": "step-14",
+        "raw_text": "then dry-fry the tacos (without oil) for 10–20 seconds on each side, or until warm and soft. Add a sprinkle of water if you’d like them extra soft.",
+        "label": "Dry-fry tacos until warm, soft",
+        "type": "cook",
+        "duration_min": 1,
+        "start_min": 17,
+        "end_min": 18,
+        "requires": [
+          "step-13"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Fry for '10–20 seconds on each side'. Total duration 20-40 seconds, rounded up to 1 minute. Add water for extra softness.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 17,
+        "latest_end_min": 18
+      },
+      {
+        "id": "step-15",
+        "raw_text": "Divide the tacos between serving plates,",
+        "label": "Divide tacos between serving plates",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 18,
+        "end_min": 19,
+        "requires": [
+          "step-14"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving plates"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 18,
+        "latest_end_min": 19
+      },
+      {
+        "id": "step-16",
+        "raw_text": "then pile up with the crispy buffalo tofu, a drizzle of cashew ranch sauce, the red cabbage and pineapple.",
+        "label": "Pile tacos with tofu, ranch, cabbage, pineapple",
+        "type": "finish",
+        "duration_min": 3,
+        "start_min": 19,
+        "end_min": 22,
+        "requires": [
+          "step-12",
+          "step-9",
+          "step-6",
+          "step-8",
+          "step-15"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving plates"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 19,
+        "latest_end_min": 22
+      },
+      {
+        "id": "step-17",
+        "raw_text": "Finish with a scattering of coriander to garnish and enjoy!",
+        "label": "Garnish tacos with coriander",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 22,
+        "end_min": 23,
+        "requires": [
+          "step-7",
+          "step-16"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving plates"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 22,
+        "latest_end_min": 23
+      }
+    ],
+    "total_time_min": 23,
+    "active_time_min": 29
+  },
+  {
+    "id": "mac-greens-with-purple-sprouting-broccoli-crispy-kale-mezzi-rigatoni-in-a-creamy-cashew-sauce",
+    "title": "Mac & Greens With Tenderstem Broccoli, Crispy Kale & Mezzi Rigatoni In A Creamy Cashew Sauce",
+    "source_url": "https://planthood.co.uk/products/mac-greens-with-purple-sprouting-broccoli-crispy-kale-mezzi-rigatoni-in-a-creamy-cashew-sauce",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 652.0,
+      "protein_g": 28.1,
+      "fat_g": 20.9,
+      "carbs_g": 90.7,
+      "fibre_g": 9.0,
+      "salt_g": 1.3
+    },
+    "steps": [
+      {
+        "id": "step-4",
+        "raw_text": "preheat your oven to 180°C / 160°C fan",
+        "label": "Preheat oven",
+        "type": "prep",
+        "duration_min": 12,
+        "start_min": 0,
+        "end_min": 12,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-5"
+        ],
+        "equipment": [
+          "oven"
+        ],
+        "temperature_c": 180,
+        "notes": "Preheat to 180°C / 160°C fan. Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 12
+      },
+      {
+        "id": "step-5",
+        "raw_text": "take out a large saucepan and a large baking tray.",
+        "label": "Take out equipment",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 0,
+        "end_min": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "large saucepan",
+          "large baking tray"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": false,
+        "slack_min": 9,
+        "latest_start_min": 9,
+        "latest_end_min": 10
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Boil your kettle",
+        "label": "Boil kettle",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "kettle"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": false,
+        "slack_min": 7,
+        "latest_start_min": 7,
+        "latest_end_min": 10
+      },
+      {
+        "id": "step-1",
+        "raw_text": "take out all the ingredients for this recipe",
+        "label": "Take out all ingredients",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": false,
+        "slack_min": 2,
+        "latest_start_min": 2,
+        "latest_end_min": 4
+      },
+      {
+        "id": "step-12",
+        "raw_text": "Meanwhile pour boiling water from your kettle into your other saucepan and place over a high heat.",
+        "label": "Pour boiling water into saucepan",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 3,
+        "end_min": 4,
+        "requires": [
+          "step-3",
+          "step-5"
+        ],
+        "can_overlap_with": [
+          "step-6",
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "large saucepan",
+          "kettle",
+          "hob"
+        ],
+        "temperature_c": null,
+        "notes": "Place over high heat. Duration inferred.",
+        "is_critical": false,
+        "slack_min": 7,
+        "latest_start_min": 10,
+        "latest_end_min": 11
+      },
+      {
+        "id": "step-2",
+        "raw_text": "rinse any raw grains, herbs or vegetables.",
+        "label": "Rinse raw vegetables",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 2,
+        "end_min": 5,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-1",
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "sink"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": false,
+        "slack_min": 2,
+        "latest_start_min": 4,
+        "latest_end_min": 7
+      },
+      {
+        "id": "step-13",
+        "raw_text": "Once boiling add the mezzi rigatoni and cook until al dente, around 12 minutes.",
+        "label": "Cook mezzi rigatoni until al dente",
+        "type": "cook",
+        "duration_min": 12,
+        "start_min": 4,
+        "end_min": 16,
+        "requires": [
+          "step-12"
+        ],
+        "can_overlap_with": [
+          "step-9",
+          "step-10",
+          "step-11"
+        ],
+        "equipment": [
+          "large saucepan",
+          "hob"
+        ],
+        "temperature_c": null,
+        "notes": "Cook for around 12 minutes.",
+        "is_critical": false,
+        "slack_min": 7,
+        "latest_start_min": 11,
+        "latest_end_min": 23
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Remove any hardy stems from the green kale and then roughly chop the leaves.",
+        "label": "Prep kale leaves",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 5,
+        "end_min": 8,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Remove hardy stems and roughly chop leaves. Duration inferred.",
+        "is_critical": false,
+        "slack_min": 14,
+        "latest_start_min": 19,
+        "latest_end_min": 22
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Cut the broccoli into bite-sized pieces",
+        "label": "Cut broccoli into pieces",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 5,
+        "end_min": 8,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": false,
+        "slack_min": 2,
+        "latest_start_min": 7,
+        "latest_end_min": 10
+      },
+      {
+        "id": "step-14",
+        "raw_text": "Drain the pasta and set aside to keep warm.",
+        "label": "Drain pasta and set aside",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 16,
+        "end_min": 17,
+        "requires": [
+          "step-13"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "colander"
+        ],
+        "temperature_c": null,
+        "notes": "Set aside to keep warm. Duration inferred.",
+        "is_critical": false,
+        "slack_min": 7,
+        "latest_start_min": 23,
+        "latest_end_min": 24
+      },
+      {
+        "id": "step-8",
+        "raw_text": "place into your roasting tray, toss in a little olive oil and season well with salt and pepper.",
+        "label": "Season broccoli for roasting",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 8,
+        "end_min": 10,
+        "requires": [
+          "step-7",
+          "step-5"
+        ],
+        "can_overlap_with": [
+          "step-6"
+        ],
+        "equipment": [
+          "large baking tray",
+          "olive oil",
+          "salt",
+          "pepper"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": false,
+        "slack_min": 2,
+        "latest_start_min": 10,
+        "latest_end_min": 12
+      },
+      {
+        "id": "step-15",
+        "raw_text": "Place the same saucepan you used for your pasta back over a low-medium heat",
+        "label": "Place saucepan over low-medium heat",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 17,
+        "end_min": 18,
+        "requires": [
+          "step-14"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large saucepan",
+          "hob"
+        ],
+        "temperature_c": null,
+        "notes": "Use the same saucepan as for pasta. Duration inferred.",
+        "is_critical": false,
+        "slack_min": 7,
+        "latest_start_min": 24,
+        "latest_end_min": 25
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Roast for 10 minutes",
+        "label": "Roast broccoli for 10 minutes",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 12,
+        "end_min": 22,
+        "requires": [
+          "step-4",
+          "step-8"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "oven",
+          "large baking tray"
+        ],
+        "temperature_c": 180,
+        "notes": "Roast at 180°C / 160°C fan.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 12,
+        "latest_end_min": 22
+      },
+      {
+        "id": "step-16",
+        "raw_text": "and pour in the cashew 'cheese' sauce.",
+        "label": "Pour in cashew 'cheese' sauce",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 18,
+        "end_min": 19,
+        "requires": [
+          "step-15"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": false,
+        "slack_min": 7,
+        "latest_start_min": 25,
+        "latest_end_min": 26
+      },
+      {
+        "id": "step-10",
+        "raw_text": "then add the kale with a little olive oil and seasoning tossed through",
+        "label": "Season kale for roasting",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 22,
+        "end_min": 24,
+        "requires": [
+          "step-6",
+          "step-9"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large baking tray",
+          "olive oil",
+          "salt",
+          "pepper"
+        ],
+        "temperature_c": null,
+        "notes": "Add kale to the baking tray after the initial broccoli roast. Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 22,
+        "latest_end_min": 24
+      },
+      {
+        "id": "step-17",
+        "raw_text": "Heat through for 1-2 minutes",
+        "label": "Heat cashew sauce through",
+        "type": "cook",
+        "duration_min": 2,
+        "start_min": 19,
+        "end_min": 21,
+        "requires": [
+          "step-16"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large saucepan",
+          "hob"
+        ],
+        "temperature_c": null,
+        "notes": "Heat for 1-2 minutes.",
+        "is_critical": false,
+        "slack_min": 7,
+        "latest_start_min": 26,
+        "latest_end_min": 28
+      },
+      {
+        "id": "step-11",
+        "raw_text": "and roast everything for a further 5 minutes.",
+        "label": "Roast broccoli and kale",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 24,
+        "end_min": 29,
+        "requires": [
+          "step-10"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "oven",
+          "large baking tray"
+        ],
+        "temperature_c": 180,
+        "notes": "Roast everything for a further 5 minutes at 180°C / 160°C fan.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 24,
+        "latest_end_min": 29
+      },
+      {
+        "id": "step-18",
+        "raw_text": "then remove from the heat",
+        "label": "Remove saucepan from heat",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 21,
+        "end_min": 22,
+        "requires": [
+          "step-17"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": false,
+        "slack_min": 7,
+        "latest_start_min": 28,
+        "latest_end_min": 29
+      },
+      {
+        "id": "step-19",
+        "raw_text": "and stir through the pasta and half of the broccoli and kale.",
+        "label": "Stir pasta and half greens",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 29,
+        "end_min": 31,
+        "requires": [
+          "step-11",
+          "step-14",
+          "step-18"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large saucepan",
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Stir through the pasta and half of the broccoli and kale. Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 29,
+        "latest_end_min": 31
+      },
+      {
+        "id": "step-20",
+        "raw_text": "Divide the pasta between serving bowls",
+        "label": "Divide pasta into serving bowls",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 31,
+        "end_min": 32,
+        "requires": [
+          "step-19"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 31,
+        "latest_end_min": 32
+      },
+      {
+        "id": "step-21",
+        "raw_text": "and garnish with the remaining broccoli and kale.",
+        "label": "Garnish with remaining greens",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 32,
+        "end_min": 33,
+        "requires": [
+          "step-20"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 32,
+        "latest_end_min": 33
+      },
+      {
+        "id": "step-22",
+        "raw_text": "Season to taste with salt and pepper, and enjoy!",
+        "label": "Season and enjoy",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 33,
+        "end_min": 34,
+        "requires": [
+          "step-21"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "salt",
+          "pepper"
+        ],
+        "temperature_c": null,
+        "notes": "Season to taste. Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 33,
+        "latest_end_min": 34
+      }
+    ],
+    "total_time_min": 34,
+    "active_time_min": 41
   }
 ]

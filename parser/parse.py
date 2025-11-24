@@ -211,6 +211,46 @@ Extract grounded, dependency-aware steps as JSON."""
                 return False
         return True
 
+    @staticmethod
+    def _is_template_only_method(method: str) -> bool:
+        """Check if method contains only template text without actual cooking instructions"""
+        method_lower = method.lower()
+        
+        # Template indicators that suggest no real content
+        template_phrases = [
+            "cooking instructions",
+            "what's in your box", 
+            "nutritional info",
+            "prep time",
+            "total time",
+            "cooking mode:",
+            "all nutritional values are based on a per person scale",
+            "calories total fat",
+            "ingredients / allergens"
+        ]
+        
+        # Count how much of the text is template vs content
+        template_chars = 0
+        for phrase in template_phrases:
+            if phrase in method_lower:
+                template_chars += len(phrase)
+        
+        # If method is short and mostly template phrases, it's template-only
+        if len(method) < 500 and template_chars > len(method) * 0.4:
+            return True
+            
+        # Check for specific patterns that indicate no instructions
+        has_step_words = any(word in method_lower for word in [
+            "step", "heat", "cook", "add", "mix", "stir", "chop", "slice", 
+            "fry", "bake", "boil", "simmer", "roast", "place", "remove"
+        ])
+        
+        # If no cooking action words and short, likely template-only
+        if len(method) < 600 and not has_step_words:
+            return True
+            
+        return False
+
     def _run_validation_passes(
         self,
         recipe: Dict,
@@ -269,6 +309,11 @@ Extract grounded, dependency-aware steps as JSON."""
 
         if not method:
             print(f"Warning: No method text for {recipe_id}, skipping")
+            return []
+        
+        # Check for template-only content (no actual instructions)
+        if self._is_template_only_method(method):
+            print(f"Warning: Recipe {recipe_id} contains only template text, no cooking instructions")
             return []
 
         # Check cache
