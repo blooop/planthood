@@ -5,6 +5,116 @@ import * as path from 'path';
 const isProd = process.env.NODE_ENV === 'production';
 let cachedRecipes: Recipe[] | null = null;
 
+const MONTH_MAP: Record<string, number> = {
+  january: 0,
+  february: 1,
+  march: 2,
+  april: 3,
+  may: 4,
+  june: 5,
+  july: 6,
+  august: 7,
+  september: 8,
+  october: 9,
+  november: 10,
+  december: 11,
+};
+
+function removeOrdinals(value: string) {
+  return value.replace(/(\d+)(st|nd|rd|th)/gi, '$1');
+}
+
+function normalizeWeekText(label: string) {
+  return removeOrdinals(
+    label
+      .replace(/menu/gi, ' ')
+      .replace(/deliver(?:ed|ies|y)?/gi, ' ')
+      .replace(/week\s*(?:of|commencing|starting|ending)/gi, ' ')
+      .replace(/w\/?c/gi, ' ')
+      .replace(/[\|,]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+  );
+}
+
+function alignToWeekStart(date: Date) {
+  const aligned = new Date(date);
+  const day = aligned.getDay();
+  const diff = (day + 6) % 7; // Monday as start
+  aligned.setDate(aligned.getDate() - diff);
+  aligned.setHours(0, 0, 0, 0);
+  return aligned;
+}
+
+export function getWeekStartDate(weekLabel?: string | null): Date | null {
+  if (!weekLabel) return null;
+
+  const label = normalizeWeekText(weekLabel);
+  if (!label) return null;
+
+  const isoMatch = label.match(/(\d{4})-(\d{1,2})-(\d{1,2})/);
+  if (isoMatch) {
+    const [_, year, month, day] = isoMatch;
+    const date = new Date(
+      Number(year),
+      Number(month) - 1,
+      Number(day)
+    );
+    return Number.isNaN(date.getTime()) ? null : alignToWeekStart(date);
+  }
+
+  const slashMatch = label.match(/(\d{1,2})\/(\d{1,2})\/(\d{2,4})/);
+  if (slashMatch) {
+    const [_, day, month, year] = slashMatch;
+    const fullYear = year.length === 2 ? Number(`20${year}`) : Number(year);
+    const date = new Date(fullYear, Number(month) - 1, Number(day));
+    return Number.isNaN(date.getTime()) ? null : alignToWeekStart(date);
+  }
+
+  const textMatch = label.match(
+    /(\d{1,2})\s+(january|february|march|april|may|june|july|august|september|october|november|december)\s+(\d{4})/i
+  );
+  if (textMatch) {
+    const [, day, monthName, year] = textMatch;
+    const month = MONTH_MAP[monthName.toLowerCase()];
+    const date = new Date(Number(year), month, Number(day));
+    return Number.isNaN(date.getTime()) ? null : alignToWeekStart(date);
+  }
+
+  const reversedTextMatch = label.match(
+    /(january|february|march|april|may|june|july|august|september|october|november|december)\s+(\d{1,2})\s+(\d{4})/i
+  );
+  if (reversedTextMatch) {
+    const [_, monthName, day, year] = reversedTextMatch;
+    const month = MONTH_MAP[monthName.toLowerCase()];
+    const date = new Date(Number(year), month, Number(day));
+    return Number.isNaN(date.getTime()) ? null : alignToWeekStart(date);
+  }
+
+  const parsed = new Date(label);
+  if (!Number.isNaN(parsed.getTime())) {
+    return alignToWeekStart(parsed);
+  }
+
+  return null;
+}
+
+function compareWeekLabels(a?: string | null, b?: string | null) {
+  const dateA = getWeekStartDate(a);
+  const dateB = getWeekStartDate(b);
+
+  if (dateA && dateB) {
+    return dateB.getTime() - dateA.getTime();
+  }
+  if (dateA) return -1;
+  if (dateB) return 1;
+  return (b ?? '').localeCompare(a ?? '');
+}
+
+function sortWeekLabels(weeks: string[]) {
+  return [...weeks].sort((a, b) => compareWeekLabels(a, b));
+}
+
 /**
  * Load recipes from the generated data file
  */
@@ -78,7 +188,7 @@ export function getWeeks(): string[] {
     }
   });
 
-  return Array.from(weeks).sort().reverse();
+  return sortWeekLabels(Array.from(weeks));
 }
 
 /**
@@ -101,9 +211,13 @@ export function getLatestWeek(): string | null {
  * Get only processed recipes (have steps and schedule)
  */
 export function getProcessedRecipes(): Recipe[] {
-  return loadRecipes().filter(
-    r => r.steps?.length > 0 && r.total_time_min > 0
-  );
+  return loadRecipes()
+    .filter(r => r.steps?.length > 0 && r.total_time_min > 0)
+    .sort((a, b) => {
+      const cmp = compareWeekLabels(a.week_label ?? null, b.week_label ?? null);
+      if (cmp !== 0) return cmp;
+      return a.title.localeCompare(b.title);
+    });
 }
 
 /**
@@ -121,11 +235,9 @@ export function getProcessedWeeks(): string[] {
     new Set(
       getProcessedRecipes()
         .map(r => r.week_label)
-        .filter((week): week is string => week !== undefined)
+        .filter((week): week is string => typeof week === 'string' && week.length > 0)
     )
-  )
-    .sort()
-    .reverse();
+  ).sort((a, b) => compareWeekLabels(a, b));
 }
 
 /**
