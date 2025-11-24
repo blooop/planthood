@@ -116,8 +116,35 @@
       "steps_extracted": 2,
       "total_time_min": 4,
       "error": null
+    },
+    "sun-dried-tomato-lasagne-soup-with-spinach-cannellini-beans-cheesy-cashew-cream": {
+      "processed": true,
+      "timestamp": "2025-11-24T13:19:51.661359",
+      "error": "No steps extracted",
+      "steps_extracted": 0
+    },
+    "sticky-black-pepper-tofu": {
+      "processed": true,
+      "timestamp": "2025-11-24T13:40:10.129468",
+      "steps_extracted": 23,
+      "total_time_min": 34,
+      "error": null
+    },
+    "crispy-buffalo-tofu-tacos-with-cooling-ranch-dressing-shredded-cabbage-pineapple-salsa": {
+      "processed": true,
+      "timestamp": "2025-11-24T13:53:38.243607",
+      "steps_extracted": 17,
+      "total_time_min": 23,
+      "error": null
+    },
+    "mac-greens-with-purple-sprouting-broccoli-crispy-kale-mezzi-rigatoni-in-a-creamy-cashew-sauce": {
+      "processed": true,
+      "timestamp": "2025-11-24T14:36:48.922851",
+      "steps_extracted": 22,
+      "total_time_min": 34,
+      "error": null
     }
   },
-  "last_updated": "2025-11-24T11:38:05.105918",
-  "total_processed": 17
+  "last_updated": "2025-11-24T14:36:48.922922",
+  "total_processed": 21
 }

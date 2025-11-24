@@ -91,7 +91,7 @@ class GeminiProvider(LLMProvider):
         if not self.api_key:
             raise ValueError("GEMINI_API_KEY not set")
 
-        self.model_name = model or os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+        self.model_name = model or os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
         genai.configure(api_key=self.api_key)
         self.model = genai.GenerativeModel(self.model_name)
 
@@ -116,12 +116,12 @@ def get_llm_provider(
     model: Optional[str] = None,
 ) -> LLMProvider:
     """Factory function to get configured LLM provider"""
-    provider_name = provider_name or os.getenv("LLM_PROVIDER", "openai")
+    provider_name = provider_name or os.getenv("LLM_PROVIDER", "gemini")
     provider_name = provider_name.lower()
 
     providers = {
-        "openai": OpenAIProvider,
-        "anthropic": AnthropicProvider,
+        # "openai": OpenAIProvider,
+        # "anthropic": AnthropicProvider,
         "gemini": GeminiProvider,
     }
 
