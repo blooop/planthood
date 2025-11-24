@@ -107,8 +107,8 @@ scrape = "python scraper/scrape.py"
 parse = "python parser/parse.py"
 schedule = "python scheduler/schedule.py"
 build-data = { depends-on = ["scrape", "parse", "schedule"] }
-setup-site = { cmd = "cd site && npm install", inputs = ["site/package.json"], outputs = ["site/node_modules/.package-lock.json"] }
-build-site = { cmd = "cd site && npm run build", depends-on = ["setup-site"] }
+setup-site = { cmd = "cd site && npm install", inputs = ["site/package.json", "site/package-lock.json"], outputs = ["site/node_modules"] }
+build-site = { cmd = "cd site && npm run build", depends-on = ["setup-site"], inputs = ["site/package.json", "site/package-lock.json", "site/tsconfig.json", "site/next.config.js", "site/app", "site/components", "site/lib", "site/public"], outputs = ["site/.next"] }
 build-planthood = { depends-on = ["build-data", "build-site"] }
 dev-site = { cmd = "cd site && npm run dev", depends-on = ["setup-site"] }
 start-site = "./scripts/start_site.sh"
