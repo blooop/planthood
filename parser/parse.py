@@ -27,6 +27,7 @@ DATA_DIR = Path(__file__).parent.parent / "data"
 CACHE_DIR = Path(os.getenv("CACHE_DIR", DATA_DIR / ".cache"))
 SKIP_CACHE = os.getenv("SKIP_CACHE", "false").lower() == "true"
 MAX_RETRIES = int(os.getenv("MAX_RETRIES", "3"))
+CACHE_VERSION = "v2-validated"
 
 
 @dataclass
@@ -76,7 +77,7 @@ class RecipeCache:
 
     def _get_cache_key(self, recipe_id: str, method_text: str) -> str:
         """Generate cache key from recipe ID and method text"""
-        content = f"{recipe_id}:{method_text}"
+        content = f"{CACHE_VERSION}:{recipe_id}:{method_text}"
         return hashlib.sha256(content.encode()).hexdigest()
 
     def get(self, recipe_id: str, method_text: str) -> Optional[List[Dict]]:
@@ -112,27 +113,50 @@ class RecipeCache:
 class RecipeParser:
     """LLM-powered recipe parser"""
 
-    SYSTEM_PROMPT = """You are a recipe parsing assistant. Your task is to convert unstructured recipe method text into structured, dependency-aware steps suitable for Gantt chart visualization.
+    SYSTEM_PROMPT = """You are a careful recipe parsing assistant. Convert the method text into grounded, dependency-aware steps for a cooking Gantt chart.
 
-For each step, extract:
-1. **label**: A short, clear action label (e.g., "Preheat oven", "Roast vegetables")
-2. **type**: Classification as "prep", "cook", or "finish"
-3. **estimated_duration_minutes**: Time in minutes (extract from text or estimate reasonably)
-4. **equipment**: List of equipment used (e.g., ["oven", "frying pan"])
-5. **temperature_c**: Temperature if mentioned (numeric only)
-6. **requires**: IDs of steps that must complete before this one (e.g., ["step-1"])
-7. **can_overlap_with**: IDs of steps that can run in parallel (e.g., ["step-3"])
-8. **notes**: Any important contextual notes
+Rules for each step:
+- label: 3-8 word action.
+- type: one of ["prep","cook","finish"] (prep = chopping/marinating/preheating, cook = heat applied, finish = plating/garnish/resting).
+- estimated_duration_minutes: integer minutes; use midpoint for ranges and record the range in notes. Never output 0.
+- equipment: list of tools explicitly mentioned or obviously implied (e.g., pan for frying, oven for bake/roast).
+- temperature_c: numeric degrees C if specified. Leave null/omit if not mentioned.
+- requires: ids of prerequisite steps that must finish before this one starts.
+- can_overlap_with: ids of safe parallel steps (e.g., prep during simmer).
+- notes: keep any timing ranges, doneness cues, or ordering clarifications.
+- raw_text: short quote/sentence fragment from the provided method that justifies the step.
 
-Guidelines:
-- Split method into atomic, actionable steps
-- Extract explicit times; for ranges (e.g., "20-30 minutes"), use midpoint and note the range
-- Estimate missing durations sensibly (e.g., "dice onions" = 5 min, "simmer" without time = 15 min)
-- Infer dependencies from text cues: "once X is done", "while X cooks", "meanwhile", "after"
-- Identify parallel work opportunities (can_overlap_with)
-- Number steps sequentially: step-1, step-2, etc.
+Grounding:
+- Only use information from the provided method/ingredients. Do not hallucinate extra actions, tools, or ingredients.
+- Preserve the order of the method unless there is a clear parallel/precedence cue such as "meanwhile" or "once done".
+- Split into atomic actions (one pot stir, one bake, one garnish) without merging unrelated instructions.
+- If a duration is missing, infer a sensible default (e.g., chop vegetables = 3-6 min, simmer until thick = 12-15 min) and mention that it was inferred in notes.
 
-Respond ONLY with valid JSON array of steps. No additional text."""
+Output:
+- Respond ONLY with a JSON array of step objects following this schema:
+  [{"id":"step-1","label":"...","raw_text":"...","type":"prep|cook|finish","estimated_duration_minutes":12,"equipment":["..."],"temperature_c":180,"requires":[],"can_overlap_with":[],"notes":"..."}]
+- Number ids sequentially starting at step-1. Do not add prose before or after the JSON."""
+
+    VALIDATION_SYSTEM_PROMPT = """You are a strict validator. Check that every output step is grounded in the provided method text and that no method instruction is dropped.
+
+Return JSON only in the form:
+{"status":"ok|adjusted","issues":["..."],"steps":[...same schema as input...]}
+
+Rules:
+- Remove any step that is not supported by the method text (hallucination).
+- Add a missing step only if the method text clearly describes it.
+- Keep raw_text snippets as short quotes from the method for traceability.
+- Preserve useful labels/notes when possible, but prefer fidelity over style."""
+
+    CONSISTENCY_SYSTEM_PROMPT = """You enforce schema consistency and safe scheduling choices for recipe steps.
+
+Return ONLY the final JSON array of steps (no wrapper object). Apply these corrections without inventing new actions:
+- Ensure ids are sequential (step-1, step-2, ...) and that requires/can_overlap_with only reference existing ids.
+- type must be prep, cook, or finish.
+- estimated_duration_minutes must be positive integers; pick reasonable defaults if missing and mention inference in notes.
+- temperature_c should be numeric when present in the method; otherwise omit/null.
+- Order should follow the method unless dependencies clearly indicate parallel work.
+- Drop duplicate steps; consolidate overlapping notes; keep raw_text grounded to the method."""
 
     USER_PROMPT_TEMPLATE = """Recipe: {title}
 
@@ -142,7 +166,7 @@ Ingredients:
 Method:
 {method}
 
-Parse this into structured steps as JSON array."""
+Extract grounded, dependency-aware steps as JSON."""
 
     def __init__(self, llm_provider=None):
         self.llm = llm_provider or get_llm_provider()
@@ -153,9 +177,90 @@ Parse this into structured steps as JSON array."""
         stop=stop_after_attempt(MAX_RETRIES),
         wait=wait_exponential(multiplier=1, min=2, max=10),
     )
-    def _call_llm(self, prompt: str) -> str:
+    def _call_llm(self, prompt: str, system_prompt: Optional[str] = None) -> str:
         """Call LLM with retries"""
-        return self.llm.generate(prompt, system_prompt=self.SYSTEM_PROMPT)
+        return self.llm.generate(prompt, system_prompt=system_prompt or self.SYSTEM_PROMPT)
+
+    @staticmethod
+    def _strip_code_fences(text: str) -> str:
+        """Remove Markdown fences that may wrap JSON"""
+        text = text.strip()
+        if text.startswith("```"):
+            lines = text.split("\n")
+            text = "\n".join(line for line in lines if not line.startswith("```"))
+        return text.strip()
+
+    def _load_json(self, text: str) -> Optional[Dict]:
+        """Load JSON after stripping markdown fences"""
+        try:
+            return json.loads(self._strip_code_fences(text))
+        except json.JSONDecodeError as e:
+            print(f"Validation JSON parse error: {e}")
+            return None
+
+    @staticmethod
+    def _is_valid_step_list(steps: Optional[List[Dict]]) -> bool:
+        """Basic schema validation before accepting LLM adjustments"""
+        if not isinstance(steps, list) or not steps:
+            return False
+        required_fields = {"label", "type", "estimated_duration_minutes"}
+        for step in steps:
+            if not isinstance(step, dict):
+                return False
+            if not required_fields.issubset(step.keys()):
+                return False
+        return True
+
+    def _run_validation_passes(
+        self,
+        recipe: Dict,
+        method: str,
+        initial_steps: List[Dict],
+    ) -> List[Dict]:
+        """Run multiple LLM validations to reduce hallucinations and missed steps"""
+        steps = initial_steps
+
+        # Pass 1: coverage + hallucination guard
+        coverage_prompt = (
+            "You are checking fidelity between method text and extracted steps.\n"
+            f"Title: {recipe['title']}\n\n"
+            f"Method:\n{method}\n\n"
+            "Current steps (JSON):\n"
+            f"{json.dumps(steps, indent=2)}\n\n"
+            "Identify unsupported steps or missing instructions and return an adjusted list if needed."
+        )
+        coverage_response = self._call_llm(
+            coverage_prompt,
+            system_prompt=self.VALIDATION_SYSTEM_PROMPT,
+        )
+        coverage_data = self._load_json(coverage_response) or {}
+        candidate_steps = coverage_data.get("steps") if isinstance(coverage_data, dict) else None
+        if self._is_valid_step_list(candidate_steps):
+            steps = candidate_steps
+            if coverage_data.get("issues"):
+                print(f"Validation (coverage) issues: {coverage_data['issues']}")
+        else:
+            print("Coverage validation returned invalid data, keeping previous steps.")
+
+        # Pass 2: consistency and scheduling sanity
+        consistency_prompt = (
+            "Normalize the steps while keeping them grounded in the method.\n"
+            f"Title: {recipe['title']}\n\n"
+            f"Method:\n{method}\n\n"
+            "Steps to normalize (JSON):\n"
+            f"{json.dumps(steps, indent=2)}"
+        )
+        consistency_response = self._call_llm(
+            consistency_prompt,
+            system_prompt=self.CONSISTENCY_SYSTEM_PROMPT,
+        )
+        normalized_steps = self._load_json(consistency_response)
+        if self._is_valid_step_list(normalized_steps):
+            steps = normalized_steps
+        else:
+            print("Consistency validation returned invalid data, keeping previous steps.")
+
+        return steps
 
     def parse_recipe_steps(self, recipe: Dict) -> List[RecipeStep]:
         """Parse recipe method into structured steps"""
@@ -184,14 +289,14 @@ Parse this into structured steps as JSON array."""
             print(f"Parsing {recipe_id} with LLM...")
             response = self._call_llm(prompt)
 
-            # Extract JSON from response (in case LLM adds extra text)
-            response = response.strip()
-            if response.startswith("```"):
-                # Remove markdown code blocks
-                lines = response.split("\n")
-                response = "\n".join(line for line in lines if not line.startswith("```"))
+            steps_data = self._load_json(response)
+            if steps_data is None:
+                raise json.JSONDecodeError("Invalid primary JSON", response, 0)
+            if not isinstance(steps_data, list):
+                raise ValueError("Primary LLM response was not a list of steps")
 
-            steps_data = json.loads(response)
+            # Verification + validation passes to reduce hallucinations and missed steps
+            steps_data = self._run_validation_passes(recipe, method, steps_data)
 
             # Validate and create RecipeStep objects
             steps = []
@@ -209,6 +314,15 @@ Parse this into structured steps as JSON array."""
                 if not all(k in step_data for k in required):
                     print(f"Warning: Step {i} missing required fields, skipping")
                     continue
+
+                # Drop dependencies that point to non-existent steps
+                valid_ids = {f"step-{j}" for j in range(1, len(steps_data) + 1)}
+                step_data["requires"] = [
+                    req for req in step_data.get("requires", []) if req in valid_ids
+                ]
+                step_data["can_overlap_with"] = [
+                    overlap for overlap in step_data.get("can_overlap_with", []) if overlap in valid_ids
+                ]
 
                 steps.append(RecipeStep(**step_data))
 

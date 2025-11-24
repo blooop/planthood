@@ -111,6 +111,8 @@ setup-site = "cd site && npm install"
 build-site = "cd site && npm run build"
 build-planthood = { depends-on = ["build-data", "build-site"] }
 dev-site = "cd site && npm run dev"
+start-site = "./scripts/start_site.sh"
+view-site = { depends-on = ["build-site", "start-site"] }
 
 # Incremental recipe processing (for rate-limit-safe scheduled runs)
 find-upcoming = "python find_upcoming_recipes.py"

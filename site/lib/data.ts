@@ -2,22 +2,25 @@ import { Recipe } from './types';
 import * as fs from 'fs';
 import * as path from 'path';
 
+const isProd = process.env.NODE_ENV === 'production';
 let cachedRecipes: Recipe[] | null = null;
 
 /**
  * Load recipes from the generated data file
  */
 function loadRecipes(): Recipe[] {
-  if (cachedRecipes) {
+  if (isProd && cachedRecipes) {
     return cachedRecipes;
   }
 
   // Try multiple possible paths for the data file
   const possiblePaths = [
-    path.join(process.cwd(), 'public', 'data', 'recipes_with_schedule.json'),
+    // Prefer repository data files so dev server always reads the latest outputs
     path.join(process.cwd(), '..', 'data', 'recipes_with_schedule.json'),
     path.join(process.cwd(), 'data', 'recipes_with_schedule.json'),
     path.join(__dirname, '..', '..', '..', 'data', 'recipes_with_schedule.json'),
+    // Fallback to static copy inside site/public for export builds
+    path.join(process.cwd(), 'public', 'data', 'recipes_with_schedule.json'),
   ];
 
   let dataPath = possiblePaths[0];
@@ -37,7 +40,9 @@ function loadRecipes(): Recipe[] {
   try {
     const fileContents = fs.readFileSync(dataPath, 'utf-8');
     const recipes = JSON.parse(fileContents) as Recipe[];
-    cachedRecipes = recipes;
+    if (isProd) {
+      cachedRecipes = recipes;
+    }
     return recipes;
   } catch (error) {
     console.error('Error loading recipes:', error);

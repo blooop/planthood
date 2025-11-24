@@ -4074,5 +4074,678 @@
     ],
     "total_time_min": 21.5,
     "active_time_min": 27
+  },
+  {
+    "id": "rich-luxurious-black-daal-makhani-with-crispy-bombay-potatoes-coconut-yoghurt",
+    "title": "Rich & Luxurious Black Daal Makhani With Pickled Red Onion, Coconut Yoghurt & Garlic Naan",
+    "source_url": "https://planthood.co.uk/products/rich-luxurious-black-daal-makhani-with-crispy-bombay-potatoes-coconut-yoghurt",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 705.0,
+      "protein_g": 24.6,
+      "fat_g": 27.8,
+      "carbs_g": 98.3,
+      "fibre_g": 23.8,
+      "salt_g": 0.5
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "rinse any raw grains, herbs or vegetables.",
+        "label": "Rinse lentils and coriander",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "colander",
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred. General instruction to rinse raw grains, herbs or vegetables.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 2
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Warm thenaanin a dry frying pan for 30 seconds on each side.",
+        "label": "Warm naan in frying pan",
+        "type": "cook",
+        "duration_min": 1,
+        "start_min": 0,
+        "end_min": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
+        "equipment": [
+          "frying pan",
+          "stove"
+        ],
+        "temperature_c": null,
+        "notes": "Warm for 30 seconds on each side.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 1
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Drain the lentils",
+        "label": "Drain black lentils",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 2,
+        "end_min": 3,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "colander"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 2,
+        "latest_end_min": 3
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Roughly chop thecorianderleaves.",
+        "label": "Roughly chop coriander leaves",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 2,
+        "end_min": 4,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-4",
+          "step-6"
+        ],
+        "equipment": [
+          "chopping board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": false,
+        "slack_min": 9,
+        "latest_start_min": 11,
+        "latest_end_min": 13
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Pour theblackdaal makhani sauceinto your large saucepan along with the drainedblacklentils.",
+        "label": "Combine daal sauce and lentils",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 3,
+        "end_min": 4,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 3,
+        "latest_end_min": 4
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Place over a medium heat and cook until piping hot, around 4-5 minutes. Stir occasionally while cooking, adding a splash of water as needed if it starts to stick.",
+        "label": "Cook daal until piping hot",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 4,
+        "end_min": 9,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large saucepan",
+          "stove"
+        ],
+        "temperature_c": null,
+        "notes": "Cook for 4-5 minutes (midpoint 4.5, rounded to 5). Stir occasionally, add water if needed.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 4,
+        "latest_end_min": 9
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Season with salt to taste.",
+        "label": "Season daal with salt",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 9,
+        "end_min": 10,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 9,
+        "latest_end_min": 10
+      },
+      {
+        "id": "step-8",
+        "raw_text": "divide thedaalbetween serving bowls",
+        "label": "Divide daal into serving bowls",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 10,
+        "end_min": 11,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls",
+          "ladle"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 10,
+        "latest_end_min": 11
+      },
+      {
+        "id": "step-9",
+        "raw_text": "top with a dollop ofcoconutyoghurt",
+        "label": "Top daal with coconut yoghurt",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 11,
+        "end_min": 12,
+        "requires": [
+          "step-8"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 11,
+        "latest_end_min": 12
+      },
+      {
+        "id": "step-10",
+        "raw_text": "somepickledredonion",
+        "label": "Top daal with pickled red onion",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 12,
+        "end_min": 13,
+        "requires": [
+          "step-9"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 12,
+        "latest_end_min": 13
+      },
+      {
+        "id": "step-11",
+        "raw_text": "and a scattering of freshcoriander.",
+        "label": "Scatter fresh coriander on daal",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 13,
+        "end_min": 14,
+        "requires": [
+          "step-7",
+          "step-10"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 13,
+        "latest_end_min": 14
+      }
+    ],
+    "total_time_min": 14,
+    "active_time_min": 11
+  },
+  {
+    "id": "slow-cooked-mushroom-bourguignon-over-creamy-mash-with-green-kale",
+    "title": "Slow-Cooked Mushroom Bourguignon Over Creamy Mash With Green Kale",
+    "source_url": "https://planthood.co.uk/products/slow-cooked-mushroom-bourguignon-over-creamy-mash-with-green-kale",
+    "week_label": null,
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 430.0,
+      "protein_g": 14.1,
+      "fat_g": 1.7,
+      "carbs_g": 82.0,
+      "fibre_g": 14.5,
+      "salt_g": 0.7
+    },
+    "steps": [
+      {
+        "id": "step-10",
+        "raw_text": "While it heats up, slice half of the chestnut mushrooms and cut the other half into quarters to add texture.",
+        "label": "Slice and quarter mushrooms",
+        "type": "prep",
+        "duration_min": 4,
+        "start_min": 0,
+        "end_min": 4,
+        "requires": [],
+        "can_overlap_with": [
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Slice half, cut other half into quarters. Duration inferred.",
+        "is_critical": false,
+        "slack_min": 2,
+        "latest_start_min": 2,
+        "latest_end_min": 6
+      },
+      {
+        "id": "step-3",
+        "raw_text": "take out two saucepans and a frying pan.",
+        "label": "Take out pans",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 0,
+        "end_min": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "saucepan",
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": false,
+        "slack_min": 2,
+        "latest_start_min": 2,
+        "latest_end_min": 3
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Peel the potatoes, then cut into 2cm cubes.",
+        "label": "Peel and cut potatoes",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-4",
+          "step-5",
+          "step-9"
+        ],
+        "equipment": [
+          "peeler",
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Cut into 2cm cubes. Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 5
+      },
+      {
+        "id": "step-1",
+        "raw_text": "rinse any raw grains, herbs or vegetables.",
+        "label": "Rinse vegetables",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 2
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Boil your kettle",
+        "label": "Boil kettle",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3"
+        ],
+        "equipment": [
+          "kettle"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 3
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Place your frying pan over a medium heat and add a drizzle of oil.",
+        "label": "Heat frying pan with oil",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 1,
+        "end_min": 3,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [
+          "step-7",
+          "step-8",
+          "step-10"
+        ],
+        "equipment": [
+          "frying pan",
+          "hob"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": false,
+        "slack_min": 3,
+        "latest_start_min": 4,
+        "latest_end_min": 6
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Fill both of your saucepans with boiling water from your kettle",
+        "label": "Fill saucepans with boiling water",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 3,
+        "end_min": 4,
+        "requires": [
+          "step-2",
+          "step-3"
+        ],
+        "can_overlap_with": [
+          "step-6"
+        ],
+        "equipment": [
+          "saucepan",
+          "kettle"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 3,
+        "latest_end_min": 4
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Fry the mushrooms until golden and caramelised, around 10 minutes",
+        "label": "Fry mushrooms until golden",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 4,
+        "end_min": 14,
+        "requires": [
+          "step-9",
+          "step-10"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan",
+          "spatula"
+        ],
+        "temperature_c": null,
+        "notes": "Fry until golden and caramelised. Duration: 10 minutes.",
+        "is_critical": false,
+        "slack_min": 2,
+        "latest_start_min": 6,
+        "latest_end_min": 16
+      },
+      {
+        "id": "step-5",
+        "raw_text": "then place over a medium heat.",
+        "label": "Place saucepans over medium heat",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 4,
+        "end_min": 5,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-6"
+        ],
+        "equipment": [
+          "hob",
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 4,
+        "latest_end_min": 5
+      },
+      {
+        "id": "step-12",
+        "raw_text": "then add the bourguignon sauce and cook for a further 2-3 minutes or until piping hot. Add water as needed if the sauce reduces too much or starts to stick.",
+        "label": "Cook bourguignon sauce with mushrooms",
+        "type": "cook",
+        "duration_min": 3,
+        "start_min": 14,
+        "end_min": 17,
+        "requires": [
+          "step-11"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan",
+          "spatula"
+        ],
+        "temperature_c": null,
+        "notes": "Cook for 2-3 minutes or until piping hot. Add water as needed. Duration range: 2-3 minutes.",
+        "is_critical": false,
+        "slack_min": 2,
+        "latest_start_min": 16,
+        "latest_end_min": 19
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Salt your boiling water, then add the potatoes to the water and cook for around 10-12 minutes or until the potato is very soft. It should virtually crumble when you jab it with a fork.",
+        "label": "Boil potatoes until very soft",
+        "type": "cook",
+        "duration_min": 11,
+        "start_min": 5,
+        "end_min": 16,
+        "requires": [
+          "step-5",
+          "step-6"
+        ],
+        "can_overlap_with": [
+          "step-8",
+          "step-9",
+          "step-10"
+        ],
+        "equipment": [
+          "saucepan",
+          "fork"
+        ],
+        "temperature_c": null,
+        "notes": "Cook for 10-12 minutes or until very soft, virtually crumbles when jabbed with a fork. Duration range: 10-12 minutes.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 5,
+        "latest_end_min": 16
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Place the kale in your other saucepan and boil for 5-10 minutes or until al dente.",
+        "label": "Boil kale until al dente",
+        "type": "cook",
+        "duration_min": 8,
+        "start_min": 5,
+        "end_min": 13,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [
+          "step-7",
+          "step-9",
+          "step-10"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Cook for 5-10 minutes or until al dente. Duration range: 5-10 minutes.",
+        "is_critical": false,
+        "slack_min": 7,
+        "latest_start_min": 12,
+        "latest_end_min": 20
+      },
+      {
+        "id": "step-13",
+        "raw_text": "Season with salt and pepper to taste before serving.",
+        "label": "Season bourguignon sauce",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 17,
+        "end_min": 18,
+        "requires": [
+          "step-12"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Season with salt and pepper to taste. Duration inferred.",
+        "is_critical": false,
+        "slack_min": 2,
+        "latest_start_min": 19,
+        "latest_end_min": 20
+      },
+      {
+        "id": "step-14",
+        "raw_text": "Once the potatoes are cooked, add a generous drizzle of extra virgin olive oil, then mash until smooth and creamy. You could also add a little plant milk or butter to make it even creamier (optional).",
+        "label": "Mash potatoes until smooth",
+        "type": "finish",
+        "duration_min": 3,
+        "start_min": 16,
+        "end_min": 19,
+        "requires": [
+          "step-7"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "potato masher",
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Add generous drizzle of extra virgin olive oil. Optional: add plant milk or butter. Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 16,
+        "latest_end_min": 19
+      },
+      {
+        "id": "step-15",
+        "raw_text": "Season well with salt and black pepper to taste.",
+        "label": "Season mashed potatoes",
+        "type": "finish",
+        "duration_min": 1,
+        "start_min": 19,
+        "end_min": 20,
+        "requires": [
+          "step-14"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Season well with salt and black pepper to taste. Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 19,
+        "latest_end_min": 20
+      },
+      {
+        "id": "step-16",
+        "raw_text": "To serve up, divide the mash between serving bowls, ladle over the mushroom bourguignon and serve alongside the kale.",
+        "label": "Plate mash, bourguignon, and kale",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 20,
+        "end_min": 22,
+        "requires": [
+          "step-15",
+          "step-13",
+          "step-8"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls",
+          "ladle"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 20,
+        "latest_end_min": 22
+      }
+    ],
+    "total_time_min": 22,
+    "active_time_min": 26
   }
 ]
