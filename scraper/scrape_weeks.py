@@ -1,8 +1,7 @@
 import json
 import os
 import time
-import re
-from typing import Dict, List, Optional
+from typing import Dict
 import requests
 from playwright.sync_api import sync_playwright
 
