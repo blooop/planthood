@@ -3,7 +3,7 @@ import requests
 
 def check_collections():
     url = "https://planthood.co.uk/collections.json"
-    response = requests.get(url)
+    response = requests.get(url, timeout=10)
     data = response.json()
 
     print(f"Found {len(data['collections'])} collections")

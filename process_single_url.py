@@ -6,17 +6,17 @@ Scrapes, parses, and schedules a single recipe by URL.
 
 import json
 import sys
+from dataclasses import asdict
 from pathlib import Path
+
+from parser.parse import RecipeParser  # pylint: disable=deprecated-module
+from scraper.scrape import PlanthoodScraper
+from scheduler.schedule import RecipeScheduler
 
 # Ensure local parser module is found before stdlib's deprecated parser module
 project_root = Path(__file__).parent
 if str(project_root) not in sys.path:
     sys.path.insert(0, str(project_root))
-
-from parser.parse import RecipeParser
-from scraper.scrape import PlanthoodScraper
-from scheduler.schedule import RecipeScheduler
-from dataclasses import asdict
 
 
 def _handle_error(error: Exception, prefix: str = "Error") -> str:
@@ -44,10 +44,10 @@ def scrape_single_url(url: str):
             print(f"   Method length: {len(recipe.method)} chars")
             print(f"   Ingredients: {len(recipe.ingredients)} items")
             return recipe, None
-        else:
-            error = "Failed to extract recipe data"
-            print(f"Error: {error}")
-            return None, error
+
+        error = "Failed to extract recipe data"
+        print(f"Error: {error}")
+        return None, error
 
     except Exception as e:
         return None, _handle_error(e, "Scraping failed")
@@ -176,8 +176,9 @@ def save_processed_recipe(scraped_recipe, parsed_recipe, scheduled_recipe):
     print(f"   {scheduled_file}")
 
 
-def main():
+def main():  # pylint: disable=too-many-return-statements
     """Main entry point"""
+    # Validate arguments
     if len(sys.argv) != 2:
         print("Usage: python process_single_url.py <recipe_url>")
         print("\nExample:")

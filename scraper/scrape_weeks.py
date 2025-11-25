@@ -94,7 +94,7 @@ def scrape_weeks():
             print(f"Error waiting for options: {e}")
             # Debug snapshot
             page.screenshot(path="debug_screenshot_timeout.png")
-            with open("debug_page_timeout.html", "w") as f:
+            with open("debug_page_timeout.html", "w", encoding="utf-8") as f:
                 f.write(page.content())
             raise
 

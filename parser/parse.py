@@ -4,6 +4,7 @@ Recipe Parser with LLM-backed step extraction
 Converts raw recipe method text into structured, dependency-aware steps
 """
 
+import argparse
 import hashlib
 import json
 import os
@@ -427,9 +428,6 @@ Extract grounded, dependency-aware steps as JSON."""
             parsed_recipes.append(parsed_recipe)
 
         return parsed_recipes
-
-
-import argparse
 
 
 def main():
