@@ -147,13 +147,15 @@ Return JSON only in the form:
 Your goals:
 1. GROUNDING: Remove hallucinations (steps not in method). Add missing instructions clearly described in text.
 2. SCHEDULING: Ensure dependencies are logical. 'requires' must point to existing step IDs.
-3. CONSISTENCY: Ensure 'type' is prep/cook/finish. 'estimated_duration_minutes' must be > 0.
+3. CONSISTENCY: Ensure 'type' is prep/cook/finish. 'estimated_duration_minutes' must be a positive integer (> 0).
 4. ORDER: Preserve method order unless parallel execution is explicitly possible.
 
 Rules:
-- Keep raw_text snippets as short quotes.
-- If a step is removed, remove it from 'requires' lists of other steps.
-- If a step is added, give it a new ID (e.g. step-new-1)."""
+- IDs must be strictly sequential (step-1, step-2, ...). Renumber if necessary.
+- If IDs change, update 'requires' and 'can_overlap_with' to match new IDs.
+- 'estimated_duration_minutes': Must be a positive integer. Infer a reasonable default if missing but implied.
+- 'temperature_c': Must be numeric (e.g. 180) or null.
+- Keep raw_text snippets as short quotes."""
 
     USER_PROMPT_TEMPLATE = """Recipe: {title}
 
