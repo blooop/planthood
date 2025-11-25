@@ -31,6 +31,7 @@ class Recipe:
     title: str
     source_url: str
     week_label: Optional[str] = None
+    weeks: List[str] = None  # List of weeks this recipe appears in
     category: Optional[str] = None
     ingredients: List[str] = None
     method: str = ""
@@ -41,6 +42,8 @@ class Recipe:
             self.ingredients = []
         if self.nutrition is None:
             self.nutrition = {}
+        if self.weeks is None:
+            self.weeks = []
 
 
 class PlanthoodScraper:
@@ -276,6 +279,25 @@ class PlanthoodScraper:
 
     def scrape_all(self, existing_recipes: Optional[List[Dict]] = None) -> List[Recipe]:
         """Scrape all recipes from Planthood, skipping already extracted ones"""
+        # Load weekly schedule
+        weekly_schedule_path = os.path.join(DATA_DIR, "weekly_schedule.json")
+        weekly_schedule = {}
+        if os.path.exists(weekly_schedule_path):
+            try:
+                with open(weekly_schedule_path, "r", encoding="utf-8") as f:
+                    weekly_schedule = json.load(f)
+                print(f"Loaded weekly schedule with {len(weekly_schedule)} weeks")
+            except Exception as e:
+                print(f"Warning: Could not load weekly schedule: {e}")
+
+        # Map URLs to weeks
+        url_to_weeks = {}
+        for week, urls in weekly_schedule.items():
+            for url in urls:
+                if url not in url_to_weeks:
+                    url_to_weeks[url] = []
+                url_to_weeks[url].append(week)
+
         # Track existing recipes by URL
         existing_by_url = {}
         if existing_recipes:
@@ -286,7 +308,13 @@ class PlanthoodScraper:
         print(f"Loaded {len(existing_by_url)} existing recipes")
 
         # Discover all recipe URLs
-        recipe_urls = self.discover_recipe_urls()
+        recipe_urls = set(self.discover_recipe_urls())
+
+        # Add URLs from schedule that might have been missed
+        for url in url_to_weeks:
+            recipe_urls.add(url)
+
+        recipe_urls = sorted(list(recipe_urls))
 
         # Separate new and existing URLs
         new_urls = [url for url in recipe_urls if url not in existing_by_url]
@@ -302,11 +330,18 @@ class PlanthoodScraper:
         for url in existing_urls:
             # Convert dict back to Recipe object
             recipe_data = existing_by_url[url]
+
+            # Update weeks from schedule
+            weeks = url_to_weeks.get(url, [])
+            # Merge with existing weeks if any (though we usually overwrite)
+            # recipe_data might not have 'weeks' if it's old data
+
             recipe = Recipe(
                 id=recipe_data["id"],
                 title=recipe_data["title"],
                 source_url=recipe_data["source_url"],
                 week_label=recipe_data.get("week_label"),
+                weeks=weeks,  # Use fresh weeks data
                 category=recipe_data.get("category"),
                 ingredients=recipe_data.get("ingredients", []),
                 method=recipe_data.get("method", ""),
@@ -320,6 +355,8 @@ class PlanthoodScraper:
             print(f"[{i}/{len(new_urls)}] ", end="")
             recipe = self.extract_recipe(url)
             if recipe:
+                # Add weeks info
+                recipe.weeks = url_to_weeks.get(url, [])
                 recipes.append(recipe)
 
         return recipes

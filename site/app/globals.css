@@ -232,6 +232,97 @@ body {
   color: var(--color-text);
 }
 
+.week-selector-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.week-selector-copy p {
+  margin-bottom: 0.4rem;
+  color: var(--color-text-light);
+}
+
+.week-selector-meta {
+  margin-top: 0.5rem;
+  color: var(--color-primary);
+}
+
+.week-selector-empty {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+}
+
+.week-selector-empty code {
+  background: rgba(0, 0, 0, 0.04);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+.week-dropdown {
+  min-width: 260px;
+}
+
+.week-dropdown-label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: var(--color-text-light);
+}
+
+.week-dropdown-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.week-select {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+  border: 1.5px solid var(--color-border);
+  background: var(--color-card-bg);
+  color: var(--color-text);
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.week-select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(212, 133, 157, 0.2);
+}
+
+.week-reset-button {
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: var(--color-primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.week-reset-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.week-reset-button:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+
+.week-dropdown-hint {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
 .week-list {
   display: flex;
   flex-wrap: wrap;
@@ -261,6 +352,23 @@ body {
 /* Recipe Grid */
 .recipes-section {
   margin: 3rem 0;
+}
+
+.week-section-highlight {
+  animation: weekHighlight 1.6s ease forwards;
+  box-shadow: 0 10px 35px rgba(212, 133, 157, 0.25),
+    0 0 0 4px rgba(212, 133, 157, 0.2);
+  border-radius: 16px;
+}
+
+@keyframes weekHighlight {
+  from {
+    box-shadow: 0 10px 35px rgba(212, 133, 157, 0.25),
+      0 0 0 4px rgba(212, 133, 157, 0.2);
+  }
+  to {
+    box-shadow: none;
+  }
 }
 
 .recipes-section h3 {
@@ -1466,6 +1574,24 @@ body {
   .week-selector h3 {
     font-size: 1.2rem;
     margin-bottom: 0.75rem;
+  }
+
+  .week-selector-header {
+    flex-direction: column;
+  }
+
+  .week-dropdown {
+    width: 100%;
+  }
+
+  .week-dropdown-controls {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .week-select,
+  .week-reset-button {
+    width: 100%;
   }
 
   .week-list {

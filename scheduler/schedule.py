@@ -44,6 +44,7 @@ class ScheduledRecipe:
     title: str
     source_url: str
     week_label: Optional[str]
+    weeks: List[str]
     category: Optional[str]
     ingredients: List[str]
     nutrition: Optional[Dict]
@@ -242,6 +243,7 @@ class RecipeScheduler:
             title=recipe["title"],
             source_url=recipe["source_url"],
             week_label=recipe.get("week_label"),
+            weeks=recipe.get("weeks", []),
             category=recipe.get("category"),
             ingredients=recipe.get("ingredients", []),
             nutrition=recipe.get("nutrition"),

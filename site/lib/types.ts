@@ -23,6 +23,7 @@ export interface Recipe {
   source_url: string;
   category?: string;
   week_label?: string;
+  weeks?: string[];
   ingredients: string[];
   steps: RecipeStep[];
   total_time_min: number;
