@@ -3680,5 +3680,201 @@
       "salt_g": 1.3
     },
     "steps": []
+  },
+  {
+    "id": "super-green-cheats-lasagne",
+    "title": "Super Green Cheats Lasagne With Courgette, Butter Beans, Miso Bechamel, Toasted Nuts & Seeds",
+    "source_url": "",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": null,
+      "protein_g": null,
+      "fat_g": null,
+      "carbs_g": null,
+      "fibre_g": null,
+      "salt_g": null
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Preheat your oven to 220°C / 200°C fan",
+        "label": "Preheat oven",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "oven"
+        ],
+        "temperature_c": 200,
+        "notes": "Preheat to 220°C conventional or 200°C fan."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Take out a large casserole dish or an oven-proof deep pan, along with a blender",
+        "label": "Prepare equipment",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3"
+        ],
+        "equipment": [
+          "casserole dish",
+          "blender"
+        ],
+        "temperature_c": null,
+        "notes": "Gather casserole dish, blender, and mixing bowl."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Take out all the ingredients for this recipe and rinse any raw grains, herbs or vegetables",
+        "label": "Prepare ingredients",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "colander",
+          "sink"
+        ],
+        "temperature_c": null,
+        "notes": "Rinse vegetables and gather all ingredients."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Place your casserole dish over medium-high heat and drizzle in some olive oil. Slice the courgette into 0.5cm rounds, add to the pan, and sauté",
+        "label": "Sauté courgettes",
+        "type": "cook",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-5"
+        ],
+        "equipment": [
+          "casserole dish",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Courgettes should be softened and lightly browned."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Add the super green lasagne sauce and baby spinach into a blender, and blend until smooth and vibrant green",
+        "label": "Blend sauce and spinach",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-4"
+        ],
+        "equipment": [
+          "blender"
+        ],
+        "temperature_c": null,
+        "notes": "Alternatively use stick blender. Blend until smooth."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Pour the sauce into the pan along with 50ml of water and the butter beans (including the water). Give everything a good mix and cook until lightly bubbling, around 3 minutes",
+        "label": "Combine sauce and beans",
+        "type": "cook",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-4",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "casserole dish"
+        ],
+        "temperature_c": null,
+        "notes": "Double water measurement for four person portion (100ml)."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Break the lasagne sheets into 3-4 pieces each and add them to the simmering sauce. Stir well and place the dish in the pre-heated oven and bake for 10 minutes",
+        "label": "Add lasagne and bake",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
+        "requires": [
+          "step-1",
+          "step-6"
+        ],
+        "can_overlap_with": [
+          "step-8"
+        ],
+        "equipment": [
+          "oven",
+          "casserole dish"
+        ],
+        "temperature_c": 200,
+        "notes": "Break sheets and ensure they're evenly distributed."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Meanwhile, toast the nuts and seeds by dry frying (without oil) in a small frying pan until golden, around 2-4 minutes",
+        "label": "Toast nuts and seeds",
+        "type": "cook",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-7"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Dry fry without oil. Almonds, hazelnuts, pumpkin seeds, sunflower seeds."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Remove the lasagne from the oven, pour over the miso bechamel and return it to the oven for another 15-20 minutes or until the bechamel is a little thicker",
+        "label": "Add bechamel and bake",
+        "type": "cook",
+        "estimated_duration_minutes": 18,
+        "requires": [
+          "step-7"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "oven",
+          "casserole dish"
+        ],
+        "temperature_c": 200,
+        "notes": "Bake 15-20 minutes. Bechamel should thicken. Allow to rest 5 minutes before serving."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Drizzle or scatter the toasted nuts and seeds over the lasagne, divide between serving bowls and enjoy",
+        "label": "Garnish and serve",
+        "type": "finish",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-8",
+          "step-9"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Top with toasted nuts and seeds."
+      }
+    ]
   }
 ]
