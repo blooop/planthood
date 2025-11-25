@@ -139,26 +139,21 @@ Output:
   [{"id":"step-1","label":"...","raw_text":"...","type":"prep|cook|finish","estimated_duration_minutes":12,"equipment":["..."],"temperature_c":180,"requires":[],"can_overlap_with":[],"notes":"..."}]
 - Number ids sequentially starting at step-1. Do not add prose before or after the JSON."""
 
-    VALIDATION_SYSTEM_PROMPT = """You are a strict validator. Check that every output step is grounded in the provided method text and that no method instruction is dropped.
-
+    COMBINED_VALIDATION_SYSTEM_PROMPT = """You are a strict validator and scheduler. Review the extracted steps against the method text.
+    
 Return JSON only in the form:
 {"status":"ok|adjusted","issues":["..."],"steps":[...same schema as input...]}
 
+Your goals:
+1. GROUNDING: Remove hallucinations (steps not in method). Add missing instructions clearly described in text.
+2. SCHEDULING: Ensure dependencies are logical. 'requires' must point to existing step IDs.
+3. CONSISTENCY: Ensure 'type' is prep/cook/finish. 'estimated_duration_minutes' must be > 0.
+4. ORDER: Preserve method order unless parallel execution is explicitly possible.
+
 Rules:
-- Remove any step that is not supported by the method text (hallucination).
-- Add a missing step only if the method text clearly describes it.
-- Keep raw_text snippets as short quotes from the method for traceability.
-- Preserve useful labels/notes when possible, but prefer fidelity over style."""
-
-    CONSISTENCY_SYSTEM_PROMPT = """You enforce schema consistency and safe scheduling choices for recipe steps.
-
-Return ONLY the final JSON array of steps (no wrapper object). Apply these corrections without inventing new actions:
-- Ensure ids are sequential (step-1, step-2, ...) and that requires/can_overlap_with only reference existing ids.
-- type must be prep, cook, or finish.
-- estimated_duration_minutes must be positive integers; pick reasonable defaults if missing and mention inference in notes.
-- temperature_c should be numeric when present in the method; otherwise omit/null.
-- Order should follow the method unless dependencies clearly indicate parallel work.
-- Drop duplicate steps; consolidate overlapping notes; keep raw_text grounded to the method."""
+- Keep raw_text snippets as short quotes.
+- If a step is removed, remove it from 'requires' lists of other steps.
+- If a step is added, give it a new ID (e.g. step-new-1)."""
 
     USER_PROMPT_TEMPLATE = """Recipe: {title}
 
@@ -275,48 +270,33 @@ Extract grounded, dependency-aware steps as JSON."""
         method: str,
         initial_steps: List[Dict],
     ) -> List[Dict]:
-        """Run multiple LLM validations to reduce hallucinations and missed steps"""
+        """Run a combined validation pass to reduce hallucinations and fix scheduling"""
         steps = initial_steps
 
-        # Pass 1: coverage + hallucination guard
-        coverage_prompt = (
-            "You are checking fidelity between method text and extracted steps.\n"
+        # Combined Pass: Grounding + Consistency + Scheduling
+        validation_prompt = (
+            "Review and refine these steps based on the method.\n"
             f"Title: {recipe['title']}\n\n"
             f"Method:\n{method}\n\n"
             "Current steps (JSON):\n"
             f"{json.dumps(steps, indent=2)}\n\n"
-            "Identify unsupported steps or missing instructions and return an adjusted list if needed."
+            "Return the corrected JSON object with status, issues, and steps."
         )
-        coverage_response = self._call_llm(
-            coverage_prompt,
-            system_prompt=self.VALIDATION_SYSTEM_PROMPT,
+
+        response = self._call_llm(
+            validation_prompt,
+            system_prompt=self.COMBINED_VALIDATION_SYSTEM_PROMPT,
         )
-        coverage_data = self._load_json(coverage_response) or {}
-        candidate_steps = coverage_data.get("steps") if isinstance(coverage_data, dict) else None
+
+        data = self._load_json(response) or {}
+        candidate_steps = data.get("steps") if isinstance(data, dict) else None
+
         if self._is_valid_step_list(candidate_steps):
             steps = candidate_steps
-            if coverage_data.get("issues"):
-                print(f"Validation (coverage) issues: {coverage_data['issues']}")
+            if data.get("issues"):
+                print(f"Validation issues fixed: {data['issues']}")
         else:
-            print("Coverage validation returned invalid data, keeping previous steps.")
-
-        # Pass 2: consistency and scheduling sanity
-        consistency_prompt = (
-            "Normalize the steps while keeping them grounded in the method.\n"
-            f"Title: {recipe['title']}\n\n"
-            f"Method:\n{method}\n\n"
-            "Steps to normalize (JSON):\n"
-            f"{json.dumps(steps, indent=2)}"
-        )
-        consistency_response = self._call_llm(
-            consistency_prompt,
-            system_prompt=self.CONSISTENCY_SYSTEM_PROMPT,
-        )
-        normalized_steps = self._load_json(consistency_response)
-        if self._is_valid_step_list(normalized_steps):
-            steps = normalized_steps
-        else:
-            print("Consistency validation returned invalid data, keeping previous steps.")
+            print("Validation returned invalid data, keeping previous steps.")
 
         return steps
 
