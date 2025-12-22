@@ -1,7 +1,7 @@
 {
-  "total_recipes": 240,
+  "total_recipes": 244,
   "failed_recipes": 0,
-  "last_updated": "2025-12-15 04:07:22",
+  "last_updated": "2025-12-22 04:08:00",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -1208,6 +1208,13 @@
       "week_label": null
     },
     {
+      "id": "smoked-tofu-chipotle-burrito-bowl-with-black-beans-avocado-charred-corn-crispy-tortillas",
+      "title": "Smoked Tofu Chipotle Burrito Bowl With Black Beans, Avocado, Charred Corn & Crispy Tortillas",
+      "url": "https://planthood.co.uk/products/smoked-tofu-chipotle-burrito-bowl-with-black-beans-avocado-charred-corn-crispy-tortillas",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "smokey-pumpkin-white-bean-soup-with-crispy-sage-toasted-seeds-organic-ciabatta",
       "title": "Smoky Pumpkin Soup With Creamy White Beans, Crispy Sage, Urfa Chilli Seeds & Organic Ciabatta",
       "url": "https://planthood.co.uk/products/smokey-pumpkin-white-bean-soup-with-crispy-sage-toasted-seeds-organic-ciabatta",
@@ -1677,9 +1684,30 @@
       "week_label": null
     },
     {
-      "id": "smoked-tofu-chipotle-burrito-bowl-with-black-beans-avocado-charred-corn-crispy-tortillas",
-      "title": "Smoked Tofu Chipotle Burrito Bowl With Black Beans, Avocado, Charred Corn & Crispy Tortillas",
-      "url": "https://planthood.co.uk/products/smoked-tofu-chipotle-burrito-bowl-with-black-beans-avocado-charred-corn-crispy-tortillas",
+      "id": "butternut-squash-curried-noodles-with-tenderstem-broccoli-superseed-chilli-rayu-drizzle",
+      "title": "Butternut Squash Curried Noodles With Tenderstem Broccoli & Superseed Chilli Rayu Drizzle",
+      "url": "https://planthood.co.uk/products/butternut-squash-curried-noodles-with-tenderstem-broccoli-superseed-chilli-rayu-drizzle",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel",
+      "title": "Red Lentil Pasta Bake With Butter Beans, Tenderstem Broccoli & Cheesy Miso Bechamel",
+      "url": "https://planthood.co.uk/products/red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel-copy",
+      "title": "Chargrilled Tofu Tikka Massala Naan Wrap With Coconut Yoghurt, Pickled Onion & Coriander",
+      "url": "https://planthood.co.uk/products/red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel-copy",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "squash-gratin",
+      "title": "Butternut Squash & White Bean Gratin In Rich & Creamy Cashew, White Wine & Mustard Sauce With Cavolo Nero",
+      "url": "https://planthood.co.uk/products/squash-gratin",
       "scraped": true,
       "week_label": null
     }
