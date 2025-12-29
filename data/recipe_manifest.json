@@ -1,7 +1,7 @@
 {
   "total_recipes": 244,
   "failed_recipes": 0,
-  "last_updated": "2025-12-22 04:08:00",
+  "last_updated": "2025-12-29 04:14:14",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -105,6 +105,13 @@
       "id": "butternut-squash-brothy-beans-with-crispy-sprouts-hot-agave-nduja-oil-toasted-pine-nuts-pumpkin-seeds",
       "title": "Butternut Squash Brothy Beans With Crispy Sprouts & Sage, Hot Agave 'Nduja' Dressing, Toasted Pine Nuts & Pumpkin Seeds",
       "url": "https://planthood.co.uk/products/butternut-squash-brothy-beans-with-crispy-sprouts-hot-agave-nduja-oil-toasted-pine-nuts-pumpkin-seeds",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "butternut-squash-curried-noodles-with-tenderstem-broccoli-superseed-chilli-rayu-drizzle",
+      "title": "Butternut Squash Curried Noodles With Tenderstem Broccoli & Superseed Chilli Rayu Drizzle",
+      "url": "https://planthood.co.uk/products/butternut-squash-curried-noodles-with-tenderstem-broccoli-superseed-chilli-rayu-drizzle",
       "scraped": true,
       "week_label": null
     },
@@ -1033,6 +1040,20 @@
       "week_label": null
     },
     {
+      "id": "red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel",
+      "title": "Red Lentil Pasta Bake With Butter Beans, Tenderstem Broccoli & Cheesy Miso Bechamel",
+      "url": "https://planthood.co.uk/products/red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel-copy",
+      "title": "Chargrilled Tofu Tikka Massala Naan Wrap With Coconut Yoghurt, Pickled Onion & Coriander",
+      "url": "https://planthood.co.uk/products/red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel-copy",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "rich-cherry-tomato-orecchiette-with-borlotti-creamy-burrata-crispy-garlic-fresh-basil",
       "title": "Blistered Cherry Tomato Orecchiette, With Borlotti, Creamy 'Burrata', Crispy Garlic & Fresh Basil",
       "url": "https://planthood.co.uk/products/rich-cherry-tomato-orecchiette-with-borlotti-creamy-burrata-crispy-garlic-fresh-basil",
@@ -1302,6 +1323,13 @@
       "id": "squash-apricot-tagine",
       "title": "Butternut Squash, Apricot & Chickpea Tagine With Toasted Almonds, Lemon Yoghurt, Fresh Parsley & Wholewheat Cous Cous",
       "url": "https://planthood.co.uk/products/squash-apricot-tagine",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "squash-gratin",
+      "title": "Butternut Squash & White Bean Gratin In Rich & Creamy Cashew, White Wine & Mustard Sauce With Cavolo Nero",
+      "url": "https://planthood.co.uk/products/squash-gratin",
       "scraped": true,
       "week_label": null
     },
@@ -1680,34 +1708,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "butternut-squash-curried-noodles-with-tenderstem-broccoli-superseed-chilli-rayu-drizzle",
-      "title": "Butternut Squash Curried Noodles With Tenderstem Broccoli & Superseed Chilli Rayu Drizzle",
-      "url": "https://planthood.co.uk/products/butternut-squash-curried-noodles-with-tenderstem-broccoli-superseed-chilli-rayu-drizzle",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel",
-      "title": "Red Lentil Pasta Bake With Butter Beans, Tenderstem Broccoli & Cheesy Miso Bechamel",
-      "url": "https://planthood.co.uk/products/red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel-copy",
-      "title": "Chargrilled Tofu Tikka Massala Naan Wrap With Coconut Yoghurt, Pickled Onion & Coriander",
-      "url": "https://planthood.co.uk/products/red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel-copy",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "squash-gratin",
-      "title": "Butternut Squash & White Bean Gratin In Rich & Creamy Cashew, White Wine & Mustard Sauce With Cavolo Nero",
-      "url": "https://planthood.co.uk/products/squash-gratin",
       "scraped": true,
       "week_label": null
     }
