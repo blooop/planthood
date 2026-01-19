@@ -1,7 +1,7 @@
 {
   "total_recipes": 246,
   "failed_recipes": 0,
-  "last_updated": "2026-01-19 04:15:55",
+  "last_updated": "2026-01-19 08:28:25",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -385,6 +385,13 @@
       "id": "crispy-baja-tofish-tacos-with-shredded-cabbage-salsa-fresca-smokey-chipotle-mayo",
       "title": "Crispy Baja Tofish Tacos With Shredded Cabbage, Zingy Salsa Fresca & Smokey Chipotle Mayo On Soft Corn Tortillas",
       "url": "https://planthood.co.uk/products/crispy-baja-tofish-tacos-with-shredded-cabbage-salsa-fresca-smokey-chipotle-mayo",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "crispy-buffalo-tofu-nourish-bowl-with-cabbage-celery-slaw-tricolour-quinoa-pink-onion-pickle-ranch-dressing",
+      "title": "Crispy Buffalo Tofu Nourish Bowl With Cabbage Celery Slaw, Tricolour Quinoa, Pink Onion Pickle & Ranch Dressing",
+      "url": "https://planthood.co.uk/products/crispy-buffalo-tofu-nourish-bowl-with-cabbage-celery-slaw-tricolour-quinoa-pink-onion-pickle-ranch-dressing",
       "scraped": true,
       "week_label": null
     },
@@ -826,6 +833,13 @@
       "id": "mango-soba-noodle-salad-with-avocado-edamame-cashews-pickled-radish-toasted-seeds-crispy-onions",
       "title": "Mango Soba Noodle Salad With Avocado, Edamame, Cashews, Pickled Radish, Toasted Seeds & Crispy Onions",
       "url": "https://planthood.co.uk/products/mango-soba-noodle-salad-with-avocado-edamame-cashews-pickled-radish-toasted-seeds-crispy-onions",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "massaman-tofu-potato-curry-with-toasted-flaked-almonds-organic-cultured-yoghurt-blistered-green-beans-garlic-naan",
+      "title": "Massaman Tofu & Potato Curry With Toasted Flaked Almonds, Organic Cultured Yoghurt, Blistered Green Beans & Garlic Naan",
+      "url": "https://planthood.co.uk/products/massaman-tofu-potato-curry-with-toasted-flaked-almonds-organic-cultured-yoghurt-blistered-green-beans-garlic-naan",
       "scraped": true,
       "week_label": null
     },
@@ -1708,20 +1722,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "crispy-buffalo-tofu-nourish-bowl-with-cabbage-celery-slaw-tricolour-quinoa-pink-onion-pickle-ranch-dressing",
-      "title": "Crispy Buffalo Tofu Nourish Bowl With Cabbage Celery Slaw, Tricolour Quinoa, Pink Onion Pickle & Ranch Dressing",
-      "url": "https://planthood.co.uk/products/crispy-buffalo-tofu-nourish-bowl-with-cabbage-celery-slaw-tricolour-quinoa-pink-onion-pickle-ranch-dressing",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "massaman-tofu-potato-curry-with-toasted-flaked-almonds-organic-cultured-yoghurt-blistered-green-beans-garlic-naan",
-      "title": "Massaman Tofu & Potato Curry With Toasted Flaked Almonds, Organic Cultured Yoghurt, Blistered Green Beans & Garlic Naan",
-      "url": "https://planthood.co.uk/products/massaman-tofu-potato-curry-with-toasted-flaked-almonds-organic-cultured-yoghurt-blistered-green-beans-garlic-naan",
       "scraped": true,
       "week_label": null
     }
