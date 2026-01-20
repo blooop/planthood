@@ -9,16 +9,12 @@ import logging
 from collections import defaultdict, deque
 from dataclasses import dataclass, asdict, field
 from pathlib import Path
-from typing import List, Dict, Optional, Set, Tuple
+from typing import List, Dict, Optional, Tuple
 
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
+# Get logger for this module (don't configure at import time)
 logger = logging.getLogger(__name__)
 
 
@@ -193,7 +189,9 @@ class RecipeScheduler:
         # Handle remaining nodes (in case of cycles)
         if len(sorted_steps) != len(all_step_ids):
             remaining = all_step_ids - set(sorted_steps)
-            logger.warning(f"Could not sort {len(remaining)} steps due to circular dependencies: {remaining}")
+            logger.warning(
+                f"Could not sort {len(remaining)} steps due to circular dependencies: {remaining}"
+            )
 
             # Break cycles by adding remaining nodes in original order
             for step in steps:
@@ -212,7 +210,6 @@ class RecipeScheduler:
 
         # Build reverse dependency graph
         dependents = {s.id: [] for s in scheduled_steps}
-        step_lookup = {s.id: s for s in scheduled_steps}
 
         for step in scheduled_steps:
             for dep_id in step.requires:
@@ -228,8 +225,8 @@ class RecipeScheduler:
 
         # Initialize latest times
         for step in scheduled_steps:
-            if not dependents[step.id]:  # Terminal nodes
-                step.latest_end_min = project_end
+            if not dependents[step.id]:  # Terminal nodes - use their actual end time
+                step.latest_end_min = step.end_min
             else:
                 step.latest_end_min = project_end
             step.latest_start_min = step.latest_end_min - step.duration_min
@@ -322,7 +319,7 @@ class RecipeScheduler:
                 temperature_c=step.get("temperature_c"),
                 notes=step.get("notes", ""),
                 dependencies_met=deps_met,
-                warnings=missing_deps if missing_deps else []
+                warnings=missing_deps if missing_deps else [],
             )
 
             scheduled_steps.append(scheduled_step)
@@ -332,15 +329,17 @@ class RecipeScheduler:
         if unmet_dependencies:
             logger.warning(f"Steps with unmet dependencies: {dict(unmet_dependencies)}")
 
-        # Compute critical path
-        scheduled_steps = self.compute_critical_path(scheduled_steps)
-
-        # Optimize schedule for parallelism where possible
+        # Optimize schedule for parallelism where possible (before critical path)
         scheduled_steps = self.optimize_parallel_execution(scheduled_steps)
+
+        # Compute critical path after optimization
+        scheduled_steps = self.compute_critical_path(scheduled_steps)
 
         return scheduled_steps
 
-    def optimize_parallel_execution(self, scheduled_steps: List[ScheduledStep]) -> List[ScheduledStep]:
+    def optimize_parallel_execution(
+        self, scheduled_steps: List[ScheduledStep]
+    ) -> List[ScheduledStep]:
         """
         Optimize schedule to maximize parallel execution where steps can overlap.
         """
@@ -355,7 +354,9 @@ class RecipeScheduler:
                     if overlap_id not in step.requires and step.id not in overlap_step.requires:
                         # Adjust timing to allow parallel execution
                         step.start_min = min(step.start_min, overlap_step.start_min)
-                        logger.debug(f"Allowing parallel execution of '{step.id}' with '{overlap_id}'")
+                        logger.debug(
+                            f"Allowing parallel execution of '{step.id}' with '{overlap_id}'"
+                        )
 
         return scheduled_steps
 
@@ -378,13 +379,13 @@ class RecipeScheduler:
         """
         if not scheduled_steps:
             return {
-                'total_steps': 0,
-                'critical_steps': 0,
-                'parallelizable_steps': 0,
-                'average_slack': 0,
-                'max_slack': 0,
-                'dependency_errors': 0,
-                'warnings': []
+                "total_steps": 0,
+                "critical_steps": 0,
+                "parallelizable_steps": 0,
+                "average_slack": 0,
+                "max_slack": 0,
+                "dependency_errors": 0,
+                "warnings": [],
             }
 
         critical_steps = sum(1 for s in scheduled_steps if s.is_critical)
@@ -397,13 +398,13 @@ class RecipeScheduler:
         max_slack = max(slack_values) if slack_values else 0
 
         return {
-            'total_steps': len(scheduled_steps),
-            'critical_steps': critical_steps,
-            'parallelizable_steps': parallelizable,
-            'average_slack': round(avg_slack, 2),
-            'max_slack': max_slack,
-            'dependency_errors': dep_errors,
-            'warnings': all_warnings[:10]  # Limit to first 10 warnings
+            "total_steps": len(scheduled_steps),
+            "critical_steps": critical_steps,
+            "parallelizable_steps": parallelizable,
+            "average_slack": round(avg_slack, 2),
+            "max_slack": max_slack,
+            "dependency_errors": dep_errors,
+            "warnings": all_warnings[:10],  # Limit to first 10 warnings
         }
 
     def schedule_recipe(self, recipe: Dict) -> ScheduledRecipe:
@@ -415,13 +416,15 @@ class RecipeScheduler:
         for step in steps:
             if isinstance(step, dict):
                 # Validate step has required fields
-                if 'id' not in step:
-                    logger.warning(f"Step missing 'id' field in recipe '{recipe.get('title', 'Unknown')}'")
-                    step['id'] = f"step-{len(step_dicts) + 1}"
-                if 'label' not in step:
-                    step['label'] = step.get('raw_text', 'Unnamed step')[:50]
-                if 'type' not in step:
-                    step['type'] = 'unknown'
+                if "id" not in step:
+                    logger.warning(
+                        f"Step missing 'id' field in recipe '{recipe.get('title', 'Unknown')}'"
+                    )
+                    step["id"] = f"step-{len(step_dicts) + 1}"
+                if "label" not in step:
+                    step["label"] = step.get("raw_text", "Unnamed step")[:50]
+                if "type" not in step:
+                    step["type"] = "unknown"
                 step_dicts.append(step)
             else:
                 # Handle case where steps might be objects
@@ -438,7 +441,7 @@ class RecipeScheduler:
 
         # Log schedule quality metrics
         metrics = self.analyze_schedule_quality(scheduled_steps)
-        if metrics['dependency_errors'] > 0:
+        if metrics["dependency_errors"] > 0:
             logger.warning(
                 f"Recipe '{recipe.get('title', 'Unknown')}' has {metrics['dependency_errors']} dependency errors"
             )
@@ -505,26 +508,26 @@ class RecipeScheduler:
         empty_count = 0
 
         for i, recipe in enumerate(parsed_recipes, 1):
-            recipe_title = recipe.get('title', 'Untitled')
-            recipe_id = recipe.get('id', f'recipe_{i}')
+            recipe_title = recipe.get("title", "Untitled")
+            recipe_id = recipe.get("id", f"recipe_{i}")
 
             try:
-                if not recipe.get('steps'):
+                if not recipe.get("steps"):
                     empty_count += 1
                     logger.debug(f"Skipping '{recipe_title}' - no steps to schedule")
                     # Still create a scheduled recipe with empty steps
                     scheduled = ScheduledRecipe(
                         id=recipe_id,
                         title=recipe_title,
-                        source_url=recipe.get('source_url', ''),
-                        week_label=recipe.get('week_label'),
-                        weeks=recipe.get('weeks', []),
-                        category=recipe.get('category'),
-                        ingredients=recipe.get('ingredients', []),
-                        nutrition=recipe.get('nutrition'),
+                        source_url=recipe.get("source_url", ""),
+                        week_label=recipe.get("week_label"),
+                        weeks=recipe.get("weeks", []),
+                        category=recipe.get("category"),
+                        ingredients=recipe.get("ingredients", []),
+                        nutrition=recipe.get("nutrition"),
                         steps=[],
                         total_time_min=0,
-                        active_time_min=0
+                        active_time_min=0,
                     )
                     scheduled_recipes.append(scheduled)
                     continue
@@ -558,15 +561,15 @@ class RecipeScheduler:
                 scheduled = ScheduledRecipe(
                     id=recipe_id,
                     title=recipe_title,
-                    source_url=recipe.get('source_url', ''),
-                    week_label=recipe.get('week_label'),
-                    weeks=recipe.get('weeks', []),
-                    category=recipe.get('category'),
-                    ingredients=recipe.get('ingredients', []),
-                    nutrition=recipe.get('nutrition'),
+                    source_url=recipe.get("source_url", ""),
+                    week_label=recipe.get("week_label"),
+                    weeks=recipe.get("weeks", []),
+                    category=recipe.get("category"),
+                    ingredients=recipe.get("ingredients", []),
+                    nutrition=recipe.get("nutrition"),
                     steps=[],
                     total_time_min=0,
-                    active_time_min=0
+                    active_time_min=0,
                 )
                 scheduled_recipes.append(scheduled)
 
@@ -581,6 +584,9 @@ class RecipeScheduler:
 
 def main():
     """Main scheduler execution"""
+    # Configure logging for CLI use
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+
     print("=" * 60)
     print("Recipe Scheduler")
     print("=" * 60)
