@@ -1,16 +1,4 @@
 {
-  "Dec 22, 2025": [
-    "https://planthood.co.uk/products/butternut-squash-brothy-beans-with-crispy-sprouts-hot-agave-nduja-oil-toasted-pine-nuts-pumpkin-seeds",
-    "https://planthood.co.uk/products/charred-hispi-cabbage-over-golden-daal-with-organic-soy-yoghurt-tamarind-date-chutney-toasted-almonds-coriander",
-    "https://planthood.co.uk/products/cheats-aubergine-lentil-parmigiana-with-creamy-miso-bechamel-seasonal-salad-tossed-in-vinaigrette",
-    "https://planthood.co.uk/products/creamy-cauliflower-aubergine-korma-with-toasted-cashews-fresh-coriander-rice",
-    "https://planthood.co.uk/products/crispy-chipotle-pumpkin-black-bean-tacos-with-melted-mozzarella-guacamole-pink-onion-pickles",
-    "https://planthood.co.uk/products/crispy-gochujang-tofu-bowl-with-spicy-cucumber-pickle-creamy-avocado-sesame-seeds-over-sushi-rice",
-    "https://planthood.co.uk/products/festive-bourguignon-pie-over-creamy-mash-with-caramelised-onion-red-wine-gravy",
-    "https://planthood.co.uk/products/pumpkin-laksa-with-crispy-oyster-mushrooms-pak-choi-carrots-udon-noodles",
-    "https://planthood.co.uk/products/spicy-dan-dan-noodles",
-    "https://planthood.co.uk/products/super-green-spring-orzo-with-peas-tenderstem-broccoli-spinach-creamy-burrata-toasted-almonds"
-  ],
   "Dec 29, 2025": [
     "https://planthood.co.uk/products/aromatic-thai-green-curry-soup-with-beluga-lentils-tender-aubergine-sweet-potato-basil-lime",
     "https://planthood.co.uk/products/creamy-kimchi-macaroni-with-roasted-broccoli-garlic-panko-breadcrumbs",
@@ -79,9 +67,9 @@
     "https://planthood.co.uk/products/crispy-tofu-parm-over-creamy-tomato-beans-with-garlic-basil-gremolata-roasted-tenderstem-broccoli-cherry-tomatoes",
     "https://planthood.co.uk/products/high-protein-creamy-mushroom-bucatini-with-wilted-cavolo-nero-crispy-tempeh-pancetta",
     "https://planthood.co.uk/products/high-protein-thai-red-curry-lentil-soup-with-sweet-potato-smokey-crispy-chickpeas-pink-onion-pickle",
-    "https://planthood.co.uk/products/red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel-copy",
     "https://planthood.co.uk/products/sri-lankan-daal-with-curry-spiced-oyster-mushroom-skewers-beetroot-raita-over-fluffy-basmati-rice",
-    "https://planthood.co.uk/products/superfood-black-bean-chilli-over-roasted-sweet-potato-with-zingy-guacamole-crunchy-tortilla-chips"
+    "https://planthood.co.uk/products/superfood-black-bean-chilli-over-roasted-sweet-potato-with-zingy-guacamole-crunchy-tortilla-chips",
+    "https://planthood.co.uk/products/tofu-tikka-naan-wrap"
   ],
   "Feb 09, 2026": [
     "https://planthood.co.uk/products/cheats-aubergine-lentil-parmigiana-with-creamy-miso-bechamel-seasonal-salad-tossed-in-vinaigrette",
@@ -106,5 +94,17 @@
     "https://planthood.co.uk/products/rich-creamy-cacio-e-pepe-butterbeans-with-tenderstem-broccoli-smokey-chipotle-toasted-sunflower-seeds",
     "https://planthood.co.uk/products/rich-nourishing-tuscan-ribollita-with-ciabatta-croutons-cavolo-nero-almond-parmesan",
     "https://planthood.co.uk/products/tahini-miso-ramen-with-crispy-chilli-tempeh-pak-choi-gluten-free-brown-rice-noodles"
+  ],
+  "Feb 23, 2026": [
+    "https://planthood.co.uk/products/creamy-orzo-al-limone-with-crispy-panko-tofu-roasted-cherry-tomatoes-tenderstem-broccoli",
+    "https://planthood.co.uk/products/creamy-panang-curry-with-tofu-red-pepper-baby-spinach-sticky-jasmine-rice-crushed-peanuts-lime",
+    "https://planthood.co.uk/products/creamy-tomato-butterbeans-with-baby-spinach-almond-gremolata-pillowy-soft-garlic-herb-flatbread",
+    "https://planthood.co.uk/products/jerusalem-artichoke-chaat-masala-with-green-chilli-dressing-tamarind-yoghurt-crispy-sev",
+    "https://planthood.co.uk/products/savoy-cabbage-dumplings-with-garlic-ginger-miso-brothy-rice-umami-chilli-crisp-drizzle",
+    "https://planthood.co.uk/products/savoy-cabbage-dumplings-with-garlic-ginger-miso-brothy-rice-umami-chilli-crisp-drizzle-copy",
+    "https://planthood.co.uk/products/shredded-tofu-tacos-in-guajillo-adobo-sauce-with-guacamole-pico-de-gallo-on-soft-tortillas",
+    "https://planthood.co.uk/products/smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread",
+    "https://planthood.co.uk/products/sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
+    "https://planthood.co.uk/products/super-green-udon-noodles-with-tenderstem-broccoli-crispy-sesame-crusted-tofu-rayu-chilli-oil"
   ]
 }
