@@ -1,7 +1,7 @@
 {
-  "total_recipes": 246,
+  "total_recipes": 250,
   "failed_recipes": 0,
-  "last_updated": "2026-01-26 08:28:09",
+  "last_updated": "2026-02-02 05:03:55",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -1722,6 +1722,34 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "butternut-squash-stuffed-conchiglioni-pasta-shells-in-creamy-garlic-sauce",
+      "title": "Butternut Squash & Sage Stuffed Conchiglioni Pasta Shells In Creamy Garlic & Spinach Sauce",
+      "url": "https://planthood.co.uk/products/butternut-squash-stuffed-conchiglioni-pasta-shells-in-creamy-garlic-sauce",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "savoy-cabbage-dumplings-with-garlic-ginger-miso-brothy-rice-umami-chilli-crisp-drizzle",
+      "title": "Savoy Cabbage Dumplings With Garlic Ginger Miso Brothy Rice & Umami Chilli Crisp Drizzle",
+      "url": "https://planthood.co.uk/products/savoy-cabbage-dumplings-with-garlic-ginger-miso-brothy-rice-umami-chilli-crisp-drizzle",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "savoy-cabbage-dumplings-with-garlic-ginger-miso-brothy-rice-umami-chilli-crisp-drizzle-copy",
+      "title": "Sweet Potato Shepherds Pie With Rich Mushroom Lentil Red Wine Ragu & Wilted Green Kale",
+      "url": "https://planthood.co.uk/products/savoy-cabbage-dumplings-with-garlic-ginger-miso-brothy-rice-umami-chilli-crisp-drizzle-copy",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "tofu-tikka-naan-wrap",
+      "title": "Chargrilled Tofu Tikka Massala Naan Wrap With Coconut Yoghurt, Pickled Onion & Coriander",
+      "url": "https://planthood.co.uk/products/tofu-tikka-naan-wrap",
       "scraped": true,
       "week_label": null
     }
