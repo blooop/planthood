@@ -1,7 +1,7 @@
 {
-  "total_recipes": 249,
+  "total_recipes": 250,
   "failed_recipes": 0,
-  "last_updated": "2026-02-02 08:38:39",
+  "last_updated": "2026-02-09 05:07:11",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -1743,6 +1743,13 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "butternut-squash-sage-stuffed-conchiglioni-pasta-shells-in-creamy-garlic-spinach-sauce-copy",
+      "title": "Burnt Lemon & Mustard Butter Beans With Regenerative Spelt Conchigliette, Confit Cherry Tomatoes, Cavolo Nero & Dill",
+      "url": "https://planthood.co.uk/products/butternut-squash-sage-stuffed-conchiglioni-pasta-shells-in-creamy-garlic-spinach-sauce-copy",
       "scraped": true,
       "week_label": null
     }
