@@ -1,7 +1,7 @@
 {
-  "total_recipes": 250,
+  "total_recipes": 251,
   "failed_recipes": 0,
-  "last_updated": "2026-02-09 08:45:27",
+  "last_updated": "2026-02-16 05:06:11",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -126,13 +126,6 @@
       "id": "butternut-squash-nduja-lasagne-with-tender-lentils-creamy-miso-spinach-bechamel",
       "title": "Smoky Butternut Squash & \"Nduja\" Lasagne With Tender Lentils & Creamy Miso Spinach Bechamel",
       "url": "https://planthood.co.uk/products/butternut-squash-nduja-lasagne-with-tender-lentils-creamy-miso-spinach-bechamel",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "butternut-squash-sage-stuffed-conchiglioni-pasta-shells-in-creamy-garlic-spinach-sauce-copy",
-      "title": "Burnt Lemon & Mustard Butter Beans With Regenerative Spelt Conchigliette, Confit Cherry Tomatoes, Cavolo Nero & Dill",
-      "url": "https://planthood.co.uk/products/butternut-squash-sage-stuffed-conchiglioni-pasta-shells-in-creamy-garlic-spinach-sauce-copy",
       "scraped": true,
       "week_label": null
     },
@@ -1750,6 +1743,20 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "burnt-lemon-mustard-butter-beans-spelt-coonchiglietti",
+      "title": "Burnt Lemon & Mustard Butter Beans With Regenerative Spelt Conchigliette, Confit Cherry Tomatoes, Cavolo Nero & Dill",
+      "url": "https://planthood.co.uk/products/burnt-lemon-mustard-butter-beans-spelt-coonchiglietti",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "sweet-potato-shepherds-pie-with-rich-mushroom-lentil-red-wine-ragu-wilted-green-kale",
+      "title": "Sweet Potato Shepherds Pie With Rich Mushroom Lentil Red Wine Ragu & Wilted Green Kale",
+      "url": "https://planthood.co.uk/products/sweet-potato-shepherds-pie-with-rich-mushroom-lentil-red-wine-ragu-wilted-green-kale",
       "scraped": true,
       "week_label": null
     }
