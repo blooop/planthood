@@ -1,16 +1,4 @@
 {
-  "Jan 05, 2026": [
-    "https://planthood.co.uk/products/adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
-    "https://planthood.co.uk/products/creamy-tomato-butterbeans-with-baby-spinach-almond-gremolata-pillowy-soft-garlic-herb-flatbread",
-    "https://planthood.co.uk/products/crispy-gochujang-cauliflower-with-vermicelli-noodles-spring-onion",
-    "https://planthood.co.uk/products/one-pot-cheats-mushroom-lasagne-with-creamy-miso-bechamel-shredded-green-kale",
-    "https://planthood.co.uk/products/smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread",
-    "https://planthood.co.uk/products/sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
-    "https://planthood.co.uk/products/sticky-teriyaki-tofu-bowl-with-purple-sprouting-broccoli-pickled-cabbage-over-sushi-rice",
-    "https://planthood.co.uk/products/super-green-grain-bowl-with-roasted-squash-crispy-chickpeas-creamy-garlic-tahini-pomegranate-seeds",
-    "https://planthood.co.uk/products/super-green-spring-minestrone-with-basil-pesto-orecchiette-peas-leeks-courgette-cannellini-beans",
-    "https://planthood.co.uk/products/thai-red-curry-hispi-cabbage-with-black-lentils-lime-yoghurt-toasted-peanuts-fresh-coriander-fluffy-rice"
-  ],
   "Jan 12, 2026": [
     "https://planthood.co.uk/products/charred-courgettes-with-romesco-chickpeas-giant-cous-cous-tahini-sauce-mint-pesto-toasted-almonds",
     "https://planthood.co.uk/products/creamy-cauliflower-aubergine-korma-with-toasted-cashews-fresh-coriander-rice",
@@ -89,11 +77,11 @@
     "https://planthood.co.uk/products/creamy-tomato-butterbeans-with-baby-spinach-almond-gremolata-pillowy-soft-garlic-herb-flatbread",
     "https://planthood.co.uk/products/jerusalem-artichoke-chaat-masala-with-green-chilli-dressing-tamarind-yoghurt-crispy-sev",
     "https://planthood.co.uk/products/savoy-cabbage-dumplings-with-garlic-ginger-miso-brothy-rice-umami-chilli-crisp-drizzle",
-    "https://planthood.co.uk/products/savoy-cabbage-dumplings-with-garlic-ginger-miso-brothy-rice-umami-chilli-crisp-drizzle-copy",
     "https://planthood.co.uk/products/shredded-tofu-tacos-in-guajillo-adobo-sauce-with-guacamole-pico-de-gallo-on-soft-tortillas",
     "https://planthood.co.uk/products/smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread",
     "https://planthood.co.uk/products/sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
-    "https://planthood.co.uk/products/super-green-udon-noodles-with-tenderstem-broccoli-crispy-sesame-crusted-tofu-rayu-chilli-oil"
+    "https://planthood.co.uk/products/super-green-udon-noodles-with-tenderstem-broccoli-crispy-sesame-crusted-tofu-rayu-chilli-oil",
+    "https://planthood.co.uk/products/sweet-potato-shepherds-pie-with-rich-mushroom-lentil-red-wine-ragu-wilted-green-kale"
   ],
   "Mar 02, 2026": [
     "https://planthood.co.uk/products/butternut-squash-stuffed-conchiglioni-pasta-shells-in-creamy-garlic-sauce",
@@ -106,5 +94,17 @@
     "https://planthood.co.uk/products/rich-creamy-tofu-tikka-masala-with-toasted-flaked-almonds-organic-cultured-soy-yoghurt-basmati-rice",
     "https://planthood.co.uk/products/sticky-teriyaki-tofu-bowl-with-purple-sprouting-broccoli-pickled-cabbage-over-sushi-rice",
     "https://planthood.co.uk/products/super-green-spring-minestrone-with-basil-pesto-orecchiette-peas-leeks-courgette-cannellini-beans"
+  ],
+  "Mar 09, 2026": [
+    "https://planthood.co.uk/products/autumnal-gratin-with-rich-lentil-ragu-topped-with-potato-beetroot-sweet-potato-creamy-miso-bechamel",
+    "https://planthood.co.uk/products/burnt-lemon-mustard-butter-beans-spelt-coonchiglietti",
+    "https://planthood.co.uk/products/curried-squash-udon-noodle-soup-with-crispy-coconut-chickpeas-green-kale",
+    "https://planthood.co.uk/products/rich-creamy-tofu-butter-chicken-with-baby-spinach-garlic-naan-toasted-almond-flakes",
+    "https://planthood.co.uk/products/sticky-chilli-tofu-with-spring-onions-sesame-seeds-sticky-jasmine-rice-green-kale",
+    "https://planthood.co.uk/products/super-green-grain-bowl-with-roasted-squash-crispy-chickpeas-creamy-garlic-tahini-pomegranate-seeds",
+    "https://planthood.co.uk/products/super-green-spring-orzo-with-peas-tenderstem-broccoli-spinach-creamy-burrata-toasted-almonds",
+    "https://planthood.co.uk/products/thai-red-curry-hispi-cabbage-with-black-lentils-lime-yoghurt-toasted-peanuts-fresh-coriander-fluffy-rice",
+    "https://planthood.co.uk/products/three-bean-chilli-enchiladas-topped-with-cashew-cheese-sauce-a-zingy-cherry-tomato-salsa",
+    "https://planthood.co.uk/products/tofu-satay-skewer-bowl-with-zingy-smacked-cucumbers-pink-radish-sushi-rice-sesame-peanut-garnish"
   ]
 }

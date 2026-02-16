@@ -1,7 +1,7 @@
 {
-  "total_recipes": 251,
+  "total_recipes": 250,
   "failed_recipes": 0,
-  "last_updated": "2026-02-16 05:06:11",
+  "last_updated": "2026-02-16 08:41:55",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -77,6 +77,13 @@
       "id": "bun-chay-noodle-salad",
       "title": "Vietnamese Bún Chay Noodle Salad With Walnut Miso & Mushrooms, Pickled Mooli & Carrot & Fresh Herbs",
       "url": "https://planthood.co.uk/products/bun-chay-noodle-salad",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "burnt-lemon-mustard-butter-beans-spelt-coonchiglietti",
+      "title": "Burnt Lemon & Mustard Butter Beans With Regenerative Spelt Conchigliette, Confit Cherry Tomatoes, Cavolo Nero & Dill",
+      "url": "https://planthood.co.uk/products/burnt-lemon-mustard-butter-beans-spelt-coonchiglietti",
       "scraped": true,
       "week_label": null
     },
@@ -1208,13 +1215,6 @@
       "week_label": null
     },
     {
-      "id": "savoy-cabbage-dumplings-with-garlic-ginger-miso-brothy-rice-umami-chilli-crisp-drizzle-copy",
-      "title": "Sweet Potato Shepherds Pie With Rich Mushroom Lentil Red Wine Ragu & Wilted Green Kale",
-      "url": "https://planthood.co.uk/products/savoy-cabbage-dumplings-with-garlic-ginger-miso-brothy-rice-umami-chilli-crisp-drizzle-copy",
-      "scraped": true,
-      "week_label": null
-    },
-    {
       "id": "sesame-noodles-with-crispy-tempeh-mince-braised-cavolo-nero-fragrant-thai-basil",
       "title": "Sesame Noodles With Crispy Tempeh Mince, Braised Cavolo Nero & Fragrant Thai Basil",
       "url": "https://planthood.co.uk/products/sesame-noodles-with-crispy-tempeh-mince-braised-cavolo-nero-fragrant-thai-basil",
@@ -1502,6 +1502,13 @@
       "week_label": null
     },
     {
+      "id": "sweet-potato-shepherds-pie-with-rich-mushroom-lentil-red-wine-ragu-wilted-green-kale",
+      "title": "Sweet Potato Shepherds Pie With Rich Mushroom Lentil Red Wine Ragu & Wilted Green Kale",
+      "url": "https://planthood.co.uk/products/sweet-potato-shepherds-pie-with-rich-mushroom-lentil-red-wine-ragu-wilted-green-kale",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "sweet-spicy-jerk-tofu-over-coconut-rice-with-fresh-mango-avocado-cucumber-salad",
       "title": "Sweet & Spicy Jerk Tofu Over Fluffy Coconut Rice, With Mango, Avocado & Cucumber Salad",
       "url": "https://planthood.co.uk/products/sweet-spicy-jerk-tofu-over-coconut-rice-with-fresh-mango-avocado-cucumber-salad",
@@ -1743,20 +1750,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "burnt-lemon-mustard-butter-beans-spelt-coonchiglietti",
-      "title": "Burnt Lemon & Mustard Butter Beans With Regenerative Spelt Conchigliette, Confit Cherry Tomatoes, Cavolo Nero & Dill",
-      "url": "https://planthood.co.uk/products/burnt-lemon-mustard-butter-beans-spelt-coonchiglietti",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "sweet-potato-shepherds-pie-with-rich-mushroom-lentil-red-wine-ragu-wilted-green-kale",
-      "title": "Sweet Potato Shepherds Pie With Rich Mushroom Lentil Red Wine Ragu & Wilted Green Kale",
-      "url": "https://planthood.co.uk/products/sweet-potato-shepherds-pie-with-rich-mushroom-lentil-red-wine-ragu-wilted-green-kale",
       "scraped": true,
       "week_label": null
     }
