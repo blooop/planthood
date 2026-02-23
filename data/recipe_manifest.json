@@ -1,7 +1,7 @@
 {
   "total_recipes": 274,
   "failed_recipes": 0,
-  "last_updated": "2026-02-23 05:05:12",
+  "last_updated": "2026-02-23 08:44:08",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -627,9 +627,51 @@
       "week_label": null
     },
     {
+      "id": "dark-arts-seasonal-espresso-beans-250g",
+      "title": "Dark Arts Seasonal Espresso Beans 250g",
+      "url": "https://planthood.co.uk/products/dark-arts-seasonal-espresso-beans-250g",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "dash-sparkling-lime-water-330ml",
+      "title": "Dash Sparkling Lime Water 330ml",
+      "url": "https://planthood.co.uk/products/dash-sparkling-lime-water-330ml",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "dash-sparkling-peach-water-330ml",
+      "title": "Dash Sparkling Peach Water 330ml",
+      "url": "https://planthood.co.uk/products/dash-sparkling-peach-water-330ml",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "dash-sparkling-raspberry-water-330ml",
+      "title": "Dash Sparkling Raspberry Water 330ml",
+      "url": "https://planthood.co.uk/products/dash-sparkling-raspberry-water-330ml",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "festive-bourguignon-pie-over-creamy-mash-with-caramelised-onion-red-wine-gravy",
       "title": "Festive Bourguignon Pie Over Creamy Mash With Caramelised Onion Red Wine Gravy",
       "url": "https://planthood.co.uk/products/festive-bourguignon-pie-over-creamy-mash-with-caramelised-onion-red-wine-gravy",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "freshly-baked-flatbread-naan-plain-pack-of-2",
+      "title": "Freshly Baked Flatbread/Naan - Plain (Pack of 2)",
+      "url": "https://planthood.co.uk/products/freshly-baked-flatbread-naan-plain-pack-of-2",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "freshly-baked-flatbread-naan-plain-pack-of-2-copy",
+      "title": "Freshly Baked Flatbread/Naan - Garlic & Herb (Pack of 2)",
+      "url": "https://planthood.co.uk/products/freshly-baked-flatbread-naan-plain-pack-of-2-copy",
       "scraped": true,
       "week_label": null
     },
@@ -746,9 +788,72 @@
       "week_label": null
     },
     {
+      "id": "hodmedods-organic-brown-linseed-500g-high-fibre-omegas",
+      "title": "Hodmedod's Organic Brown Linseed 500g – High Fibre & Omegas",
+      "url": "https://planthood.co.uk/products/hodmedods-organic-brown-linseed-500g-high-fibre-omegas",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "hodmedods-organic-gluten-free-oat-flakes-500g-wholegrain-rolled-oats",
+      "title": "Hodmedod's Organic Gluten-Free Oat Flakes 500g – Wholegrain Rolled Oats",
+      "url": "https://planthood.co.uk/products/hodmedods-organic-gluten-free-oat-flakes-500g-wholegrain-rolled-oats",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "hodmedods-organic-gluten-free-oat-groats-500g-whole-oat-kernels",
+      "title": "Hodmedod's Organic Gluten-Free Oat Groats 500g – Whole Oat Kernels",
+      "url": "https://planthood.co.uk/products/hodmedods-organic-gluten-free-oat-groats-500g-whole-oat-kernels",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "hodmedods-organic-red-white-quinoa-500g-high-protein-wholegrain",
+      "title": "Hodmedod's Organic Red & White Quinoa 500g – High Protein Wholegrain",
+      "url": "https://planthood.co.uk/products/hodmedods-organic-red-white-quinoa-500g-high-protein-wholegrain",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "hodmedods-organic-shelled-hemp-seeds-300g-high-protein-superfood",
+      "title": "Hodmedod's Organic Shelled Hemp Seeds 300g – High Protein Superfood",
+      "url": "https://planthood.co.uk/products/hodmedods-organic-shelled-hemp-seeds-300g-high-protein-superfood",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "hodmedods-organic-wholegrain-emmer-farro-500g-ancient-grain",
+      "title": "Hodmedod's Organic Wholegrain Emmer (Farro) 500g – Ancient Grain",
+      "url": "https://planthood.co.uk/products/hodmedods-organic-wholegrain-emmer-farro-500g-ancient-grain",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "honest-toil-extra-virgin-olive-oil-1l-cold-pressed-unfiltered",
+      "title": "Honest Toil Extra Virgin Olive Oil 1L – Cold Pressed & Unfiltered",
+      "url": "https://planthood.co.uk/products/honest-toil-extra-virgin-olive-oil-1l-cold-pressed-unfiltered",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "hot-honey-labneh-mezze-with-minted-courgettes-roasted-cherry-tomatoes-chickpeas-freshly-bakes-garlic-flatbread",
       "title": "Hot 'Honey' Labneh Mezze With Minted Courgettes, Roasted Cherry Tomatoes, Chickpeas & Freshly Baked Garlic Flatbread",
       "url": "https://planthood.co.uk/products/hot-honey-labneh-mezze-with-minted-courgettes-roasted-cherry-tomatoes-chickpeas-freshly-bakes-garlic-flatbread",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "hu-almond-butter-crispy-quinoa-dark-chocolate-60g",
+      "title": "Hu Almond Butter & Crispy Quinoa Dark Chocolate 60g",
+      "url": "https://planthood.co.uk/products/hu-almond-butter-crispy-quinoa-dark-chocolate-60g",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "hu-salty-dark-chocolate-bar-60g",
+      "title": "Hu Salty Dark Chocolate Bar 60g",
+      "url": "https://planthood.co.uk/products/hu-salty-dark-chocolate-bar-60g",
       "scraped": true,
       "week_label": null
     },
@@ -900,6 +1005,27 @@
       "week_label": null
     },
     {
+      "id": "momo-organic-elderflower-kombucha-330ml",
+      "title": "Momo Organic Elderflower Kombucha 330ml",
+      "url": "https://planthood.co.uk/products/momo-organic-elderflower-kombucha-330ml",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "momo-organic-ginger-lemon-kombucha-330ml",
+      "title": "Momo Organic Ginger & Lemon Kombucha 330ml",
+      "url": "https://planthood.co.uk/products/momo-organic-ginger-lemon-kombucha-330ml",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "momo-organic-raspberry-hibiscus-kombucha-330ml",
+      "title": "Momo Organic Raspberry & Hibiscus Kombucha 330ml",
+      "url": "https://planthood.co.uk/products/momo-organic-raspberry-hibiscus-kombucha-330ml",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme",
       "title": "Mushroom Birria Tacos With Melted Vegan Mozzarella, Onion Salsa & Rich Dipping Consommé",
       "url": "https://planthood.co.uk/products/mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme",
@@ -1029,6 +1155,41 @@
       "id": "peanut-butter-raspberry-oat-pot-1",
       "title": "Peanut Butter & Raspberry Oat Pot",
       "url": "https://planthood.co.uk/products/peanut-butter-raspberry-oat-pot-1",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "pip-nut-crunchy-peanut-butter-1kg",
+      "title": "Pip & Nut Crunchy Peanut Butter 1kg",
+      "url": "https://planthood.co.uk/products/pip-nut-crunchy-peanut-butter-1kg",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "pip-nut-smooth-peanut-butter-1kg",
+      "title": "Pip & Nut Smooth Peanut Butter 1kg",
+      "url": "https://planthood.co.uk/products/pip-nut-smooth-peanut-butter-1kg",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "plenish-organic-almond-barista-milk-1l",
+      "title": "Plenish Organic Almond Barista Milk 1L",
+      "url": "https://planthood.co.uk/products/plenish-organic-almond-barista-milk-1l",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "plenish-organic-gluten-free-oat-milk-1l",
+      "title": "Plenish Organic Gluten-Free Oat Milk 1L",
+      "url": "https://planthood.co.uk/products/plenish-organic-gluten-free-oat-milk-1l",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "plenish-organic-oat-barista-milk-1l",
+      "title": "Plenish Organic Oat Barista Milk 1L",
+      "url": "https://planthood.co.uk/products/plenish-organic-oat-barista-milk-1l",
       "scraped": true,
       "week_label": null
     },
@@ -1274,6 +1435,13 @@
       "id": "smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread",
       "title": "Sweet & Smoky Butter Bean Shakshuka With Whipped Tahini, Toasted Dukkah & Soft Garlic Flatbread",
       "url": "https://planthood.co.uk/products/smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "smoky-whole-roasted-aubergine-over-creamy-whipped-tahini-with-hot-agave-harissa-fresh-parsley-flatbreads",
+      "title": "Smoky Whole Roasted Aubergine Over Creamy Whipped Tahini With Hot Agave Harissa, Fresh Parsley & Flatbreads",
+      "url": "https://planthood.co.uk/products/smoky-whole-roasted-aubergine-over-creamy-whipped-tahini-with-hot-agave-harissa-fresh-parsley-flatbreads",
       "scraped": true,
       "week_label": null
     },
@@ -1750,174 +1918,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "dark-arts-seasonal-espresso-beans-250g",
-      "title": "Dark Arts Seasonal Espresso Beans 250g",
-      "url": "https://planthood.co.uk/products/dark-arts-seasonal-espresso-beans-250g",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "dash-sparkling-lime-water-330ml",
-      "title": "Dash Sparkling Lime Water 330ml",
-      "url": "https://planthood.co.uk/products/dash-sparkling-lime-water-330ml",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "dash-sparkling-peach-water-330ml",
-      "title": "Dash Sparkling Peach Water 330ml",
-      "url": "https://planthood.co.uk/products/dash-sparkling-peach-water-330ml",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "dash-sparkling-raspberry-water-330ml",
-      "title": "Dash Sparkling Raspberry Water 330ml",
-      "url": "https://planthood.co.uk/products/dash-sparkling-raspberry-water-330ml",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "freshly-baked-flatbread-naan-plain-pack-of-2",
-      "title": "Freshly Baked Flatbread/Naan - Plain (Pack of 2)",
-      "url": "https://planthood.co.uk/products/freshly-baked-flatbread-naan-plain-pack-of-2",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "freshly-baked-flatbread-naan-plain-pack-of-2-copy",
-      "title": "Freshly Baked Flatbread/Naan - Garlic & Herb (Pack of 2)",
-      "url": "https://planthood.co.uk/products/freshly-baked-flatbread-naan-plain-pack-of-2-copy",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "hodmedods-organic-brown-linseed-500g-high-fibre-omegas",
-      "title": "Hodmedod's Organic Brown Linseed 500g – High Fibre & Omegas",
-      "url": "https://planthood.co.uk/products/hodmedods-organic-brown-linseed-500g-high-fibre-omegas",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "hodmedods-organic-gluten-free-oat-flakes-500g-wholegrain-rolled-oats",
-      "title": "Hodmedod's Organic Gluten-Free Oat Flakes 500g – Wholegrain Rolled Oats",
-      "url": "https://planthood.co.uk/products/hodmedods-organic-gluten-free-oat-flakes-500g-wholegrain-rolled-oats",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "hodmedods-organic-gluten-free-oat-groats-500g-whole-oat-kernels",
-      "title": "Hodmedod's Organic Gluten-Free Oat Groats 500g – Whole Oat Kernels",
-      "url": "https://planthood.co.uk/products/hodmedods-organic-gluten-free-oat-groats-500g-whole-oat-kernels",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "hodmedods-organic-red-white-quinoa-500g-high-protein-wholegrain",
-      "title": "Hodmedod's Organic Red & White Quinoa 500g – High Protein Wholegrain",
-      "url": "https://planthood.co.uk/products/hodmedods-organic-red-white-quinoa-500g-high-protein-wholegrain",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "hodmedods-organic-shelled-hemp-seeds-300g-high-protein-superfood",
-      "title": "Hodmedod's Organic Shelled Hemp Seeds 300g – High Protein Superfood",
-      "url": "https://planthood.co.uk/products/hodmedods-organic-shelled-hemp-seeds-300g-high-protein-superfood",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "hodmedods-organic-wholegrain-emmer-farro-500g-ancient-grain",
-      "title": "Hodmedod's Organic Wholegrain Emmer (Farro) 500g – Ancient Grain",
-      "url": "https://planthood.co.uk/products/hodmedods-organic-wholegrain-emmer-farro-500g-ancient-grain",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "honest-toil-extra-virgin-olive-oil-1l-cold-pressed-unfiltered",
-      "title": "Honest Toil Extra Virgin Olive Oil 1L – Cold Pressed & Unfiltered",
-      "url": "https://planthood.co.uk/products/honest-toil-extra-virgin-olive-oil-1l-cold-pressed-unfiltered",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "hu-almond-butter-crispy-quinoa-dark-chocolate-60g",
-      "title": "Hu Almond Butter & Crispy Quinoa Dark Chocolate 60g",
-      "url": "https://planthood.co.uk/products/hu-almond-butter-crispy-quinoa-dark-chocolate-60g",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "hu-salty-dark-chocolate-bar-60g",
-      "title": "Hu Salty Dark Chocolate Bar 60g",
-      "url": "https://planthood.co.uk/products/hu-salty-dark-chocolate-bar-60g",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "momo-organic-elderflower-kombucha-330ml",
-      "title": "Momo Organic Elderflower Kombucha 330ml",
-      "url": "https://planthood.co.uk/products/momo-organic-elderflower-kombucha-330ml",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "momo-organic-ginger-lemon-kombucha-330ml",
-      "title": "Momo Organic Ginger & Lemon Kombucha 330ml",
-      "url": "https://planthood.co.uk/products/momo-organic-ginger-lemon-kombucha-330ml",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "momo-organic-raspberry-hibiscus-kombucha-330ml",
-      "title": "Momo Organic Raspberry & Hibiscus Kombucha 330ml",
-      "url": "https://planthood.co.uk/products/momo-organic-raspberry-hibiscus-kombucha-330ml",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "pip-nut-crunchy-peanut-butter-1kg",
-      "title": "Pip & Nut Crunchy Peanut Butter 1kg",
-      "url": "https://planthood.co.uk/products/pip-nut-crunchy-peanut-butter-1kg",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "pip-nut-smooth-peanut-butter-1kg",
-      "title": "Pip & Nut Smooth Peanut Butter 1kg",
-      "url": "https://planthood.co.uk/products/pip-nut-smooth-peanut-butter-1kg",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "plenish-organic-almond-barista-milk-1l",
-      "title": "Plenish Organic Almond Barista Milk 1L",
-      "url": "https://planthood.co.uk/products/plenish-organic-almond-barista-milk-1l",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "plenish-organic-gluten-free-oat-milk-1l",
-      "title": "Plenish Organic Gluten-Free Oat Milk 1L",
-      "url": "https://planthood.co.uk/products/plenish-organic-gluten-free-oat-milk-1l",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "plenish-organic-oat-barista-milk-1l",
-      "title": "Plenish Organic Oat Barista Milk 1L",
-      "url": "https://planthood.co.uk/products/plenish-organic-oat-barista-milk-1l",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "smoky-whole-roasted-aubergine-over-creamy-whipped-tahini-with-hot-agave-harissa-fresh-parsley-flatbreads",
-      "title": "Smoky Whole Roasted Aubergine Over Creamy Whipped Tahini With Hot Agave Harissa, Fresh Parsley & Flatbreads",
-      "url": "https://planthood.co.uk/products/smoky-whole-roasted-aubergine-over-creamy-whipped-tahini-with-hot-agave-harissa-fresh-parsley-flatbreads",
       "scraped": true,
       "week_label": null
     }
