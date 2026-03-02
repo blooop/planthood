@@ -1,7 +1,7 @@
 {
-  "total_recipes": 274,
+  "total_recipes": 275,
   "failed_recipes": 0,
-  "last_updated": "2026-02-23 08:44:08",
+  "last_updated": "2026-03-02 04:54:26",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -798,13 +798,6 @@
       "id": "hodmedods-organic-gluten-free-oat-flakes-500g-wholegrain-rolled-oats",
       "title": "Hodmedod's Organic Gluten-Free Oat Flakes 500g – Wholegrain Rolled Oats",
       "url": "https://planthood.co.uk/products/hodmedods-organic-gluten-free-oat-flakes-500g-wholegrain-rolled-oats",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "hodmedods-organic-gluten-free-oat-groats-500g-whole-oat-kernels",
-      "title": "Hodmedod's Organic Gluten-Free Oat Groats 500g – Whole Oat Kernels",
-      "url": "https://planthood.co.uk/products/hodmedods-organic-gluten-free-oat-groats-500g-whole-oat-kernels",
       "scraped": true,
       "week_label": null
     },
@@ -1918,6 +1911,20 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "24-plant-frijoles-negros-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice-copy",
+      "title": "Black Bean Smash Burger Tacos With Homemade Burger Sauce & Cabbage Carrot Apple Walnut Slaw",
+      "url": "https://planthood.co.uk/products/24-plant-frijoles-negros-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice-copy",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "black-bean-frijoles-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice",
+      "title": "24 Plant Frijoles Negros With Caramelised Plantain, Whipped Feta, Pink Pickled Onions, Avocado & Coriander Lime Brown Rice",
+      "url": "https://planthood.co.uk/products/black-bean-frijoles-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice",
       "scraped": true,
       "week_label": null
     }
