@@ -1,8 +1,15 @@
 {
   "total_recipes": 275,
   "failed_recipes": 0,
-  "last_updated": "2026-03-02 04:54:26",
+  "last_updated": "2026-03-02 08:39:43",
   "recipes": [
+    {
+      "id": "24-plant-frijoles-negros-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice-copy",
+      "title": "Black Bean Smash Burger Tacos With Homemade Burger Sauce & Cabbage Carrot Apple Walnut Slaw",
+      "url": "https://planthood.co.uk/products/24-plant-frijoles-negros-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice-copy",
+      "scraped": true,
+      "week_label": null
+    },
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
       "title": "Adobo Black Bean Tostadas With Shredded Lettuce, Lime Cashew Crema, Avocado & Salsa Macha",
@@ -56,6 +63,13 @@
       "id": "bbq-jackfruit-tacos-chipotle-cashew-crema",
       "title": "Jackfruit Carnitas Tacos With Smokey Chipotle Cashew Crema, Pickles & Coriander On Soft Corn Tortillas",
       "url": "https://planthood.co.uk/products/bbq-jackfruit-tacos-chipotle-cashew-crema",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "black-bean-frijoles-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice",
+      "title": "24 Plant Frijoles Negros With Caramelised Plantain, Whipped Feta, Pink Pickled Onions, Avocado & Coriander Lime Brown Rice",
+      "url": "https://planthood.co.uk/products/black-bean-frijoles-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice",
       "scraped": true,
       "week_label": null
     },
@@ -1911,20 +1925,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "24-plant-frijoles-negros-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice-copy",
-      "title": "Black Bean Smash Burger Tacos With Homemade Burger Sauce & Cabbage Carrot Apple Walnut Slaw",
-      "url": "https://planthood.co.uk/products/24-plant-frijoles-negros-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice-copy",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "black-bean-frijoles-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice",
-      "title": "24 Plant Frijoles Negros With Caramelised Plantain, Whipped Feta, Pink Pickled Onions, Avocado & Coriander Lime Brown Rice",
-      "url": "https://planthood.co.uk/products/black-bean-frijoles-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice",
       "scraped": true,
       "week_label": null
     }
