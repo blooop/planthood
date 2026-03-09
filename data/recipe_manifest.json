@@ -1,7 +1,7 @@
 {
   "total_recipes": 277,
   "failed_recipes": 0,
-  "last_updated": "2026-03-09 04:58:33",
+  "last_updated": "2026-03-09 08:39:57",
   "recipes": [
     {
       "id": "24-plant-frijoles-negros-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice-copy",
@@ -1019,6 +1019,13 @@
       "week_label": null
     },
     {
+      "id": "momo-organic-forced-rhubarb-kombucha-330ml-copy",
+      "title": "Momo Organic Forced Rhubarb Kombucha 330ml",
+      "url": "https://planthood.co.uk/products/momo-organic-forced-rhubarb-kombucha-330ml-copy",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "momo-organic-ginger-lemon-kombucha-330ml",
       "title": "Momo Organic Ginger & Lemon Kombucha 330ml",
       "url": "https://planthood.co.uk/products/momo-organic-ginger-lemon-kombucha-330ml",
@@ -1239,6 +1246,13 @@
       "id": "red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel",
       "title": "Red Lentil Pasta Bake With Butter Beans, Tenderstem Broccoli & Cheesy Miso Bechamel",
       "url": "https://planthood.co.uk/products/red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "rhubarb-blood-orange-granola-pot-limited-edition",
+      "title": "Rhubarb Blood Orange Granola Pot - Limited Edition",
+      "url": "https://planthood.co.uk/products/rhubarb-blood-orange-granola-pot-limited-edition",
       "scraped": true,
       "week_label": null
     },
@@ -1925,20 +1939,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "momo-organic-forced-rhubarb-kombucha-330ml-copy",
-      "title": "Momo Organic Forced Rhubarb Kombucha 330ml",
-      "url": "https://planthood.co.uk/products/momo-organic-forced-rhubarb-kombucha-330ml-copy",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "rhubarb-blood-orange-granola-pot-limited-edition",
-      "title": "Rhubarb Blood Orange Granola Pot - Limited Edition",
-      "url": "https://planthood.co.uk/products/rhubarb-blood-orange-granola-pot-limited-edition",
       "scraped": true,
       "week_label": null
     }
