@@ -4436,5 +4436,41 @@
       "fibre_g": 21.5,
       "salt_g": 2.6
     }
+  },
+  {
+    "id": "momo-organic-forced-rhubarb-kombucha-330ml-copy",
+    "title": "Momo Organic Forced Rhubarb Kombucha 330ml",
+    "source_url": "https://planthood.co.uk/products/momo-organic-forced-rhubarb-kombucha-330ml-copy",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "method": "Momo Organic Forced Rhubarb Kombucha 330mlOur favourite kombucha producers, Momo, make the most delicious organic, unpasteurised kombucha. It's steeped with tea in glass jars for a smooth, refreshing finish.Ginger is to kombucha what salt is to dark chocolate - some things just go together. This crisp kombucha is Momo's most popular and it's easy to see why. Brewed with just the right amount of cold-pressed ginger and a squeeze of fresh lemon for good measure, it's the perfect way to start the day or perk yourself up.Cooking Mode:\nCooking instructionsWhat’s in your boxNutritional infoAll nutritional values are based on a per person scale.Calories19kcalTotal fat0.10gSaturated fat0.10gSalt0.10gTotal carbohydrate2.9gTotal sugar2.9gFibre0.6gProtein0.10gIngredients / AllergensFiltered water, kombucha culture, organic raw cane sugar, organic apple juice, organic ginger juice, organic tea, organic lemon juiceFor allergens, see ingredients highlightedin boldin the ingredients list.",
+    "nutrition": {
+      "calories": 19.0,
+      "protein_g": 0.1,
+      "fat_g": 0.1,
+      "carbs_g": 2.9,
+      "fibre_g": 0.6,
+      "salt_g": 0.1
+    }
+  },
+  {
+    "id": "rhubarb-blood-orange-granola-pot-limited-edition",
+    "title": "Rhubarb Blood Orange Granola Pot - Limited Edition",
+    "source_url": "https://planthood.co.uk/products/rhubarb-blood-orange-granola-pot-limited-edition",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "method": "Rhubarb Blood Orange Granola Pot - Limited EditionOur first limited edition breakfast pot celebrating two incredible seasonal ingredients - Yorkshire forced rhubarb and blood orange. Featuring a rhubarb and blood orange compote infused with ginger and cloves, over luxuriously creamy coconut yoghurt, all topped with cardamom spiced omega 3 super seed granola and pistachios. On the menu for one month only.Cooking Mode:\nCooking instructionsWhat’s in your boxNutritional infoAll nutritional values are based on a per person scale.Calories176kcalTotal fat9.1gSaturated fat3.7gSalt0.2gTotal carbohydrate19.3gTotal sugar15.7gFibre1.4gProtein5.4gIngredients / AllergensGluten free oats, almonds (nuts), pumpkin seeds, linseeds, sunflower seeds,sesameseeds, raw organic agave nectar, extra virgin olive oil, pistachios (nuts), cardamom, pistachios (nuts), sea salt, rhubarb, ginger, blood orangeFor allergens, see ingredients highlightedin boldin the ingredients list.",
+    "nutrition": {
+      "calories": 176.0,
+      "protein_g": 5.4,
+      "fat_g": 9.1,
+      "carbs_g": 19.3,
+      "fibre_g": 1.4,
+      "salt_g": 0.2
+    }
   }
 ]
