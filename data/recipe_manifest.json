@@ -1,7 +1,7 @@
 {
-  "total_recipes": 277,
+  "total_recipes": 280,
   "failed_recipes": 0,
-  "last_updated": "2026-03-09 08:39:57",
+  "last_updated": "2026-03-16 05:22:32",
   "recipes": [
     {
       "id": "24-plant-frijoles-negros-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice-copy",
@@ -1939,6 +1939,27 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "mapo-tofu-udon-noodles-in-creamy-gochujang-sauce-with-fresh-cucumber-salad-toasted-sesame-seeds",
+      "title": "Mapo Tofu Udon Noodles In Creamy Gochujang Sauce With Fresh Cucumber Salad & Toasted Sesame Seeds",
+      "url": "https://planthood.co.uk/products/mapo-tofu-udon-noodles-in-creamy-gochujang-sauce-with-fresh-cucumber-salad-toasted-sesame-seeds",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-spring-minestrone-with-asparagus-regenerative-spelt-conchiglietti-asparagus-basil-pesto",
+      "title": "Super Green Spring Minestrone With Asparagus, Regenerative Spelt Conchiglietti, & Wild Garlic Pesto",
+      "url": "https://planthood.co.uk/products/super-green-spring-minestrone-with-asparagus-regenerative-spelt-conchiglietti-asparagus-basil-pesto",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-wholewheat-rigatoni-with-wild-garlic-cavolo-nero-sauce-creamy-burrata-chilli-pine-nut-crumb",
+      "title": "Super Green Wholewheat Rigatoni With Wild Garlic Sauce, Peas, Cavolo Nero, Creamy 'Burrata' & Chilli Pine Nut Crumb",
+      "url": "https://planthood.co.uk/products/super-green-wholewheat-rigatoni-with-wild-garlic-cavolo-nero-sauce-creamy-burrata-chilli-pine-nut-crumb",
       "scraped": true,
       "week_label": null
     }
