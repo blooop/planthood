@@ -1,7 +1,7 @@
 {
-  "total_recipes": 280,
+  "total_recipes": 270,
   "failed_recipes": 0,
-  "last_updated": "2026-03-16 08:52:21",
+  "last_updated": "2026-03-23 05:10:07",
   "recipes": [
     {
       "id": "24-plant-frijoles-negros-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice-copy",
@@ -585,13 +585,6 @@
       "week_label": null
     },
     {
-      "id": "daily-dose-dulce-verde",
-      "title": "Organic Green Goddess Juice",
-      "url": "https://planthood.co.uk/products/daily-dose-dulce-verde",
-      "scraped": true,
-      "week_label": null
-    },
-    {
       "id": "daily-dose-dulce-verde-1",
       "title": "Organic Green Goddess Juice",
       "url": "https://planthood.co.uk/products/daily-dose-dulce-verde-1",
@@ -606,23 +599,9 @@
       "week_label": null
     },
     {
-      "id": "daily-dose-ofresco-1",
-      "title": "Organic Citrus Glow Juice",
-      "url": "https://planthood.co.uk/products/daily-dose-ofresco-1",
-      "scraped": true,
-      "week_label": null
-    },
-    {
       "id": "daily-dose-rouge",
       "title": "Organic Radiant Roots Juice",
       "url": "https://planthood.co.uk/products/daily-dose-rouge",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "daily-dose-rouge-1",
-      "title": "Organic Radiant Roots Juice",
-      "url": "https://planthood.co.uk/products/daily-dose-rouge-1",
       "scraped": true,
       "week_label": null
     },
@@ -1075,23 +1054,9 @@
       "week_label": null
     },
     {
-      "id": "ombar-mylk-chocolate",
-      "title": "Ombar Mylk Chocolate",
-      "url": "https://planthood.co.uk/products/ombar-mylk-chocolate",
-      "scraped": true,
-      "week_label": null
-    },
-    {
       "id": "ombar-mylk-chocolate-1",
       "title": "Ombar Mylk Chocolate",
       "url": "https://planthood.co.uk/products/ombar-mylk-chocolate-1",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "ombar-salt-nibs",
-      "title": "Ombar Salt & Nibs",
-      "url": "https://planthood.co.uk/products/ombar-salt-nibs",
       "scraped": true,
       "week_label": null
     },
@@ -1169,13 +1134,6 @@
       "id": "peanut-butter-raspberry-oat-pot",
       "title": "Peanut Butter & Raspberry Oat Pot",
       "url": "https://planthood.co.uk/products/peanut-butter-raspberry-oat-pot",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "peanut-butter-raspberry-oat-pot-1",
-      "title": "Peanut Butter & Raspberry Oat Pot",
-      "url": "https://planthood.co.uk/products/peanut-butter-raspberry-oat-pot-1",
       "scraped": true,
       "week_label": null
     },
@@ -1873,13 +1831,6 @@
       "week_label": null
     },
     {
-      "id": "vive-3-x-protein-bar-bundle",
-      "title": "Vive 3 x Protein Bar Bundle",
-      "url": "https://planthood.co.uk/products/vive-3-x-protein-bar-bundle",
-      "scraped": true,
-      "week_label": null
-    },
-    {
       "id": "vive-dark-chocolate-hazelnut-protein-bar-50g",
       "title": "Vive Dark Chocolate Hazelnut Protein Bar 50g",
       "url": "https://planthood.co.uk/products/vive-dark-chocolate-hazelnut-protein-bar-50g",
@@ -1887,30 +1838,9 @@
       "week_label": null
     },
     {
-      "id": "vive-dark-chocolate-hazelnut-protein-bar-50g-1",
-      "title": "Vive Dark Chocolate Hazelnut Protein Bar 50g",
-      "url": "https://planthood.co.uk/products/vive-dark-chocolate-hazelnut-protein-bar-50g-1",
-      "scraped": true,
-      "week_label": null
-    },
-    {
       "id": "vive-dark-chocolate-peanut-butter-jelly-protein-bar-50g",
       "title": "Vive Dark Chocolate Peanut Butter Jelly Protein Bar 50g",
       "url": "https://planthood.co.uk/products/vive-dark-chocolate-peanut-butter-jelly-protein-bar-50g",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "vive-dark-chocolate-peanut-butter-protein-bar-49g",
-      "title": "Vive Dark Chocolate Peanut Butter Jelly Protein Bar 50g",
-      "url": "https://planthood.co.uk/products/vive-dark-chocolate-peanut-butter-protein-bar-49g",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "vive-dark-chocolate-salted-caramel-protein-bar-49g",
-      "title": "Vive Dark Chocolate Salted Caramel Protein Bar 50g",
-      "url": "https://planthood.co.uk/products/vive-dark-chocolate-salted-caramel-protein-bar-49g",
       "scraped": true,
       "week_label": null
     },
