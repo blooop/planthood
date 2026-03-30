@@ -1,7 +1,7 @@
 {
-  "total_recipes": 270,
+  "total_recipes": 268,
   "failed_recipes": 0,
-  "last_updated": "2026-03-23 08:50:50",
+  "last_updated": "2026-03-30 05:31:27",
   "recipes": [
     {
       "id": "24-plant-frijoles-negros-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice-copy",
@@ -578,13 +578,6 @@
       "week_label": null
     },
     {
-      "id": "daily-dose-3-juice-bundle-2",
-      "title": "Organic Cold-Pressed Juice Bundle",
-      "url": "https://planthood.co.uk/products/daily-dose-3-juice-bundle-2",
-      "scraped": true,
-      "week_label": null
-    },
-    {
       "id": "daily-dose-dulce-verde-1",
       "title": "Organic Green Goddess Juice",
       "url": "https://planthood.co.uk/products/daily-dose-dulce-verde-1",
@@ -609,13 +602,6 @@
       "id": "daily-dose-turmeric-shot",
       "title": "Organic Immunity Shot",
       "url": "https://planthood.co.uk/products/daily-dose-turmeric-shot",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "daily-dose-turmeric-tonic",
-      "title": "Organic Immunity Shot",
-      "url": "https://planthood.co.uk/products/daily-dose-turmeric-tonic",
       "scraped": true,
       "week_label": null
     },
@@ -896,13 +882,6 @@
       "id": "lemon-blueberry-crumble-oat-pot",
       "title": "Lemon & Blueberry Crumble Oat Pot",
       "url": "https://planthood.co.uk/products/lemon-blueberry-crumble-oat-pot",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "lemon-blueberry-crumble-oat-pot-1",
-      "title": "Lemon & Blueberry Crumble Oat Pot",
-      "url": "https://planthood.co.uk/products/lemon-blueberry-crumble-oat-pot-1",
       "scraped": true,
       "week_label": null
     },
@@ -1890,6 +1869,13 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "black-bean-smash-burger-tacos",
+      "title": "Black Bean Smash Burger Tacos With Homemade Burger Sauce & Cabbage Carrot Apple Walnut Slaw",
+      "url": "https://planthood.co.uk/products/black-bean-smash-burger-tacos",
       "scraped": true,
       "week_label": null
     }
