@@ -1,7 +1,7 @@
 {
-  "total_recipes": 272,
+  "total_recipes": 278,
   "failed_recipes": 0,
-  "last_updated": "2026-04-06 09:04:32",
+  "last_updated": "2026-04-13 05:47:09",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -984,13 +984,6 @@
       "week_label": null
     },
     {
-      "id": "momo-organic-forced-rhubarb-kombucha-330ml-copy",
-      "title": "Momo Organic Forced Rhubarb Kombucha 330ml",
-      "url": "https://planthood.co.uk/products/momo-organic-forced-rhubarb-kombucha-330ml-copy",
-      "scraped": true,
-      "week_label": null
-    },
-    {
       "id": "momo-organic-ginger-lemon-kombucha-330ml",
       "title": "Momo Organic Ginger & Lemon Kombucha 330ml",
       "url": "https://planthood.co.uk/products/momo-organic-ginger-lemon-kombucha-330ml",
@@ -1904,6 +1897,55 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "apple-pecan-crumble-snack-bar-100-raw-whole-foods",
+      "title": "Apple Pecan Crumble Snack Bar - 100% Raw Whole Foods",
+      "url": "https://planthood.co.uk/products/apple-pecan-crumble-snack-bar-100-raw-whole-foods",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "chocolate-hazelnut-sea-salt-protein-fibre-bar-100-raw-whole-foods",
+      "title": "Chocolate, Hazelnut & Sea Salt Snack Bar - 100% Raw Whole Foods",
+      "url": "https://planthood.co.uk/products/chocolate-hazelnut-sea-salt-protein-fibre-bar-100-raw-whole-foods",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "crispy-rice-salad-with-smacked-cucumber-avocado-edamame-black-beans-toasted-cashews-chilli-satay-dressing",
+      "title": "Crispy Rice Salad With Smacked Cucumber, Avocado, Edamame, Black Beans, Toasted Cashews, Chilli & Satay Dressing",
+      "url": "https://planthood.co.uk/products/crispy-rice-salad-with-smacked-cucumber-avocado-edamame-black-beans-toasted-cashews-chilli-satay-dressing",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "lamachun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
+      "title": "Lamachun Flatbread With Meaty Spiced Tofu Crumble, Tomato, Cucumber, Sumac Pickled Onion & Garlic Yoghurt",
+      "url": "https://planthood.co.uk/products/lamachun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "lemon-poppyseed-protein-fibre-bar-100-raw-whole-foods-copy",
+      "title": "Lemon & Poppyseed Snack Bar - 100% Raw Whole Foods",
+      "url": "https://planthood.co.uk/products/lemon-poppyseed-protein-fibre-bar-100-raw-whole-foods-copy",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "mango-passion-fruit-oat-pot-200g",
+      "title": "Mango & Passion Fruit Oat Pot 200g",
+      "url": "https://planthood.co.uk/products/mango-passion-fruit-oat-pot-200g",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "rebel-kitchen-100-pure-organic-coconut-water",
+      "title": "Rebel Kitchen 100% Pure Organic Coconut Water - 330ml",
+      "url": "https://planthood.co.uk/products/rebel-kitchen-100-pure-organic-coconut-water",
       "scraped": true,
       "week_label": null
     }
