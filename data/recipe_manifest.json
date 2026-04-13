@@ -1,7 +1,7 @@
 {
-  "total_recipes": 278,
+  "total_recipes": 279,
   "failed_recipes": 0,
-  "last_updated": "2026-04-13 05:47:09",
+  "last_updated": "2026-04-13 09:51:37",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -14,6 +14,13 @@
       "id": "afghan-aubergine-borani-banjan-with-saucy-spiced-lentils-garlic-yoghurt-fresh-mint-pillowy-flatbreads",
       "title": "Afghan Aubergine (Borani Banjan) With Saucy Spiced Lentils, Garlic Yoghurt, Fresh Mint & Pillowy Flatbreads",
       "url": "https://planthood.co.uk/products/afghan-aubergine-borani-banjan-with-saucy-spiced-lentils-garlic-yoghurt-fresh-mint-pillowy-flatbreads",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "apple-pecan-crumble-snack-bar-100-raw-whole-foods",
+      "title": "Apple Pecan Crumble Snack Bar - 100% Raw Whole Foods",
+      "url": "https://planthood.co.uk/products/apple-pecan-crumble-snack-bar-100-raw-whole-foods",
       "scraped": true,
       "week_label": null
     },
@@ -291,6 +298,13 @@
       "week_label": null
     },
     {
+      "id": "chocolate-hazelnut-sea-salt-protein-fibre-bar-100-raw-whole-foods",
+      "title": "Chocolate, Hazelnut & Sea Salt Snack Bar - 100% Raw Whole Foods",
+      "url": "https://planthood.co.uk/products/chocolate-hazelnut-sea-salt-protein-fibre-bar-100-raw-whole-foods",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "courgette-gratin-with-cashew-cheese-sauce-creamy-cannellini-beans-and-olive-almond-gremolata",
       "title": "Courgette Gratin With Cashew Cheese Sauce, Creamy Cannellini Beans And Olive & Almond Gremolata",
       "url": "https://planthood.co.uk/products/courgette-gratin-with-cashew-cheese-sauce-creamy-cannellini-beans-and-olive-almond-gremolata",
@@ -497,6 +511,13 @@
       "id": "crispy-pakora-burger-with-mint-raita-mango-chutney-fresh-spinach-baby-new-potatoes",
       "title": "Crispy Pakora Burger With Mint Raita, Mango Chutney, Fresh Spinach & Baby New Potatoes",
       "url": "https://planthood.co.uk/products/crispy-pakora-burger-with-mint-raita-mango-chutney-fresh-spinach-baby-new-potatoes",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "crispy-rice-salad-with-smacked-cucumber-avocado-edamame-black-beans-toasted-cashews-chilli-satay-dressing",
+      "title": "Crispy Rice Salad With Smacked Cucumber, Avocado, Edamame, Black Beans, Toasted Cashews, Chilli & Satay Dressing",
+      "url": "https://planthood.co.uk/products/crispy-rice-salad-with-smacked-cucumber-avocado-edamame-black-beans-toasted-cashews-chilli-satay-dressing",
       "scraped": true,
       "week_label": null
     },
@@ -879,6 +900,13 @@
       "week_label": null
     },
     {
+      "id": "lamachun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
+      "title": "Lamachun Flatbread With Meaty Spiced Tofu Crumble, Tomato, Cucumber, Sumac Pickled Onion & Garlic Yoghurt",
+      "url": "https://planthood.co.uk/products/lamachun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "lemon-blueberry-crumble-oat-pot",
       "title": "Lemon & Blueberry Crumble Oat Pot",
       "url": "https://planthood.co.uk/products/lemon-blueberry-crumble-oat-pot",
@@ -900,6 +928,13 @@
       "week_label": null
     },
     {
+      "id": "lemon-poppyseed-protein-fibre-bar-100-raw-whole-foods-copy",
+      "title": "Lemon & Poppyseed Snack Bar - 100% Raw Whole Foods",
+      "url": "https://planthood.co.uk/products/lemon-poppyseed-protein-fibre-bar-100-raw-whole-foods-copy",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "mac-greens-with-purple-sprouting-broccoli-crispy-kale-mezzi-rigatoni-in-a-creamy-cashew-sauce",
       "title": "Mac & Greens With Tenderstem Broccoli, Crispy Kale & Mezzi Rigatoni In A Creamy Cashew Sauce",
       "url": "https://planthood.co.uk/products/mac-greens-with-purple-sprouting-broccoli-crispy-kale-mezzi-rigatoni-in-a-creamy-cashew-sauce",
@@ -910,6 +945,13 @@
       "id": "mango-cauliflower-curry-with-cashews-garden-peas-coriander-and-fluffy-basmati-rice",
       "title": "Mango Cauliflower Curry With Cashews, Garden Peas, Coriander and Fluffy Basmati Rice",
       "url": "https://planthood.co.uk/products/mango-cauliflower-curry-with-cashews-garden-peas-coriander-and-fluffy-basmati-rice",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "mango-passion-fruit-oat-pot-200g",
+      "title": "Mango & Passion Fruit Oat Pot 200g",
+      "url": "https://planthood.co.uk/products/mango-passion-fruit-oat-pot-200g",
       "scraped": true,
       "week_label": null
     },
@@ -1197,6 +1239,13 @@
       "id": "ras-el-hanout-sweet-potato-tofu-bowl-with-green-tahini-sumac-onion-cucumber-salad",
       "title": "Ras El Hanout Sweet Potato & Tofu Bowl With Green Tahini & Sumac Onion Cucumber Salad",
       "url": "https://planthood.co.uk/products/ras-el-hanout-sweet-potato-tofu-bowl-with-green-tahini-sumac-onion-cucumber-salad",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "rebel-kitchen-100-pure-organic-coconut-water",
+      "title": "Rebel Kitchen 100% Pure Organic Coconut Water - 330ml",
+      "url": "https://planthood.co.uk/products/rebel-kitchen-100-pure-organic-coconut-water",
       "scraped": true,
       "week_label": null
     },
@@ -1901,51 +1950,9 @@
       "week_label": null
     },
     {
-      "id": "apple-pecan-crumble-snack-bar-100-raw-whole-foods",
-      "title": "Apple Pecan Crumble Snack Bar - 100% Raw Whole Foods",
-      "url": "https://planthood.co.uk/products/apple-pecan-crumble-snack-bar-100-raw-whole-foods",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "chocolate-hazelnut-sea-salt-protein-fibre-bar-100-raw-whole-foods",
-      "title": "Chocolate, Hazelnut & Sea Salt Snack Bar - 100% Raw Whole Foods",
-      "url": "https://planthood.co.uk/products/chocolate-hazelnut-sea-salt-protein-fibre-bar-100-raw-whole-foods",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "crispy-rice-salad-with-smacked-cucumber-avocado-edamame-black-beans-toasted-cashews-chilli-satay-dressing",
-      "title": "Crispy Rice Salad With Smacked Cucumber, Avocado, Edamame, Black Beans, Toasted Cashews, Chilli & Satay Dressing",
-      "url": "https://planthood.co.uk/products/crispy-rice-salad-with-smacked-cucumber-avocado-edamame-black-beans-toasted-cashews-chilli-satay-dressing",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "lamachun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
-      "title": "Lamachun Flatbread With Meaty Spiced Tofu Crumble, Tomato, Cucumber, Sumac Pickled Onion & Garlic Yoghurt",
-      "url": "https://planthood.co.uk/products/lamachun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "lemon-poppyseed-protein-fibre-bar-100-raw-whole-foods-copy",
-      "title": "Lemon & Poppyseed Snack Bar - 100% Raw Whole Foods",
-      "url": "https://planthood.co.uk/products/lemon-poppyseed-protein-fibre-bar-100-raw-whole-foods-copy",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "mango-passion-fruit-oat-pot-200g",
-      "title": "Mango & Passion Fruit Oat Pot 200g",
-      "url": "https://planthood.co.uk/products/mango-passion-fruit-oat-pot-200g",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "rebel-kitchen-100-pure-organic-coconut-water",
-      "title": "Rebel Kitchen 100% Pure Organic Coconut Water - 330ml",
-      "url": "https://planthood.co.uk/products/rebel-kitchen-100-pure-organic-coconut-water",
+      "id": "momo-organic-blood-orange-kombucha-330ml",
+      "title": "Momo Organic Blood Orange Kombucha 330ml",
+      "url": "https://planthood.co.uk/products/momo-organic-blood-orange-kombucha-330ml",
       "scraped": true,
       "week_label": null
     }
