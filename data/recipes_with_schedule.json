@@ -190,7 +190,9 @@
     "title": "Oyster Mushroom Bulgogi Bowl With Sticky Sushi Rice, Kimchi, Cucumber Salad & Toasted Sesame Seeds",
     "source_url": "https://planthood.co.uk/products/oyster-mushroom-bulgogi-bowl-with-sticky-sushi-rice-kimchi-cucumber-salad-toasted-sesame-seeds",
     "week_label": null,
-    "weeks": [],
+    "weeks": [
+      "May 11, 2026"
+    ],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -233,7 +235,6 @@
     "source_url": "https://planthood.co.uk/products/rich-creamy-tofu-butter-chicken-with-baby-spinach-garlic-naan-toasted-almond-flakes",
     "week_label": null,
     "weeks": [
-      "Mar 09, 2026",
       "Apr 27, 2026"
     ],
     "category": null,
@@ -310,32 +311,6 @@
     },
     "steps": [
       {
-        "id": "step-3",
-        "raw_text": "Take out all the ingredients for this recipe and rinse any raw grains, herbs or vegetables",
-        "label": "Prepare ingredients",
-        "type": "prep",
-        "duration_min": 3,
-        "start_min": 0,
-        "end_min": 3,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2"
-        ],
-        "equipment": [
-          "colander",
-          "sink"
-        ],
-        "temperature_c": null,
-        "notes": "Rinse vegetables and gather all ingredients.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 0,
-        "latest_end_min": 3,
-        "dependencies_met": true,
-        "warnings": []
-      },
-      {
         "id": "step-2",
         "raw_text": "Take out a large casserole dish or an oven-proof deep pan, along with a blender",
         "label": "Prepare equipment",
@@ -358,6 +333,30 @@
         "slack_min": 0,
         "latest_start_min": 0,
         "latest_end_min": 2,
+        "dependencies_met": true,
+        "warnings": []
+      },
+      {
+        "id": "step-8",
+        "raw_text": "Meanwhile, toast the nuts and seeds by dry frying (without oil) in a small frying pan until golden, around 2-4 minutes",
+        "label": "Toast nuts and seeds",
+        "type": "cook",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-7"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Dry fry without oil. Almonds, hazelnuts, pumpkin seeds, sunflower seeds.",
+        "is_critical": false,
+        "slack_min": 35,
+        "latest_start_min": 35,
+        "latest_end_min": 38,
         "dependencies_met": true,
         "warnings": []
       },
@@ -387,26 +386,28 @@
         "warnings": []
       },
       {
-        "id": "step-8",
-        "raw_text": "Meanwhile, toast the nuts and seeds by dry frying (without oil) in a small frying pan until golden, around 2-4 minutes",
-        "label": "Toast nuts and seeds",
-        "type": "cook",
+        "id": "step-3",
+        "raw_text": "Take out all the ingredients for this recipe and rinse any raw grains, herbs or vegetables",
+        "label": "Prepare ingredients",
+        "type": "prep",
         "duration_min": 3,
         "start_min": 0,
         "end_min": 3,
         "requires": [],
         "can_overlap_with": [
-          "step-7"
+          "step-1",
+          "step-2"
         ],
         "equipment": [
-          "frying pan"
+          "colander",
+          "sink"
         ],
         "temperature_c": null,
-        "notes": "Dry fry without oil. Almonds, hazelnuts, pumpkin seeds, sunflower seeds.",
-        "is_critical": false,
-        "slack_min": 35,
-        "latest_start_min": 35,
-        "latest_end_min": 38,
+        "notes": "Rinse vegetables and gather all ingredients.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 3,
         "dependencies_met": true,
         "warnings": []
       },
@@ -610,9 +611,7 @@
     "title": "Rich Ragu & Roasted Roots Gratin, Topped With Crispy Potato, Beetroot, Sweet Potato & Creamy Miso Bechamel",
     "source_url": "https://planthood.co.uk/products/autumnal-gratin-with-rich-lentil-ragu-topped-with-potato-beetroot-sweet-potato-creamy-miso-bechamel",
     "week_label": null,
-    "weeks": [
-      "Mar 09, 2026"
-    ],
+    "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -1005,7 +1004,9 @@
     "title": "Charred Hispi Cabbage Over Golden Daal With Organic Soy Yoghurt, Tamarind & Date Chutney, Toasted Almonds & Coriander",
     "source_url": "https://planthood.co.uk/products/charred-hispi-cabbage-over-golden-daal-with-organic-soy-yoghurt-tamarind-date-chutney-toasted-almonds-coriander",
     "week_label": null,
-    "weeks": [],
+    "weeks": [
+      "May 11, 2026"
+    ],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -1187,7 +1188,8 @@
     "source_url": "https://planthood.co.uk/products/creamy-butterbeans-with-caramelised-leeks-charred-courgettes-drizzled-with-olive-almond-pesto",
     "week_label": null,
     "weeks": [
-      "Mar 23, 2026"
+      "Mar 23, 2026",
+      "May 11, 2026"
     ],
     "category": null,
     "ingredients": [],
@@ -1854,9 +1856,7 @@
     "title": "Curried Squash Noodle Soup With Rice Noodles, Crispy Coconut Chickpeas & Fresh Green Kale",
     "source_url": "https://planthood.co.uk/products/curried-squash-udon-noodle-soup-with-crispy-coconut-chickpeas-green-kale",
     "week_label": null,
-    "weeks": [
-      "Mar 09, 2026"
-    ],
+    "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {},
@@ -2324,7 +2324,8 @@
     "source_url": "https://planthood.co.uk/products/hot-honey-labneh-mezze-with-minted-courgettes-roasted-cherry-tomatoes-chickpeas-freshly-bakes-garlic-flatbread",
     "week_label": null,
     "weeks": [
-      "Mar 23, 2026"
+      "Mar 23, 2026",
+      "May 11, 2026"
     ],
     "category": null,
     "ingredients": [],
@@ -2443,7 +2444,9 @@
     "title": "Kimchi Stir Fried Noodles With Crispy Tempeh Mince, Baby Spinach, Spring Onions & Sesame Gochugaru Crunch",
     "source_url": "https://planthood.co.uk/products/kimchi-stir-fried-noodles-with-crumbled-tempeh-baby-spinach-spring-onions-sesame-gochugaru-crunch",
     "week_label": null,
-    "weeks": [],
+    "weeks": [
+      "May 11, 2026"
+    ],
     "category": null,
     "ingredients": [],
     "nutrition": {},
@@ -2827,7 +2830,9 @@
     "title": "One Pot Cheats Mushroom Lasagne With Beluga Lentils, Creamy Miso Bechamel & Green Kale",
     "source_url": "https://planthood.co.uk/products/one-pot-cheats-mushroom-lasagne-with-creamy-miso-bechamel-shredded-green-kale",
     "week_label": null,
-    "weeks": [],
+    "weeks": [
+      "May 11, 2026"
+    ],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -3200,7 +3205,9 @@
     "title": "Rich & Creamy Tofu Tikka Masala With Blistered Green Beans, Coconut Yoghurt & Fluffy Basmati Rice",
     "source_url": "https://planthood.co.uk/products/rich-creamy-tofu-tikka-masala-with-toasted-flaked-almonds-organic-cultured-soy-yoghurt-basmati-rice",
     "week_label": null,
-    "weeks": [],
+    "weeks": [
+      "May 11, 2026"
+    ],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -3892,9 +3899,7 @@
     "title": "Crispy Chilli Tofu Tossed in Spring Onions & Sesame Seeds, With Sticky Jasmine Rice & Seasonal Greens",
     "source_url": "https://planthood.co.uk/products/sticky-chilli-tofu-with-spring-onions-sesame-seeds-sticky-jasmine-rice-green-kale",
     "week_label": null,
-    "weeks": [
-      "Mar 09, 2026"
-    ],
+    "weeks": [],
     "category": "Feast",
     "ingredients": [],
     "nutrition": {
@@ -4025,7 +4030,6 @@
     "source_url": "https://planthood.co.uk/products/super-green-grain-bowl-with-roasted-squash-crispy-chickpeas-creamy-garlic-tahini-pomegranate-seeds",
     "week_label": null,
     "weeks": [
-      "Mar 09, 2026",
       "Apr 27, 2026"
     ],
     "category": null,
@@ -4083,7 +4087,8 @@
     "source_url": "https://planthood.co.uk/products/super-green-spring-orzo-with-peas-asparagus-spinach-creamy-burrata-toasted-almonds",
     "week_label": null,
     "weeks": [
-      "Apr 20, 2026"
+      "Apr 20, 2026",
+      "May 11, 2026"
     ],
     "category": null,
     "ingredients": [],
@@ -4097,9 +4102,7 @@
     "title": "Super Green Orzotto With Peas, Tenderstem Broccoli, Spinach, Creamy Cashew 'Labneh' & Toasted Almonds",
     "source_url": "https://planthood.co.uk/products/super-green-spring-orzo-with-peas-tenderstem-broccoli-spinach-creamy-burrata-toasted-almonds",
     "week_label": null,
-    "weeks": [
-      "Mar 09, 2026"
-    ],
+    "weeks": [],
     "category": "Feast",
     "ingredients": [],
     "nutrition": {
@@ -4310,7 +4313,6 @@
     "source_url": "https://planthood.co.uk/products/thai-red-curry-hispi-cabbage-with-black-lentils-lime-yoghurt-toasted-peanuts-fresh-coriander-fluffy-rice",
     "week_label": null,
     "weeks": [
-      "Mar 09, 2026",
       "Apr 27, 2026"
     ],
     "category": null,
@@ -4389,7 +4391,6 @@
     "source_url": "https://planthood.co.uk/products/three-bean-chilli-enchiladas-topped-with-cashew-cheese-sauce-a-zingy-cherry-tomato-salsa",
     "week_label": null,
     "weeks": [
-      "Mar 09, 2026",
       "Apr 27, 2026"
     ],
     "category": null,
@@ -4411,9 +4412,7 @@
     "title": "Tofu Satay Skewer Bowl With Zingy Smacked Cucumbers, Pink Radish, Sushi Rice & Sesame Peanut Garnish",
     "source_url": "https://planthood.co.uk/products/tofu-satay-skewer-bowl-with-zingy-smacked-cucumbers-pink-radish-sushi-rice-sesame-peanut-garnish",
     "week_label": null,
-    "weeks": [
-      "Mar 09, 2026"
-    ],
+    "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {},
@@ -4857,9 +4856,7 @@
     "title": "Burnt Lemon & Mustard Butter Beans With Regenerative Spelt Conchigliette, Confit Cherry Tomatoes, Cavolo Nero & Dill",
     "source_url": "https://planthood.co.uk/products/burnt-lemon-mustard-butter-beans-spelt-coonchiglietti",
     "week_label": null,
-    "weeks": [
-      "Mar 09, 2026"
-    ],
+    "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -5387,7 +5384,8 @@
     "source_url": "https://planthood.co.uk/products/black-bean-frijoles-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice",
     "week_label": null,
     "weeks": [
-      "Mar 23, 2026"
+      "Mar 23, 2026",
+      "May 11, 2026"
     ],
     "category": null,
     "ingredients": [],
@@ -5691,7 +5689,9 @@
     "title": "Lamachun Flatbread With Meaty Spiced Tofu Crumble, Tomato, Cucumber, Sumac Pickled Onion & Garlic Yoghurt",
     "source_url": "https://planthood.co.uk/products/lamachun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
     "week_label": null,
-    "weeks": [],
+    "weeks": [
+      "May 11, 2026"
+    ],
     "category": null,
     "ingredients": [],
     "nutrition": {
