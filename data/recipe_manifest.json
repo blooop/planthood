@@ -1,7 +1,7 @@
 {
   "total_recipes": 279,
   "failed_recipes": 0,
-  "last_updated": "2026-04-13 09:51:37",
+  "last_updated": "2026-04-20 05:46:08",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -1019,6 +1019,13 @@
       "week_label": null
     },
     {
+      "id": "momo-organic-blood-orange-kombucha-330ml",
+      "title": "Momo Organic Blood Orange Kombucha 330ml",
+      "url": "https://planthood.co.uk/products/momo-organic-blood-orange-kombucha-330ml",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "momo-organic-elderflower-kombucha-330ml",
       "title": "Momo Organic Elderflower Kombucha 330ml",
       "url": "https://planthood.co.uk/products/momo-organic-elderflower-kombucha-330ml",
@@ -1946,13 +1953,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "momo-organic-blood-orange-kombucha-330ml",
-      "title": "Momo Organic Blood Orange Kombucha 330ml",
-      "url": "https://planthood.co.uk/products/momo-organic-blood-orange-kombucha-330ml",
       "scraped": true,
       "week_label": null
     }

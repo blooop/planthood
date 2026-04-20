@@ -2435,6 +2435,24 @@
     "nutrition": {}
   },
   {
+    "id": "momo-organic-blood-orange-kombucha-330ml",
+    "title": "Momo Organic Blood Orange Kombucha 330ml",
+    "source_url": "https://planthood.co.uk/products/momo-organic-blood-orange-kombucha-330ml",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "method": "Momo Organic Blood Orange Kombucha 330mlOur favourite kombucha producers, Momo, make the most delicious organic, unpasteurised kombucha. It's steeped with tea in glass jars for a smooth, refreshing finish.Their latest seasonal collaboration with Natoora uses Carmelo’s vibrantly coloured Moro Blood Oranges, bursting with bright citrus acidity and deep berry-like sweetness.Cooking Mode:\nCooking instructionsWhat’s in your boxNutritional infoAll nutritional values are based on a per person scale.Calories19kcalTotal fat0.10gSaturated fat0.10gSalt0.10gTotal carbohydrate2.9gTotal sugar2.9gFibre0.6gProtein0.10gIngredients / AllergensFiltered water, kombucha culture, raw cane sugar, tea, hibiscus, blood orange juice (5%), lderflowerFor allergens, see ingredients highlightedin boldin the ingredients list.",
+    "nutrition": {
+      "calories": 19.0,
+      "protein_g": 0.1,
+      "fat_g": 0.1,
+      "carbs_g": 2.9,
+      "fibre_g": 0.6,
+      "salt_g": 0.1
+    }
+  },
+  {
     "id": "momo-organic-elderflower-kombucha-330ml",
     "title": "Momo Organic Elderflower Kombucha 330ml",
     "source_url": "https://planthood.co.uk/products/momo-organic-elderflower-kombucha-330ml",
@@ -4623,24 +4641,6 @@
       "carbs_g": 107.5,
       "fibre_g": 21.5,
       "salt_g": 2.6
-    }
-  },
-  {
-    "id": "momo-organic-blood-orange-kombucha-330ml",
-    "title": "Momo Organic Blood Orange Kombucha 330ml",
-    "source_url": "https://planthood.co.uk/products/momo-organic-blood-orange-kombucha-330ml",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "method": "Momo Organic Blood Orange Kombucha 330mlOur favourite kombucha producers, Momo, make the most delicious organic, unpasteurised kombucha. It's steeped with tea in glass jars for a smooth, refreshing finish.Their latest seasonal collaboration with Natoora uses Carmelo’s vibrantly coloured Moro Blood Oranges, bursting with bright citrus acidity and deep berry-like sweetness.Cooking Mode:\nCooking instructionsWhat’s in your boxNutritional infoAll nutritional values are based on a per person scale.Calories19kcalTotal fat0.10gSaturated fat0.10gSalt0.10gTotal carbohydrate2.9gTotal sugar2.9gFibre0.6gProtein0.10gIngredients / AllergensFiltered water, kombucha culture, raw cane sugar, tea, hibiscus, blood orange juice (5%), lderflowerFor allergens, see ingredients highlightedin boldin the ingredients list.",
-    "nutrition": {
-      "calories": 19.0,
-      "protein_g": 0.1,
-      "fat_g": 0.1,
-      "carbs_g": 2.9,
-      "fibre_g": 0.6,
-      "salt_g": 0.1
     }
   }
 ]
