@@ -17,7 +17,234 @@
       "fibre_g": 19.4,
       "salt_g": 1.5
     },
-    "steps": []
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Before you start, take out all the ingredients for this recipe (see picture above) and rinse any raw grains, herbs or vegetables.",
+        "label": "Gather ingredients and rinse produce",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Added based on 'Before you start' instructions. Inferred duration."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Take out a saucepan and preheat your oven to 200°C / 180°C fan.",
+        "label": "Take out saucepan and preheat oven",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-4",
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "saucepan",
+          "oven"
+        ],
+        "temperature_c": 180,
+        "notes": "Inferred duration for oven preheating. Oven temperature specified as 200°C / 180°C fan. 'Saucepan' added to equipment."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "pop thetacosonto a baking tray with space in between them and bake for 8 minutes or until crispy, flipping half way.",
+        "label": "Bake tostadas until crispy",
+        "type": "cook",
+        "estimated_duration_minutes": 8,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "baking tray",
+          "oven"
+        ],
+        "temperature_c": 180,
+        "notes": "Flip tostadas half way through baking."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Drain theblackbeans",
+        "label": "Drain black beans",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "colander"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "empty into your saucepan along with thesmoky adobo sauce, place over a medium heat and warm through, stirring occasionally, until piping hot, around 5 minutes. Add a splash of water if it starts to stick at the bottom.",
+        "label": "Warm black beans with adobo sauce",
+        "type": "cook",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "saucepan",
+          "stove"
+        ],
+        "temperature_c": null,
+        "notes": "Warm over medium heat, stirring occasionally, until piping hot. Add a splash of water if it starts to stick."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Roughly mash around half of the beans with a fork and set aside.",
+        "label": "Mash half of the black beans",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "equipment": [
+          "fork",
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Roughly mash around half of the beans with a fork and set aside. Inferred duration."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Finely shred thebabygemby cutting horizontally across the head.",
+        "label": "Finely shred baby gem lettuce",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Cut horizontally across the head. Inferred duration."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "De-stone theavocadoand cut into thin slices flat side down. If you're feeling fancy you could fan the avocado for a more elevated final presentation.",
+        "label": "De-stone and slice avocado",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Cut into thin slices flat side down. Optional fanning technique described. Inferred duration."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Cut thelimeinto wedges.",
+        "label": "Cut lime into wedges",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-8"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration."
+      },
+      {
+        "id": "step-10",
+        "raw_text": "Start with a layer ofblackbeans, then shreddedlettuce, dress the lettuce with a drizzle ofcashewcrema, top with some slices ofavocadoand a final drizzle ofsalsamacha.",
+        "label": "Assemble tostadas with layers",
+        "type": "finish",
+        "estimated_duration_minutes": 4,
+        "requires": [
+          "step-3",
+          "step-6",
+          "step-7",
+          "step-8",
+          "step-9"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Layer black beans, shredded lettuce, cashew crema, avocado slices, and salsa macha. Inferred duration."
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Finish with a squeeze of freshlimejuice, and enjoy!",
+        "label": "Finish with fresh lime juice",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-10"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Inferred duration."
+      }
+    ]
   },
   {
     "id": "afghan-aubergine-borani-banjan-with-saucy-spiced-lentils-garlic-yoghurt-fresh-mint-pillowy-flatbreads",
@@ -37,7 +264,172 @@
       "fibre_g": 16.4,
       "salt_g": 1.4
     },
-    "steps": []
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "aubergine",
+        "label": "Slice aubergine for roasting",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred based on typical vegetable preparation."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Crispy roasted aubergine",
+        "label": "Roast aubergine until crispy",
+        "type": "cook",
+        "estimated_duration_minutes": 20,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "oven",
+          "baking sheet"
+        ],
+        "temperature_c": 200,
+        "notes": "Duration and temperature inferred based on common vegetable roasting practices. 'Crispy' implies a higher temperature and sufficient time."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "red onion, garlic",
+        "label": "Chop red onion and garlic",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred. Ingredients 'red onion, garlic' imply chopping for the sauce."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "rich tomato sauce infused with garlic and spices",
+        "label": "Sauté onion, garlic, and spices",
+        "type": "cook",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [
+          "step-2"
+        ],
+        "equipment": [
+          "saucepan",
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred. Spices (paprika, cumin, coriander, fennel, chilli, cinnamon, allspice) are mentioned for the sauce, typically added after aromatics."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "rich tomato sauce infused with garlic and spices. we've added lentils to the sauce",
+        "label": "Simmer lentils with tomato sauce",
+        "type": "cook",
+        "estimated_duration_minutes": 20,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-2"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred for cooking black lentils and simmering a rich tomato sauce. Ingredients: 'Organic black lentils, tomato, tomato puree, balsamic vinegar, gluten free low sodium soysauce, raw organic agave nectar, sea salt'."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "garlic yoghurt",
+        "label": "Mix yoghurt with garlic and lemon",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "bowl",
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred. Ingredients 'Organic cultured soy yoghurt, lemon, garlic' imply mixing for the garlic yoghurt."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "fresh mint",
+        "label": "Chop fresh mint",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4",
+          "step-5",
+          "step-6"
+        ],
+        "equipment": [
+          "cutting board",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred. Ingredient 'mint' implies chopping for garnish."
+      },
+      {
+        "id": "step-8",
+        "raw_text": "pillowy soft garlic and herb flatbreads",
+        "label": "Warm garlic and herb flatbreads",
+        "type": "cook",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-5"
+        ],
+        "equipment": [
+          "pan",
+          "oven"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred for warming flatbreads. Ingredient 'garlic & herb flatbread'."
+      },
+      {
+        "id": "step-9",
+        "raw_text": "Crispy roasted aubergine sit over a rich tomato sauce... It's all finished with garlic yoghurt, fresh mint and served with our pillowy soft garlic and herb flatbreads",
+        "label": "Assemble and serve Borani Banjan",
+        "type": "finish",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-2",
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-8"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving plates"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred for plating. This step combines all prepared components."
+      }
+    ]
   },
   {
     "id": "aromatic-aubergine-sambal-over-whipped-tamarind-tofu-with-crispy-lentils-toasted-peanuts-coriander",
@@ -56,7 +448,7 @@
     "source_url": "https://planthood.co.uk/products/aromatic-thai-green-curry-soup-with-beluga-lentils-tender-aubergine-sweet-potato-basil-lime",
     "week_label": null,
     "weeks": [
-      "Mar 16, 2026"
+      "May 18, 2026"
     ],
     "category": null,
     "ingredients": [],
@@ -93,9 +485,7 @@
     "title": "Butternut Squash Brothy Beans With Crispy Sprouts & Sage, Hot Agave 'Nduja' Dressing, Toasted Pine Nuts & Pumpkin Seeds",
     "source_url": "https://planthood.co.uk/products/butternut-squash-brothy-beans-with-crispy-sprouts-hot-agave-nduja-oil-toasted-pine-nuts-pumpkin-seeds",
     "week_label": null,
-    "weeks": [
-      "Mar 16, 2026"
-    ],
+    "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -609,7 +999,9 @@
     "title": "Butternut Squash Brothy Beans With Charred Courgette, Crispy Sage, Hot Agave 'Nduja' Dressing, Toasted Pine Nuts & Pumpkin Seeds",
     "source_url": "https://planthood.co.uk/products/butternut-squash-brothy-beans-with-charred-courgette-crispy-sage-hot-agave-nduja-dressing-toasted-pine-nuts-pumpkin-seeds",
     "week_label": null,
-    "weeks": [],
+    "weeks": [
+      "May 18, 2026"
+    ],
     "category": null,
     "ingredients": [],
     "nutrition": {},
@@ -980,7 +1372,9 @@
     "title": "Courgette Gratin With Cashew Cheese Sauce, Creamy Cannellini Beans And Olive & Almond Gremolata",
     "source_url": "https://planthood.co.uk/products/courgette-gratin-with-cashew-cheese-sauce-creamy-cannellini-beans-and-olive-almond-gremolata",
     "week_label": null,
-    "weeks": [],
+    "weeks": [
+      "May 18, 2026"
+    ],
     "category": null,
     "ingredients": [],
     "nutrition": {},
@@ -1333,7 +1727,6 @@
     "source_url": "https://planthood.co.uk/products/crispy-chipotle-pumpkin-black-bean-tacos-with-melted-mozzarella-guacamole-pink-onion-pickles",
     "week_label": null,
     "weeks": [
-      "Mar 16, 2026",
       "May 04, 2026"
     ],
     "category": null,
@@ -1420,7 +1813,9 @@
     "title": "Crispy Korean Oyster Mushroom Burger With Kimchi & Gochujang Mayo On Soft Vegan Brioche",
     "source_url": "https://planthood.co.uk/products/crispy-korean-oyster-mushroom-burger-with-kimchi-gochujang-mayo-on-soft-vegan-brioche",
     "week_label": null,
-    "weeks": [],
+    "weeks": [
+      "May 18, 2026"
+    ],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -1861,7 +2256,8 @@
     "source_url": "https://planthood.co.uk/products/green-shakshuka-with-garden-peas-lentils-whipped-feta-avocado-dukkah-fresh-dill",
     "week_label": null,
     "weeks": [
-      "Mar 30, 2026"
+      "Mar 30, 2026",
+      "May 18, 2026"
     ],
     "category": null,
     "ingredients": [],
@@ -2293,7 +2689,9 @@
     "title": "Kimchi Miso Nourish Bowl With Farro, Charred Purple Sprouting Broccoli & Pak Choi",
     "source_url": "https://planthood.co.uk/products/miso-kimchi-farro-bowl",
     "week_label": null,
-    "weeks": [],
+    "weeks": [
+      "May 18, 2026"
+    ],
     "category": "Nourish",
     "ingredients": [],
     "nutrition": {
@@ -2379,7 +2777,6 @@
     "source_url": "https://planthood.co.uk/products/mushroom-shawarma",
     "week_label": null,
     "weeks": [
-      "Mar 16, 2026",
       "May 04, 2026"
     ],
     "category": null,
@@ -2698,9 +3095,7 @@
     "title": "Red Lentil Pasta Bake With Butter Beans, Tenderstem Broccoli & Cheesy Miso Bechamel",
     "source_url": "https://planthood.co.uk/products/red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel",
     "week_label": null,
-    "weeks": [
-      "Mar 16, 2026"
-    ],
+    "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -2997,7 +3392,6 @@
     "source_url": "https://planthood.co.uk/products/saucy-sesame-miso-noodles-with-minted-sugar-snaps-edamame-cashews-radish-chilli-crunch-cucumber-salad",
     "week_label": null,
     "weeks": [
-      "Mar 16, 2026",
       "May 04, 2026"
     ],
     "category": "Nourish",
@@ -3275,9 +3669,7 @@
     "title": "Spicy Turmeric & Lemongrass Laksa With Rice Noodles, Crispy Oyster Mushrooms & Aubergine",
     "source_url": "https://planthood.co.uk/products/spicy-turmeric-lemongrass-laksa",
     "week_label": null,
-    "weeks": [
-      "Mar 16, 2026"
-    ],
+    "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -3324,9 +3716,7 @@
     "title": "Butternut Squash & White Bean Gratin In Rich & Creamy Cashew, White Wine & Mustard Sauce With Cavolo Nero",
     "source_url": "https://planthood.co.uk/products/squash-gratin",
     "week_label": null,
-    "weeks": [
-      "Mar 16, 2026"
-    ],
+    "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -3365,7 +3755,8 @@
     "source_url": "https://planthood.co.uk/products/sri-lankan-daal-with-curry-spiced-oyster-mushroom-skewers-beetroot-raita-over-fluffy-basmati-rice",
     "week_label": null,
     "weeks": [
-      "Mar 30, 2026"
+      "Mar 30, 2026",
+      "May 18, 2026"
     ],
     "category": null,
     "ingredients": [],
@@ -3562,7 +3953,6 @@
     "source_url": "https://planthood.co.uk/products/super-green-saag-daal-with-crispy-curry-spiced-tofu-coconut-yoghurt-pink-pickled-onion-basmati-rice",
     "week_label": null,
     "weeks": [
-      "Mar 16, 2026",
       "May 04, 2026"
     ],
     "category": null,
@@ -4705,9 +5095,7 @@
     "title": "Smoky Whole Roasted Aubergine Over Creamy Whipped Tahini With Hot Agave Harissa, Fresh Parsley & Flatbreads",
     "source_url": "https://planthood.co.uk/products/smoky-whole-roasted-aubergine-over-creamy-whipped-tahini-with-hot-agave-harissa-fresh-parsley-flatbreads",
     "week_label": null,
-    "weeks": [
-      "Mar 16, 2026"
-    ],
+    "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -4843,7 +5231,8 @@
     "source_url": "https://planthood.co.uk/products/super-green-wholewheat-rigatoni-with-wild-garlic-cavolo-nero-sauce-creamy-burrata-chilli-pine-nut-crumb",
     "week_label": null,
     "weeks": [
-      "Apr 20, 2026"
+      "Apr 20, 2026",
+      "May 18, 2026"
     ],
     "category": null,
     "ingredients": [],
@@ -4863,7 +5252,8 @@
     "source_url": "https://planthood.co.uk/products/black-bean-smash-burger-tacos",
     "week_label": null,
     "weeks": [
-      "Mar 30, 2026"
+      "Mar 30, 2026",
+      "May 18, 2026"
     ],
     "category": null,
     "ingredients": [],
@@ -5003,7 +5393,9 @@
     "title": "Crispy Rice Salad With Smacked Cucumber, Avocado, Edamame, Black Beans, Toasted Cashews, Chilli & Satay Dressing",
     "source_url": "https://planthood.co.uk/products/crispy-rice-salad-with-smacked-cucumber-avocado-edamame-black-beans-toasted-cashews-chilli-satay-dressing",
     "week_label": null,
-    "weeks": [],
+    "weeks": [
+      "May 18, 2026"
+    ],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -5105,6 +5497,52 @@
       "carbs_g": 2.9,
       "fibre_g": 0.6,
       "salt_g": 0.1
+    },
+    "steps": []
+  },
+  {
+    "id": "crispy-chilli-tofu-with-toasted-cashews-short-grain-brown-rice-sesame-hispi-pear-slaw-cucumber-pickle",
+    "title": "Crispy Chilli Tofu With Toasted Cashews, Short Grain Brown Rice, Sesame Hispi & Pear Slaw & Cucumber Pickle",
+    "source_url": "https://planthood.co.uk/products/crispy-chilli-tofu-with-toasted-cashews-short-grain-brown-rice-sesame-hispi-pear-slaw-cucumber-pickle",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {},
+    "steps": []
+  },
+  {
+    "id": "crispy-korean-pancakes-with-mixed-vegetables-dipping-sauce-smacked-cucumber-kimchi-brown-rice",
+    "title": "Crispy Korean Pancakes With Mixed Vegetables, Dipping Sauce, Smacked Cucumber & Kimchi Brown Rice",
+    "source_url": "https://planthood.co.uk/products/crispy-korean-pancakes-with-mixed-vegetables-dipping-sauce-smacked-cucumber-kimchi-brown-rice",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 707.0,
+      "protein_g": 23.1,
+      "fat_g": 13.4,
+      "carbs_g": 130.5,
+      "fibre_g": 17.2,
+      "salt_g": 4.0
+    },
+    "steps": []
+  },
+  {
+    "id": "thai-red-curry-brothy-rice-bowl-with-red-pepper-pak-choi-tofu-charred-lime-coriander",
+    "title": "Brothy Thai Red Curry Bowl With Red Pepper, Pak Choi, Tofu, Charred Lime & Brown Rice",
+    "source_url": "https://planthood.co.uk/products/thai-red-curry-brothy-rice-bowl-with-red-pepper-pak-choi-tofu-charred-lime-coriander",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 792.0,
+      "fat_g": 27.7,
+      "carbs_g": 99.6,
+      "fibre_g": 7.42,
+      "salt_g": 2.3
     },
     "steps": []
   }

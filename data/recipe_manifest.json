@@ -1,7 +1,7 @@
 {
   "total_recipes": 282,
   "failed_recipes": 0,
-  "last_updated": "2026-04-27 06:07:04",
+  "last_updated": "2026-04-27 10:11:04",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -459,6 +459,13 @@
       "week_label": null
     },
     {
+      "id": "crispy-chilli-tofu-with-toasted-cashews-short-grain-brown-rice-sesame-hispi-pear-slaw-cucumber-pickle",
+      "title": "Crispy Chilli Tofu With Toasted Cashews, Short Grain Brown Rice, Sesame Hispi & Pear Slaw & Cucumber Pickle",
+      "url": "https://planthood.co.uk/products/crispy-chilli-tofu-with-toasted-cashews-short-grain-brown-rice-sesame-hispi-pear-slaw-cucumber-pickle",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "crispy-chipotle-pumpkin-black-bean-tacos-with-melted-mozzarella-guacamole-pink-onion-pickles",
       "title": "Crispy Chipotle Pumpkin & Black Bean Tacos With Melted 'Mozzarella', Guacamole & Pink Onion Pickles",
       "url": "https://planthood.co.uk/products/crispy-chipotle-pumpkin-black-bean-tacos-with-melted-mozzarella-guacamole-pink-onion-pickles",
@@ -497,6 +504,13 @@
       "id": "crispy-korean-oyster-mushroom-burger-with-kimchi-gochujang-mayo-on-soft-vegan-brioche",
       "title": "Crispy Korean Oyster Mushroom Burger With Kimchi & Gochujang Mayo On Soft Vegan Brioche",
       "url": "https://planthood.co.uk/products/crispy-korean-oyster-mushroom-burger-with-kimchi-gochujang-mayo-on-soft-vegan-brioche",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "crispy-korean-pancakes-with-mixed-vegetables-dipping-sauce-smacked-cucumber-kimchi-brown-rice",
+      "title": "Crispy Korean Pancakes With Mixed Vegetables, Dipping Sauce, Smacked Cucumber & Kimchi Brown Rice",
+      "url": "https://planthood.co.uk/products/crispy-korean-pancakes-with-mixed-vegetables-dipping-sauce-smacked-cucumber-kimchi-brown-rice",
       "scraped": true,
       "week_label": null
     },
@@ -1796,6 +1810,13 @@
       "week_label": null
     },
     {
+      "id": "thai-red-curry-brothy-rice-bowl-with-red-pepper-pak-choi-tofu-charred-lime-coriander",
+      "title": "Brothy Thai Red Curry Bowl With Red Pepper, Pak Choi, Tofu, Charred Lime & Brown Rice",
+      "url": "https://planthood.co.uk/products/thai-red-curry-brothy-rice-bowl-with-red-pepper-pak-choi-tofu-charred-lime-coriander",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "thai-red-curry-hispi-cabbage-with-black-lentils-lime-yoghurt-toasted-peanuts-fresh-coriander-fluffy-rice",
       "title": "Thai Red Curry Hispi Cabbage With Black Lentils, Lime Yoghurt, Toasted Peanuts, Fresh Coriander & Fluffy Rice",
       "url": "https://planthood.co.uk/products/thai-red-curry-hispi-cabbage-with-black-lentils-lime-yoghurt-toasted-peanuts-fresh-coriander-fluffy-rice",
@@ -1953,27 +1974,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "crispy-chilli-tofu-with-toasted-cashews-short-grain-brown-rice-sesame-hispi-pear-slaw-cucumber-pickle",
-      "title": "Crispy Chilli Tofu With Toasted Cashews, Short Grain Brown Rice, Sesame Hispi & Pear Slaw & Cucumber Pickle",
-      "url": "https://planthood.co.uk/products/crispy-chilli-tofu-with-toasted-cashews-short-grain-brown-rice-sesame-hispi-pear-slaw-cucumber-pickle",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "crispy-korean-pancakes-with-mixed-vegetables-dipping-sauce-smacked-cucumber-kimchi-brown-rice",
-      "title": "Crispy Korean Pancakes With Mixed Vegetables, Dipping Sauce, Smacked Cucumber & Kimchi Brown Rice",
-      "url": "https://planthood.co.uk/products/crispy-korean-pancakes-with-mixed-vegetables-dipping-sauce-smacked-cucumber-kimchi-brown-rice",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "thai-red-curry-brothy-rice-bowl-with-red-pepper-pak-choi-tofu-charred-lime-coriander",
-      "title": "Brothy Thai Red Curry Bowl With Red Pepper, Pak Choi, Tofu, Charred Lime & Brown Rice",
-      "url": "https://planthood.co.uk/products/thai-red-curry-brothy-rice-bowl-with-red-pepper-pak-choi-tofu-charred-lime-coriander",
       "scraped": true,
       "week_label": null
     }
