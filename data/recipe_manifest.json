@@ -1,7 +1,7 @@
 {
-  "total_recipes": 279,
+  "total_recipes": 282,
   "failed_recipes": 0,
-  "last_updated": "2026-04-20 09:55:07",
+  "last_updated": "2026-04-27 06:07:04",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -1953,6 +1953,27 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "crispy-chilli-tofu-with-toasted-cashews-short-grain-brown-rice-sesame-hispi-pear-slaw-cucumber-pickle",
+      "title": "Crispy Chilli Tofu With Toasted Cashews, Short Grain Brown Rice, Sesame Hispi & Pear Slaw & Cucumber Pickle",
+      "url": "https://planthood.co.uk/products/crispy-chilli-tofu-with-toasted-cashews-short-grain-brown-rice-sesame-hispi-pear-slaw-cucumber-pickle",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "crispy-korean-pancakes-with-mixed-vegetables-dipping-sauce-smacked-cucumber-kimchi-brown-rice",
+      "title": "Crispy Korean Pancakes With Mixed Vegetables, Dipping Sauce, Smacked Cucumber & Kimchi Brown Rice",
+      "url": "https://planthood.co.uk/products/crispy-korean-pancakes-with-mixed-vegetables-dipping-sauce-smacked-cucumber-kimchi-brown-rice",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "thai-red-curry-brothy-rice-bowl-with-red-pepper-pak-choi-tofu-charred-lime-coriander",
+      "title": "Brothy Thai Red Curry Bowl With Red Pepper, Pak Choi, Tofu, Charred Lime & Brown Rice",
+      "url": "https://planthood.co.uk/products/thai-red-curry-brothy-rice-bowl-with-red-pepper-pak-choi-tofu-charred-lime-coriander",
       "scraped": true,
       "week_label": null
     }
