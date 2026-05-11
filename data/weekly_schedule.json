@@ -1,16 +1,4 @@
 {
-  "Mar 30, 2026": [
-    "https://planthood.co.uk/products/black-bean-smash-burger-tacos",
-    "https://planthood.co.uk/products/butternut-squash-nduja-lasagne-with-tender-lentils-creamy-miso-spinach-bechamel",
-    "https://planthood.co.uk/products/butternut-squash-spelt-risotto-with-crispy-sage-smokey-toasted-pine-nuts",
-    "https://planthood.co.uk/products/chimichurri-cauliflower-steaks",
-    "https://planthood.co.uk/products/crispy-lebanese-tofu-nourish-bowl-with-quinoa-tabbouleh-green-tahini-sauce-pink-pickled-onion",
-    "https://planthood.co.uk/products/crispy-tofu-parm-over-creamy-tomato-beans-with-garlic-basil-gremolata-roasted-tenderstem-broccoli-cherry-tomatoes",
-    "https://planthood.co.uk/products/green-shakshuka-with-garden-peas-lentils-whipped-feta-avocado-dukkah-fresh-dill",
-    "https://planthood.co.uk/products/sri-lankan-daal-with-curry-spiced-oyster-mushroom-skewers-beetroot-raita-over-fluffy-basmati-rice",
-    "https://planthood.co.uk/products/sticky-sesame-tofu-rice-bowl-with-kimchi-mayo-pickled-cabbage-carrot-edamame-sesame-seeds",
-    "https://planthood.co.uk/products/thai-red-curry-with-rice-noodles-red-pepper-chestnut-mushrooom-courgette-lime-coriander"
-  ],
   "Apr 06, 2026": [
     "https://planthood.co.uk/products/adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
     "https://planthood.co.uk/products/afghan-aubergine-borani-banjan-with-saucy-spiced-lentils-garlic-yoghurt-fresh-mint-pillowy-flatbreads",
@@ -106,5 +94,17 @@
     "https://planthood.co.uk/products/sticky-sesame-tofu-rice-bowl-with-kimchi-mayo-pickled-cabbage-carrot-edamame-sesame-seeds",
     "https://planthood.co.uk/products/thai-red-curry-brothy-rice-bowl-with-red-pepper-pak-choi-tofu-charred-lime-coriander",
     "https://planthood.co.uk/products/wild-garlic-cheats-lasagne-with-courgette-butter-beans-miso-bechamel-toasted-nuts-seeds"
+  ],
+  "Jun 01, 2026": [
+    "https://planthood.co.uk/products/caprese-salad-with-creamy-vegan-burrata-hazelnut-pesto-rustic-croutons-tender-butterbeans",
+    "https://planthood.co.uk/products/chimichurri-cauliflower-steaks",
+    "https://planthood.co.uk/products/creamy-panang-curry-with-tofu-red-pepper-baby-spinach-sticky-jasmine-rice-crushed-peanuts-lime",
+    "https://planthood.co.uk/products/crispy-chilli-tofu-with-toasted-cashews-short-grain-brown-rice-sesame-hispi-pear-slaw-cucumber-pickle",
+    "https://planthood.co.uk/products/high-protein-creamy-mushroom-bucatini-with-wilted-cavolo-nero-crispy-tempeh-pancetta",
+    "https://planthood.co.uk/products/smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread",
+    "https://planthood.co.uk/products/sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
+    "https://planthood.co.uk/products/super-green-spring-minestrone-with-asparagus-regenerative-spelt-conchiglietti-asparagus-basil-pesto",
+    "https://planthood.co.uk/products/super-green-udon-noodles-with-tenderstem-broccoli-crispy-sesame-crusted-tofu-rayu-chilli-oil",
+    "https://planthood.co.uk/products/sweet-potato-shepherds-pie-with-rich-mushroom-lentil-red-wine-ragu-wilted-green-kale"
   ]
 }

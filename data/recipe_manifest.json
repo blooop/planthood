@@ -1,7 +1,7 @@
 {
   "total_recipes": 283,
   "failed_recipes": 0,
-  "last_updated": "2026-05-11 06:45:19",
+  "last_updated": "2026-05-11 10:57:39",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -945,6 +945,13 @@
       "id": "lemon-poppyseed-protein-fibre-bar-100-raw-whole-foods-copy",
       "title": "Lemon & Poppyseed Snack Bar - 100% Raw Whole Foods",
       "url": "https://planthood.co.uk/products/lemon-poppyseed-protein-fibre-bar-100-raw-whole-foods-copy",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "lions-mane-steak-with-chimichurri-crispy-baby-potatoes-watercress-bernaise-sauce",
+      "title": "Lion's Mane Steak With Chimichurri, Crispy Baby Potatoes, Watercress & Bernaise Sauce",
+      "url": "https://planthood.co.uk/products/lions-mane-steak-with-chimichurri-crispy-baby-potatoes-watercress-bernaise-sauce",
       "scraped": true,
       "week_label": null
     },
@@ -1974,13 +1981,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "lions-mane-steak-with-chimichurri-crispy-baby-potatoes-watercress-bernaise-sauce",
-      "title": "Lion's Mane Steak With Chimichurri, Crispy Baby Potatoes, Watercress & Bernaise Sauce",
-      "url": "https://planthood.co.uk/products/lions-mane-steak-with-chimichurri-crispy-baby-potatoes-watercress-bernaise-sauce",
       "scraped": true,
       "week_label": null
     }
