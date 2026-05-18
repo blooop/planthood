@@ -1,7 +1,7 @@
 {
-  "total_recipes": 283,
+  "total_recipes": 284,
   "failed_recipes": 0,
-  "last_updated": "2026-05-11 10:57:39",
+  "last_updated": "2026-05-18 07:01:10",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -1981,6 +1981,13 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "smoky-spanish-beans-in-roasted-pepper-sun-dried-tomato-sauce-organic-yoghurt-avocado-salsa-quinoa",
+      "title": "Smoky Spanish Beans In Roasted Pepper & Sun Dried Tomato Sauce, Organic Yoghurt, Avocado Salsa & Quinoa",
+      "url": "https://planthood.co.uk/products/smoky-spanish-beans-in-roasted-pepper-sun-dried-tomato-sauce-organic-yoghurt-avocado-salsa-quinoa",
       "scraped": true,
       "week_label": null
     }
