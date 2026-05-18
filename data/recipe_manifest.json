@@ -1,7 +1,7 @@
 {
   "total_recipes": 284,
   "failed_recipes": 0,
-  "last_updated": "2026-05-18 07:01:10",
+  "last_updated": "2026-05-18 11:41:14",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -1495,6 +1495,13 @@
       "week_label": null
     },
     {
+      "id": "smoky-spanish-beans-in-roasted-pepper-sun-dried-tomato-sauce-organic-yoghurt-avocado-salsa-quinoa",
+      "title": "Smoky Spanish Beans In Roasted Pepper & Sun Dried Tomato Sauce, Organic Yoghurt, Avocado Salsa & Quinoa",
+      "url": "https://planthood.co.uk/products/smoky-spanish-beans-in-roasted-pepper-sun-dried-tomato-sauce-organic-yoghurt-avocado-salsa-quinoa",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "smoky-whole-roasted-aubergine-over-creamy-whipped-tahini-with-hot-agave-harissa-fresh-parsley-flatbreads",
       "title": "Smoky Whole Roasted Aubergine Over Creamy Whipped Tahini With Hot Agave Harissa, Fresh Parsley & Flatbreads",
       "url": "https://planthood.co.uk/products/smoky-whole-roasted-aubergine-over-creamy-whipped-tahini-with-hot-agave-harissa-fresh-parsley-flatbreads",
@@ -1981,13 +1988,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "smoky-spanish-beans-in-roasted-pepper-sun-dried-tomato-sauce-organic-yoghurt-avocado-salsa-quinoa",
-      "title": "Smoky Spanish Beans In Roasted Pepper & Sun Dried Tomato Sauce, Organic Yoghurt, Avocado Salsa & Quinoa",
-      "url": "https://planthood.co.uk/products/smoky-spanish-beans-in-roasted-pepper-sun-dried-tomato-sauce-organic-yoghurt-avocado-salsa-quinoa",
       "scraped": true,
       "week_label": null
     }
