@@ -1,7 +1,7 @@
 {
-  "total_recipes": 79,
-  "failed_recipes": 0,
-  "last_updated": "2026-05-25 07:19:59",
+  "total_recipes": 75,
+  "failed_recipes": 6,
+  "last_updated": "2026-05-25 11:50:47",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -151,13 +151,6 @@
       "week_label": null
     },
     {
-      "id": "crispy-cauliflower-gnocchi-with-puttanesca-sauce-crispy-kale-fresh-parsley",
-      "title": "Crispy Cauliflower Gnocchi With Puttanesca Sauce, Crispy Kale & Fresh Parsley",
-      "url": "https://planthood.co.uk/products/crispy-cauliflower-gnocchi-with-puttanesca-sauce-crispy-kale-fresh-parsley",
-      "scraped": true,
-      "week_label": null
-    },
-    {
       "id": "crispy-chilli-tofu-with-toasted-cashews-short-grain-brown-rice-sesame-hispi-pear-slaw-cucumber-pickle",
       "title": "Crispy Chilli Tofu With Toasted Cashews, Short Grain Brown Rice, Sesame Hispi & Pear Slaw & Cucumber Pickle",
       "url": "https://planthood.co.uk/products/crispy-chilli-tofu-with-toasted-cashews-short-grain-brown-rice-sesame-hispi-pear-slaw-cucumber-pickle",
@@ -189,13 +182,6 @@
       "id": "crispy-rice-salad-with-smacked-cucumber-avocado-edamame-black-beans-toasted-cashews-chilli-satay-dressing",
       "title": "Crispy Rice Salad With Smacked Cucumber, Avocado, Edamame, Black Beans, Toasted Cashews, Chilli & Satay Dressing",
       "url": "https://planthood.co.uk/products/crispy-rice-salad-with-smacked-cucumber-avocado-edamame-black-beans-toasted-cashews-chilli-satay-dressing",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "crispy-sweet-potato-black-bean-taquitos-with-cashew-feta-crema-salsa-fresca",
-      "title": "Crispy Sweet Potato & Black Bean Taquitos With Cashew 'Feta' Crema & Salsa Fresca",
-      "url": "https://planthood.co.uk/products/crispy-sweet-potato-black-bean-taquitos-with-cashew-feta-crema-salsa-fresca",
       "scraped": true,
       "week_label": null
     },
@@ -238,20 +224,6 @@
       "id": "jerusalem-artichoke-chaat-masala-with-green-chilli-dressing-tamarind-yoghurt-crispy-sev",
       "title": "Chaat Masala With Crispy Baby Potatoes, Tamarind Yoghurt, Minted Chilli Dressing & Crispy Sev",
       "url": "https://planthood.co.uk/products/jerusalem-artichoke-chaat-masala-with-green-chilli-dressing-tamarind-yoghurt-crispy-sev",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "kale-caesar",
-      "title": "White Bean Kale Caesar Salad With Ciabatta Croutons, Caper Caesar Dressing & Happy Hormone Seed Sprinkle",
-      "url": "https://planthood.co.uk/products/kale-caesar",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "kimchi-pancakes-with-sticky-soy-portobellos-gochujang-mayo-pickled-cucumbers",
-      "title": "Kimchi Pancakes With Sticky Soy Portobellos, Gochujang Mayo & Pickled Cucumbers",
-      "url": "https://planthood.co.uk/products/kimchi-pancakes-with-sticky-soy-portobellos-gochujang-mayo-pickled-cucumbers",
       "scraped": true,
       "week_label": null
     },
@@ -557,5 +529,30 @@
       "week_label": null
     }
   ],
-  "failed_urls": []
+  "failed_urls": [
+    {
+      "url": "https://planthood.co.uk/products/nourishing-sushi-bowl-with-coconut-sesame-crusted-tofu-gochujang-peanut-sauce",
+      "error": "Failed to fetch page"
+    },
+    {
+      "url": "https://planthood.co.uk/products/porcini-lentil-ragu-over-wholewheat-rigatoni-with-savoy-cabbage-garden-peas",
+      "error": "Failed to fetch page"
+    },
+    {
+      "url": "https://planthood.co.uk/products/sichuanese-mapo-tofu",
+      "error": "Failed to fetch page"
+    },
+    {
+      "url": "https://planthood.co.uk/products/smoky-spanish-beans-in-roasted-pepper-sun-dried-tomato-sauce-organic-yoghurt-avocado-salsa-quinoa",
+      "error": "Failed to fetch page"
+    },
+    {
+      "url": "https://planthood.co.uk/products/sticky-chilli-tofu-with-spring-onions-sesame-seeds-sticky-jasmine-rice-green-kale",
+      "error": "Failed to fetch page"
+    },
+    {
+      "url": "https://planthood.co.uk/products/tahini-miso-ramen-with-crispy-chilli-tempeh-pak-choi-gluten-free-brown-rice-noodles",
+      "error": "Failed to fetch page"
+    }
+  ]
 }
