@@ -1,7 +1,7 @@
 {
-  "total_recipes": 285,
+  "total_recipes": 288,
   "failed_recipes": 0,
-  "last_updated": "2026-06-01 13:32:05",
+  "last_updated": "2026-06-08 08:17:13",
   "recipes": [
     {
       "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -1995,6 +1995,27 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
+      "title": "3 x Chocolate Hazelnut Snack Bar Bundle - 100% Raw Whole Foods",
+      "url": "https://planthood.co.uk/products/3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "hot-honey-labneh-mezze-with-smoky-grilled-aubergine-roasted-cherry-tomatoes-crispy-chickpeas-freshly-baked-garlic-flatbread",
+      "title": "Hot 'Honey' Labneh Mezze With Smoky Grilled Aubergine, Roasted Cherry Tomatoes, Crispy Chickpeas & Freshly Baked Garlic Flatbread",
+      "url": "https://planthood.co.uk/products/hot-honey-labneh-mezze-with-smoky-grilled-aubergine-roasted-cherry-tomatoes-crispy-chickpeas-freshly-baked-garlic-flatbread",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "smoky-spanish-beans-in-roasted-pepper-sun-dried-tomato-sauce-organic-yoghurt-avocado-salsa-quinoa-copy",
+      "title": "Lemon & Ginger Detox Ramen With Smoked Tofu, Udon Noodles, Cavolo Nero, Carrot & Superseed Chilli Crunch",
+      "url": "https://planthood.co.uk/products/smoky-spanish-beans-in-roasted-pepper-sun-dried-tomato-sauce-organic-yoghurt-avocado-salsa-quinoa-copy",
       "scraped": true,
       "week_label": null
     }
