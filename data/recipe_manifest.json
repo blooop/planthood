@@ -1,7 +1,7 @@
 {
   "total_recipes": 290,
   "failed_recipes": 0,
-  "last_updated": "2026-06-15 09:29:32",
+  "last_updated": "2026-06-15 13:51:06",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -564,6 +564,13 @@
       "week_label": null
     },
     {
+      "id": "crispy-tofu-katsu-curry-with-sticky-rice-seasonal-mixed-leaves-in-sweet-miso-dressing-copy",
+      "title": "Crispy Tofu Katsu Nuggets With Brown Rice & Seasonal Mixed Leaves In Sweet Miso Dressing",
+      "url": "https://planthood.co.uk/products/crispy-tofu-katsu-curry-with-sticky-rice-seasonal-mixed-leaves-in-sweet-miso-dressing-copy",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "crispy-tofu-parm-over-creamy-tomato-beans-with-garlic-basil-gremolata-roasted-tenderstem-broccoli-cherry-tomatoes",
       "title": "Crispy Tofu 'Parm' Over Creamy Tomato Beans With Garlic Basil Gremolata, Roasted Tenderstem Broccoli & Cherry Tomatoes",
       "url": "https://planthood.co.uk/products/crispy-tofu-parm-over-creamy-tomato-beans-with-garlic-basil-gremolata-roasted-tenderstem-broccoli-cherry-tomatoes",
@@ -980,6 +987,13 @@
       "id": "mango-cauliflower-curry-with-cashews-garden-peas-coriander-and-fluffy-basmati-rice",
       "title": "Mango Cauliflower Curry With Cashews, Garden Peas, Coriander and Fluffy Basmati Rice",
       "url": "https://planthood.co.uk/products/mango-cauliflower-curry-with-cashews-garden-peas-coriander-and-fluffy-basmati-rice",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "mango-crispy-rice-salad-with-smacked-cucumber-avocado-black-beans-toasted-cashews-tahini-chilli-crunch-dressing",
+      "title": "Mango Crispy Rice Salad With Smacked Cucumber, Avocado, Black Beans, Toasted Cashews, Tahini & Chilli Crunch Dressing",
+      "url": "https://planthood.co.uk/products/mango-crispy-rice-salad-with-smacked-cucumber-avocado-black-beans-toasted-cashews-tahini-chilli-crunch-dressing",
       "scraped": true,
       "week_label": null
     },
@@ -2016,20 +2030,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "crispy-tofu-katsu-curry-with-sticky-rice-seasonal-mixed-leaves-in-sweet-miso-dressing-copy",
-      "title": "Crispy Tofu Katsu Nuggets With Brown Rice & Seasonal Mixed Leaves In Sweet Miso Dressing",
-      "url": "https://planthood.co.uk/products/crispy-tofu-katsu-curry-with-sticky-rice-seasonal-mixed-leaves-in-sweet-miso-dressing-copy",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "mango-crispy-rice-salad-with-smacked-cucumber-avocado-black-beans-toasted-cashews-tahini-chilli-crunch-dressing",
-      "title": "Mango Crispy Rice Salad With Smacked Cucumber, Avocado, Black Beans, Toasted Cashews, Tahini & Chilli Crunch Dressing",
-      "url": "https://planthood.co.uk/products/mango-crispy-rice-salad-with-smacked-cucumber-avocado-black-beans-toasted-cashews-tahini-chilli-crunch-dressing",
       "scraped": true,
       "week_label": null
     }

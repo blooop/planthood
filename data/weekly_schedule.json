@@ -1,16 +1,4 @@
 {
-  "May 04, 2026": [
-    "https://planthood.co.uk/products/charred-courgettes-with-romesco-chickpeas-giant-cous-cous-tahini-sauce-mint-pesto-toasted-almonds",
-    "https://planthood.co.uk/products/creamy-kimchi-macaroni-with-roasted-broccoli-garlic-panko-breadcrumbs",
-    "https://planthood.co.uk/products/crispy-chipotle-pumpkin-black-bean-tacos-with-melted-mozzarella-guacamole-pink-onion-pickles",
-    "https://planthood.co.uk/products/jerusalem-artichoke-chaat-masala-with-green-chilli-dressing-tamarind-yoghurt-crispy-sev",
-    "https://planthood.co.uk/products/mixed-vegetable-paella-with-caramelised-fennel-courgette-red-pepper-garden-peas-fresh-parsley",
-    "https://planthood.co.uk/products/mushroom-shawarma",
-    "https://planthood.co.uk/products/saucy-sesame-miso-noodles-with-minted-sugar-snaps-edamame-cashews-radish-chilli-crunch-cucumber-salad",
-    "https://planthood.co.uk/products/super-green-saag-daal-with-crispy-curry-spiced-tofu-coconut-yoghurt-pink-pickled-onion-basmati-rice",
-    "https://planthood.co.uk/products/super-green-spring-risotto-with-peas-courgettes-mint-toasted-hazelnuts",
-    "https://planthood.co.uk/products/sweet-spicy-jerk-tofu-over-coconut-rice-with-fresh-mango-avocado-cucumber-salad"
-  ],
   "May 11, 2026": [
     "https://planthood.co.uk/products/black-bean-frijoles-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice",
     "https://planthood.co.uk/products/charred-hispi-cabbage-over-golden-daal-with-organic-soy-yoghurt-tamarind-date-chutney-toasted-almonds-coriander",
@@ -106,5 +94,17 @@
     "https://planthood.co.uk/products/rich-cherry-tomato-orecchiette-with-borlotti-creamy-burrata-crispy-garlic-fresh-basil",
     "https://planthood.co.uk/products/smoky-spanish-beans-in-roasted-pepper-sun-dried-tomato-sauce-organic-yoghurt-avocado-salsa-quinoa-copy",
     "https://planthood.co.uk/products/super-green-spring-risotto-with-peas-courgettes-mint-toasted-hazelnuts"
+  ],
+  "Jul 06, 2026": [
+    "https://planthood.co.uk/products/black-bean-smash-burger-tacos",
+    "https://planthood.co.uk/products/courgette-gratin-with-cashew-cheese-sauce-creamy-cannellini-beans-and-olive-almond-gremolata",
+    "https://planthood.co.uk/products/creamy-tomato-daal",
+    "https://planthood.co.uk/products/curried-squash-udon-noodle-soup-with-crispy-coconut-chickpeas-green-kale",
+    "https://planthood.co.uk/products/glazed-tofu-with-chilli-garlic-dressing-spring-onion-crispy-shallots-charred-broccoli-edamame-sticky-rice",
+    "https://planthood.co.uk/products/hot-honey-labneh-mezze-with-smoky-grilled-aubergine-roasted-cherry-tomatoes-crispy-chickpeas-freshly-baked-garlic-flatbread",
+    "https://planthood.co.uk/products/jerusalem-artichoke-chaat-masala-with-green-chilli-dressing-tamarind-yoghurt-crispy-sev",
+    "https://planthood.co.uk/products/mushroom-shawarma",
+    "https://planthood.co.uk/products/spicy-dan-dan-noodles",
+    "https://planthood.co.uk/products/super-green-wholewheat-rigatoni-with-wild-garlic-cavolo-nero-sauce-creamy-burrata-chilli-pine-nut-crumb"
   ]
 }
