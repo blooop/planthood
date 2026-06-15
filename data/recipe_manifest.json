@@ -1,7 +1,7 @@
 {
-  "total_recipes": 288,
+  "total_recipes": 290,
   "failed_recipes": 0,
-  "last_updated": "2026-06-08 12:25:28",
+  "last_updated": "2026-06-15 09:29:32",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -2016,6 +2016,20 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "crispy-tofu-katsu-curry-with-sticky-rice-seasonal-mixed-leaves-in-sweet-miso-dressing-copy",
+      "title": "Crispy Tofu Katsu Nuggets With Brown Rice & Seasonal Mixed Leaves In Sweet Miso Dressing",
+      "url": "https://planthood.co.uk/products/crispy-tofu-katsu-curry-with-sticky-rice-seasonal-mixed-leaves-in-sweet-miso-dressing-copy",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "mango-crispy-rice-salad-with-smacked-cucumber-avocado-black-beans-toasted-cashews-tahini-chilli-crunch-dressing",
+      "title": "Mango Crispy Rice Salad With Smacked Cucumber, Avocado, Black Beans, Toasted Cashews, Tahini & Chilli Crunch Dressing",
+      "url": "https://planthood.co.uk/products/mango-crispy-rice-salad-with-smacked-cucumber-avocado-black-beans-toasted-cashews-tahini-chilli-crunch-dressing",
       "scraped": true,
       "week_label": null
     }
