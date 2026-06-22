@@ -17,203 +17,7 @@
       "fibre_g": 19.4,
       "salt_g": 1.5
     },
-    "steps": [
-      {
-        "id": "step-1",
-        "raw_text": "take out all the ingredients for this recipe (see picture above) and rinse any raw grains, herbs or vegetables.",
-        "label": "Gather ingredients and rinse produce",
-        "type": "prep",
-        "estimated_duration_minutes": 2,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "Added based on 'Before you start' instructions."
-      },
-      {
-        "id": "step-2",
-        "raw_text": "Take out a saucepan and preheat your oven to 200°C / 180°C fan.",
-        "label": "Take out saucepan and preheat oven",
-        "type": "prep",
-        "estimated_duration_minutes": 12,
-        "requires": [],
-        "can_overlap_with": [
-          "step-4",
-          "step-7",
-          "step-8",
-          "step-9"
-        ],
-        "equipment": [
-          "oven",
-          "saucepan"
-        ],
-        "temperature_c": 180,
-        "notes": "Fan temperature used. Added saucepan as per text."
-      },
-      {
-        "id": "step-3",
-        "raw_text": "pop the tacos onto a baking tray with space in between them and bake for 8 minutes or until crispy, flipping half way.",
-        "label": "Bake tacos until crispy",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
-        "requires": [
-          "step-2"
-        ],
-        "can_overlap_with": [
-          "step-4",
-          "step-5",
-          "step-6",
-          "step-7",
-          "step-8",
-          "step-9"
-        ],
-        "equipment": [
-          "baking tray",
-          "oven"
-        ],
-        "temperature_c": 180,
-        "notes": "Flip halfway. Bake until crispy."
-      },
-      {
-        "id": "step-4",
-        "raw_text": "Drain the black beans",
-        "label": "Drain black beans",
-        "type": "prep",
-        "estimated_duration_minutes": 1,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [
-          "step-7",
-          "step-8",
-          "step-9"
-        ],
-        "equipment": [
-          "colander"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration."
-      },
-      {
-        "id": "step-5",
-        "raw_text": "empty into your saucepan along with the smoky adobo sauce, place over a medium heat and warm through, stirring occasionally, until piping hot, around 5 minutes.",
-        "label": "Warm black beans with adobo sauce",
-        "type": "cook",
-        "estimated_duration_minutes": 5,
-        "requires": [
-          "step-4",
-          "step-2"
-        ],
-        "can_overlap_with": [
-          "step-7",
-          "step-8",
-          "step-9"
-        ],
-        "equipment": [
-          "saucepan",
-          "spoon"
-        ],
-        "temperature_c": null,
-        "notes": "Place over medium heat, stir occasionally, warm until piping hot. Add water if sticking."
-      },
-      {
-        "id": "step-6",
-        "raw_text": "Roughly mash around half of the beans with a fork and set aside.",
-        "label": "Mash half of the black beans",
-        "type": "prep",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-5"
-        ],
-        "can_overlap_with": [
-          "step-7",
-          "step-8",
-          "step-9"
-        ],
-        "equipment": [
-          "fork",
-          "saucepan"
-        ],
-        "temperature_c": null,
-        "notes": "Roughly mash. Set aside. Inferred duration."
-      },
-      {
-        "id": "step-7",
-        "raw_text": "Finely shred the baby gem by cutting horizontally across the head.",
-        "label": "Finely shred baby gem lettuce",
-        "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [
-          "step-8",
-          "step-9"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Cut horizontally across the head. Inferred duration."
-      },
-      {
-        "id": "step-8",
-        "raw_text": "De-stone the avocado and cut into thin slices flat side down.",
-        "label": "De-stone and slice avocado",
-        "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [
-          "step-9"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Cut into thin slices, can fan for presentation. Inferred duration."
-      },
-      {
-        "id": "step-9",
-        "raw_text": "Cut the lime into wedges.",
-        "label": "Cut lime into wedges",
-        "type": "prep",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration."
-      },
-      {
-        "id": "step-10",
-        "raw_text": "Start with a layer of black beans, then shredded lettuce, dress the lettuce with a drizzle of cashew crema, top with some slices of avocado and a final drizzle of salsa macha. Finish with a squeeze of fresh lime juice, and enjoy!",
-        "label": "Assemble tostadas with toppings",
-        "type": "finish",
-        "estimated_duration_minutes": 5,
-        "requires": [
-          "step-3",
-          "step-6",
-          "step-7",
-          "step-8",
-          "step-9"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "serving plates"
-        ],
-        "temperature_c": null,
-        "notes": "Layer black beans, shredded lettuce, cashew crema, avocado, salsa macha. Finish with a squeeze of fresh lime juice. Inferred duration."
-      }
-    ]
+    "steps": []
   },
   {
     "id": "afghan-aubergine-borani-banjan-with-saucy-spiced-lentils-garlic-yoghurt-fresh-mint-pillowy-flatbreads",
@@ -236,246 +40,253 @@
     "steps": [
       {
         "id": "step-1",
+        "raw_text": "take out all the ingredients for this recipe",
+        "label": "Take out all ingredients",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "As per 'Before you start' instruction."
+      },
+      {
+        "id": "step-2",
         "raw_text": "rinse any raw grains, herbs or vegetables.",
         "label": "Rinse raw ingredients",
         "type": "prep",
         "estimated_duration_minutes": 2,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [
-          "colander"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred."
-      },
-      {
-        "id": "step-2",
-        "raw_text": "Take out a large frying pan and a saucepan.",
-        "label": "Retrieve frying pan and saucepan",
-        "type": "prep",
-        "estimated_duration_minutes": 1,
-        "requires": [],
-        "can_overlap_with": [
+        "requires": [
           "step-1"
         ],
-        "equipment": [
-          "large frying pan",
-          "saucepan"
-        ],
+        "can_overlap_with": [],
+        "equipment": [],
         "temperature_c": null,
-        "notes": "Duration inferred."
+        "notes": "Inferred duration for rinsing any raw grains, herbs or vegetables."
       },
       {
         "id": "step-3",
-        "raw_text": "Trim the aubergine and slice it into 1.5 cm thick rounds.",
+        "raw_text": "Take out a large frying pan and a saucepan.",
+        "label": "Take out pans",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan",
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Inferred duration."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Trim theaubergineand slice it into 1.5 cm thick rounds.",
         "label": "Trim and slice aubergine",
         "type": "prep",
-        "estimated_duration_minutes": 5,
-        "requires": [],
-        "can_overlap_with": [
+        "estimated_duration_minutes": 4,
+        "requires": [
           "step-1",
           "step-2"
         ],
+        "can_overlap_with": [],
         "equipment": [
           "knife",
           "cutting board"
         ],
         "temperature_c": null,
-        "notes": "Duration inferred. Slice into 1.5 cm thick rounds."
-      },
-      {
-        "id": "step-4",
-        "raw_text": "Place your frying pan over medium-high heat and add a generous drizzle of olive oil.",
-        "label": "Heat olive oil in frying pan",
-        "type": "prep",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-2"
-        ],
-        "can_overlap_with": [
-          "step-1",
-          "step-3"
-        ],
-        "equipment": [
-          "large frying pan"
-        ],
-        "temperature_c": null,
-        "notes": "Medium-high heat."
+        "notes": "Inferred duration. Slice into 1.5 cm thick rounds."
       },
       {
         "id": "step-5",
-        "raw_text": "Lay the aubergine slices in the pan once the oil is hot, and cook until tender and golden on both sides, about 8–10 minutes. Season both sides with salt and pepper as they cook.",
-        "label": "Cook aubergine slices until golden",
-        "type": "cook",
-        "estimated_duration_minutes": 9,
+        "raw_text": "Place your frying pan over medium-high heat and add a generous drizzle of olive oil.",
+        "label": "Heat oil in frying pan",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
         "requires": [
-          "step-3",
-          "step-4"
+          "step-3"
         ],
         "can_overlap_with": [],
         "equipment": [
           "large frying pan",
-          "tongs"
+          "olive oil"
         ],
         "temperature_c": null,
-        "notes": "Cook until tender and golden on both sides. Season with salt and pepper. Duration 8–10 minutes."
+        "notes": "Medium-high heat. Inferred duration for heating oil."
       },
       {
         "id": "step-6",
-        "raw_text": "Drain the black lentils.",
+        "raw_text": "Lay the aubergine slices in the pan once the oil is hot, and cook until tender and golden on both sides, about 8–10 minutes. Season both sides with salt and pepper as they cook.",
+        "label": "Cook aubergine slices",
+        "type": "cook",
+        "estimated_duration_minutes": 9,
+        "requires": [
+          "step-4",
+          "step-5"
+        ],
+        "can_overlap_with": [
+          "step-9",
+          "step-12"
+        ],
+        "equipment": [
+          "large frying pan",
+          "spatula/tongs",
+          "salt",
+          "pepper"
+        ],
+        "temperature_c": null,
+        "notes": "Cook until tender and golden on both sides. Duration range: 8–10 minutes. Season both sides with salt and pepper as they cook."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Drain theblack lentils.",
         "label": "Drain black lentils",
         "type": "prep",
         "estimated_duration_minutes": 1,
-        "requires": [],
-        "can_overlap_with": [
+        "requires": [
           "step-1",
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-5"
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-6"
         ],
         "equipment": [
           "colander"
         ],
         "temperature_c": null,
-        "notes": "Duration inferred."
+        "notes": "Inferred duration."
       },
       {
-        "id": "step-7",
-        "raw_text": "Pour the spiced lentil sauce into your saucepan along with the lentils.",
-        "label": "Combine lentils and spiced sauce",
+        "id": "step-8",
+        "raw_text": "Pour thespiced lentil sauceinto your saucepan along with the lentils.",
+        "label": "Combine lentils and sauce in saucepan",
         "type": "prep",
         "estimated_duration_minutes": 1,
         "requires": [
-          "step-2",
-          "step-6"
+          "step-3",
+          "step-7"
         ],
         "can_overlap_with": [
-          "step-3",
-          "step-4",
-          "step-5"
+          "step-6"
         ],
         "equipment": [
           "saucepan"
         ],
         "temperature_c": null,
-        "notes": "Duration inferred."
-      },
-      {
-        "id": "step-8",
-        "raw_text": "Place over medium heat and cook until piping hot, around 4-5 minutes. Stir occasionally while cooking, adding a splash of water as needed if it starts to stick. Season with salt to taste.",
-        "label": "Heat lentil sauce until piping hot",
-        "type": "cook",
-        "estimated_duration_minutes": 5,
-        "requires": [
-          "step-7"
-        ],
-        "can_overlap_with": [
-          "step-5"
-        ],
-        "equipment": [
-          "saucepan",
-          "spoon"
-        ],
-        "temperature_c": null,
-        "notes": "Cook until piping hot. Stir occasionally, add water if needed. Season with salt. Duration 4-5 minutes."
+        "notes": "Inferred duration."
       },
       {
         "id": "step-9",
-        "raw_text": "Wipe the frying pan you used for the aubergines and place it over medium-high heat.",
-        "label": "Wipe and reheat frying pan",
-        "type": "prep",
-        "estimated_duration_minutes": 2,
+        "raw_text": "Place over medium heat and cook until piping hot, around 4-5 minutes. Stir occasionally while cooking, adding a splash of water as needed if it starts to stick. Season with salt to taste.",
+        "label": "Cook spiced lentils",
+        "type": "cook",
+        "estimated_duration_minutes": 5,
         "requires": [
-          "step-5"
+          "step-8"
         ],
         "can_overlap_with": [
-          "step-8",
-          "step-11"
+          "step-6",
+          "step-11",
+          "step-12"
         ],
         "equipment": [
-          "large frying pan"
+          "saucepan",
+          "spoon",
+          "salt"
         ],
         "temperature_c": null,
-        "notes": "Duration inferred. Use the same frying pan. Medium-high heat."
+        "notes": "Medium heat. Cook until piping hot. Duration range: 4-5 minutes. Stir occasionally while cooking, adding a splash of water as needed if it starts to stick. Season with salt to taste."
       },
       {
         "id": "step-10",
-        "raw_text": "Warm the flatbreads by dry-frying (without oil) for 1-2 minutes, or until lightly toasted.",
-        "label": "Warm flatbreads by dry-frying",
+        "raw_text": "Wipe the frying pan you used for the aubergines and place it over medium-high heat.",
+        "label": "Wipe pan and heat for flatbreads",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-6"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Medium-high heat. Inferred duration."
+      },
+      {
+        "id": "step-11",
+        "raw_text": "Warm theflatbreadsby dry-frying (without oil) for 1-2 minutes, or until lightly toasted. Alternatively, you can bake or grill them in the oven until warmed through.",
+        "label": "Warm flatbreads",
         "type": "cook",
         "estimated_duration_minutes": 2,
         "requires": [
-          "step-9"
+          "step-10"
         ],
         "can_overlap_with": [
-          "step-8",
-          "step-11"
+          "step-12"
         ],
         "equipment": [
           "large frying pan"
         ],
         "temperature_c": null,
-        "notes": "Dry-fry until lightly toasted. Duration 1-2 minutes."
+        "notes": "Dry-fry (without oil) until lightly toasted. Duration range: 1-2 minutes. Alternative: bake or grill in the oven until warmed through."
       },
       {
-        "id": "step-11",
-        "raw_text": "Pick the mint leaves and roughly slice them.",
+        "id": "step-12",
+        "raw_text": "Pick themintleaves and roughly slice them.",
         "label": "Pick and slice mint leaves",
         "type": "prep",
         "estimated_duration_minutes": 3,
-        "requires": [],
-        "can_overlap_with": [
+        "requires": [
           "step-1",
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-5",
+          "step-2"
+        ],
+        "can_overlap_with": [
           "step-6",
-          "step-7",
-          "step-8",
           "step-9",
-          "step-10"
+          "step-11"
         ],
         "equipment": [
           "knife",
           "cutting board"
         ],
         "temperature_c": null,
-        "notes": "Duration inferred."
+        "notes": "Inferred duration."
       },
       {
-        "id": "step-12",
-        "raw_text": "To serve, divide the saucy spiced lentils between serving bowls and lay the sautéed aubergine slices on top.",
-        "label": "Divide lentils, top with aubergine",
+        "id": "step-13",
+        "raw_text": "To serve, divide thesaucy spiced lentilsbetween serving bowls and lay the sautéedaubergineslices on top.",
+        "label": "Plate lentils and aubergine",
         "type": "finish",
         "estimated_duration_minutes": 2,
         "requires": [
-          "step-5",
-          "step-8"
+          "step-6",
+          "step-9"
         ],
         "can_overlap_with": [],
         "equipment": [
           "serving bowls"
         ],
         "temperature_c": null,
-        "notes": "Duration inferred."
+        "notes": "Inferred duration. Divide lentils between serving bowls and lay aubergine slices on top."
       },
       {
-        "id": "step-13",
-        "raw_text": "Add dollops of garlic yoghurt, scatter over the sliced mint leaves, and serve with warm garlic & herb flatbreads on the side.",
-        "label": "Garnish with yoghurt, mint, serve flatbreads",
+        "id": "step-14",
+        "raw_text": "Add dollops ofgarlic yoghurt, scatter over the slicedmintleaves, and serve with warm garlic & herbflatbreadson the side. Enjoy!",
+        "label": "Garnish and serve",
         "type": "finish",
         "estimated_duration_minutes": 2,
         "requires": [
-          "step-10",
           "step-11",
-          "step-12"
+          "step-12",
+          "step-13"
         ],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": "Duration inferred."
+        "notes": "Inferred duration. Add dollops of garlic yoghurt, scatter mint, and serve with warm flatbreads."
       }
     ]
   },
@@ -508,293 +319,7 @@
       "fibre_g": 24.7,
       "salt_g": 1.0
     },
-    "steps": [
-      {
-        "id": "step-1",
-        "raw_text": "Before you start, take out all the ingredients for this recipe (see picture above) and rinse any raw grains, herbs or vegetables.",
-        "label": "Gather ingredients and rinse produce",
-        "type": "prep",
-        "estimated_duration_minutes": 5,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "Added missing initial prep step. Inferred duration."
-      },
-      {
-        "id": "step-2",
-        "raw_text": "Preheat your oven to 220°C / 200°C fan",
-        "label": "Preheat oven",
-        "type": "prep",
-        "estimated_duration_minutes": 10,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "oven"
-        ],
-        "temperature_c": 220,
-        "notes": "Inferred duration. Oven temperature specified as 220°C / 200°C fan."
-      },
-      {
-        "id": "step-3",
-        "raw_text": "take out a large roasting tray, and a large saucepan.",
-        "label": "Take out roasting tray and saucepan",
-        "type": "prep",
-        "estimated_duration_minutes": 1,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [
-          "step-2"
-        ],
-        "equipment": [
-          "roasting tray",
-          "saucepan"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration."
-      },
-      {
-        "id": "step-4",
-        "raw_text": "Dice thesweet potatoandaubergineinto 1.5cm cubes.",
-        "label": "Dice sweet potato and aubergine",
-        "type": "prep",
-        "estimated_duration_minutes": 8,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [
-          "step-2",
-          "step-3"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Dice into 1.5cm cubes. Inferred duration."
-      },
-      {
-        "id": "step-5",
-        "raw_text": "Add the sweet potato to one side of your roasting tray and the aubergine to the other. Drizzle generously with olive oil, season with salt and pepper",
-        "label": "Season and arrange vegetables on tray",
-        "type": "prep",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-4",
-          "step-3"
-        ],
-        "can_overlap_with": [
-          "step-2"
-        ],
-        "equipment": [
-          "roasting tray"
-        ],
-        "temperature_c": null,
-        "notes": "Add sweet potato to one side, aubergine to the other. Drizzle with olive oil, season with salt and pepper. Inferred duration."
-      },
-      {
-        "id": "step-6",
-        "raw_text": "roast until tender, around 20-30 minutes.",
-        "label": "Roast sweet potato and aubergine",
-        "type": "cook",
-        "estimated_duration_minutes": 25,
-        "requires": [
-          "step-2",
-          "step-5"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "oven",
-          "roasting tray"
-        ],
-        "temperature_c": 220,
-        "notes": "Roast until tender. Duration range: 20-30 minutes."
-      },
-      {
-        "id": "step-7",
-        "raw_text": "Once there's 5 minutes left on the vegetables, add thegreen curry soupto your saucepan.",
-        "label": "Add green curry soup to saucepan",
-        "type": "cook",
-        "estimated_duration_minutes": 1,
-        "requires": [
-          "step-3"
-        ],
-        "can_overlap_with": [
-          "step-6"
-        ],
-        "equipment": [
-          "saucepan"
-        ],
-        "temperature_c": null,
-        "notes": "Starts when 5 minutes remain for vegetable roasting. Inferred duration."
-      },
-      {
-        "id": "step-8",
-        "raw_text": "Bring to a gentle simmer and cook for a further 2-3 minutes or until piping hot.",
-        "label": "Simmer green curry soup",
-        "type": "cook",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-7"
-        ],
-        "can_overlap_with": [
-          "step-6"
-        ],
-        "equipment": [
-          "saucepan",
-          "stove"
-        ],
-        "temperature_c": null,
-        "notes": "Cook until piping hot. Duration range: 2-3 minutes."
-      },
-      {
-        "id": "step-9",
-        "raw_text": "Meanwhile drain and rinse the lentils well.",
-        "label": "Drain and rinse lentils",
-        "type": "prep",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [
-          "step-6",
-          "step-7",
-          "step-8"
-        ],
-        "equipment": [
-          "colander"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration."
-      },
-      {
-        "id": "step-10",
-        "raw_text": "Roll up thebasilleaves with your hands and finely slice them. Set aside a quarter of the basil leaves for a garnish.",
-        "label": "Roll and finely slice basil",
-        "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [
-          "step-6",
-          "step-7",
-          "step-8",
-          "step-9"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Roll up basil leaves with hands. Set aside a quarter for garnish. Inferred duration."
-      },
-      {
-        "id": "step-11",
-        "raw_text": "Add the drainedlentilsand the remaining three quarters ofbasilto the soup",
-        "label": "Add lentils and basil to soup",
-        "type": "cook",
-        "estimated_duration_minutes": 1,
-        "requires": [
-          "step-8",
-          "step-9",
-          "step-10"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "saucepan"
-        ],
-        "temperature_c": null,
-        "notes": "Add drained lentils and remaining three quarters of basil. Inferred duration."
-      },
-      {
-        "id": "step-12",
-        "raw_text": "and cook for a further 2 minutes.",
-        "label": "Cook lentils and basil in soup",
-        "type": "cook",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-11"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "saucepan",
-          "stove"
-        ],
-        "temperature_c": null,
-        "notes": "Cook for a further 2 minutes."
-      },
-      {
-        "id": "step-13",
-        "raw_text": "Remove from the heat, squeeze in half of the lime and season to taste with salt.",
-        "label": "Remove soup, add lime, season",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-12"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "saucepan"
-        ],
-        "temperature_c": null,
-        "notes": "Squeeze in half of the lime. Season to taste with salt. Inferred duration."
-      },
-      {
-        "id": "step-14",
-        "raw_text": "divide thethai green curry soupandlentilsbetween serving bowls",
-        "label": "Divide soup and lentils into bowls",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-13"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "serving bowls",
-          "ladle"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration."
-      },
-      {
-        "id": "step-15",
-        "raw_text": "arrange thesweetpotatoandauberginearound the bowl",
-        "label": "Arrange roasted vegetables around bowl",
-        "type": "finish",
-        "estimated_duration_minutes": 1,
-        "requires": [
-          "step-6",
-          "step-14"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "serving bowls"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration."
-      },
-      {
-        "id": "step-16",
-        "raw_text": "garnish with the remainingbasilleaves. Squeeze over the remaininglime",
-        "label": "Garnish with basil and lime",
-        "type": "finish",
-        "estimated_duration_minutes": 1,
-        "requires": [
-          "step-10",
-          "step-15"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "serving bowls"
-        ],
-        "temperature_c": null,
-        "notes": "Garnish with remaining basil leaves. Squeeze over remaining lime. Inferred duration."
-      }
-    ]
+    "steps": []
   },
   {
     "id": "aubergine-parm-sandwich-with-tomato-marinara-vegan-pesto-on-soft-vegan-brioche",
@@ -812,314 +337,7 @@
       "fibre_g": 17.26,
       "salt_g": 0.5
     },
-    "steps": [
-      {
-        "id": "step-1",
-        "raw_text": "baby new potatoes",
-        "label": "Prepare baby new potatoes",
-        "type": "prep",
-        "estimated_duration_minutes": 5,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred as no specific time was provided. This includes washing and potentially cutting the potatoes."
-      },
-      {
-        "id": "step-2",
-        "raw_text": "crispy baby new potatoes",
-        "label": "Cook baby new potatoes until crispy",
-        "type": "cook",
-        "estimated_duration_minutes": 25,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [
-          "step-3",
-          "step-4",
-          "step-5",
-          "step-6",
-          "step-7",
-          "step-8",
-          "step-9",
-          "step-10",
-          "step-11",
-          "step-12"
-        ],
-        "equipment": [
-          "oven",
-          "baking sheet"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred for 'crispy' potatoes (20-30 minutes). Temperature not specified, but typically 200-220°C for crispy potatoes."
-      },
-      {
-        "id": "step-3",
-        "raw_text": "garlic, tomatoes, basil, balsamic vinegar, tomato puree",
-        "label": "Prepare tomato reduction ingredients",
-        "type": "prep",
-        "estimated_duration_minutes": 5,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-5",
-          "step-7",
-          "step-10"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred. This includes chopping garlic, tomatoes, and basil for the reduction."
-      },
-      {
-        "id": "step-4",
-        "raw_text": "rich tomato and basil reduction",
-        "label": "Simmer rich tomato reduction",
-        "type": "cook",
-        "estimated_duration_minutes": 17,
-        "requires": [
-          "step-3"
-        ],
-        "can_overlap_with": [
-          "step-2",
-          "step-6",
-          "step-8",
-          "step-9",
-          "step-11",
-          "step-12"
-        ],
-        "equipment": [
-          "saucepan",
-          "spoon"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred for a 'reduction' (15-20 minutes)."
-      },
-      {
-        "id": "step-5",
-        "raw_text": "basil, garlic, lemon juice",
-        "label": "Prepare pesto ingredients",
-        "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-3",
-          "step-7",
-          "step-10"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred. This includes chopping basil and garlic for the pesto."
-      },
-      {
-        "id": "step-6",
-        "raw_text": "vegan pesto",
-        "label": "Make vegan pesto",
-        "type": "prep",
-        "estimated_duration_minutes": 5,
-        "requires": [
-          "step-5"
-        ],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-7",
-          "step-10",
-          "step-11",
-          "step-12"
-        ],
-        "equipment": [
-          "food processor",
-          "bowl"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred. Ingredients for pesto include basil, garlic, vegetable oil, lemon juice, salt, and pepper."
-      },
-      {
-        "id": "step-7",
-        "raw_text": "soymilk, lemon juice, agave, vegetable oil (soy)",
-        "label": "Prepare vegan mayo ingredients",
-        "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-3",
-          "step-5",
-          "step-10"
-        ],
-        "equipment": [
-          "measuring cups",
-          "spoons"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred. This includes gathering and measuring soymilk, vegetable oil, lemon juice, agave, and salt."
-      },
-      {
-        "id": "step-8",
-        "raw_text": "vegan mayo",
-        "label": "Make vegan mayo",
-        "type": "prep",
-        "estimated_duration_minutes": 5,
-        "requires": [
-          "step-7"
-        ],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-5",
-          "step-6",
-          "step-10",
-          "step-11",
-          "step-12"
-        ],
-        "equipment": [
-          "blender",
-          "bowl"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred. Ingredients for mayo include soymilk, vegetable oil, lemon juice, agave, and salt."
-      },
-      {
-        "id": "step-9",
-        "raw_text": "tangy vegan pesto mayo",
-        "label": "Combine pesto and mayo",
-        "type": "prep",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-6",
-          "step-8"
-        ],
-        "can_overlap_with": [
-          "step-2",
-          "step-4",
-          "step-12"
-        ],
-        "equipment": [
-          "bowl",
-          "spoon"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred."
-      },
-      {
-        "id": "step-10",
-        "raw_text": "Tender slices of aubergine",
-        "label": "Slice aubergine",
-        "type": "prep",
-        "estimated_duration_minutes": 5,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-3",
-          "step-5",
-          "step-7"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred."
-      },
-      {
-        "id": "step-11",
-        "raw_text": "coated in crispy golden panko breadcrumbs",
-        "label": "Bread aubergine slices",
-        "type": "prep",
-        "estimated_duration_minutes": 10,
-        "requires": [
-          "step-10"
-        ],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-5",
-          "step-6",
-          "step-7",
-          "step-8"
-        ],
-        "equipment": [
-          "shallow dishes",
-          "plates"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred. Uses white flour, soymilk (as an egg wash substitute), and panko breadcrumbs."
-      },
-      {
-        "id": "step-12",
-        "raw_text": "Cook breaded aubergine until crispy golden",
-        "label": "Cook breaded aubergine",
-        "type": "cook",
-        "estimated_duration_minutes": 12,
-        "requires": [
-          "step-11"
-        ],
-        "can_overlap_with": [
-          "step-2",
-          "step-4",
-          "step-6",
-          "step-8",
-          "step-9"
-        ],
-        "equipment": [
-          "frying pan",
-          "tongs"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred for frying or baking until crispy golden (10-15 minutes)."
-      },
-      {
-        "id": "step-13",
-        "raw_text": "Aubergine Parmigiana Sandwich With Pesto Mayo & Rich Tomato Reduction On Soft Vegan Brioche",
-        "label": "Assemble Aubergine Parmigiana Sandwich",
-        "type": "finish",
-        "estimated_duration_minutes": 5,
-        "requires": [
-          "step-4",
-          "step-9",
-          "step-12"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "plate"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred. Assumes the vegan brioche is ready for assembly."
-      },
-      {
-        "id": "step-14",
-        "raw_text": "Served alongside crispy baby new potatoes.",
-        "label": "Serve sandwich with potatoes",
-        "type": "finish",
-        "estimated_duration_minutes": 1,
-        "requires": [
-          "step-2",
-          "step-13"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "plate"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred."
-      }
-    ]
+    "steps": []
   },
   {
     "id": "butternut-squash-brothy-beans-with-crispy-sprouts-hot-agave-nduja-oil-toasted-pine-nuts-pumpkin-seeds",
@@ -1200,9 +418,7 @@
     "title": "Oyster Mushroom Bulgogi Bowl With Sticky Sushi Rice, Kimchi, Cucumber Salad & Toasted Sesame Seeds",
     "source_url": "https://planthood.co.uk/products/oyster-mushroom-bulgogi-bowl-with-sticky-sushi-rice-kimchi-cucumber-salad-toasted-sesame-seeds",
     "week_label": null,
-    "weeks": [
-      "May 11, 2026"
-    ],
+    "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -1536,284 +752,7 @@
       "fibre_g": 19.2,
       "salt_g": 1.8
     },
-    "steps": [
-      {
-        "id": "step-1",
-        "raw_text": "take out all the ingredients for this recipe",
-        "label": "Gather all ingredients",
-        "type": "prep",
-        "estimated_duration_minutes": 2,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "As instructed 'Before you start, take out all the ingredients'. Duration inferred."
-      },
-      {
-        "id": "step-2",
-        "raw_text": "rinse any raw grains, herbs or vegetables.",
-        "label": "Rinse raw vegetables",
-        "type": "prep",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [
-          "step-3",
-          "step-4",
-          "step-5"
-        ],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "Duration inferred."
-      },
-      {
-        "id": "step-3",
-        "raw_text": "Preheat your oven to 240°C / 220°C fan.",
-        "label": "Preheat oven to 240°C",
-        "type": "prep",
-        "estimated_duration_minutes": 12,
-        "requires": [],
-        "can_overlap_with": [
-          "step-2",
-          "step-4",
-          "step-5",
-          "step-8",
-          "step-9"
-        ],
-        "equipment": [
-          "oven"
-        ],
-        "temperature_c": 240,
-        "notes": "Fan oven option: 220°C. Duration inferred as typical preheat time."
-      },
-      {
-        "id": "step-4",
-        "raw_text": "Take out a wide, hob- and ovenproof casserole dish.",
-        "label": "Take out casserole dish",
-        "type": "prep",
-        "estimated_duration_minutes": 1,
-        "requires": [],
-        "can_overlap_with": [
-          "step-2",
-          "step-3",
-          "step-5"
-        ],
-        "equipment": [
-          "casserole dish"
-        ],
-        "temperature_c": null,
-        "notes": "Wide, hob- and ovenproof. Duration inferred."
-      },
-      {
-        "id": "step-5",
-        "raw_text": "Slice the cooked beetroot and sweet potato as thinly as possible, about 2mm thick. Use a mandoline if you have one to ensure even thickness.",
-        "label": "Slice beetroot and sweet potato",
-        "type": "prep",
-        "estimated_duration_minutes": 7,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [
-          "step-2",
-          "step-3",
-          "step-4"
-        ],
-        "equipment": [
-          "mandoline",
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Slice as thinly as possible, about 2mm thick. Mandoline is optional. Duration inferred."
-      },
-      {
-        "id": "step-6",
-        "raw_text": "you can microwave the sweet potato slices (3 minutes on high, covered)",
-        "label": "Microwave sweet potato slices (optional)",
-        "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-5"
-        ],
-        "can_overlap_with": [
-          "step-3",
-          "step-8",
-          "step-9"
-        ],
-        "equipment": [
-          "microwave",
-          "microwave-safe dish"
-        ],
-        "temperature_c": null,
-        "notes": "Optional step if struggling to cut thin slices or to ensure they are cooked through. Covered, on high."
-      },
-      {
-        "id": "step-7",
-        "raw_text": "or parboil them in boiling water for 3 minutes to ensure they are cooked through when serving.",
-        "label": "Parboil sweet potato slices (optional)",
-        "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-5"
-        ],
-        "can_overlap_with": [
-          "step-3",
-          "step-8",
-          "step-9"
-        ],
-        "equipment": [
-          "pot",
-          "hob"
-        ],
-        "temperature_c": null,
-        "notes": "Optional step if struggling to cut thin slices or to ensure they are cooked through. In boiling water."
-      },
-      {
-        "id": "step-8",
-        "raw_text": "In your ovenproof casserole dish, mix together the roots gratin ragu and the tin of black lentils, including the liquid from the tin.",
-        "label": "Mix ragu and lentils in dish",
-        "type": "prep",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-4"
-        ],
-        "can_overlap_with": [
-          "step-2",
-          "step-3",
-          "step-5"
-        ],
-        "equipment": [
-          "casserole dish"
-        ],
-        "temperature_c": null,
-        "notes": "Include liquid from the tin. Duration inferred."
-      },
-      {
-        "id": "step-9",
-        "raw_text": "Place over medium heat and gently bring to a simmer, then turn off the heat.",
-        "label": "Simmer ragu and lentils",
-        "type": "cook",
-        "estimated_duration_minutes": 4,
-        "requires": [
-          "step-8"
-        ],
-        "can_overlap_with": [
-          "step-2",
-          "step-3",
-          "step-5"
-        ],
-        "equipment": [
-          "casserole dish",
-          "hob"
-        ],
-        "temperature_c": null,
-        "notes": "Over medium heat, gently bring to a simmer, then turn off heat. Duration inferred."
-      },
-      {
-        "id": "step-10",
-        "raw_text": "Lay the beetroot and sweet potato slices over the lentil ragu, slightly submerging them in the sauce, then drizzle over olive oil.",
-        "label": "Layer vegetables over ragu",
-        "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-5",
-          "step-9"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "casserole dish"
-        ],
-        "temperature_c": null,
-        "notes": "Slightly submerge slices in sauce, then drizzle with olive oil. If optional steps 6 or 7 were taken, they are prerequisites for the slices. Duration inferred."
-      },
-      {
-        "id": "step-11",
-        "raw_text": "Cover the dish with a lid or a sheet of kitchen foil and bake in the oven for 20 minutes. If the vegetables are cut into thicker slices and the microwaving or parboiling step was skipped, bake in the oven for 35 minutes instead.",
-        "label": "Bake covered gratin",
-        "type": "cook",
-        "estimated_duration_minutes": 20,
-        "requires": [
-          "step-3",
-          "step-10"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "casserole dish",
-          "lid",
-          "kitchen foil",
-          "oven"
-        ],
-        "temperature_c": 240,
-        "notes": "Cover with a lid or foil. If vegetables are thicker or pre-cooking steps skipped, bake for 35 minutes instead."
-      },
-      {
-        "id": "step-12",
-        "raw_text": "Once it has cooked for the above time, remove the casserole dish from the oven and pour the miso bechamel over the top.",
-        "label": "Pour miso bechamel over gratin",
-        "type": "prep",
-        "estimated_duration_minutes": 1,
-        "requires": [
-          "step-11"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "casserole dish"
-        ],
-        "temperature_c": null,
-        "notes": "Remove dish from oven before pouring. Duration inferred."
-      },
-      {
-        "id": "step-13",
-        "raw_text": "Return it to the oven and bake for a further 10 minutes without a cover, until the sauce is golden on top.",
-        "label": "Bake uncovered gratin until golden",
-        "type": "cook",
-        "estimated_duration_minutes": 10,
-        "requires": [
-          "step-12"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "casserole dish",
-          "oven"
-        ],
-        "temperature_c": 240,
-        "notes": "Bake without a cover until the sauce is golden on top."
-      },
-      {
-        "id": "step-14",
-        "raw_text": "To serve, divide the gratin between dishes.",
-        "label": "Divide gratin into dishes",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-13"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "serving dishes"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred."
-      },
-      {
-        "id": "step-15",
-        "raw_text": "Finish with a sprinkle of salt and freshly ground black pepper to taste. Enjoy!",
-        "label": "Season gratin with salt and pepper",
-        "type": "finish",
-        "estimated_duration_minutes": 1,
-        "requires": [
-          "step-14"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "salt grinder",
-          "pepper grinder"
-        ],
-        "temperature_c": null,
-        "notes": "To taste. Duration inferred."
-      }
-    ]
+    "steps": []
   },
   {
     "id": "bbq-jackfruit-tacos-chipotle-cashew-crema",
@@ -1831,238 +770,7 @@
       "fibre_g": 10.6,
       "salt_g": 1.5
     },
-    "steps": [
-      {
-        "id": "step-1",
-        "raw_text": "spice blend of garlic, paprika, cumin, cloves, chipotle, ground coriander, cinnamon, oregano",
-        "label": "Mix dry spice blend",
-        "type": "prep",
-        "estimated_duration_minutes": 2,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [
-          "bowl",
-          "spoon"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration."
-      },
-      {
-        "id": "step-2",
-        "raw_text": "pulled jackfruit marinated in a spice blend",
-        "label": "Marinate jackfruit with spices",
-        "type": "prep",
-        "estimated_duration_minutes": 30,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [
-          "step-6",
-          "step-7",
-          "step-9",
-          "step-10"
-        ],
-        "equipment": [
-          "bowl"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration for marinating."
-      },
-      {
-        "id": "step-3",
-        "raw_text": "tomato puree, maple syrup, chipotle, balsamic vinegar, vegan boullion (celery), water",
-        "label": "Combine jackfruit with cooking liquid ingredients",
-        "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-2"
-        ],
-        "can_overlap_with": [
-          "step-6",
-          "step-7",
-          "step-9",
-          "step-10"
-        ],
-        "equipment": [
-          "bowl",
-          "spoon"
-        ],
-        "temperature_c": null,
-        "notes": "Add tomato puree, maple syrup, chipotle, balsamic vinegar, vegan boullion, and water to the marinated jackfruit before cooking."
-      },
-      {
-        "id": "step-4",
-        "raw_text": "slowly cooked until charred on the outside and falling apart in the centre.",
-        "label": "Slowly cook jackfruit carnitas",
-        "type": "cook",
-        "estimated_duration_minutes": 60,
-        "requires": [
-          "step-3"
-        ],
-        "can_overlap_with": [
-          "step-6",
-          "step-7",
-          "step-8",
-          "step-9",
-          "step-10"
-        ],
-        "equipment": [
-          "pot",
-          "pan"
-        ],
-        "temperature_c": null,
-        "notes": "Cook until charred on the outside and falling apart in the centre. Inferred duration."
-      },
-      {
-        "id": "step-5",
-        "raw_text": "falling apart in the centre",
-        "label": "Shred cooked jackfruit",
-        "type": "prep",
-        "estimated_duration_minutes": 5,
-        "requires": [
-          "step-4"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "forks"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration. Implied by 'falling apart' and 'pulled jackfruit'."
-      },
-      {
-        "id": "step-6",
-        "raw_text": "pickled cabbage, carrot and red onion",
-        "label": "Slice cabbage, carrot, red onion",
-        "type": "prep",
-        "estimated_duration_minutes": 10,
-        "requires": [],
-        "can_overlap_with": [
-          "step-2",
-          "step-3",
-          "step-4"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration."
-      },
-      {
-        "id": "step-7",
-        "raw_text": "pickled cabbage, carrot and red onion",
-        "label": "Combine pickling liquid ingredients",
-        "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [],
-        "can_overlap_with": [
-          "step-2",
-          "step-3",
-          "step-4"
-        ],
-        "equipment": [
-          "bowl",
-          "whisk"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration. Ingredients for pickling liquid (cider vinegar, raw natural cane sugar, sea salt, brown mustard seeds) are listed."
-      },
-      {
-        "id": "step-8",
-        "raw_text": "pickled cabbage, carrot and red onion",
-        "label": "Pickle sliced vegetables",
-        "type": "prep",
-        "estimated_duration_minutes": 30,
-        "requires": [
-          "step-6",
-          "step-7"
-        ],
-        "can_overlap_with": [
-          "step-4"
-        ],
-        "equipment": [
-          "bowl"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration for quick pickling."
-      },
-      {
-        "id": "step-9",
-        "raw_text": "chipotle cashew crema",
-        "label": "Blend cashew crema ingredients",
-        "type": "prep",
-        "estimated_duration_minutes": 5,
-        "requires": [],
-        "can_overlap_with": [
-          "step-2",
-          "step-3",
-          "step-4"
-        ],
-        "equipment": [
-          "blender"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration. Ingredients for crema (cashews, chipotle) are listed."
-      },
-      {
-        "id": "step-10",
-        "raw_text": "fresh coriander",
-        "label": "Chop fresh coriander",
-        "type": "prep",
-        "estimated_duration_minutes": 2,
-        "requires": [],
-        "can_overlap_with": [
-          "step-2",
-          "step-3",
-          "step-4"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration."
-      },
-      {
-        "id": "step-11",
-        "raw_text": "soft corn tortillas",
-        "label": "Warm soft corn tortillas",
-        "type": "cook",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-5",
-          "step-8",
-          "step-9",
-          "step-10"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "pan"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration. Warm just before assembly."
-      },
-      {
-        "id": "step-12",
-        "raw_text": "Served on soft corn tortillas with pickled cabbage, carrot and red onion, chipotle cashew crema and fresh coriander.",
-        "label": "Assemble jackfruit carnitas tacos",
-        "type": "finish",
-        "estimated_duration_minutes": 5,
-        "requires": [
-          "step-5",
-          "step-8",
-          "step-9",
-          "step-10",
-          "step-11"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "plates"
-        ],
-        "temperature_c": null,
-        "notes": "Inferred duration."
-      }
-    ]
+    "steps": []
   },
   {
     "id": "brothy-giant-cous-cous-bowl-with-smokey-tempeh-chorizo-braised-cavolo-nero",
@@ -2387,7 +1095,6 @@
     "source_url": "https://planthood.co.uk/products/charred-hispi-cabbage-over-golden-daal-with-organic-soy-yoghurt-tamarind-date-chutney-toasted-almonds-coriander",
     "week_label": null,
     "weeks": [
-      "May 11, 2026",
       "Jun 29, 2026"
     ],
     "category": null,
@@ -2556,7 +1263,6 @@
     "source_url": "https://planthood.co.uk/products/creamy-butterbeans-with-caramelised-leeks-charred-courgettes-drizzled-with-olive-almond-pesto",
     "week_label": null,
     "weeks": [
-      "May 11, 2026",
       "Jun 29, 2026"
     ],
     "category": null,
@@ -3413,7 +2119,8 @@
     "source_url": "https://planthood.co.uk/products/green-shakshuka-with-garden-peas-lentils-whipped-feta-avocado-dukkah-fresh-dill",
     "week_label": null,
     "weeks": [
-      "May 18, 2026"
+      "May 18, 2026",
+      "Jul 13, 2026"
     ],
     "category": null,
     "ingredients": [],
@@ -3480,7 +2187,8 @@
     "source_url": "https://planthood.co.uk/products/high-protein-conchiglioni-pasta-shells-stuffed-with-lemon-garlic-spinach-ricotta-in-rich-tomato-lentil-sauce",
     "week_label": null,
     "weeks": [
-      "May 25, 2026"
+      "May 25, 2026",
+      "Jul 13, 2026"
     ],
     "category": null,
     "ingredients": [],
@@ -3573,9 +2281,7 @@
     "title": "Hot 'Honey' Labneh Mezze With Minted Courgettes, Roasted Cherry Tomatoes, Chickpeas & Freshly Baked Garlic Flatbread",
     "source_url": "https://planthood.co.uk/products/hot-honey-labneh-mezze-with-minted-courgettes-roasted-cherry-tomatoes-chickpeas-freshly-bakes-garlic-flatbread",
     "week_label": null,
-    "weeks": [
-      "May 11, 2026"
-    ],
+    "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {},
@@ -3683,7 +2389,6 @@
     "source_url": "https://planthood.co.uk/products/kimchi-stir-fried-noodles-with-crumbled-tempeh-baby-spinach-spring-onions-sesame-gochugaru-crunch",
     "week_label": null,
     "weeks": [
-      "May 11, 2026",
       "Jun 29, 2026"
     ],
     "category": null,
@@ -4030,9 +2735,7 @@
     "title": "One Pot Cheats Mushroom Lasagne With Beluga Lentils, Creamy Miso Bechamel & Green Kale",
     "source_url": "https://planthood.co.uk/products/one-pot-cheats-mushroom-lasagne-with-creamy-miso-bechamel-shredded-green-kale",
     "week_label": null,
-    "weeks": [
-      "May 11, 2026"
-    ],
+    "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -4127,7 +2830,8 @@
     "source_url": "https://planthood.co.uk/products/peanut-butter-ramen-with-smokey-garlic-sesame-tempeh-pak-choi-toasted-peanuts-lime",
     "week_label": null,
     "weeks": [
-      "May 25, 2026"
+      "May 25, 2026",
+      "Jul 13, 2026"
     ],
     "category": "Feast",
     "ingredients": [],
@@ -4366,7 +3070,7 @@
     "source_url": "https://planthood.co.uk/products/rich-creamy-tofu-tikka-masala-with-toasted-flaked-almonds-organic-cultured-soy-yoghurt-basmati-rice",
     "week_label": null,
     "weeks": [
-      "May 11, 2026"
+      "Jul 13, 2026"
     ],
     "category": null,
     "ingredients": [],
@@ -4927,7 +3631,8 @@
     "source_url": "https://planthood.co.uk/products/sri-lankan-daal-with-curry-spiced-oyster-mushroom-skewers-beetroot-raita-over-fluffy-basmati-rice",
     "week_label": null,
     "weeks": [
-      "May 18, 2026"
+      "May 18, 2026",
+      "Jul 13, 2026"
     ],
     "category": null,
     "ingredients": [],
@@ -4945,7 +3650,9 @@
     "title": "Crispy Black Pepper Tofu With Stir Fried Vegetables, Sticky Coconut Rice, Pak Choi & Sesame Seeds",
     "source_url": "https://planthood.co.uk/products/sticky-black-pepper-tofu",
     "week_label": null,
-    "weeks": [],
+    "weeks": [
+      "Jul 13, 2026"
+    ],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -5099,7 +3806,9 @@
     "title": "Super Green Grain Bowl With Roasted Squash, Crispy Chickpeas,  Creamy Garlic Tahini & Pomegranate Seeds",
     "source_url": "https://planthood.co.uk/products/super-green-grain-bowl-with-roasted-squash-crispy-chickpeas-creamy-garlic-tahini-pomegranate-seeds",
     "week_label": null,
-    "weeks": [],
+    "weeks": [
+      "Jul 13, 2026"
+    ],
     "category": null,
     "ingredients": [],
     "nutrition": {},
@@ -5153,7 +3862,6 @@
     "source_url": "https://planthood.co.uk/products/super-green-spring-orzo-with-peas-asparagus-spinach-creamy-burrata-toasted-almonds",
     "week_label": null,
     "weeks": [
-      "May 11, 2026",
       "Jun 15, 2026"
     ],
     "category": null,
@@ -5423,7 +4131,9 @@
     "title": "Black Bean Chilli Enchiladas Topped With Cashew Cheese Sauce & A Zingy Cherry Tomato Salsa",
     "source_url": "https://planthood.co.uk/products/three-bean-chilli-enchiladas-topped-with-cashew-cheese-sauce-a-zingy-cherry-tomato-salsa",
     "week_label": null,
-    "weeks": [],
+    "weeks": [
+      "Jul 13, 2026"
+    ],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -6311,9 +5021,7 @@
     "title": "24 Plant Frijoles Negros With Caramelised Plantain, Whipped Feta, Pink Pickled Onions, Avocado & Coriander Lime Brown Rice",
     "source_url": "https://planthood.co.uk/products/black-bean-frijoles-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice",
     "week_label": null,
-    "weeks": [
-      "May 11, 2026"
-    ],
+    "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {
@@ -6589,7 +5297,6 @@
     "source_url": "https://planthood.co.uk/products/lamachun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
     "week_label": null,
     "weeks": [
-      "May 11, 2026",
       "Jun 29, 2026"
     ],
     "category": null,
@@ -6695,7 +5402,8 @@
     "source_url": "https://planthood.co.uk/products/crispy-korean-pancakes-with-mixed-vegetables-dipping-sauce-smacked-cucumber-kimchi-brown-rice",
     "week_label": null,
     "weeks": [
-      "May 25, 2026"
+      "May 25, 2026",
+      "Jul 13, 2026"
     ],
     "category": null,
     "ingredients": [],
@@ -6842,7 +5550,9 @@
     "title": "Crispy Tofu Katsu Nuggets With Brown Rice & Seasonal Mixed Leaves In Sweet Miso Dressing",
     "source_url": "https://planthood.co.uk/products/crispy-tofu-katsu-curry-with-sticky-rice-seasonal-mixed-leaves-in-sweet-miso-dressing-copy",
     "week_label": null,
-    "weeks": [],
+    "weeks": [
+      "Jul 13, 2026"
+    ],
     "category": null,
     "ingredients": [],
     "nutrition": {
