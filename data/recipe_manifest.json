@@ -1,7 +1,7 @@
 {
-  "total_recipes": 293,
+  "total_recipes": 291,
   "failed_recipes": 0,
-  "last_updated": "2026-06-29 08:20:32",
+  "last_updated": "2026-06-29 12:28:11",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -795,6 +795,13 @@
       "week_label": null
     },
     {
+      "id": "high-protein-tempeh-bolognese-with-mafaldine-pasta-courgettes-kale-pine-nut-walnut-parmesan",
+      "title": "High Protein Tempeh Bolognese With Mafaldine Pasta, Courgettes, Kale, Pine Nut & Walnut 'Parmesan'",
+      "url": "https://planthood.co.uk/products/high-protein-tempeh-bolognese-with-mafaldine-pasta-courgettes-kale-pine-nut-walnut-parmesan",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "high-protein-tempeh-meatballs-in-smoky-tomato-sauce-with-cannellini-beans-braised-green-kale",
       "title": "High Protein Tempeh Meatballs In Smoky Tomato Sauce With Cannellini Beans & Braised Green Kale",
       "url": "https://planthood.co.uk/products/high-protein-tempeh-meatballs-in-smoky-tomato-sauce-with-cannellini-beans-braised-green-kale",
@@ -935,9 +942,9 @@
       "week_label": null
     },
     {
-      "id": "lamachun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
-      "title": "Lamachun Flatbread With Meaty Spiced Tofu Crumble, Tomato, Cucumber, Sumac Pickled Onion & Garlic Yoghurt",
-      "url": "https://planthood.co.uk/products/lamachun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
+      "id": "lahmacun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
+      "title": "Lahmacun Flatbread With Meaty Spiced Tofu Crumble, Tomato, Cucumber, Sumac Pickled Onion & Garlic Yoghurt",
+      "url": "https://planthood.co.uk/products/lahmacun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
       "scraped": true,
       "week_label": null
     },
@@ -959,6 +966,13 @@
       "id": "lemon-briased-chickpeas-in-a-preserved-lemon-broth-with-crispy-winter-vegetables-tangy-salsa-verde",
       "title": "Gut-Friendly Lemon & Chickpea Broth With Crispy Parsnip & Sweet Potato, Cavolo Nero & Salsa Verde",
       "url": "https://planthood.co.uk/products/lemon-briased-chickpeas-in-a-preserved-lemon-broth-with-crispy-winter-vegetables-tangy-salsa-verde",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "lemon-ginger-detox-ramen-with-smoked-tofu-udon-noodles-cavolo-nero-carrot-superseed-chilli-crunch",
+      "title": "Lemon & Ginger Detox Ramen With Smoked Tofu, Udon Noodles, Cavolo Nero, Carrot & Superseed Chilli Crunch",
+      "url": "https://planthood.co.uk/products/lemon-ginger-detox-ramen-with-smoked-tofu-udon-noodles-cavolo-nero-carrot-superseed-chilli-crunch",
       "scraped": true,
       "week_label": null
     },
@@ -1530,13 +1544,6 @@
       "week_label": null
     },
     {
-      "id": "smoky-spanish-beans-in-roasted-pepper-sun-dried-tomato-sauce-organic-yoghurt-avocado-salsa-quinoa-copy",
-      "title": "Lemon & Ginger Detox Ramen With Smoked Tofu, Udon Noodles, Cavolo Nero, Carrot & Superseed Chilli Crunch",
-      "url": "https://planthood.co.uk/products/smoky-spanish-beans-in-roasted-pepper-sun-dried-tomato-sauce-organic-yoghurt-avocado-salsa-quinoa-copy",
-      "scraped": true,
-      "week_label": null
-    },
-    {
       "id": "smoky-whole-roasted-aubergine-over-creamy-whipped-tahini-with-hot-agave-harissa-fresh-parsley-flatbreads",
       "title": "Smoky Whole Roasted Aubergine Over Creamy Whipped Tahini With Hot Agave Harissa, Fresh Parsley & Flatbreads",
       "url": "https://planthood.co.uk/products/smoky-whole-roasted-aubergine-over-creamy-whipped-tahini-with-hot-agave-harissa-fresh-parsley-flatbreads",
@@ -2030,27 +2037,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "high-protein-tempeh-bolognese-with-mafaldine-pasta-courgettes-kale-pine-nut-walnut-parmesan",
-      "title": "High Protein Tempeh Bolognese With Mafaldine Pasta, Courgettes, Kale, Pine Nut & Walnut 'Parmesan'",
-      "url": "https://planthood.co.uk/products/high-protein-tempeh-bolognese-with-mafaldine-pasta-courgettes-kale-pine-nut-walnut-parmesan",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "lahmacun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
-      "title": "Lahmacun Flatbread With Meaty Spiced Tofu Crumble, Tomato, Cucumber, Sumac Pickled Onion & Garlic Yoghurt",
-      "url": "https://planthood.co.uk/products/lahmacun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "lemon-ginger-detox-ramen-with-smoked-tofu-udon-noodles-cavolo-nero-carrot-superseed-chilli-crunch",
-      "title": "Lemon & Ginger Detox Ramen With Smoked Tofu, Udon Noodles, Cavolo Nero, Carrot & Superseed Chilli Crunch",
-      "url": "https://planthood.co.uk/products/lemon-ginger-detox-ramen-with-smoked-tofu-udon-noodles-cavolo-nero-carrot-superseed-chilli-crunch",
       "scraped": true,
       "week_label": null
     }
