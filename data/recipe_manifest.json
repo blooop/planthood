@@ -1,7 +1,7 @@
 {
-  "total_recipes": 290,
+  "total_recipes": 293,
   "failed_recipes": 0,
-  "last_updated": "2026-06-22 13:31:34",
+  "last_updated": "2026-06-29 08:20:32",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -2030,6 +2030,27 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "high-protein-tempeh-bolognese-with-mafaldine-pasta-courgettes-kale-pine-nut-walnut-parmesan",
+      "title": "High Protein Tempeh Bolognese With Mafaldine Pasta, Courgettes, Kale, Pine Nut & Walnut 'Parmesan'",
+      "url": "https://planthood.co.uk/products/high-protein-tempeh-bolognese-with-mafaldine-pasta-courgettes-kale-pine-nut-walnut-parmesan",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "lahmacun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
+      "title": "Lahmacun Flatbread With Meaty Spiced Tofu Crumble, Tomato, Cucumber, Sumac Pickled Onion & Garlic Yoghurt",
+      "url": "https://planthood.co.uk/products/lahmacun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "lemon-ginger-detox-ramen-with-smoked-tofu-udon-noodles-cavolo-nero-carrot-superseed-chilli-crunch",
+      "title": "Lemon & Ginger Detox Ramen With Smoked Tofu, Udon Noodles, Cavolo Nero, Carrot & Superseed Chilli Crunch",
+      "url": "https://planthood.co.uk/products/lemon-ginger-detox-ramen-with-smoked-tofu-udon-noodles-cavolo-nero-carrot-superseed-chilli-crunch",
       "scraped": true,
       "week_label": null
     }
