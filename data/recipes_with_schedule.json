@@ -308,6 +308,32 @@
     },
     "steps": [
       {
+        "id": "step-2",
+        "raw_text": "Take out a large casserole dish or an oven-proof deep pan, along with a blender",
+        "label": "Prepare equipment",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3"
+        ],
+        "equipment": [
+          "casserole dish",
+          "blender"
+        ],
+        "temperature_c": null,
+        "notes": "Gather casserole dish, blender, and mixing bowl.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 2,
+        "dependencies_met": true,
+        "warnings": []
+      },
+      {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan",
         "label": "Preheat oven",
@@ -379,32 +405,6 @@
         "slack_min": 35,
         "latest_start_min": 35,
         "latest_end_min": 38,
-        "dependencies_met": true,
-        "warnings": []
-      },
-      {
-        "id": "step-2",
-        "raw_text": "Take out a large casserole dish or an oven-proof deep pan, along with a blender",
-        "label": "Prepare equipment",
-        "type": "prep",
-        "duration_min": 2,
-        "start_min": 0,
-        "end_min": 2,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-3"
-        ],
-        "equipment": [
-          "casserole dish",
-          "blender"
-        ],
-        "temperature_c": null,
-        "notes": "Gather casserole dish, blender, and mixing bowl.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 0,
-        "latest_end_min": 2,
         "dependencies_met": true,
         "warnings": []
       },
@@ -694,6 +694,63 @@
     },
     "steps": [
       {
+        "id": "step-7",
+        "raw_text": "mint and coriander",
+        "label": "Chop mint and coriander",
+        "type": "prep",
+        "duration_min": 4,
+        "start_min": 0,
+        "end_min": 4,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred. Based on 'freshened up with mint and coriander'.",
+        "is_critical": false,
+        "slack_min": 16,
+        "latest_start_min": 16,
+        "latest_end_min": 20,
+        "dependencies_met": true,
+        "warnings": []
+      },
+      {
+        "id": "step-2",
+        "raw_text": "miso marinated mushrooms and walnuts",
+        "label": "Marinate mushrooms and walnuts",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3",
+          "step-4",
+          "step-7"
+        ],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred for active preparation. Marinating time not included. Based on 'miso marinated mushrooms and walnuts'.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 10,
+        "dependencies_met": true,
+        "warnings": []
+      },
+      {
         "id": "step-1",
         "raw_text": "tart pickled carrot and mooli",
         "label": "Pickle carrot and mooli",
@@ -776,63 +833,6 @@
         "slack_min": 14,
         "latest_start_min": 14,
         "latest_end_min": 20,
-        "dependencies_met": true,
-        "warnings": []
-      },
-      {
-        "id": "step-7",
-        "raw_text": "mint and coriander",
-        "label": "Chop mint and coriander",
-        "type": "prep",
-        "duration_min": 4,
-        "start_min": 0,
-        "end_min": 4,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-5",
-          "step-6"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred. Based on 'freshened up with mint and coriander'.",
-        "is_critical": false,
-        "slack_min": 16,
-        "latest_start_min": 16,
-        "latest_end_min": 20,
-        "dependencies_met": true,
-        "warnings": []
-      },
-      {
-        "id": "step-2",
-        "raw_text": "miso marinated mushrooms and walnuts",
-        "label": "Marinate mushrooms and walnuts",
-        "type": "prep",
-        "duration_min": 10,
-        "start_min": 0,
-        "end_min": 10,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-3",
-          "step-4",
-          "step-7"
-        ],
-        "equipment": [
-          "bowl"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred for active preparation. Marinating time not included. Based on 'miso marinated mushrooms and walnuts'.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 0,
-        "latest_end_min": 10,
         "dependencies_met": true,
         "warnings": []
       },
@@ -5923,169 +5923,6 @@
     },
     "steps": [
       {
-        "id": "step-1",
-        "raw_text": "whipped feta",
-        "label": "Whip Feta until Creamy",
-        "type": "prep",
-        "duration_min": 2,
-        "start_min": 0,
-        "end_min": 2,
-        "requires": [],
-        "can_overlap_with": [
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-7",
-          "step-8",
-          "step-9",
-          "step-11"
-        ],
-        "equipment": [
-          "Blender",
-          "Bowl"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred for whipping a pre-made feta base to fit total recipe time.",
-        "is_critical": false,
-        "slack_min": 15,
-        "latest_start_min": 15,
-        "latest_end_min": 17,
-        "dependencies_met": true,
-        "warnings": []
-      },
-      {
-        "id": "step-9",
-        "raw_text": "caramelised plantain",
-        "label": "Slice Plantain",
-        "type": "prep",
-        "duration_min": 1,
-        "start_min": 0,
-        "end_min": 1,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-5",
-          "step-6",
-          "step-7",
-          "step-8",
-          "step-11"
-        ],
-        "equipment": [
-          "Knife",
-          "Cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred.",
-        "is_critical": false,
-        "slack_min": 10,
-        "latest_start_min": 10,
-        "latest_end_min": 11,
-        "dependencies_met": true,
-        "warnings": []
-      },
-      {
-        "id": "step-3",
-        "raw_text": "red onion",
-        "label": "Slice Red Onion for Pickling",
-        "type": "prep",
-        "duration_min": 1,
-        "start_min": 0,
-        "end_min": 1,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-7",
-          "step-8",
-          "step-9",
-          "step-11"
-        ],
-        "equipment": [
-          "Knife",
-          "Cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Added based on ingredients list for 'pink pickled onions'.",
-        "is_critical": false,
-        "slack_min": 15,
-        "latest_start_min": 15,
-        "latest_end_min": 16,
-        "dependencies_met": true,
-        "warnings": []
-      },
-      {
-        "id": "step-11",
-        "raw_text": "avocado",
-        "label": "Prepare Avocado",
-        "type": "prep",
-        "duration_min": 2,
-        "start_min": 0,
-        "end_min": 2,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-5",
-          "step-6",
-          "step-7",
-          "step-8",
-          "step-9",
-          "step-10"
-        ],
-        "equipment": [
-          "Knife",
-          "Cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred for slicing or dicing.",
-        "is_critical": false,
-        "slack_min": 15,
-        "latest_start_min": 15,
-        "latest_end_min": 17,
-        "dependencies_met": true,
-        "warnings": []
-      },
-      {
-        "id": "step-8",
-        "raw_text": "lime and coriander wholegrain brown rice",
-        "label": "Chop Coriander & Juice Lime",
-        "type": "prep",
-        "duration_min": 2,
-        "start_min": 0,
-        "end_min": 2,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-5",
-          "step-6",
-          "step-7",
-          "step-9",
-          "step-10",
-          "step-11"
-        ],
-        "equipment": [
-          "Knife",
-          "Cutting board",
-          "Citrus juicer"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred.",
-        "is_critical": false,
-        "slack_min": 14,
-        "latest_start_min": 14,
-        "latest_end_min": 16,
-        "dependencies_met": true,
-        "warnings": []
-      },
-      {
         "id": "step-7",
         "raw_text": "lime and coriander wholegrain brown rice",
         "label": "Cook Brown Rice",
@@ -6150,6 +5987,136 @@
         "warnings": []
       },
       {
+        "id": "step-1",
+        "raw_text": "whipped feta",
+        "label": "Whip Feta until Creamy",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-7",
+          "step-8",
+          "step-9",
+          "step-11"
+        ],
+        "equipment": [
+          "Blender",
+          "Bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred for whipping a pre-made feta base to fit total recipe time.",
+        "is_critical": false,
+        "slack_min": 15,
+        "latest_start_min": 15,
+        "latest_end_min": 17,
+        "dependencies_met": true,
+        "warnings": []
+      },
+      {
+        "id": "step-11",
+        "raw_text": "avocado",
+        "label": "Prepare Avocado",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-8",
+          "step-9",
+          "step-10"
+        ],
+        "equipment": [
+          "Knife",
+          "Cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred for slicing or dicing.",
+        "is_critical": false,
+        "slack_min": 15,
+        "latest_start_min": 15,
+        "latest_end_min": 17,
+        "dependencies_met": true,
+        "warnings": []
+      },
+      {
+        "id": "step-3",
+        "raw_text": "red onion",
+        "label": "Slice Red Onion for Pickling",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 0,
+        "end_min": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-7",
+          "step-8",
+          "step-9",
+          "step-11"
+        ],
+        "equipment": [
+          "Knife",
+          "Cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Added based on ingredients list for 'pink pickled onions'.",
+        "is_critical": false,
+        "slack_min": 15,
+        "latest_start_min": 15,
+        "latest_end_min": 16,
+        "dependencies_met": true,
+        "warnings": []
+      },
+      {
+        "id": "step-8",
+        "raw_text": "lime and coriander wholegrain brown rice",
+        "label": "Chop Coriander & Juice Lime",
+        "type": "prep",
+        "duration_min": 2,
+        "start_min": 0,
+        "end_min": 2,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-9",
+          "step-10",
+          "step-11"
+        ],
+        "equipment": [
+          "Knife",
+          "Cutting board",
+          "Citrus juicer"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": false,
+        "slack_min": 14,
+        "latest_start_min": 14,
+        "latest_end_min": 16,
+        "dependencies_met": true,
+        "warnings": []
+      },
+      {
         "id": "step-4",
         "raw_text": "red wine vinegar, water, beetroot juice, raw organic cane sugar (pickling liquid only), sea salt",
         "label": "Prepare Pickling Liquid",
@@ -6180,16 +6147,14 @@
         "warnings": []
       },
       {
-        "id": "step-10",
+        "id": "step-9",
         "raw_text": "caramelised plantain",
-        "label": "Caramelise Plantain Slices",
-        "type": "cook",
-        "duration_min": 6,
+        "label": "Slice Plantain",
+        "type": "prep",
+        "duration_min": 1,
         "start_min": 0,
-        "end_min": 7,
-        "requires": [
-          "step-9"
-        ],
+        "end_min": 1,
+        "requires": [],
         "can_overlap_with": [
           "step-1",
           "step-2",
@@ -6202,13 +6167,48 @@
           "step-11"
         ],
         "equipment": [
-          "Pan"
+          "Knife",
+          "Cutting board"
         ],
         "temperature_c": null,
         "notes": "Duration inferred.",
         "is_critical": false,
-        "slack_min": 11,
-        "latest_start_min": 11,
+        "slack_min": 10,
+        "latest_start_min": 10,
+        "latest_end_min": 11,
+        "dependencies_met": true,
+        "warnings": []
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Frijoles negros ... simmered with aromatics and spices until tender and creamy.",
+        "label": "Simmer Frijoles Negros",
+        "type": "cook",
+        "duration_min": 15,
+        "start_min": 0,
+        "end_min": 17,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-1",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-7",
+          "step-8",
+          "step-9",
+          "step-10",
+          "step-11"
+        ],
+        "equipment": [
+          "Pot"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred for simmering pre-cooked beans with aromatics and spices until tender and creamy. Assumes pre-cooked black beans to fit total recipe time.",
+        "is_critical": false,
+        "slack_min": 2,
+        "latest_start_min": 2,
         "latest_end_min": 17,
         "dependencies_met": true,
         "warnings": []
@@ -6249,40 +6249,6 @@
         "warnings": []
       },
       {
-        "id": "step-6",
-        "raw_text": "Frijoles negros ... simmered with aromatics and spices until tender and creamy.",
-        "label": "Simmer Frijoles Negros",
-        "type": "cook",
-        "duration_min": 15,
-        "start_min": 0,
-        "end_min": 17,
-        "requires": [
-          "step-2"
-        ],
-        "can_overlap_with": [
-          "step-1",
-          "step-3",
-          "step-4",
-          "step-5",
-          "step-7",
-          "step-8",
-          "step-9",
-          "step-10",
-          "step-11"
-        ],
-        "equipment": [
-          "Pot"
-        ],
-        "temperature_c": null,
-        "notes": "Duration inferred for simmering pre-cooked beans with aromatics and spices until tender and creamy. Assumes pre-cooked black beans to fit total recipe time.",
-        "is_critical": false,
-        "slack_min": 2,
-        "latest_start_min": 2,
-        "latest_end_min": 17,
-        "dependencies_met": true,
-        "warnings": []
-      },
-      {
         "id": "step-5",
         "raw_text": "pink pickled onions",
         "label": "Combine Red Onion with Pickling Liquid",
@@ -6312,6 +6278,40 @@
         "is_critical": false,
         "slack_min": 16,
         "latest_start_min": 16,
+        "latest_end_min": 17,
+        "dependencies_met": true,
+        "warnings": []
+      },
+      {
+        "id": "step-10",
+        "raw_text": "caramelised plantain",
+        "label": "Caramelise Plantain Slices",
+        "type": "cook",
+        "duration_min": 6,
+        "start_min": 0,
+        "end_min": 7,
+        "requires": [
+          "step-9"
+        ],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6",
+          "step-7",
+          "step-8",
+          "step-11"
+        ],
+        "equipment": [
+          "Pan"
+        ],
+        "temperature_c": null,
+        "notes": "Duration inferred.",
+        "is_critical": false,
+        "slack_min": 11,
+        "latest_start_min": 11,
         "latest_end_min": 17,
         "dependencies_met": true,
         "warnings": []
