@@ -1,7 +1,7 @@
 {
-  "total_recipes": 291,
+  "total_recipes": 294,
   "failed_recipes": 0,
-  "last_updated": "2026-07-06 12:00:18",
+  "last_updated": "2026-07-13 06:25:26",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -2037,6 +2037,27 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "falafel-smash-tacos-with",
+      "title": "Smashed Falafel Tacos With Garlic Tahini Sauce, Sumac Cabbage Onion Pickle & Fresh Salad On Regenerative Wheat Tortillas",
+      "url": "https://planthood.co.uk/products/falafel-smash-tacos-with",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "smashed-falafel-tacos-with-garlic-tahini-sauce-sumac-cabbage-onion-pickle-fresh-salad-on-regenerative-wheat-tortillas-copy",
+      "title": "Souvlaki Style Tofu Bowl With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad Over Wholegrain Rice",
+      "url": "https://planthood.co.uk/products/smashed-falafel-tacos-with-garlic-tahini-sauce-sumac-cabbage-onion-pickle-fresh-salad-on-regenerative-wheat-tortillas-copy",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-cheats-lasagne-with-courgette-butter-beans-miso-bechamel-toasted-nuts-seeds",
+      "title": "Super Green Cheats Lasagne With Courgette, Butter Beans, Miso Bechamel, Toasted Nuts & Seeds",
+      "url": "https://planthood.co.uk/products/super-green-cheats-lasagne-with-courgette-butter-beans-miso-bechamel-toasted-nuts-seeds",
       "scraped": true,
       "week_label": null
     }
