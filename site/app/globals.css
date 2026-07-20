@@ -998,6 +998,11 @@ body {
   overflow-x: auto;
 }
 
+[data-theme="dark"] .gantt-horizontal {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border-color: rgba(148, 163, 184, 0.18);
+}
+
 .gantt-axis {
   position: relative;
   height: 46px;
@@ -1966,7 +1971,8 @@ body {
   }
 
   .gantt-axis-vertical {
-    display: none; /* Hide axis on mobile for more space */
+    width: 40px; /* Slim axis on mobile — keep the minute labels visible */
+    font-size: 0.7rem;
   }
 
   .gantt-steps-vertical {

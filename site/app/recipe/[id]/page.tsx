@@ -1,8 +1,9 @@
-import { getRecipeById, getRecipes } from '@/lib/data';
+import { getRecipeById, getProcessedRecipes } from '@/lib/data';
 import GanttChart from '@/components/GanttChart';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { fetchRecipeImage } from '@/lib/images';
+import RecipeImage from '@/components/RecipeImage';
 
 interface RecipePageProps {
   params: {
@@ -10,9 +11,10 @@ interface RecipePageProps {
   };
 }
 
-// Generate static paths for all recipes
+// Generate static paths only for processed recipes (those with a real timeline).
+// Unprocessed/non-cookable recipes would render as broken "0 min" shells, so we skip them.
 export async function generateStaticParams() {
-  const recipes = getRecipes();
+  const recipes = getProcessedRecipes();
   return recipes.map(recipe => ({
     id: recipe.id,
   }));
@@ -33,17 +35,12 @@ export default async function RecipePage({ params }: RecipePageProps) {
 
       <div className="recipe-hero-card">
         <div className="recipe-hero-media">
-          {heroImage ? (
-            <img
-              src={heroImage}
-              alt={`Dish photo for ${recipe.title}`}
-              loading="lazy"
-            />
-          ) : (
-            <div className="recipe-hero-placeholder">
-              <span>Photo coming soon</span>
-            </div>
-          )}
+          <RecipeImage
+            src={heroImage}
+            alt={`Dish photo for ${recipe.title}`}
+            placeholderClassName="recipe-hero-placeholder"
+            placeholderText="Photo coming soon"
+          />
         </div>
 
         <div className="recipe-header">

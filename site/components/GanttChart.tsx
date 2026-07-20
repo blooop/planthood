@@ -26,14 +26,16 @@ const STEP_TYPE_LABELS: Record<RecipeStep['type'], string> = {
 // Responsive constants based on screen size
 const MOBILE_BREAKPOINT = 768;
 const DESKTOP_CONFIG = {
-  ROW_MULTIPLIER: 10,
-  MIN_ROW_HEIGHT: 4,
+  ROW_MULTIPLIER: 4,
+  PIXELS_PER_MIN: 14,
   MIN_TIMELINE_HEIGHT: 480,
+  MAX_TIMELINE_HEIGHT: 1000,
 };
 const MOBILE_CONFIG = {
-  ROW_MULTIPLIER: 5,
-  MIN_ROW_HEIGHT: 2,
-  MIN_TIMELINE_HEIGHT: 400,
+  ROW_MULTIPLIER: 4,
+  PIXELS_PER_MIN: 9,
+  MIN_TIMELINE_HEIGHT: 360,
+  MAX_TIMELINE_HEIGHT: 800,
 };
 
 const CRITICAL_PATH_PREVIEW_COUNT = 5;
@@ -59,8 +61,9 @@ export default function GanttChart({ steps }: GanttChartProps) {
   // Use responsive configuration
   const config = isMobile ? MOBILE_CONFIG : DESKTOP_CONFIG;
   const ROW_MULTIPLIER = config.ROW_MULTIPLIER;
-  const MIN_ROW_HEIGHT = config.MIN_ROW_HEIGHT;
   const MIN_TIMELINE_HEIGHT = config.MIN_TIMELINE_HEIGHT;
+  const MAX_TIMELINE_HEIGHT = config.MAX_TIMELINE_HEIGHT;
+  const PIXELS_PER_MIN = config.PIXELS_PER_MIN;
 
   // Calculate critical path statistics
   const criticalPath = useMemo(() => {
@@ -68,14 +71,6 @@ export default function GanttChart({ steps }: GanttChartProps) {
   }, [steps]);
 
   const displaySteps = showCriticalOnly ? criticalPath : steps;
-
-  if (!steps || steps.length === 0) {
-    return (
-      <div className="gantt-empty">
-        No timeline data available
-      </div>
-    );
-  }
 
   const maxTime = Math.max(...displaySteps.map(s => s.end_min), 0);
   const safeMaxTime = Math.max(maxTime, 1);
@@ -92,13 +87,35 @@ export default function GanttChart({ steps }: GanttChartProps) {
     return marks;
   }, [safeMaxTime]);
 
-  const totalRows = Math.ceil(safeMaxTime * ROW_MULTIPLIER);
-  const rowHeight = Math.max(MIN_ROW_HEIGHT, MIN_TIMELINE_HEIGHT / totalRows);
-  const verticalHeight = totalRows * rowHeight;
+  // All hooks are above this line, so the early return below never changes hook order.
+  if (!steps || steps.length === 0) {
+    return (
+      <div className="gantt-empty">
+        No timeline data available
+      </div>
+    );
+  }
+
+  // Grid granularity for positioning; the height is clamped so long recipes don't
+  // produce thousand-pixel-tall charts (rows can be sub-pixel — they only place bars).
+  const totalRows = Math.max(1, Math.ceil(safeMaxTime * ROW_MULTIPLIER));
+  const verticalHeight = Math.min(
+    MAX_TIMELINE_HEIGHT,
+    Math.max(MIN_TIMELINE_HEIGHT, Math.round(safeMaxTime * PIXELS_PER_MIN))
+  );
+  const rowHeight = verticalHeight / totalRows;
   const gridTemplateRows = `repeat(${totalRows}, ${rowHeight}px)`;
 
   const handleStepClick = (step: RecipeStep) => {
     setSelectedStep(step);
+  };
+
+  // Make a clickable div behave like a button for keyboard users.
+  const keyActivate = (step: RecipeStep) => (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handleStepClick(step);
+    }
   };
 
   const renderHorizontalChart = () => (
@@ -127,7 +144,11 @@ export default function GanttChart({ steps }: GanttChartProps) {
             <div
               key={step.id}
               className={`gantt-row ${selectedStep?.id === step.id ? 'selected' : ''} ${step.is_critical ? 'critical' : ''}`}
+              role="button"
+              tabIndex={0}
+              aria-label={`${step.label}, ${STEP_TYPE_LABELS[step.type]}, ${step.duration_min} minutes`}
               onClick={() => handleStepClick(step)}
+              onKeyDown={keyActivate(step)}
             >
               <div className="gantt-row-info">
                 <div>
@@ -209,7 +230,11 @@ export default function GanttChart({ steps }: GanttChartProps) {
                 key={step.id}
                 className={`gantt-step-vertical ${selectedStep?.id === step.id ? 'selected' : ''} ${step.is_critical ? 'critical' : ''}`}
                 style={{ gridRow: `${rowStart} / ${rowEnd}` }}
+                role="button"
+                tabIndex={0}
+                aria-label={`${step.label}, ${STEP_TYPE_LABELS[step.type]}, ${step.duration_min} minutes`}
                 onClick={() => handleStepClick(step)}
+                onKeyDown={keyActivate(step)}
               >
                 <div
                   className={`gantt-step-bar-vertical ${step.is_critical ? 'critical' : ''}`}
@@ -256,7 +281,14 @@ export default function GanttChart({ steps }: GanttChartProps) {
           </p>
           <ol className="critical-path-steps">
             {(criticalPathExpanded ? criticalPath : criticalPath.slice(0, CRITICAL_PATH_PREVIEW_COUNT)).map((step, idx) => (
-              <li key={step.id} onClick={() => handleStepClick(step)}>
+              <li
+                key={step.id}
+                role="button"
+                tabIndex={0}
+                aria-label={`${step.label}, ${step.duration_min} minutes`}
+                onClick={() => handleStepClick(step)}
+                onKeyDown={keyActivate(step)}
+              >
                 <span className="step-number">{idx + 1}</span>
                 <span className="step-name">{step.label}</span>
                 <span className="step-time">{step.duration_min}m</span>
@@ -289,6 +321,8 @@ export default function GanttChart({ steps }: GanttChartProps) {
             onClick={() => setShowCriticalOnly(!showCriticalOnly)}
             className={`gantt-toggle-btn ${showCriticalOnly ? 'active' : ''}`}
             title="Toggle critical path only"
+            aria-label="Toggle critical path only"
+            aria-pressed={showCriticalOnly}
           >
             ⚡
           </button>
@@ -298,6 +332,7 @@ export default function GanttChart({ steps }: GanttChartProps) {
             }
             className="gantt-toggle-btn"
             title="Toggle orientation"
+            aria-label={`Switch to ${orientation === 'vertical' ? 'horizontal' : 'vertical'} layout`}
           >
             ↔↕
           </button>
