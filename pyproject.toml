@@ -103,12 +103,16 @@ clear-pixi = "rm -rf .pixi pixi.lock"
 setup-git-merge-driver = "git config merge.ourslock.driver true"
 update-from-template-repo = "./scripts/update_from_template.sh"
 
-# Planthood site generator tasks
+# Planthood recipe pipeline tasks (scrape -> extract -> enrich -> schedule)
 scrape = "python scraper/scrape.py"
 scrape-weeks = "python scraper/scrape_weeks.py"
-parse = "python parser/parse.py"
-schedule = "python scheduler/schedule.py"
-build-data = { depends-on = ["scrape", "parse", "schedule"] }
+extract = "python -m planthood.cli extract"
+enrich = "python -m planthood.cli enrich"
+parse = "python -m planthood.cli enrich"  # back-compat alias for enrich
+schedule = "python -m planthood.cli schedule"
+quality = "python -m planthood.cli quality"
+inspect = { cmd = "python -m planthood.cli inspect", description = "Run one recipe through every stage. Usage: pixi run inspect <recipe-id>" }
+build-data = { depends-on = ["scrape", "extract", "enrich", "schedule"] }
 setup-site = { cmd = "cd site && npm install", inputs = [
   "site/package.json",
   "site/package-lock.json",
@@ -134,25 +138,6 @@ dev-site = { cmd = "cd site && npm run dev", depends-on = ["setup-site"] }
 start-site = "./scripts/start_site.sh"
 view-site = { depends-on = ["build-site", "start-site"] }
 
-# Incremental recipe processing (for rate-limit-safe scheduled runs)
-find-upcoming = "python find_upcoming_recipes.py"
-process-next-recipe = "python process_next_recipe.py"
-process-specific-recipe = { cmd = "python process_single_url.py", description = "Process a specific recipe by URL. Usage: pixi run process-specific-recipe <recipe_url>" }
-process-recipe = { cmd = "python process_single_url.py", description = "Alias for process-specific-recipe. Process any Planthood recipe by URL." }
-process-and-deploy = { depends-on = ["process-next-recipe", "build-site"] }
-
-# PR preparation
-commit-pr = """git add -A && git commit -m 'feat: add incremental recipe processing and GitHub Pages deployment
-
-- Add automated scraping for 237 Planthood recipes
-- Implement LLM-powered recipe parsing (Gemini/OpenAI/Claude)
-- Generate Gantt chart timelines for recipes
-- Add incremental processing (1 recipe/day to avoid rate limits)
-- Set up GitHub Actions for daily processing and deployment
-- Configure GitHub Pages deployment
-- Process 2 recipes initially (19 remaining)
-
-See PR_SUMMARY.md for details' && git push origin HEAD"""
 
 [tool.pylint]
 extension-pkg-whitelist = ["numpy"]
