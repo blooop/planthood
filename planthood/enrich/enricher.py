@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import time
 from typing import Dict, List, Optional
 
@@ -13,7 +14,10 @@ from ..models import ExtractedRecipe, ParsedRecipe, RecipeStep
 
 PROMPT_VERSION = "enrich-v1"
 MAX_DURATION_MIN = 240  # clamp absurd LLM durations (a step over 4h is a hallucination)
-LLM_RETRIES = 3
+LLM_RETRIES = 4
+# Minimum seconds between LLM calls, to stay under a provider's requests-per-minute limit.
+# Gemini's free tier is ~5 RPM, so ~13s spacing avoids 429s entirely. Set via env.
+MIN_LLM_INTERVAL_SEC = float(os.getenv("ENRICH_MIN_INTERVAL_SEC", "0"))
 
 ENRICH_SCHEMA = {
     "type": "object",
@@ -159,7 +163,8 @@ def _complete_with_retry(provider: LLMProvider, system: str, user: str) -> objec
         except Exception as e:  # noqa: BLE001 - provider SDKs raise varied error types
             last = e
             if attempt < LLM_RETRIES - 1:
-                time.sleep(2 * (attempt + 1))
+                # Backoff long enough to clear a per-minute rate-limit window (up to ~30s).
+                time.sleep(min(30, 8 * (attempt + 1)))
     raise last if last else RuntimeError("enrichment failed")
 
 
@@ -303,6 +308,7 @@ def enrich_all(
     existing_by_id: Dict[str, ParsedRecipe] = {r.id: r for r in (existing or [])}
     breaker = _Breaker()
     spent = 0
+    last_llm_ts = 0.0
     out: List[ParsedRecipe] = []
 
     for r in recipes:
@@ -314,7 +320,14 @@ def enrich_all(
         budget_left = limit == 0 or spent < limit
         allow_llm = r.cookable and bool(r.steps) and budget_left and not breaker.tripped
         if allow_llm:
+            # Pace calls to stay under the provider's requests-per-minute limit
+            # (e.g. Gemini free tier ~5 RPM). This is what makes the daily run slowly
+            # but reliably clear the backlog instead of tripping on 429s.
+            wait = MIN_LLM_INTERVAL_SEC - (time.time() - last_llm_ts)
+            if wait > 0:
+                time.sleep(wait)
             spent += 1
+            last_llm_ts = time.time()
         try:
             out.append(
                 enrich_recipe(r, provider=provider, allow_llm=allow_llm, on_llm=breaker.record)

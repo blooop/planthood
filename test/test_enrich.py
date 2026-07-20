@@ -104,7 +104,10 @@ def test_graph_refs_sanitized():
     assert parsed.steps[1].can_overlap_with == []  # self and ghost dropped
 
 
-def test_llm_failure_falls_back_to_deterministic_steps():
+def test_llm_failure_falls_back_to_deterministic_steps(monkeypatch):
+    from planthood.enrich import enricher
+
+    monkeypatch.setattr(enricher.time, "sleep", lambda *_: None)  # skip retry backoff
     # A flaky/poor model that always errors must not yield an empty cookable recipe.
     ex = _extracted(["Preheat the oven to 200C.", "Roast for 20 minutes.", "Serve."])
 
