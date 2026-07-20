@@ -5,13 +5,15 @@
   "private": true,
   "scripts": {
     "scrape": "python scraper/scrape.py",
-    "parse": "python parser/parse.py",
-    "schedule": "python scheduler/schedule.py",
-    "build-data": "npm run scrape && npm run parse && npm run schedule",
+    "extract": "python -m planthood.cli extract",
+    "enrich": "python -m planthood.cli enrich",
+    "schedule": "python -m planthood.cli schedule",
+    "quality": "python -m planthood.cli quality",
+    "build-data": "npm run scrape && npm run extract && npm run enrich && npm run schedule",
     "build-site": "cd site && npm run build",
     "build": "npm run build-data && npm run build-site",
     "dev-site": "cd site && npm run dev",
-    "setup": "pip install -r requirements.txt && cd site && npm install",
+    "setup": "pip install -e . && cd site && npm install",
     "test": "pytest"
   },
   "keywords": [

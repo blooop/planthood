@@ -53,18 +53,24 @@ pixi install
 cp .env.example .env
 # Edit .env and add your LLM API key
 
-# Run the pipeline
+# Run the pipeline (scrape -> extract -> enrich -> schedule)
 pixi run scrape      # Scrape recipes from planthood.co.uk
-pixi run parse       # Parse with LLM into structured steps
+pixi run extract     # Deterministically split method text into grounded steps
+pixi run enrich      # LLM adds durations, dependencies, equipment (needs a key)
 pixi run schedule    # Compute Gantt timelines
+pixi run quality     # Print the quality scorecard
 pixi run dev-site    # Start development server
 
 # Or run all data steps at once
 pixi run build-data
+
+# Inspect one recipe end-to-end (works offline with the mock provider)
+pixi run inspect mushroom-shawarma --provider mock
 ```
 
 ## Documentation
 
+- **[docs/PIPELINE.md](./docs/PIPELINE.md)** - How the recipe pipeline works (stages, providers, quality)
 - **[GITHUB_PAGES_SETUP.md](./GITHUB_PAGES_SETUP.md)** - Complete GitHub Pages deployment guide
 - **[PLANTHOOD_SITE_README.md](./PLANTHOOD_SITE_README.md)** - Detailed site generator documentation
 - **[SETUP.md](./SETUP.md)** - Development setup instructions
@@ -79,7 +85,12 @@ pixi run build-data
        │ raw_recipes.json
        ▼
 ┌─────────────┐
-│   Parser    │  LLM converts method text → structured steps
+│  Extractor  │  Deterministically splits method text into grounded steps
+└──────┬──────┘
+       │ recipes_extracted.json
+       ▼
+┌─────────────┐
+│  Enricher   │  LLM adds durations, dependencies, equipment per step
 └──────┬──────┘
        │ recipes_parsed.json
        ▼

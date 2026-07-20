@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Recipe } from '@/lib/types';
 import { fetchRecipeImage } from '@/lib/images';
+import RecipeImage from '@/components/RecipeImage';
 
 interface RecipeCardProps {
   recipe: Recipe;
@@ -12,17 +13,12 @@ export default async function RecipeCard({ recipe }: RecipeCardProps) {
   return (
     <Link href={`/recipe/${recipe.id}`} className="recipe-card">
       <div className="recipe-card-image">
-        {thumbnail ? (
-          <img
-            src={thumbnail}
-            alt={`Thumbnail for ${recipe.title}`}
-            loading="lazy"
-          />
-        ) : (
-          <div className="recipe-card-placeholder">
-            <span>No image</span>
-          </div>
-        )}
+        <RecipeImage
+          src={thumbnail}
+          alt={`Thumbnail for ${recipe.title}`}
+          placeholderClassName="recipe-card-placeholder"
+          placeholderText="No image"
+        />
       </div>
 
       <div className="recipe-card-content">

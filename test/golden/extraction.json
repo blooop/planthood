@@ -1,0 +1,86 @@
+[
+  {
+    "id": "mushroom-shawarma",
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "step_count": 5,
+    "first_step_prefix": "Preheat your oven to 220°C / 200°C fan a"
+  },
+  {
+    "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
+    "cookable": false,
+    "extraction_method": "none",
+    "step_count": 0,
+    "first_step_prefix": ""
+  },
+  {
+    "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "step_count": 5,
+    "first_step_prefix": "Take out a saucepan and preheat your ove"
+  },
+  {
+    "id": "black-bean-smash-burger-tacos",
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "step_count": 5,
+    "first_step_prefix": "Take out a large frying pan and two mixi"
+  },
+  {
+    "id": "afghan-aubergine-borani-banjan-with-saucy-spiced-lentils-garlic-yoghurt-fresh-mint-pillowy-flatbreads",
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "step_count": 6,
+    "first_step_prefix": "Take out a large frying pan and a saucep"
+  },
+  {
+    "id": "aromatic-thai-green-curry-soup-with-beluga-lentils-tender-aubergine-sweet-potato-basil-lime",
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "step_count": 4,
+    "first_step_prefix": "Preheat your oven to 220°C / 200°C fan a"
+  },
+  {
+    "id": "autumnal-gratin-with-rich-lentil-ragu-topped-with-potato-beetroot-sweet-potato-creamy-miso-bechamel",
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "step_count": 5,
+    "first_step_prefix": "Preheat your oven to 240°C / 220°C fan. "
+  },
+  {
+    "id": "black-bean-frijoles-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice",
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "step_count": 7,
+    "first_step_prefix": "Boil water in your kettle, and take out "
+  },
+  {
+    "id": "aubergine-parm-sandwich-with-tomato-marinara-vegan-pesto-on-soft-vegan-brioche",
+    "cookable": true,
+    "extraction_method": "paragraph",
+    "step_count": 4,
+    "first_step_prefix": "One of the most delicious flavour combin"
+  },
+  {
+    "id": "bbq-jackfruit-tacos-chipotle-cashew-crema",
+    "cookable": true,
+    "extraction_method": "paragraph",
+    "step_count": 3,
+    "first_step_prefix": "Deliciously meaty pulled jackfruit marin"
+  },
+  {
+    "id": "bun-chay-noodle-salad",
+    "cookable": true,
+    "extraction_method": "paragraph",
+    "step_count": 3,
+    "first_step_prefix": "A light and vibrant Vietnamese vermicell"
+  },
+  {
+    "id": "apple-pecan-crumble-snack-bar-100-raw-whole-foods",
+    "cookable": false,
+    "extraction_method": "none",
+    "step_count": 0,
+    "first_step_prefix": ""
+  }
+]

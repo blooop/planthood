@@ -1,25 +1,20 @@
 name: Build and Deploy to GitHub Pages
 
 on:
-  # Run weekly on Mondays at 3 AM UTC
+  # Daily at 3 AM UTC: enrich as much of the backlog as the day's LLM quota allows.
+  # Progress persists via the committed enrich cache, so the catalogue fills in over days.
   schedule:
-    - cron: '0 3 * * 1'
-
-  # Allow manual triggering
+    - cron: '0 3 * * *'
   workflow_dispatch:
-
-  # Run on push to main (for testing)
   push:
     branches:
       - main
 
-# Required for GitHub Pages deployment and committing data
 permissions:
   contents: write
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -32,6 +27,15 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
+    env:
+      # Configure via repo settings: set variable LLM_PROVIDER (default gemini) and the
+      # matching API-key secret. Only the secret for the chosen provider needs to be set.
+      LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'gemini' }}
+      GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-pro' }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -40,8 +44,6 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.11'
-          cache: 'pip'
-          cache-dependency-path: 'requirements.txt'
 
       - name: Set up Node.js
         uses: actions/setup-node@v6
@@ -50,24 +52,35 @@ jobs:
           cache: 'npm'
           cache-dependency-path: 'site/package-lock.json'
 
-      - name: Install Python dependencies
-        run: |
-          pip install -r requirements.txt
+      - name: Install pipeline (planthood package + deps)
+        run: pip install -e .
 
       - name: Install Node dependencies
         working-directory: site
-        run: |
-          npm ci
+        run: npm ci
 
-      - name: Run scraper
-        run: |
-          python scraper/scrape.py
+      # Full pipeline: scrape -> extract (deterministic) -> enrich (LLM) -> schedule.
+      # Each stage is merge-safe: a failed LLM enrichment never wipes good data.
+      - name: Scrape recipes
+        run: python scraper/scrape.py
         continue-on-error: true
 
-      # Note: Incremental processing is done via process-next-recipe.yml
-      # This workflow only scrapes new recipes and uses existing processed data
-      # To process recipes, use the incremental workflow or run manually:
-      #   pixi run process-next-recipe
+      - name: Extract steps (deterministic)
+        run: python -m planthood.cli extract
+
+      # Resumes from the committed recipes_parsed.json: only recipes not yet LLM-enriched
+      # are attempted, up to DAILY_ENRICH_LIMIT (0 = as many as the quota allows). Over
+      # successive daily runs the whole catalogue is enriched.
+      - name: Enrich steps (LLM)
+        run: python -m planthood.cli enrich --limit ${{ vars.DAILY_ENRICH_LIMIT || 0 }}
+        continue-on-error: true
+
+      - name: Schedule timelines
+        run: python -m planthood.cli schedule
+
+      - name: Quality report
+        run: python -m planthood.cli quality
+        continue-on-error: true
 
       - name: Copy recipe data to site public folder
         run: |
@@ -76,8 +89,7 @@ jobs:
 
       - name: Build Next.js site
         working-directory: site
-        run: |
-          npm run build
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

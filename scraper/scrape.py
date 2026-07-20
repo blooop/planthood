@@ -15,6 +15,8 @@ import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 
+from planthood.text import node_text
+
 load_dotenv()
 
 # Configuration
@@ -160,7 +162,7 @@ class PlanthoodScraper:
             for sibling in header.find_next_siblings():
                 if sibling.name in ["h2", "h3"]:
                     break
-                text = sibling.get_text(strip=True)
+                text = node_text(sibling)
                 if text:
                     method_parts.append(text)
             return "\n".join(method_parts)
@@ -233,7 +235,7 @@ class PlanthoodScraper:
                 and ("method" in str(x).lower() or "instruction" in str(x).lower()),
             )
             if method_section:
-                method = method_section.get_text(separator="\n", strip=True)
+                method = node_text(method_section)
             else:
                 # Try finding by header
                 method = self._extract_method_from_headers(soup)
