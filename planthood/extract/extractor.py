@@ -53,10 +53,42 @@ PREAMBLE_BOILERPLATE = [
 
 # Words that signal genuine cooking instructions (vs a product description).
 ACTION_WORDS = (
-    "heat", "cook", "add", "mix", "stir", "chop", "slice", "fry", "bake", "boil",
-    "simmer", "roast", "place", "remove", "preheat", "drizzle", "season", "serve",
-    "pour", "blend", "whisk", "fold", "grate", "toast", "saute", "sauté", "warm",
-    "spread", "combine", "cut", "peel", "dice", "grill", "steam", "rinse", "drain",
+    "heat",
+    "cook",
+    "add",
+    "mix",
+    "stir",
+    "chop",
+    "slice",
+    "fry",
+    "bake",
+    "boil",
+    "simmer",
+    "roast",
+    "place",
+    "remove",
+    "preheat",
+    "drizzle",
+    "season",
+    "serve",
+    "pour",
+    "blend",
+    "whisk",
+    "fold",
+    "grate",
+    "toast",
+    "saute",
+    "sauté",
+    "warm",
+    "spread",
+    "combine",
+    "cut",
+    "peel",
+    "dice",
+    "grill",
+    "steam",
+    "rinse",
+    "drain",
 )
 
 
@@ -147,7 +179,7 @@ def extract_recipe(raw: RawRecipe) -> ExtractedRecipe:
     base = raw.model_dump(exclude={"schema_version", "method"})
     method = normalize_whitespace(raw.method)
 
-    def build(steps, method_clean, cookable, extraction_method, needs_llm, notes=""):
+    def build(steps, method_clean, cookable, extraction_method, needs_llm, *, notes=""):
         extracted = [
             ExtractedStep(id=f"step-{i}", text=text, marker=marker)
             for i, (marker, text) in enumerate(steps, 1)
@@ -163,7 +195,7 @@ def extract_recipe(raw: RawRecipe) -> ExtractedRecipe:
         )
 
     if not method:
-        return build([], "", False, "none", False, "No method text scraped.")
+        return build([], "", False, "none", False, notes="No method text scraped.")
 
     region, first_marker = _instruction_region(method)
 
@@ -183,11 +215,13 @@ def extract_recipe(raw: RawRecipe) -> ExtractedRecipe:
                 True,
                 "paragraph",
                 True,
-                "No STEP markers; sentence-split pending LLM segmentation.",
+                notes="No STEP markers; sentence-split pending LLM segmentation.",
             )
 
     # Path 3: no cookable instructions found (e.g. a product bundle).
-    return build([], "", False, "none", False, "No cooking instructions found (non-cookable).")
+    return build(
+        [], "", False, "none", False, notes="No cooking instructions found (non-cookable)."
+    )
 
 
 def extract_all(raws: List[RawRecipe]) -> List[ExtractedRecipe]:

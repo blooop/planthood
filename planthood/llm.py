@@ -116,7 +116,7 @@ class GeminiProvider(LLMProvider):
         key = api_key or os.getenv("GEMINI_API_KEY")
         if not key:
             raise ValueError("GEMINI_API_KEY not set")
-        self.model_name = model or os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+        self.model_name = model or os.getenv("GEMINI_MODEL", "gemini-2.5-pro")
         genai.configure(api_key=key)
         self._genai = genai
         self.model = genai.GenerativeModel(self.model_name)
@@ -136,13 +136,61 @@ class GeminiProvider(LLMProvider):
 # --------------------------------------------------------------------------- #
 # Mock provider — deterministic, offline, same contract
 # --------------------------------------------------------------------------- #
-_PREP = ("chop", "slice", "dice", "peel", "prepare", "preheat", "take out", "mix", "blend",
-         "whisk", "measure", "rinse", "wash", "grate", "cut", "marinate", "drain", "combine")
+_PREP = (
+    "chop",
+    "slice",
+    "dice",
+    "peel",
+    "prepare",
+    "preheat",
+    "take out",
+    "mix",
+    "blend",
+    "whisk",
+    "measure",
+    "rinse",
+    "wash",
+    "grate",
+    "cut",
+    "marinate",
+    "drain",
+    "combine",
+)
 _FINISH = ("serve", "plate", "garnish", "finish", "divide", "top with", "sprinkle", "drizzle over")
-_COOK = ("heat", "cook", "fry", "bake", "roast", "boil", "simmer", "saute", "sauté", "grill",
-         "steam", "toast", "warm", "sear", "stir")
-_EQUIPMENT = ("oven", "pan", "frying pan", "saucepan", "casserole dish", "roasting tray", "tray",
-              "blender", "bowl", "pot", "baking sheet", "grill", "hob", "mixing bowl", "sieve")
+_COOK = (
+    "heat",
+    "cook",
+    "fry",
+    "bake",
+    "roast",
+    "boil",
+    "simmer",
+    "saute",
+    "sauté",
+    "grill",
+    "steam",
+    "toast",
+    "warm",
+    "sear",
+    "stir",
+)
+_EQUIPMENT = (
+    "oven",
+    "pan",
+    "frying pan",
+    "saucepan",
+    "casserole dish",
+    "roasting tray",
+    "tray",
+    "blender",
+    "bowl",
+    "pot",
+    "baking sheet",
+    "grill",
+    "hob",
+    "mixing bowl",
+    "sieve",
+)
 
 
 def _infer_type(text: str) -> str:

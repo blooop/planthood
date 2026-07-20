@@ -104,12 +104,7 @@ def merge_recipes(
     by_id: Dict[str, M] = {r.id: r for r in existing}
     for rec in incoming:
         prior = by_id.get(rec.id)
-        if (
-            not force
-            and prior is not None
-            and has_content(prior)
-            and not has_content(rec)
-        ):
+        if not force and prior is not None and has_content(prior) and not has_content(rec):
             print(f"Keeping existing '{rec.id}': incoming result is empty (treated as failure)")
             continue
         by_id[rec.id] = rec

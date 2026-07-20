@@ -46,7 +46,7 @@ Configure via environment (see `.env.example`). The abstraction lives in `planth
 | `LLM_PROVIDER` | Key | Default model |
 |----------------|-----|---------------|
 | `anthropic` (default) | `ANTHROPIC_API_KEY` | `claude-haiku-4-5-20251001` |
-| `gemini` | `GEMINI_API_KEY` | `gemini-2.5-flash` |
+| `gemini` | `GEMINI_API_KEY` | `gemini-2.5-pro` (better quality; use `gemini-2.5-flash` for higher free-tier throughput) |
 | `openai` | `OPENAI_API_KEY` | `gpt-4o-mini` |
 | `mock` | none | offline deterministic enrichment (for tests / no-key runs) |
 

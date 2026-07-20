@@ -41,37 +41,67 @@ def test_marker_case_preserves_ids_and_count():
 def test_missing_enrichment_falls_back_deterministically():
     # Provider returns enrichment for only one of two steps; the other must still be valid.
     ex = _extracted(["Chop the carrots.", "Roast for 25 minutes at 180C."])
-    provider = FakeProvider({"steps": [{"id": "step-1", "label": "Chop carrots",
-                                        "type": "prep", "estimated_duration_minutes": 4}]})
+    provider = FakeProvider(
+        {
+            "steps": [
+                {
+                    "id": "step-1",
+                    "label": "Chop carrots",
+                    "type": "prep",
+                    "estimated_duration_minutes": 4,
+                }
+            ]
+        }
+    )
     parsed = enrich_recipe(ex, provider=provider)
     assert len(parsed.steps) == 2
     s2 = parsed.steps[1]
-    assert s2.type == "cook"                       # inferred from "roast"
-    assert s2.estimated_duration_minutes == 25     # parsed from text
+    assert s2.type == "cook"  # inferred from "roast"
+    assert s2.estimated_duration_minutes == 25  # parsed from text
     assert s2.temperature_c == 180
-    assert s2.label                                # non-empty fallback label
+    assert s2.label  # non-empty fallback label
 
 
 def test_invalid_duration_is_repaired():
     ex = _extracted(["Simmer gently."])
-    provider = FakeProvider({"steps": [{"id": "step-1", "label": "Simmer",
-                                        "type": "cook", "estimated_duration_minutes": 0}]})
+    provider = FakeProvider(
+        {
+            "steps": [
+                {"id": "step-1", "label": "Simmer", "type": "cook", "estimated_duration_minutes": 0}
+            ]
+        }
+    )
     parsed = enrich_recipe(ex, provider=provider)
     assert parsed.steps[0].estimated_duration_minutes >= 1
 
 
 def test_graph_refs_sanitized():
     ex = _extracted(["A.", "B."])
-    provider = FakeProvider({"steps": [
-        {"id": "step-1", "label": "A", "type": "prep", "estimated_duration_minutes": 2,
-         "requires": ["step-1", "step-99"]},                       # self + phantom
-        {"id": "step-2", "label": "B", "type": "cook", "estimated_duration_minutes": 5,
-         "requires": ["step-1"], "can_overlap_with": ["step-2", "ghost"]},
-    ]})
+    provider = FakeProvider(
+        {
+            "steps": [
+                {
+                    "id": "step-1",
+                    "label": "A",
+                    "type": "prep",
+                    "estimated_duration_minutes": 2,
+                    "requires": ["step-1", "step-99"],
+                },  # self + phantom
+                {
+                    "id": "step-2",
+                    "label": "B",
+                    "type": "cook",
+                    "estimated_duration_minutes": 5,
+                    "requires": ["step-1"],
+                    "can_overlap_with": ["step-2", "ghost"],
+                },
+            ]
+        }
+    )
     parsed = enrich_recipe(ex, provider=provider)
-    assert parsed.steps[0].requires == []           # self and phantom dropped
+    assert parsed.steps[0].requires == []  # self and phantom dropped
     assert parsed.steps[1].requires == ["step-1"]
-    assert parsed.steps[1].can_overlap_with == []   # self and ghost dropped
+    assert parsed.steps[1].can_overlap_with == []  # self and ghost dropped
 
 
 def test_llm_failure_falls_back_to_deterministic_steps():
@@ -87,7 +117,7 @@ def test_llm_failure_falls_back_to_deterministic_steps():
             return "flaky"
 
     parsed = enrich_recipe(ex, provider=Flaky())
-    assert len(parsed.steps) == 3          # fallback filled all steps
+    assert len(parsed.steps) == 3  # fallback filled all steps
     assert all(s.estimated_duration_minutes >= 1 for s in parsed.steps)
     assert parsed.steps[0].type == "prep"  # inferred from "Preheat"
 
@@ -103,7 +133,7 @@ class _Boom(LLMProvider):
 
 def test_allow_llm_false_never_calls_the_llm():
     parsed = enrich_recipe(_extracted(["Chop.", "Cook."]), provider=_Boom(), allow_llm=False)
-    assert len(parsed.steps) == 2          # deterministic fallback, no API call
+    assert len(parsed.steps) == 2  # deterministic fallback, no API call
     assert parsed.provenance == "fallback"
 
 
@@ -111,11 +141,12 @@ def test_resume_skips_already_enriched():
     ex = _extracted(["Chop the onions.", "Fry them."])
     # A prior 'llm' result for this exact text must be reused without calling the LLM.
     from planthood.enrich.enricher import source_hash
+
     prior = enrich_recipe(ex, provider=MockProvider())
     prior.provenance = "llm"
     prior.source_hash = source_hash(ex)
     out = enrich_all([ex], provider=_Boom(), existing=[prior])
-    assert out[0] is prior                 # reused as-is; _Boom would have raised
+    assert out[0] is prior  # reused as-is; _Boom would have raised
 
 
 def test_limit_caps_llm_enrichments():
@@ -135,11 +166,12 @@ def test_limit_caps_llm_enrichments():
             return "counting"
 
     enrich_all(exs, provider=Counting(), limit=2)
-    assert calls["n"] == 2                  # only 2 recipes hit the LLM
+    assert calls["n"] == 2  # only 2 recipes hit the LLM
 
 
 def test_circuit_breaker_stops_calling_after_repeated_failures(monkeypatch):
-    import planthood.enrich.enricher as enricher
+    from planthood.enrich import enricher
+
     monkeypatch.setattr(enricher.time, "sleep", lambda *_: None)  # keep the test fast
 
     calls = {"n": 0}
@@ -163,8 +195,18 @@ def test_circuit_breaker_stops_calling_after_repeated_failures(monkeypatch):
 
 def test_absurd_duration_is_clamped():
     ex = _extracted(["Simmer."])
-    provider = FakeProvider({"steps": [{"id": "step-1", "label": "Simmer", "type": "cook",
-                                        "estimated_duration_minutes": 99999}]})
+    provider = FakeProvider(
+        {
+            "steps": [
+                {
+                    "id": "step-1",
+                    "label": "Simmer",
+                    "type": "cook",
+                    "estimated_duration_minutes": 99999,
+                }
+            ]
+        }
+    )
     parsed = enrich_recipe(ex, provider=provider)
     assert parsed.steps[0].estimated_duration_minutes <= 240
 
@@ -188,24 +230,53 @@ def test_non_cookable_yields_no_steps_without_calling_llm():
 def test_accepts_bare_array_response():
     # A provider (e.g. Gemini JSON mode) may return a bare array instead of {"steps": [...]}.
     ex = _extracted(["Chop the onions.", "Fry until soft."])
-    provider = FakeProvider([
-        {"id": "step-1", "label": "Chop onions", "type": "prep", "estimated_duration_minutes": 3},
-        {"id": "step-2", "label": "Fry onions", "type": "cook", "estimated_duration_minutes": 6},
-    ])
+    provider = FakeProvider(
+        [
+            {
+                "id": "step-1",
+                "label": "Chop onions",
+                "type": "prep",
+                "estimated_duration_minutes": 3,
+            },
+            {
+                "id": "step-2",
+                "label": "Fry onions",
+                "type": "cook",
+                "estimated_duration_minutes": 6,
+            },
+        ]
+    )
     parsed = enrich_recipe(ex, provider=provider)
     assert [s.id for s in parsed.steps] == ["step-1", "step-2"]
     assert parsed.steps[1].type == "cook"
 
 
 def test_paragraph_case_uses_model_segmentation():
-    ex = _extracted(["Heat oil then add garlic and cook then add tomatoes and simmer."],
-                    extraction_method="paragraph", needs_llm_segmentation=True)
-    provider = FakeProvider({"steps": [
-        {"id": "x", "raw_text": "Heat oil", "label": "Heat oil", "type": "cook",
-         "estimated_duration_minutes": 2},
-        {"id": "y", "raw_text": "add garlic and cook", "label": "Cook garlic", "type": "cook",
-         "estimated_duration_minutes": 3},
-    ]})
+    ex = _extracted(
+        ["Heat oil then add garlic and cook then add tomatoes and simmer."],
+        extraction_method="paragraph",
+        needs_llm_segmentation=True,
+    )
+    provider = FakeProvider(
+        {
+            "steps": [
+                {
+                    "id": "x",
+                    "raw_text": "Heat oil",
+                    "label": "Heat oil",
+                    "type": "cook",
+                    "estimated_duration_minutes": 2,
+                },
+                {
+                    "id": "y",
+                    "raw_text": "add garlic and cook",
+                    "label": "Cook garlic",
+                    "type": "cook",
+                    "estimated_duration_minutes": 3,
+                },
+            ]
+        }
+    )
     parsed = enrich_recipe(ex, provider=provider)
-    assert [s.id for s in parsed.steps] == ["step-1", "step-2"]   # renumbered
+    assert [s.id for s in parsed.steps] == ["step-1", "step-2"]  # renumbered
     assert parsed.steps[0].raw_text == "Heat oil"

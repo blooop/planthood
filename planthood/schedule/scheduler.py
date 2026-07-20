@@ -10,9 +10,25 @@ from ..models import ParsedRecipe, RecipeStep, ScheduledRecipe, ScheduledStep
 # Hands-off phases: the cook can do other work while these run, so they don't count as
 # active time. Matched as substrings against a step's label/text/notes.
 PASSIVE_PHRASES = (
-    "bake", "roast", "simmer", "rest for", "leave to", "leave it", "set aside",
-    "marinate", "chill", "refrigerate", "soak", "prove", "proof", "cool for",
-    "cool down", "cool completely", "reduce for", "let it sit", "leave for",
+    "bake",
+    "roast",
+    "simmer",
+    "rest for",
+    "leave to",
+    "leave it",
+    "set aside",
+    "marinate",
+    "chill",
+    "refrigerate",
+    "soak",
+    "prove",
+    "proof",
+    "cool for",
+    "cool down",
+    "cool completely",
+    "reduce for",
+    "let it sit",
+    "leave for",
 )
 
 
@@ -54,9 +70,7 @@ def _is_passive(step: RecipeStep) -> bool:
 def _active_time(scheduled: List[ScheduledStep], passive_ids: set) -> int:
     """Total wall-clock time the cook is actively engaged = union of non-passive
     step intervals (passive waiting doesn't count, but active prep during a bake does)."""
-    intervals = sorted(
-        (s.start_min, s.end_min) for s in scheduled if s.id not in passive_ids
-    )
+    intervals = sorted((s.start_min, s.end_min) for s in scheduled if s.id not in passive_ids)
     if not intervals:
         return 0
     merged = [list(intervals[0])]

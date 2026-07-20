@@ -9,10 +9,10 @@ from ..text import normalize_whitespace
 
 # A run is "good" when it clears every threshold. Tune as the pipeline matures.
 THRESHOLDS = {
-    "cookable_empty_rate_max": 0.05,   # <=5% of cookable recipes may end up with no steps
-    "grounding_min": 0.85,             # >=85% of steps quote real source text
-    "timeline_violations_max": 0,      # end==start+dur and no step before its deps
-    "invalid_dep_rate_max": 0.0,       # every 'requires' points to a real step
+    "cookable_empty_rate_max": 0.05,  # <=5% of cookable recipes may end up with no steps
+    "grounding_min": 0.85,  # >=85% of steps quote real source text
+    "timeline_violations_max": 0,  # end==start+dur and no step before its deps
+    "invalid_dep_rate_max": 0.0,  # every 'requires' points to a real step
     "cycles_max": 0,
 }
 
@@ -48,9 +48,7 @@ def compute_report(
 
     cookable = [e for e in extracted if e.cookable]
     n_cook = len(cookable)
-    cook_with_steps = sum(
-        1 for e in cookable if sched_by_id.get(e.id) and sched_by_id[e.id].steps
-    )
+    cook_with_steps = sum(1 for e in cookable if sched_by_id.get(e.id) and sched_by_id[e.id].steps)
     empty_rate = (n_cook - cook_with_steps) / n_cook if n_cook else 0.0
 
     grounded = total_steps = 0

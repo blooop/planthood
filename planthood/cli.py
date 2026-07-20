@@ -1,11 +1,11 @@
 """Unified command line for the recipe pipeline.
 
-    python -m planthood.cli extract          # raw    -> extracted   (deterministic)
-    python -m planthood.cli enrich           # extracted -> parsed   (LLM; --provider mock offline)
-    python -m planthood.cli schedule         # parsed  -> scheduled
-    python -m planthood.cli build-data       # extract + enrich + schedule
-    python -m planthood.cli quality          # print the quality scorecard (exit 1 on fail)
-    python -m planthood.cli inspect <id>     # run one recipe through every stage and show it
+python -m planthood.cli extract          # raw    -> extracted   (deterministic)
+python -m planthood.cli enrich           # extracted -> parsed   (LLM; --provider mock offline)
+python -m planthood.cli schedule         # parsed  -> scheduled
+python -m planthood.cli build-data       # extract + enrich + schedule
+python -m planthood.cli quality          # print the quality scorecard (exit 1 on fail)
+python -m planthood.cli inspect <id>     # run one recipe through every stage and show it
 """
 
 from __future__ import annotations
@@ -93,7 +93,10 @@ def cmd_inspect(args) -> None:
         if len(matches) == 1:
             raw = raws[matches[0]]
         else:
-            print(f"Recipe '{args.recipe}' not found." + (f" Did you mean: {matches[:5]}" if matches else ""))
+            print(
+                f"Recipe '{args.recipe}' not found."
+                + (f" Did you mean: {matches[:5]}" if matches else "")
+            )
             sys.exit(1)
 
     extracted = extract_recipe(raw)
@@ -102,14 +105,20 @@ def cmd_inspect(args) -> None:
     scheduled = schedule_recipe(parsed)
 
     print(f"\n{raw.title}\n{'=' * len(raw.title)}")
-    print(f"id={raw.id}  cookable={extracted.cookable}  method={extracted.extraction_method}  "
-          f"provider={provider.name}")
-    print(f"total={scheduled.total_time_min}min  active={scheduled.active_time_min}min  "
-          f"steps={len(scheduled.steps)}\n")
+    print(
+        f"id={raw.id}  cookable={extracted.cookable}  method={extracted.extraction_method}  "
+        f"provider={provider.name}"
+    )
+    print(
+        f"total={scheduled.total_time_min}min  active={scheduled.active_time_min}min  "
+        f"steps={len(scheduled.steps)}\n"
+    )
     for s in sorted(scheduled.steps, key=lambda x: x.start_min):
         crit = " *critical*" if s.is_critical else f" slack={s.slack_min}"
         temp = f" {s.temperature_c}C" if s.temperature_c else ""
-        print(f"  [{s.start_min:>3}-{s.end_min:<3}] {s.id} ({s.type},{s.duration_min}min{temp}){crit}")
+        print(
+            f"  [{s.start_min:>3}-{s.end_min:<3}] {s.id} ({s.type},{s.duration_min}min{temp}){crit}"
+        )
         print(f"        {s.label}  req={s.requires} equip={s.equipment}")
         print(f"        └ {s.raw_text[:90]}")
 
@@ -119,15 +128,23 @@ def main(argv=None) -> None:
     sub = parser.add_subparsers(dest="command", required=True)
 
     def add_provider(p):
-        p.add_argument("--provider", default=None,
-                       help="LLM provider (anthropic|openai|gemini|mock). Default: $LLM_PROVIDER or anthropic")
+        p.add_argument(
+            "--provider",
+            default=None,
+            help="LLM provider (anthropic|openai|gemini|mock). Default: $LLM_PROVIDER or anthropic",
+        )
 
     def add_enrich_opts(p):
         add_provider(p)
-        p.add_argument("--limit", type=int, default=0,
-                       help="max recipes to LLM-enrich this run (0 = no cap; 'X per day')")
-        p.add_argument("--fresh", action="store_true",
-                       help="ignore prior results and re-enrich from scratch")
+        p.add_argument(
+            "--limit",
+            type=int,
+            default=0,
+            help="max recipes to LLM-enrich this run (0 = no cap; 'X per day')",
+        )
+        p.add_argument(
+            "--fresh", action="store_true", help="ignore prior results and re-enrich from scratch"
+        )
 
     p_ex = sub.add_parser("extract", help="raw -> extracted (deterministic)")
     p_ex.set_defaults(func=cmd_extract)

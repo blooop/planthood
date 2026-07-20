@@ -139,10 +139,7 @@ def _build_steps(recipe: ExtractedRecipe, enriched: List[dict]) -> List[RecipeSt
         return _sanitize_graph(steps)
 
     # Marker case: extractor ids/texts are authoritative — one step out per step in.
-    steps = [
-        _coerce_step(by_id.get(s.id, {}), step_id=s.id, raw_text=s.text)
-        for s in recipe.steps
-    ]
+    steps = [_coerce_step(by_id.get(s.id, {}), step_id=s.id, raw_text=s.text) for s in recipe.steps]
     return _sanitize_graph(steps)
 
 
@@ -194,8 +191,15 @@ def source_hash(recipe: ExtractedRecipe) -> str:
 
 def _base(recipe: ExtractedRecipe) -> dict:
     return recipe.model_dump(
-        exclude={"schema_version", "method_clean", "steps", "extraction_method",
-                 "needs_llm_segmentation", "notes", "cookable"}
+        exclude={
+            "schema_version",
+            "method_clean",
+            "steps",
+            "extraction_method",
+            "needs_llm_segmentation",
+            "notes",
+            "cookable",
+        }
     )
 
 
@@ -203,9 +207,13 @@ def _fallback_recipe(recipe: ExtractedRecipe) -> ParsedRecipe:
     """Deterministic enrichment (no LLM). provenance='fallback' marks it as a candidate
     for real LLM enrichment on a later run."""
     steps = _mock_steps(recipe) if (recipe.cookable and recipe.steps) else []
-    return ParsedRecipe(**_base(recipe), steps=steps, cookable=recipe.cookable,
-                        provenance="fallback" if steps else "none",
-                        source_hash=source_hash(recipe))
+    return ParsedRecipe(
+        **_base(recipe),
+        steps=steps,
+        cookable=recipe.cookable,
+        provenance="fallback" if steps else "none",
+        source_hash=source_hash(recipe),
+    )
 
 
 def enrich_recipe(
@@ -221,8 +229,13 @@ def enrich_recipe(
     With ``allow_llm=False`` the LLM is not called and the deterministic fallback is used.
     """
     if not recipe.cookable or not recipe.steps:
-        return ParsedRecipe(**_base(recipe), steps=[], cookable=recipe.cookable,
-                            provenance="none", source_hash=source_hash(recipe))
+        return ParsedRecipe(
+            **_base(recipe),
+            steps=[],
+            cookable=recipe.cookable,
+            provenance="none",
+            source_hash=source_hash(recipe),
+        )
 
     if not allow_llm:
         return _fallback_recipe(recipe)
@@ -256,16 +269,19 @@ def enrich_recipe(
     # The mock provider is deterministic, not a real model → mark it 'fallback' so a real
     # LLM run still upgrades it later.
     prov = "fallback" if provider.name.startswith("mock") else "llm"
-    return ParsedRecipe(**_base(recipe), steps=steps, cookable=recipe.cookable,
-                        provenance=prov, source_hash=source_hash(recipe))
+    return ParsedRecipe(
+        **_base(recipe),
+        steps=steps,
+        cookable=recipe.cookable,
+        provenance=prov,
+        source_hash=source_hash(recipe),
+    )
 
 
 def _already_enriched(existing: Optional[ParsedRecipe], recipe: ExtractedRecipe) -> bool:
     """True if a prior run already produced genuine LLM steps for this recipe's current text."""
     return bool(
-        existing
-        and existing.provenance == "llm"
-        and existing.source_hash == source_hash(recipe)
+        existing and existing.provenance == "llm" and existing.source_hash == source_hash(recipe)
     )
 
 
@@ -300,17 +316,22 @@ def enrich_all(
         if allow_llm:
             spent += 1
         try:
-            out.append(enrich_recipe(r, provider=provider, allow_llm=allow_llm,
-                                     on_llm=breaker.record))
+            out.append(
+                enrich_recipe(r, provider=provider, allow_llm=allow_llm, on_llm=breaker.record)
+            )
         except Exception as e:  # one bad recipe must not abort the batch
             print(f"Enrich error for {r.id}: {e}")
             out.append(_fallback_recipe(r))
 
     llm_total = sum(1 for r in out if r.provenance == "llm")
     remaining = sum(1 for r in out if r.provenance == "fallback")
-    print(f"Enrichment: {llm_total} LLM, {remaining} on deterministic fallback, "
-          f"{spent} enriched this run (limit={limit or 'none'}).")
+    print(
+        f"Enrichment: {llm_total} LLM, {remaining} on deterministic fallback, "
+        f"{spent} enriched this run (limit={limit or 'none'})."
+    )
     if breaker.tripped:
-        print("LLM quota exhausted (circuit breaker tripped); remaining recipes will be "
-              "enriched on the next run.")
+        print(
+            "LLM quota exhausted (circuit breaker tripped); remaining recipes will be "
+            "enriched on the next run."
+        )
     return out
