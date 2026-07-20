@@ -10180,6 +10180,51 @@
     "notes": ""
   },
   {
+    "id": "summer-daal-courgette-pickle-crispy-kale",
+    "title": "Summer Coconut & Turmeric Daal With Tangy Courgette Pickle, Crispy Kale & Red Quinoa",
+    "source_url": "https://planthood.co.uk/products/summer-daal-courgette-pickle-crispy-kale",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 660.0,
+      "protein_g": 23.3,
+      "fat_g": 21.5,
+      "carbs_g": 94.6,
+      "fibre_g": 14.1,
+      "salt_g": 0.75
+    },
+    "schema_version": 1,
+    "method_clean": "Tender red lentils and sweet potatoes are gently simmered in coconut milk with cumin, turmeric, mustard seeds, garlic and ginger. Served with a tangy turmeric-spiked courgette pickle, crispy cavolo nero and fluffy red quinoa. Full of flavour and packed with protein, fibre and iron. Nutrition Calories 660kcal; Protein 23.3g; Fat 21.5g; Saturated Fat 14.7g; Total Carbs 94.6g; Fibre 14.1g; Salt 0.75g Ingredients Courgette, onion, apple cider vinegar, raw natural cane sugar, brown mustard seeds, turmeric, water, sea salt, red lentils, ginger, garlic, cumin, coriander powder, curry powder, cinnamon, coconut milk, vegan boullion ( celery ), sweet potato, red quinoa, cavolo nero",
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "Tender red lentils and sweet potatoes are gently simmered in coconut milk with cumin, turmeric, mustard seeds, garlic and ginger.",
+        "marker": null
+      },
+      {
+        "id": "step-2",
+        "text": "Served with a tangy turmeric-spiked courgette pickle, crispy cavolo nero and fluffy red quinoa.",
+        "marker": null
+      },
+      {
+        "id": "step-3",
+        "text": "Full of flavour and packed with protein, fibre and iron.",
+        "marker": null
+      },
+      {
+        "id": "step-4",
+        "text": "Nutrition Calories 660kcal; Protein 23.3g; Fat 21.5g; Saturated Fat 14.7g; Total Carbs 94.6g; Fibre 14.1g; Salt 0.75g Ingredients Courgette, onion, apple cider vinegar, raw natural cane sugar, brown mustard seeds, turmeric, water, sea salt, red lentils, ginger, garlic, cumin, coriander powder, curry powder, cinnamon, coconut milk, vegan boullion ( celery ), sweet potato, red quinoa, cavolo nero",
+        "marker": null
+      }
+    ],
+    "cookable": true,
+    "extraction_method": "paragraph",
+    "needs_llm_segmentation": true,
+    "notes": "No STEP markers; sentence-split pending LLM segmentation."
+  },
+  {
     "id": "sun-dried-tomato-lasagne-soup-with-spinach-cannellini-beans-cheesy-cashew-cream",
     "title": "Sun Dried Tomato Lasagne Soup With Spinach, Cannellini Beans & Cheesy Cashew Cream",
     "source_url": "https://planthood.co.uk/products/sun-dried-tomato-lasagne-soup-with-spinach-cannellini-beans-cheesy-cashew-cream",
@@ -12091,96 +12136,6 @@
     "notes": "No cooking instructions found (non-cookable)."
   },
   {
-    "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-    "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
-    "source_url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 622.0,
-      "protein_g": 23.7,
-      "fat_g": 14.7,
-      "carbs_g": 107.5,
-      "fibre_g": 21.5,
-      "salt_g": 2.6
-    },
-    "schema_version": 1,
-    "method_clean": "STEP 1 Boil your kettle, then take out a saucepan and a large frying pan or a wok. Fill your saucepan with boiling water from your kettle, place over a high heat and bring to the boil for the noodles. STEP 2 Add the udon noodles to the boiling water and cook for 5-6 minutes, or until tender but still al dente. Once cooked, drain and rinse the noodles under cold water. This helps remove excess starch and prevents them from becoming soggy. Set them aside in a colander to drain. STEP 3 Dice aubergine lengthways into ~2cm cubed pieces. Slice or quarter the chestnut mushrooms and slice the savoy cabbage ~1cm thick. Use a peeler to create carrot ribbons and thinly slice the spring onions . STEP 4 Place your frying pan or wok over high heat and add a generous drizzle of neutral oil, or sesame oil if you have it, as it works well with this dish. Add the aubergine once the oil is hot and fry until soft and lightly golden on both sides, around 6-8 minutes. Then add the savoy cabbage and chestnut mushrooms and cook for a further 4-5 minutes until soft. You can add a small splash of water to help the vegetables steam and soften. Add the carrot ribbons last, along with the yaki udon sauce , and combine everything well. Finally, add the cooked and drained udon noodles. Toss everything together and cook for another minute or so over high heat to warm through the noodles. Add a splash of water or an extra drizzle of oil if it feels dry, and allow the sauce to start caramelising on the vegetables and noodles. STEP 6 To serve, divide the yaki udon between serving bowls and finish with sliced spring onions and a sprinkle of furikake seasoning . Enjoy!",
-    "steps": [
-      {
-        "id": "step-1",
-        "text": "Boil your kettle, then take out a saucepan and a large frying pan or a wok. Fill your saucepan with boiling water from your kettle, place over a high heat and bring to the boil for the noodles.",
-        "marker": 1
-      },
-      {
-        "id": "step-2",
-        "text": "Add the udon noodles to the boiling water and cook for 5-6 minutes, or until tender but still al dente. Once cooked, drain and rinse the noodles under cold water. This helps remove excess starch and prevents them from becoming soggy. Set them aside in a colander to drain.",
-        "marker": 2
-      },
-      {
-        "id": "step-3",
-        "text": "Dice aubergine lengthways into ~2cm cubed pieces. Slice or quarter the chestnut mushrooms and slice the savoy cabbage ~1cm thick. Use a peeler to create carrot ribbons and thinly slice the spring onions .",
-        "marker": 3
-      },
-      {
-        "id": "step-4",
-        "text": "Place your frying pan or wok over high heat and add a generous drizzle of neutral oil, or sesame oil if you have it, as it works well with this dish. Add the aubergine once the oil is hot and fry until soft and lightly golden on both sides, around 6-8 minutes. Then add the savoy cabbage and chestnut mushrooms and cook for a further 4-5 minutes until soft. You can add a small splash of water to help the vegetables steam and soften. Add the carrot ribbons last, along with the yaki udon sauce , and combine everything well. Finally, add the cooked and drained udon noodles. Toss everything together and cook for another minute or so over high heat to warm through the noodles. Add a splash of water or an extra drizzle of oil if it feels dry, and allow the sauce to start caramelising on the vegetables and noodles. STEP 6 To serve, divide the yaki udon between serving bowls and finish with sliced spring onions and a sprinkle of furikake seasoning . Enjoy!",
-        "marker": 4
-      }
-    ],
-    "cookable": true,
-    "extraction_method": "step_markers",
-    "needs_llm_segmentation": false,
-    "notes": ""
-  },
-  {
-    "id": "summer-daal-courgette-pickle-crispy-kale",
-    "title": "Summer Coconut & Turmeric Daal With Tangy Courgette Pickle, Crispy Kale & Red Quinoa",
-    "source_url": "https://planthood.co.uk/products/summer-daal-courgette-pickle-crispy-kale",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 660.0,
-      "protein_g": 23.3,
-      "fat_g": 21.5,
-      "carbs_g": 94.6,
-      "fibre_g": 14.1,
-      "salt_g": 0.75
-    },
-    "schema_version": 1,
-    "method_clean": "Tender red lentils and sweet potatoes are gently simmered in coconut milk with cumin, turmeric, mustard seeds, garlic and ginger. Served with a tangy turmeric-spiked courgette pickle, crispy cavolo nero and fluffy red quinoa. Full of flavour and packed with protein, fibre and iron. Nutrition Calories 660kcal; Protein 23.3g; Fat 21.5g; Saturated Fat 14.7g; Total Carbs 94.6g; Fibre 14.1g; Salt 0.75g Ingredients Courgette, onion, apple cider vinegar, raw natural cane sugar, brown mustard seeds, turmeric, water, sea salt, red lentils, ginger, garlic, cumin, coriander powder, curry powder, cinnamon, coconut milk, vegan boullion ( celery ), sweet potato, red quinoa, cavolo nero",
-    "steps": [
-      {
-        "id": "step-1",
-        "text": "Tender red lentils and sweet potatoes are gently simmered in coconut milk with cumin, turmeric, mustard seeds, garlic and ginger.",
-        "marker": null
-      },
-      {
-        "id": "step-2",
-        "text": "Served with a tangy turmeric-spiked courgette pickle, crispy cavolo nero and fluffy red quinoa.",
-        "marker": null
-      },
-      {
-        "id": "step-3",
-        "text": "Full of flavour and packed with protein, fibre and iron.",
-        "marker": null
-      },
-      {
-        "id": "step-4",
-        "text": "Nutrition Calories 660kcal; Protein 23.3g; Fat 21.5g; Saturated Fat 14.7g; Total Carbs 94.6g; Fibre 14.1g; Salt 0.75g Ingredients Courgette, onion, apple cider vinegar, raw natural cane sugar, brown mustard seeds, turmeric, water, sea salt, red lentils, ginger, garlic, cumin, coriander powder, curry powder, cinnamon, coconut milk, vegan boullion ( celery ), sweet potato, red quinoa, cavolo nero",
-        "marker": null
-      }
-    ],
-    "cookable": true,
-    "extraction_method": "paragraph",
-    "needs_llm_segmentation": true,
-    "notes": "No STEP markers; sentence-split pending LLM segmentation."
-  },
-  {
     "id": "winter-harvest-apple-kale-salad-with-sweet-potato-pomegranate-maple-tahini-dressing",
     "title": "Winter Harvest Bowl With Roasted Sweet Potato, Candied Walnuts & Maple Tahini Dressing",
     "source_url": "https://planthood.co.uk/products/winter-harvest-apple-kale-salad-with-sweet-potato-pomegranate-maple-tahini-dressing",
@@ -12228,6 +12183,51 @@
         "id": "step-6",
         "text": "To serve up, toss the cavolo nero , sweet potato and quinoa in half of the tahini dressing , then top with the apple slices , candied walnuts and a scattering of pomegranate seeds . Drizzle over the remaining dressing and enjoy!",
         "marker": 6
+      }
+    ],
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "needs_llm_segmentation": false,
+    "notes": ""
+  },
+  {
+    "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+    "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
+    "source_url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 622.0,
+      "protein_g": 23.7,
+      "fat_g": 14.7,
+      "carbs_g": 107.5,
+      "fibre_g": 21.5,
+      "salt_g": 2.6
+    },
+    "schema_version": 1,
+    "method_clean": "STEP 1 Boil your kettle, then take out a saucepan and a large frying pan or a wok. Fill your saucepan with boiling water from your kettle, place over a high heat and bring to the boil for the noodles. STEP 2 Add the udon noodles to the boiling water and cook for 5-6 minutes, or until tender but still al dente. Once cooked, drain and rinse the noodles under cold water. This helps remove excess starch and prevents them from becoming soggy. Set them aside in a colander to drain. STEP 3 Dice aubergine lengthways into ~2cm cubed pieces. Slice or quarter the chestnut mushrooms and slice the savoy cabbage ~1cm thick. Use a peeler to create carrot ribbons and thinly slice the spring onions . STEP 4 Place your frying pan or wok over high heat and add a generous drizzle of neutral oil, or sesame oil if you have it, as it works well with this dish. Add the aubergine once the oil is hot and fry until soft and lightly golden on both sides, around 6-8 minutes. Then add the savoy cabbage and chestnut mushrooms and cook for a further 4-5 minutes until soft. You can add a small splash of water to help the vegetables steam and soften. Add the carrot ribbons last, along with the yaki udon sauce , and combine everything well. Finally, add the cooked and drained udon noodles. Toss everything together and cook for another minute or so over high heat to warm through the noodles. Add a splash of water or an extra drizzle of oil if it feels dry, and allow the sauce to start caramelising on the vegetables and noodles. STEP 6 To serve, divide the yaki udon between serving bowls and finish with sliced spring onions and a sprinkle of furikake seasoning . Enjoy!",
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "Boil your kettle, then take out a saucepan and a large frying pan or a wok. Fill your saucepan with boiling water from your kettle, place over a high heat and bring to the boil for the noodles.",
+        "marker": 1
+      },
+      {
+        "id": "step-2",
+        "text": "Add the udon noodles to the boiling water and cook for 5-6 minutes, or until tender but still al dente. Once cooked, drain and rinse the noodles under cold water. This helps remove excess starch and prevents them from becoming soggy. Set them aside in a colander to drain.",
+        "marker": 2
+      },
+      {
+        "id": "step-3",
+        "text": "Dice aubergine lengthways into ~2cm cubed pieces. Slice or quarter the chestnut mushrooms and slice the savoy cabbage ~1cm thick. Use a peeler to create carrot ribbons and thinly slice the spring onions .",
+        "marker": 3
+      },
+      {
+        "id": "step-4",
+        "text": "Place your frying pan or wok over high heat and add a generous drizzle of neutral oil, or sesame oil if you have it, as it works well with this dish. Add the aubergine once the oil is hot and fry until soft and lightly golden on both sides, around 6-8 minutes. Then add the savoy cabbage and chestnut mushrooms and cook for a further 4-5 minutes until soft. You can add a small splash of water to help the vegetables steam and soften. Add the carrot ribbons last, along with the yaki udon sauce , and combine everything well. Finally, add the cooked and drained udon noodles. Toss everything together and cook for another minute or so over high heat to warm through the noodles. Add a splash of water or an extra drizzle of oil if it feels dry, and allow the sauce to start caramelising on the vegetables and noodles. STEP 6 To serve, divide the yaki udon between serving bowls and finish with sliced spring onions and a sprinkle of furikake seasoning . Enjoy!",
+        "marker": 4
       }
     ],
     "cookable": true,

@@ -1,7 +1,7 @@
 {
   "total_recipes": 293,
   "failed_recipes": 0,
-  "last_updated": "2026-07-20 18:08:29",
+  "last_updated": "2026-07-20 18:20:20",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -1719,6 +1719,13 @@
       "week_label": null
     },
     {
+      "id": "summer-daal-courgette-pickle-crispy-kale",
+      "title": "Summer Coconut & Turmeric Daal With Tangy Courgette Pickle, Crispy Kale & Red Quinoa",
+      "url": "https://planthood.co.uk/products/summer-daal-courgette-pickle-crispy-kale",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "sun-dried-tomato-lasagne-soup-with-spinach-cannellini-beans-cheesy-cashew-cream",
       "title": "Sun Dried Tomato Lasagne Soup With Spinach, Cannellini Beans & Cheesy Cashew Cream",
       "url": "https://planthood.co.uk/products/sun-dried-tomato-lasagne-soup-with-spinach-cannellini-beans-cheesy-cashew-cream",
@@ -2034,23 +2041,16 @@
       "week_label": null
     },
     {
-      "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
-      "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "summer-daal-courgette-pickle-crispy-kale",
-      "title": "Summer Coconut & Turmeric Daal With Tangy Courgette Pickle, Crispy Kale & Red Quinoa",
-      "url": "https://planthood.co.uk/products/summer-daal-courgette-pickle-crispy-kale",
-      "scraped": true,
-      "week_label": null
-    },
-    {
       "id": "winter-harvest-apple-kale-salad-with-sweet-potato-pomegranate-maple-tahini-dressing",
       "title": "Winter Harvest Bowl With Roasted Sweet Potato, Candied Walnuts & Maple Tahini Dressing",
       "url": "https://planthood.co.uk/products/winter-harvest-apple-kale-salad-with-sweet-potato-pomegranate-maple-tahini-dressing",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
+      "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "scraped": true,
       "week_label": null
     }
