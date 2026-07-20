@@ -63,24 +63,34 @@ jobs:
 
       # Full pipeline: scrape -> extract (deterministic) -> enrich (LLM) -> schedule.
       # Each stage is merge-safe: a failed LLM enrichment never wipes good data.
+      #
+      # On a plain push/merge to main we SKIP the whole pipeline and rebuild the
+      # site straight from the committed data/recipes_with_schedule.json. Only the
+      # scheduled cron and manual workflow_dispatch runs pay the (slow, LLM-paced)
+      # enrichment cost — a merge should not sit in CI for ~10 min re-enriching.
       - name: Scrape recipes
+        if: github.event_name != 'push'
         run: python scraper/scrape.py
         continue-on-error: true
 
       - name: Extract steps (deterministic)
+        if: github.event_name != 'push'
         run: python -m planthood.cli extract
 
       # Resumes from the committed recipes_parsed.json: only recipes not yet LLM-enriched
       # are attempted, up to DAILY_ENRICH_LIMIT (0 = as many as the quota allows). Over
       # successive daily runs the whole catalogue is enriched.
       - name: Enrich steps (LLM)
+        if: github.event_name != 'push'
         run: python -m planthood.cli enrich --limit ${{ vars.DAILY_ENRICH_LIMIT || 0 }}
         continue-on-error: true
 
       - name: Schedule timelines
+        if: github.event_name != 'push'
         run: python -m planthood.cli schedule
 
       - name: Quality report
+        if: github.event_name != 'push'
         run: python -m planthood.cli quality
         continue-on-error: true
 
