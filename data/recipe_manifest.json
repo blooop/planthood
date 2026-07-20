@@ -1,7 +1,7 @@
 {
-  "total_recipes": 237,
-  "failed_recipes": 56,
-  "last_updated": "2026-07-20 06:28:23",
+  "total_recipes": 291,
+  "failed_recipes": 2,
+  "last_updated": "2026-07-20 18:06:17",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -1661,231 +1661,393 @@
       "url": "https://planthood.co.uk/products/sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
       "scraped": true,
       "week_label": null
+    },
+    {
+      "id": "squash-gratin",
+      "title": "Butternut Squash & White Bean Gratin In Rich & Creamy Cashew, White Wine & Mustard Sauce With Cavolo Nero",
+      "url": "https://planthood.co.uk/products/squash-gratin",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "sri-lankan-daal-with-curry-spiced-oyster-mushroom-skewers-beetroot-raita-over-fluffy-basmati-rice",
+      "title": "Sri Lankan Daal With Curry Spiced Oyster Mushroom Skewers & Beetroot Raita Over Fluffy Basmati Rice",
+      "url": "https://planthood.co.uk/products/sri-lankan-daal-with-curry-spiced-oyster-mushroom-skewers-beetroot-raita-over-fluffy-basmati-rice",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "sticky-black-pepper-tofu",
+      "title": "Crispy Black Pepper Tofu With Stir Fried Vegetables, Sticky Coconut Rice, Pak Choi & Sesame Seeds",
+      "url": "https://planthood.co.uk/products/sticky-black-pepper-tofu",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "sticky-cauliflower-bao-buns",
+      "title": "Crispy Cauliflower Baos Drenched In Tangy Five Spice Sauce With Tart Pickled Carrot & Daikon & Fresh Coriander",
+      "url": "https://planthood.co.uk/products/sticky-cauliflower-bao-buns",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "sticky-chilli-tofu-with-spring-onions-sesame-seeds-sticky-jasmine-rice-green-kale",
+      "title": "Crispy Chilli Tofu Tossed in Spring Onions & Sesame Seeds, With Sticky Jasmine Rice & Seasonal Greens",
+      "url": "https://planthood.co.uk/products/sticky-chilli-tofu-with-spring-onions-sesame-seeds-sticky-jasmine-rice-green-kale",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "sticky-moroccan-tagine",
+      "title": "Slow-Cooked Moroccan Stew With Sticky Dates, Green Olives & A Zesty Chermoula Dressing",
+      "url": "https://planthood.co.uk/products/sticky-moroccan-tagine",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "sticky-sesame-tofu-rice-bowl-with-kimchi-mayo-pickled-cabbage-carrot-edamame-sesame-seeds",
+      "title": "Sticky Sesame Ginger Tofu Rice Bowl With Kimchi Mayo, Pickled Cabbage, Carrot, Edamame & Sesame Seeds",
+      "url": "https://planthood.co.uk/products/sticky-sesame-tofu-rice-bowl-with-kimchi-mayo-pickled-cabbage-carrot-edamame-sesame-seeds",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "sticky-teriyaki-tofu-bowl-with-purple-sprouting-broccoli-pickled-cabbage-over-sushi-rice",
+      "title": "Sticky Teriyaki Tofu Bowl With Purple Sprouting Broccoli & Pickled Cabbage Over Sushi Rice",
+      "url": "https://planthood.co.uk/products/sticky-teriyaki-tofu-bowl-with-purple-sprouting-broccoli-pickled-cabbage-over-sushi-rice",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "sun-dried-tomato-lasagne-soup-with-spinach-cannellini-beans-cheesy-cashew-cream",
+      "title": "Sun Dried Tomato Lasagne Soup With Spinach, Cannellini Beans & Cheesy Cashew Cream",
+      "url": "https://planthood.co.uk/products/sun-dried-tomato-lasagne-soup-with-spinach-cannellini-beans-cheesy-cashew-cream",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-cheats-lasagne-with-courgette-butter-beans-miso-bechamel-toasted-nuts-seeds",
+      "title": "Super Green Cheats Lasagne With Courgette, Butter Beans, Miso Bechamel, Toasted Nuts & Seeds",
+      "url": "https://planthood.co.uk/products/super-green-cheats-lasagne-with-courgette-butter-beans-miso-bechamel-toasted-nuts-seeds",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-gnocchi-with-creamy-spinach-kale-sauce-vegan-burrata-chilli-pine-nut-crumb",
+      "title": "Super Green Gnocchi With Creamy Spinach & Kale Sauce, Garden Peas, Vegan Burrata & Chilli Pine Nut Crumb",
+      "url": "https://planthood.co.uk/products/super-green-gnocchi-with-creamy-spinach-kale-sauce-vegan-burrata-chilli-pine-nut-crumb",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-grain-bowl-with-roasted-squash-crispy-chickpeas-creamy-garlic-tahini-pomegranate-seeds",
+      "title": "Super Green Grain Bowl With Roasted Squash, Crispy Chickpeas,  Creamy Garlic Tahini & Pomegranate Seeds",
+      "url": "https://planthood.co.uk/products/super-green-grain-bowl-with-roasted-squash-crispy-chickpeas-creamy-garlic-tahini-pomegranate-seeds",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-noodle-soup-with-mangetout-baby-sweetcorn-oyster-mushrooms-gochugaru-sesame-sprinkle",
+      "title": "Super Green Noodle Soup With Mangetout, Baby Sweetcorn, Oyster Mushrooms & Gochugaru Sesame Sprinkle",
+      "url": "https://planthood.co.uk/products/super-green-noodle-soup-with-mangetout-baby-sweetcorn-oyster-mushrooms-gochugaru-sesame-sprinkle",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-saag-daal-with-crispy-curry-spiced-tofu-coconut-yoghurt-pink-pickled-onion-basmati-rice",
+      "title": "Super Green Saag Daal With Crispy Curry Spiced Tofu, Coconut Yoghurt, Pink Pickled Onion & Basmati Rice",
+      "url": "https://planthood.co.uk/products/super-green-saag-daal-with-crispy-curry-spiced-tofu-coconut-yoghurt-pink-pickled-onion-basmati-rice",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-spinach-gnocchi-with-asparagus-burrata-toasted-hazelnuts",
+      "title": "Super Green Spinach Gnocchi With Asparagus, 'Burrata' & Toasted Hazelnuts",
+      "url": "https://planthood.co.uk/products/super-green-spinach-gnocchi-with-asparagus-burrata-toasted-hazelnuts",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-spring-minestrone-with-asparagus-regenerative-spelt-conchiglietti-asparagus-basil-pesto",
+      "title": "Super Green Spring Minestrone With Asparagus, Regenerative Spelt Conchiglietti, & Wild Garlic Pesto",
+      "url": "https://planthood.co.uk/products/super-green-spring-minestrone-with-asparagus-regenerative-spelt-conchiglietti-asparagus-basil-pesto",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-spring-minestrone-with-basil-pesto-orecchiette-peas-leeks-courgette-cannellini-beans",
+      "title": "Super Green Minestrone With Basil Pesto, Orecchiette, Peas, Leeks, Courgette & Cannellini Beans",
+      "url": "https://planthood.co.uk/products/super-green-spring-minestrone-with-basil-pesto-orecchiette-peas-leeks-courgette-cannellini-beans",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-spring-orzo-with-peas-asparagus-spinach-creamy-burrata-toasted-almonds",
+      "title": "Super Green Spring Orzo With Peas, Asparagus, Spinach, Creamy Cashew 'Labneh' & Toasted Almonds",
+      "url": "https://planthood.co.uk/products/super-green-spring-orzo-with-peas-asparagus-spinach-creamy-burrata-toasted-almonds",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-spring-orzo-with-peas-tenderstem-broccoli-spinach-creamy-burrata-toasted-almonds",
+      "title": "Super Green Orzotto With Peas, Tenderstem Broccoli, Spinach, Creamy Cashew 'Labneh' & Toasted Almonds",
+      "url": "https://planthood.co.uk/products/super-green-spring-orzo-with-peas-tenderstem-broccoli-spinach-creamy-burrata-toasted-almonds",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-spring-risotto-with-peas-courgettes-mint-toasted-hazelnuts",
+      "title": "Super Green Vegetable Garden Risotto With Garden Peas, Courgettes, Mint & Toasted Hazelnuts",
+      "url": "https://planthood.co.uk/products/super-green-spring-risotto-with-peas-courgettes-mint-toasted-hazelnuts",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-udon-noodles-with-tenderstem-broccoli-crispy-sesame-crusted-tofu-rayu-chilli-oil",
+      "title": "Super Green Udon Noodles With Tenderstem Broccoli, Crispy Sesame Crusted Tofu & Rayu Chilli Drizzle",
+      "url": "https://planthood.co.uk/products/super-green-udon-noodles-with-tenderstem-broccoli-crispy-sesame-crusted-tofu-rayu-chilli-oil",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "super-green-wholewheat-rigatoni-with-wild-garlic-cavolo-nero-sauce-creamy-burrata-chilli-pine-nut-crumb",
+      "title": "Super Green Wholewheat Rigatoni With Wild Garlic Sauce, Peas, Cavolo Nero, Creamy 'Burrata' & Chilli Pine Nut Crumb",
+      "url": "https://planthood.co.uk/products/super-green-wholewheat-rigatoni-with-wild-garlic-cavolo-nero-sauce-creamy-burrata-chilli-pine-nut-crumb",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "superfood-black-bean-chilli-over-roasted-sweet-potato-with-zingy-guacamole-crunchy-tortilla-chips",
+      "title": "Superfood Black Bean Chilli Over Roasted Sweet Potato With Zingy Guacamole & Crunchy Tortilla Chips",
+      "url": "https://planthood.co.uk/products/superfood-black-bean-chilli-over-roasted-sweet-potato-with-zingy-guacamole-crunchy-tortilla-chips",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "sweet-potato-shepherds-pie-with-rich-mushroom-lentil-red-wine-ragu-wilted-green-kale",
+      "title": "Sweet Potato Shepherds Pie With Rich Mushroom Lentil Red Wine Ragu & Wilted Green Kale",
+      "url": "https://planthood.co.uk/products/sweet-potato-shepherds-pie-with-rich-mushroom-lentil-red-wine-ragu-wilted-green-kale",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "sweet-spicy-jerk-tofu-over-coconut-rice-with-fresh-mango-avocado-cucumber-salad",
+      "title": "Sweet & Spicy Jerk Tofu Over Fluffy Coconut Rice, With Mango, Avocado & Cucumber Salad",
+      "url": "https://planthood.co.uk/products/sweet-spicy-jerk-tofu-over-coconut-rice-with-fresh-mango-avocado-cucumber-salad",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "tahini-miso-ramen-with-crispy-chilli-tempeh-pak-choi-gluten-free-brown-rice-noodles",
+      "title": "Tahini Miso Ramen With Crispy Chilli Tempeh, Pak Choi & Flat Rice Noodles",
+      "url": "https://planthood.co.uk/products/tahini-miso-ramen-with-crispy-chilli-tempeh-pak-choi-gluten-free-brown-rice-noodles",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "tahini-miso-udon-noodle-soup-with-sweet-smoky-chilli-glazed-aubergine-pak-choi-chives",
+      "title": "Tahini Miso Udon Noodle Soup With Sweet & Smoky Chilli Glazed Aubergine, Pak Choi & Chives",
+      "url": "https://planthood.co.uk/products/tahini-miso-udon-noodle-soup-with-sweet-smoky-chilli-glazed-aubergine-pak-choi-chives",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "tandoori-tofu-with-pickled-red-cabbage-minted-oat-yoghurt-fresh-spinach-wrapped-in-soft-naan",
+      "title": "Tandoori Tofu Naan Wraps With Cooling Mint Yoghurt, Pickled Red Cabbage & Fresh Spinach",
+      "url": "https://planthood.co.uk/products/tandoori-tofu-with-pickled-red-cabbage-minted-oat-yoghurt-fresh-spinach-wrapped-in-soft-naan",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "tempeh-sausage-broccoli-lasagne-in-rich-tomato-sauce-with-creamy-miso-bechamel",
+      "title": "High Protein Tempeh Sausage & Broccoli Lasagne In Rich Tomato Sauce With Creamy Miso Bechamel",
+      "url": "https://planthood.co.uk/products/tempeh-sausage-broccoli-lasagne-in-rich-tomato-sauce-with-creamy-miso-bechamel",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "tempeh-sausage-fennel-broccoli-pasta-in-creamy-garlic-sauce-with-toasted-walnut-pangrattato",
+      "title": "High Protein Tempeh Sausage & Broccoli Pasta In Creamy Garlic Sauce With Toasted Walnut Pangrattato",
+      "url": "https://planthood.co.uk/products/tempeh-sausage-fennel-broccoli-pasta-in-creamy-garlic-sauce-with-toasted-walnut-pangrattato",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "tempeh-tikka-masala",
+      "title": "Rich & Creamy Tempeh Tikka Masala With Toasted Flaked Almonds, Fresh Coriander & Basmati Rice",
+      "url": "https://planthood.co.uk/products/tempeh-tikka-masala",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "thai-green-curry-with-mangetout-crispy-tofu-jasmine-rice-chilli-lime",
+      "title": "Thai Green Curry With Mangetout, Crispy Tofu, Jasmine Rice, Chilli & Lime",
+      "url": "https://planthood.co.uk/products/thai-green-curry-with-mangetout-crispy-tofu-jasmine-rice-chilli-lime",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "thai-red-curry-brothy-rice-bowl-with-red-pepper-pak-choi-tofu-charred-lime-coriander",
+      "title": "Brothy Thai Red Curry Bowl With Red Pepper, Pak Choi, Tofu, Charred Lime & Brown Rice",
+      "url": "https://planthood.co.uk/products/thai-red-curry-brothy-rice-bowl-with-red-pepper-pak-choi-tofu-charred-lime-coriander",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "thai-red-curry-hispi-cabbage-with-black-lentils-lime-yoghurt-toasted-peanuts-fresh-coriander-fluffy-rice",
+      "title": "Thai Red Curry Hispi Cabbage With Black Lentils, Lime Yoghurt, Toasted Peanuts, Fresh Coriander & Fluffy Rice",
+      "url": "https://planthood.co.uk/products/thai-red-curry-hispi-cabbage-with-black-lentils-lime-yoghurt-toasted-peanuts-fresh-coriander-fluffy-rice",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "thai-red-curry-sweet-potato-fritters-over-crunchy-mixed-veg-quinoa-slaw-with-aromatic-red-curry-dressing",
+      "title": "Thai Red Curry Sweet Potato Fritters Over Crunchy Mixed Veg & Quinoa Slaw With Aromatic Red Curry Dressing",
+      "url": "https://planthood.co.uk/products/thai-red-curry-sweet-potato-fritters-over-crunchy-mixed-veg-quinoa-slaw-with-aromatic-red-curry-dressing",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "thai-red-curry-with-rice-noodles-red-pepper-chestnut-mushrooom-courgette-lime-coriander",
+      "title": "Thai Red Curry With Noodles, Red Pepper, Chestnut Mushrooom, Courgette, Lime & Coriander",
+      "url": "https://planthood.co.uk/products/thai-red-curry-with-rice-noodles-red-pepper-chestnut-mushrooom-courgette-lime-coriander",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "thai-tom-yum-1",
+      "title": "Fragrant Thai Tom Yum Noodle Soup With Tofu, Pak Choi, Button Mushrooms, Coriander & Lime",
+      "url": "https://planthood.co.uk/products/thai-tom-yum-1",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "three-bean-chilli-enchiladas-topped-with-cashew-cheese-sauce-a-zingy-cherry-tomato-salsa",
+      "title": "Black Bean Chilli Enchiladas Topped With Cashew Cheese Sauce & A Zingy Cherry Tomato Salsa",
+      "url": "https://planthood.co.uk/products/three-bean-chilli-enchiladas-topped-with-cashew-cheese-sauce-a-zingy-cherry-tomato-salsa",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "tofu-satay-skewer-bowl-with-zingy-smacked-cucumbers-pink-radish-sushi-rice-sesame-peanut-garnish",
+      "title": "Tofu Satay Skewer Bowl With Zingy Smacked Cucumbers, Pink Radish, Sushi Rice & Sesame Peanut Garnish",
+      "url": "https://planthood.co.uk/products/tofu-satay-skewer-bowl-with-zingy-smacked-cucumbers-pink-radish-sushi-rice-sesame-peanut-garnish",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "tofu-tikka-kebabs-over-spiced-rice-with-mint-yoghurt-juicy-cherry-tomatoes-pink-onion-pickle",
+      "title": "Tofu Tikka Kebabs Over Spiced Rice With Mint Yoghurt, Juicy Cherry Tomatoes & Pink Onion Pickle",
+      "url": "https://planthood.co.uk/products/tofu-tikka-kebabs-over-spiced-rice-with-mint-yoghurt-juicy-cherry-tomatoes-pink-onion-pickle",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "tofu-tikka-naan-wrap",
+      "title": "Chargrilled Tofu Tikka Massala Naan Wrap With Coconut Yoghurt, Pickled Onion & Coriander",
+      "url": "https://planthood.co.uk/products/tofu-tikka-naan-wrap",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "turmeric-lemongrass-broth",
+      "title": "Thai Noodle Salad with Broccolini, Spicy Cashews, Pickles, Coriander & Satay Sauce",
+      "url": "https://planthood.co.uk/products/turmeric-lemongrass-broth",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "tuscan-style-panzanella",
+      "title": "Tuscan Panzanella Salad, With Creamy Vegan Mozzarella, Golden Ciabatta Croutons & Caper-Spiked Vinaigrette",
+      "url": "https://planthood.co.uk/products/tuscan-style-panzanella",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "umami-broth-with-greens-vermicelli-crispy-chilli-tempeh",
+      "title": "Umami Broth & Greens With Crispy Chilli Tempeh, Vermicelli & Chiu Chow Chilli Sauce",
+      "url": "https://planthood.co.uk/products/umami-broth-with-greens-vermicelli-crispy-chilli-tempeh",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "vietnamese-inspired-salad-with-sweet-chilli-dressing-crispy-tofu-rainbow-vegetables",
+      "title": "Sweet Chilli Noodle Salad With Crispy Tofu, Julienned Vegetables & Baby Gem",
+      "url": "https://planthood.co.uk/products/vietnamese-inspired-salad-with-sweet-chilli-dressing-crispy-tofu-rainbow-vegetables",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "vietnamese-rice-noodle-salad-with-peanut-lemongrass-sauce-pickled-carrot-daikon-edamame-toasted-peanuts",
+      "title": "Vietnamese Rice Noodle Salad With Peanut Lemongrass Sauce, Pickled Carrot & Daikon, Edamame & Toasted Peanuts",
+      "url": "https://planthood.co.uk/products/vietnamese-rice-noodle-salad-with-peanut-lemongrass-sauce-pickled-carrot-daikon-edamame-toasted-peanuts",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "vive-3-bar-bundle",
+      "title": "Vive 3 x Protein Bar Bundle",
+      "url": "https://planthood.co.uk/products/vive-3-bar-bundle",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "vive-dark-chocolate-hazelnut-protein-bar-50g",
+      "title": "Vive Dark Chocolate Hazelnut Protein Bar 50g",
+      "url": "https://planthood.co.uk/products/vive-dark-chocolate-hazelnut-protein-bar-50g",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "vive-dark-chocolate-peanut-butter-jelly-protein-bar-50g",
+      "title": "Vive Dark Chocolate Peanut Butter Jelly Protein Bar 50g",
+      "url": "https://planthood.co.uk/products/vive-dark-chocolate-peanut-butter-jelly-protein-bar-50g",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "vive-dark-chocolate-salted-caramel-protein-bar-50g",
+      "title": "Vive Dark Chocolate Salted Caramel Protein Bar 50g",
+      "url": "https://planthood.co.uk/products/vive-dark-chocolate-salted-caramel-protein-bar-50g",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "wholewheat-casarecce-in-a-sweet-spicy-pumpkin-nduja-sauce-with-crispy-sage-tenderstem-broccoli",
+      "title": "Wholewheat Casarecce In A Sweet & Spicy Pumpkin & \"Nduja\" Sauce With Crispy Sage & Broccoli",
+      "url": "https://planthood.co.uk/products/wholewheat-casarecce-in-a-sweet-spicy-pumpkin-nduja-sauce-with-crispy-sage-tenderstem-broccoli",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "wholewheat-ditalini-puttanesca-with-chickpeas-courgettes-red-pepper-fresh-parsley",
+      "title": "Wholewheat Ditalini Puttanesca With Chickpeas, Courgettes, Red Pepper & Fresh Parsley",
+      "url": "https://planthood.co.uk/products/wholewheat-ditalini-puttanesca-with-chickpeas-courgettes-red-pepper-fresh-parsley",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "winter-caesar-salad-with-orzo-roasted-squash-tempeh-lardons-cavolo-nero-candied-almond-crunch",
+      "title": "Winter Caesar Salad With Orzo, Butternut Squash, Tempeh 'Lardons', Cavolo Nero & Candied Almond Crunch",
+      "url": "https://planthood.co.uk/products/winter-caesar-salad-with-orzo-roasted-squash-tempeh-lardons-cavolo-nero-candied-almond-crunch",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
+      "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
     }
   ],
   "failed_urls": [
-    {
-      "url": "https://planthood.co.uk/products/squash-gratin",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/sri-lankan-daal-with-curry-spiced-oyster-mushroom-skewers-beetroot-raita-over-fluffy-basmati-rice",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/sticky-black-pepper-tofu",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/sticky-cauliflower-bao-buns",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/sticky-chilli-tofu-with-spring-onions-sesame-seeds-sticky-jasmine-rice-green-kale",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/sticky-moroccan-tagine",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/sticky-sesame-tofu-rice-bowl-with-kimchi-mayo-pickled-cabbage-carrot-edamame-sesame-seeds",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/sticky-teriyaki-tofu-bowl-with-purple-sprouting-broccoli-pickled-cabbage-over-sushi-rice",
-      "error": "Failed to fetch page"
-    },
     {
       "url": "https://planthood.co.uk/products/summer-daal-courgette-pickle-crispy-kale",
       "error": "Failed to fetch page"
     },
     {
-      "url": "https://planthood.co.uk/products/sun-dried-tomato-lasagne-soup-with-spinach-cannellini-beans-cheesy-cashew-cream",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/super-green-cheats-lasagne-with-courgette-butter-beans-miso-bechamel-toasted-nuts-seeds",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/super-green-gnocchi-with-creamy-spinach-kale-sauce-vegan-burrata-chilli-pine-nut-crumb",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/super-green-grain-bowl-with-roasted-squash-crispy-chickpeas-creamy-garlic-tahini-pomegranate-seeds",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/super-green-noodle-soup-with-mangetout-baby-sweetcorn-oyster-mushrooms-gochugaru-sesame-sprinkle",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/super-green-saag-daal-with-crispy-curry-spiced-tofu-coconut-yoghurt-pink-pickled-onion-basmati-rice",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/super-green-spinach-gnocchi-with-asparagus-burrata-toasted-hazelnuts",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/super-green-spring-minestrone-with-asparagus-regenerative-spelt-conchiglietti-asparagus-basil-pesto",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/super-green-spring-minestrone-with-basil-pesto-orecchiette-peas-leeks-courgette-cannellini-beans",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/super-green-spring-orzo-with-peas-asparagus-spinach-creamy-burrata-toasted-almonds",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/super-green-spring-orzo-with-peas-tenderstem-broccoli-spinach-creamy-burrata-toasted-almonds",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/super-green-spring-risotto-with-peas-courgettes-mint-toasted-hazelnuts",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/super-green-udon-noodles-with-tenderstem-broccoli-crispy-sesame-crusted-tofu-rayu-chilli-oil",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/super-green-wholewheat-rigatoni-with-wild-garlic-cavolo-nero-sauce-creamy-burrata-chilli-pine-nut-crumb",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/superfood-black-bean-chilli-over-roasted-sweet-potato-with-zingy-guacamole-crunchy-tortilla-chips",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/sweet-potato-shepherds-pie-with-rich-mushroom-lentil-red-wine-ragu-wilted-green-kale",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/sweet-spicy-jerk-tofu-over-coconut-rice-with-fresh-mango-avocado-cucumber-salad",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/tahini-miso-ramen-with-crispy-chilli-tempeh-pak-choi-gluten-free-brown-rice-noodles",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/tahini-miso-udon-noodle-soup-with-sweet-smoky-chilli-glazed-aubergine-pak-choi-chives",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/tandoori-tofu-with-pickled-red-cabbage-minted-oat-yoghurt-fresh-spinach-wrapped-in-soft-naan",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/tempeh-sausage-broccoli-lasagne-in-rich-tomato-sauce-with-creamy-miso-bechamel",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/tempeh-sausage-fennel-broccoli-pasta-in-creamy-garlic-sauce-with-toasted-walnut-pangrattato",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/tempeh-tikka-masala",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/thai-green-curry-with-mangetout-crispy-tofu-jasmine-rice-chilli-lime",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/thai-red-curry-brothy-rice-bowl-with-red-pepper-pak-choi-tofu-charred-lime-coriander",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/thai-red-curry-hispi-cabbage-with-black-lentils-lime-yoghurt-toasted-peanuts-fresh-coriander-fluffy-rice",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/thai-red-curry-sweet-potato-fritters-over-crunchy-mixed-veg-quinoa-slaw-with-aromatic-red-curry-dressing",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/thai-red-curry-with-rice-noodles-red-pepper-chestnut-mushrooom-courgette-lime-coriander",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/thai-tom-yum-1",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/three-bean-chilli-enchiladas-topped-with-cashew-cheese-sauce-a-zingy-cherry-tomato-salsa",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/tofu-satay-skewer-bowl-with-zingy-smacked-cucumbers-pink-radish-sushi-rice-sesame-peanut-garnish",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/tofu-tikka-kebabs-over-spiced-rice-with-mint-yoghurt-juicy-cherry-tomatoes-pink-onion-pickle",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/tofu-tikka-naan-wrap",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/turmeric-lemongrass-broth",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/tuscan-style-panzanella",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/umami-broth-with-greens-vermicelli-crispy-chilli-tempeh",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/vietnamese-inspired-salad-with-sweet-chilli-dressing-crispy-tofu-rainbow-vegetables",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/vietnamese-rice-noodle-salad-with-peanut-lemongrass-sauce-pickled-carrot-daikon-edamame-toasted-peanuts",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/vive-3-bar-bundle",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/vive-dark-chocolate-hazelnut-protein-bar-50g",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/vive-dark-chocolate-peanut-butter-jelly-protein-bar-50g",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/vive-dark-chocolate-salted-caramel-protein-bar-50g",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/wholewheat-casarecce-in-a-sweet-spicy-pumpkin-nduja-sauce-with-crispy-sage-tenderstem-broccoli",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/wholewheat-ditalini-puttanesca-with-chickpeas-courgettes-red-pepper-fresh-parsley",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/winter-caesar-salad-with-orzo-roasted-squash-tempeh-lardons-cavolo-nero-candied-almond-crunch",
-      "error": "Failed to fetch page"
-    },
-    {
       "url": "https://planthood.co.uk/products/winter-harvest-apple-kale-salad-with-sweet-potato-pomegranate-maple-tahini-dressing",
-      "error": "Failed to fetch page"
-    },
-    {
-      "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "error": "Failed to fetch page"
     }
   ]
