@@ -50,13 +50,30 @@ Configure via environment (see `.env.example`). The abstraction lives in `planth
 | `openai` | `OPENAI_API_KEY` | `gpt-4o-mini` |
 | `mock` | none | offline deterministic enrichment (for tests / no-key runs) |
 
-Enrichment results are cached under `data/.cache/enrich` keyed on the recipe, prompt version,
-and model, so re-runs only call the LLM for changed recipes. Pass `--no-cache` to bypass.
+> For Gemini use a real **API key** from https://aistudio.google.com/apikey (starts `AIza`),
+> not a short-lived OAuth access token.
+
+## Resumable, "X recipes per day" enrichment
+
+There is **no separate cache** — `recipes_parsed.json` is the store. Each recipe records:
+
+- `provenance`: `llm` (genuine model output), `fallback` (deterministic — a candidate for the
+  LLM next run), or `none` (non-cookable).
+- `source_hash`: a fingerprint of the extracted steps; if a re-scrape changes them, the recipe
+  is re-enriched rather than kept stale.
+
+`enrich` resumes from the committed file: recipes already `llm`-enriched for their current text
+are reused, and up to `--limit N` of the remaining ones are enriched this run (`--limit 0` = as
+many as the quota allows, stopping when a circuit breaker detects the daily quota is spent). So
+the daily GitHub Actions run works through the backlog `N` recipes at a time and commits the
+result; over several days the whole catalogue becomes real `llm` enrichment. Set the pace with
+the `DAILY_ENRICH_LIMIT` repo variable.
 
 ## Safety properties
 
-- **Merge-safe saves** (`planthood/io.py`): a failed or empty enrichment never overwrites a
-  previously-good parse. Full clean rebuilds use `--replace`.
+- **Never empty**: a failed/rate-limited/weak model falls back to deterministic enrichment
+  (`provenance='fallback'`), so a cookable recipe always has grounded, scheduled steps.
+- **Merge-safe saves** (`planthood/io.py`): an empty result never overwrites a good one.
 - **Grounding**: extracted step text is a verbatim slice of the source method, so the enriched
   `raw_text` quotes the real recipe.
 - **Quality gate** (`planthood/quality/`): coverage, grounding, dependency sanity, and timeline

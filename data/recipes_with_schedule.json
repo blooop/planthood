@@ -42,10 +42,10 @@
         "id": "step-1",
         "raw_text": "Take out a saucepan and preheat your oven to 200°C / 180°C fan.",
         "label": "Take out a saucepan and preheat",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -58,7 +58,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -66,8 +66,8 @@
         "label": "Traditionally tostadas are shallow fried in",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 8,
-        "end_min": 16,
+        "start_min": 3,
+        "end_min": 11,
         "requires": [
           "step-1"
         ],
@@ -79,8 +79,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 16
+        "latest_start_min": 3,
+        "latest_end_min": 11
       },
       {
         "id": "step-3",
@@ -88,8 +88,8 @@
         "label": "Drain the black beans and empty",
         "type": "cook",
         "duration_min": 5,
-        "start_min": 16,
-        "end_min": 21,
+        "start_min": 11,
+        "end_min": 16,
         "requires": [
           "step-2"
         ],
@@ -102,8 +102,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 21
+        "latest_start_min": 11,
+        "latest_end_min": 16
       },
       {
         "id": "step-4",
@@ -111,8 +111,8 @@
         "label": "Finely shred the baby gem by",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 21,
-        "end_min": 24,
+        "start_min": 16,
+        "end_min": 19,
         "requires": [
           "step-3"
         ],
@@ -122,8 +122,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 21,
-        "latest_end_min": 24
+        "latest_start_min": 16,
+        "latest_end_min": 19
       },
       {
         "id": "step-5",
@@ -131,8 +131,8 @@
         "label": "Lay everything out on your table",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 24,
-        "end_min": 26,
+        "start_min": 19,
+        "end_min": 21,
         "requires": [
           "step-4"
         ],
@@ -142,12 +142,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 24,
-        "latest_end_min": 26
+        "latest_start_min": 19,
+        "latest_end_min": 21
       }
     ],
-    "total_time_min": 26,
-    "active_time_min": 13
+    "total_time_min": 21,
+    "active_time_min": 8
   },
   {
     "id": "afghan-aubergine-borani-banjan-with-saucy-spiced-lentils-garlic-yoghurt-fresh-mint-pillowy-flatbreads",
@@ -370,10 +370,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large roasting tray, and a large saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -388,7 +388,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -396,8 +396,8 @@
         "label": "Dice the sweet potato and aubergine",
         "type": "cook",
         "duration_min": 25,
-        "start_min": 8,
-        "end_min": 33,
+        "start_min": 3,
+        "end_min": 28,
         "requires": [
           "step-1"
         ],
@@ -411,8 +411,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 33
+        "latest_start_min": 3,
+        "latest_end_min": 28
       },
       {
         "id": "step-3",
@@ -420,8 +420,8 @@
         "label": "Once there's 5 minutes left on",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 33,
-        "end_min": 35,
+        "start_min": 28,
+        "end_min": 30,
         "requires": [
           "step-2"
         ],
@@ -434,8 +434,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 33,
-        "latest_end_min": 35
+        "latest_start_min": 28,
+        "latest_end_min": 30
       },
       {
         "id": "step-4",
@@ -443,8 +443,8 @@
         "label": "To serve, divide the thai green",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 35,
-        "end_min": 37,
+        "start_min": 30,
+        "end_min": 32,
         "requires": [
           "step-3"
         ],
@@ -457,11 +457,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 35,
-        "latest_end_min": 37
+        "latest_start_min": 30,
+        "latest_end_min": 32
       }
     ],
-    "total_time_min": 37,
+    "total_time_min": 32,
     "active_time_min": 2
   },
   {
@@ -614,10 +614,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 240°C / 220°C fan. Take out a wide, hob- and ovenproof casserole dish.",
         "label": "Preheat your oven to 240°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -630,7 +630,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -638,8 +638,8 @@
         "label": "Slice the cooked beetroot and sweet",
         "type": "cook",
         "duration_min": 3,
-        "start_min": 8,
-        "end_min": 11,
+        "start_min": 3,
+        "end_min": 6,
         "requires": [
           "step-1"
         ],
@@ -652,8 +652,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 11
+        "latest_start_min": 3,
+        "latest_end_min": 6
       },
       {
         "id": "step-3",
@@ -661,8 +661,8 @@
         "label": "In your ovenproof casserole dish, mix",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 11,
-        "end_min": 19,
+        "start_min": 6,
+        "end_min": 14,
         "requires": [
           "step-2"
         ],
@@ -675,8 +675,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 11,
-        "latest_end_min": 19
+        "latest_start_min": 6,
+        "latest_end_min": 14
       },
       {
         "id": "step-4",
@@ -684,8 +684,8 @@
         "label": "Lay the beetroot and sweet potato",
         "type": "finish",
         "duration_min": 20,
-        "start_min": 19,
-        "end_min": 39,
+        "start_min": 14,
+        "end_min": 34,
         "requires": [
           "step-3"
         ],
@@ -699,8 +699,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 19,
-        "latest_end_min": 39
+        "latest_start_min": 14,
+        "latest_end_min": 34
       },
       {
         "id": "step-5",
@@ -708,8 +708,8 @@
         "label": "To serve, divide the gratin between",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 39,
-        "end_min": 41,
+        "start_min": 34,
+        "end_min": 36,
         "requires": [
           "step-4"
         ],
@@ -719,11 +719,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 39,
-        "latest_end_min": 41
+        "latest_start_min": 34,
+        "latest_end_min": 36
       }
     ],
-    "total_time_min": 41,
+    "total_time_min": 36,
     "active_time_min": 5
   },
   {
@@ -1268,10 +1268,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan. Boil your kettle and take out an ovenproof ramekin (in a size that snugly fits all the cherry tomatoes in a single layer), a griddle pan or frying pan, as well as two saucepans.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -1285,7 +1285,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -1293,8 +1293,8 @@
         "label": "Place your cherry tomatoes in the",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 8,
-        "end_min": 10,
+        "start_min": 3,
+        "end_min": 5,
         "requires": [
           "step-1"
         ],
@@ -1306,8 +1306,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 10
+        "latest_start_min": 3,
+        "latest_end_min": 5
       },
       {
         "id": "step-3",
@@ -1315,8 +1315,8 @@
         "label": "Fill one of your saucepans with",
         "type": "cook",
         "duration_min": 11,
-        "start_min": 10,
-        "end_min": 21,
+        "start_min": 5,
+        "end_min": 16,
         "requires": [
           "step-2"
         ],
@@ -1329,8 +1329,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 10,
-        "latest_end_min": 21
+        "latest_start_min": 5,
+        "latest_end_min": 16
       },
       {
         "id": "step-4",
@@ -1338,8 +1338,8 @@
         "label": "Place the other saucepan over medium",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 21,
-        "end_min": 29,
+        "start_min": 16,
+        "end_min": 24,
         "requires": [
           "step-3"
         ],
@@ -1352,8 +1352,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 21,
-        "latest_end_min": 29
+        "latest_start_min": 16,
+        "latest_end_min": 24
       },
       {
         "id": "step-5",
@@ -1361,8 +1361,8 @@
         "label": "Halve the lemon and remove the",
         "type": "finish",
         "duration_min": 4,
-        "start_min": 29,
-        "end_min": 33,
+        "start_min": 24,
+        "end_min": 28,
         "requires": [
           "step-4"
         ],
@@ -1376,11 +1376,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 29,
-        "latest_end_min": 33
+        "latest_start_min": 24,
+        "latest_end_min": 28
       }
     ],
-    "total_time_min": 33,
+    "total_time_min": 28,
     "active_time_min": 21
   },
   {
@@ -1526,10 +1526,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large saucepan, a frying pan and a baking tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -1544,7 +1544,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -1552,8 +1552,8 @@
         "label": "Cut the courgette into rounds or",
         "type": "cook",
         "duration_min": 17,
-        "start_min": 8,
-        "end_min": 25,
+        "start_min": 3,
+        "end_min": 20,
         "requires": [
           "step-1"
         ],
@@ -1566,8 +1566,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 25
+        "latest_start_min": 3,
+        "latest_end_min": 20
       },
       {
         "id": "step-3",
@@ -1575,8 +1575,8 @@
         "label": "Place a saucepan over medium–high heat",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 25,
-        "end_min": 33,
+        "start_min": 20,
+        "end_min": 28,
         "requires": [
           "step-2"
         ],
@@ -1589,8 +1589,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 33
+        "latest_start_min": 20,
+        "latest_end_min": 28
       },
       {
         "id": "step-4",
@@ -1598,8 +1598,8 @@
         "label": "Place your frying pan over a",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 33,
-        "end_min": 41,
+        "start_min": 28,
+        "end_min": 36,
         "requires": [
           "step-3"
         ],
@@ -1612,8 +1612,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 33,
-        "latest_end_min": 41
+        "latest_start_min": 28,
+        "latest_end_min": 36
       },
       {
         "id": "step-5",
@@ -1621,8 +1621,8 @@
         "label": "To serve up, divide the butternut",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 41,
-        "end_min": 43,
+        "start_min": 36,
+        "end_min": 38,
         "requires": [
           "step-4"
         ],
@@ -1634,12 +1634,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 41,
-        "latest_end_min": 43
+        "latest_start_min": 36,
+        "latest_end_min": 38
       }
     ],
-    "total_time_min": 43,
-    "active_time_min": 10
+    "total_time_min": 38,
+    "active_time_min": 5
   },
   {
     "id": "butternut-squash-brothy-beans-with-crispy-sprouts-hot-agave-nduja-oil-toasted-pine-nuts-pumpkin-seeds",
@@ -1663,10 +1663,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large saucepan, a frying pan and a baking tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -1681,7 +1681,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -1689,8 +1689,8 @@
         "label": "Trim the bottoms of the brussels",
         "type": "cook",
         "duration_min": 17,
-        "start_min": 8,
-        "end_min": 25,
+        "start_min": 3,
+        "end_min": 20,
         "requires": [
           "step-1"
         ],
@@ -1703,8 +1703,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 25
+        "latest_start_min": 3,
+        "latest_end_min": 20
       },
       {
         "id": "step-3",
@@ -1712,8 +1712,8 @@
         "label": "Add the butter beans along with",
         "type": "cook",
         "duration_min": 2,
-        "start_min": 25,
-        "end_min": 27,
+        "start_min": 20,
+        "end_min": 22,
         "requires": [
           "step-2"
         ],
@@ -1726,8 +1726,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 27
+        "latest_start_min": 20,
+        "latest_end_min": 22
       },
       {
         "id": "step-4",
@@ -1735,8 +1735,8 @@
         "label": "Place your frying pan over a",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 27,
-        "end_min": 35,
+        "start_min": 22,
+        "end_min": 30,
         "requires": [
           "step-3"
         ],
@@ -1749,8 +1749,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 27,
-        "latest_end_min": 35
+        "latest_start_min": 22,
+        "latest_end_min": 30
       },
       {
         "id": "step-5",
@@ -1758,8 +1758,8 @@
         "label": "To serve up, divide the butternut",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 35,
-        "end_min": 37,
+        "start_min": 30,
+        "end_min": 32,
         "requires": [
           "step-4"
         ],
@@ -1771,12 +1771,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 35,
-        "latest_end_min": 37
+        "latest_start_min": 30,
+        "latest_end_min": 32
       }
     ],
-    "total_time_min": 37,
-    "active_time_min": 12
+    "total_time_min": 32,
+    "active_time_min": 7
   },
   {
     "id": "butternut-squash-curried-noodles-with-tenderstem-broccoli-superseed-chilli-rayu-drizzle",
@@ -1800,10 +1800,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a baking tray and a saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -1817,7 +1817,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -1825,8 +1825,8 @@
         "label": "Halve the butternut squash and remove",
         "type": "cook",
         "duration_min": 20,
-        "start_min": 8,
-        "end_min": 28,
+        "start_min": 3,
+        "end_min": 23,
         "requires": [
           "step-1"
         ],
@@ -1839,8 +1839,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 28
+        "latest_start_min": 3,
+        "latest_end_min": 23
       },
       {
         "id": "step-3",
@@ -1848,8 +1848,8 @@
         "label": "Meanwhile, fill a saucepan with boiling",
         "type": "cook",
         "duration_min": 3,
-        "start_min": 28,
-        "end_min": 31,
+        "start_min": 23,
+        "end_min": 26,
         "requires": [
           "step-2"
         ],
@@ -1862,8 +1862,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 28,
-        "latest_end_min": 31
+        "latest_start_min": 23,
+        "latest_end_min": 26
       },
       {
         "id": "step-4",
@@ -1871,8 +1871,8 @@
         "label": "Place the saucepan back over medium",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 31,
-        "end_min": 39,
+        "start_min": 26,
+        "end_min": 34,
         "requires": [
           "step-3"
         ],
@@ -1885,8 +1885,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 31,
-        "latest_end_min": 39
+        "latest_start_min": 26,
+        "latest_end_min": 34
       },
       {
         "id": "step-5",
@@ -1894,8 +1894,8 @@
         "label": "Pick the coriander leaves and halve",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 39,
-        "end_min": 41,
+        "start_min": 34,
+        "end_min": 36,
         "requires": [
           "step-4"
         ],
@@ -1905,8 +1905,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 39,
-        "latest_end_min": 41
+        "latest_start_min": 34,
+        "latest_end_min": 36
       },
       {
         "id": "step-6",
@@ -1914,8 +1914,8 @@
         "label": "To serve, divide the flat rice",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 41,
-        "end_min": 43,
+        "start_min": 36,
+        "end_min": 38,
         "requires": [
           "step-5"
         ],
@@ -1927,12 +1927,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 41,
-        "latest_end_min": 43
+        "latest_start_min": 36,
+        "latest_end_min": 38
       }
     ],
-    "total_time_min": 43,
-    "active_time_min": 21
+    "total_time_min": 38,
+    "active_time_min": 16
   },
   {
     "id": "butternut-squash-gochujang-pasta-with-garlicky-green-kale-sunflower-seed-sprinkle",
@@ -1977,10 +1977,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan. Take out a saucepan, a mixing bowl and a baking dish around 15x20cm (or double this for a four person box).",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -1995,7 +1995,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -2003,8 +2003,8 @@
         "label": "Drain the lentils and add them",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 8,
-        "end_min": 11,
+        "start_min": 3,
+        "end_min": 6,
         "requires": [
           "step-1"
         ],
@@ -2017,8 +2017,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 11
+        "latest_start_min": 3,
+        "latest_end_min": 6
       },
       {
         "id": "step-3",
@@ -2026,8 +2026,8 @@
         "label": "Place a saucepan over medium heat",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 11,
-        "end_min": 19,
+        "start_min": 6,
+        "end_min": 14,
         "requires": [
           "step-2"
         ],
@@ -2040,8 +2040,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 11,
-        "latest_end_min": 19
+        "latest_start_min": 6,
+        "latest_end_min": 14
       },
       {
         "id": "step-4",
@@ -2049,8 +2049,8 @@
         "label": "Build your lasagne in three layers:",
         "type": "finish",
         "duration_min": 27,
-        "start_min": 19,
-        "end_min": 46,
+        "start_min": 14,
+        "end_min": 41,
         "requires": [
           "step-3"
         ],
@@ -2060,8 +2060,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 19,
-        "latest_end_min": 46
+        "latest_start_min": 14,
+        "latest_end_min": 41
       },
       {
         "id": "step-5",
@@ -2069,8 +2069,8 @@
         "label": "Place the lasagne in the middle",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 46,
-        "end_min": 48,
+        "start_min": 41,
+        "end_min": 43,
         "requires": [
           "step-4"
         ],
@@ -2080,12 +2080,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 46,
-        "latest_end_min": 48
+        "latest_start_min": 41,
+        "latest_end_min": 43
       }
     ],
-    "total_time_min": 48,
-    "active_time_min": 13
+    "total_time_min": 43,
+    "active_time_min": 8
   },
   {
     "id": "butternut-squash-spelt-risotto-with-crispy-sage-smokey-toasted-pine-nuts",
@@ -2267,10 +2267,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Boil your kettle and take out a large saucepan and a wide ovenproof or casserole dish.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -2284,7 +2284,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -2292,8 +2292,8 @@
         "label": "Place the saucepan over medium heat",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 8,
-        "end_min": 16,
+        "start_min": 3,
+        "end_min": 11,
         "requires": [
           "step-1"
         ],
@@ -2307,8 +2307,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 16
+        "latest_start_min": 3,
+        "latest_end_min": 11
       },
       {
         "id": "step-3",
@@ -2316,8 +2316,8 @@
         "label": "Pour the creamy gratin sauce into",
         "type": "finish",
         "duration_min": 12,
-        "start_min": 16,
-        "end_min": 28,
+        "start_min": 11,
+        "end_min": 23,
         "requires": [
           "step-2"
         ],
@@ -2330,8 +2330,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 28
+        "latest_start_min": 11,
+        "latest_end_min": 23
       },
       {
         "id": "step-4",
@@ -2339,8 +2339,8 @@
         "label": "To serve, divide the butternut squash",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 28,
-        "end_min": 30,
+        "start_min": 23,
+        "end_min": 25,
         "requires": [
           "step-3"
         ],
@@ -2350,11 +2350,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 28,
-        "latest_end_min": 30
+        "latest_start_min": 23,
+        "latest_end_min": 25
       }
     ],
-    "total_time_min": 30,
+    "total_time_min": 25,
     "active_time_min": 10
   },
   {
@@ -2400,10 +2400,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C and take out a roasting tray.",
         "label": "Preheat your oven to 200°C and",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -2416,7 +2416,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -2424,8 +2424,8 @@
         "label": "Cut each tomato into eight pieces",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 8,
-        "end_min": 11,
+        "start_min": 3,
+        "end_min": 6,
         "requires": [
           "step-1"
         ],
@@ -2438,8 +2438,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 11
+        "latest_start_min": 3,
+        "latest_end_min": 6
       },
       {
         "id": "step-3",
@@ -2447,8 +2447,8 @@
         "label": "Tear the ciabatta into rough chunks",
         "type": "cook",
         "duration_min": 10,
-        "start_min": 11,
-        "end_min": 21,
+        "start_min": 6,
+        "end_min": 16,
         "requires": [
           "step-2"
         ],
@@ -2463,8 +2463,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 11,
-        "latest_end_min": 21
+        "latest_start_min": 6,
+        "latest_end_min": 16
       },
       {
         "id": "step-4",
@@ -2472,8 +2472,8 @@
         "label": "Divide the dressed tomatoes between serving",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 21,
-        "end_min": 23,
+        "start_min": 16,
+        "end_min": 18,
         "requires": [
           "step-3"
         ],
@@ -2485,11 +2485,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 21,
-        "latest_end_min": 23
+        "latest_start_min": 16,
+        "latest_end_min": 18
       }
     ],
-    "total_time_min": 23,
+    "total_time_min": 18,
     "active_time_min": 2
   },
   {
@@ -2728,10 +2728,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 220°C fan, then take out a large roasting tray and a frying pan.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -2746,7 +2746,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -2754,8 +2754,8 @@
         "label": "Cut the cauliflower into bite-sized chunks",
         "type": "cook",
         "duration_min": 17,
-        "start_min": 8,
-        "end_min": 25,
+        "start_min": 3,
+        "end_min": 20,
         "requires": [
           "step-1"
         ],
@@ -2769,8 +2769,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 25
+        "latest_start_min": 3,
+        "latest_end_min": 20
       },
       {
         "id": "step-3",
@@ -2778,8 +2778,8 @@
         "label": "Place your frying pan over a",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 25,
-        "end_min": 27,
+        "start_min": 20,
+        "end_min": 22,
         "requires": [
           "step-2"
         ],
@@ -2792,8 +2792,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 27
+        "latest_start_min": 20,
+        "latest_end_min": 22
       },
       {
         "id": "step-4",
@@ -2801,8 +2801,8 @@
         "label": "Cut the lime into quarters and",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 27,
-        "end_min": 30,
+        "start_min": 22,
+        "end_min": 25,
         "requires": [
           "step-3"
         ],
@@ -2812,8 +2812,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 27,
-        "latest_end_min": 30
+        "latest_start_min": 22,
+        "latest_end_min": 25
       },
       {
         "id": "step-5",
@@ -2821,8 +2821,8 @@
         "label": "To serve, lay the tacos on",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 30,
-        "end_min": 32,
+        "start_min": 25,
+        "end_min": 27,
         "requires": [
           "step-4"
         ],
@@ -2832,11 +2832,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 30,
-        "latest_end_min": 32
+        "latest_start_min": 25,
+        "latest_end_min": 27
       }
     ],
-    "total_time_min": 32,
+    "total_time_min": 27,
     "active_time_min": 5
   },
   {
@@ -2882,10 +2882,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large roasting tray, and a saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -2900,7 +2900,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -2908,8 +2908,8 @@
         "label": "Slice the aubergine into rounds, about",
         "type": "cook",
         "duration_min": 6,
-        "start_min": 8,
-        "end_min": 14,
+        "start_min": 3,
+        "end_min": 9,
         "requires": [
           "step-1"
         ],
@@ -2923,8 +2923,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 14
+        "latest_start_min": 3,
+        "latest_end_min": 9
       },
       {
         "id": "step-3",
@@ -2932,8 +2932,8 @@
         "label": "Place the bulgur wheat in a",
         "type": "cook",
         "duration_min": 7,
-        "start_min": 14,
-        "end_min": 21,
+        "start_min": 9,
+        "end_min": 16,
         "requires": [
           "step-2"
         ],
@@ -2946,8 +2946,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 14,
-        "latest_end_min": 21
+        "latest_start_min": 9,
+        "latest_end_min": 16
       },
       {
         "id": "step-4",
@@ -2955,8 +2955,8 @@
         "label": "To serve, spread half of the",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 21,
-        "end_min": 23,
+        "start_min": 16,
+        "end_min": 18,
         "requires": [
           "step-3"
         ],
@@ -2966,11 +2966,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 21,
-        "latest_end_min": 23
+        "latest_start_min": 16,
+        "latest_end_min": 18
       }
     ],
-    "total_time_min": 23,
+    "total_time_min": 18,
     "active_time_min": 2
   },
   {
@@ -3369,10 +3369,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a saucepan and an ovenproof skillet - if you don't have an ovenproof one, take out a frying pan and baking tray instead.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -3387,7 +3387,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -3395,8 +3395,8 @@
         "label": "Place your skillet or frying pan",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 8,
-        "end_min": 16,
+        "start_min": 3,
+        "end_min": 11,
         "requires": [
           "step-1"
         ],
@@ -3409,8 +3409,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 16
+        "latest_start_min": 3,
+        "latest_end_min": 11
       },
       {
         "id": "step-3",
@@ -3418,8 +3418,8 @@
         "label": "Meanwhile, cut the hispi cabbage into",
         "type": "cook",
         "duration_min": 15,
-        "start_min": 16,
-        "end_min": 31,
+        "start_min": 11,
+        "end_min": 26,
         "requires": [
           "step-2"
         ],
@@ -3432,8 +3432,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 31
+        "latest_start_min": 11,
+        "latest_end_min": 26
       },
       {
         "id": "step-4",
@@ -3441,8 +3441,8 @@
         "label": "Add the daal sauce , red",
         "type": "cook",
         "duration_min": 12,
-        "start_min": 31,
-        "end_min": 43,
+        "start_min": 26,
+        "end_min": 38,
         "requires": [
           "step-3"
         ],
@@ -3455,8 +3455,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 31,
-        "latest_end_min": 43
+        "latest_start_min": 26,
+        "latest_end_min": 38
       },
       {
         "id": "step-5",
@@ -3464,8 +3464,8 @@
         "label": "Finely slice the red chilli and",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 43,
-        "end_min": 46,
+        "start_min": 38,
+        "end_min": 41,
         "requires": [
           "step-4"
         ],
@@ -3475,8 +3475,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 43,
-        "latest_end_min": 46
+        "latest_start_min": 38,
+        "latest_end_min": 41
       },
       {
         "id": "step-6",
@@ -3484,8 +3484,8 @@
         "label": "To serve up, divide the daal",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 46,
-        "end_min": 48,
+        "start_min": 41,
+        "end_min": 43,
         "requires": [
           "step-5"
         ],
@@ -3497,11 +3497,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 46,
-        "latest_end_min": 48
+        "latest_start_min": 41,
+        "latest_end_min": 43
       }
     ],
-    "total_time_min": 48,
+    "total_time_min": 43,
     "active_time_min": 12
   },
   {
@@ -3526,10 +3526,10 @@
         "id": "step-1",
         "raw_text": "Take out a large ovenproof casserole dish and one mixing bowl, and preheat your oven to 200°C /180°C fan.",
         "label": "Take out a large ovenproof casserole",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -3543,7 +3543,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -3551,8 +3551,8 @@
         "label": "Trim the top and end of",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 8,
-        "end_min": 11,
+        "start_min": 3,
+        "end_min": 6,
         "requires": [
           "step-1"
         ],
@@ -3562,8 +3562,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 11
+        "latest_start_min": 3,
+        "latest_end_min": 6
       },
       {
         "id": "step-3",
@@ -3571,8 +3571,8 @@
         "label": "Place the casserole dish over medium-high",
         "type": "cook",
         "duration_min": 4,
-        "start_min": 11,
-        "end_min": 15,
+        "start_min": 6,
+        "end_min": 10,
         "requires": [
           "step-2"
         ],
@@ -3585,8 +3585,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 11,
-        "latest_end_min": 15
+        "latest_start_min": 6,
+        "latest_end_min": 10
       },
       {
         "id": "step-4",
@@ -3594,8 +3594,8 @@
         "label": "Drain the brown lentils and add",
         "type": "cook",
         "duration_min": 15,
-        "start_min": 15,
-        "end_min": 30,
+        "start_min": 10,
+        "end_min": 25,
         "requires": [
           "step-3"
         ],
@@ -3608,8 +3608,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 15,
-        "latest_end_min": 30
+        "latest_start_min": 10,
+        "latest_end_min": 25
       },
       {
         "id": "step-5",
@@ -3617,8 +3617,8 @@
         "label": "In the meantime, toss the mixed",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 30,
-        "end_min": 33,
+        "start_min": 25,
+        "end_min": 28,
         "requires": [
           "step-4"
         ],
@@ -3628,8 +3628,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 30,
-        "latest_end_min": 33
+        "latest_start_min": 25,
+        "latest_end_min": 28
       },
       {
         "id": "step-6",
@@ -3637,8 +3637,8 @@
         "label": "To serve, divide the aubergine parmigiana",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 33,
-        "end_min": 35,
+        "start_min": 28,
+        "end_min": 30,
         "requires": [
           "step-5"
         ],
@@ -3650,11 +3650,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 33,
-        "latest_end_min": 35
+        "latest_start_min": 28,
+        "latest_end_min": 30
       }
     ],
-    "total_time_min": 35,
+    "total_time_min": 30,
     "active_time_min": 8
   },
   {
@@ -3915,10 +3915,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large roasting tray and a small saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -3933,7 +3933,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -3941,8 +3941,8 @@
         "label": "Remove any tough or damaged outer",
         "type": "finish",
         "duration_min": 25,
-        "start_min": 8,
-        "end_min": 33,
+        "start_min": 3,
+        "end_min": 28,
         "requires": [
           "step-1"
         ],
@@ -3956,8 +3956,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 33
+        "latest_start_min": 3,
+        "latest_end_min": 28
       },
       {
         "id": "step-3",
@@ -3965,8 +3965,8 @@
         "label": "In the meantime, drain the butter",
         "type": "cook",
         "duration_min": 4,
-        "start_min": 33,
-        "end_min": 37,
+        "start_min": 28,
+        "end_min": 32,
         "requires": [
           "step-2"
         ],
@@ -3981,8 +3981,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 33,
-        "latest_end_min": 37
+        "latest_start_min": 28,
+        "latest_end_min": 32
       },
       {
         "id": "step-4",
@@ -3990,8 +3990,8 @@
         "label": "Place your small frying pan over",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 37,
-        "end_min": 45,
+        "start_min": 32,
+        "end_min": 40,
         "requires": [
           "step-3"
         ],
@@ -4004,8 +4004,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 37,
-        "latest_end_min": 45
+        "latest_start_min": 32,
+        "latest_end_min": 40
       },
       {
         "id": "step-5",
@@ -4013,8 +4013,8 @@
         "label": "To serve, spread the creamy butter",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 45,
-        "end_min": 47,
+        "start_min": 40,
+        "end_min": 42,
         "requires": [
           "step-4"
         ],
@@ -4024,11 +4024,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 45,
-        "latest_end_min": 47
+        "latest_start_min": 40,
+        "latest_end_min": 42
       }
     ],
-    "total_time_min": 47,
+    "total_time_min": 42,
     "active_time_min": 14
   },
   {
@@ -4165,10 +4165,10 @@
         "id": "step-1",
         "raw_text": "Take out two saucepans, a large and a small roasting tray. Preheat your oven to 200°C / 180°C fan.",
         "label": "Take out two saucepans, a large",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -4183,7 +4183,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -4191,8 +4191,8 @@
         "label": "Cut the sweet potato into 1.5cm",
         "type": "cook",
         "duration_min": 17,
-        "start_min": 8,
-        "end_min": 25,
+        "start_min": 3,
+        "end_min": 20,
         "requires": [
           "step-1"
         ],
@@ -4206,8 +4206,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 25
+        "latest_start_min": 3,
+        "latest_end_min": 20
       },
       {
         "id": "step-3",
@@ -4215,8 +4215,8 @@
         "label": "Place the rice into one of",
         "type": "cook",
         "duration_min": 9,
-        "start_min": 25,
-        "end_min": 34,
+        "start_min": 20,
+        "end_min": 29,
         "requires": [
           "step-2"
         ],
@@ -4229,8 +4229,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 34
+        "latest_start_min": 20,
+        "latest_end_min": 29
       },
       {
         "id": "step-4",
@@ -4238,8 +4238,8 @@
         "label": "Use scissors or a knife to",
         "type": "cook",
         "duration_min": 5,
-        "start_min": 34,
-        "end_min": 39,
+        "start_min": 29,
+        "end_min": 34,
         "requires": [
           "step-3"
         ],
@@ -4252,8 +4252,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 34,
-        "latest_end_min": 39
+        "latest_start_min": 29,
+        "latest_end_min": 34
       },
       {
         "id": "step-5",
@@ -4261,8 +4261,8 @@
         "label": "Drain the beans and add them",
         "type": "cook",
         "duration_min": 5,
-        "start_min": 39,
-        "end_min": 44,
+        "start_min": 34,
+        "end_min": 39,
         "requires": [
           "step-4"
         ],
@@ -4276,8 +4276,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 39,
-        "latest_end_min": 44
+        "latest_start_min": 34,
+        "latest_end_min": 39
       },
       {
         "id": "step-6",
@@ -4285,8 +4285,8 @@
         "label": "Cut the avocado in half and",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 44,
-        "end_min": 47,
+        "start_min": 39,
+        "end_min": 42,
         "requires": [
           "step-5"
         ],
@@ -4296,8 +4296,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 44,
-        "latest_end_min": 47
+        "latest_start_min": 39,
+        "latest_end_min": 42
       },
       {
         "id": "step-7",
@@ -4305,8 +4305,8 @@
         "label": "To serve, add the rice",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 47,
-        "end_min": 49,
+        "start_min": 42,
+        "end_min": 44,
         "requires": [
           "step-6"
         ],
@@ -4319,11 +4319,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 47,
-        "latest_end_min": 49
+        "latest_start_min": 42,
+        "latest_end_min": 44
       }
     ],
-    "total_time_min": 49,
+    "total_time_min": 44,
     "active_time_min": 10
   },
   {
@@ -4369,10 +4369,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a wide hob- and oven-proof casserole dish or deep ovenproof pan, along with a roasting tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -4388,7 +4388,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -4396,8 +4396,8 @@
         "label": "Drain and rinse the cannellini beans",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 8,
-        "end_min": 16,
+        "start_min": 3,
+        "end_min": 11,
         "requires": [
           "step-1"
         ],
@@ -4411,8 +4411,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 16
+        "latest_start_min": 3,
+        "latest_end_min": 11
       },
       {
         "id": "step-3",
@@ -4420,8 +4420,8 @@
         "label": "Slice both the green courgette and",
         "type": "finish",
         "duration_min": 17,
-        "start_min": 16,
-        "end_min": 33,
+        "start_min": 11,
+        "end_min": 28,
         "requires": [
           "step-2"
         ],
@@ -4434,8 +4434,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 33
+        "latest_start_min": 11,
+        "latest_end_min": 28
       },
       {
         "id": "step-4",
@@ -4443,8 +4443,8 @@
         "label": "Season the rocket with half of",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 33,
-        "end_min": 41,
+        "start_min": 28,
+        "end_min": 36,
         "requires": [
           "step-3"
         ],
@@ -4454,8 +4454,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 33,
-        "latest_end_min": 41
+        "latest_start_min": 28,
+        "latest_end_min": 36
       },
       {
         "id": "step-5",
@@ -4463,8 +4463,8 @@
         "label": "To serve, divide the courgette gratin",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 41,
-        "end_min": 43,
+        "start_min": 36,
+        "end_min": 38,
         "requires": [
           "step-4"
         ],
@@ -4474,11 +4474,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 41,
-        "latest_end_min": 43
+        "latest_start_min": 36,
+        "latest_end_min": 38
       }
     ],
-    "total_time_min": 43,
+    "total_time_min": 38,
     "active_time_min": 2
   },
   {
@@ -4503,10 +4503,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a baking tray and a deep frying pan or wok.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -4520,7 +4520,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -4528,8 +4528,8 @@
         "label": "Place the cauliflower in your baking",
         "type": "cook",
         "duration_min": 16,
-        "start_min": 8,
-        "end_min": 24,
+        "start_min": 3,
+        "end_min": 19,
         "requires": [
           "step-1"
         ],
@@ -4541,8 +4541,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 24
+        "latest_start_min": 3,
+        "latest_end_min": 19
       },
       {
         "id": "step-3",
@@ -4550,8 +4550,8 @@
         "label": "Next, char the lemon . Place",
         "type": "cook",
         "duration_min": 2,
-        "start_min": 24,
-        "end_min": 26,
+        "start_min": 19,
+        "end_min": 21,
         "requires": [
           "step-2"
         ],
@@ -4564,8 +4564,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 24,
-        "latest_end_min": 26
+        "latest_start_min": 19,
+        "latest_end_min": 21
       },
       {
         "id": "step-4",
@@ -4573,8 +4573,8 @@
         "label": "Remove the stems from the cavolo",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 26,
-        "end_min": 28,
+        "start_min": 21,
+        "end_min": 23,
         "requires": [
           "step-3"
         ],
@@ -4586,8 +4586,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 26,
-        "latest_end_min": 28
+        "latest_start_min": 21,
+        "latest_end_min": 23
       },
       {
         "id": "step-5",
@@ -4595,8 +4595,8 @@
         "label": "To serve, ladle the creamy beans",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 28,
-        "end_min": 30,
+        "start_min": 23,
+        "end_min": 25,
         "requires": [
           "step-4"
         ],
@@ -4608,12 +4608,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 28,
-        "latest_end_min": 30
+        "latest_start_min": 23,
+        "latest_end_min": 25
       }
     ],
-    "total_time_min": 30,
-    "active_time_min": 10
+    "total_time_min": 25,
+    "active_time_min": 5
   },
   {
     "id": "creamy-butterbeans-with-caramelised-leeks-charred-courgettes-drizzled-with-olive-almond-pesto",
@@ -4749,10 +4749,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan, boil your kettle, then take out a roasting tray, frying pan and saucepan.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -4768,7 +4768,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -4776,8 +4776,8 @@
         "label": "Cut the aubergine into 1.5cm cubes",
         "type": "cook",
         "duration_min": 15,
-        "start_min": 8,
-        "end_min": 23,
+        "start_min": 3,
+        "end_min": 18,
         "requires": [
           "step-1"
         ],
@@ -4790,8 +4790,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 23
+        "latest_start_min": 3,
+        "latest_end_min": 18
       },
       {
         "id": "step-3",
@@ -4799,8 +4799,8 @@
         "label": "Place your frying pan over a",
         "type": "cook",
         "duration_min": 2,
-        "start_min": 23,
-        "end_min": 25,
+        "start_min": 18,
+        "end_min": 20,
         "requires": [
           "step-2"
         ],
@@ -4813,8 +4813,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 23,
-        "latest_end_min": 25
+        "latest_start_min": 18,
+        "latest_end_min": 20
       },
       {
         "id": "step-4",
@@ -4822,8 +4822,8 @@
         "label": "Place the basmati rice into your",
         "type": "cook",
         "duration_min": 9,
-        "start_min": 25,
-        "end_min": 34,
+        "start_min": 20,
+        "end_min": 29,
         "requires": [
           "step-3"
         ],
@@ -4836,8 +4836,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 34
+        "latest_start_min": 20,
+        "latest_end_min": 29
       },
       {
         "id": "step-5",
@@ -4845,8 +4845,8 @@
         "label": "Once the cauliflower and aubergine are",
         "type": "cook",
         "duration_min": 2,
-        "start_min": 34,
-        "end_min": 36,
+        "start_min": 29,
+        "end_min": 31,
         "requires": [
           "step-4"
         ],
@@ -4859,8 +4859,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 34,
-        "latest_end_min": 36
+        "latest_start_min": 29,
+        "latest_end_min": 31
       },
       {
         "id": "step-6",
@@ -4868,8 +4868,8 @@
         "label": "Divide the cauliflower and aubergine korma",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 36,
-        "end_min": 38,
+        "start_min": 31,
+        "end_min": 33,
         "requires": [
           "step-5"
         ],
@@ -4881,11 +4881,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 36,
-        "latest_end_min": 38
+        "latest_start_min": 31,
+        "latest_end_min": 33
       }
     ],
-    "total_time_min": 38,
+    "total_time_min": 33,
     "active_time_min": 13
   },
   {
@@ -4910,10 +4910,10 @@
         "id": "step-1",
         "raw_text": "Preheat the oven to 220°C / 200°C fan, then take out a large roasting tray and two saucepans.",
         "label": "Preheat the oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -4928,7 +4928,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -4936,8 +4936,8 @@
         "label": "Cut any larger pieces of cauliflower",
         "type": "cook",
         "duration_min": 17,
-        "start_min": 8,
-        "end_min": 25,
+        "start_min": 3,
+        "end_min": 20,
         "requires": [
           "step-1"
         ],
@@ -4950,8 +4950,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 25
+        "latest_start_min": 3,
+        "latest_end_min": 20
       },
       {
         "id": "step-3",
@@ -4959,8 +4959,8 @@
         "label": "Add the daal sauce , red",
         "type": "cook",
         "duration_min": 12,
-        "start_min": 25,
-        "end_min": 37,
+        "start_min": 20,
+        "end_min": 32,
         "requires": [
           "step-2"
         ],
@@ -4973,8 +4973,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 37
+        "latest_start_min": 20,
+        "latest_end_min": 32
       },
       {
         "id": "step-4",
@@ -4982,8 +4982,8 @@
         "label": "Remove any hardy stems from the",
         "type": "cook",
         "duration_min": 10,
-        "start_min": 37,
-        "end_min": 47,
+        "start_min": 32,
+        "end_min": 42,
         "requires": [
           "step-3"
         ],
@@ -4997,8 +4997,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 37,
-        "latest_end_min": 47
+        "latest_start_min": 32,
+        "latest_end_min": 42
       },
       {
         "id": "step-5",
@@ -5006,8 +5006,8 @@
         "label": "Place the rice in a small",
         "type": "cook",
         "duration_min": 9,
-        "start_min": 47,
-        "end_min": 56,
+        "start_min": 42,
+        "end_min": 51,
         "requires": [
           "step-4"
         ],
@@ -5020,8 +5020,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 47,
-        "latest_end_min": 56
+        "latest_start_min": 42,
+        "latest_end_min": 51
       },
       {
         "id": "step-6",
@@ -5029,8 +5029,8 @@
         "label": "Divide the daal between serving bowls",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 56,
-        "end_min": 58,
+        "start_min": 51,
+        "end_min": 53,
         "requires": [
           "step-5"
         ],
@@ -5042,11 +5042,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 56,
-        "latest_end_min": 58
+        "latest_start_min": 51,
+        "latest_end_min": 53
       }
     ],
-    "total_time_min": 58,
+    "total_time_min": 53,
     "active_time_min": 21
   },
   {
@@ -5206,10 +5206,10 @@
         "id": "step-1",
         "raw_text": "Boil your kettle and preheat your oven to 200°C / 180°C fan. Take out a large saucepan, a small frying pan and a roasting tray.",
         "label": "Boil your kettle and preheat your",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -5225,7 +5225,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -5233,8 +5233,8 @@
         "label": "Cut the broccoli into bite-sized pieces",
         "type": "cook",
         "duration_min": 12,
-        "start_min": 8,
-        "end_min": 20,
+        "start_min": 3,
+        "end_min": 15,
         "requires": [
           "step-1"
         ],
@@ -5246,8 +5246,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 20
+        "latest_start_min": 3,
+        "latest_end_min": 15
       },
       {
         "id": "step-3",
@@ -5255,8 +5255,8 @@
         "label": "Pour boiling water into your saucepan",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 20,
-        "end_min": 28,
+        "start_min": 15,
+        "end_min": 23,
         "requires": [
           "step-2"
         ],
@@ -5269,8 +5269,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 20,
-        "latest_end_min": 28
+        "latest_start_min": 15,
+        "latest_end_min": 23
       },
       {
         "id": "step-4",
@@ -5278,8 +5278,8 @@
         "label": "Place your frying pan over medium",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 28,
-        "end_min": 36,
+        "start_min": 23,
+        "end_min": 31,
         "requires": [
           "step-3"
         ],
@@ -5292,8 +5292,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 28,
-        "latest_end_min": 36
+        "latest_start_min": 23,
+        "latest_end_min": 31
       },
       {
         "id": "step-5",
@@ -5301,8 +5301,8 @@
         "label": "Add the gochujang 'cheese' sa uce",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 36,
-        "end_min": 44,
+        "start_min": 31,
+        "end_min": 39,
         "requires": [
           "step-4"
         ],
@@ -5314,8 +5314,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 36,
-        "latest_end_min": 44
+        "latest_start_min": 31,
+        "latest_end_min": 39
       },
       {
         "id": "step-6",
@@ -5323,8 +5323,8 @@
         "label": "To serve, ladle the creamy macaroni",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 44,
-        "end_min": 46,
+        "start_min": 39,
+        "end_min": 41,
         "requires": [
           "step-5"
         ],
@@ -5336,11 +5336,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 44,
-        "latest_end_min": 46
+        "latest_start_min": 39,
+        "latest_end_min": 41
       }
     ],
-    "total_time_min": 46,
+    "total_time_min": 41,
     "active_time_min": 26
   },
   {
@@ -5467,10 +5467,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan, boil your kettle, and take out a roasting tray, a large saucepan and a frying pan.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -5486,7 +5486,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -5494,8 +5494,8 @@
         "label": "Fill a saucepan with boiling water",
         "type": "cook",
         "duration_min": 9,
-        "start_min": 8,
-        "end_min": 17,
+        "start_min": 3,
+        "end_min": 12,
         "requires": [
           "step-1"
         ],
@@ -5508,8 +5508,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 17
+        "latest_start_min": 3,
+        "latest_end_min": 12
       },
       {
         "id": "step-3",
@@ -5517,8 +5517,8 @@
         "label": "Place the cherry tomatoes and tenderstem",
         "type": "cook",
         "duration_min": 12,
-        "start_min": 17,
-        "end_min": 29,
+        "start_min": 12,
+        "end_min": 24,
         "requires": [
           "step-2"
         ],
@@ -5530,8 +5530,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 17,
-        "latest_end_min": 29
+        "latest_start_min": 12,
+        "latest_end_min": 24
       },
       {
         "id": "step-4",
@@ -5539,8 +5539,8 @@
         "label": "Take out two large bowls. Place",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 29,
-        "end_min": 37,
+        "start_min": 24,
+        "end_min": 32,
         "requires": [
           "step-3"
         ],
@@ -5553,8 +5553,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 29,
-        "latest_end_min": 37
+        "latest_start_min": 24,
+        "latest_end_min": 32
       },
       {
         "id": "step-5",
@@ -5562,8 +5562,8 @@
         "label": "Add about 1 cm of neutral",
         "type": "cook",
         "duration_min": 5,
-        "start_min": 37,
-        "end_min": 42,
+        "start_min": 32,
+        "end_min": 37,
         "requires": [
           "step-4"
         ],
@@ -5576,8 +5576,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 37,
-        "latest_end_min": 42
+        "latest_start_min": 32,
+        "latest_end_min": 37
       },
       {
         "id": "step-6",
@@ -5585,8 +5585,8 @@
         "label": "Place the saucepan you used for",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 42,
-        "end_min": 44,
+        "start_min": 37,
+        "end_min": 39,
         "requires": [
           "step-5"
         ],
@@ -5599,11 +5599,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 42,
-        "latest_end_min": 44
+        "latest_start_min": 37,
+        "latest_end_min": 39
       }
     ],
-    "total_time_min": 44,
+    "total_time_min": 39,
     "active_time_min": 24
   },
   {
@@ -6068,10 +6068,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 220°C fan, then take out a large roasting tray and two saucepans.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -6086,7 +6086,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -6094,8 +6094,8 @@
         "label": "Cut the cauliflower into bitesized chunks",
         "type": "cook",
         "duration_min": 17,
-        "start_min": 8,
-        "end_min": 25,
+        "start_min": 3,
+        "end_min": 20,
         "requires": [
           "step-1"
         ],
@@ -6108,8 +6108,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 25
+        "latest_start_min": 3,
+        "latest_end_min": 20
       },
       {
         "id": "step-3",
@@ -6117,8 +6117,8 @@
         "label": "Empty the tomato daal sauce into",
         "type": "cook",
         "duration_min": 12,
-        "start_min": 25,
-        "end_min": 37,
+        "start_min": 20,
+        "end_min": 32,
         "requires": [
           "step-2"
         ],
@@ -6131,8 +6131,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 37
+        "latest_start_min": 20,
+        "latest_end_min": 32
       },
       {
         "id": "step-4",
@@ -6140,8 +6140,8 @@
         "label": "Place the rice in a small",
         "type": "cook",
         "duration_min": 9,
-        "start_min": 37,
-        "end_min": 46,
+        "start_min": 32,
+        "end_min": 41,
         "requires": [
           "step-3"
         ],
@@ -6154,8 +6154,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 37,
-        "latest_end_min": 46
+        "latest_start_min": 32,
+        "latest_end_min": 41
       },
       {
         "id": "step-5",
@@ -6163,8 +6163,8 @@
         "label": "Remove any hardy stems from the",
         "type": "cook",
         "duration_min": 10,
-        "start_min": 46,
-        "end_min": 56,
+        "start_min": 41,
+        "end_min": 51,
         "requires": [
           "step-4"
         ],
@@ -6177,8 +6177,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 46,
-        "latest_end_min": 56
+        "latest_start_min": 41,
+        "latest_end_min": 51
       },
       {
         "id": "step-6",
@@ -6186,8 +6186,8 @@
         "label": "Divide the tomato daal and rice",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 56,
-        "end_min": 58,
+        "start_min": 51,
+        "end_min": 53,
         "requires": [
           "step-5"
         ],
@@ -6199,11 +6199,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 56,
-        "latest_end_min": 58
+        "latest_start_min": 51,
+        "latest_end_min": 53
       }
     ],
-    "total_time_min": 58,
+    "total_time_min": 53,
     "active_time_min": 23
   },
   {
@@ -6713,10 +6713,10 @@
         "id": "step-1",
         "raw_text": "Take out a saucepan, two roasting trays and preheat your oven to 200°C / 180°C fan.",
         "label": "Take out a saucepan, two roasting",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -6731,7 +6731,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -6739,8 +6739,8 @@
         "label": "Place the cauliflower gnocchi in in",
         "type": "cook",
         "duration_min": 5,
-        "start_min": 8,
-        "end_min": 13,
+        "start_min": 3,
+        "end_min": 8,
         "requires": [
           "step-1"
         ],
@@ -6755,8 +6755,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 13
+        "latest_start_min": 3,
+        "latest_end_min": 8
       },
       {
         "id": "step-3",
@@ -6764,8 +6764,8 @@
         "label": "Strip the leaves from the kale",
         "type": "cook",
         "duration_min": 9,
-        "start_min": 13,
-        "end_min": 22,
+        "start_min": 8,
+        "end_min": 17,
         "requires": [
           "step-2"
         ],
@@ -6779,8 +6779,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 13,
-        "latest_end_min": 22
+        "latest_start_min": 8,
+        "latest_end_min": 17
       },
       {
         "id": "step-4",
@@ -6788,8 +6788,8 @@
         "label": "Place your saucepan over medium heat",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 22,
-        "end_min": 24,
+        "start_min": 17,
+        "end_min": 19,
         "requires": [
           "step-3"
         ],
@@ -6802,8 +6802,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 22,
-        "latest_end_min": 24
+        "latest_start_min": 17,
+        "latest_end_min": 19
       },
       {
         "id": "step-5",
@@ -6811,8 +6811,8 @@
         "label": "Once the gnocchi are crispy and",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 24,
-        "end_min": 26,
+        "start_min": 19,
+        "end_min": 21,
         "requires": [
           "step-4"
         ],
@@ -6825,11 +6825,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 24,
-        "latest_end_min": 26
+        "latest_start_min": 19,
+        "latest_end_min": 21
       }
     ],
-    "total_time_min": 26,
+    "total_time_min": 21,
     "active_time_min": 2
   },
   {
@@ -7479,10 +7479,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan, then take out a large roasting tray and a wok or deep frying pan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -7497,7 +7497,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -7505,8 +7505,8 @@
         "label": "Cut the new potatoes into 1-1.5",
         "type": "cook",
         "duration_min": 17,
-        "start_min": 8,
-        "end_min": 25,
+        "start_min": 3,
+        "end_min": 20,
         "requires": [
           "step-1"
         ],
@@ -7521,8 +7521,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 25
+        "latest_start_min": 3,
+        "latest_end_min": 20
       },
       {
         "id": "step-3",
@@ -7530,8 +7530,8 @@
         "label": "Place the dry mix into a",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 25,
-        "end_min": 33,
+        "start_min": 20,
+        "end_min": 28,
         "requires": [
           "step-2"
         ],
@@ -7544,8 +7544,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 33
+        "latest_start_min": 20,
+        "latest_end_min": 28
       },
       {
         "id": "step-4",
@@ -7553,8 +7553,8 @@
         "label": "Heat 1cm of a neutral oil",
         "type": "cook",
         "duration_min": 7,
-        "start_min": 33,
-        "end_min": 40,
+        "start_min": 28,
+        "end_min": 35,
         "requires": [
           "step-3"
         ],
@@ -7569,8 +7569,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 33,
-        "latest_end_min": 40
+        "latest_start_min": 28,
+        "latest_end_min": 35
       },
       {
         "id": "step-5",
@@ -7578,8 +7578,8 @@
         "label": "Finely slice the baby gem lettuce",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 40,
-        "end_min": 48,
+        "start_min": 35,
+        "end_min": 43,
         "requires": [
           "step-4"
         ],
@@ -7592,8 +7592,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 40,
-        "latest_end_min": 48
+        "latest_start_min": 35,
+        "latest_end_min": 43
       },
       {
         "id": "step-6",
@@ -7601,8 +7601,8 @@
         "label": "To serve, spread a layer of",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 48,
-        "end_min": 50,
+        "start_min": 43,
+        "end_min": 45,
         "requires": [
           "step-5"
         ],
@@ -7614,11 +7614,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 48,
-        "latest_end_min": 50
+        "latest_start_min": 43,
+        "latest_end_min": 45
       }
     ],
-    "total_time_min": 50,
+    "total_time_min": 45,
     "active_time_min": 18
   },
   {
@@ -8088,10 +8088,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Boil your kettle, then take out a saucepan, a roasting tray, and a large mixing bowl.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -8108,7 +8108,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -8116,8 +8116,8 @@
         "label": "Place your saucepan over medium heat",
         "type": "cook",
         "duration_min": 1,
-        "start_min": 8,
-        "end_min": 9,
+        "start_min": 3,
+        "end_min": 4,
         "requires": [
           "step-1"
         ],
@@ -8130,8 +8130,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 9
+        "latest_start_min": 3,
+        "latest_end_min": 4
       },
       {
         "id": "step-3",
@@ -8139,8 +8139,8 @@
         "label": "Place the saucepan you used for",
         "type": "cook",
         "duration_min": 9,
-        "start_min": 9,
-        "end_min": 18,
+        "start_min": 4,
+        "end_min": 13,
         "requires": [
           "step-2"
         ],
@@ -8157,8 +8157,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 9,
-        "latest_end_min": 18
+        "latest_start_min": 4,
+        "latest_end_min": 13
       },
       {
         "id": "step-4",
@@ -8166,8 +8166,8 @@
         "label": "Trim the ends of the cucumber",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 18,
-        "end_min": 21,
+        "start_min": 13,
+        "end_min": 16,
         "requires": [
           "step-3"
         ],
@@ -8180,8 +8180,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 18,
-        "latest_end_min": 21
+        "latest_start_min": 13,
+        "latest_end_min": 16
       },
       {
         "id": "step-5",
@@ -8189,8 +8189,8 @@
         "label": "In the meantime, peel, de-stone, and",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 21,
-        "end_min": 24,
+        "start_min": 16,
+        "end_min": 19,
         "requires": [
           "step-4"
         ],
@@ -8203,8 +8203,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 21,
-        "latest_end_min": 24
+        "latest_start_min": 16,
+        "latest_end_min": 19
       },
       {
         "id": "step-6",
@@ -8212,8 +8212,8 @@
         "label": "Divide the crispy rice salad between",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 24,
-        "end_min": 26,
+        "start_min": 19,
+        "end_min": 21,
         "requires": [
           "step-5"
         ],
@@ -8225,11 +8225,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 24,
-        "latest_end_min": 26
+        "latest_start_min": 19,
+        "latest_end_min": 21
       }
     ],
-    "total_time_min": 26,
+    "total_time_min": 21,
     "active_time_min": 5
   },
   {
@@ -8591,10 +8591,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out two bowls, one roasting tray and two saucepans. Line the roasting tray with a sheet of parchment paper.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -8610,7 +8610,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -8618,8 +8618,8 @@
         "label": "Fill one saucepan with boiling water",
         "type": "finish",
         "duration_min": 19,
-        "start_min": 8,
-        "end_min": 27,
+        "start_min": 3,
+        "end_min": 22,
         "requires": [
           "step-1"
         ],
@@ -8633,8 +8633,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 27
+        "latest_start_min": 3,
+        "latest_end_min": 22
       },
       {
         "id": "step-3",
@@ -8642,8 +8642,8 @@
         "label": "Tear thesmoked tofuinto bite-sized chunks (around",
         "type": "cook",
         "duration_min": 16,
-        "start_min": 27,
-        "end_min": 43,
+        "start_min": 22,
+        "end_min": 38,
         "requires": [
           "step-2"
         ],
@@ -8657,8 +8657,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 27,
-        "latest_end_min": 43
+        "latest_start_min": 22,
+        "latest_end_min": 38
       },
       {
         "id": "step-4",
@@ -8666,8 +8666,8 @@
         "label": "Meanwhile, place the second saucepan over",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 43,
-        "end_min": 51,
+        "start_min": 38,
+        "end_min": 46,
         "requires": [
           "step-3"
         ],
@@ -8680,8 +8680,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 43,
-        "latest_end_min": 51
+        "latest_start_min": 38,
+        "latest_end_min": 46
       },
       {
         "id": "step-5",
@@ -8689,8 +8689,8 @@
         "label": "Divide thebrown ricebetween serving bowls and",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 51,
-        "end_min": 53,
+        "start_min": 46,
+        "end_min": 48,
         "requires": [
           "step-4"
         ],
@@ -8702,11 +8702,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 51,
-        "latest_end_min": 53
+        "latest_start_min": 46,
+        "latest_end_min": 48
       }
     ],
-    "total_time_min": 53,
+    "total_time_min": 48,
     "active_time_min": 10
   },
   {
@@ -8731,10 +8731,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan, and take out a roasting tray, a saucepan, and a frying pan.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -8750,7 +8750,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -8758,8 +8758,8 @@
         "label": "Place the cherry tomatoes and tenderstem",
         "type": "cook",
         "duration_min": 12,
-        "start_min": 8,
-        "end_min": 20,
+        "start_min": 3,
+        "end_min": 15,
         "requires": [
           "step-1"
         ],
@@ -8771,8 +8771,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 20
+        "latest_start_min": 3,
+        "latest_end_min": 15
       },
       {
         "id": "step-3",
@@ -8780,8 +8780,8 @@
         "label": "Take out two large bowls. Place",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 20,
-        "end_min": 28,
+        "start_min": 15,
+        "end_min": 23,
         "requires": [
           "step-2"
         ],
@@ -8794,8 +8794,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 20,
-        "latest_end_min": 28
+        "latest_start_min": 15,
+        "latest_end_min": 23
       },
       {
         "id": "step-4",
@@ -8803,8 +8803,8 @@
         "label": "Add about 1 cm of neutral",
         "type": "cook",
         "duration_min": 5,
-        "start_min": 28,
-        "end_min": 33,
+        "start_min": 23,
+        "end_min": 28,
         "requires": [
           "step-3"
         ],
@@ -8817,8 +8817,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 28,
-        "latest_end_min": 33
+        "latest_start_min": 23,
+        "latest_end_min": 28
       },
       {
         "id": "step-5",
@@ -8826,8 +8826,8 @@
         "label": "Place the saucepan over a medium",
         "type": "cook",
         "duration_min": 4,
-        "start_min": 33,
-        "end_min": 37,
+        "start_min": 28,
+        "end_min": 32,
         "requires": [
           "step-4"
         ],
@@ -8840,8 +8840,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 33,
-        "latest_end_min": 37
+        "latest_start_min": 28,
+        "latest_end_min": 32
       },
       {
         "id": "step-6",
@@ -8849,8 +8849,8 @@
         "label": "To serve, divide the creamy tomato",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 37,
-        "end_min": 39,
+        "start_min": 32,
+        "end_min": 34,
         "requires": [
           "step-5"
         ],
@@ -8862,11 +8862,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 37,
-        "latest_end_min": 39
+        "latest_start_min": 32,
+        "latest_end_min": 34
       }
     ],
-    "total_time_min": 39,
+    "total_time_min": 34,
     "active_time_min": 13
   },
   {
@@ -9780,10 +9780,10 @@
         "id": "step-1",
         "raw_text": "Please note: as this meal kit is a one off Christmas special, the recipe takes a little longer to cook than our usual weekly meal kits as the pie needs more time in the oven. We wanted to offer something different and special for Christmas so we hope you'll forgive us :) Boil your kettle, then take out a large saucepan, small saucepan and roasting tray. Preheat your oven to 200°C / 180°C fan. Make up a small bowl of 'egg wash' of your choice - we recommend a mix of equal parts plant-based milk, agave/maple syrup and olive oil as a good choice!",
         "label": "Please note: as this meal kit",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -9799,7 +9799,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -9807,8 +9807,8 @@
         "label": "We've included enough pastry in your",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 8,
-        "end_min": 16,
+        "start_min": 3,
+        "end_min": 11,
         "requires": [
           "step-1"
         ],
@@ -9818,8 +9818,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 16
+        "latest_start_min": 3,
+        "latest_end_min": 11
       },
       {
         "id": "step-3",
@@ -9827,8 +9827,8 @@
         "label": ". To make one bigger pie",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 16,
-        "end_min": 19,
+        "start_min": 11,
+        "end_min": 14,
         "requires": [
           "step-2"
         ],
@@ -9840,8 +9840,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 19
+        "latest_start_min": 11,
+        "latest_end_min": 14
       },
       {
         "id": "step-4",
@@ -9849,8 +9849,8 @@
         "label": "for baking instructions. STEP 3 To",
         "type": "cook",
         "duration_min": 30,
-        "start_min": 19,
-        "end_min": 49,
+        "start_min": 14,
+        "end_min": 44,
         "requires": [
           "step-3"
         ],
@@ -9863,8 +9863,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 19,
-        "latest_end_min": 49
+        "latest_start_min": 14,
+        "latest_end_min": 44
       },
       {
         "id": "step-5",
@@ -9872,8 +9872,8 @@
         "label": "Peel the potatoes , then cut",
         "type": "cook",
         "duration_min": 11,
-        "start_min": 49,
-        "end_min": 60,
+        "start_min": 44,
+        "end_min": 55,
         "requires": [
           "step-4"
         ],
@@ -9887,8 +9887,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 49,
-        "latest_end_min": 60
+        "latest_start_min": 44,
+        "latest_end_min": 55
       },
       {
         "id": "step-6",
@@ -9896,8 +9896,8 @@
         "label": "Once you have 5 minutes cooking",
         "type": "cook",
         "duration_min": 2,
-        "start_min": 60,
-        "end_min": 62,
+        "start_min": 55,
+        "end_min": 57,
         "requires": [
           "step-5"
         ],
@@ -9911,8 +9911,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 60,
-        "latest_end_min": 62
+        "latest_start_min": 55,
+        "latest_end_min": 57
       },
       {
         "id": "step-7",
@@ -9920,8 +9920,8 @@
         "label": "To serve up, divide the mash",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 62,
-        "end_min": 64,
+        "start_min": 57,
+        "end_min": 59,
         "requires": [
           "step-6"
         ],
@@ -9931,11 +9931,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 62,
-        "latest_end_min": 64
+        "latest_start_min": 57,
+        "latest_end_min": 59
       }
     ],
-    "total_time_min": 64,
+    "total_time_min": 59,
     "active_time_min": 26
   },
   {
@@ -10863,10 +10863,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan, boil your kettle, and take out a large saucepan, a mixing bowl, and a wide oven proof dish or a wide casserole dish.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -10882,7 +10882,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -10890,8 +10890,8 @@
         "label": "Place a saucepan over medium heat",
         "type": "cook",
         "duration_min": 9,
-        "start_min": 8,
-        "end_min": 17,
+        "start_min": 3,
+        "end_min": 12,
         "requires": [
           "step-1"
         ],
@@ -10905,8 +10905,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 17
+        "latest_start_min": 3,
+        "latest_end_min": 12
       },
       {
         "id": "step-3",
@@ -10914,8 +10914,8 @@
         "label": "Finely chop the baby spinach and",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 17,
-        "end_min": 20,
+        "start_min": 12,
+        "end_min": 15,
         "requires": [
           "step-2"
         ],
@@ -10928,8 +10928,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 17,
-        "latest_end_min": 20
+        "latest_start_min": 12,
+        "latest_end_min": 15
       },
       {
         "id": "step-4",
@@ -10937,8 +10937,8 @@
         "label": "Drain the black lentils and combine",
         "type": "cook",
         "duration_min": 12,
-        "start_min": 20,
-        "end_min": 32,
+        "start_min": 15,
+        "end_min": 27,
         "requires": [
           "step-3"
         ],
@@ -10951,8 +10951,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 20,
-        "latest_end_min": 32
+        "latest_start_min": 15,
+        "latest_end_min": 27
       },
       {
         "id": "step-5",
@@ -10960,8 +10960,8 @@
         "label": "To serve, divide the tofu 'ricotta'",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 32,
-        "end_min": 34,
+        "start_min": 27,
+        "end_min": 29,
         "requires": [
           "step-4"
         ],
@@ -10971,11 +10971,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 32,
-        "latest_end_min": 34
+        "latest_start_min": 27,
+        "latest_end_min": 29
       }
     ],
-    "total_time_min": 34,
+    "total_time_min": 29,
     "active_time_min": 5
   },
   {
@@ -11293,10 +11293,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan, then take out a mixing bowl, a baking tray, a large saucepan, and a frying pan.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -11313,7 +11313,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -11321,8 +11321,8 @@
         "label": "Using the coarse side of a",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 8,
-        "end_min": 11,
+        "start_min": 3,
+        "end_min": 6,
         "requires": [
           "step-1"
         ],
@@ -11335,8 +11335,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 11
+        "latest_start_min": 3,
+        "latest_end_min": 6
       },
       {
         "id": "step-3",
@@ -11344,8 +11344,8 @@
         "label": "Lightly oil your hands with olive",
         "type": "finish",
         "duration_min": 12,
-        "start_min": 11,
-        "end_min": 23,
+        "start_min": 6,
+        "end_min": 18,
         "requires": [
           "step-2"
         ],
@@ -11357,8 +11357,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 11,
-        "latest_end_min": 23
+        "latest_start_min": 6,
+        "latest_end_min": 18
       },
       {
         "id": "step-4",
@@ -11366,8 +11366,8 @@
         "label": "Meanwhile, place your saucepan over medium",
         "type": "cook",
         "duration_min": 1,
-        "start_min": 23,
-        "end_min": 24,
+        "start_min": 18,
+        "end_min": 19,
         "requires": [
           "step-3"
         ],
@@ -11380,8 +11380,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 23,
-        "latest_end_min": 24
+        "latest_start_min": 18,
+        "latest_end_min": 19
       },
       {
         "id": "step-5",
@@ -11389,8 +11389,8 @@
         "label": "Remove the hardy stems from the",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 24,
-        "end_min": 32,
+        "start_min": 19,
+        "end_min": 27,
         "requires": [
           "step-4"
         ],
@@ -11403,8 +11403,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 24,
-        "latest_end_min": 32
+        "latest_start_min": 19,
+        "latest_end_min": 27
       },
       {
         "id": "step-6",
@@ -11412,8 +11412,8 @@
         "label": "To serve, divide the smoky tomato",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 32,
-        "end_min": 34,
+        "start_min": 27,
+        "end_min": 29,
         "requires": [
           "step-5"
         ],
@@ -11425,12 +11425,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 32,
-        "latest_end_min": 34
+        "latest_start_min": 27,
+        "latest_end_min": 29
       }
     ],
-    "total_time_min": 34,
-    "active_time_min": 21
+    "total_time_min": 29,
+    "active_time_min": 16
   },
   {
     "id": "high-protein-thai-red-curry-lentil-soup-with-sweet-potato-smokey-crispy-chickpeas-pink-onion-pickle",
@@ -11592,10 +11592,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a frying pan and a wide casserole dish with a lid (or an ovenproof dish / roasting tray and some tin foil).",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -11611,7 +11611,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -11619,8 +11619,8 @@
         "label": "Place your frying pan over high",
         "type": "cook",
         "duration_min": 12,
-        "start_min": 8,
-        "end_min": 20,
+        "start_min": 3,
+        "end_min": 15,
         "requires": [
           "step-1"
         ],
@@ -11633,8 +11633,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 20
+        "latest_start_min": 3,
+        "latest_end_min": 15
       },
       {
         "id": "step-3",
@@ -11642,8 +11642,8 @@
         "label": "Clean the frying pan you used",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 20,
-        "end_min": 28,
+        "start_min": 15,
+        "end_min": 23,
         "requires": [
           "step-2"
         ],
@@ -11657,8 +11657,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 20,
-        "latest_end_min": 28
+        "latest_start_min": 15,
+        "latest_end_min": 23
       },
       {
         "id": "step-4",
@@ -11666,8 +11666,8 @@
         "label": "Finely dice the tempeh into small",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 28,
-        "end_min": 36,
+        "start_min": 23,
+        "end_min": 31,
         "requires": [
           "step-3"
         ],
@@ -11680,8 +11680,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 28,
-        "latest_end_min": 36
+        "latest_start_min": 23,
+        "latest_end_min": 31
       },
       {
         "id": "step-5",
@@ -11689,8 +11689,8 @@
         "label": "When there are 5 minutes left",
         "type": "cook",
         "duration_min": 5,
-        "start_min": 36,
-        "end_min": 41,
+        "start_min": 31,
+        "end_min": 36,
         "requires": [
           "step-4"
         ],
@@ -11702,8 +11702,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 36,
-        "latest_end_min": 41
+        "latest_start_min": 31,
+        "latest_end_min": 36
       },
       {
         "id": "step-6",
@@ -11711,8 +11711,8 @@
         "label": "To serve, you can either scatter",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 41,
-        "end_min": 43,
+        "start_min": 36,
+        "end_min": 38,
         "requires": [
           "step-5"
         ],
@@ -11726,11 +11726,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 41,
-        "latest_end_min": 43
+        "latest_start_min": 36,
+        "latest_end_min": 38
       }
     ],
-    "total_time_min": 43,
+    "total_time_min": 38,
     "active_time_min": 15
   },
   {
@@ -12098,10 +12098,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out two baking sheets, a small sauce pan, and a large cast iron griddle pan or a frying pan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -12115,7 +12115,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -12123,8 +12123,8 @@
         "label": "Drain the chickpeas and pat them",
         "type": "cook",
         "duration_min": 12,
-        "start_min": 8,
-        "end_min": 20,
+        "start_min": 3,
+        "end_min": 15,
         "requires": [
           "step-1"
         ],
@@ -12137,8 +12137,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 20
+        "latest_start_min": 3,
+        "latest_end_min": 15
       },
       {
         "id": "step-3",
@@ -12146,8 +12146,8 @@
         "label": "Using a sharp knife, trim the",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 20,
-        "end_min": 23,
+        "start_min": 15,
+        "end_min": 18,
         "requires": [
           "step-2"
         ],
@@ -12157,8 +12157,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 20,
-        "latest_end_min": 23
+        "latest_start_min": 15,
+        "latest_end_min": 18
       },
       {
         "id": "step-4",
@@ -12166,8 +12166,8 @@
         "label": "Place your cast iron griddle or",
         "type": "finish",
         "duration_min": 4,
-        "start_min": 23,
-        "end_min": 27,
+        "start_min": 18,
+        "end_min": 22,
         "requires": [
           "step-3"
         ],
@@ -12181,8 +12181,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 23,
-        "latest_end_min": 27
+        "latest_start_min": 18,
+        "latest_end_min": 22
       },
       {
         "id": "step-5",
@@ -12190,8 +12190,8 @@
         "label": "Place a small saucepan over low",
         "type": "cook",
         "duration_min": 1,
-        "start_min": 27,
-        "end_min": 28,
+        "start_min": 22,
+        "end_min": 23,
         "requires": [
           "step-4"
         ],
@@ -12205,8 +12205,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 27,
-        "latest_end_min": 28
+        "latest_start_min": 22,
+        "latest_end_min": 23
       },
       {
         "id": "step-6",
@@ -12214,8 +12214,8 @@
         "label": "To serve, spread the mezze labneh",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 28,
-        "end_min": 30,
+        "start_min": 23,
+        "end_min": 25,
         "requires": [
           "step-5"
         ],
@@ -12225,12 +12225,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 28,
-        "latest_end_min": 30
+        "latest_start_min": 23,
+        "latest_end_min": 25
       }
     ],
-    "total_time_min": 30,
-    "active_time_min": 16
+    "total_time_min": 25,
+    "active_time_min": 11
   },
   {
     "id": "hot-honey-labneh-mezze-with-smoky-grilled-aubergine-roasted-cherry-tomatoes-crispy-chickpeas-freshly-baked-garlic-flatbread",
@@ -12254,10 +12254,10 @@
         "id": "step-1",
         "raw_text": "Preheat the oven to 220°C/200°C fan. Take out two large roasting trays. You'll want enough space to lay the aubergine slices in a single layer, with the cherry tomatoes and chickpeas on the second tray.",
         "label": "Preheat the oven to 220°C/200°C fan",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -12270,7 +12270,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -12278,8 +12278,8 @@
         "label": "Slice the aubergine into rounds, approximately",
         "type": "cook",
         "duration_min": 20,
-        "start_min": 8,
-        "end_min": 28,
+        "start_min": 3,
+        "end_min": 23,
         "requires": [
           "step-1"
         ],
@@ -12293,8 +12293,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 28
+        "latest_start_min": 3,
+        "latest_end_min": 23
       },
       {
         "id": "step-3",
@@ -12302,8 +12302,8 @@
         "label": "Meanwhile, drain and rinse the chickpeas",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 28,
-        "end_min": 36,
+        "start_min": 23,
+        "end_min": 31,
         "requires": [
           "step-2"
         ],
@@ -12317,8 +12317,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 28,
-        "latest_end_min": 36
+        "latest_start_min": 23,
+        "latest_end_min": 31
       },
       {
         "id": "step-4",
@@ -12326,8 +12326,8 @@
         "label": "When the vegetables and chickpeas are",
         "type": "cook",
         "duration_min": 3,
-        "start_min": 36,
-        "end_min": 39,
+        "start_min": 31,
+        "end_min": 34,
         "requires": [
           "step-3"
         ],
@@ -12339,8 +12339,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 36,
-        "latest_end_min": 39
+        "latest_start_min": 31,
+        "latest_end_min": 34
       },
       {
         "id": "step-5",
@@ -12348,8 +12348,8 @@
         "label": "Spread the mezze labneh over the",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 39,
-        "end_min": 41,
+        "start_min": 34,
+        "end_min": 36,
         "requires": [
           "step-4"
         ],
@@ -12359,11 +12359,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 39,
-        "latest_end_min": 41
+        "latest_start_min": 34,
+        "latest_end_min": 36
       }
     ],
-    "total_time_min": 41,
+    "total_time_min": 36,
     "active_time_min": 0
   },
   {
@@ -12516,10 +12516,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan. Take out two baking trays and a small frying pan.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -12533,7 +12533,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -12541,8 +12541,8 @@
         "label": "Slice the baby potatoes into thin",
         "type": "cook",
         "duration_min": 15,
-        "start_min": 8,
-        "end_min": 23,
+        "start_min": 3,
+        "end_min": 18,
         "requires": [
           "step-1"
         ],
@@ -12556,8 +12556,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 23
+        "latest_start_min": 3,
+        "latest_end_min": 18
       },
       {
         "id": "step-3",
@@ -12565,8 +12565,8 @@
         "label": "Peel and finely slice the red",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 23,
-        "end_min": 26,
+        "start_min": 18,
+        "end_min": 21,
         "requires": [
           "step-2"
         ],
@@ -12578,8 +12578,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 23,
-        "latest_end_min": 26
+        "latest_start_min": 18,
+        "latest_end_min": 21
       },
       {
         "id": "step-4",
@@ -12587,8 +12587,8 @@
         "label": "Place your small frying pan over",
         "type": "cook",
         "duration_min": 1,
-        "start_min": 26,
-        "end_min": 27,
+        "start_min": 21,
+        "end_min": 22,
         "requires": [
           "step-3"
         ],
@@ -12601,8 +12601,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 26,
-        "latest_end_min": 27
+        "latest_start_min": 21,
+        "latest_end_min": 22
       },
       {
         "id": "step-5",
@@ -12610,8 +12610,8 @@
         "label": "Divide the chickpea and potato chaat",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 27,
-        "end_min": 29,
+        "start_min": 22,
+        "end_min": 24,
         "requires": [
           "step-4"
         ],
@@ -12623,12 +12623,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 27,
-        "latest_end_min": 29
+        "latest_start_min": 22,
+        "latest_end_min": 24
       }
     ],
-    "total_time_min": 29,
-    "active_time_min": 14
+    "total_time_min": 24,
+    "active_time_min": 9
   },
   {
     "id": "kale-caesar",
@@ -12652,10 +12652,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan and take out a roasting tray, a small frying pan, and a large mixing bowl.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -12672,7 +12672,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -12680,8 +12680,8 @@
         "label": "Roughly cut or tear the ciabatta",
         "type": "cook",
         "duration_min": 10,
-        "start_min": 8,
-        "end_min": 18,
+        "start_min": 3,
+        "end_min": 13,
         "requires": [
           "step-1"
         ],
@@ -12693,8 +12693,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 18
+        "latest_start_min": 3,
+        "latest_end_min": 13
       },
       {
         "id": "step-3",
@@ -12702,8 +12702,8 @@
         "label": "Remove any tough stems from the",
         "type": "cook",
         "duration_min": 2,
-        "start_min": 18,
-        "end_min": 20,
+        "start_min": 13,
+        "end_min": 15,
         "requires": [
           "step-2"
         ],
@@ -12716,8 +12716,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 18,
-        "latest_end_min": 20
+        "latest_start_min": 13,
+        "latest_end_min": 15
       },
       {
         "id": "step-4",
@@ -12725,8 +12725,8 @@
         "label": "Cut off the base of the",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 20,
-        "end_min": 23,
+        "start_min": 15,
+        "end_min": 18,
         "requires": [
           "step-3"
         ],
@@ -12736,8 +12736,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 20,
-        "latest_end_min": 23
+        "latest_start_min": 15,
+        "latest_end_min": 18
       },
       {
         "id": "step-5",
@@ -12745,8 +12745,8 @@
         "label": "Place your small frying pan over",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 23,
-        "end_min": 25,
+        "start_min": 18,
+        "end_min": 20,
         "requires": [
           "step-4"
         ],
@@ -12759,8 +12759,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 23,
-        "latest_end_min": 25
+        "latest_start_min": 18,
+        "latest_end_min": 20
       },
       {
         "id": "step-6",
@@ -12768,8 +12768,8 @@
         "label": "Just before serving, add the cavolo",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 25,
-        "end_min": 27,
+        "start_min": 20,
+        "end_min": 22,
         "requires": [
           "step-5"
         ],
@@ -12782,11 +12782,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 27
+        "latest_start_min": 20,
+        "latest_end_min": 22
       }
     ],
-    "total_time_min": 27,
+    "total_time_min": 22,
     "active_time_min": 9
   },
   {
@@ -13142,10 +13142,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out two mixing bowls and a baking tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -13159,7 +13159,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -13167,8 +13167,8 @@
         "label": "Remove the tofu from the packaging",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 8,
-        "end_min": 11,
+        "start_min": 3,
+        "end_min": 6,
         "requires": [
           "step-1"
         ],
@@ -13181,8 +13181,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 11
+        "latest_start_min": 3,
+        "latest_end_min": 6
       },
       {
         "id": "step-3",
@@ -13190,8 +13190,8 @@
         "label": "Lay the flatbreads on the baking",
         "type": "finish",
         "duration_min": 17,
-        "start_min": 11,
-        "end_min": 28,
+        "start_min": 6,
+        "end_min": 23,
         "requires": [
           "step-2"
         ],
@@ -13203,8 +13203,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 11,
-        "latest_end_min": 28
+        "latest_start_min": 6,
+        "latest_end_min": 23
       },
       {
         "id": "step-4",
@@ -13212,8 +13212,8 @@
         "label": "Meanwhile, dice the cucumber and tomato",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 28,
-        "end_min": 30,
+        "start_min": 23,
+        "end_min": 25,
         "requires": [
           "step-3"
         ],
@@ -13226,8 +13226,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 28,
-        "latest_end_min": 30
+        "latest_start_min": 23,
+        "latest_end_min": 25
       },
       {
         "id": "step-5",
@@ -13235,8 +13235,8 @@
         "label": "To serve, drizzle the remaining lahmacun",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 30,
-        "end_min": 32,
+        "start_min": 25,
+        "end_min": 27,
         "requires": [
           "step-4"
         ],
@@ -13246,12 +13246,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 30,
-        "latest_end_min": 32
+        "latest_start_min": 25,
+        "latest_end_min": 27
       }
     ],
-    "total_time_min": 32,
-    "active_time_min": 13
+    "total_time_min": 27,
+    "active_time_min": 8
   },
   {
     "id": "lemon-blueberry-crumble-oat-pot",
@@ -13416,10 +13416,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 220°C fan, then take out a large roasting tray, a steamer and a saucepan.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -13434,7 +13434,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -13442,8 +13442,8 @@
         "label": "Cut the top and tail off",
         "type": "cook",
         "duration_min": 17,
-        "start_min": 8,
-        "end_min": 25,
+        "start_min": 3,
+        "end_min": 20,
         "requires": [
           "step-1"
         ],
@@ -13457,8 +13457,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 25
+        "latest_start_min": 3,
+        "latest_end_min": 20
       },
       {
         "id": "step-3",
@@ -13466,8 +13466,8 @@
         "label": "Remove any hardy stems from the",
         "type": "cook",
         "duration_min": 7,
-        "start_min": 25,
-        "end_min": 32,
+        "start_min": 20,
+        "end_min": 27,
         "requires": [
           "step-2"
         ],
@@ -13477,8 +13477,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 32
+        "latest_start_min": 20,
+        "latest_end_min": 27
       },
       {
         "id": "step-4",
@@ -13486,8 +13486,8 @@
         "label": "Drain the chickpeas , then empty",
         "type": "cook",
         "duration_min": 2,
-        "start_min": 32,
-        "end_min": 34,
+        "start_min": 27,
+        "end_min": 29,
         "requires": [
           "step-3"
         ],
@@ -13500,8 +13500,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 32,
-        "latest_end_min": 34
+        "latest_start_min": 27,
+        "latest_end_min": 29
       },
       {
         "id": "step-5",
@@ -13509,8 +13509,8 @@
         "label": "To serve up, divide the stew",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 34,
-        "end_min": 36,
+        "start_min": 29,
+        "end_min": 31,
         "requires": [
           "step-4"
         ],
@@ -13523,11 +13523,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 34,
-        "latest_end_min": 36
+        "latest_start_min": 29,
+        "latest_end_min": 31
       }
     ],
-    "total_time_min": 36,
+    "total_time_min": 31,
     "active_time_min": 9
   },
   {
@@ -13755,10 +13755,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a large cast iron skillet or frying pan and two roasting trays. You will also need a tea towel and a grill press, heavy saucepan/frying pan, or a flat metal lid to press down the lion's mane mushroom steaks while searing.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -13775,7 +13775,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -13783,8 +13783,8 @@
         "label": "Cut the baby potatoes into roughly",
         "type": "cook",
         "duration_min": 22,
-        "start_min": 8,
-        "end_min": 30,
+        "start_min": 3,
+        "end_min": 25,
         "requires": [
           "step-1"
         ],
@@ -13799,8 +13799,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 30
+        "latest_start_min": 3,
+        "latest_end_min": 25
       },
       {
         "id": "step-3",
@@ -13808,8 +13808,8 @@
         "label": "Place your skillet or frying pan",
         "type": "cook",
         "duration_min": 5,
-        "start_min": 30,
-        "end_min": 35,
+        "start_min": 25,
+        "end_min": 30,
         "requires": [
           "step-2"
         ],
@@ -13825,8 +13825,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 30,
-        "latest_end_min": 35
+        "latest_start_min": 25,
+        "latest_end_min": 30
       },
       {
         "id": "step-4",
@@ -13834,8 +13834,8 @@
         "label": "Place the roasting tray with searred",
         "type": "cook",
         "duration_min": 12,
-        "start_min": 35,
-        "end_min": 47,
+        "start_min": 30,
+        "end_min": 42,
         "requires": [
           "step-3"
         ],
@@ -13850,8 +13850,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 35,
-        "latest_end_min": 47
+        "latest_start_min": 30,
+        "latest_end_min": 42
       },
       {
         "id": "step-5",
@@ -13859,8 +13859,8 @@
         "label": "You can serve the lion's mane",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 47,
-        "end_min": 49,
+        "start_min": 42,
+        "end_min": 44,
         "requires": [
           "step-4"
         ],
@@ -13872,11 +13872,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 47,
-        "latest_end_min": 49
+        "latest_start_min": 42,
+        "latest_end_min": 44
       }
     ],
-    "total_time_min": 49,
+    "total_time_min": 44,
     "active_time_min": 0
   },
   {
@@ -13901,10 +13901,10 @@
         "id": "step-1",
         "raw_text": "Boil your kettle, preheat your oven to 180°C / 160°C fan and take out a large saucepan and a large baking tray.",
         "label": "Boil your kettle, preheat your oven",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -13918,7 +13918,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -13926,8 +13926,8 @@
         "label": "Remove any hardy stems from the",
         "type": "cook",
         "duration_min": 10,
-        "start_min": 8,
-        "end_min": 18,
+        "start_min": 3,
+        "end_min": 13,
         "requires": [
           "step-1"
         ],
@@ -13940,8 +13940,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 18
+        "latest_start_min": 3,
+        "latest_end_min": 13
       },
       {
         "id": "step-3",
@@ -13949,8 +13949,8 @@
         "label": "Meanwhile pour boiling water from your",
         "type": "cook",
         "duration_min": 12,
-        "start_min": 18,
-        "end_min": 30,
+        "start_min": 13,
+        "end_min": 25,
         "requires": [
           "step-2"
         ],
@@ -13963,8 +13963,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 18,
-        "latest_end_min": 30
+        "latest_start_min": 13,
+        "latest_end_min": 25
       },
       {
         "id": "step-4",
@@ -13972,8 +13972,8 @@
         "label": "Place the same saucepan you used",
         "type": "finish",
         "duration_min": 1,
-        "start_min": 30,
-        "end_min": 31,
+        "start_min": 25,
+        "end_min": 26,
         "requires": [
           "step-3"
         ],
@@ -13987,12 +13987,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 30,
-        "latest_end_min": 31
+        "latest_start_min": 25,
+        "latest_end_min": 26
       }
     ],
-    "total_time_min": 31,
-    "active_time_min": 9
+    "total_time_min": 26,
+    "active_time_min": 4
   },
   {
     "id": "mango-cauliflower-curry-with-cashews-garden-peas-coriander-and-fluffy-basmati-rice",
@@ -14116,10 +14116,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Boil your kettle, then take out a saucepan, a roasting tray, and a large mixing bowl. Line the roasting tray with a sheet of parchment paper.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -14136,7 +14136,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -14144,8 +14144,8 @@
         "label": "Rinse the sushi rice under cold",
         "type": "cook",
         "duration_min": 12,
-        "start_min": 8,
-        "end_min": 20,
+        "start_min": 3,
+        "end_min": 15,
         "requires": [
           "step-1"
         ],
@@ -14160,8 +14160,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 20
+        "latest_start_min": 3,
+        "latest_end_min": 15
       },
       {
         "id": "step-3",
@@ -14169,8 +14169,8 @@
         "label": "Trim the ends off the baby",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 20,
-        "end_min": 23,
+        "start_min": 15,
+        "end_min": 18,
         "requires": [
           "step-2"
         ],
@@ -14183,8 +14183,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 20,
-        "latest_end_min": 23
+        "latest_start_min": 15,
+        "latest_end_min": 18
       },
       {
         "id": "step-4",
@@ -14192,8 +14192,8 @@
         "label": "Meanwhile, peel, stone and dice the",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 23,
-        "end_min": 25,
+        "start_min": 18,
+        "end_min": 20,
         "requires": [
           "step-3"
         ],
@@ -14203,8 +14203,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 23,
-        "latest_end_min": 25
+        "latest_start_min": 18,
+        "latest_end_min": 20
       },
       {
         "id": "step-5",
@@ -14212,8 +14212,8 @@
         "label": "When the crispy rice is ready",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 25,
-        "end_min": 28,
+        "start_min": 20,
+        "end_min": 23,
         "requires": [
           "step-4"
         ],
@@ -14225,8 +14225,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 28
+        "latest_start_min": 20,
+        "latest_end_min": 23
       },
       {
         "id": "step-6",
@@ -14234,8 +14234,8 @@
         "label": "Divide the crispy rice salad between",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 28,
-        "end_min": 30,
+        "start_min": 23,
+        "end_min": 25,
         "requires": [
           "step-5"
         ],
@@ -14247,11 +14247,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 28,
-        "latest_end_min": 30
+        "latest_start_min": 23,
+        "latest_end_min": 25
       }
     ],
-    "total_time_min": 30,
+    "total_time_min": 25,
     "active_time_min": 3
   },
   {
@@ -14583,10 +14583,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a roasting tray, a griddle pan or frying pan, and a saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -14602,7 +14602,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -14610,8 +14610,8 @@
         "label": "Tear the tofu into bite-sized chunks",
         "type": "finish",
         "duration_min": 19,
-        "start_min": 8,
-        "end_min": 27,
+        "start_min": 3,
+        "end_min": 22,
         "requires": [
           "step-1"
         ],
@@ -14626,8 +14626,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 27
+        "latest_start_min": 3,
+        "latest_end_min": 22
       },
       {
         "id": "step-3",
@@ -14635,8 +14635,8 @@
         "label": "Place a griddle pan or frying",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 27,
-        "end_min": 35,
+        "start_min": 22,
+        "end_min": 30,
         "requires": [
           "step-2"
         ],
@@ -14649,8 +14649,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 27,
-        "latest_end_min": 35
+        "latest_start_min": 22,
+        "latest_end_min": 30
       },
       {
         "id": "step-4",
@@ -14658,8 +14658,8 @@
         "label": "Return the pan to medium-high heat",
         "type": "cook",
         "duration_min": 7,
-        "start_min": 35,
-        "end_min": 42,
+        "start_min": 30,
+        "end_min": 37,
         "requires": [
           "step-3"
         ],
@@ -14671,8 +14671,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 35,
-        "latest_end_min": 42
+        "latest_start_min": 30,
+        "latest_end_min": 37
       },
       {
         "id": "step-5",
@@ -14680,8 +14680,8 @@
         "label": "When the tofu and potatoes have",
         "type": "cook",
         "duration_min": 2,
-        "start_min": 42,
-        "end_min": 44,
+        "start_min": 37,
+        "end_min": 39,
         "requires": [
           "step-4"
         ],
@@ -14696,8 +14696,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 42,
-        "latest_end_min": 44
+        "latest_start_min": 37,
+        "latest_end_min": 39
       },
       {
         "id": "step-6",
@@ -14705,8 +14705,8 @@
         "label": "To serve, divide the tofu and",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 44,
-        "end_min": 46,
+        "start_min": 39,
+        "end_min": 41,
         "requires": [
           "step-5"
         ],
@@ -14719,11 +14719,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 44,
-        "latest_end_min": 46
+        "latest_start_min": 39,
+        "latest_end_min": 41
       }
     ],
-    "total_time_min": 46,
+    "total_time_min": 41,
     "active_time_min": 11
   },
   {
@@ -14748,10 +14748,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan, take out two baking trays and a frying pan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -14765,7 +14765,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -14773,8 +14773,8 @@
         "label": "Slice the aubergine into 1cm-thick rounds",
         "type": "finish",
         "duration_min": 22,
-        "start_min": 8,
-        "end_min": 30,
+        "start_min": 3,
+        "end_min": 25,
         "requires": [
           "step-1"
         ],
@@ -14787,8 +14787,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 30
+        "latest_start_min": 3,
+        "latest_end_min": 25
       },
       {
         "id": "step-3",
@@ -14796,8 +14796,8 @@
         "label": "Once everything is ready, warm the",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 30,
-        "end_min": 38,
+        "start_min": 25,
+        "end_min": 33,
         "requires": [
           "step-2"
         ],
@@ -14812,8 +14812,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 30,
-        "latest_end_min": 38
+        "latest_start_min": 25,
+        "latest_end_min": 33
       },
       {
         "id": "step-4",
@@ -14821,8 +14821,8 @@
         "label": "To serve, place a warmed flatbread",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 38,
-        "end_min": 40,
+        "start_min": 33,
+        "end_min": 35,
         "requires": [
           "step-3"
         ],
@@ -14832,12 +14832,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 38,
-        "latest_end_min": 40
+        "latest_start_min": 33,
+        "latest_end_min": 35
       }
     ],
-    "total_time_min": 40,
-    "active_time_min": 8
+    "total_time_min": 35,
+    "active_time_min": 3
   },
   {
     "id": "miso-ginger-summer-noodle-broth-with-silken-tofu-fresh-herbs-chilli-crisp-drizzle",
@@ -15163,10 +15163,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a frying pan and a shallow casserole or baking dish (~25-30cm diameter / 4-5cm depth). NB: If you don't have a shallow baking dish, we recommend roasting the cauliflower separately in a baking tray, heating the sauce through in a pot on the hob and then combining.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -15182,7 +15182,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -15190,8 +15190,8 @@
         "label": "Cut the cauliflower into bite-sized pieces",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 8,
-        "end_min": 11,
+        "start_min": 3,
+        "end_min": 6,
         "requires": [
           "step-1"
         ],
@@ -15201,8 +15201,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 11
+        "latest_start_min": 3,
+        "latest_end_min": 6
       },
       {
         "id": "step-3",
@@ -15210,8 +15210,8 @@
         "label": "Drain the butter beans very thoroughly",
         "type": "cook",
         "duration_min": 30,
-        "start_min": 11,
-        "end_min": 41,
+        "start_min": 6,
+        "end_min": 36,
         "requires": [
           "step-2"
         ],
@@ -15223,8 +15223,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 11,
-        "latest_end_min": 41
+        "latest_start_min": 6,
+        "latest_end_min": 36
       },
       {
         "id": "step-4",
@@ -15232,8 +15232,8 @@
         "label": "When the gratin is 10 minutes",
         "type": "finish",
         "duration_min": 5,
-        "start_min": 41,
-        "end_min": 46,
+        "start_min": 36,
+        "end_min": 41,
         "requires": [
           "step-3"
         ],
@@ -15247,11 +15247,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 41,
-        "latest_end_min": 46
+        "latest_start_min": 36,
+        "latest_end_min": 41
       }
     ],
-    "total_time_min": 46,
+    "total_time_min": 41,
     "active_time_min": 8
   },
   {
@@ -15509,10 +15509,10 @@
         "id": "step-1",
         "raw_text": "Preheat the oven to 220°C/200°C fan. Take out a large roasting tray, a frying pan, and a small saucepan.",
         "label": "Preheat the oven to 220°C/200°C fan",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -15528,7 +15528,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -15536,8 +15536,8 @@
         "label": "Tear the oyster mushrooms into bite-sized",
         "type": "cook",
         "duration_min": 7,
-        "start_min": 8,
-        "end_min": 15,
+        "start_min": 3,
+        "end_min": 10,
         "requires": [
           "step-1"
         ],
@@ -15550,8 +15550,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 15
+        "latest_start_min": 3,
+        "latest_end_min": 10
       },
       {
         "id": "step-3",
@@ -15559,8 +15559,8 @@
         "label": "Place the remaining consomme in the",
         "type": "finish",
         "duration_min": 7,
-        "start_min": 15,
-        "end_min": 22,
+        "start_min": 10,
+        "end_min": 17,
         "requires": [
           "step-2"
         ],
@@ -15576,8 +15576,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 15,
-        "latest_end_min": 22
+        "latest_start_min": 10,
+        "latest_end_min": 17
       },
       {
         "id": "step-4",
@@ -15585,8 +15585,8 @@
         "label": "Meanwhile, place the saucepan containing the",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 22,
-        "end_min": 24,
+        "start_min": 17,
+        "end_min": 19,
         "requires": [
           "step-3"
         ],
@@ -15599,8 +15599,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 22,
-        "latest_end_min": 24
+        "latest_start_min": 17,
+        "latest_end_min": 19
       },
       {
         "id": "step-5",
@@ -15608,8 +15608,8 @@
         "label": "As the birria tacos finish cooking",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 24,
-        "end_min": 26,
+        "start_min": 19,
+        "end_min": 21,
         "requires": [
           "step-4"
         ],
@@ -15623,8 +15623,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 24,
-        "latest_end_min": 26
+        "latest_start_min": 19,
+        "latest_end_min": 21
       },
       {
         "id": "step-6",
@@ -15632,8 +15632,8 @@
         "label": "To serve, divide the birria tacos",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 26,
-        "end_min": 28,
+        "start_min": 21,
+        "end_min": 23,
         "requires": [
           "step-5"
         ],
@@ -15643,11 +15643,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 26,
-        "latest_end_min": 28
+        "latest_start_min": 21,
+        "latest_end_min": 23
       }
     ],
-    "total_time_min": 28,
+    "total_time_min": 23,
     "active_time_min": 4
   },
   {
@@ -15672,10 +15672,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large roasting tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -15688,7 +15688,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -15696,8 +15696,8 @@
         "label": "Slice the portobello mushrooms 0.5cm thick",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 8,
-        "end_min": 11,
+        "start_min": 3,
+        "end_min": 6,
         "requires": [
           "step-1"
         ],
@@ -15707,8 +15707,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 11
+        "latest_start_min": 3,
+        "latest_end_min": 6
       },
       {
         "id": "step-3",
@@ -15716,8 +15716,8 @@
         "label": "Place the portobello mushrooms into your",
         "type": "cook",
         "duration_min": 15,
-        "start_min": 11,
-        "end_min": 26,
+        "start_min": 6,
+        "end_min": 21,
         "requires": [
           "step-2"
         ],
@@ -15731,8 +15731,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 11,
-        "latest_end_min": 26
+        "latest_start_min": 6,
+        "latest_end_min": 21
       },
       {
         "id": "step-4",
@@ -15740,8 +15740,8 @@
         "label": "Once the portobello mushrooms are ready",
         "type": "cook",
         "duration_min": 1,
-        "start_min": 26,
-        "end_min": 27,
+        "start_min": 21,
+        "end_min": 22,
         "requires": [
           "step-3"
         ],
@@ -15753,8 +15753,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 26,
-        "latest_end_min": 27
+        "latest_start_min": 21,
+        "latest_end_min": 22
       },
       {
         "id": "step-5",
@@ -15762,8 +15762,8 @@
         "label": "Lay out your warm flatbreads",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 27,
-        "end_min": 29,
+        "start_min": 22,
+        "end_min": 24,
         "requires": [
           "step-4"
         ],
@@ -15773,11 +15773,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 27,
-        "latest_end_min": 29
+        "latest_start_min": 22,
+        "latest_end_min": 24
       }
     ],
-    "total_time_min": 29,
+    "total_time_min": 24,
     "active_time_min": 6
   },
   {
@@ -16158,10 +16158,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large hob- and oven-proof casserole dish or deep ovenproof pan, along with a roasting tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -16177,7 +16177,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -16185,8 +16185,8 @@
         "label": "Dice the chestnut mushrooms into 0.5-1cm",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 8,
-        "end_min": 11,
+        "start_min": 3,
+        "end_min": 6,
         "requires": [
           "step-1"
         ],
@@ -16196,8 +16196,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 11
+        "latest_start_min": 3,
+        "latest_end_min": 6
       },
       {
         "id": "step-3",
@@ -16205,8 +16205,8 @@
         "label": "Place your casserole dish or ovenproof",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 11,
-        "end_min": 19,
+        "start_min": 6,
+        "end_min": 14,
         "requires": [
           "step-2"
         ],
@@ -16220,8 +16220,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 11,
-        "latest_end_min": 19
+        "latest_start_min": 6,
+        "latest_end_min": 14
       },
       {
         "id": "step-4",
@@ -16229,8 +16229,8 @@
         "label": "Break the lasagne sheets into 3–4",
         "type": "cook",
         "duration_min": 10,
-        "start_min": 19,
-        "end_min": 29,
+        "start_min": 14,
+        "end_min": 24,
         "requires": [
           "step-3"
         ],
@@ -16244,8 +16244,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 19,
-        "latest_end_min": 29
+        "latest_start_min": 14,
+        "latest_end_min": 24
       },
       {
         "id": "step-5",
@@ -16253,8 +16253,8 @@
         "label": "Meanwhile, spread the prepared kale onto",
         "type": "cook",
         "duration_min": 10,
-        "start_min": 29,
-        "end_min": 39,
+        "start_min": 24,
+        "end_min": 34,
         "requires": [
           "step-4"
         ],
@@ -16268,8 +16268,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 29,
-        "latest_end_min": 39
+        "latest_start_min": 24,
+        "latest_end_min": 34
       },
       {
         "id": "step-6",
@@ -16277,8 +16277,8 @@
         "label": "To serve, divide the lasagne and",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 39,
-        "end_min": 41,
+        "start_min": 34,
+        "end_min": 36,
         "requires": [
           "step-5"
         ],
@@ -16288,11 +16288,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 39,
-        "latest_end_min": 41
+        "latest_start_min": 34,
+        "latest_end_min": 36
       }
     ],
-    "total_time_min": 41,
+    "total_time_min": 36,
     "active_time_min": 5
   },
   {
@@ -16674,10 +16674,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 180°C / 200°C fan, then take out a large roasting tray.",
         "label": "Preheat your oven to 180°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -16690,7 +16690,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -16698,8 +16698,8 @@
         "label": "Tear the oyster mushrooms into thin",
         "type": "cook",
         "duration_min": 15,
-        "start_min": 8,
-        "end_min": 23,
+        "start_min": 3,
+        "end_min": 18,
         "requires": [
           "step-1"
         ],
@@ -16714,8 +16714,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 23
+        "latest_start_min": 3,
+        "latest_end_min": 18
       },
       {
         "id": "step-3",
@@ -16723,8 +16723,8 @@
         "label": "In the meantime, finely chop the",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 23,
-        "end_min": 25,
+        "start_min": 18,
+        "end_min": 20,
         "requires": [
           "step-2"
         ],
@@ -16736,8 +16736,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 23,
-        "latest_end_min": 25
+        "latest_start_min": 18,
+        "latest_end_min": 20
       },
       {
         "id": "step-4",
@@ -16745,8 +16745,8 @@
         "label": "Warm up the flour tortillas by",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 25,
-        "end_min": 33,
+        "start_min": 20,
+        "end_min": 28,
         "requires": [
           "step-3"
         ],
@@ -16759,8 +16759,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 33
+        "latest_start_min": 20,
+        "latest_end_min": 28
       },
       {
         "id": "step-5",
@@ -16768,8 +16768,8 @@
         "label": "To serve, lay the flour tortillas",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 33,
-        "end_min": 35,
+        "start_min": 28,
+        "end_min": 30,
         "requires": [
           "step-4"
         ],
@@ -16779,11 +16779,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 33,
-        "latest_end_min": 35
+        "latest_start_min": 28,
+        "latest_end_min": 30
       }
     ],
-    "total_time_min": 35,
+    "total_time_min": 30,
     "active_time_min": 12
   },
   {
@@ -18034,10 +18034,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and boil your kettle. Take out a saucepan, a wide oven dish, and a small baking tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -18051,7 +18051,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -18059,8 +18059,8 @@
         "label": "Place the saucepan over medium heat",
         "type": "finish",
         "duration_min": 6,
-        "start_min": 8,
-        "end_min": 14,
+        "start_min": 3,
+        "end_min": 9,
         "requires": [
           "step-1"
         ],
@@ -18074,8 +18074,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 14
+        "latest_start_min": 3,
+        "latest_end_min": 9
       },
       {
         "id": "step-3",
@@ -18083,8 +18083,8 @@
         "label": "In an oven dish, combine thetomato",
         "type": "cook",
         "duration_min": 17,
-        "start_min": 14,
-        "end_min": 31,
+        "start_min": 9,
+        "end_min": 26,
         "requires": [
           "step-2"
         ],
@@ -18096,8 +18096,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 14,
-        "latest_end_min": 31
+        "latest_start_min": 9,
+        "latest_end_min": 26
       },
       {
         "id": "step-4",
@@ -18105,8 +18105,8 @@
         "label": "Cut thepurple sprouting broccoliinto bite-sized pieces",
         "type": "cook",
         "duration_min": 12,
-        "start_min": 31,
-        "end_min": 43,
+        "start_min": 26,
+        "end_min": 38,
         "requires": [
           "step-3"
         ],
@@ -18121,8 +18121,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 31,
-        "latest_end_min": 43
+        "latest_start_min": 26,
+        "latest_end_min": 38
       },
       {
         "id": "step-5",
@@ -18130,8 +18130,8 @@
         "label": "To serve, divide thepasta bakebetween bowls",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 43,
-        "end_min": 45,
+        "start_min": 38,
+        "end_min": 40,
         "requires": [
           "step-4"
         ],
@@ -18143,12 +18143,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 43,
-        "latest_end_min": 45
+        "latest_start_min": 38,
+        "latest_end_min": 40
       }
     ],
-    "total_time_min": 45,
-    "active_time_min": 8
+    "total_time_min": 40,
+    "active_time_min": 3
   },
   {
     "id": "rhubarb-blood-orange-granola-pot-limited-edition",
@@ -18327,10 +18327,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a baking tray, a large saucepan, and a small frying pan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -18345,7 +18345,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -18353,8 +18353,8 @@
         "label": "Halve the butternut squash and remove",
         "type": "cook",
         "duration_min": 20,
-        "start_min": 8,
-        "end_min": 28,
+        "start_min": 3,
+        "end_min": 23,
         "requires": [
           "step-1"
         ],
@@ -18367,8 +18367,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 28
+        "latest_start_min": 3,
+        "latest_end_min": 23
       },
       {
         "id": "step-3",
@@ -18376,8 +18376,8 @@
         "label": "In the meantime, remove the hardy",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 28,
-        "end_min": 36,
+        "start_min": 23,
+        "end_min": 31,
         "requires": [
           "step-2"
         ],
@@ -18387,8 +18387,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 28,
-        "latest_end_min": 36
+        "latest_start_min": 23,
+        "latest_end_min": 31
       },
       {
         "id": "step-4",
@@ -18396,8 +18396,8 @@
         "label": "Place your saucepan over a medium",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 36,
-        "end_min": 38,
+        "start_min": 31,
+        "end_min": 33,
         "requires": [
           "step-3"
         ],
@@ -18410,8 +18410,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 36,
-        "latest_end_min": 38
+        "latest_start_min": 31,
+        "latest_end_min": 33
       },
       {
         "id": "step-5",
@@ -18419,8 +18419,8 @@
         "label": "Place your small frying pan over",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 38,
-        "end_min": 46,
+        "start_min": 33,
+        "end_min": 41,
         "requires": [
           "step-4"
         ],
@@ -18433,8 +18433,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 38,
-        "latest_end_min": 46
+        "latest_start_min": 33,
+        "latest_end_min": 41
       },
       {
         "id": "step-6",
@@ -18442,8 +18442,8 @@
         "label": "To serve, divide the butter bean",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 46,
-        "end_min": 48,
+        "start_min": 41,
+        "end_min": 43,
         "requires": [
           "step-5"
         ],
@@ -18455,12 +18455,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 46,
-        "latest_end_min": 48
+        "latest_start_min": 41,
+        "latest_end_min": 43
       }
     ],
-    "total_time_min": 48,
-    "active_time_min": 24
+    "total_time_min": 43,
+    "active_time_min": 19
   },
   {
     "id": "rich-creamy-cacio-e-pepe-butterbeans-with-tenderstem-broccoli-smokey-chipotle-toasted-sunflower-seeds",
@@ -18484,10 +18484,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a baking tray and large saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -18501,7 +18501,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -18509,8 +18509,8 @@
         "label": "Place the tenderstem broccoli into your",
         "type": "finish",
         "duration_min": 12,
-        "start_min": 8,
-        "end_min": 20,
+        "start_min": 3,
+        "end_min": 15,
         "requires": [
           "step-1"
         ],
@@ -18523,8 +18523,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 20
+        "latest_start_min": 3,
+        "latest_end_min": 15
       },
       {
         "id": "step-3",
@@ -18532,8 +18532,8 @@
         "label": "Drain the butterbeans , then add",
         "type": "cook",
         "duration_min": 1,
-        "start_min": 20,
-        "end_min": 21,
+        "start_min": 15,
+        "end_min": 16,
         "requires": [
           "step-2"
         ],
@@ -18546,8 +18546,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 20,
-        "latest_end_min": 21
+        "latest_start_min": 15,
+        "latest_end_min": 16
       },
       {
         "id": "step-4",
@@ -18555,8 +18555,8 @@
         "label": "Add ½ - 1 tbsp of",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 21,
-        "end_min": 29,
+        "start_min": 16,
+        "end_min": 24,
         "requires": [
           "step-3"
         ],
@@ -18569,8 +18569,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 21,
-        "latest_end_min": 29
+        "latest_start_min": 16,
+        "latest_end_min": 24
       },
       {
         "id": "step-5",
@@ -18578,8 +18578,8 @@
         "label": "Divide the cacio e pepe butterbeans",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 29,
-        "end_min": 31,
+        "start_min": 24,
+        "end_min": 26,
         "requires": [
           "step-4"
         ],
@@ -18592,12 +18592,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 29,
-        "latest_end_min": 31
+        "latest_start_min": 24,
+        "latest_end_min": 26
       }
     ],
-    "total_time_min": 31,
-    "active_time_min": 19
+    "total_time_min": 26,
+    "active_time_min": 14
   },
   {
     "id": "rich-creamy-mushroom-stroganoff-with-chickpeas-baby-spinach-basmati-rice-fresh-parsley",
@@ -19206,10 +19206,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan and take out a large saucepan and a baking tray.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -19223,7 +19223,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -19231,8 +19231,8 @@
         "label": "Roughly cut or tear the ciabatta",
         "type": "cook",
         "duration_min": 10,
-        "start_min": 8,
-        "end_min": 18,
+        "start_min": 3,
+        "end_min": 13,
         "requires": [
           "step-1"
         ],
@@ -19244,8 +19244,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 18
+        "latest_start_min": 3,
+        "latest_end_min": 13
       },
       {
         "id": "step-3",
@@ -19253,8 +19253,8 @@
         "label": "Strip the cavolo nero leaves from",
         "type": "cook",
         "duration_min": 5,
-        "start_min": 18,
-        "end_min": 23,
+        "start_min": 13,
+        "end_min": 18,
         "requires": [
           "step-2"
         ],
@@ -19267,8 +19267,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 18,
-        "latest_end_min": 23
+        "latest_start_min": 13,
+        "latest_end_min": 18
       },
       {
         "id": "step-4",
@@ -19276,8 +19276,8 @@
         "label": "To serve up, divide the ribollita",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 23,
-        "end_min": 25,
+        "start_min": 18,
+        "end_min": 20,
         "requires": [
           "step-3"
         ],
@@ -19289,12 +19289,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 23,
-        "latest_end_min": 25
+        "latest_start_min": 18,
+        "latest_end_min": 20
       }
     ],
-    "total_time_min": 25,
-    "active_time_min": 15
+    "total_time_min": 20,
+    "active_time_min": 10
   },
   {
     "id": "rich-pearl-barley-mushroom-risotto-with-braised-cavolo-nero-toasted-hazelnuts-crispy-sage",
@@ -19561,10 +19561,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -19577,7 +19577,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -19585,8 +19585,8 @@
         "label": "Prick the sweet potatoes all over",
         "type": "cook",
         "duration_min": 5,
-        "start_min": 8,
-        "end_min": 13,
+        "start_min": 3,
+        "end_min": 8,
         "requires": [
           "step-1"
         ],
@@ -19600,8 +19600,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 13
+        "latest_start_min": 3,
+        "latest_end_min": 8
       },
       {
         "id": "step-3",
@@ -19609,8 +19609,8 @@
         "label": "To make the curried chickpeas, simply",
         "type": "cook",
         "duration_min": 5,
-        "start_min": 13,
-        "end_min": 18,
+        "start_min": 8,
+        "end_min": 13,
         "requires": [
           "step-2"
         ],
@@ -19623,8 +19623,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 13,
-        "latest_end_min": 18
+        "latest_start_min": 8,
+        "latest_end_min": 13
       },
       {
         "id": "step-4",
@@ -19632,8 +19632,8 @@
         "label": "Remove the sweet potatoes from the",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 18,
-        "end_min": 20,
+        "start_min": 13,
+        "end_min": 15,
         "requires": [
           "step-3"
         ],
@@ -19647,12 +19647,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 18,
-        "latest_end_min": 20
+        "latest_start_min": 13,
+        "latest_end_min": 15
       }
     ],
-    "total_time_min": 20,
-    "active_time_min": 10
+    "total_time_min": 15,
+    "active_time_min": 5
   },
   {
     "id": "rotisserie-tofu-wrap-with-creamy-caesar-dressing-chopped-salad-baby-gem-in-soft-tortilla",
@@ -20330,10 +20330,10 @@
         "id": "step-1",
         "raw_text": "Preheat the oven to 220°C / 200°C fan and take out a frying pan and a mixing bowl.",
         "label": "Preheat the oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -20348,7 +20348,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -20356,8 +20356,8 @@
         "label": "Using a vegetable peeler, slice the",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 8,
-        "end_min": 11,
+        "start_min": 3,
+        "end_min": 6,
         "requires": [
           "step-1"
         ],
@@ -20370,8 +20370,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 11
+        "latest_start_min": 3,
+        "latest_end_min": 6
       },
       {
         "id": "step-3",
@@ -20379,8 +20379,8 @@
         "label": "Place your frying pan over a",
         "type": "cook",
         "duration_min": 5,
-        "start_min": 11,
-        "end_min": 16,
+        "start_min": 6,
+        "end_min": 11,
         "requires": [
           "step-2"
         ],
@@ -20393,8 +20393,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 11,
-        "latest_end_min": 16
+        "latest_start_min": 6,
+        "latest_end_min": 11
       },
       {
         "id": "step-4",
@@ -20402,8 +20402,8 @@
         "label": "In the meantime, pop the garlic",
         "type": "cook",
         "duration_min": 3,
-        "start_min": 16,
-        "end_min": 19,
+        "start_min": 11,
+        "end_min": 14,
         "requires": [
           "step-3"
         ],
@@ -20419,8 +20419,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 19
+        "latest_start_min": 11,
+        "latest_end_min": 14
       },
       {
         "id": "step-5",
@@ -20428,8 +20428,8 @@
         "label": "To serve, lay out the warmed",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 19,
-        "end_min": 21,
+        "start_min": 14,
+        "end_min": 16,
         "requires": [
           "step-4"
         ],
@@ -20439,12 +20439,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 19,
-        "latest_end_min": 21
+        "latest_start_min": 14,
+        "latest_end_min": 16
       }
     ],
-    "total_time_min": 21,
-    "active_time_min": 13
+    "total_time_min": 16,
+    "active_time_min": 8
   },
   {
     "id": "shredded-tofu-tacos-in-guajillo-adobo-sauce-with-guacamole-pico-de-gallo-on-soft-tortillas",
@@ -20468,10 +20468,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large roasting tray, saucepan and a large frying pan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -20487,7 +20487,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -20495,8 +20495,8 @@
         "label": "Grate the tofu using a large",
         "type": "cook",
         "duration_min": 17,
-        "start_min": 8,
-        "end_min": 25,
+        "start_min": 3,
+        "end_min": 20,
         "requires": [
           "step-1"
         ],
@@ -20510,8 +20510,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 25
+        "latest_start_min": 3,
+        "latest_end_min": 20
       },
       {
         "id": "step-3",
@@ -20519,8 +20519,8 @@
         "label": "Meanwhile, finely dice half of the",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 25,
-        "end_min": 33,
+        "start_min": 20,
+        "end_min": 28,
         "requires": [
           "step-2"
         ],
@@ -20532,8 +20532,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 33
+        "latest_start_min": 20,
+        "latest_end_min": 28
       },
       {
         "id": "step-4",
@@ -20541,8 +20541,8 @@
         "label": "Once the tofu is done in",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 33,
-        "end_min": 41,
+        "start_min": 28,
+        "end_min": 36,
         "requires": [
           "step-3"
         ],
@@ -20556,8 +20556,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 33,
-        "latest_end_min": 41
+        "latest_start_min": 28,
+        "latest_end_min": 36
       },
       {
         "id": "step-5",
@@ -20565,8 +20565,8 @@
         "label": "Dry fry (without oil) the tortillas",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 41,
-        "end_min": 49,
+        "start_min": 36,
+        "end_min": 44,
         "requires": [
           "step-4"
         ],
@@ -20579,8 +20579,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 41,
-        "latest_end_min": 49
+        "latest_start_min": 36,
+        "latest_end_min": 44
       },
       {
         "id": "step-6",
@@ -20588,8 +20588,8 @@
         "label": "To serve up, divide the tortillas",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 49,
-        "end_min": 51,
+        "start_min": 44,
+        "end_min": 46,
         "requires": [
           "step-5"
         ],
@@ -20599,11 +20599,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 49,
-        "latest_end_min": 51
+        "latest_start_min": 44,
+        "latest_end_min": 46
       }
     ],
-    "total_time_min": 51,
+    "total_time_min": 46,
     "active_time_min": 18
   },
   {
@@ -21082,10 +21082,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a saucepan, frying pan and large roasting tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -21101,7 +21101,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -21109,8 +21109,8 @@
         "label": "Wash the basmati rice , then",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 8,
-        "end_min": 16,
+        "start_min": 3,
+        "end_min": 11,
         "requires": [
           "step-1"
         ],
@@ -21123,8 +21123,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 16
+        "latest_start_min": 3,
+        "latest_end_min": 11
       },
       {
         "id": "step-3",
@@ -21132,8 +21132,8 @@
         "label": "Tear the tofu in half, then",
         "type": "cook",
         "duration_min": 10,
-        "start_min": 16,
-        "end_min": 26,
+        "start_min": 11,
+        "end_min": 21,
         "requires": [
           "step-2"
         ],
@@ -21148,8 +21148,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 26
+        "latest_start_min": 11,
+        "latest_end_min": 21
       },
       {
         "id": "step-4",
@@ -21157,8 +21157,8 @@
         "label": "Place your frying pan over a",
         "type": "cook",
         "duration_min": 4,
-        "start_min": 26,
-        "end_min": 30,
+        "start_min": 21,
+        "end_min": 25,
         "requires": [
           "step-3"
         ],
@@ -21173,8 +21173,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 26,
-        "latest_end_min": 30
+        "latest_start_min": 21,
+        "latest_end_min": 25
       },
       {
         "id": "step-5",
@@ -21182,8 +21182,8 @@
         "label": "In the meantime peel, halve and",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 30,
-        "end_min": 33,
+        "start_min": 25,
+        "end_min": 28,
         "requires": [
           "step-4"
         ],
@@ -21193,8 +21193,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 30,
-        "latest_end_min": 33
+        "latest_start_min": 25,
+        "latest_end_min": 28
       },
       {
         "id": "step-6",
@@ -21202,8 +21202,8 @@
         "label": "To serve, divide the basmati rice",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 33,
-        "end_min": 35,
+        "start_min": 28,
+        "end_min": 30,
         "requires": [
           "step-5"
         ],
@@ -21216,11 +21216,11 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 33,
-        "latest_end_min": 35
+        "latest_start_min": 28,
+        "latest_end_min": 30
       }
     ],
-    "total_time_min": 35,
+    "total_time_min": 30,
     "active_time_min": 17
   },
   {
@@ -21558,10 +21558,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out two baking trays and a small saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -21575,7 +21575,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -21583,8 +21583,8 @@
         "label": "Using a fork or the tip",
         "type": "cook",
         "duration_min": 27,
-        "start_min": 8,
-        "end_min": 35,
+        "start_min": 3,
+        "end_min": 30,
         "requires": [
           "step-1"
         ],
@@ -21599,8 +21599,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 35
+        "latest_start_min": 3,
+        "latest_end_min": 30
       },
       {
         "id": "step-3",
@@ -21608,8 +21608,8 @@
         "label": "In the meantime, pick the parsley",
         "type": "finish",
         "duration_min": 4,
-        "start_min": 35,
-        "end_min": 39,
+        "start_min": 30,
+        "end_min": 34,
         "requires": [
           "step-2"
         ],
@@ -21624,12 +21624,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 35,
-        "latest_end_min": 39
+        "latest_start_min": 30,
+        "latest_end_min": 34
       }
     ],
-    "total_time_min": 39,
-    "active_time_min": 8
+    "total_time_min": 34,
+    "active_time_min": 3
   },
   {
     "id": "snack-bar-bundle-x-3-100-raw-whole-foods-copy",
@@ -22371,10 +22371,10 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan, boil your kettle, and take out a baking tray and a large saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "duration_min": 8,
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -22388,7 +22388,7 @@
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
@@ -22396,8 +22396,8 @@
         "label": "Peel the butternut squash , trim",
         "type": "cook",
         "duration_min": 19,
-        "start_min": 8,
-        "end_min": 27,
+        "start_min": 3,
+        "end_min": 22,
         "requires": [
           "step-1"
         ],
@@ -22410,8 +22410,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 27
+        "latest_start_min": 3,
+        "latest_end_min": 22
       },
       {
         "id": "step-3",
@@ -22419,8 +22419,8 @@
         "label": "Pour the wholemeal couscous into a",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 27,
-        "end_min": 29,
+        "start_min": 22,
+        "end_min": 24,
         "requires": [
           "step-2"
         ],
@@ -22430,8 +22430,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 27,
-        "latest_end_min": 29
+        "latest_start_min": 22,
+        "latest_end_min": 24
       },
       {
         "id": "step-4",
@@ -22439,8 +22439,8 @@
         "label": "Place your large saucepan over medium-high",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 29,
-        "end_min": 37,
+        "start_min": 24,
+        "end_min": 32,
         "requires": [
           "step-3"
         ],
@@ -22453,8 +22453,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 29,
-        "latest_end_min": 37
+        "latest_start_min": 24,
+        "latest_end_min": 32
       },
       {
         "id": "step-5",
@@ -22462,8 +22462,8 @@
         "label": "Finely chop half of the parsley",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 37,
-        "end_min": 39,
+        "start_min": 32,
+        "end_min": 34,
         "requires": [
           "step-4"
         ],
@@ -22473,8 +22473,8 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 37,
-        "latest_end_min": 39
+        "latest_start_min": 32,
+        "latest_end_min": 34
       },
       {
         "id": "step-6",
@@ -22482,8 +22482,8 @@
         "label": "To serve, divide the wholemeal couscous",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 39,
-        "end_min": 41,
+        "start_min": 34,
+        "end_min": 36,
         "requires": [
           "step-5"
         ],
@@ -22495,12 +22495,12 @@
         "notes": "",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 39,
-        "latest_end_min": 41
+        "latest_start_min": 34,
+        "latest_end_min": 36
       }
     ],
-    "total_time_min": 41,
-    "active_time_min": 10
+    "total_time_min": 36,
+    "active_time_min": 5
   },
   {
     "id": "sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",

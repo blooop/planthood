@@ -1,9 +1,10 @@
 name: Build and Deploy to GitHub Pages
 
 on:
-  # Weekly full rebuild on Mondays at 3 AM UTC
+  # Daily at 3 AM UTC: enrich as much of the backlog as the day's LLM quota allows.
+  # Progress persists via the committed enrich cache, so the catalogue fills in over days.
   schedule:
-    - cron: '0 3 * * 1'
+    - cron: '0 3 * * *'
   workflow_dispatch:
   push:
     branches:
@@ -27,8 +28,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     env:
-      LLM_PROVIDER: anthropic
+      # Configure via repo settings: set variable LLM_PROVIDER (default gemini) and the
+      # matching API-key secret. Only the secret for the chosen provider needs to be set.
+      LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'gemini' }}
+      GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
     steps:
       - name: Checkout repository
@@ -62,8 +68,11 @@ jobs:
       - name: Extract steps (deterministic)
         run: python -m planthood.cli extract
 
+      # Resumes from the committed recipes_parsed.json: only recipes not yet LLM-enriched
+      # are attempted, up to DAILY_ENRICH_LIMIT (0 = as many as the quota allows). Over
+      # successive daily runs the whole catalogue is enriched.
       - name: Enrich steps (LLM)
-        run: python -m planthood.cli enrich
+        run: python -m planthood.cli enrich --limit ${{ vars.DAILY_ENRICH_LIMIT || 0 }}
         continue-on-error: true
 
       - name: Schedule timelines

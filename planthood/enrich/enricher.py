@@ -6,7 +6,7 @@ import json
 import time
 from typing import Dict, List, Optional
 
-from ..io import DATA_DIR, Cache, content_hash
+from ..io import content_hash
 from ..llm import STEPS_MARKER, LLMProvider, get_provider, mock_enrich_steps
 from ..llm import _infer_duration, _infer_equipment, _infer_temp, _infer_type  # fallbacks
 from ..models import ExtractedRecipe, ParsedRecipe, RecipeStep
@@ -166,38 +166,80 @@ def _complete_with_retry(provider: LLMProvider, system: str, user: str) -> objec
     raise last if last else RuntimeError("enrichment failed")
 
 
-def enrich_recipe(
-    recipe: ExtractedRecipe,
-    provider: Optional[LLMProvider] = None,
-    cache: Optional[Cache] = None,
-) -> ParsedRecipe:
-    """Enrich one extracted recipe into a ParsedRecipe.
+class _Breaker:
+    """Trips after N consecutive LLM failures so a daily run that has exhausted its quota
+    stops hammering the API and falls back deterministically for the rest of the batch."""
 
-    Robust to poor/flaky models: a failed or empty LLM response falls back to deterministic
-    enrichment rather than producing an empty cookable recipe.
-    """
-    base = recipe.model_dump(
+    def __init__(self, threshold: int = 8):
+        self.threshold = threshold
+        self.consecutive = 0
+        self.tripped = False
+
+    def record(self, success: bool) -> None:
+        if success:
+            self.consecutive = 0
+        else:
+            self.consecutive += 1
+            if self.consecutive >= self.threshold:
+                self.tripped = True
+
+
+def source_hash(recipe: ExtractedRecipe) -> str:
+    """Fingerprint of the extracted steps an enrichment is based on. If the recipe is
+    re-scraped and its steps change, the hash changes and it is re-enriched."""
+    parts = [PROMPT_VERSION, "seg" if recipe.needs_llm_segmentation else "mark"]
+    parts += [f"{s.id}:{s.text}" for s in recipe.steps]
+    return content_hash(*parts)
+
+
+def _base(recipe: ExtractedRecipe) -> dict:
+    return recipe.model_dump(
         exclude={"schema_version", "method_clean", "steps", "extraction_method",
                  "needs_llm_segmentation", "notes", "cookable"}
     )
 
+
+def _fallback_recipe(recipe: ExtractedRecipe) -> ParsedRecipe:
+    """Deterministic enrichment (no LLM). provenance='fallback' marks it as a candidate
+    for real LLM enrichment on a later run."""
+    steps = _mock_steps(recipe) if (recipe.cookable and recipe.steps) else []
+    return ParsedRecipe(**_base(recipe), steps=steps, cookable=recipe.cookable,
+                        provenance="fallback" if steps else "none",
+                        source_hash=source_hash(recipe))
+
+
+def enrich_recipe(
+    recipe: ExtractedRecipe,
+    provider: Optional[LLMProvider] = None,
+    allow_llm: bool = True,
+    on_llm=None,
+) -> ParsedRecipe:
+    """Enrich one extracted recipe into a ParsedRecipe.
+
+    Robust to poor/flaky models: a failed or empty LLM response falls back to deterministic
+    enrichment (``provenance='fallback'``) rather than producing an empty cookable recipe.
+    With ``allow_llm=False`` the LLM is not called and the deterministic fallback is used.
+    """
     if not recipe.cookable or not recipe.steps:
-        return ParsedRecipe(**base, steps=[], cookable=recipe.cookable)
+        return ParsedRecipe(**_base(recipe), steps=[], cookable=recipe.cookable,
+                            provenance="none", source_hash=source_hash(recipe))
+
+    if not allow_llm:
+        return _fallback_recipe(recipe)
 
     provider = provider or get_provider()
     system = _SYSTEM_PARAGRAPH if recipe.needs_llm_segmentation else _SYSTEM_MARKER
     user = _user_prompt(recipe)
 
-    key = content_hash("enrich", PROMPT_VERSION, provider.name, recipe.id, user)
-    result = cache.get(key) if cache else None
-    if result is None:
-        try:
-            result = _complete_with_retry(provider, system, user)
-        except Exception as e:  # noqa: BLE001
-            print(f"Enrich LLM failed for {recipe.id}: {e}; using deterministic fallback")
-            result = None
-        if result is not None and cache:
-            cache.set(key, result)
+    try:
+        result = _complete_with_retry(provider, system, user)
+        if on_llm:
+            on_llm(True)
+    except Exception as e:  # noqa: BLE001
+        print(f"Enrich LLM failed for {recipe.id}: {e}; using deterministic fallback")
+        if on_llm:
+            on_llm(False)
+        return _fallback_recipe(recipe)
 
     # Accept both {"steps": [...]} (Anthropic/OpenAI schema) and a bare [...] array
     # (some providers, e.g. Gemini JSON mode, may return the array directly).
@@ -210,29 +252,65 @@ def enrich_recipe(
 
     steps = _build_steps(recipe, enriched)
     if not steps:  # model returned nothing usable → deterministic fallback
-        steps = _mock_steps(recipe)
-    return ParsedRecipe(**base, steps=steps, cookable=recipe.cookable)
+        return _fallback_recipe(recipe)
+    # The mock provider is deterministic, not a real model → mark it 'fallback' so a real
+    # LLM run still upgrades it later.
+    prov = "fallback" if provider.name.startswith("mock") else "llm"
+    return ParsedRecipe(**_base(recipe), steps=steps, cookable=recipe.cookable,
+                        provenance=prov, source_hash=source_hash(recipe))
+
+
+def _already_enriched(existing: Optional[ParsedRecipe], recipe: ExtractedRecipe) -> bool:
+    """True if a prior run already produced genuine LLM steps for this recipe's current text."""
+    return bool(
+        existing
+        and existing.provenance == "llm"
+        and existing.source_hash == source_hash(recipe)
+    )
 
 
 def enrich_all(
     recipes: List[ExtractedRecipe],
     provider: Optional[LLMProvider] = None,
-    use_cache: bool = True,
+    existing: Optional[List[ParsedRecipe]] = None,
+    limit: int = 0,
 ) -> List[ParsedRecipe]:
-    """Enrich every recipe, sharing one provider and cache."""
+    """Enrich recipes, resuming from prior results — no separate cache.
+
+    Recipes already LLM-enriched for their current text (per ``existing``) are reused as-is.
+    Up to ``limit`` of the remaining cookable recipes are enriched with the LLM this run
+    (``limit=0`` means no cap — enrich until the quota-driven circuit breaker trips). This
+    is the "complete X recipes per day" mechanism: point daily CI at the committed
+    ``recipes_parsed.json`` and it works through the backlog, ``limit`` new recipes at a time.
+    """
     provider = provider or get_provider()
-    cache = Cache(DATA_DIR / ".cache" / "enrich", enabled=use_cache)
-    out = []
+    existing_by_id: Dict[str, ParsedRecipe] = {r.id: r for r in (existing or [])}
+    breaker = _Breaker()
+    spent = 0
+    out: List[ParsedRecipe] = []
+
     for r in recipes:
+        prior = existing_by_id.get(r.id)
+        if _already_enriched(prior, r):
+            out.append(prior)  # done on a previous run; don't spend quota again
+            continue
+
+        budget_left = limit == 0 or spent < limit
+        allow_llm = r.cookable and bool(r.steps) and budget_left and not breaker.tripped
+        if allow_llm:
+            spent += 1
         try:
-            out.append(enrich_recipe(r, provider=provider, cache=cache))
+            out.append(enrich_recipe(r, provider=provider, allow_llm=allow_llm,
+                                     on_llm=breaker.record))
         except Exception as e:  # one bad recipe must not abort the batch
             print(f"Enrich error for {r.id}: {e}")
-            base = r.model_dump(
-                exclude={"schema_version", "method_clean", "steps", "extraction_method",
-                         "needs_llm_segmentation", "notes", "cookable"}
-            )
-            # Even on unexpected failure, keep grounded steps via deterministic fallback.
-            steps = _mock_steps(r) if (r.cookable and r.steps) else []
-            out.append(ParsedRecipe(**base, steps=steps, cookable=r.cookable))
+            out.append(_fallback_recipe(r))
+
+    llm_total = sum(1 for r in out if r.provenance == "llm")
+    remaining = sum(1 for r in out if r.provenance == "fallback")
+    print(f"Enrichment: {llm_total} LLM, {remaining} on deterministic fallback, "
+          f"{spent} enriched this run (limit={limit or 'none'}).")
+    if breaker.tripped:
+        print("LLM quota exhausted (circuit breaker tripped); remaining recipes will be "
+              "enriched on the next run.")
     return out

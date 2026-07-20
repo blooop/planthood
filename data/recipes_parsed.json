@@ -17,7 +17,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "adobo-black-beans-with-shredded-lettuce-lime-cashew-crema-avocado-salsa-macha",
@@ -41,8 +43,8 @@
         "id": "step-1",
         "raw_text": "Take out a saucepan and preheat your oven to 200°C / 180°C fan.",
         "label": "Take out a saucepan and preheat",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -115,7 +117,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "42fbbdabb6776edd73a32998e8968336fd999e771677fe10a22768fa44f98347"
   },
   {
     "id": "afghan-aubergine-borani-banjan-with-saucy-spiced-lentils-garlic-yoghurt-fresh-mint-pillowy-flatbreads",
@@ -235,7 +239,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "e378de6189691180ab464191397f4a9a10e722a77610f1606d8d96993e99fac5"
   },
   {
     "id": "apple-pecan-crumble-snack-bar-100-raw-whole-foods",
@@ -255,7 +261,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "aromatic-aubergine-sambal-over-whipped-tamarind-tofu-with-crispy-lentils-toasted-peanuts-coriander",
@@ -275,7 +283,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "aromatic-thai-green-curry-soup-with-beluga-lentils-tender-aubergine-sweet-potato-basil-lime",
@@ -299,8 +309,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large roasting tray, and a large saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -366,7 +376,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "bbf68704caf9011198e64584ec68bd188ba8947ca2ae9591ac8ca9d5d510002d"
   },
   {
     "id": "aubergine-parm-sandwich-with-tomato-marinara-vegan-pesto-on-soft-vegan-brioche",
@@ -448,7 +460,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "03ce0b5c3596d1d084e776fe1c0398d118f4e83ae35b5cb8f4f553fa06ebe008"
   },
   {
     "id": "aubergine-unagi-donburi-bowl-with-edamame-sweet-cucumber-pickle-spring-onion-sesame-seeds",
@@ -468,7 +482,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "autumnal-gratin-with-rich-lentil-ragu-topped-with-potato-beetroot-sweet-potato-creamy-miso-bechamel",
@@ -492,8 +508,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 240°C / 220°C fan. Take out a wide, hob- and ovenproof casserole dish.",
         "label": "Preheat your oven to 240°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -571,7 +587,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "bde024092ea31eeef65a1a9bfda815542382aef334583ced16562e97524ad2bf"
   },
   {
     "id": "bbq-jackfruit-tacos-chipotle-cashew-crema",
@@ -638,7 +656,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "60c485c9434585fe94ab8f91b4a1ed8b7eb7599c9f293ef67d25a9f64d2b377c"
   },
   {
     "id": "black-bean-frijoles-with-caramelised-plantain-whipped-feta-pink-pickled-onions-avocado-coriander-lime-brown-rice",
@@ -771,7 +791,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "fd998e6fab3fc505f56b37afabe6111883fff53225889a5ed3b5a3a3d939a255"
   },
   {
     "id": "black-bean-smash-burger-tacos",
@@ -876,7 +898,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "cbbd5e7621c1fca4d424ade4acbe44bcb582bdda793a6ed66434cbcb9620fe5b"
   },
   {
     "id": "brothy-giant-cous-cous-bowl-with-smokey-tempeh-chorizo-braised-cavolo-nero",
@@ -896,7 +920,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "brown-rice-noodles-with-crispy-tofu-julienned-vegetables-black-bean-rayu-chilli-sauce",
@@ -916,7 +942,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "bun-chay-noodle-salad",
@@ -977,7 +1005,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "7790bc8ee57edeb7b6434e2f24c64a9c65b54b0b85b53024d898c5cbea52210f"
   },
   {
     "id": "burnt-lemon-mustard-butter-beans-spelt-coonchiglietti",
@@ -1001,8 +1031,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan. Boil your kettle and take out an ovenproof ramekin (in a size that snugly fits all the cherry tomatoes in a single layer), a griddle pan or frying pan, as well as two saucepans.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -1083,7 +1113,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "f5894e03c03e234aa0938a275c89ae8b3ff12444dee1d90e7647beb466b80cd3"
   },
   {
     "id": "butterbean-caponata-with-roasted-peppers-aubergine-salsa-verde-warm-ciabatta-1",
@@ -1158,7 +1190,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "43b593a26d87283dea6a9093afb47b0f2046119bc78dc116fcd3edd3e268114b"
   },
   {
     "id": "butterbean-puttanesca-with-grilled-aubergine-crispy-kale-organic-garlic-ciabatta-fresh-parsley",
@@ -1178,7 +1212,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "butternut-squash-brothy-beans-with-charred-courgette-crispy-sage-hot-agave-nduja-dressing-toasted-pine-nuts-pumpkin-seeds",
@@ -1202,8 +1238,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large saucepan, a frying pan and a baking tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -1284,7 +1320,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "642e1c03b7cbb32a217c20b743cca255ed0d5779b2fad8f3639f434f9ad8c045"
   },
   {
     "id": "butternut-squash-brothy-beans-with-crispy-sprouts-hot-agave-nduja-oil-toasted-pine-nuts-pumpkin-seeds",
@@ -1308,8 +1346,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large saucepan, a frying pan and a baking tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -1390,7 +1428,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "8c662f69a615c4aa76ca522c2cf239a4448630e7e76240907083278825ca747c"
   },
   {
     "id": "butternut-squash-curried-noodles-with-tenderstem-broccoli-superseed-chilli-rayu-drizzle",
@@ -1414,8 +1454,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a baking tray and a saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -1509,7 +1549,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "82e048a5352e461b130863cb28eac52cba882401cd584d5b3ddb6c0dc166cf9f"
   },
   {
     "id": "butternut-squash-gochujang-pasta-with-garlicky-green-kale-sunflower-seed-sprinkle",
@@ -1529,7 +1571,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "butternut-squash-nduja-lasagne-with-tender-lentils-creamy-miso-spinach-bechamel",
@@ -1553,8 +1597,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan. Take out a saucepan, a mixing bowl and a baking dish around 15x20cm (or double this for a four person box).",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -1630,7 +1674,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "f45304f42946b68cdb936f34b06aa949edc63671f27c16b111134a78f1c2ede8"
   },
   {
     "id": "butternut-squash-spelt-risotto-with-crispy-sage-smokey-toasted-pine-nuts",
@@ -1751,7 +1797,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "b101846c1ab5079989931552c94123ec23229c8f42cf2e96743236e217ac982d"
   },
   {
     "id": "butternut-squash-stuffed-conchiglioni-pasta-shells-in-creamy-garlic-sauce",
@@ -1775,8 +1823,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Boil your kettle and take out a large saucepan and a wide ovenproof or casserole dish.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -1838,7 +1886,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "88bcb0fb5676152b9048a165056e4a8e7bdec6762b716ee6caf292f15cbc402b"
   },
   {
     "id": "caesar-pasta-salad-with-smokey-tempeh-cavolo-nero-mangetout-sunflower-seed-pangrattato",
@@ -1858,7 +1908,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "caprese-salad-with-creamy-vegan-burrata-hazelnut-pesto-rustic-croutons-tender-butterbeans",
@@ -1882,8 +1934,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C and take out a roasting tray.",
         "label": "Preheat your oven to 200°C and",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -1947,7 +1999,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "effba052b11e7bce91eba26e0c3380373fd6e969d1f2eeaee735de4c7705b815"
   },
   {
     "id": "caramelised-brussels-sprouts-celeriac-with-caper-salsa-verde-toasted-hazelnuts",
@@ -2048,7 +2102,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "39abeeac8953b4f705a41f58e9d42ed9788576cb1b6638a0dc6482e174adb1c6"
   },
   {
     "id": "carribbean-jackfruit-curry",
@@ -2111,7 +2167,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "412325868f799f03e46a2b40cd0491f83f5c46e47d6f047ab7555a9fa3430629"
   },
   {
     "id": "cauliflower-al-pastor-tacos",
@@ -2135,8 +2193,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 220°C fan, then take out a large roasting tray and a frying pan.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -2213,7 +2271,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "ed29c502fb1a9334a185c362422f76f3b11b016fbb13b8f131104fc2921dc7cb"
   },
   {
     "id": "cauliflower-broccoli-cheese-with-garlic-hazelnut-breadcrumbs-and-lemon-herb-gremolata-dressing",
@@ -2233,7 +2293,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "charred-aubergine-with-romesco-bulgar-wheat-pilaf-tahini-sauce-herby-caper-gremolata",
@@ -2257,8 +2319,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large roasting tray, and a saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -2321,7 +2383,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "7a1bc46706c7eefb99197252b2bfb5cd87ea891c41168a835b553f58a764b19b"
   },
   {
     "id": "charred-courgettes-with-romesco-chickpeas-giant-cous-cous-tahini-sauce-mint-pesto-toasted-almonds",
@@ -2442,7 +2506,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "f4543f1308cd4b5b5c05a9ab01ef8c58e38f859584749a0f5e5604180143cd25"
   },
   {
     "id": "charred-gochujang-glazed-hispi-cabbage-over-lime-tahini-yoghurt-with-lentils-orange-peanut-crumb",
@@ -2545,7 +2611,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "e41488554fa6ff9bb9cf58d03e8068cef34627c019f820982bb0d7ce7d057a27"
   },
   {
     "id": "charred-hispi-cabbage-over-chickpeas-in-tahini-yoghurt-with-dukkah-zhoug-dressing",
@@ -2608,7 +2676,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "3ffd9c5daf1c7122ee25b171a24d7763d641741d5331f0072f2e3e21af19d645"
   },
   {
     "id": "charred-hispi-cabbage-over-golden-daal-with-organic-soy-yoghurt-tamarind-date-chutney-toasted-almonds-coriander",
@@ -2632,8 +2702,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a saucepan and an ovenproof skillet - if you don't have an ovenproof one, take out a frying pan and baking tray instead.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -2728,7 +2798,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "fb9eb07621687c37d01b8ac791f28231c7a7c31fb3ca82038e376bacbfd2061c"
   },
   {
     "id": "cheats-aubergine-lentil-parmigiana-with-creamy-miso-bechamel-seasonal-salad-tossed-in-vinaigrette",
@@ -2752,8 +2824,8 @@
         "id": "step-1",
         "raw_text": "Take out a large ovenproof casserole dish and one mixing bowl, and preheat your oven to 200°C /180°C fan.",
         "label": "Take out a large ovenproof casserole",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -2844,7 +2916,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "7d9f13cbc7a8324dacac13c7e143f89f8a1c8fec46dc9d9c6fac20e175481695"
   },
   {
     "id": "chickpea-tuna-sushi-bowl-with-crunchy-sesame-slaw-creamy-avocado-zingy-ginger-soy-dressing",
@@ -2864,7 +2938,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "chilli-garlic-tempeh-noodles-with-crunchy-rainbow-vegetables-sesame-seeds-spring-onion",
@@ -2966,7 +3042,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "c209776c3d927fb14a460fc8af7187a5aa46c335396bd8df3ba9dd97e1da3e5f"
   },
   {
     "id": "chilli-sin-carne",
@@ -3029,7 +3107,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "f0a5ce2cf672b23b80f984e409982dfcb907192ac66dcfc91d78a2379237b5e7"
   },
   {
     "id": "chimichurri-cauliflower-steaks",
@@ -3053,8 +3133,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large roasting tray and a small saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -3136,7 +3216,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "1bfac177649044fab43d6974040504843ed1db3ce315deebeff8f4637cb82d84"
   },
   {
     "id": "chinese-pancakes-with-crispy-pulled-oyster-mushrooms-date-hoi-sin-fresh-cucumber-spring-onions",
@@ -3223,7 +3305,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "7fb6e7d269e12733cc37fd7001dc3f84066a75b37e6eb491f39eadd14f3657ef"
   },
   {
     "id": "chipotle-black-bean-burrito-bowl-with-roasted-sweet-potato-avocado-salsa-roja-lime-crema-tortilla-dippers",
@@ -3247,8 +3331,8 @@
         "id": "step-1",
         "raw_text": "Take out two saucepans, a large and a small roasting tray. Preheat your oven to 200°C / 180°C fan.",
         "label": "Take out two saucepans, a large",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -3363,7 +3447,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "de6822d8bb426c8513d82c7a84c206586989fcc0243049a5dacfebef25e68968"
   },
   {
     "id": "chocolate-hazelnut-sea-salt-protein-fibre-bar-100-raw-whole-foods",
@@ -3383,7 +3469,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "courgette-gratin-with-cashew-cheese-sauce-creamy-cannellini-beans-and-olive-almond-gremolata",
@@ -3407,8 +3495,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a wide hob- and oven-proof casserole dish or deep ovenproof pan, along with a roasting tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -3486,7 +3574,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "c893a00b0220bbefb1bb75f41bf4790b0e7ec5fdd79df2110bae9b10b2f52aa1"
   },
   {
     "id": "creamy-butter-beans-with-burnt-lemon-mustard-sauce-wilted-greens-charred-cauliflower-green-olive-salsa",
@@ -3510,8 +3600,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a baking tray and a deep frying pan or wok.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -3589,7 +3679,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "e68de97a64c51a190e19bd63478392b3dfe8995138da9917942edc1cf9dda3d5"
   },
   {
     "id": "creamy-butterbeans-with-caramelised-leeks-charred-courgettes-drizzled-with-olive-almond-pesto",
@@ -3676,7 +3768,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "16a81d2dd1b1223c34fb1934f178b400acfa3ad7b195544597dceea4cee909d7"
   },
   {
     "id": "creamy-cauliflower-aubergine-korma-with-toasted-cashews-fresh-coriander-rice",
@@ -3700,8 +3794,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan, boil your kettle, then take out a roasting tray, frying pan and saucepan.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -3800,7 +3894,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "07af50026837432b21903ef6b35dab368f6bf04af74b044192c5a5473c0e4d1a"
   },
   {
     "id": "creamy-coconut-daal",
@@ -3824,8 +3920,8 @@
         "id": "step-1",
         "raw_text": "Preheat the oven to 220°C / 200°C fan, then take out a large roasting tray and two saucepans.",
         "label": "Preheat the oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -3924,7 +4020,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "69c3d31968fbf9fc8706ccc3f2a77b2509c5a6c2eac5233d2011b3eed0d13ea6"
   },
   {
     "id": "creamy-gochujang-tofu-bowl-with-wakame-cucumber-pickle-avocado-sesame-gochugaru-nori-snacks",
@@ -3944,7 +4042,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "creamy-green-goddess-beans-courgettes-with-organic-cultured-yoghurt-pistachio-zaatar-flatbread",
@@ -4033,7 +4133,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "fadea4a39beaa1d35b25c8da0e46d3612f05d8e2d53ef8f6629306adae51dfe8"
   },
   {
     "id": "creamy-kimchi-macaroni-with-roasted-broccoli-garlic-panko-breadcrumbs",
@@ -4057,8 +4159,8 @@
         "id": "step-1",
         "raw_text": "Boil your kettle and preheat your oven to 200°C / 180°C fan. Take out a large saucepan, a small frying pan and a roasting tray.",
         "label": "Boil your kettle and preheat your",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -4155,7 +4257,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "6695789502b3bae26695ea62a7c647925094895ebcb29cedfa350a5f95b56b0a"
   },
   {
     "id": "creamy-mattar-makhani-with-tofu-paneer-kachumbar-salad-garlic-herb-naan",
@@ -4232,7 +4336,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "f5260ca33bcfa9631a1d1f41742528690c3da4db06b18b18cde548917ade9656"
   },
   {
     "id": "creamy-orzo-al-limone-with-crispy-panko-tofu-roasted-cherry-tomatoes-tenderstem-broccoli",
@@ -4256,8 +4362,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan, boil your kettle, and take out a roasting tray, a large saucepan and a frying pan.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -4356,7 +4462,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "ea2722832eef26e63a58112d5d2f22db8bb6d954fbc8c418369db11e07669c53"
   },
   {
     "id": "creamy-panang-curry-with-tofu-red-pepper-baby-spinach-sticky-jasmine-rice-crushed-peanuts-lime",
@@ -4479,7 +4587,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "21350cdfcefa0206ed8d04719029b9503a44b5157f877e95d7c5261468914ad6"
   },
   {
     "id": "creamy-romesco-butter-beans-with-lemon-charred-broccoli-mint-pesto-crushed-toasted-almonds",
@@ -4499,7 +4609,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "creamy-saag-tofu-paneer-with-sweet-roasted-cherry-tomatoes-soft-garlic-naan",
@@ -4576,7 +4688,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "e7930a526cf8e2d51ddf0b4adfade5104cf60061760e8da1a80b1c649713b9bc"
   },
   {
     "id": "creamy-squash-bucatini-with-wilted-cavolo-nero-crispy-tempeh-pancetta",
@@ -4596,7 +4710,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "creamy-tomato-butterbeans-with-baby-spinach-almond-gremolata-pillowy-soft-garlic-herb-flatbread",
@@ -4701,7 +4817,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "e72ece90b218ff6532f7d85536ad4050ceaa636fc59a807802589becaabc2558"
   },
   {
     "id": "creamy-tomato-daal",
@@ -4725,8 +4843,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 220°C fan, then take out a large roasting tray and two saucepans.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -4824,7 +4942,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "875c1c4a97b3ca36545a16070b644f74c0638501b340965b9c0ed4ce3ea7f6c5"
   },
   {
     "id": "creamy-vietnamese-coconut-curry-with-tofu-sweet-potato-crispy-shallots-pickled-radish-cashews-sesame-seeds",
@@ -4844,7 +4964,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "crispy-baja-tofish-tacos-with-shredded-cabbage-salsa-fresca-smokey-chipotle-mayo",
@@ -4864,7 +4986,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "crispy-buffalo-tofu-nourish-bowl-with-cabbage-celery-slaw-tricolour-quinoa-pink-onion-pickle-ranch-dressing",
@@ -4970,7 +5094,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "1082785e6f111d2fe0d8d49fc41580296b7f2fceffd8c9117bf2bdbcb664ab53"
   },
   {
     "id": "crispy-buffalo-tofu-tacos-with-cooling-ranch-dressing-shredded-cabbage-pineapple-salsa",
@@ -5086,7 +5212,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "a72c70f654866d7ecd9aafd692de43d1a0c8dea964bdad6cbf75c0edbf0a1927"
   },
   {
     "id": "crispy-buffalo-tofu-wrap-with-creamy-cashew-blue-cheese-ranch-sauce-avocado-cabbage-carrot-slaw",
@@ -5202,7 +5330,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "445086632b2422b92c302b32ce4530efc52b24c37b3dce384779a92421493d29"
   },
   {
     "id": "crispy-cauliflower-gnocchi-with-puttanesca-sauce-crispy-kale-fresh-parsley",
@@ -5226,8 +5356,8 @@
         "id": "step-1",
         "raw_text": "Take out a saucepan, two roasting trays and preheat your oven to 200°C / 180°C fan.",
         "label": "Take out a saucepan, two roasting",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -5312,7 +5442,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "85be6881c9803fcf3ac432ba140a620ec513697528ff91789f868517ec3b13ec"
   },
   {
     "id": "crispy-chilli-tofu-with-toasted-cashews-short-grain-brown-rice-sesame-hispi-pear-slaw-cucumber-pickle",
@@ -5436,7 +5568,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "93c417de3b7f0f7e3fd1f2870afdf1b72aebcfcd576a7934b1e4f541937a4746"
   },
   {
     "id": "crispy-chipotle-pumpkin-black-bean-tacos-with-melted-mozzarella-guacamole-pink-onion-pickles",
@@ -5538,7 +5672,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "5d59dfa1dc6f4bd5dd9cac6d2d1362dcf85b171510bb31c4ff687aa3b8081d05"
   },
   {
     "id": "crispy-courgette-sweetcorn-fritters-with-garlic-dill-yoghurt-and-sweet-cucumber-pickle",
@@ -5558,7 +5694,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "crispy-gochujang-cauliflower-with-vermicelli-noodles-spring-onion",
@@ -5677,7 +5815,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "4abfe624c8207b4ed188900f9511c8ec1785f15920b9a779141f82e42abc613a"
   },
   {
     "id": "crispy-gochujang-tempeh-over-seasonal-savoy-cabbage-slaw-with-quinoa-gochujang-tahini-dressing",
@@ -5697,7 +5837,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "crispy-gochujang-tofu-bowl-with-spicy-cucumber-pickle-creamy-avocado-sesame-seeds-over-sushi-rice",
@@ -5799,7 +5941,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "948509d55d5390e24c003576e4ad066112ead3407a67ecd995e3ef338e8bcd31"
   },
   {
     "id": "crispy-korean-oyster-mushroom-burger-with-kimchi-gochujang-mayo-on-soft-vegan-brioche",
@@ -5823,8 +5967,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan, then take out a large roasting tray and a wok or deep frying pan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -5926,7 +6070,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "3a027ca056e3b514b5fd561b97afaf036b605759d09fce4652a12a65299e6660"
   },
   {
     "id": "crispy-korean-pancakes-with-mixed-vegetables-dipping-sauce-smacked-cucumber-kimchi-brown-rice",
@@ -6066,7 +6212,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "9f92f7ec1ed4b71d1c230dff78d1e0637bb8723275efa0fc6a157ecf146a658f"
   },
   {
     "id": "crispy-lebanese-tofu-nourish-bowl-with-quinoa-tabbouleh-green-tahini-sauce-pink-pickled-onion",
@@ -6187,7 +6335,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "5f042654225c868e3a553f48d292f268390692c5540a551b57dae9cadb8bf4a5"
   },
   {
     "id": "crispy-pakora-burger-with-mint-raita-mango-chutney-fresh-spinach-baby-new-potatoes",
@@ -6266,7 +6416,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "4a9d2845a1ccd925b8aee02ce4809b8bded2eab6f5e0834179f5a52157804847"
   },
   {
     "id": "crispy-rice-salad-with-smacked-cucumber-avocado-edamame-black-beans-toasted-cashews-chilli-satay-dressing",
@@ -6290,8 +6442,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Boil your kettle, then take out a saucepan, a roasting tray, and a large mixing bowl.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -6395,7 +6547,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "3bef0e44a89bb86dbc61b2fee5ca55d37634079e5c26fbcb4b49367b719cd989"
   },
   {
     "id": "crispy-sweet-potato-black-bean-taquitos-with-cashew-feta-crema-salsa-fresca",
@@ -6516,7 +6670,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "f2815d2e6954b01dc923d3b9221914b16e5afc50fc21a9362db8b3032a09f1e8"
   },
   {
     "id": "crispy-tofish-tacos",
@@ -6536,7 +6692,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "crispy-tofu-katsu-curry-with-sticky-rice-seasonal-mixed-leaves-in-sweet-miso-dressing",
@@ -6657,7 +6815,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "9f8916bf0046944e2382e20bbebc4501fbd74bf4f1d67a34185637e10badaaf4"
   },
   {
     "id": "crispy-tofu-katsu-curry-with-sticky-rice-seasonal-mixed-leaves-in-sweet-miso-dressing-copy",
@@ -6681,8 +6841,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out two bowls, one roasting tray and two saucepans. Line the roasting tray with a sheet of parchment paper.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -6766,7 +6926,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "875b13f61bd91751906132fd0e3fab397124f6ab7f828ab682f965d82ee81557"
   },
   {
     "id": "crispy-tofu-parm-over-creamy-tomato-beans-with-garlic-basil-gremolata-roasted-tenderstem-broccoli-cherry-tomatoes",
@@ -6790,8 +6952,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan, and take out a roasting tray, a saucepan, and a frying pan.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -6889,7 +7051,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "5ecc716771095dc4d1b3ce8f8864d563304cba7be2ce35d9aafa06b14d3dc767"
   },
   {
     "id": "crispy-vegetable-pakora-chaat-with-mint-chutney-tamarind-yoghurt-roasted-cherry-tomatoes",
@@ -6950,7 +7114,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "4d7baa7149559769b7b107ce0700dee9d49e195cae816279ff6d35316efd70cb"
   },
   {
     "id": "crisyp-tofish-tacos-with-avocado-creamy-chipotle-slaw-tangy-jalapeno-salsa",
@@ -6970,7 +7136,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "crunchy-thai-peanut-salad",
@@ -7033,7 +7201,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "26061e34f6519c0e6a8eba91601be8240f8b365f3ded451eab882b0f9d8f4b5a"
   },
   {
     "id": "crushed-chickpea-onigirazu-sushi-sandwich-with-crunchy-slaw-avocado",
@@ -7053,7 +7223,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "curried-caribbean-chickpeas-with-coconut-slaw-scotch-bonnet-chilli-jam",
@@ -7144,7 +7316,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "34fac7454cf5322503bf51652241c649c4c72e8087b2d5b4c616b7d13cd88df7"
   },
   {
     "id": "curried-squash-udon-noodle-soup-with-crispy-coconut-chickpeas-green-kale",
@@ -7248,7 +7422,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "dbacb4c8512ffdf6a4c1e3e729c0afa365c0f8cc5b93012a6f6477a7de15c862"
   },
   {
     "id": "daily-dose-3-juice-bundle",
@@ -7268,7 +7444,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "daily-dose-dulce-verde-1",
@@ -7331,7 +7509,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "4c29f29e428efb5fdaa3c9582b2136e1022f4d42fd723f4511198dd4dd9bf285"
   },
   {
     "id": "daily-dose-ofresco",
@@ -7364,7 +7544,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "186fab65dc2e6096cd4584b1d159d2ed7a74dba3f6880fb2684cb2a4cc72c2c6"
   },
   {
     "id": "daily-dose-rouge",
@@ -7397,7 +7579,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "96de948a28c5c4d71491bd2cfbf5660651ec23f35558acdfa6613b097eed89d8"
   },
   {
     "id": "daily-dose-turmeric-shot",
@@ -7417,7 +7601,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "dark-arts-seasonal-espresso-beans-250g",
@@ -7437,7 +7623,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "dash-sparkling-lime-water-330ml",
@@ -7457,7 +7645,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "dash-sparkling-peach-water-330ml",
@@ -7477,7 +7667,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "dash-sparkling-raspberry-water-330ml",
@@ -7497,7 +7689,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "falafel-smash-tacos-with",
@@ -7600,7 +7794,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "55480cb672c75b44f6fe3fec87c56d92bfbfe3010e0c872a254781ffe53ab432"
   },
   {
     "id": "festive-bourguignon-pie-over-creamy-mash-with-caramelised-onion-red-wine-gravy",
@@ -7624,8 +7820,8 @@
         "id": "step-1",
         "raw_text": "Please note: as this meal kit is a one off Christmas special, the recipe takes a little longer to cook than our usual weekly meal kits as the pie needs more time in the oven. We wanted to offer something different and special for Christmas so we hope you'll forgive us :) Boil your kettle, then take out a large saucepan, small saucepan and roasting tray. Preheat your oven to 200°C / 180°C fan. Make up a small bowl of 'egg wash' of your choice - we recommend a mix of equal parts plant-based milk, agave/maple syrup and olive oil as a good choice!",
         "label": "Please note: as this meal kit",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -7737,7 +7933,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "8277ce6fd20bc260164e932057490c5c83252e481fea673a1126bcb96cddd0d1"
   },
   {
     "id": "freshly-baked-flatbread-naan-plain-pack-of-2",
@@ -7757,7 +7955,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "freshly-baked-flatbread-naan-plain-pack-of-2-copy",
@@ -7777,7 +7977,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "freshly-made-cavatelli-tossed-in-sweet-spicy-pumpkin-nduja-sauce-with-crispy-sage",
@@ -7797,7 +7999,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "freshly-made-cavatelli-with-spicy-pumpkin-vegan-nduja-sauce",
@@ -7817,7 +8021,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "freshly-made-gnocchi-tossed-in-a-rich-porcini-lentil-ragu-with-almond-parmesan",
@@ -7866,7 +8072,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "c901ca06dbff52bf7e5a2358fc14e47d0ceea718251411a9d2ad5aa70361b284"
   },
   {
     "id": "glazed-tofu-with-chilli-garlic-dressing-spring-onion-crispy-shallots-charred-broccoli-edamame-sticky-rice",
@@ -7988,7 +8196,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "1e7af247de92a44b043da20a017d52699f98c9c7470815c3f8ebecd51e459d82"
   },
   {
     "id": "greek-orzo-salad-with-feta-cherry-tomatoes-olives-artichokes-toasted-pine-nuts-herby-mustard-dressing",
@@ -8008,7 +8218,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "green-goddess-nourish-bowl-with-fluffy-quinoa-creamy-avocado-crunchy-greens-zingy-green-tahini-dressing",
@@ -8028,7 +8240,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "green-shakshuka-with-garden-peas-lentils-whipped-feta-avocado-dukkah-fresh-dill",
@@ -8148,7 +8362,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "a6913dda11da4a56044dfd95b83dcc433c1ff4d8dc13f980cc09373de5d7f822"
   },
   {
     "id": "gut-friendly-sweet-potato-katsu-curry-over-quinoa-lime-pickled-slaw-with-omega-3-seed-mix",
@@ -8168,7 +8384,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "gut-friendly-west-african-inspired-peanut-stew-with-black-eyed-peas-sweet-potato-tenderstem-broccoli",
@@ -8295,7 +8513,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "ad7b051373488f5afd11e9b06d47250ba13cf9904234198dbb41630baf544f6e"
   },
   {
     "id": "healing-lemon-turmeric-chickpea-stew-with-cavolo-nero-coconut-yoghurt-chilli-garlic-crunch",
@@ -8398,7 +8618,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "d23e484d951af79236a23f4c9005326bd029fb44fb056d2b4204d75b064146c5"
   },
   {
     "id": "healing-vietnamese-pho-with-radish-edamame-glass-noodles-fresh-herbs-chilli-lime",
@@ -8459,7 +8681,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "fbd2b9365ff514b018f9646617de4bb8b37eb88f9099ce69ed606eadf4332750"
   },
   {
     "id": "high-protein-conchiglioni-pasta-shells-stuffed-with-lemon-garlic-spinach-ricotta-in-rich-tomato-lentil-sauce",
@@ -8483,8 +8707,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan, boil your kettle, and take out a large saucepan, a mixing bowl, and a wide oven proof dish or a wide casserole dish.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -8565,7 +8789,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "8ab7fbf8b2e20d91d6358955dfbf2ef8674d7c09256d1f535c0daa7167f7a60e"
   },
   {
     "id": "high-protein-creamy-mushroom-bucatini-with-wilted-cavolo-nero-crispy-tempeh-pancetta",
@@ -8681,7 +8907,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "4a382427391ea570773804a5fb0c6bde361f18c39d791374de93accd6126c26c"
   },
   {
     "id": "high-protein-tempeh-bolognese-with-mafaldine-pasta-courgettes-kale-pine-nut-walnut-parmesan",
@@ -8784,7 +9012,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "55480cb672c75b44f6fe3fec87c56d92bfbfe3010e0c872a254781ffe53ab432"
   },
   {
     "id": "high-protein-tempeh-meatballs-in-smoky-tomato-sauce-with-cannellini-beans-braised-green-kale",
@@ -8808,8 +9038,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan, then take out a mixing bowl, a baking tray, a large saucepan, and a frying pan.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -8908,7 +9138,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "c90912d13d356aa8ea2073e59c5f0a7df7586e2b5b71d36fa9a581a901c94b33"
   },
   {
     "id": "high-protein-thai-red-curry-lentil-soup-with-sweet-potato-smokey-crispy-chickpeas-pink-onion-pickle",
@@ -9015,7 +9247,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "529114b335c4ded56047c0f0f12269e80530ebade53003b9786eede0f5ed70cb"
   },
   {
     "id": "hispi-cabbage-gratin-in-creamy-cashew-sauce-with-garlic-herb-tempeh-pancetta-pangrattato",
@@ -9039,8 +9273,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a frying pan and a wide casserole dish with a lid (or an ovenproof dish / roasting tray and some tin foil).",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -9141,7 +9375,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "d4faa4a4f6ec2909e4fa50e41068136d6d1a10927012ccf4d1a2dd5118fd7aff"
   },
   {
     "id": "hodmedods-organic-brown-linseed-500g-high-fibre-omegas",
@@ -9202,7 +9438,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "f431fd6d53bf3b4c2634c4f31160c74818007d17368fb6deb4ffb7d0cbbbe667"
   },
   {
     "id": "hodmedods-organic-gluten-free-oat-flakes-500g-wholegrain-rolled-oats",
@@ -9235,7 +9473,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "56486911667fe989fca4fe7ecfcb8af377cafe14329ac1a9a2900f2cf24f437d"
   },
   {
     "id": "hodmedods-organic-red-white-quinoa-500g-high-protein-wholegrain",
@@ -9296,7 +9536,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "ae7990b019086ba8239c80ff5e8a35367b93b1b8a211f46f8b8a19a9d3c23d94"
   },
   {
     "id": "hodmedods-organic-shelled-hemp-seeds-300g-high-protein-superfood",
@@ -9345,7 +9587,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "b708e3c642b0e3eddfd497d69cbe1f21d62454ad2bc4a3a3de1df6f03a7234f3"
   },
   {
     "id": "hodmedods-organic-wholegrain-emmer-farro-500g-ancient-grain",
@@ -9392,7 +9636,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "45504dc2d821996627ee3c14cce79e64802cbdd6675f42cd84f5d0816e61a521"
   },
   {
     "id": "honest-toil-extra-virgin-olive-oil-1l-cold-pressed-unfiltered",
@@ -9412,7 +9658,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "hot-honey-labneh-mezze-with-minted-courgettes-roasted-cherry-tomatoes-chickpeas-freshly-bakes-garlic-flatbread",
@@ -9436,8 +9684,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out two baking sheets, a small sauce pan, and a large cast iron griddle pan or a frying pan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -9531,7 +9779,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "c9f254d4550014cc323393251b594a8c0483abf67285d162e49da9fed6f11cb4"
   },
   {
     "id": "hot-honey-labneh-mezze-with-smoky-grilled-aubergine-roasted-cherry-tomatoes-crispy-chickpeas-freshly-baked-garlic-flatbread",
@@ -9555,8 +9805,8 @@
         "id": "step-1",
         "raw_text": "Preheat the oven to 220°C/200°C fan. Take out two large roasting trays. You'll want enough space to lay the aubergine slices in a single layer, with the cherry tomatoes and chickpeas on the second tray.",
         "label": "Preheat the oven to 220°C/200°C fan",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -9634,7 +9884,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "2a95534c5dc99a1f33902a7f9d5e0356d62d34c7de49265dc06d8d4a98ac4ff9"
   },
   {
     "id": "hu-almond-butter-crispy-quinoa-dark-chocolate-60g",
@@ -9654,7 +9906,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "hu-salty-dark-chocolate-bar-60g",
@@ -9674,7 +9928,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "jackfruit-carnitas-burrito-with-chipotle-crema-beans-rice-pickles-salad",
@@ -9741,7 +9997,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "056c08fcd5721fe8ac0980c63e5ef6f52509f17e636c7193131fe47e4b100b33"
   },
   {
     "id": "jerusalem-artichoke-chaat-masala-with-green-chilli-dressing-tamarind-yoghurt-crispy-sev",
@@ -9765,8 +10023,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan. Take out two baking trays and a small frying pan.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -9846,7 +10104,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "5ab688881609ead12e68ea08a3abc4ffbccebe00cdb43c4a6ab9da20cb6104ee"
   },
   {
     "id": "kale-caesar",
@@ -9870,8 +10130,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan and take out a roasting tray, a small frying pan, and a large mixing bowl.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -9968,7 +10228,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "96f4e6296e780737c31fe9a52ccda493c2e0d91f7a428e152fc15dc359fbe7f2"
   },
   {
     "id": "katsu-curry-with-sesame-crusted-tofu-over-sticky-jasmine-rice-with-carrot-courgette-pickle",
@@ -9988,7 +10250,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "kimchi-noodle-soup-with-enoki-mushrooms-tender-silken-tofu-sesame-gochugaru-topping-fresh-coriander",
@@ -10008,7 +10272,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "kimchi-pancakes-with-sticky-soy-portobellos-gochujang-mayo-pickled-cucumbers",
@@ -10126,7 +10392,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "ea2d36b73917323002fa4d6e135e1e86e4fc76a157fd420c73dc0129e2a304f3"
   },
   {
     "id": "kimchi-stir-fried-noodles-with-crumbled-tempeh-baby-spinach-spring-onions-sesame-gochugaru-crunch",
@@ -10229,7 +10497,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "89e1b04f188824acb7e7f810a92a42311cf82aaa7387474c4ec91c87a6f34b4b"
   },
   {
     "id": "lahmacun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
@@ -10253,8 +10523,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out two mixing bowls and a baking tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -10331,7 +10601,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "ff2511a3e57a75b8500351f7401ecec9ce24dcd702fad94b5c9a63755467b754"
   },
   {
     "id": "lemon-blueberry-crumble-oat-pot",
@@ -10351,7 +10623,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "lemon-braised-butterbeans-in-a-rich-fiery-tomato-broth-with-farro-tangy-caper-salsa-verde",
@@ -10440,7 +10714,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "026ff38d211e245cf157b3a500fafba55f2466d9e2e940f328c9052409e65eb7"
   },
   {
     "id": "lemon-briased-chickpeas-in-a-preserved-lemon-broth-with-crispy-winter-vegetables-tangy-salsa-verde",
@@ -10464,8 +10740,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 220°C fan, then take out a large roasting tray, a steamer and a saucepan.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -10545,7 +10821,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "c14cbd637b7a4104e38431824075fdfbd864130294861d9e785b3e6cd2b0f9f9"
   },
   {
     "id": "lemon-ginger-detox-ramen-with-smoked-tofu-udon-noodles-cavolo-nero-carrot-superseed-chilli-crunch",
@@ -10684,7 +10962,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "8ae3c6c62bdc296f1886861e084f07652a6a1e1794b28361fa1e5af9be50b4f4"
   },
   {
     "id": "lemon-poppyseed-protein-fibre-bar-100-raw-whole-foods-copy",
@@ -10704,7 +10984,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "lions-mane-steak-with-chimichurri-crispy-baby-potatoes-watercress-bernaise-sauce",
@@ -10728,8 +11010,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a large cast iron skillet or frying pan and two roasting trays. You will also need a tea towel and a grill press, heavy saucepan/frying pan, or a flat metal lid to press down the lion's mane mushroom steaks while searing.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -10819,7 +11101,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "6c53536bf6ad87a6ac6b11c29e20025cac5f923b14c4c59e6e7cd358d3dc1b57"
   },
   {
     "id": "mac-greens-with-purple-sprouting-broccoli-crispy-kale-mezzi-rigatoni-in-a-creamy-cashew-sauce",
@@ -10843,8 +11127,8 @@
         "id": "step-1",
         "raw_text": "Boil your kettle, preheat your oven to 180°C / 160°C fan and take out a large saucepan and a large baking tray.",
         "label": "Boil your kettle, preheat your oven",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -10909,7 +11193,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "43101886011cacc7c8ae654012ff125b4f9f0eb6e98a2cc02a2604857f8b263b"
   },
   {
     "id": "mango-cauliflower-curry-with-cashews-garden-peas-coriander-and-fluffy-basmati-rice",
@@ -10984,7 +11270,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "727e079894d903d69111a64692530244968357d214adb7d3c19e75cefc188f27"
   },
   {
     "id": "mango-crispy-rice-salad-with-smacked-cucumber-avocado-black-beans-toasted-cashews-tahini-chilli-crunch-dressing",
@@ -11008,8 +11296,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Boil your kettle, then take out a saucepan, a roasting tray, and a large mixing bowl. Line the roasting tray with a sheet of parchment paper.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -11107,7 +11395,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "9392aa1f2b999338b0781fedcda36a097133db1ba99c244fd671efe56a57e8f7"
   },
   {
     "id": "mango-passion-fruit-oat-pot-200g",
@@ -11127,7 +11417,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "mango-soba-noodle-salad-with-avocado-edamame-cashews-pickled-radish-toasted-seeds-crispy-onions",
@@ -11227,7 +11519,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "40e2bf9345bf2fa118e11a6ec3081112f3204d6de347fedf7ea5ed259786919b"
   },
   {
     "id": "mapo-tofu-udon-noodles-in-creamy-gochujang-sauce-with-fresh-cucumber-salad-toasted-sesame-seeds",
@@ -11345,7 +11639,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "759a245d848afd106206fc54c59753ce841f23af00ce7b46b399df5ddfb2f144"
   },
   {
     "id": "massaman-tofu-potato-curry-with-toasted-flaked-almonds-organic-cultured-yoghurt-blistered-green-beans-garlic-naan",
@@ -11369,8 +11665,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a roasting tray, a griddle pan or frying pan, and a saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -11473,7 +11769,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "ff69cc06ffda43dfad839b66c0c52833f97f20422cd6d772882cbdcdaabe78dc"
   },
   {
     "id": "middle-eastern-aubergine-flatbreads-with-labneh-pomegranate-crispy-chickpeas-garlic-tahini-fresh-mint",
@@ -11497,8 +11795,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan, take out two baking trays and a frying pan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -11561,7 +11859,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "4c609a8b054688da455a6aee5ecef4573f790f49ef7e1ab03c85019e6afcbfec"
   },
   {
     "id": "miso-ginger-summer-noodle-broth-with-silken-tofu-fresh-herbs-chilli-crisp-drizzle",
@@ -11581,7 +11881,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "miso-kimchi-farro-bowl",
@@ -11696,7 +11998,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "dd617ba776959e282f796ccf7aba4c368d539e1d65e5fbe8f7a8057b3383fc00"
   },
   {
     "id": "miso-mushrom-orzotto-with-vegan-stracciatella-chilli-pine-nut-crumb",
@@ -11794,7 +12098,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "2d0ef079f6421f323fb763f234d22f0cd4f10980c653a67dbc42c8f902d66a7a"
   },
   {
     "id": "miso-pumpkin-cauliflower-gratin-with-tender-butter-beans-cavolo-nero-crispy-sage",
@@ -11818,8 +12124,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a frying pan and a shallow casserole or baking dish (~25-30cm diameter / 4-5cm depth). NB: If you don't have a shallow baking dish, we recommend roasting the cauliflower separately in a baking tray, heating the sauce through in a pot on the hob and then combining.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -11882,7 +12188,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "1bbcdb05ca907fc58c58c518a7d1641889cf64d025809bb0fe1c233d07ad8483"
   },
   {
     "id": "mixed-vegetable-paella-with-caramelised-fennel-courgette-red-pepper-garden-peas-fresh-parsley",
@@ -11979,7 +12287,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "766ff6017ebf54e6fb377d5ad11f98f2a11bd449c7eec4a65f939872355edd90"
   },
   {
     "id": "momo-organic-blood-orange-kombucha-330ml",
@@ -11999,7 +12309,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "momo-organic-elderflower-kombucha-330ml",
@@ -12019,7 +12331,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "momo-organic-ginger-lemon-kombucha-330ml",
@@ -12039,7 +12353,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "momo-organic-kombucha-bundle",
@@ -12059,7 +12375,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "momo-organic-raspberry-hibiscus-kombucha-330ml",
@@ -12079,7 +12397,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme",
@@ -12103,8 +12423,8 @@
         "id": "step-1",
         "raw_text": "Preheat the oven to 220°C/200°C fan. Take out a large roasting tray, a frying pan, and a small saucepan.",
         "label": "Preheat the oven to 220°C/200°C fan",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -12205,7 +12525,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "ed886a1136f5b821f511dff5630f260218c278eb7075f885d1cba3138629ea0b"
   },
   {
     "id": "mushroom-shawarma",
@@ -12229,8 +12551,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large roasting tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -12304,7 +12626,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "3f1f90df573e22830d9e78eb6c2a2bdead7bd521f4f0af501b8661fee7e3b77b"
   },
   {
     "id": "nourishing-sushi-bowl-with-coconut-sesame-crusted-tofu-gochujang-peanut-sauce",
@@ -12434,7 +12758,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "fde2fa641263f972cafab871be07a7ed70cc251b171d2d641afa91c26dc8eda6"
   },
   {
     "id": "oat-pot-bundle-2-pots",
@@ -12454,7 +12780,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "okonomiyaki-japanese-pancakes-with-tenderstem-edamame-smokey-mayo-sticky-soy-dressing",
@@ -12474,7 +12802,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "ombar-mylk-chocolate-1",
@@ -12563,7 +12893,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "ca95eb7010f1d8617130b88fe42fd50149f5c5585fc5e93ed3f42823a98ea9ad"
   },
   {
     "id": "ombar-salt-nibs-1",
@@ -12583,7 +12915,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "one-pot-cheats-mushroom-lasagne-with-creamy-miso-bechamel-shredded-green-kale",
@@ -12607,8 +12941,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large hob- and oven-proof casserole dish or deep ovenproof pan, along with a roasting tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -12705,7 +13039,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "c48fbf9c2b54bed81d377f32e4c59c3d488d6ed3e34926e57832bd719f048c70"
   },
   {
     "id": "oyster-mushroom-bulgogi-bowl-with-sticky-sushi-rice-kimchi-cucumber-salad-toasted-sesame-seeds",
@@ -12825,7 +13161,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "4ec93b9dedcfeb6baaa031125ba444af19f7968ae5d7a47cbd45189430f05856"
   },
   {
     "id": "oyster-mushroom-bulgogi-skewers-in-baby-gem-lettuce-wraps-with-rice-kimchi-sesame-seeds",
@@ -12845,7 +13183,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "oyster-mushroom-shawarma-skewers-with-bulgar-tabbouleh-fresh-hummous-sumac-pickled-cabbage-cherry-tomatoes-tahini-sauce",
@@ -12981,7 +13321,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "9a8d0c0e85cc47c14fba4e52679eaac1dd18fc4d99b195c732d8dd5952b6d475"
   },
   {
     "id": "oyster-mushroom-shawarma-tacos-with-garlic-tahini-sauce-chopped-shirazi-salad-sumac-pickled-onions",
@@ -13005,8 +13347,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 180°C / 200°C fan, then take out a large roasting tray.",
         "label": "Preheat your oven to 180°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -13084,7 +13426,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "1c7c8b4fcab33d9908680e26eef918355694a224495108be2d01d1f2518fa820"
   },
   {
     "id": "pad-thai-noodles-with-sugar-snap-peas-red-pepper-carrot-crushed-peanuts-spring-onion",
@@ -13159,7 +13503,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "e66d7cec569e158dcb7032433351516c9f38137b36d3060d0d44693d1735ac09"
   },
   {
     "id": "pasta-alla-nerano-with-regenerative-spelt-radiatori-crispy-courgette-peas-tenderstem-lemon-garlic-breadcrumbs",
@@ -13281,7 +13627,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "2fd43045c8460d6a22dc13dcb1c96903f2a6ebdfe40ad4212f8a6da4a9d86388"
   },
   {
     "id": "pasta-e-fagioli-with-borlotti-beans-radiatori-pasta-braised-cavolo-nero-almond-parmesan",
@@ -13384,7 +13732,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "55480cb672c75b44f6fe3fec87c56d92bfbfe3010e0c872a254781ffe53ab432"
   },
   {
     "id": "peanut-butter-curry-with-sweet-potato-tenderstem-broccoli-crushed-peanuts-chilli-lime",
@@ -13449,7 +13799,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "40339870bd471f5a75bdc41664f5faeb20b0e7fdebdf46bb38db1156f6902a52"
   },
   {
     "id": "peanut-butter-ramen-with-smokey-garlic-sesame-tempeh-pak-choi-toasted-peanuts-lime",
@@ -13572,7 +13924,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "a809998464af41739c9f38e53672d2a081565462169af3144b6957c94ce5a15e"
   },
   {
     "id": "peanut-butter-raspberry-oat-pot",
@@ -13592,7 +13946,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "pip-nut-crunchy-peanut-butter-1kg",
@@ -13612,7 +13968,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "pip-nut-smooth-peanut-butter-1kg",
@@ -13632,7 +13990,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "plenish-organic-almond-barista-milk-1l",
@@ -13652,7 +14012,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "plenish-organic-gluten-free-oat-milk-1l",
@@ -13672,7 +14034,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "plenish-organic-oat-barista-milk-1l",
@@ -13692,7 +14056,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "porcini-lentil-ragu-over-wholewheat-rigatoni-with-savoy-cabbage-garden-peas",
@@ -13812,7 +14178,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "5450bef16b66518d02dd93f45d8de7f2d78cd2f22e66e3531aad5a19fcaa2814"
   },
   {
     "id": "porcini-lentil-red-wine-stew-with-swede-portobello-mushrooms-rainbow-chard-cream-chives",
@@ -13832,7 +14200,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "pumpkin-laksa-with-crispy-oyster-mushrooms-pak-choi-carrots-udon-noodles",
@@ -13950,7 +14320,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "1f6c41df28bf3c195ebc0783931be0c62970c10ba84f317b9d23ab15df684cb1"
   },
   {
     "id": "rainbow-sushi-bowl",
@@ -14013,7 +14385,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "ee36b93b561516ad59a52bd67973e16aa561bfb530fa32215e1a31357178efe1"
   },
   {
     "id": "ras-el-hanout-sweet-potato-tofu-bowl-with-green-tahini-sumac-onion-cucumber-salad",
@@ -14033,7 +14407,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "rebel-kitchen-100-pure-organic-coconut-water",
@@ -14053,7 +14429,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "red-lentil-pasta-bake-with-butter-beans-tenderstem-broccoli-cheesy-miso-bechamel",
@@ -14077,8 +14455,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and boil your kettle. Take out a saucepan, a wide oven dish, and a small baking tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -14160,7 +14538,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "41e0c3d9e0284281d98a2037add9d14986df28a23409dd4fcbc6cb34259b18f3"
   },
   {
     "id": "rhubarb-blood-orange-granola-pot-limited-edition",
@@ -14180,7 +14560,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "rich-cherry-tomato-orecchiette-with-borlotti-creamy-burrata-crispy-garlic-fresh-basil",
@@ -14283,7 +14665,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "0f13f2d4f4d3ea4437b50d2c91dd87963f9b1a884b9810694f8d584e78803ed2"
   },
   {
     "id": "rich-creamy-brothy-butter-beans-with-roasted-squash-salsa-verde-toasted-pine-nuts-pumpkin-seeds",
@@ -14307,8 +14691,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a baking tray, a large saucepan, and a small frying pan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -14403,7 +14787,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "8f4d40f705f2d3180f94bcc00c9b280bb20513ed28ef4453d7cfbb0ab1c4982a"
   },
   {
     "id": "rich-creamy-cacio-e-pepe-butterbeans-with-tenderstem-broccoli-smokey-chipotle-toasted-sunflower-seeds",
@@ -14427,8 +14813,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a baking tray and large saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -14509,7 +14895,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "9f8b83eb54efef3ac80f29944b504c99a783fa217767c7fadaebadc9e28b0b35"
   },
   {
     "id": "rich-creamy-mushroom-stroganoff-with-chickpeas-baby-spinach-basmati-rice-fresh-parsley",
@@ -14529,7 +14917,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "rich-creamy-tofu-butter-chicken-with-baby-spinach-garlic-naan-toasted-almond-flakes",
@@ -14635,7 +15025,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "9d4c62fd859ed06b520401326cb1dcb85f64450b6e0a291e051ab8ffbfaec45a"
   },
   {
     "id": "rich-creamy-tofu-tikka-masala-with-toasted-flaked-almonds-organic-cultured-soy-yoghurt-basmati-rice",
@@ -14760,7 +15152,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "2e1fdd3d69c66f57f229555052dfe95ac7399bb0e8e0b305366ca0c1d0d6387d"
   },
   {
     "id": "rich-fragrant-laksa-with-tofu-pak-choi-vermicelli-noodles-crispy-shallots-chilli-coriander-lime",
@@ -14880,7 +15274,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "1dc12850c0b690225595a3a124afdd00e153d083f3053596f5bc8dafa9a5b865"
   },
   {
     "id": "rich-luxurious-black-daal-makhani-with-crispy-bombay-potatoes-coconut-yoghurt",
@@ -14963,7 +15359,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "12d6eef381bcd385219756c4bbabb2f4b517ba0b948bdbc4eee02d0ab01c415e"
   },
   {
     "id": "rich-nourishing-tuscan-ribollita-with-ciabatta-croutons-cavolo-nero-almond-parmesan",
@@ -14987,8 +15385,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan and take out a large saucepan and a baking tray.",
         "label": "Preheat your oven to 200°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -15050,7 +15448,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "0c6be005bf9772a90d5138777ed3003f76e1bf6dd98c9b25891709aa3856280e"
   },
   {
     "id": "rich-pearl-barley-mushroom-risotto-with-braised-cavolo-nero-toasted-hazelnuts-crispy-sage",
@@ -15070,7 +15470,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "rich-porcini-red-wine-lentil-ragu-over-creamy-polenta-with-crispy-oyster-mushrooms",
@@ -15192,7 +15594,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "9ec56eed78ba3c63fd584a8d7a2eab63dfdbca82711dbbb453af11ed3adcba45"
   },
   {
     "id": "rich-saucy-lentils-charred-aubergine-over-whipped-tahini-with-sumac-onion-pickle-fresh-parsley",
@@ -15212,7 +15616,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "rich-smokey-black-bean-birria-soup-with-charred-corn-avocado-crema-crunchy-tortilla-chips",
@@ -15232,7 +15638,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "rich-tomato-roasted-red-pepper-soup-with-grilled-cheese-croutons-zingy-salsa-verde",
@@ -15252,7 +15660,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "roasted-sweet-potato-with-curried-chickpeas-baby-spinach-organic-cultured-soy-yoghurt-pink-pickled-onions",
@@ -15276,8 +15686,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -15342,7 +15752,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "384905c9180be6c8d862b7ec5f85e582ff33f62f1d4732106f0f9614199c0c3a"
   },
   {
     "id": "rotisserie-tofu-wrap-with-creamy-caesar-dressing-chopped-salad-baby-gem-in-soft-tortilla",
@@ -15445,7 +15857,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "e7c6e1f7bd136a8271dc0976488f46be052b2cb574946596d923a6990b49065f"
   },
   {
     "id": "sardinian-longevity-minestrone",
@@ -15465,7 +15879,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "saucy-harissa-butternut-squash-baked-beans-with-melted-mozzarella-warm-dunking-ciabatta",
@@ -15485,7 +15901,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "saucy-sesame-miso-noodles-with-minted-sugar-snaps-edamame-cashews-radish-chilli-crunch-cucumber-salad",
@@ -15607,7 +16025,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "a71dc909b8299c0efb4df37dd4f47ba5e3ca1cbc4c7193525f17331f7797e5ca"
   },
   {
     "id": "savoy-cabbage-dumplings-with-garlic-ginger-miso-brothy-rice-umami-chilli-crisp-drizzle",
@@ -15727,7 +16147,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "5fee34bbf8216e23da29f9c84bcf7592f19756469e0e011a6d639e1d88074c1e"
   },
   {
     "id": "sesame-noodles-with-crispy-tempeh-mince-braised-cavolo-nero-fragrant-thai-basil",
@@ -15846,7 +16268,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "a68113c60472f43474684df5784717f199c619a17355a2f5fef97fb612ca6ce3"
   },
   {
     "id": "shawarma-wrap-with-crispy-spiced-tofu-sumac-pickled-onions-green-tahini-sauce-fresh-salad",
@@ -15870,8 +16294,8 @@
         "id": "step-1",
         "raw_text": "Preheat the oven to 220°C / 200°C fan and take out a frying pan and a mixing bowl.",
         "label": "Preheat the oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -15953,7 +16377,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "db7277c41ff79bdd6476cd27649697982669442d7bcbe41fcda08654ffffece0"
   },
   {
     "id": "shredded-tofu-tacos-in-guajillo-adobo-sauce-with-guacamole-pico-de-gallo-on-soft-tortillas",
@@ -15977,8 +16403,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large roasting tray, saucepan and a large frying pan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -16076,7 +16502,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "8f08bfd08f9d4384cd261a2b9f6fdbfaca4def9b2766f2fe9dc5c787e8207bb1"
   },
   {
     "id": "sichuanese-mapo-tofu",
@@ -16197,7 +16625,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "ca4e196aed3d1d39ad3ffe6debc37ae1cfdb063465e15601f4a12330862be2b2"
   },
   {
     "id": "silken-tofu-with-sweet-spicy-mushroom-sauce-over-sushi-rice-gochugaru-garlic-crunch",
@@ -16217,7 +16647,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "slow-cooked-mushroom-bourguignon-over-creamy-mash-with-green-kale",
@@ -16321,7 +16753,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "3339fbc3ebcfebaf022c8b2de61317a7f73a1594492dfce29eec2d0436c569c9"
   },
   {
     "id": "smashed-falafel-tacos-with-garlic-tahini-sauce-sumac-cabbage-onion-pickle-fresh-salad-on-regenerative-wheat-tortillas-copy",
@@ -16424,7 +16858,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "55480cb672c75b44f6fe3fec87c56d92bfbfe3010e0c872a254781ffe53ab432"
   },
   {
     "id": "smoked-tofu-chipotle-burrito-bowl-with-black-beans-avocado-charred-corn-crispy-tortillas",
@@ -16448,8 +16884,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a saucepan, frying pan and large roasting tray.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -16550,7 +16986,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "07b1744746c935c60c600a0ad0bdffcf6c2cb297ab4bc883b283184b084b10a8"
   },
   {
     "id": "smokey-pumpkin-white-bean-soup-with-crispy-sage-toasted-seeds-organic-ciabatta",
@@ -16570,7 +17008,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "smokey-shakshuka-with-whipped-tahini-dukkah-soft-garlic-flatbread",
@@ -16672,7 +17112,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "bf249e2a0f45a7f36764c0fd938959ab89cad5b4985899c1e622277055da1131"
   },
   {
     "id": "smoky-spanish-beans-in-roasted-pepper-sun-dried-tomato-sauce-organic-yoghurt-avocado-salsa-quinoa",
@@ -16794,7 +17236,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "439bbd7956b750586c63ec9bb8b64892a2403f365e0c382386740882bc9b5ed8"
   },
   {
     "id": "smoky-whole-roasted-aubergine-over-creamy-whipped-tahini-with-hot-agave-harissa-fresh-parsley-flatbreads",
@@ -16818,8 +17262,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out two baking trays and a small saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -16870,7 +17314,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "7d87b147733e269fa67dbdd7eedd26a7bd4126bc11e16ce8325a512cd4acacbb"
   },
   {
     "id": "snack-bar-bundle-x-3-100-raw-whole-foods-copy",
@@ -16890,7 +17336,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "soba-noodle-salad",
@@ -16923,7 +17371,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "6d34b56621f0cdee26ba1e68306e89eb91730c30367d3754f9305d1046f8ff8f"
   },
   {
     "id": "soba-noodle-salad-with-kimchi-green-vegetable-medley-lime-satay-sauce-super-seed-topping",
@@ -16943,7 +17393,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "spiced-aubergine-saffron-yoghurt",
@@ -16979,7 +17431,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "59049c52c107d71b9989f5a6e561f09b6fba7ad7c40e76c31959606509bfae15"
   },
   {
     "id": "spiced-carrot-red-lentil-soup-with-cheese-cranberry-toastie-dipper",
@@ -16999,7 +17453,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "spiced-veg-stew",
@@ -17019,7 +17475,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "spicy-dan-dan-noodles",
@@ -17137,7 +17595,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "2d4c0d11dcfebe9db8439fd1373702abe621508adc011c909f6d086abe778684"
   },
   {
     "id": "spicy-gochujang-ramen-with-charred-oyster-mushrooms-vibrant-greens-sesame-gochugaru-crunch",
@@ -17157,7 +17617,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "spicy-quinoa-burger",
@@ -17223,7 +17685,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "11a545dcbe5a09d6b6291c13c4b933091295b138d4cbd21e07f40799434cc3ce"
   },
   {
     "id": "spicy-turmeric-lemongrass-laksa",
@@ -17329,7 +17793,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "55a961bdb7c7e65ea2bb009b917885b5a43047562f7061c6e56491712de01137"
   },
   {
     "id": "spring-buckwheat-galette-with-asparagus-mushroom-spinach-in-wild-garlic-sauce-with-dressed-salad",
@@ -17430,7 +17896,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "4b9960900c758b389e977455bb67528c34d6e4db7ca3ce50e4d639a581f84eda"
   },
   {
     "id": "spring-orzo-salad-with-asparagus-artichokes-olives-creamy-butterbeans-herby-mustard-vinaigrette",
@@ -17450,7 +17918,9 @@
     },
     "schema_version": 1,
     "steps": [],
-    "cookable": false
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "squash-apricot-tagine",
@@ -17474,8 +17944,8 @@
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan, boil your kettle, and take out a baking tray and a large saucepan.",
         "label": "Preheat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
@@ -17566,7 +18036,9 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "580ec5cb588d778a3df7268a9b81d85d4f676843d459fdcc4d9e434f28028cab"
   },
   {
     "id": "sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
@@ -17689,6 +18161,8 @@
         "notes": ""
       }
     ],
-    "cookable": true
+    "cookable": true,
+    "provenance": "fallback",
+    "source_hash": "662dcf5ff66afa1200affef8391b6f281b97897ef437bb68fe2ea7f2dd26daf1"
   }
 ]

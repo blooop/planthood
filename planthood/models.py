@@ -119,11 +119,21 @@ class RecipeStep(BaseModel):
 
 
 class ParsedRecipe(RecipeMeta):
-    """Recipe with enriched, dependency-aware steps (pre-scheduling)."""
+    """Recipe with enriched, dependency-aware steps (pre-scheduling).
+
+    ``provenance`` records how the steps were produced so daily runs can resume:
+      * ``llm``      — genuine model enrichment (skip on future runs unless the text changed)
+      * ``fallback`` — deterministic enrichment (a candidate for LLM enrichment next run)
+      * ``none``     — non-cookable / no steps
+    ``source_hash`` fingerprints the extracted steps the enrichment was based on, so a
+    re-scraped recipe whose text changed is re-enriched rather than kept stale.
+    """
 
     schema_version: int = SCHEMA_VERSION
     steps: List[RecipeStep] = Field(default_factory=list)
     cookable: bool = True
+    provenance: str = "none"
+    source_hash: str = ""
 
 
 # --------------------------------------------------------------------------- #

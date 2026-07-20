@@ -43,11 +43,13 @@ def cmd_extract(_args) -> None:
 def cmd_enrich(args) -> None:
     extracted = _load(io.EXTRACTED_PATH, ExtractedRecipe, "extracted recipes")
     provider = get_provider(args.provider)
-    print(f"Enriching with provider: {provider.name}")
-    parsed = enrich_all(extracted, provider=provider, use_cache=not args.no_cache)
-    # Merge-safe: a failed (empty) enrichment never clobbers a previously-good parse.
-    final = io.save_recipes(io.PARSED_PATH, parsed, ParsedRecipe, merge=not args.replace)
-    print(f"Enriched {len(parsed)} recipes; {sum(1 for r in final if r.steps)} have steps")
+    # Resume from prior results: recipes already LLM-enriched (for their current text) are
+    # reused, so a daily run only spends quota on the backlog. --fresh ignores prior results.
+    existing = None if args.fresh else io.load_recipes(io.PARSED_PATH, ParsedRecipe)
+    print(f"Enriching with provider: {provider.name} (limit={args.limit or 'none'})")
+    parsed = enrich_all(extracted, provider=provider, existing=existing, limit=args.limit)
+    io.dump_recipes(io.PARSED_PATH, parsed)  # parsed is the complete, resume-aware set
+    print(f"Enriched {len(parsed)} recipes; {sum(1 for r in parsed if r.steps)} have steps")
     print(f"Saved to {io.PARSED_PATH}")
 
 
@@ -120,22 +122,25 @@ def main(argv=None) -> None:
         p.add_argument("--provider", default=None,
                        help="LLM provider (anthropic|openai|gemini|mock). Default: $LLM_PROVIDER or anthropic")
 
+    def add_enrich_opts(p):
+        add_provider(p)
+        p.add_argument("--limit", type=int, default=0,
+                       help="max recipes to LLM-enrich this run (0 = no cap; 'X per day')")
+        p.add_argument("--fresh", action="store_true",
+                       help="ignore prior results and re-enrich from scratch")
+
     p_ex = sub.add_parser("extract", help="raw -> extracted (deterministic)")
     p_ex.set_defaults(func=cmd_extract)
 
-    p_en = sub.add_parser("enrich", help="extracted -> parsed (LLM)")
-    add_provider(p_en)
-    p_en.add_argument("--no-cache", action="store_true", help="ignore the enrichment cache")
-    p_en.add_argument("--replace", action="store_true", help="overwrite instead of merge-safe save")
+    p_en = sub.add_parser("enrich", help="extracted -> parsed (LLM; resumes from prior run)")
+    add_enrich_opts(p_en)
     p_en.set_defaults(func=cmd_enrich)
 
     p_sc = sub.add_parser("schedule", help="parsed -> scheduled")
     p_sc.set_defaults(func=cmd_schedule)
 
     p_bd = sub.add_parser("build-data", help="extract + enrich + schedule")
-    add_provider(p_bd)
-    p_bd.add_argument("--no-cache", action="store_true")
-    p_bd.add_argument("--replace", action="store_true")
+    add_enrich_opts(p_bd)
     p_bd.set_defaults(func=cmd_build_data)
 
     p_q = sub.add_parser("quality", help="print the quality scorecard")
