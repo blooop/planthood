@@ -3,14 +3,17 @@
 from __future__ import annotations
 
 import json
+import time
 from typing import Dict, List, Optional
 
 from ..io import DATA_DIR, Cache, content_hash
-from ..llm import STEPS_MARKER, LLMProvider, get_provider
+from ..llm import STEPS_MARKER, LLMProvider, get_provider, mock_enrich_steps
 from ..llm import _infer_duration, _infer_equipment, _infer_temp, _infer_type  # fallbacks
 from ..models import ExtractedRecipe, ParsedRecipe, RecipeStep
 
 PROMPT_VERSION = "enrich-v1"
+MAX_DURATION_MIN = 240  # clamp absurd LLM durations (a step over 4h is a hallucination)
+LLM_RETRIES = 3
 
 ENRICH_SCHEMA = {
     "type": "object",
@@ -82,6 +85,7 @@ def _coerce_step(raw: dict, *, step_id: str, raw_text: str) -> RecipeStep:
     dur = raw.get("estimated_duration_minutes")
     if not isinstance(dur, int) or dur < 1:
         dur = _infer_duration(raw_text, stype)
+    dur = min(dur, MAX_DURATION_MIN)  # clamp hallucinated durations
 
     label = (raw.get("label") or "").strip() or " ".join(raw_text.split()[:6]).rstrip(".,")
 
@@ -142,12 +146,36 @@ def _build_steps(recipe: ExtractedRecipe, enriched: List[dict]) -> List[RecipeSt
     return _sanitize_graph(steps)
 
 
+def _mock_steps(recipe: ExtractedRecipe) -> List[RecipeStep]:
+    """Deterministic enrichment of the extracted steps (no LLM). Used as the fallback
+    when a weak/flaky model returns nothing usable, so a cookable recipe is never empty."""
+    payload = [{"id": s.id, "text": s.text} for s in recipe.steps]
+    return _build_steps(recipe, mock_enrich_steps(payload))
+
+
+def _complete_with_retry(provider: LLMProvider, system: str, user: str) -> object:
+    """Call the provider, retrying transient failures (rate limits, timeouts)."""
+    last: Optional[Exception] = None
+    for attempt in range(LLM_RETRIES):
+        try:
+            return provider.complete_json(system, user, ENRICH_SCHEMA)
+        except Exception as e:  # noqa: BLE001 - provider SDKs raise varied error types
+            last = e
+            if attempt < LLM_RETRIES - 1:
+                time.sleep(2 * (attempt + 1))
+    raise last if last else RuntimeError("enrichment failed")
+
+
 def enrich_recipe(
     recipe: ExtractedRecipe,
     provider: Optional[LLMProvider] = None,
     cache: Optional[Cache] = None,
 ) -> ParsedRecipe:
-    """Enrich one extracted recipe into a ParsedRecipe."""
+    """Enrich one extracted recipe into a ParsedRecipe.
+
+    Robust to poor/flaky models: a failed or empty LLM response falls back to deterministic
+    enrichment rather than producing an empty cookable recipe.
+    """
     base = recipe.model_dump(
         exclude={"schema_version", "method_clean", "steps", "extraction_method",
                  "needs_llm_segmentation", "notes", "cookable"}
@@ -163,8 +191,12 @@ def enrich_recipe(
     key = content_hash("enrich", PROMPT_VERSION, provider.name, recipe.id, user)
     result = cache.get(key) if cache else None
     if result is None:
-        result = provider.complete_json(system, user, ENRICH_SCHEMA)
-        if cache:
+        try:
+            result = _complete_with_retry(provider, system, user)
+        except Exception as e:  # noqa: BLE001
+            print(f"Enrich LLM failed for {recipe.id}: {e}; using deterministic fallback")
+            result = None
+        if result is not None and cache:
             cache.set(key, result)
 
     # Accept both {"steps": [...]} (Anthropic/OpenAI schema) and a bare [...] array
@@ -175,7 +207,10 @@ def enrich_recipe(
         enriched = result
     else:
         enriched = []
+
     steps = _build_steps(recipe, enriched)
+    if not steps:  # model returned nothing usable → deterministic fallback
+        steps = _mock_steps(recipe)
     return ParsedRecipe(**base, steps=steps, cookable=recipe.cookable)
 
 
@@ -197,5 +232,7 @@ def enrich_all(
                 exclude={"schema_version", "method_clean", "steps", "extraction_method",
                          "needs_llm_segmentation", "notes", "cookable"}
             )
-            out.append(ParsedRecipe(**base, steps=[], cookable=r.cookable))
+            # Even on unexpected failure, keep grounded steps via deterministic fallback.
+            steps = _mock_steps(r) if (r.cookable and r.steps) else []
+            out.append(ParsedRecipe(**base, steps=steps, cookable=r.cookable))
     return out

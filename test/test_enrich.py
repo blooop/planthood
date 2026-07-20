@@ -74,6 +74,32 @@ def test_graph_refs_sanitized():
     assert parsed.steps[1].can_overlap_with == []   # self and ghost dropped
 
 
+def test_llm_failure_falls_back_to_deterministic_steps():
+    # A flaky/poor model that always errors must not yield an empty cookable recipe.
+    ex = _extracted(["Preheat the oven to 200C.", "Roast for 20 minutes.", "Serve."])
+
+    class Flaky(LLMProvider):
+        def complete_json(self, system, user, schema):
+            raise RuntimeError("rate limited")
+
+        @property
+        def name(self):
+            return "flaky"
+
+    parsed = enrich_recipe(ex, provider=Flaky())
+    assert len(parsed.steps) == 3          # fallback filled all steps
+    assert all(s.estimated_duration_minutes >= 1 for s in parsed.steps)
+    assert parsed.steps[0].type == "prep"  # inferred from "Preheat"
+
+
+def test_absurd_duration_is_clamped():
+    ex = _extracted(["Simmer."])
+    provider = FakeProvider({"steps": [{"id": "step-1", "label": "Simmer", "type": "cook",
+                                        "estimated_duration_minutes": 99999}]})
+    parsed = enrich_recipe(ex, provider=provider)
+    assert parsed.steps[0].estimated_duration_minutes <= 240
+
+
 def test_non_cookable_yields_no_steps_without_calling_llm():
     ex = _extracted([], cookable=False, extraction_method="none")
 
