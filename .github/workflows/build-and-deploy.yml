@@ -31,7 +31,9 @@ jobs:
       # Configure via repo settings: set variable LLM_PROVIDER (default gemini) and the
       # matching API-key secret. Only the secret for the chosen provider needs to be set.
       LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'gemini' }}
-      GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-pro' }}
+      GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.5-flash' }}
+      # Pace LLM calls under the provider's per-minute limit (Gemini free tier ~5 RPM).
+      ENRICH_MIN_INTERVAL_SEC: ${{ vars.ENRICH_MIN_INTERVAL_SEC || '13' }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
