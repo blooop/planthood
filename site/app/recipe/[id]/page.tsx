@@ -6,9 +6,10 @@ import { fetchRecipeImage } from '@/lib/images';
 import RecipeImage from '@/components/RecipeImage';
 
 interface RecipePageProps {
-  params: {
+  // Next 15: route params are async and must be awaited before use.
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 // Generate static paths only for processed recipes (those with a real timeline).
@@ -21,7 +22,8 @@ export async function generateStaticParams() {
 }
 
 export default async function RecipePage({ params }: RecipePageProps) {
-  const recipe = getRecipeById(params.id);
+  const { id } = await params;
+  const recipe = getRecipeById(id);
 
   if (!recipe) {
     notFound();
