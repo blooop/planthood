@@ -108,23 +108,22 @@ class OpenAIProvider(LLMProvider):
 
 
 class GeminiProvider(LLMProvider):
-    """Google Gemini via JSON response mime type."""
+    """Google Gemini via JSON response mime type (google-genai SDK)."""
 
     def __init__(self, api_key: Optional[str] = None, model: Optional[str] = None):
-        import google.generativeai as genai
+        from google import genai
 
         key = api_key or os.getenv("GEMINI_API_KEY")
         if not key:
             raise ValueError("GEMINI_API_KEY not set")
         self.model_name = model or os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
-        genai.configure(api_key=key)
-        self._genai = genai
-        self.model = genai.GenerativeModel(self.model_name)
+        self.client = genai.Client(api_key=key)
 
     def complete_json(self, system: str, user: str, schema: dict) -> object:
-        resp = self.model.generate_content(
-            f"{system}\n\n{user}",
-            generation_config={"temperature": 0, "response_mime_type": "application/json"},
+        resp = self.client.models.generate_content(
+            model=self.model_name,
+            contents=f"{system}\n\n{user}",
+            config={"temperature": 0, "response_mime_type": "application/json"},
         )
         return json.loads(resp.text)
 
