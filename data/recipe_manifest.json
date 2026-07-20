@@ -1,7 +1,7 @@
 {
-  "total_recipes": 291,
-  "failed_recipes": 2,
-  "last_updated": "2026-07-20 18:06:17",
+  "total_recipes": 293,
+  "failed_recipes": 0,
+  "last_updated": "2026-07-20 18:08:29",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -1656,16 +1656,16 @@
       "week_label": null
     },
     {
-      "id": "sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
-      "title": "Sri Lankan Daal With Crispy Courgette & Corn Fritters, Date Tamarind Chutney & Organic Soy Yoghurt",
-      "url": "https://planthood.co.uk/products/sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
+      "id": "squash-gratin",
+      "title": "Butternut Squash & White Bean Gratin In Rich & Creamy Cashew, White Wine & Mustard Sauce With Cavolo Nero",
+      "url": "https://planthood.co.uk/products/squash-gratin",
       "scraped": true,
       "week_label": null
     },
     {
-      "id": "squash-gratin",
-      "title": "Butternut Squash & White Bean Gratin In Rich & Creamy Cashew, White Wine & Mustard Sauce With Cavolo Nero",
-      "url": "https://planthood.co.uk/products/squash-gratin",
+      "id": "sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
+      "title": "Sri Lankan Daal With Crispy Courgette & Corn Fritters, Date Tamarind Chutney & Organic Soy Yoghurt",
+      "url": "https://planthood.co.uk/products/sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
       "scraped": true,
       "week_label": null
     },
@@ -2039,16 +2039,21 @@
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "scraped": true,
       "week_label": null
-    }
-  ],
-  "failed_urls": [
-    {
-      "url": "https://planthood.co.uk/products/summer-daal-courgette-pickle-crispy-kale",
-      "error": "Failed to fetch page"
     },
     {
+      "id": "summer-daal-courgette-pickle-crispy-kale",
+      "title": "Summer Coconut & Turmeric Daal With Tangy Courgette Pickle, Crispy Kale & Red Quinoa",
+      "url": "https://planthood.co.uk/products/summer-daal-courgette-pickle-crispy-kale",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "winter-harvest-apple-kale-salad-with-sweet-potato-pomegranate-maple-tahini-dressing",
+      "title": "Winter Harvest Bowl With Roasted Sweet Potato, Candied Walnuts & Maple Tahini Dressing",
       "url": "https://planthood.co.uk/products/winter-harvest-apple-kale-salad-with-sweet-potato-pomegranate-maple-tahini-dressing",
-      "error": "Failed to fetch page"
+      "scraped": true,
+      "week_label": null
     }
-  ]
+  ],
+  "failed_urls": []
 }

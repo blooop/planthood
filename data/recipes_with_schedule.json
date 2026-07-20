@@ -22503,6 +22503,140 @@
     "active_time_min": 5
   },
   {
+    "id": "squash-gratin",
+    "title": "Butternut Squash & White Bean Gratin In Rich & Creamy Cashew, White Wine & Mustard Sauce With Cavolo Nero",
+    "source_url": "https://planthood.co.uk/products/squash-gratin",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 585.0,
+      "protein_g": 24.0,
+      "fat_g": 15.7,
+      "carbs_g": 84.5,
+      "fibre_g": 20.9,
+      "salt_g": 2.1
+    },
+    "schema_version": 1,
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a frying pan, and an oven proof casserole dish or a saucepan and a baking dish if you don't have one.",
+        "label": "Preheat your oven to 220°C /",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "casserole dish",
+          "frying pan",
+          "oven",
+          "pan",
+          "saucepan"
+        ],
+        "temperature_c": 220,
+        "notes": "",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 3
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Halve the butternut squash , peel it, and remove the pulp and seeds with a spoon. Slice the squash very thinly, about 2mm thick. You can use a vegetable peeler or a mandoline if you have one. *For this recipe, 500–550g of fresh squash is required, so if you have received a very large squash, you can save the rest for another meal or roast it separately on the side.",
+        "label": "Halve the butternut squash , peel",
+        "type": "cook",
+        "duration_min": 8,
+        "start_min": 3,
+        "end_min": 11,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 3,
+        "latest_end_min": 11
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Place your saucepan or oven-proof casserole dish over medium heat. Add the tin of cannellini beans including the brine and add three quarters of the creamy gratin sauce , reserving the rest for the end. Cook until piping hot and then remove from the heat. If you're using an oven proof casserole dish, arrange the squash over the top of the creamy beans, without overlapping too much. Don't do more than one single layer or it may not cook through. If you're using an oven dish, transfer the creamy beans from your saucepan to the dish and arrange the squash over the top of the beans. Drizzle olive oil over the top and season well with salt and pepper. Roast for 30 minutes or until the squash is cooked through, then add the remaining gratin sauce and roast for a further 5-10 minutes or until it browns a little.",
+        "label": "Place your saucepan or oven-proof casserole",
+        "type": "cook",
+        "duration_min": 7,
+        "start_min": 11,
+        "end_min": 18,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "casserole dish",
+          "oven",
+          "pan",
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 11,
+        "latest_end_min": 18
+      },
+      {
+        "id": "step-4",
+        "raw_text": "In the meantime, remove the tough stems from the cavolo nero and slice the leaves into bite-sized pieces. Place your frying pan over medium heat and add a drizzle of olive oil. Once hot, add the cavolo nero along with a splash of water and sauté until wilted and vibrant green, about 6–8 minutes. Season with salt and pepper.",
+        "label": "In the meantime, remove the tough",
+        "type": "cook",
+        "duration_min": 7,
+        "start_min": 18,
+        "end_min": 25,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan",
+          "pan"
+        ],
+        "temperature_c": null,
+        "notes": "",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 18,
+        "latest_end_min": 25
+      },
+      {
+        "id": "step-5",
+        "raw_text": "To serve, divide the gratin between plates and serve with the sautéed cavolo nero on the side. Enjoy!",
+        "label": "To serve, divide the gratin between",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 25,
+        "end_min": 27,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 25,
+        "latest_end_min": 27
+      }
+    ],
+    "total_time_min": 27,
+    "active_time_min": 9
+  },
+  {
     "id": "sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
     "title": "Sri Lankan Daal With Crispy Courgette & Corn Fritters, Date Tamarind Chutney & Organic Soy Yoghurt",
     "source_url": "https://planthood.co.uk/products/sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
@@ -22661,140 +22795,6 @@
     ],
     "total_time_min": 39,
     "active_time_min": 29
-  },
-  {
-    "id": "squash-gratin",
-    "title": "Butternut Squash & White Bean Gratin In Rich & Creamy Cashew, White Wine & Mustard Sauce With Cavolo Nero",
-    "source_url": "https://planthood.co.uk/products/squash-gratin",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 585.0,
-      "protein_g": 24.0,
-      "fat_g": 15.7,
-      "carbs_g": 84.5,
-      "fibre_g": 20.9,
-      "salt_g": 2.1
-    },
-    "schema_version": 1,
-    "steps": [
-      {
-        "id": "step-1",
-        "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a frying pan, and an oven proof casserole dish or a saucepan and a baking dish if you don't have one.",
-        "label": "Preheat your oven to 220°C /",
-        "type": "prep",
-        "duration_min": 3,
-        "start_min": 0,
-        "end_min": 3,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [
-          "casserole dish",
-          "frying pan",
-          "oven",
-          "pan",
-          "saucepan"
-        ],
-        "temperature_c": 220,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 0,
-        "latest_end_min": 3
-      },
-      {
-        "id": "step-2",
-        "raw_text": "Halve the butternut squash , peel it, and remove the pulp and seeds with a spoon. Slice the squash very thinly, about 2mm thick. You can use a vegetable peeler or a mandoline if you have one. *For this recipe, 500–550g of fresh squash is required, so if you have received a very large squash, you can save the rest for another meal or roast it separately on the side.",
-        "label": "Halve the butternut squash , peel",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 3,
-        "end_min": 11,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 3,
-        "latest_end_min": 11
-      },
-      {
-        "id": "step-3",
-        "raw_text": "Place your saucepan or oven-proof casserole dish over medium heat. Add the tin of cannellini beans including the brine and add three quarters of the creamy gratin sauce , reserving the rest for the end. Cook until piping hot and then remove from the heat. If you're using an oven proof casserole dish, arrange the squash over the top of the creamy beans, without overlapping too much. Don't do more than one single layer or it may not cook through. If you're using an oven dish, transfer the creamy beans from your saucepan to the dish and arrange the squash over the top of the beans. Drizzle olive oil over the top and season well with salt and pepper. Roast for 30 minutes or until the squash is cooked through, then add the remaining gratin sauce and roast for a further 5-10 minutes or until it browns a little.",
-        "label": "Place your saucepan or oven-proof casserole",
-        "type": "cook",
-        "duration_min": 7,
-        "start_min": 11,
-        "end_min": 18,
-        "requires": [
-          "step-2"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "casserole dish",
-          "oven",
-          "pan",
-          "saucepan"
-        ],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 11,
-        "latest_end_min": 18
-      },
-      {
-        "id": "step-4",
-        "raw_text": "In the meantime, remove the tough stems from the cavolo nero and slice the leaves into bite-sized pieces. Place your frying pan over medium heat and add a drizzle of olive oil. Once hot, add the cavolo nero along with a splash of water and sauté until wilted and vibrant green, about 6–8 minutes. Season with salt and pepper.",
-        "label": "In the meantime, remove the tough",
-        "type": "cook",
-        "duration_min": 7,
-        "start_min": 18,
-        "end_min": 25,
-        "requires": [
-          "step-3"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "frying pan",
-          "pan"
-        ],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 18,
-        "latest_end_min": 25
-      },
-      {
-        "id": "step-5",
-        "raw_text": "To serve, divide the gratin between plates and serve with the sautéed cavolo nero on the side. Enjoy!",
-        "label": "To serve, divide the gratin between",
-        "type": "finish",
-        "duration_min": 2,
-        "start_min": 25,
-        "end_min": 27,
-        "requires": [
-          "step-4"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 27
-      }
-    ],
-    "total_time_min": 27,
-    "active_time_min": 9
   },
   {
     "id": "sri-lankan-daal-with-curry-spiced-oyster-mushroom-skewers-beetroot-raita-over-fluffy-basmati-rice",
@@ -28340,5 +28340,268 @@
     ],
     "total_time_min": 23,
     "active_time_min": 23
+  },
+  {
+    "id": "summer-daal-courgette-pickle-crispy-kale",
+    "title": "Summer Coconut & Turmeric Daal With Tangy Courgette Pickle, Crispy Kale & Red Quinoa",
+    "source_url": "https://planthood.co.uk/products/summer-daal-courgette-pickle-crispy-kale",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 660.0,
+      "protein_g": 23.3,
+      "fat_g": 21.5,
+      "carbs_g": 94.6,
+      "fibre_g": 14.1,
+      "salt_g": 0.75
+    },
+    "schema_version": 1,
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Tender red lentils and sweet potatoes",
+        "label": "Tender red lentils and sweet potatoes",
+        "type": "cook",
+        "duration_min": 8,
+        "start_min": 0,
+        "end_min": 8,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "pot"
+        ],
+        "temperature_c": null,
+        "notes": "",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 8
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Served with a tangy turmeric-spiked courgette",
+        "label": "Served with a tangy turmeric-spiked courgette",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 8,
+        "end_min": 10,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 8,
+        "latest_end_min": 10
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Full of flavour and packed with",
+        "label": "Full of flavour and packed with",
+        "type": "cook",
+        "duration_min": 8,
+        "start_min": 10,
+        "end_min": 18,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 10,
+        "latest_end_min": 18
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Nutrition Calories 660kcal; Protein 23.3g; Fat",
+        "label": "Nutrition Calories 660kcal; Protein 23.3g; Fat",
+        "type": "cook",
+        "duration_min": 8,
+        "start_min": 18,
+        "end_min": 26,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "pot"
+        ],
+        "temperature_c": null,
+        "notes": "",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 18,
+        "latest_end_min": 26
+      }
+    ],
+    "total_time_min": 26,
+    "active_time_min": 26
+  },
+  {
+    "id": "winter-harvest-apple-kale-salad-with-sweet-potato-pomegranate-maple-tahini-dressing",
+    "title": "Winter Harvest Bowl With Roasted Sweet Potato, Candied Walnuts & Maple Tahini Dressing",
+    "source_url": "https://planthood.co.uk/products/winter-harvest-apple-kale-salad-with-sweet-potato-pomegranate-maple-tahini-dressing",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 640.0,
+      "protein_g": 18.6,
+      "fat_g": 25.2,
+      "carbs_g": 91.6,
+      "fibre_g": 13.7,
+      "salt_g": 0.5
+    },
+    "schema_version": 1,
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Boil your kettle, pre-heat your oven to 220°C / 200°C fan, then take out a large roasting tray and a saucepan.",
+        "label": "Boil your kettle, pre-heat your oven",
+        "type": "cook",
+        "duration_min": 8,
+        "start_min": 0,
+        "end_min": 8,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "oven",
+          "pan",
+          "roasting tray",
+          "saucepan",
+          "tray"
+        ],
+        "temperature_c": 220,
+        "notes": "",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 8
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Dice the sweet potato into 1.5cm cubes, place into your roasting tray, toss through a drizzle of olive oil and season with salt and pepper. Roast for 15-20 minutes or until crispy on the outside and cooked through. Add the walnuts to the roasting tray for the final 2-3 minutes of cooking time. These have already been partly roasted in our kitchen so they only need a few minutes to warm through!",
+        "label": "Dice the sweet potato into 1.5cm",
+        "type": "cook",
+        "duration_min": 17,
+        "start_min": 8,
+        "end_min": 25,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "pot",
+          "roasting tray",
+          "tray"
+        ],
+        "temperature_c": null,
+        "notes": "",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 8,
+        "latest_end_min": 25
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Pour boiling water from your kettle into your saucepan and place over a medium-high heat. Bring to the boil and once bubbling, add the quinoa . Reduce the heat to low-medium and cook until tender but al dente, around 8 minutes. Drain and set aside.",
+        "label": "Pour boiling water from your kettle",
+        "type": "cook",
+        "duration_min": 8,
+        "start_min": 25,
+        "end_min": 33,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "pan",
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 25,
+        "latest_end_min": 33
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Remove any hardy stems from the cavolo nero , using your hands to strip the leaves away from the stalk. Roll the leaves up very tightly in your hands, then use a sharp knife to finely slice the leaves. Place into a large mixing bowl, add a pinch of salt and a drizzle of extra virgin olive oil (optional), then massage the cavolo nero with your hands until it softens. NB: This is a raw cavolo nero recipe, but if you're not a raw cavolo nero lover, you could boil or steam the leaves for 10 minutes or roast them in the oven for 10 minutes tossed in oil, salt and pepper to make them crispy.",
+        "label": "Remove any hardy stems from the",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 33,
+        "end_min": 43,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "bowl",
+          "mixing bowl",
+          "oven"
+        ],
+        "temperature_c": null,
+        "notes": "",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 33,
+        "latest_end_min": 43
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Cut the apple in half, remove the core, then thinly slice.",
+        "label": "Cut the apple in half, remove",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 43,
+        "end_min": 46,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 43,
+        "latest_end_min": 46
+      },
+      {
+        "id": "step-6",
+        "raw_text": "To serve up, toss the cavolo nero , sweet potato and quinoa in half of the tahini dressing , then top with the apple slices , candied walnuts and a scattering of pomegranate seeds . Drizzle over the remaining dressing and enjoy!",
+        "label": "To serve up, toss the cavolo",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 46,
+        "end_min": 48,
+        "requires": [
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "pot"
+        ],
+        "temperature_c": null,
+        "notes": "",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 46,
+        "latest_end_min": 48
+      }
+    ],
+    "total_time_min": 48,
+    "active_time_min": 5
   }
 ]

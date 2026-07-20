@@ -9737,6 +9737,56 @@
     "notes": ""
   },
   {
+    "id": "squash-gratin",
+    "title": "Butternut Squash & White Bean Gratin In Rich & Creamy Cashew, White Wine & Mustard Sauce With Cavolo Nero",
+    "source_url": "https://planthood.co.uk/products/squash-gratin",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 585.0,
+      "protein_g": 24.0,
+      "fat_g": 15.7,
+      "carbs_g": 84.5,
+      "fibre_g": 20.9,
+      "salt_g": 2.1
+    },
+    "schema_version": 1,
+    "method_clean": "STEP 1 Preheat your oven to 220°C / 200°C fan. Take out a frying pan, and an oven proof casserole dish or a saucepan and a baking dish if you don't have one. STEP 2 Halve the butternut squash , peel it, and remove the pulp and seeds with a spoon. Slice the squash very thinly, about 2mm thick. You can use a vegetable peeler or a mandoline if you have one. *For this recipe, 500–550g of fresh squash is required, so if you have received a very large squash, you can save the rest for another meal or roast it separately on the side. STEP 3 Place your saucepan or oven-proof casserole dish over medium heat. Add the tin of cannellini beans including the brine and add three quarters of the creamy gratin sauce , reserving the rest for the end. Cook until piping hot and then remove from the heat. If you're using an oven proof casserole dish, arrange the squash over the top of the creamy beans, without overlapping too much. Don't do more than one single layer or it may not cook through. If you're using an oven dish, transfer the creamy beans from your saucepan to the dish and arrange the squash over the top of the beans. Drizzle olive oil over the top and season well with salt and pepper. Roast for 30 minutes or until the squash is cooked through, then add the remaining gratin sauce and roast for a further 5-10 minutes or until it browns a little. STEP 4 In the meantime, remove the tough stems from the cavolo nero and slice the leaves into bite-sized pieces. Place your frying pan over medium heat and add a drizzle of olive oil. Once hot, add the cavolo nero along with a splash of water and sauté until wilted and vibrant green, about 6–8 minutes. Season with salt and pepper. STEP 5 To serve, divide the gratin between plates and serve with the sautéed cavolo nero on the side. Enjoy!",
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "Preheat your oven to 220°C / 200°C fan. Take out a frying pan, and an oven proof casserole dish or a saucepan and a baking dish if you don't have one.",
+        "marker": 1
+      },
+      {
+        "id": "step-2",
+        "text": "Halve the butternut squash , peel it, and remove the pulp and seeds with a spoon. Slice the squash very thinly, about 2mm thick. You can use a vegetable peeler or a mandoline if you have one. *For this recipe, 500–550g of fresh squash is required, so if you have received a very large squash, you can save the rest for another meal or roast it separately on the side.",
+        "marker": 2
+      },
+      {
+        "id": "step-3",
+        "text": "Place your saucepan or oven-proof casserole dish over medium heat. Add the tin of cannellini beans including the brine and add three quarters of the creamy gratin sauce , reserving the rest for the end. Cook until piping hot and then remove from the heat. If you're using an oven proof casserole dish, arrange the squash over the top of the creamy beans, without overlapping too much. Don't do more than one single layer or it may not cook through. If you're using an oven dish, transfer the creamy beans from your saucepan to the dish and arrange the squash over the top of the beans. Drizzle olive oil over the top and season well with salt and pepper. Roast for 30 minutes or until the squash is cooked through, then add the remaining gratin sauce and roast for a further 5-10 minutes or until it browns a little.",
+        "marker": 3
+      },
+      {
+        "id": "step-4",
+        "text": "In the meantime, remove the tough stems from the cavolo nero and slice the leaves into bite-sized pieces. Place your frying pan over medium heat and add a drizzle of olive oil. Once hot, add the cavolo nero along with a splash of water and sauté until wilted and vibrant green, about 6–8 minutes. Season with salt and pepper.",
+        "marker": 4
+      },
+      {
+        "id": "step-5",
+        "text": "To serve, divide the gratin between plates and serve with the sautéed cavolo nero on the side. Enjoy!",
+        "marker": 5
+      }
+    ],
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "needs_llm_segmentation": false,
+    "notes": ""
+  },
+  {
     "id": "sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
     "title": "Sri Lankan Daal With Crispy Courgette & Corn Fritters, Date Tamarind Chutney & Organic Soy Yoghurt",
     "source_url": "https://planthood.co.uk/products/sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
@@ -9784,56 +9834,6 @@
         "id": "step-6",
         "text": "Divide the sri lankan daal between serving bowls, top with the spiced courgette and corn fritters, drizzle over the soy yoghurt and date tamarind chutney , and garnish the dish with a few picked coriander leaves to finish. Enjoy!",
         "marker": 6
-      }
-    ],
-    "cookable": true,
-    "extraction_method": "step_markers",
-    "needs_llm_segmentation": false,
-    "notes": ""
-  },
-  {
-    "id": "squash-gratin",
-    "title": "Butternut Squash & White Bean Gratin In Rich & Creamy Cashew, White Wine & Mustard Sauce With Cavolo Nero",
-    "source_url": "https://planthood.co.uk/products/squash-gratin",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 585.0,
-      "protein_g": 24.0,
-      "fat_g": 15.7,
-      "carbs_g": 84.5,
-      "fibre_g": 20.9,
-      "salt_g": 2.1
-    },
-    "schema_version": 1,
-    "method_clean": "STEP 1 Preheat your oven to 220°C / 200°C fan. Take out a frying pan, and an oven proof casserole dish or a saucepan and a baking dish if you don't have one. STEP 2 Halve the butternut squash , peel it, and remove the pulp and seeds with a spoon. Slice the squash very thinly, about 2mm thick. You can use a vegetable peeler or a mandoline if you have one. *For this recipe, 500–550g of fresh squash is required, so if you have received a very large squash, you can save the rest for another meal or roast it separately on the side. STEP 3 Place your saucepan or oven-proof casserole dish over medium heat. Add the tin of cannellini beans including the brine and add three quarters of the creamy gratin sauce , reserving the rest for the end. Cook until piping hot and then remove from the heat. If you're using an oven proof casserole dish, arrange the squash over the top of the creamy beans, without overlapping too much. Don't do more than one single layer or it may not cook through. If you're using an oven dish, transfer the creamy beans from your saucepan to the dish and arrange the squash over the top of the beans. Drizzle olive oil over the top and season well with salt and pepper. Roast for 30 minutes or until the squash is cooked through, then add the remaining gratin sauce and roast for a further 5-10 minutes or until it browns a little. STEP 4 In the meantime, remove the tough stems from the cavolo nero and slice the leaves into bite-sized pieces. Place your frying pan over medium heat and add a drizzle of olive oil. Once hot, add the cavolo nero along with a splash of water and sauté until wilted and vibrant green, about 6–8 minutes. Season with salt and pepper. STEP 5 To serve, divide the gratin between plates and serve with the sautéed cavolo nero on the side. Enjoy!",
-    "steps": [
-      {
-        "id": "step-1",
-        "text": "Preheat your oven to 220°C / 200°C fan. Take out a frying pan, and an oven proof casserole dish or a saucepan and a baking dish if you don't have one.",
-        "marker": 1
-      },
-      {
-        "id": "step-2",
-        "text": "Halve the butternut squash , peel it, and remove the pulp and seeds with a spoon. Slice the squash very thinly, about 2mm thick. You can use a vegetable peeler or a mandoline if you have one. *For this recipe, 500–550g of fresh squash is required, so if you have received a very large squash, you can save the rest for another meal or roast it separately on the side.",
-        "marker": 2
-      },
-      {
-        "id": "step-3",
-        "text": "Place your saucepan or oven-proof casserole dish over medium heat. Add the tin of cannellini beans including the brine and add three quarters of the creamy gratin sauce , reserving the rest for the end. Cook until piping hot and then remove from the heat. If you're using an oven proof casserole dish, arrange the squash over the top of the creamy beans, without overlapping too much. Don't do more than one single layer or it may not cook through. If you're using an oven dish, transfer the creamy beans from your saucepan to the dish and arrange the squash over the top of the beans. Drizzle olive oil over the top and season well with salt and pepper. Roast for 30 minutes or until the squash is cooked through, then add the remaining gratin sauce and roast for a further 5-10 minutes or until it browns a little.",
-        "marker": 3
-      },
-      {
-        "id": "step-4",
-        "text": "In the meantime, remove the tough stems from the cavolo nero and slice the leaves into bite-sized pieces. Place your frying pan over medium heat and add a drizzle of olive oil. Once hot, add the cavolo nero along with a splash of water and sauté until wilted and vibrant green, about 6–8 minutes. Season with salt and pepper.",
-        "marker": 4
-      },
-      {
-        "id": "step-5",
-        "text": "To serve, divide the gratin between plates and serve with the sautéed cavolo nero on the side. Enjoy!",
-        "marker": 5
       }
     ],
     "cookable": true,
@@ -12128,6 +12128,106 @@
         "id": "step-4",
         "text": "Place your frying pan or wok over high heat and add a generous drizzle of neutral oil, or sesame oil if you have it, as it works well with this dish. Add the aubergine once the oil is hot and fry until soft and lightly golden on both sides, around 6-8 minutes. Then add the savoy cabbage and chestnut mushrooms and cook for a further 4-5 minutes until soft. You can add a small splash of water to help the vegetables steam and soften. Add the carrot ribbons last, along with the yaki udon sauce , and combine everything well. Finally, add the cooked and drained udon noodles. Toss everything together and cook for another minute or so over high heat to warm through the noodles. Add a splash of water or an extra drizzle of oil if it feels dry, and allow the sauce to start caramelising on the vegetables and noodles. STEP 6 To serve, divide the yaki udon between serving bowls and finish with sliced spring onions and a sprinkle of furikake seasoning . Enjoy!",
         "marker": 4
+      }
+    ],
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "needs_llm_segmentation": false,
+    "notes": ""
+  },
+  {
+    "id": "summer-daal-courgette-pickle-crispy-kale",
+    "title": "Summer Coconut & Turmeric Daal With Tangy Courgette Pickle, Crispy Kale & Red Quinoa",
+    "source_url": "https://planthood.co.uk/products/summer-daal-courgette-pickle-crispy-kale",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 660.0,
+      "protein_g": 23.3,
+      "fat_g": 21.5,
+      "carbs_g": 94.6,
+      "fibre_g": 14.1,
+      "salt_g": 0.75
+    },
+    "schema_version": 1,
+    "method_clean": "Tender red lentils and sweet potatoes are gently simmered in coconut milk with cumin, turmeric, mustard seeds, garlic and ginger. Served with a tangy turmeric-spiked courgette pickle, crispy cavolo nero and fluffy red quinoa. Full of flavour and packed with protein, fibre and iron. Nutrition Calories 660kcal; Protein 23.3g; Fat 21.5g; Saturated Fat 14.7g; Total Carbs 94.6g; Fibre 14.1g; Salt 0.75g Ingredients Courgette, onion, apple cider vinegar, raw natural cane sugar, brown mustard seeds, turmeric, water, sea salt, red lentils, ginger, garlic, cumin, coriander powder, curry powder, cinnamon, coconut milk, vegan boullion ( celery ), sweet potato, red quinoa, cavolo nero",
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "Tender red lentils and sweet potatoes are gently simmered in coconut milk with cumin, turmeric, mustard seeds, garlic and ginger.",
+        "marker": null
+      },
+      {
+        "id": "step-2",
+        "text": "Served with a tangy turmeric-spiked courgette pickle, crispy cavolo nero and fluffy red quinoa.",
+        "marker": null
+      },
+      {
+        "id": "step-3",
+        "text": "Full of flavour and packed with protein, fibre and iron.",
+        "marker": null
+      },
+      {
+        "id": "step-4",
+        "text": "Nutrition Calories 660kcal; Protein 23.3g; Fat 21.5g; Saturated Fat 14.7g; Total Carbs 94.6g; Fibre 14.1g; Salt 0.75g Ingredients Courgette, onion, apple cider vinegar, raw natural cane sugar, brown mustard seeds, turmeric, water, sea salt, red lentils, ginger, garlic, cumin, coriander powder, curry powder, cinnamon, coconut milk, vegan boullion ( celery ), sweet potato, red quinoa, cavolo nero",
+        "marker": null
+      }
+    ],
+    "cookable": true,
+    "extraction_method": "paragraph",
+    "needs_llm_segmentation": true,
+    "notes": "No STEP markers; sentence-split pending LLM segmentation."
+  },
+  {
+    "id": "winter-harvest-apple-kale-salad-with-sweet-potato-pomegranate-maple-tahini-dressing",
+    "title": "Winter Harvest Bowl With Roasted Sweet Potato, Candied Walnuts & Maple Tahini Dressing",
+    "source_url": "https://planthood.co.uk/products/winter-harvest-apple-kale-salad-with-sweet-potato-pomegranate-maple-tahini-dressing",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 640.0,
+      "protein_g": 18.6,
+      "fat_g": 25.2,
+      "carbs_g": 91.6,
+      "fibre_g": 13.7,
+      "salt_g": 0.5
+    },
+    "schema_version": 1,
+    "method_clean": "STEP 1 Boil your kettle, pre-heat your oven to 220°C / 200°C fan, then take out a large roasting tray and a saucepan. STEP 2 Dice the sweet potato into 1.5cm cubes, place into your roasting tray, toss through a drizzle of olive oil and season with salt and pepper. Roast for 15-20 minutes or until crispy on the outside and cooked through. Add the walnuts to the roasting tray for the final 2-3 minutes of cooking time. These have already been partly roasted in our kitchen so they only need a few minutes to warm through! STEP 3 Pour boiling water from your kettle into your saucepan and place over a medium-high heat. Bring to the boil and once bubbling, add the quinoa . Reduce the heat to low-medium and cook until tender but al dente, around 8 minutes. Drain and set aside. STEP 4 Remove any hardy stems from the cavolo nero , using your hands to strip the leaves away from the stalk. Roll the leaves up very tightly in your hands, then use a sharp knife to finely slice the leaves. Place into a large mixing bowl, add a pinch of salt and a drizzle of extra virgin olive oil (optional), then massage the cavolo nero with your hands until it softens. NB: This is a raw cavolo nero recipe, but if you're not a raw cavolo nero lover, you could boil or steam the leaves for 10 minutes or roast them in the oven for 10 minutes tossed in oil, salt and pepper to make them crispy. STEP 5 Cut the apple in half, remove the core, then thinly slice. STEP 6 To serve up, toss the cavolo nero , sweet potato and quinoa in half of the tahini dressing , then top with the apple slices , candied walnuts and a scattering of pomegranate seeds . Drizzle over the remaining dressing and enjoy!",
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "Boil your kettle, pre-heat your oven to 220°C / 200°C fan, then take out a large roasting tray and a saucepan.",
+        "marker": 1
+      },
+      {
+        "id": "step-2",
+        "text": "Dice the sweet potato into 1.5cm cubes, place into your roasting tray, toss through a drizzle of olive oil and season with salt and pepper. Roast for 15-20 minutes or until crispy on the outside and cooked through. Add the walnuts to the roasting tray for the final 2-3 minutes of cooking time. These have already been partly roasted in our kitchen so they only need a few minutes to warm through!",
+        "marker": 2
+      },
+      {
+        "id": "step-3",
+        "text": "Pour boiling water from your kettle into your saucepan and place over a medium-high heat. Bring to the boil and once bubbling, add the quinoa . Reduce the heat to low-medium and cook until tender but al dente, around 8 minutes. Drain and set aside.",
+        "marker": 3
+      },
+      {
+        "id": "step-4",
+        "text": "Remove any hardy stems from the cavolo nero , using your hands to strip the leaves away from the stalk. Roll the leaves up very tightly in your hands, then use a sharp knife to finely slice the leaves. Place into a large mixing bowl, add a pinch of salt and a drizzle of extra virgin olive oil (optional), then massage the cavolo nero with your hands until it softens. NB: This is a raw cavolo nero recipe, but if you're not a raw cavolo nero lover, you could boil or steam the leaves for 10 minutes or roast them in the oven for 10 minutes tossed in oil, salt and pepper to make them crispy.",
+        "marker": 4
+      },
+      {
+        "id": "step-5",
+        "text": "Cut the apple in half, remove the core, then thinly slice.",
+        "marker": 5
+      },
+      {
+        "id": "step-6",
+        "text": "To serve up, toss the cavolo nero , sweet potato and quinoa in half of the tahini dressing , then top with the apple slices , candied walnuts and a scattering of pomegranate seeds . Drizzle over the remaining dressing and enjoy!",
+        "marker": 6
       }
     ],
     "cookable": true,
