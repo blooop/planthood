@@ -154,14 +154,25 @@ def _mock_steps(recipe: ExtractedRecipe) -> List[RecipeStep]:
     return _build_steps(recipe, mock_enrich_steps(payload))
 
 
+def _is_daily_quota_exhausted(exc: Exception) -> bool:
+    """True for a per-day free-tier quota 429 (e.g. Gemini's RPD cap). Unlike a per-minute
+    (RPM) limit, a daily window can't clear within a run, so retrying only wastes CI time
+    and circuit-breaker patience — fail fast to the deterministic fallback instead."""
+    text = str(exc)
+    return "RESOURCE_EXHAUSTED" in text and "PerDay" in text
+
+
 def _complete_with_retry(provider: LLMProvider, system: str, user: str) -> object:
-    """Call the provider, retrying transient failures (rate limits, timeouts)."""
+    """Call the provider, retrying transient failures (per-minute rate limits, timeouts).
+    A per-day quota exhaustion is not retried — the backoff can't clear a daily window."""
     last: Optional[Exception] = None
     for attempt in range(LLM_RETRIES):
         try:
             return provider.complete_json(system, user, ENRICH_SCHEMA)
         except Exception as e:  # noqa: BLE001 - provider SDKs raise varied error types
             last = e
+            if _is_daily_quota_exhausted(e):
+                break  # daily quota gone; retrying is futile — fall through to raise
             if attempt < LLM_RETRIES - 1:
                 # Backoff long enough to clear a per-minute rate-limit window (up to ~30s).
                 time.sleep(min(30, 8 * (attempt + 1)))

@@ -125,6 +125,55 @@ def test_llm_failure_falls_back_to_deterministic_steps(monkeypatch):
     assert parsed.steps[0].type == "prep"  # inferred from "Preheat"
 
 
+def test_daily_quota_error_is_not_retried(monkeypatch):
+    from planthood.enrich import enricher
+
+    # A per-day (RPD) quota 429 can't clear within the run, so it must NOT burn retries —
+    # exactly one call, then straight to the deterministic fallback.
+    monkeypatch.setattr(enricher.time, "sleep", lambda *_: None)
+    calls = {"n": 0}
+
+    class DailyQuota(LLMProvider):
+        def complete_json(self, system, user, schema):
+            calls["n"] += 1
+            raise RuntimeError(
+                "429 RESOURCE_EXHAUSTED ... 'quotaId': "
+                "'GenerateRequestsPerDayPerProjectPerModel-FreeTier'"
+            )
+
+        @property
+        def name(self):
+            return "daily-quota"
+
+    parsed = enrich_recipe(_extracted(["Chop.", "Cook."]), provider=DailyQuota())
+    assert calls["n"] == 1  # not retried — LLM_RETRIES times would be 4
+    assert len(parsed.steps) == 2  # deterministic fallback filled the steps
+    assert parsed.provenance == "fallback"
+
+
+def test_per_minute_quota_error_is_still_retried(monkeypatch):
+    from planthood.enrich import enricher
+
+    # A per-minute (RPM) limit CAN clear within the run, so it must still be retried.
+    monkeypatch.setattr(enricher.time, "sleep", lambda *_: None)
+    calls = {"n": 0}
+
+    class MinuteQuota(LLMProvider):
+        def complete_json(self, system, user, schema):
+            calls["n"] += 1
+            raise RuntimeError(
+                "429 RESOURCE_EXHAUSTED ... 'quotaId': "
+                "'GenerateRequestsPerMinutePerProjectPerModel-FreeTier'"
+            )
+
+        @property
+        def name(self):
+            return "minute-quota"
+
+    enrich_recipe(_extracted(["Chop.", "Cook."]), provider=MinuteQuota())
+    assert calls["n"] == enricher.LLM_RETRIES  # retried the full budget
+
+
 class _Boom(LLMProvider):
     def complete_json(self, system, user, schema):
         raise AssertionError("LLM must not be called")
