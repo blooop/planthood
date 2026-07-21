@@ -170,8 +170,10 @@ def test_per_minute_quota_error_is_still_retried(monkeypatch):
         def name(self):
             return "minute-quota"
 
-    enrich_recipe(_extracted(["Chop.", "Cook."]), provider=MinuteQuota())
+    parsed = enrich_recipe(_extracted(["Chop.", "Cook."]), provider=MinuteQuota())
     assert calls["n"] == enricher.LLM_RETRIES  # retried the full budget
+    assert len(parsed.steps) == 2  # exhausting retries still yields deterministic fallback
+    assert parsed.provenance == "fallback"
 
 
 def test_daily_quota_discriminator_matches_real_error_shape():
