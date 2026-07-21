@@ -174,6 +174,26 @@ def test_per_minute_quota_error_is_still_retried(monkeypatch):
     assert calls["n"] == enricher.LLM_RETRIES  # retried the full budget
 
 
+def test_daily_quota_discriminator_matches_real_error_shape():
+    # Guards the integration assumption: the google-genai SDK stringifies a 429 as
+    # "<code> <status>. <details-json>", so the per-day vs per-minute distinction lives in
+    # the QuotaFailure quotaId. If that shape changes, the synthetic-message tests above
+    # would still pass while the feature silently broke — this pins the real shape.
+    from planthood.enrich.enricher import _is_daily_quota_exhausted
+
+    rpd = (
+        "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'status': 'RESOURCE_EXHAUSTED', "
+        "'details': [{'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': "
+        "[{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', "
+        "'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier'}]}]}}"
+    )
+    rpm = rpd.replace("PerDayPerProjectPerModel", "PerMinutePerProjectPerModel")
+
+    assert _is_daily_quota_exhausted(RuntimeError(rpd)) is True
+    assert _is_daily_quota_exhausted(RuntimeError(rpm)) is False
+    assert _is_daily_quota_exhausted(RuntimeError("read timed out")) is False
+
+
 class _Boom(LLMProvider):
     def complete_json(self, system, user, schema):
         raise AssertionError("LLM must not be called")
