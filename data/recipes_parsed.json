@@ -608,88 +608,99 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 240°C / 220°C fan. Take out a wide, hob- and ovenproof casserole dish.",
-        "label": "Preheat your oven to 240°C /",
+        "label": "Preheat oven and prepare casserole dish",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
-          "casserole dish",
-          "hob",
-          "oven"
+          "oven",
+          "wide hob- and ovenproof casserole dish"
         ],
         "temperature_c": 240,
-        "notes": ""
+        "notes": "Preheat oven to 240°C (or 220°C fan)."
       },
       {
         "id": "step-2",
         "raw_text": "Slice the cooked beetroot and sweet potato as thinly as possible, about 2mm thick. Use a mandoline if you have one to ensure even thickness. If you struggle to cut thin slices, you can microwave the sweet potato slices (3 minutes on high, covered) or parboil them in boiling water for 3 minutes to ensure they are cooked through when serving. Alternatively, you can extend the oven cooking time (see Step 4).",
-        "label": "Slice the cooked beetroot and sweet",
-        "type": "cook",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-1"
+        "label": "Slice beetroot and sweet potato thinly",
+        "type": "prep",
+        "estimated_duration_minutes": 6,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "oven",
+          "knife",
+          "cutting board",
+          "mandoline",
+          "microwave",
           "pot"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Slice 2mm thick. Optionally microwave for 3 minutes or parboil if slices are too thick."
       },
       {
         "id": "step-3",
         "raw_text": "In your ovenproof casserole dish, mix together the roots gratin ragu and the tin of black lentils , including the liquid from the tin. Place over medium heat and gently bring to a simmer, then turn off the heat.",
-        "label": "In your ovenproof casserole dish, mix",
+        "label": "Simmer ragu and lentils in casserole",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 5,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "casserole dish",
-          "oven"
+          "wide hob- and ovenproof casserole dish",
+          "stove"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Mix ragu and lentils with their liquid, bring to a simmer over medium heat, then turn off heat."
       },
       {
         "id": "step-4",
         "raw_text": "Lay the beetroot and sweet potato slices over the lentil ragu, slightly submerging them in the sauce, then drizzle over olive oil. Cover the dish with a lid or a sheet of kitchen foil and bake in the oven for 20 minutes. If the vegetables are cut into thicker slices and the microwaving or parboiling step was skipped, bake in the oven for 35 minutes instead. Once it has cooked for the above time, remove the casserole dish from the oven and pour the miso bechamel over the top. Return it to the oven and bake for a further 10 minutes without a cover, until the sauce is golden on top.",
-        "label": "Lay the beetroot and sweet potato",
-        "type": "finish",
-        "estimated_duration_minutes": 20,
+        "label": "Assemble gratin and bake in oven",
+        "type": "cook",
+        "estimated_duration_minutes": 30,
         "requires": [
+          "step-2",
           "step-3"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "casserole dish",
+          "wide hob- and ovenproof casserole dish",
           "oven",
-          "pot"
+          "lid or kitchen foil"
         ],
-        "temperature_c": null,
-        "notes": ""
+        "temperature_c": 240,
+        "notes": "Bake covered for 20 minutes (or 35 minutes if slices are thick and un-microwaved), then uncovered with miso bechamel for 10 minutes."
       },
       {
         "id": "step-5",
         "raw_text": "To serve, divide the gratin between dishes. Finish with a sprinkle of salt and freshly ground black pepper to taste. Enjoy!",
-        "label": "To serve, divide the gratin between",
+        "label": "Portion gratin and season to taste",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
           "step-4"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "serving dishes"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide between dishes and finish with salt and freshly ground black pepper."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "bde024092ea31eeef65a1a9bfda815542382aef334583ced16562e97524ad2bf"
   },
   {
@@ -712,53 +723,53 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Deliciously meaty pulled jackfruit marinated in",
-        "label": "Deliciously meaty pulled jackfruit marinated in",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "pulled jackfruit marinated in a spice blend of garlic, paprika, cumin, cloves and chipotle",
+        "label": "Marinate jackfruit",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "pot"
+          "bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Combine the pulled jackfruit with the spice blend of garlic, paprika, cumin, cloves, and chipotle to marinate."
       },
       {
         "id": "step-2",
-        "raw_text": "Served on soft corn tortillas with",
-        "label": "Served on soft corn tortillas with",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "raw_text": "slowly cooked until charred on the outside and falling apart in the centre",
+        "label": "Cook jackfruit",
+        "type": "cook",
+        "estimated_duration_minutes": 25,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "pot"
+          "pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Slowly cook the marinated jackfruit until it is charred on the outside and tender enough to fall apart in the center."
       },
       {
         "id": "step-3",
-        "raw_text": "Nutrition Calories 535kcal; Protein 11g; Fat",
-        "label": "Nutrition Calories 535kcal; Protein 11g; Fat",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "Served on soft corn tortillas with pickled cabbage, carrot and red onion, chipotle cashew crema and fresh coriander",
+        "label": "Assemble and serve tacos",
+        "type": "finish",
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-2"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "pot"
+          "serving plate"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Assemble the tacos by placing the cooked jackfruit carnitas onto soft corn tortillas, then top with pickled cabbage, carrot, red onion, chipotle cashew crema, and fresh coriander."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "60c485c9434585fe94ab8f91b4a1ed8b7eb7599c9f293ef67d25a9f64d2b377c"
   },
   {
@@ -782,118 +793,141 @@
       {
         "id": "step-1",
         "raw_text": "Boil water in your kettle, and take out two large saucepans and a frying pan.",
-        "label": "Boil water in your kettle, and",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Boil water and prepare pans",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan",
-          "saucepan"
+          "kettle",
+          "large saucepan",
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Boil water in the kettle and set out two large saucepans and a frying pan."
       },
       {
         "id": "step-2",
         "raw_text": "Add boiling water from the kettle to one of the saucepans, place it over medium-high heat, and bring it to a rolling boil. Add the brown basmati rice and boil uncovered for 18-20 minutes, until the rice is tender with a slight bite, then drain using a fine sieve. Return the rice to the pan, cover with a lid, and let it steam until the meal is ready.",
-        "label": "Add boiling water from the kettle",
+        "label": "Boil and steam brown rice",
         "type": "cook",
-        "estimated_duration_minutes": 19,
+        "estimated_duration_minutes": 20,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "pan",
-          "saucepan",
-          "sieve"
+          "large saucepan",
+          "fine sieve",
+          "lid"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Boil uncovered for 18-20 minutes (midpoint 19 mins) until tender with a slight bite, then drain and steam covered."
       },
       {
         "id": "step-3",
         "raw_text": "Place the other saucepan over a medium heat and add the frijole sauce and the whole tin of black beans . It is important to include the liquid from the tin, as it will add creaminess and a deep colour to the sauce. Bring to a simmer and cook for a further 5 minutes, until the sauce is slightly thickened.",
-        "label": "Place the other saucepan over a",
+        "label": "Simmer black beans and sauce",
         "type": "cook",
-        "estimated_duration_minutes": 5,
+        "estimated_duration_minutes": 7,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "large saucepan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Include the liquid from the tin for creaminess. Simmer for 5 minutes until slightly thickened."
       },
       {
         "id": "step-4",
         "raw_text": "Peel, destone, and slice the avocado , then season with the juice of half a lime , salt, and pepper. Slice the remaining half of the lime into wedges. Finely chop half of the coriander including the stalks and pick the rest of the leaves for garnish.",
-        "label": "Peel, destone, and slice the avocado",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-3"
+        "label": "Prep avocado, lime, and coriander",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-5"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Slice avocado and season with half a lime. Chop half of the coriander and pick the rest for garnish."
       },
       {
         "id": "step-5",
         "raw_text": "Place your frying pan over a medium heat and add a drizzle of olive oil. Peel and slice the plantain into 2cm-thick pieces, then add to the pan and fry on both sides until golden, about 2–3 minutes per side.",
-        "label": "Place your frying pan over a",
+        "label": "Fry the sliced plantain",
         "type": "cook",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 6,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
           "step-4"
         ],
-        "can_overlap_with": [],
         "equipment": [
           "frying pan",
-          "pan"
+          "knife",
+          "cutting board"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Slice plantain into 2cm-thick pieces. Fry for 2-3 minutes per side until golden."
       },
       {
         "id": "step-6",
         "raw_text": "Before serving, fluff up the brown basmati rice with a fork. Stir in a squeeze of lime juice, finely chopped coriander in the rice and season with salt and pepper to taste.",
-        "label": "Before serving, fluff up the brown",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Fluff and season rice",
+        "type": "finish",
+        "estimated_duration_minutes": 2,
         "requires": [
-          "step-5"
+          "step-2",
+          "step-4"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "fork"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Fluff rice with a fork, stir in lime juice and chopped coriander, and season."
       },
       {
         "id": "step-7",
         "raw_text": "Divide the rice between serving bowls and ladle over the frijole sauce . Add the sautéed plantain , sliced avocado , and pink pickled onions on the side, along with a dollop of feta drizzle . Finish with a scattering of fresh coriander leaves and a squeeze of fresh lime . Enjoy!",
-        "label": "Divide the rice between serving bowls",
+        "label": "Assemble and serve bowls",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 4,
         "requires": [
+          "step-3",
+          "step-5",
           "step-6"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls",
+          "ladle"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Assemble bowls with rice, beans, plantain, avocado, pickled onions, feta, coriander, and lime."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "fd998e6fab3fc505f56b37afabe6111883fff53225889a5ed3b5a3a3d939a255"
   },
   {
@@ -917,90 +951,98 @@
       {
         "id": "step-1",
         "raw_text": "Take out a large frying pan and two mixing bowls.",
-        "label": "Take out a large frying pan",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Gather frying pan and mixing bowls",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "frying pan",
-          "mixing bowl",
-          "pan"
+          "large frying pan",
+          "mixing bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Retrieve one large frying pan and two mixing bowls to prepare for the recipe."
       },
       {
         "id": "step-2",
         "raw_text": "To prepare the slaw, cut and remove the core of the apple . Top and tail the carrot (peel if you prefer), and remove the hard core of the red cabbage . Julienne all of them into uniform, thin shreds (use a mandoline if you have one). Place them in one of the mixing bowls and season with the juice of half a lime , a drizzle of olive oil, and salt and pepper to taste. Roughly chop the walnuts , fold them in, and set aside. Cut the remaining lime into wedges for garnish and set aside.",
-        "label": "To prepare the slaw, cut and",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "label": "Prepare slaw and chop walnuts",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "bowl",
-          "mixing bowl"
+          "mixing bowl",
+          "knife",
+          "cutting board",
+          "mandoline"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Julienne the apple, carrot, and red cabbage. Toss with lime juice, olive oil, salt, pepper, and chopped walnuts. Set aside with lime wedges."
       },
       {
         "id": "step-3",
         "raw_text": "To prepare the burger mixture, place your frying pan over medium-low heat and dry toast (without oil) the gram flour for 2 minutes, stirring occasionally, until it becomes golden. Drain the black beans and transfer them into the other mixing bowl. Roughly mash them with the back of a fork. Add the toasted gram flour and the patty flavour bomb , then stir well to combine.",
-        "label": "To prepare the burger mixture, place",
+        "label": "Toast flour and mash black beans",
         "type": "cook",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 6,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "frying pan",
+          "large frying pan",
           "mixing bowl",
-          "pan"
+          "fork",
+          "stove"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Dry toast gram flour for 2 minutes over medium-low heat until golden. Mash drained black beans and mix with toasted flour and patty flavour bomb."
       },
       {
         "id": "step-4",
         "raw_text": "Wipe clean the frying pan you used for toasting the gram flour and place it over medium heat and add a drizzle of olive oil. While the oil heats up, divide the burger mixture and spread it on each of the flour tortillas in an even layer around 2-3mm thick. Place them on the pan with the burger mixture side down and press with a spatula and cook for 4-5 minutes until the mixture starts to caramelise. Flip it onto the other side and cook further 30-60 seconds until the tortilla is golden. Cook in a few batches depending on the size of your frying pan, adding more oil for each batch.",
-        "label": "Wipe clean the frying pan you",
-        "type": "finish",
-        "estimated_duration_minutes": 4,
+        "label": "Spread mixture on tortillas and fry",
+        "type": "cook",
+        "estimated_duration_minutes": 15,
         "requires": [
           "step-3"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "large frying pan",
+          "spatula",
+          "stove"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Wipe pan clean. Cook tortillas in batches over medium heat. Fry mixture-side down for 4-5 minutes until caramelised, then flip and cook for 30-60 seconds."
       },
       {
         "id": "step-5",
         "raw_text": "To serve, add a dollop of the burger sauce on each of the burger tortillas and fold them in half. Plate them up along with the slaw and lime wedges. You can either stuff the inside of the tortillas with the slaw or place it on top of the folded tacos. Enjoy!",
-        "label": "To serve, add a dollop of",
+        "label": "Assemble tacos and plate with slaw",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 4,
         "requires": [
+          "step-2",
           "step-4"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "plates"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Add burger sauce to tortillas, fold in half, and serve with the prepared slaw and lime wedges."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "cbbd5e7621c1fca4d424ade4acbe44bcb582bdda793a6ed66434cbcb9620fe5b"
   },
   {
@@ -1067,47 +1109,150 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "A light and vibrant Vietnamese vermicelli",
-        "label": "A light and vibrant Vietnamese vermicelli",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "pickled carrot and mooli",
+        "label": "Pickle carrot and mooli",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
         "requires": [],
-        "can_overlap_with": [],
-        "equipment": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6"
+        ],
+        "equipment": [
+          "bowl"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Combine the carrot, daikon (mooli), rice vinegar, and water to pickle."
       },
       {
         "id": "step-2",
-        "raw_text": "Freshened up with mint and coriander",
-        "label": "Freshened up with mint and coriander",
+        "raw_text": "toasted peanuts",
+        "label": "Toast peanuts",
         "type": "cook",
-        "estimated_duration_minutes": 8,
-        "requires": [
-          "step-1"
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "pan"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Toast the peanuts in a pan until golden and fragrant."
       },
       {
         "id": "step-3",
-        "raw_text": "Nutrition Calories 602kcal; Protein 25.1g; Fat",
-        "label": "Nutrition Calories 602kcal; Protein 25.1g; Fat",
+        "raw_text": "crispy miso marinated mushrooms and walnuts",
+        "label": "Marinate and cook mushrooms, tofu, and walnuts",
+        "type": "cook",
+        "estimated_duration_minutes": 15,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-4",
+          "step-5",
+          "step-6"
+        ],
+        "equipment": [
+          "bowl",
+          "pan"
+        ],
+        "temperature_c": null,
+        "notes": "Marinate the mushrooms, tofu, and walnuts, then cook in a pan until crispy."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "zingy lime dressing",
+        "label": "Prepare lime dressing",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-5",
+          "step-6"
+        ],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Whisk together the lime, peanut butter, maple syrup, ginger, soy sauce, garlic, and lemongrass to make the dressing."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Vermicelli noodles",
+        "label": "Cook vermicelli noodles",
         "type": "cook",
         "estimated_duration_minutes": 8,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-6"
+        ],
+        "equipment": [
+          "pot"
+        ],
+        "temperature_c": null,
+        "notes": "Cook the vermicelli noodles in boiling water according to package instructions."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "mint and coriander",
+        "label": "Prep mint and coriander",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Wash, dry, and chop the fresh mint and coriander."
+      },
+      {
+        "id": "step-7",
+        "raw_text": "Vietnamese vermicelli noodle salad with crispy miso marinated mushrooms and walnuts, tart pickled carrot and mooli and toasted peanuts. Freshened up with mint and coriander, and a zingy lime dressing.",
+        "label": "Assemble noodle salad",
+        "type": "finish",
+        "estimated_duration_minutes": 5,
         "requires": [
-          "step-2"
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "serving bowl"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Combine the cooked vermicelli noodles, pickled vegetables, crispy mushrooms, tofu, walnuts, toasted peanuts, and fresh herbs in a serving bowl. Toss with the lime dressing."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "7790bc8ee57edeb7b6434e2f24c64a9c65b54b0b85b53024d898c5cbea52210f"
   },
   {
@@ -1131,91 +1276,106 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan. Boil your kettle and take out an ovenproof ramekin (in a size that snugly fits all the cherry tomatoes in a single layer), a griddle pan or frying pan, as well as two saucepans.",
-        "label": "Preheat your oven to 200°C /",
+        "label": "Preheat oven and boil kettle",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
           "oven",
-          "pan",
-          "saucepan"
+          "kettle",
+          "ovenproof ramekin",
+          "griddle pan",
+          "frying pan",
+          "saucepans"
         ],
         "temperature_c": 200,
-        "notes": ""
+        "notes": "Preheat oven to 200°C / 180°C fan. Boil kettle and gather pans."
       },
       {
         "id": "step-2",
         "raw_text": "Place your cherry tomatoes in the ramekin and pour in good olive oil so the tomatoes are at least half submerged in the oil. Add a sprinkle of salt and pepper, cover tightly with a lid or foil, and place in the oven until serving. You can use less oil, but this is the technique for 'confit' cherry tomatoes and creates a flavoursome finishing oil too.",
-        "label": "Place your cherry tomatoes in the",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "label": "Confit the cherry tomatoes",
+        "type": "cook",
+        "estimated_duration_minutes": 25,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
+          "ovenproof ramekin",
+          "foil",
           "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Keep tomatoes in the oven until serving."
       },
       {
         "id": "step-3",
         "raw_text": "Fill one of your saucepans with the boiling water from the kettle, add salt, and place over medium heat. Cook the spelt conchiglietti until al dente, about 10-12 minutes.",
-        "label": "Fill one of your saucepans with",
+        "label": "Cook spelt conchiglietti",
         "type": "cook",
         "estimated_duration_minutes": 11,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
         "equipment": [
-          "pan",
           "saucepan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook until al dente, about 10-12 minutes."
       },
       {
         "id": "step-4",
         "raw_text": "Place the other saucepan over medium heat and add the creamy butter bean sauce . Drain the butter beans and add them to the sauce to gently warm through. You can adjust the consistency of the sauce to make it more brothy if you prefer, using pasta cooking water or some of the liquid from the butter bean tin.",
-        "label": "Place the other saucepan over medium",
+        "label": "Warm butter beans in sauce",
         "type": "cook",
         "estimated_duration_minutes": 8,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "pan",
           "saucepan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Gently warm through. Adjust consistency with pasta water if desired."
       },
       {
         "id": "step-5",
         "raw_text": "Halve the lemon and remove the hardy stems from the cavolo nero , then tear the leaves into bite-size pieces. Pick the dill leaves for garnish and set aside. Place your griddle pan or frying pan over high heat and add a drizzle of olive oil. Once hot, place the lemon halves cut-side down and cook until charred and caramelised, around 3-5 minutes. Remove from the pan and set aside. Wipe the same pan clean with kitchen towel, add another drizzle of olive oil, then add the cavolo nero and sauté until vibrant green and crispy at the edges, about 4–5 minutes. STEP 5 Once the pasta is cooked, drain well and add it to the creamy butter bean sauce along with the sautéed cavolo nero and a squeeze from one half of the burnt lemon , then stir to combine. STEP 5 To serve, divide between serving bowls and top with the confit cherry tomatoes . Garnish with dill leaves , drizzle over some of the confit tomato oil , and season with salt and freshly ground black pepper. Squeeze over more burnt lemon juice to taste. Enjoy!",
-        "label": "Halve the lemon and remove the",
+        "label": "Sauté greens, char lemon, and assemble",
         "type": "finish",
-        "estimated_duration_minutes": 4,
+        "estimated_duration_minutes": 15,
         "requires": [
+          "step-3",
           "step-4"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
-          "bowl",
+          "griddle pan",
           "frying pan",
-          "pan"
+          "kitchen towel",
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Char lemon for 3-5 minutes. Sauté cavolo nero for 4-5 minutes until crispy. Combine with pasta, beans, and lemon juice, then plate and garnish."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "f5894e03c03e234aa0938a275c89ae8b3ff12444dee1d90e7647beb466b80cd3"
   },
   {
@@ -1238,61 +1398,97 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "The secret to our caponata sauce",
-        "label": "The secret to our caponata sauce",
+        "raw_text": "hand-chopped fresh tomatoes",
+        "label": "Chop fresh tomatoes",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
-        "equipment": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
+        "equipment": [
+          "knife",
+          "chopping board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Hand-chop the fresh tomatoes to create a rich, fresh tasting base for the caponata."
       },
       {
         "id": "step-2",
-        "raw_text": "We cook it low and slow",
-        "label": "We cook it low and slow",
+        "raw_text": "cook it low and slow with garlic and capers until rich and flavoursome",
+        "label": "Simmer caponata sauce",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 15,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
+        "equipment": [
+          "saucepan",
+          "wooden spoon"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook the chopped tomatoes low and slow with garlic and capers."
       },
       {
         "id": "step-3",
-        "raw_text": "Served with a zingy salsa verde",
-        "label": "Served with a zingy salsa verde",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "raw_text": "stir it through roasted peppers and aubergines and protein-packed butterbeans",
+        "label": "Stir in peppers, aubergines, and butterbeans",
+        "type": "cook",
+        "estimated_duration_minutes": 3,
         "requires": [
           "step-2"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Incorporate the roasted peppers, aubergines, and butterbeans into the simmering sauce."
       },
       {
         "id": "step-4",
-        "raw_text": "Nutrition Calories 566kcal; Protein 21g; Fat",
-        "label": "Nutrition Calories 566kcal; Protein 21g; Fat",
+        "raw_text": "freshly baked organic toasted ciabatta",
+        "label": "Bake and toast ciabatta",
         "type": "cook",
         "estimated_duration_minutes": 8,
-        "requires": [
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "oven"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Bake the organic ciabatta until warm and toasted."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Served with a zingy salsa verde and a freshly baked organic toasted ciabatta",
+        "label": "Serve with salsa verde and ciabatta",
+        "type": "finish",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-3",
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowl",
+          "plate"
+        ],
+        "temperature_c": null,
+        "notes": "Serve the warm caponata with the zingy salsa verde and toasted ciabatta for dunking."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "43b593a26d87283dea6a9093afb47b0f2046119bc78dc116fcd3edd3e268114b"
   },
   {
@@ -1338,91 +1534,103 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large saucepan, a frying pan and a baking tray.",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and prepare equipment",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
           "oven",
-          "pan",
-          "saucepan",
-          "tray"
+          "large saucepan",
+          "frying pan",
+          "baking tray"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C or 200°C fan."
       },
       {
         "id": "step-2",
         "raw_text": "Cut the courgette into rounds or batons around 0.5cm thick. Place the courgettes onto your baking tray, toss in a little olive oil and season well with salt and pepper. Roast in the oven until brown and crisp, around 15-20 minutes, turning/tossing halfway.",
-        "label": "Cut the courgette into rounds or",
+        "label": "Prep and roast the courgettes",
         "type": "cook",
-        "estimated_duration_minutes": 17,
+        "estimated_duration_minutes": 18,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "oven",
-          "tray"
+          "knife",
+          "chopping board",
+          "baking tray",
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast for 15-20 minutes (midpoint 18), turning halfway until brown and crisp."
       },
       {
         "id": "step-3",
         "raw_text": "Place a saucepan over medium–high heat and add the squash broth along with the butter beans , including the liquid from the tin. Once the sauce begins to bubble, reduce the heat to low and let it simmer gently until serving. Add a splash of water as needed to reach your preferred consistency.",
-        "label": "Place a saucepan over medium–high heat",
+        "label": "Simmer squash broth and butter beans",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 15,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "large saucepan",
+          "stove"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Bring to a bubble, then simmer gently on low heat until serving."
       },
       {
         "id": "step-4",
         "raw_text": "Place your frying pan over a low-medium heat, then dry fry (without oil) the pumpkin and pine nuts until lightly toasted. Remove from the pan and set aside. Add a few tablespoons of olive oil to the pan and place it back over a medium heat. When hot, add the sage leaves without overlapping. The leaves will turn translucent and the oil will stop bubbling around the leaves when they are crisp. Remove and set aside.",
-        "label": "Place your frying pan over a",
+        "label": "Toast seeds and fry sage leaves",
         "type": "cook",
         "estimated_duration_minutes": 8,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
           "frying pan",
-          "pan"
+          "stove"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Dry fry nuts first, then fry sage in oil until crisp and translucent."
       },
       {
         "id": "step-5",
         "raw_text": "To serve up, divide the butternut squash brothy beans between serving bowls and top with the courgettes , toasted pumpkin and pine nuts , crispy sage and finish with a drizzle of hot agave nduja . Enjoy!",
-        "label": "To serve up, divide the butternut",
+        "label": "Assemble bowls and serve",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-2",
+          "step-3",
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Top beans with roasted courgettes, toasted seeds, crispy sage, and a drizzle of hot agave nduja."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "642e1c03b7cbb32a217c20b743cca255ed0d5779b2fad8f3639f434f9ad8c045"
   },
   {
@@ -1446,91 +1654,103 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large saucepan, a frying pan and a baking tray.",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and prepare equipment",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
         "equipment": [
-          "frying pan",
           "oven",
-          "pan",
-          "saucepan",
-          "tray"
+          "large saucepan",
+          "frying pan",
+          "baking tray"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C or 200°C fan."
       },
       {
         "id": "step-2",
         "raw_text": "Trim the bottoms of the brussels sprouts if needed, then slice them thinly with a sharp knife. Alternatively you can cut them in half but thinly slicing will make them crispier and quicker to cook. Place the sprouts onto your baking tray, toss in a little olive oil and season well with salt and pepper. Roast in the oven until brown and crisp, around 15-20 minutes, turning/tossing halfway.",
-        "label": "Trim the bottoms of the brussels",
+        "label": "Prep and roast brussels sprouts",
         "type": "cook",
-        "estimated_duration_minutes": 17,
+        "estimated_duration_minutes": 18,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "oven",
-          "tray"
+          "sharp knife",
+          "baking tray",
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast for 15-20 minutes (midpoint 18 mins), tossing halfway. Thinly slicing makes them crispier."
       },
       {
         "id": "step-3",
         "raw_text": "Add the butter beans along with its brine in the tin to your saucepan along with the squash broth . Once there is 5 minutes left of cooking time on the sprouts, place the pan over a medium-high heat. Once the sauce is bubbling, reduce to low-medium and cook for 2-3 minutes or until piping hot.",
-        "label": "Add the butter beans along with",
+        "label": "Heat butter beans and squash broth",
         "type": "cook",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 5,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
         "equipment": [
-          "pan",
           "saucepan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Start when sprouts have 5 minutes left of cooking time. Cook for 2-3 minutes once bubbling."
       },
       {
         "id": "step-4",
         "raw_text": "Place your frying pan over a low-medium heat, then dry fry (without oil) the pumpkin and pine nuts until lightly toasted. Remove from the pan and set aside. Add a few tablespoons of olive oil to the pan and place it back over a medium heat. When hot, add the sage leaves without overlapping. The leaves will turn translucent and the oil will stop bubbling around the leaves when they are crisp. Remove and set aside.",
-        "label": "Place your frying pan over a",
+        "label": "Toast nuts and fry sage",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 5,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Dry fry nuts first, then fry sage in olive oil until translucent and crisp."
       },
       {
         "id": "step-5",
         "raw_text": "To serve up, divide the butternut squash brothy beans between serving bowls and top with the crispy shredded sprouts , toasted pumpkin and pine nuts , crispy sage and finish with a drizzle of hot agave nduja . Enjoy!",
-        "label": "To serve up, divide the butternut",
+        "label": "Plate and garnish the dish",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-2",
+          "step-3",
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide beans into bowls, top with sprouts, nuts, sage, and hot agave nduja."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "8c662f69a615c4aa76ca522c2cf239a4448630e7e76240907083278825ca747c"
   },
   {
@@ -1554,104 +1774,129 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a baking tray and a saucepan.",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and prepare equipment",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 2,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-5"
+        ],
         "equipment": [
           "oven",
-          "pan",
-          "saucepan",
-          "tray"
+          "baking tray",
+          "saucepan"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C or 200°C for fan ovens. Gather the baking tray and saucepan."
       },
       {
         "id": "step-2",
         "raw_text": "Halve the butternut squash and remove the seeds using a spoon. Cut each half into wedges about 2 cm thick. Place them on the baking tray, drizzle with olive oil, and season with salt and pepper. Roast in the oven for 20 minutes, or until the edges start to caramelise. You may receive a particularly large butternut squash depending on the season. Around 200 g of squash flesh per person works well for this recipe, so you can save the rest for another meal. Leftover roasted butternut squash will keep in an airtight container in the refrigerator for 3 to 5 days.",
-        "label": "Halve the butternut squash and remove",
+        "label": "Prep and roast butternut squash",
         "type": "cook",
-        "estimated_duration_minutes": 20,
+        "estimated_duration_minutes": 25,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
+          "spoon",
+          "baking tray",
           "oven",
-          "tray"
+          "knife",
+          "cutting board"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast for 20 minutes until edges caramelise. Use roughly 200g of squash flesh per person."
       },
       {
         "id": "step-3",
         "raw_text": "Meanwhile, fill a saucepan with boiling water from the kettle and bring it back to the boil. Cook the tenderstem broccoli until vibrant green and al dente, about 3 to 4 minutes, then remove using a slotted spoon. Add the flat rice noodles to the same water and cook for 5 minutes, or until al dente. Drain and rinse well under cold running water, then leave in a colander to drain. Quickly rinse the saucepan ready for the next step.",
-        "label": "Meanwhile, fill a saucepan with boiling",
+        "label": "Cook broccoli and rice noodles",
         "type": "cook",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 12,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-5"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "kettle",
+          "slotted spoon",
+          "colander"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook broccoli for 3-4 minutes, then noodles for 5 minutes in the same water. Rinse the saucepan immediately after draining."
       },
       {
         "id": "step-4",
         "raw_text": "Place the saucepan back over medium heat and add the curried coconut broth along with 120 ml of water (double the amount for four portions). Gently heat until piping hot.",
-        "label": "Place the saucepan back over medium",
+        "label": "Heat curried coconut broth",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-5"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "stove"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Gently heat until piping hot. Use 120ml of water for two portions, or 240ml for four portions."
       },
       {
         "id": "step-5",
         "raw_text": "Pick the coriander leaves and halve the lime , ready for garnish.",
-        "label": "Pick the coriander leaves and halve",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
-        "requires": [
+        "label": "Prep coriander and lime garnish",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
           "step-4"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Prepare the garnish while other components are cooking."
       },
       {
         "id": "step-6",
         "raw_text": "To serve, divide the flat rice noodles between serving bowls and pour over the curried coconut broth . Top with the roasted butternut squash wedges and tenderstem broccoli , then drizzle over the superseed chilli crunch . Finish with a scattering of coriander leaves and a squeeze of fresh lime . Enjoy!",
-        "label": "To serve, divide the flat rice",
+        "label": "Assemble and garnish noodle bowls",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 5,
         "requires": [
+          "step-2",
+          "step-3",
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Layer noodles, broth, squash, broccoli, chilli crunch, coriander, and a squeeze of lime."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "82e048a5352e461b130863cb28eac52cba882401cd584d5b3ddb6c0dc166cf9f"
   },
   {
@@ -1697,86 +1942,98 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan. Take out a saucepan, a mixing bowl and a baking dish around 15x20cm (or double this for a four person box).",
-        "label": "Preheat your oven to 200°C /",
+        "label": "Preheat oven and prepare equipment",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
-          "bowl",
-          "mixing bowl",
           "oven",
-          "pan",
-          "saucepan"
+          "saucepan",
+          "mixing bowl",
+          "baking dish"
         ],
         "temperature_c": 200,
-        "notes": ""
+        "notes": "Preheat oven to 200°C or 180°C fan. Prepare a 15x20cm baking dish."
       },
       {
         "id": "step-2",
         "raw_text": "Drain the lentils and add them to your mixing bowl along with the squash & nduja filling . Give everything a good mix to combine.",
-        "label": "Drain the lentils and add them",
+        "label": "Mix lentils and squash filling",
         "type": "prep",
         "estimated_duration_minutes": 3,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "bowl",
           "mixing bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Ensure lentils are well drained before mixing with the squash and nduja filling."
       },
       {
         "id": "step-3",
         "raw_text": "Place a saucepan over medium heat and add the creamy miso bechamel . Bring it to a gentle simmer, then add the baby spinach and cook for about a minute until wilted.",
-        "label": "Place a saucepan over medium heat",
+        "label": "Simmer bechamel and wilt spinach",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 4,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "stove"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Bring bechamel to a gentle simmer over medium heat, then cook spinach for about 1 minute until wilted."
       },
       {
         "id": "step-4",
         "raw_text": "Build your lasagne in three layers: Spread one-third of the lentils, squash & nduja mix in the base of your dish. Cover with lasag ne sheets (about 2½ sheets per layer). Top with one-third of the baby spinach & miso b echamel , then another third of the lentils, squash & nduja mix . Repeat with more lasagne sheets , another third of baby spinach & miso b echamel , and the remaining lentils, squash & nduja mix . Finish with a final layer of lasagne sheets and the rest of the baby spinach & miso b echamel . Drizzle with olive oil, season with salt and pepper, then bake for 25–30 minutes, until bubbling and golden. To check doneness, insert a knife into the centre, and if it’s hot through and the pasta is tender, it's ready.",
-        "label": "Build your lasagne in three layers:",
-        "type": "finish",
-        "estimated_duration_minutes": 27,
+        "label": "Assemble and bake the lasagne",
+        "type": "cook",
+        "estimated_duration_minutes": 35,
         "requires": [
+          "step-2",
           "step-3"
         ],
         "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": ""
+        "equipment": [
+          "baking dish",
+          "oven",
+          "knife"
+        ],
+        "temperature_c": 200,
+        "notes": "Bake for 25–30 minutes (midpoint 28 mins) until bubbling and golden. Check doneness by inserting a knife into the centre to ensure it is hot and the pasta is tender."
       },
       {
         "id": "step-5",
         "raw_text": "Place the lasagne in the middle of the table and divide it between serving plates. We like stacking pieces on top of each other to make one bigger slice per person, but you could serve them as they are too. Enjoy!",
-        "label": "Place the lasagne in the middle",
+        "label": "Portion and serve the lasagne",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
           "step-4"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "serving plates"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide between plates. Stacking pieces on top of each other is recommended for a larger slice."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "f45304f42946b68cdb936f34b06aa949edc63671f27c16b111134a78f1c2ede8"
   },
   {
@@ -1800,106 +2057,124 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle, then take out a large saucepan, a large frying pan, and a small frying pan.",
-        "label": "Boil your kettle, then take out",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Boil kettle and prepare pans",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan",
-          "saucepan"
+          "kettle",
+          "large saucepan",
+          "large frying pan",
+          "small frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Boil the kettle and gather all necessary pans to streamline the cooking process."
       },
       {
         "id": "step-2",
         "raw_text": "Pour the boiling water from your kettle into the large saucepan and salt the water. Place over medium-high heat. Once the water is bubbling, add the pearled spelt and reduce to a simmer. Cook until al dente, around 20 minutes.",
-        "label": "Pour the boiling water from your",
+        "label": "Cook pearled spelt until al dente",
         "type": "cook",
         "estimated_duration_minutes": 20,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-5"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "kettle",
+          "large saucepan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook the spelt in salted boiling water over medium-high heat, then reduce to a simmer for around 20 minutes until al dente."
       },
       {
         "id": "step-3",
         "raw_text": "Meanwhile remove the hardy stems from the cavolo nero and cut the leaves into bite-sized pieces. Once the spelt is 5 minutes from being ready, place your large frying pan over medium heat, add a drizzle of olive oil, and sauté the cavolo nero until tender and a little crispy at the edges, around 5 minutes. Zest half of the lemon over the cavolo nero and season with salt and pepper. Cut the lemon into wedges for garnish.",
-        "label": "Meanwhile remove the hardy stems from",
-        "type": "finish",
-        "estimated_duration_minutes": 5,
+        "label": "Prep and sauté cavolo nero",
+        "type": "cook",
+        "estimated_duration_minutes": 8,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-5"
+        ],
         "equipment": [
-          "frying pan",
-          "pan"
+          "large frying pan",
+          "knife",
+          "cutting board",
+          "grater"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Sauté the prepped cavolo nero for about 5 minutes over medium heat when the spelt has 5 minutes left. Finish with lemon zest, salt, and pepper."
       },
       {
         "id": "step-4",
         "raw_text": "Once the pearled spelt is cooked al dente, reserve a mug of the cooking water, then drain the spelt. Return it to the saucepan and add the butternut squash sauce . Place the saucepan back over medium heat, stirring occasionally, and cook until the sauce is bubbling. Use the reserved spelt cooking water to adjust the consistency until creamy.",
-        "label": "Once the pearled spelt is cooked",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "label": "Drain spelt and add squash sauce",
+        "type": "cook",
+        "estimated_duration_minutes": 5,
         "requires": [
-          "step-3"
+          "step-2"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-5"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "large saucepan",
+          "mug",
+          "colander"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Be sure to reserve a mug of cooking water before draining. Cook with the butternut squash sauce over medium heat until bubbling, adjusting consistency with the reserved water."
       },
       {
         "id": "step-5",
         "raw_text": "Heat a few tablespoons of olive oil in your small frying pan. When hot, pick the sage leaves and add to the oil in a single layer without overlapping. The leaves will turn translucent and the oil will stop bubbling around them when they’re crisp. Turn off the heat and sprinkle in the smoky pine nut mix so it toasts slightly without burning.",
-        "label": "Heat a few tablespoons of olive",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "label": "Fry sage and toast pine nuts",
+        "type": "cook",
+        "estimated_duration_minutes": 4,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
           "step-4"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "small frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Fry sage leaves in a single layer until translucent and crisp. Turn off the heat before adding the pine nuts to prevent burning."
       },
       {
         "id": "step-6",
         "raw_text": "To serve, divide the risotto between serving bowls. Scatter over the crispy sage and smoky pine nuts , then drizzle with any remaining sage oil. Squeeze over the lemon juice to taste and season with salt and pepper. Serve with a side of zesty sautéed cavolo nero and enjoy!",
-        "label": "To serve, divide the risotto between",
+        "label": "Plate risotto and garnish to serve",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-3",
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide the risotto, top with crispy sage, pine nuts, sage oil, and lemon juice. Serve alongside the sautéed cavolo nero."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "b101846c1ab5079989931552c94123ec23229c8f42cf2e96743236e217ac982d"
   },
   {
@@ -1923,72 +2198,74 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Boil your kettle and take out a large saucepan and a wide ovenproof or casserole dish.",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and boil kettle",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "casserole dish",
           "oven",
-          "pan",
-          "saucepan"
+          "kettle",
+          "large saucepan",
+          "wide ovenproof or casserole dish"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C (or 200°C fan). Boil kettle and prepare equipment."
       },
       {
         "id": "step-2",
         "raw_text": "Place the saucepan over medium heat and pour in the boiling water from the kettle. Salt the water generously, add the conchiglioni pasta shells , and cook for 8 minutes, or until al dente. Take care not to overcook, as the pasta should remain slightly firm. This will make it easier to fill with the squash puree and it will continue cooking in the oven later. Drain well and rinse the pasta so it is cool enough to handle for filling.",
-        "label": "Place the saucepan over medium heat",
+        "label": "Cook and drain pasta shells",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 10,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "oven",
-          "pan",
-          "saucepan"
+          "large saucepan",
+          "colander"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook pasta for 8 minutes until al dente. Drain and rinse with cold water so they are cool enough to handle."
       },
       {
         "id": "step-3",
         "raw_text": "Pour the creamy gratin sauce into your ovenproof or casserole dish. Fold in the baby spinach and spread the mixture evenly across the base of the dish. Fill each conchiglioni shell with the squash puree using a dessert spoon, then arrange them in a single layer on top of the gratin sauce. Gently press them into the sauce so they are half submerged. Drizzle over good-quality olive oil and bake for 10–15 minutes, or until the pasta is tender and slightly crispy in places, and the squash filling is lightly golden.",
-        "label": "Pour the creamy gratin sauce into",
-        "type": "finish",
-        "estimated_duration_minutes": 12,
+        "label": "Assemble and bake stuffed pasta",
+        "type": "cook",
+        "estimated_duration_minutes": 18,
         "requires": [
           "step-2"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "casserole dish",
+          "wide ovenproof or casserole dish",
+          "dessert spoon",
           "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Bake for 10–15 minutes (midpoint 13 minutes) plus 5 minutes for assembly. Bake until pasta is tender and slightly crispy, and squash filling is lightly golden."
       },
       {
         "id": "step-4",
         "raw_text": "To serve, divide the butternut squash & sage stuffed conchiglioni with the creamy sauce between serving plates. Finish with salt and freshly ground black pepper. Enjoy!",
-        "label": "To serve, divide the butternut squash",
+        "label": "Plate and season pasta",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
           "step-3"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "serving plates"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide pasta and sauce between plates. Season with salt and freshly ground black pepper."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "88bcb0fb5676152b9048a165056e4a8e7bdec6762b716ee6caf292f15cbc402b"
   },
   {
@@ -2034,74 +2311,81 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C and take out a roasting tray.",
-        "label": "Preheat your oven to 200°C and",
+        "label": "Preheat oven and prepare tray",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
           "oven",
-          "roasting tray",
-          "tray"
+          "roasting tray"
         ],
         "temperature_c": 200,
-        "notes": ""
+        "notes": "Preheat oven to 200°C and set aside the roasting tray."
       },
       {
         "id": "step-2",
         "raw_text": "Cut each tomato into eight pieces by quartering them and then cutting each quarter in half. Peel and finely slice half of the red onion, saving the other half for another recipe. Open, drain and rinse the butterbeans . Add the tomatoes , butterbeans and sliced onion to a large mixing bowl, toss in a healthy glug of extra virgin olive oil and season well with salt and pepper. Leave to sit while you prepare the croutons, so the tomatoes release their juices.",
-        "label": "Cut each tomato into eight pieces",
+        "label": "Prep tomatoes, onions, and butterbeans",
         "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-1"
+        "estimated_duration_minutes": 8,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "mixing bowl"
+          "knife",
+          "cutting board",
+          "colander",
+          "large mixing bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Let the tomato mixture sit to release juices while preparing the croutons."
       },
       {
         "id": "step-3",
         "raw_text": "Tear the ciabatta into rough chunks and place in your roasting tray. Toss the croutons in a drizzle of olive oil and season well with salt and pepper. Roast for 10 minutes or until golden. Once they’re done, mix 2/3rds of them through the tomatoes in the mixing bowl.",
-        "label": "Tear the ciabatta into rough chunks",
+        "label": "Prepare and roast croutons",
         "type": "cook",
-        "estimated_duration_minutes": 10,
+        "estimated_duration_minutes": 12,
         "requires": [
+          "step-1",
           "step-2"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
-          "bowl",
-          "mixing bowl",
           "roasting tray",
-          "tray"
+          "oven",
+          "large mixing bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast for 10 minutes or until golden. Mix 2/3rds of the croutons into the tomatoes."
       },
       {
         "id": "step-4",
         "raw_text": "Divide the dressed tomatoes between serving bowls and scatter over the remaining ciabatta croutons . Add a spoon of vegan 'burrata' to the middle of the bowl, then drizzle the hazelnut pesto over everything (if the pesto has thickened in the fridge you can loosen the pesto with a little olive oil or water). Season to taste with salt or pepper and enjoy!",
-        "label": "Divide the dressed tomatoes between serving",
+        "label": "Plate salad and garnish",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-3"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls",
+          "spoon"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Loosen the pesto with olive oil or water if it has thickened in the fridge."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "effba052b11e7bce91eba26e0c3380373fd6e969d1f2eeaee735de4c7705b815"
   },
   {
@@ -2125,86 +2409,96 @@
       {
         "id": "step-1",
         "raw_text": "This is one of very few recipes that takes a little longer than 15 minutes, but we hope you'll forgive us when you see how easy it is to finish!",
-        "label": "This is one of very few",
-        "type": "finish",
-        "estimated_duration_minutes": 15,
+        "label": "Read recipe introduction",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Introductory step noting that the recipe takes slightly longer than 15 minutes."
       },
       {
         "id": "step-2",
         "raw_text": "Boil your kettle, pre-heat your oven to 220°C / 200°C fan, then take out a large roasting tray and a saucepan.",
-        "label": "Boil your kettle, pre-heat your oven",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Boil kettle and preheat oven",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
         "equipment": [
+          "kettle",
           "oven",
-          "pan",
           "roasting tray",
-          "saucepan",
-          "tray"
+          "saucepan"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C or 200°C fan."
       },
       {
         "id": "step-3",
         "raw_text": "Slice off and discard the bottom end of the brussels sprouts , then slice vertically in half. Cut the parsnip into 1.5cm cubes. Add the parsnips to your roasting tray, toss in a drizzle of olive oil, season well with salt and pepper and roast for 10 minutes. Then add the brussels sprouts tossed in oil, salt and pepper and roast for a further 15-20 minutes or until golden and caramelised. Add the hazelnuts to one side of your baking tray for the final 5 minutes of cooking time.",
-        "label": "Slice off and discard the bottom",
+        "label": "Prep and roast vegetables",
         "type": "cook",
-        "estimated_duration_minutes": 17,
+        "estimated_duration_minutes": 33,
         "requires": [
           "step-2"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
         "equipment": [
+          "knife",
+          "cutting board",
           "roasting tray",
-          "tray"
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast parsnips for 10 minutes, add sprouts for 15-20 minutes (midpoint 17.5) until golden, and add hazelnuts for the final 5 minutes."
       },
       {
         "id": "step-4",
         "raw_text": "Meanwhile, pour boiling water from your kettle into your saucepan and place over a medium heat. Add the farro and boil for 15 minute or until tender but al dente.",
-        "label": "Meanwhile, pour boiling water from your",
+        "label": "Boil the farro",
         "type": "cook",
         "estimated_duration_minutes": 15,
         "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
           "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "stove"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Boil farro for 15 minutes or until tender but al dente."
       },
       {
         "id": "step-5",
         "raw_text": "To serve up, divide the brussels sprouts , parsnips and farro between serving plates, scatter over the toasted hazelnuts , then smother everything generously in tangy caper salsa verde dressing. Enjoy!",
-        "label": "To serve up, divide the brussels",
+        "label": "Plate and serve",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 5,
         "requires": [
+          "step-3",
           "step-4"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "serving plates"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide sprouts, parsnips, and farro, scatter hazelnuts, and top with tangy caper salsa verde."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "39abeeac8953b4f705a41f58e9d42ed9788576cb1b6638a0dc6482e174adb1c6"
   },
   {
@@ -2227,49 +2521,81 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Our caribbean jackfruit curry is a",
-        "label": "Our caribbean jackfruit curry is a",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "jackfruit, marinated in garlic, ginger, scotch bonnet, allspice and curry powder",
+        "label": "Marinate the jackfruit",
+        "type": "prep",
+        "estimated_duration_minutes": 15,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Marinate the jackfruit with garlic, ginger, scotch bonnet, allspice, and curry powder."
       },
       {
         "id": "step-2",
-        "raw_text": "Served with fluffy coconut rice and",
-        "label": "Served with fluffy coconut rice and",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "raw_text": "cooked slowly with fresh vegetables and kidney beans until juicy and tender",
+        "label": "Slow cook the curry",
+        "type": "cook",
+        "estimated_duration_minutes": 40,
         "requires": [
           "step-1"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Slowly cook the marinated jackfruit with fresh vegetables and kidney beans until juicy and tender."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "fluffy coconut rice",
+        "label": "Cook the coconut rice",
+        "type": "cook",
+        "estimated_duration_minutes": 20,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Cook the basmati rice with desiccated coconut until fluffy."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Braised Cavolo Nero",
+        "label": "Braise the cavolo nero",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Braise the cavolo nero."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Served with fluffy coconut rice and vitamin-rich cavolo nero.",
+        "label": "Plate and serve",
+        "type": "finish",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-2",
+          "step-3",
+          "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
-      },
-      {
-        "id": "step-3",
-        "raw_text": "Nutrition Calories 605kcal; Protein 23.1g; Fat",
-        "label": "Nutrition Calories 605kcal; Protein 23.1g; Fat",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
-        "requires": [
-          "step-2"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "pot"
-        ],
-        "temperature_c": null,
-        "notes": ""
+        "notes": "Serve the slow-cooked jackfruit curry with the fluffy coconut rice and braised cavolo nero."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "412325868f799f03e46a2b40cd0491f83f5c46e47d6f047ab7555a9fa3430629"
   },
   {
@@ -2293,87 +2619,105 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 220°C fan, then take out a large roasting tray and a frying pan.",
-        "label": "Preheat your oven to 200°C /",
+        "label": "Preheat oven and prepare pans",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 10,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
         "equipment": [
-          "frying pan",
           "oven",
-          "pan",
-          "roasting tray",
-          "tray"
+          "large roasting tray",
+          "frying pan"
         ],
         "temperature_c": 200,
-        "notes": ""
+        "notes": "Preheat to 200°C or 220°C fan."
       },
       {
         "id": "step-2",
         "raw_text": "Cut the cauliflower into bite-sized chunks, place them in the roasting tray, and toss with a drizzle of olive oil and the adobo sauce , ensuring each piece is evenly coated. Roast in the oven for 15–20 minutes, or until the sauce starts to caramelise.",
-        "label": "Cut the cauliflower into bite-sized chunks",
+        "label": "Prep and roast cauliflower",
         "type": "cook",
-        "estimated_duration_minutes": 17,
+        "estimated_duration_minutes": 22,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "oven",
-          "roasting tray",
-          "tray"
+          "knife",
+          "cutting board",
+          "large roasting tray",
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast for 15–20 minutes (midpoint 17.5 minutes) until sauce caramelises."
       },
       {
         "id": "step-3",
         "raw_text": "Place your frying pan over a medium heat and dry-fry the corn tacos (without oil) for 30 seconds on each side, or until warm and soft. Add a sprinkle of water if you’d like them extra soft. Alternatively, place the stack of tacos on a plate and cover with a damp kitchen towel. Microwave on medium for 30 seconds at a time; after about a minute, the tacos should be soft and fragrant.",
-        "label": "Place your frying pan over a",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "label": "Warm the corn tacos",
+        "type": "cook",
+        "estimated_duration_minutes": 3,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
         "equipment": [
           "frying pan",
-          "pan"
+          "plate",
+          "microwave"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Dry-fry for 30 seconds per side or microwave for about 1 minute."
       },
       {
         "id": "step-4",
         "raw_text": "Cut the lime into quarters and drain the red wine vinegar pickled red cabbage .",
-        "label": "Cut the lime into quarters and",
+        "label": "Prep lime and cabbage",
         "type": "prep",
         "estimated_duration_minutes": 3,
-        "requires": [
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cut lime into quarters and drain the pickled cabbage."
       },
       {
         "id": "step-5",
         "raw_text": "To serve, lay the tacos on a large plate and top with the pickled red cabbage and roasted cauliflower . Drizzle over the jalapeno salsa and cashew crema , then finish with a squeeze of fresh lime juice. Enjoy!",
-        "label": "To serve, lay the tacos on",
+        "label": "Assemble and serve tacos",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 5,
         "requires": [
+          "step-2",
+          "step-3",
           "step-4"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "large plate"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Top tacos with cabbage, cauliflower, salsa, crema, and lime juice."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "ed29c502fb1a9334a185c362422f76f3b11b016fbb13b8f131104fc2921dc7cb"
   },
   {
@@ -2509,106 +2853,122 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle, pre-heat your oven to 220°C / 200°C fan and take out a large roasting tray, a small frying pan and a saucepan.",
-        "label": "Boil your kettle, pre-heat your oven",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Boil kettle, preheat oven, and gather equipment",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
+          "kettle",
           "oven",
-          "pan",
-          "roasting tray",
-          "saucepan",
-          "tray"
+          "large roasting tray",
+          "small frying pan",
+          "saucepan"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C or 200°C fan while kettle boils."
       },
       {
         "id": "step-2",
         "raw_text": "Place your frying pan over a medium heat and add the almonds . Dry fry (without oil) for 3-4 minutes or until nicely toasted, tossing occasionally so they don't burn. Set aside and roughly chop or crush the almonds by pressing down on them with a rolling pin or bottom of a heavy pan.",
-        "label": "Place your frying pan over a",
+        "label": "Toast and crush the almonds",
         "type": "cook",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 4,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "frying pan",
-          "pan"
+          "small frying pan",
+          "rolling pin"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Dry fry for 3-4 minutes until toasted, tossing occasionally. Crush with a rolling pin or heavy pan."
       },
       {
         "id": "step-3",
         "raw_text": "Cut the courgette in half lengthways, then into large, diagonal pieces. Drizzle with olive oil and season with salt and pepper, then place on your roasting tray. Cook for 15 minutes or until the courgette is caramelised and starting to char.",
-        "label": "Cut the courgette in half lengthways",
+        "label": "Prep and roast the courgettes",
         "type": "cook",
-        "estimated_duration_minutes": 15,
+        "estimated_duration_minutes": 18,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
         "equipment": [
-          "roasting tray",
-          "tray"
+          "knife",
+          "large roasting tray",
+          "oven"
         ],
-        "temperature_c": null,
-        "notes": ""
+        "temperature_c": 220,
+        "notes": "Roast for 15 minutes until caramelised and starting to char."
       },
       {
         "id": "step-4",
         "raw_text": "Fill your saucepan with boiling water and place over a high heat. Once it's bubbling, reduce to a simmer and add the giant cous cous . Cook until tender but al dente, around 6-8 minutes. Drain the chickpeas then add them to the pan for the final one minute of cooking time.",
-        "label": "Fill your saucepan with boiling water",
+        "label": "Cook giant couscous and chickpeas",
         "type": "cook",
-        "estimated_duration_minutes": 7,
+        "estimated_duration_minutes": 8,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "colander"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook couscous for 6-8 minutes, adding drained chickpeas for the final 1 minute."
       },
       {
         "id": "step-5",
         "raw_text": "Drain the giant cous cous and chickpeas . Add them to a bowl along with the cooked courgettes and mix through half of the mint pesto .",
-        "label": "Drain the giant cous cous and",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Mix couscous, chickpeas, courgettes, and pesto",
+        "type": "finish",
+        "estimated_duration_minutes": 2,
         "requires": [
+          "step-3",
           "step-4"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
-          "bowl"
+          "bowl",
+          "colander"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Drain couscous and chickpeas, then mix with cooked courgettes and half of the mint pesto."
       },
       {
         "id": "step-6",
         "raw_text": "To serve, spread the romesco sauce (cold) at the bottom of a plate and top with the chickpeas , couscous and courgettes . Drizzle over the remaining mint pesto and tahini sauce , and sprinkle the toasted almonds to finish. Enjoy!",
-        "label": "To serve, spread the romesco sauce",
+        "label": "Plate, drizzle sauces, and garnish with almonds",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-2",
           "step-5"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "plate"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Spread cold romesco sauce first, top with the warm mixture, drizzle remaining pesto and tahini, and finish with almonds."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "f4543f1308cd4b5b5c05a9ab01ef8c58e38f859584749a0f5e5604180143cd25"
   },
   {
