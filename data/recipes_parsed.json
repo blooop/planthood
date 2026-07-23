@@ -2763,73 +2763,82 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large roasting tray, and a saucepan.",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and prepare equipment",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
           "oven",
-          "pan",
-          "roasting tray",
-          "saucepan",
-          "tray"
+          "large roasting tray",
+          "saucepan"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C (or 200°C fan). Get out the roasting tray and saucepan."
       },
       {
         "id": "step-2",
         "raw_text": "Slice the aubergine into rounds, about 1cm thick. We recommend roasting the aubergine for better flavour, but it does take longer. If you want the meal ready within 15 minutes, simply fry the aubergine with a healthy drizzle of olive oil in a medium-hot frying pan for 5-7 minutes on each side until golden and tender. Otherwise, if you're happy to wait 30 mins, lay the aubergine rounds on a baking tray, brush with olive oil on both sides, and season with salt and pepper. Roast for 15 mins, then flip the aubergines and roast for another 10-15 mins until softened and golden. Alternatively, if you have an air fryer, you could air fry them for 15 minutes, flipping halfway. You could also turn the chickpeas into crispy chickpeas by draining, patting dry and then roasting or air frying the chickpeas in oil, salt and pepper for the same amount of time as the aubergine (optional, but recommended!).",
-        "label": "Slice the aubergine into rounds, about",
+        "label": "Slice and cook aubergine",
         "type": "cook",
-        "estimated_duration_minutes": 6,
+        "estimated_duration_minutes": 30,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
+          "knife",
+          "cutting board",
+          "baking tray",
           "frying pan",
-          "pan",
-          "tray"
+          "air fryer"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roasting takes 25-30 mins (flip halfway). Frying takes 10-14 mins total. Air frying takes 15 mins. Optionally roast/air fry chickpeas too."
       },
       {
         "id": "step-3",
         "raw_text": "Place the bulgur wheat in a saucepan and cover with cold water. Bring to a boil and then turn down to a simmer and cook until tender but al dente, around 6-8 minutes. If you haven't roasted the chickpeas, simply drain and add these to the bulgur wheat pan for the final one minute of cooking time. Stir 2 tbsp of the herby caper gremolata through the bulgur wheat and season well with salt and pepper. This is your bulgur and chickpea pilaf.",
-        "label": "Place the bulgur wheat in a",
+        "label": "Cook bulgur wheat and mix pilaf",
         "type": "cook",
-        "estimated_duration_minutes": 7,
+        "estimated_duration_minutes": 10,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "pan",
           "saucepan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Simmer bulgur for 6-8 minutes. Add drained chickpeas for the final minute if not roasted. Stir in 2 tbsp gremolata."
       },
       {
         "id": "step-4",
         "raw_text": "To serve, spread half of the romesco sauce (cold) onto the bottom of each plate, top with the bulgur pilaf , then with the aubergine and finish with the tahini drizzle and remaining herby caper gremolata . If you made crispy chickpeas, scatter these over at the end. Enjoy!",
-        "label": "To serve, spread half of the",
+        "label": "Plate and garnish the dish",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 5,
         "requires": [
+          "step-2",
           "step-3"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "plates"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Layer romesco, bulgur pilaf, aubergine, tahini drizzle, gremolata, and optional crispy chickpeas."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "7a1bc46706c7eefb99197252b2bfb5cd87ea891c41168a835b553f58a764b19b"
   },
   {
@@ -3702,72 +3711,81 @@
       {
         "id": "step-1",
         "raw_text": "Take out a large non-stick frying pan and set a steamer over the hob if you don't have a microwave for warming the pancakes.",
-        "label": "Take out a large non-stick frying",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Set up pan and steamer",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "hob",
-          "pan"
+          "large non-stick frying pan",
+          "steamer",
+          "hob"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Set up the steamer over the hob if you do not plan to use a microwave for warming the pancakes."
       },
       {
         "id": "step-2",
         "raw_text": "Use your hands to pull apart the oyster mushrooms into thin strips. Place the cornstarch into a large bowl, season well with salt and pepper, then add the oyster mushrooms and give them a good mix so until coated evenly. Place your non-stick frying pan over a medium heat and add a drizzle of oil. Once hot, fry the oyster mushrooms in batches until golden and crispy, around 10-15 minutes. Make sure you fry in batches leaving space between the mushrooms, otherwise they won't crisp up. If they stick together as you cook, break them up regularly, using two forks. Keep frying until they're all golden and crispy on all sides. Season the mushrooms with sea salt to taste.",
-        "label": "Use your hands to pull apart",
+        "label": "Prep and fry oyster mushrooms",
         "type": "cook",
-        "estimated_duration_minutes": 12,
+        "estimated_duration_minutes": 15,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "bowl",
-          "frying pan",
-          "pan"
+          "large bowl",
+          "large non-stick frying pan",
+          "two forks"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Frying takes 10-15 minutes. Fry in batches to ensure they get crispy, and use two forks to break them apart if they stick."
       },
       {
         "id": "step-3",
         "raw_text": "Meanwhile, finely slice the spring onions lengthways (including the green bits!) and cut the cucumber into matchsticks. Julienne the carrot , or you can use a vegetable peeler to make ribbons. Pierce the film packet the pancakes are in, then place in your steamer for 4-5 minutes or microwave on a low heat for 30 seconds.",
-        "label": "Meanwhile, finely slice the spring onions",
-        "type": "cook",
-        "estimated_duration_minutes": 4,
+        "label": "Prep vegetables and warm pancakes",
+        "type": "prep",
+        "estimated_duration_minutes": 8,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "pan"
+          "knife",
+          "cutting board",
+          "vegetable peeler",
+          "steamer",
+          "microwave"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Can be done while mushrooms are frying. Steaming takes 4-5 minutes, while microwaving takes 30 seconds."
       },
       {
         "id": "step-4",
         "raw_text": "Divide the pancakes between serving plates, then load them up with a hoisin sauce and crispy oyster mushrooms . Finish with a garnish of spring onion , cucumber and carrot . Enjoy!",
-        "label": "Divide the pancakes between serving plates",
+        "label": "Assemble and garnish pancakes",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 4,
         "requires": [
+          "step-2",
           "step-3"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "pan"
+          "serving plates"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Assemble immediately while the pancakes and mushrooms are still warm."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "7fb6e7d269e12733cc37fd7001dc3f84066a75b37e6eb491f39eadd14f3657ef"
   },
   {
