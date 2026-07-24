@@ -12234,5 +12234,115 @@
     "extraction_method": "step_markers",
     "needs_llm_segmentation": false,
     "notes": ""
+  },
+  {
+    "id": "aromatic-thai-green-curry-udon-noodles-with-smoked-tofu-blistered-cherry-tomatoes-summer-green-beans-charred-lime",
+    "title": "Summer Thai Green Curry Udon Noodles, With Smoked Tofu, Blistered Cherry Tomatoes, Summer Green Beans & Charred Lime",
+    "source_url": "https://planthood.co.uk/products/aromatic-thai-green-curry-udon-noodles-with-smoked-tofu-blistered-cherry-tomatoes-summer-green-beans-charred-lime",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 505.0,
+      "protein_g": 26.5,
+      "fat_g": 19.0,
+      "carbs_g": 57.4,
+      "fibre_g": 6.3,
+      "salt_g": 1.5
+    },
+    "schema_version": 1,
+    "method_clean": "STEP 1 - STEP 2 - STEP 3 - STEP 4 - STEP 5 - STEP 6 -",
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "-",
+        "marker": 1
+      },
+      {
+        "id": "step-2",
+        "text": "-",
+        "marker": 2
+      },
+      {
+        "id": "step-3",
+        "text": "-",
+        "marker": 3
+      },
+      {
+        "id": "step-4",
+        "text": "-",
+        "marker": 4
+      },
+      {
+        "id": "step-5",
+        "text": "-",
+        "marker": 5
+      },
+      {
+        "id": "step-6",
+        "text": "-",
+        "marker": 6
+      }
+    ],
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "needs_llm_segmentation": false,
+    "notes": ""
+  },
+  {
+    "id": "creamy-lemon-mafaldine-pasta-refreshing-crunchy-sugarsnaps-garden-peas-peppery-rocket-salad-chilli-pine-nut-crumb",
+    "title": "Creamy Lemon Mafaldine Pasta, Refreshing Crunchy Sugarsnaps, Garden Peas, Peppery Rocket Salad & Chilli Pine Nut Crumb",
+    "source_url": "https://planthood.co.uk/products/creamy-lemon-mafaldine-pasta-refreshing-crunchy-sugarsnaps-garden-peas-peppery-rocket-salad-chilli-pine-nut-crumb",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 505.0,
+      "protein_g": 26.5,
+      "fat_g": 19.0,
+      "carbs_g": 57.4,
+      "fibre_g": 6.3,
+      "salt_g": 1.5
+    },
+    "schema_version": 1,
+    "method_clean": "STEP 1 - STEP 2 - STEP 3 - STEP 4 - STEP 5 - STEP 6 -",
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "-",
+        "marker": 1
+      },
+      {
+        "id": "step-2",
+        "text": "-",
+        "marker": 2
+      },
+      {
+        "id": "step-3",
+        "text": "-",
+        "marker": 3
+      },
+      {
+        "id": "step-4",
+        "text": "-",
+        "marker": 4
+      },
+      {
+        "id": "step-5",
+        "text": "-",
+        "marker": 5
+      },
+      {
+        "id": "step-6",
+        "text": "-",
+        "marker": 6
+      }
+    ],
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "needs_llm_segmentation": false,
+    "notes": ""
   }
 ]

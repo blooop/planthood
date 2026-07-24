@@ -1,7 +1,7 @@
 {
-  "total_recipes": 293,
+  "total_recipes": 295,
   "failed_recipes": 0,
-  "last_updated": "2026-07-23 05:52:57",
+  "last_updated": "2026-07-24 05:50:16",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -2051,6 +2051,20 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "aromatic-thai-green-curry-udon-noodles-with-smoked-tofu-blistered-cherry-tomatoes-summer-green-beans-charred-lime",
+      "title": "Summer Thai Green Curry Udon Noodles, With Smoked Tofu, Blistered Cherry Tomatoes, Summer Green Beans & Charred Lime",
+      "url": "https://planthood.co.uk/products/aromatic-thai-green-curry-udon-noodles-with-smoked-tofu-blistered-cherry-tomatoes-summer-green-beans-charred-lime",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "creamy-lemon-mafaldine-pasta-refreshing-crunchy-sugarsnaps-garden-peas-peppery-rocket-salad-chilli-pine-nut-crumb",
+      "title": "Creamy Lemon Mafaldine Pasta, Refreshing Crunchy Sugarsnaps, Garden Peas, Peppery Rocket Salad & Chilli Pine Nut Crumb",
+      "url": "https://planthood.co.uk/products/creamy-lemon-mafaldine-pasta-refreshing-crunchy-sugarsnaps-garden-peas-peppery-rocket-salad-chilli-pine-nut-crumb",
       "scraped": true,
       "week_label": null
     }
