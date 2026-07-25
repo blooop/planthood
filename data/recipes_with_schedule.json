@@ -510,6 +510,169 @@
     "active_time_min": 0
   },
   {
+    "id": "aromatic-thai-green-curry-udon-noodles-with-smoked-tofu-blistered-cherry-tomatoes-summer-green-beans-charred-lime",
+    "title": "Summer Thai Green Curry Udon Noodles, With Smoked Tofu, Blistered Cherry Tomatoes, Summer Green Beans & Charred Lime",
+    "source_url": "https://planthood.co.uk/products/aromatic-thai-green-curry-udon-noodles-with-smoked-tofu-blistered-cherry-tomatoes-summer-green-beans-charred-lime",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 505.0,
+      "protein_g": 26.5,
+      "fat_g": 19.0,
+      "carbs_g": 57.4,
+      "fibre_g": 6.3,
+      "salt_g": 1.5
+    },
+    "schema_version": 1,
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "-",
+        "label": "Prep ingredients and tofu",
+        "type": "prep",
+        "duration_min": 8,
+        "start_min": 0,
+        "end_min": 8,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "cutting board",
+          "chef's knife"
+        ],
+        "temperature_c": null,
+        "notes": "Ensure tofu is patted dry before cutting to help it brown later.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 8
+      },
+      {
+        "id": "step-2",
+        "raw_text": "-",
+        "label": "Cook udon noodles",
+        "type": "cook",
+        "duration_min": 4,
+        "start_min": 0,
+        "end_min": 4,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "pot",
+          "colander"
+        ],
+        "temperature_c": null,
+        "notes": "Rinsing with cold water prevents the noodles from sticking and overcooking.",
+        "is_critical": false,
+        "slack_min": 17,
+        "latest_start_min": 17,
+        "latest_end_min": 21
+      },
+      {
+        "id": "step-3",
+        "raw_text": "-",
+        "label": "Blister tomatoes and char lime",
+        "type": "cook",
+        "duration_min": 4,
+        "start_min": 8,
+        "end_min": 12,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2"
+        ],
+        "equipment": [
+          "pan",
+          "tongs"
+        ],
+        "temperature_c": null,
+        "notes": "Do not crowd the pan; let the tomatoes sit undisturbed to get a good blister.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 8,
+        "latest_end_min": 12
+      },
+      {
+        "id": "step-4",
+        "raw_text": "-",
+        "label": "Sear tofu and green beans",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 12,
+        "end_min": 17,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [
+          "step-2"
+        ],
+        "equipment": [
+          "pan",
+          "spatula"
+        ],
+        "temperature_c": null,
+        "notes": "Tofu should be crispy on the edges.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 12,
+        "latest_end_min": 17
+      },
+      {
+        "id": "step-5",
+        "raw_text": "-",
+        "label": "Simmer green curry sauce",
+        "type": "cook",
+        "duration_min": 4,
+        "start_min": 17,
+        "end_min": 21,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "pan",
+          "wooden spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Simmer gently to prevent the coconut milk from separating.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 17,
+        "latest_end_min": 21
+      },
+      {
+        "id": "step-6",
+        "raw_text": "-",
+        "label": "Toss noodles and plate",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 21,
+        "end_min": 23,
+        "requires": [
+          "step-2",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "tongs",
+          "plates"
+        ],
+        "temperature_c": null,
+        "notes": "Squeeze the charred lime over the dish just before serving for a smoky, citrusy finish.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 21,
+        "latest_end_min": 23
+      }
+    ],
+    "total_time_min": 23,
+    "active_time_min": 19
+  },
+  {
     "id": "aubergine-parm-sandwich-with-tomato-marinara-vegan-pesto-on-soft-vegan-brioche",
     "title": "Aubergine Parmigiana Sandwich With Pesto Mayo & Rich Tomato Reduction On Soft Vegan Brioche",
     "source_url": "https://planthood.co.uk/products/aubergine-parm-sandwich-with-tomato-marinara-vegan-pesto-on-soft-vegan-brioche",
@@ -6120,6 +6283,175 @@
     "active_time_min": 15
   },
   {
+    "id": "creamy-lemon-mafaldine-pasta-refreshing-crunchy-sugarsnaps-garden-peas-peppery-rocket-salad-chilli-pine-nut-crumb",
+    "title": "Creamy Lemon Mafaldine Pasta, Refreshing Crunchy Sugarsnaps, Garden Peas, Peppery Rocket Salad & Chilli Pine Nut Crumb",
+    "source_url": "https://planthood.co.uk/products/creamy-lemon-mafaldine-pasta-refreshing-crunchy-sugarsnaps-garden-peas-peppery-rocket-salad-chilli-pine-nut-crumb",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 505.0,
+      "protein_g": 26.5,
+      "fat_g": 19.0,
+      "carbs_g": 57.4,
+      "fibre_g": 6.3,
+      "salt_g": 1.5
+    },
+    "schema_version": 1,
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "-",
+        "label": "Prep vegetables and zest lemon",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
+        "equipment": [
+          "cutting board",
+          "chef's knife",
+          "grater"
+        ],
+        "temperature_c": null,
+        "notes": "Zest and halve the lemon, trim the sugarsnaps, and finely slice the chilli.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 5
+      },
+      {
+        "id": "step-2",
+        "raw_text": "-",
+        "label": "Toast pine nuts and chilli",
+        "type": "cook",
+        "duration_min": 3,
+        "start_min": 5,
+        "end_min": 8,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-3"
+        ],
+        "equipment": [
+          "frying pan",
+          "wooden spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Toast the pine nuts and sliced chilli in a dry pan until golden, then set aside as a crumb.",
+        "is_critical": false,
+        "slack_min": 4,
+        "latest_start_min": 9,
+        "latest_end_min": 12
+      },
+      {
+        "id": "step-3",
+        "raw_text": "-",
+        "label": "Boil mafaldine pasta",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-4"
+        ],
+        "equipment": [
+          "large pot",
+          "colander"
+        ],
+        "temperature_c": null,
+        "notes": "Cook the mafaldine pasta in boiling salted water for 9-11 minutes until al dente, then drain.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 10
+      },
+      {
+        "id": "step-4",
+        "raw_text": "-",
+        "label": "Sauté greens and make sauce",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 5,
+        "end_min": 10,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-3"
+        ],
+        "equipment": [
+          "large frying pan",
+          "wooden spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Sauté the sugarsnaps and garden peas, then stir in cream and lemon zest to simmer gently.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 5,
+        "latest_end_min": 10
+      },
+      {
+        "id": "step-5",
+        "raw_text": "-",
+        "label": "Toss pasta in creamy sauce",
+        "type": "cook",
+        "duration_min": 2,
+        "start_min": 10,
+        "end_min": 12,
+        "requires": [
+          "step-3",
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large frying pan",
+          "tongs"
+        ],
+        "temperature_c": null,
+        "notes": "Combine the drained mafaldine pasta with the creamy lemon and vegetable sauce, tossing to coat.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 10,
+        "latest_end_min": 12
+      },
+      {
+        "id": "step-6",
+        "raw_text": "-",
+        "label": "Plate and garnish pasta",
+        "type": "finish",
+        "duration_min": 3,
+        "start_min": 12,
+        "end_min": 15,
+        "requires": [
+          "step-2",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "plates",
+          "serving tongs"
+        ],
+        "temperature_c": null,
+        "notes": "Divide the pasta among plates, top with fresh peppery rocket salad, and sprinkle with the chilli pine nut crumb.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 12,
+        "latest_end_min": 15
+      }
+    ],
+    "total_time_min": 15,
+    "active_time_min": 12
+  },
+  {
     "id": "creamy-mattar-makhani-with-tofu-paneer-kachumbar-salad-garlic-herb-naan",
     "title": "Creamy Mattar Makhani with Tofu 'Paneer', Zingy Kachumbar Salad & Soft Garlic Naan",
     "source_url": "https://planthood.co.uk/products/creamy-mattar-makhani-with-tofu-paneer-kachumbar-salad-garlic-herb-naan",
@@ -6139,87 +6471,73 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Our plant-based spin on the popular",
-        "label": "Our plant-based spin on the popular",
+        "raw_text": "Tofu and peas are gently simmered in coconut milk and tomatoes with onion, garlic, turmeric and cardamom",
+        "label": "Simmer tofu and peas in curry sauce",
         "type": "cook",
-        "duration_min": 8,
+        "duration_min": 15,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 15,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "pan"
+          "pot"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Gently simmer the tofu and peas with the aromatics, coconut milk, and tomatoes to build the curry base.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 15
       },
       {
         "id": "step-2",
-        "raw_text": "Tofu and peas are gently simmered",
-        "label": "Tofu and peas are gently simmered",
-        "type": "finish",
-        "duration_min": 2,
-        "start_min": 8,
-        "end_min": 10,
-        "requires": [
+        "raw_text": "zingy chopped salad made from red onion, cherry tomatoes, coriander and lime",
+        "label": "Prepare kachumbar salad",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
           "step-1"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "bowl"
+        ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 10
+        "notes": "Chop the red onion, cherry tomatoes, and coriander, then dress with lime juice.",
+        "is_critical": false,
+        "slack_min": 10,
+        "latest_start_min": 10,
+        "latest_end_min": 15
       },
       {
         "id": "step-3",
-        "raw_text": "Served with a pillowy soft garlic",
-        "label": "Served with a pillowy soft garlic",
+        "raw_text": "served alongside a zingy chopped salad... Served with a pillowy soft garlic and herb naan",
+        "label": "Plate and serve curry with salad and naan",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 10,
-        "end_min": 12,
+        "start_min": 15,
+        "end_min": 17,
         "requires": [
+          "step-1",
           "step-2"
         ],
         "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 10,
-        "latest_end_min": 12
-      },
-      {
-        "id": "step-4",
-        "raw_text": "Nutrition Calories 582kcal; Protein 21.1g; Fat",
-        "label": "Nutrition Calories 582kcal; Protein 21.1g; Fat",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 12,
-        "end_min": 20,
-        "requires": [
-          "step-3"
+        "equipment": [
+          "plate"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Serve the warm mattar makhani curry alongside the fresh kachumbar salad and garlic & herb naan.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 12,
-        "latest_end_min": 20
+        "latest_start_min": 15,
+        "latest_end_min": 17
       }
     ],
-    "total_time_min": 20,
-    "active_time_min": 18
+    "total_time_min": 17,
+    "active_time_min": 7
   },
   {
     "id": "creamy-orzo-al-limone-with-crispy-panko-tofu-roasted-cherry-tomatoes-tenderstem-broccoli",
@@ -6627,87 +6945,97 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Our plant-based spin on the popular",
-        "label": "Our plant-based spin on the popular",
+        "raw_text": "Fresh iron-rich baby spinach is slowly cooked in coconut milk and tomato with garlic, cumin and garam masala",
+        "label": "Cook spinach curry",
         "type": "cook",
-        "duration_min": 8,
+        "duration_min": 15,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 15,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
-          "pan"
+          "pot"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Slowly cook the baby spinach in the coconut milk and tomato mixture seasoned with garlic, cumin, and garam masala.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 15
       },
       {
         "id": "step-2",
-        "raw_text": "Fresh iron-rich baby spinach is slowly",
-        "label": "Fresh iron-rich baby spinach is slowly",
+        "raw_text": "sweet bursting roasted cherry tomatoes",
+        "label": "Roast cherry tomatoes",
         "type": "cook",
-        "duration_min": 8,
-        "start_min": 8,
-        "end_min": 16,
+        "duration_min": 12,
+        "start_min": 0,
+        "end_min": 12,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "oven",
+          "baking tray"
+        ],
+        "temperature_c": null,
+        "notes": "Roast the cherry tomatoes until they are sweet and bursting.",
+        "is_critical": false,
+        "slack_min": 5,
+        "latest_start_min": 5,
+        "latest_end_min": 17
+      },
+      {
+        "id": "step-3",
+        "raw_text": "then stirred through with a swirl of rich coconut cream.",
+        "label": "Stir in coconut cream",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 15,
+        "end_min": 17,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 16
-      },
-      {
-        "id": "step-3",
-        "raw_text": "Served with sweet bursting roasted cherry",
-        "label": "Served with sweet bursting roasted cherry",
-        "type": "finish",
-        "duration_min": 2,
-        "start_min": 16,
-        "end_min": 18,
-        "requires": [
-          "step-2"
+        "equipment": [
+          "spoon"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Stir a swirl of rich coconut cream through the cooked spinach curry.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 18
+        "latest_start_min": 15,
+        "latest_end_min": 17
       },
       {
         "id": "step-4",
-        "raw_text": "Nutrition Calories 605kcal; Protein 28.1g; Fat",
-        "label": "Nutrition Calories 605kcal; Protein 28.1g; Fat",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 18,
-        "end_min": 26,
+        "raw_text": "Served with sweet bursting roasted cherry tomatoes and a scattering of fresh coriander, with a pillowy soft garlic and herb naan",
+        "label": "Assemble and serve",
+        "type": "finish",
+        "duration_min": 3,
+        "start_min": 17,
+        "end_min": 20,
         "requires": [
+          "step-2",
           "step-3"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "serving plate"
+        ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Serve the creamy saag curry topped with the roasted cherry tomatoes, scattered fresh coriander, and warm garlic naan.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 18,
-        "latest_end_min": 26
+        "latest_start_min": 17,
+        "latest_end_min": 20
       }
     ],
-    "total_time_min": 26,
-    "active_time_min": 24
+    "total_time_min": 20,
+    "active_time_min": 17
   },
   {
     "id": "creamy-squash-bucatini-with-wilted-cavolo-nero-crispy-tempeh-pancetta",
@@ -6898,144 +7226,168 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 220°C fan, then take out a large roasting tray and two saucepans.",
-        "label": "Preheat your oven to 200°C /",
+        "label": "Preheat oven and gather pans",
         "type": "prep",
-        "duration_min": 3,
+        "duration_min": 2,
         "start_min": 0,
-        "end_min": 3,
+        "end_min": 2,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
           "oven",
-          "pan",
-          "roasting tray",
-          "saucepan",
-          "tray"
+          "large roasting tray",
+          "saucepans"
         ],
         "temperature_c": 200,
-        "notes": "",
+        "notes": "Preheat oven to 200°C or 220°C fan.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 3
+        "latest_end_min": 2
       },
       {
         "id": "step-2",
         "raw_text": "Cut the cauliflower into bitesized chunks, place into your roasting tray and toss with olive oil, salt and pepper. Roast for 15-20 minutes or until tender in the centre and nicely charred on the outside.",
-        "label": "Cut the cauliflower into bitesized chunks",
+        "label": "Prep and roast cauliflower",
         "type": "cook",
-        "duration_min": 17,
-        "start_min": 3,
+        "duration_min": 18,
+        "start_min": 2,
         "end_min": 20,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "roasting tray",
-          "tray"
+          "knife",
+          "chopping board",
+          "large roasting tray",
+          "oven"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Roast for 15-20 minutes (midpoint 17.5, rounded to 18) until tender in the centre and nicely charred.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 3,
+        "latest_start_min": 2,
         "latest_end_min": 20
       },
       {
         "id": "step-3",
         "raw_text": "Empty the tomato daal sauce into your saucepan along with the red lentils and 250ml of water. Cook the daal over a medium heat for around until the lentils are tender and cooked through, around 10-15 minutes. Stir regularly to stop the lentils from sticking to the bottom of the pan. Once cooked, squeeze in half of the lime and season to taste with salt.",
-        "label": "Empty the tomato daal sauce into",
+        "label": "Cook tomato daal",
         "type": "cook",
-        "duration_min": 12,
-        "start_min": 20,
-        "end_min": 32,
+        "duration_min": 13,
+        "start_min": 2,
+        "end_min": 15,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "wooden spoon"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 20,
-        "latest_end_min": 32
+        "notes": "Cook for 10-15 minutes (midpoint 12.5, rounded to 13) until lentils are tender. Stir regularly to prevent sticking.",
+        "is_critical": false,
+        "slack_min": 15,
+        "latest_start_min": 17,
+        "latest_end_min": 30
       },
       {
         "id": "step-4",
         "raw_text": "Place the rice in a small saucepan and cover with 2.5x its volume in water. Bring to the boil, then reduce the heat and cover. Cook for 8-10 minutes or until the rice is tender, but al dente.",
-        "label": "Place the rice in a small",
+        "label": "Cook the rice",
         "type": "cook",
         "duration_min": 9,
-        "start_min": 32,
-        "end_min": 41,
+        "start_min": 2,
+        "end_min": 11,
         "requires": [
-          "step-3"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-5"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "small saucepan",
+          "lid"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 32,
-        "latest_end_min": 41
+        "notes": "Cook for 8-10 minutes (midpoint 9) until tender but al dente.",
+        "is_critical": false,
+        "slack_min": 19,
+        "latest_start_min": 21,
+        "latest_end_min": 30
       },
       {
         "id": "step-5",
         "raw_text": "Remove any hardy stems from the cavolo nero , then finely slice the leaves. Once there is 10 minutes left on the roasted cauliflower, add the sliced cavolo nero to one side of the roasting tray, toss in a little olive oil and some salt and roast for the final 10 minutes of cooking time. Check the cavolo nero after 5 minutes to make sure it doesn't burn. Meanwhile roughly chop the coriander leaves.",
-        "label": "Remove any hardy stems from the",
+        "label": "Prep and roast cavolo nero",
         "type": "cook",
         "duration_min": 10,
-        "start_min": 41,
-        "end_min": 51,
+        "start_min": 20,
+        "end_min": 30,
         "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-3",
           "step-4"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "roasting tray",
-          "tray"
+          "knife",
+          "chopping board",
+          "large roasting tray",
+          "oven"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Add cavolo nero to the tray when 10 minutes remain on the cauliflower. Roast for 10 minutes, checking after 5 minutes. Chop coriander meanwhile.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 41,
-        "latest_end_min": 51
+        "latest_start_min": 20,
+        "latest_end_min": 30
       },
       {
         "id": "step-6",
         "raw_text": "Divide the tomato daal and rice between serving bowls, then top with the charred cauliflower , crispy cavolo nero and a dollop of coconut yoghurt . Garnish with chopped coriander , the rest of the lime juice and enjoy!",
-        "label": "Divide the tomato daal and rice",
+        "label": "Plate and garnish daal",
         "type": "finish",
-        "duration_min": 2,
-        "start_min": 51,
-        "end_min": 53,
+        "duration_min": 5,
+        "start_min": 30,
+        "end_min": 35,
         "requires": [
+          "step-3",
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls",
+          "spoon"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Divide daal and rice, top with cauliflower, cavolo nero, yoghurt, coriander, and remaining lime.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 51,
-        "latest_end_min": 53
+        "latest_start_min": 30,
+        "latest_end_min": 35
       }
     ],
-    "total_time_min": 53,
-    "active_time_min": 23
+    "total_time_min": 35,
+    "active_time_min": 18
   },
   {
     "id": "creamy-vietnamese-coconut-curry-with-tofu-sweet-potato-crispy-shallots-pickled-radish-cashews-sesame-seeds",
@@ -7100,121 +7452,132 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle and take out a large frying pan, a medium-size saucepan to cook quinoa and a small sauce pan to warm up the sauce. Fill the medium-size saucepan with boiling water from the kettle and place it over a medium heat to bring back to the boil.",
-        "label": "Boil your kettle and take out",
-        "type": "cook",
-        "duration_min": 8,
+        "label": "Boil kettle and heat saucepan",
+        "type": "prep",
+        "duration_min": 5,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 5,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan",
-          "saucepan"
+          "kettle",
+          "large frying pan",
+          "medium-size saucepan",
+          "small saucepan"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Boil kettle, set up pans, and bring saucepan water to a boil over medium heat.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 5
       },
       {
         "id": "step-2",
         "raw_text": "Cook the red & white quinoa in the saucepan until al dente, around 8 minutes. Drain, then leave it in a sieve over the saucepan to ensure it drains really well while you prepare the rest of the dish.",
-        "label": "Cook the red & white quinoa",
+        "label": "Cook and drain quinoa",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 8,
-        "end_min": 16,
+        "start_min": 5,
+        "end_min": 13,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "pan",
-          "saucepan",
+          "medium-size saucepan",
           "sieve"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 16
+        "notes": "Cook for around 8 minutes until al dente, then leave to drain in a sieve over the saucepan.",
+        "is_critical": false,
+        "slack_min": 2,
+        "latest_start_min": 7,
+        "latest_end_min": 15
       },
       {
         "id": "step-3",
         "raw_text": "To make the cabbage and celery slaw, finely shred the white cabbage (use a mandoline if you have one) and finely slice the celery stick into similar thin strips using a sharp knife. Combine them in a mixing bowl and drizzle in half of the cashew ranch sauce . Mix well, season to taste with salt and pepper, and set aside.",
-        "label": "To make the cabbage and celery",
+        "label": "Prepare cabbage and celery slaw",
         "type": "prep",
-        "duration_min": 3,
-        "start_min": 16,
-        "end_min": 19,
+        "duration_min": 6,
+        "start_min": 5,
+        "end_min": 11,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
         "equipment": [
-          "bowl",
+          "mandoline",
+          "sharp knife",
           "mixing bowl"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 19
+        "notes": "Finely shred cabbage and slice celery. Mix with half of the cashew ranch sauce, season, and set aside.",
+        "is_critical": false,
+        "slack_min": 4,
+        "latest_start_min": 9,
+        "latest_end_min": 15
       },
       {
         "id": "step-4",
         "raw_text": "Tear the tofu into bite-sized chunks using your hands. Heat a drizzle of oil in your frying pan over a medium heat. Add the tofu and fry until golden and crispy on all sides, around 10 minutes. In the meantime add the buffalo sauce to the small saucepan and gently warm it on low heat until it melts, then drizzle over the crispy tofu in the frying pan, and stir until well coated.",
-        "label": "Tear the tofu into bite-sized chunks",
-        "type": "finish",
+        "label": "Fry tofu and warm sauce",
+        "type": "cook",
         "duration_min": 10,
-        "start_min": 19,
-        "end_min": 29,
+        "start_min": 5,
+        "end_min": 15,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan",
-          "saucepan"
+          "large frying pan",
+          "small saucepan"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Fry torn tofu for around 10 minutes until golden and crispy. Warm buffalo sauce on low heat, then coat the tofu.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 19,
-        "latest_end_min": 29
+        "latest_start_min": 5,
+        "latest_end_min": 15
       },
       {
         "id": "step-5",
         "raw_text": "To serve, divide the quinoa between serving bowls and top with the crispy buffalo tofu, spooning over any remaining sauce. Add the slaw and red wine vinegar pickled red onion on the side, and finish with a drizzle of the remaining cashew ranch sauce . Enjoy!",
-        "label": "To serve, divide the quinoa between",
+        "label": "Assemble and serve nourish bowls",
         "type": "finish",
-        "duration_min": 2,
-        "start_min": 29,
-        "end_min": 31,
+        "duration_min": 4,
+        "start_min": 15,
+        "end_min": 19,
         "requires": [
+          "step-2",
+          "step-3",
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Divide quinoa, top with tofu, remaining sauce, slaw, pickled onion, and a drizzle of ranch.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 29,
-        "latest_end_min": 31
+        "latest_start_min": 15,
+        "latest_end_min": 19
       }
     ],
-    "total_time_min": 31,
-    "active_time_min": 20
+    "total_time_min": 19,
+    "active_time_min": 19
   },
   {
     "id": "crispy-buffalo-tofu-tacos-with-cooling-ranch-dressing-shredded-cabbage-pineapple-salsa",
@@ -7237,137 +7600,150 @@
       {
         "id": "step-1",
         "raw_text": "All you need to finish this dish is a large frying pan.",
-        "label": "All you need to finish this",
-        "type": "finish",
-        "duration_min": 2,
+        "label": "Prepare the large frying pan",
+        "type": "prep",
+        "duration_min": 1,
         "start_min": 0,
-        "end_min": 2,
+        "end_min": 1,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
-          "frying pan",
-          "pan"
+          "large frying pan"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Ensure the large frying pan is clean and ready for use.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 2
+        "latest_end_min": 1
       },
       {
         "id": "step-2",
         "raw_text": "Tear the tofu into bite-sized chunks with your hands, then place into a small bowl with the cornflour and season well with salt and pepper. Mix carefully with your hands to coat the tofu in the cornflour. Add a drizzle of oil to your frying pan and place over a medium-high heat. Once hot, add the tofu and fry on all sides until golden and crispy. Alternatively, toss in a little oil and air fry for 15 minutes, tossing every 5 minutes.",
-        "label": "Tear the tofu into bite-sized chunks",
+        "label": "Prep and fry the tofu",
         "type": "cook",
         "duration_min": 15,
-        "start_min": 2,
-        "end_min": 17,
+        "start_min": 1,
+        "end_min": 16,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "bowl",
-          "frying pan",
-          "pan"
+          "small bowl",
+          "large frying pan",
+          "air fryer"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Fry on all sides until golden and crispy, or air fry for 15 minutes tossing every 5 minutes.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 2,
-        "latest_end_min": 17
+        "latest_start_min": 1,
+        "latest_end_min": 16
       },
       {
         "id": "step-3",
         "raw_text": "Meanwhile slice the red cabbage as thinly as you can (use a mandolin if you have one). Roughly chop the coriander . Roughly chop the pineapple into smaller pieces. Give the cashew ranch sauce a shake in its pouch before opening in case it has separated while sitting in the fridge.",
-        "label": "Meanwhile slice the red cabbage as",
+        "label": "Prep cabbage, coriander, pineapple, and sauce",
         "type": "prep",
-        "duration_min": 3,
-        "start_min": 17,
-        "end_min": 20,
-        "requires": [
+        "duration_min": 8,
+        "start_min": 0,
+        "end_min": 8,
+        "requires": [],
+        "can_overlap_with": [
           "step-2"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "mandolin",
+          "knife",
+          "cutting board"
+        ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 17,
+        "notes": "Slice cabbage as thinly as possible. Shake the sauce pouch before opening.",
+        "is_critical": false,
+        "slack_min": 12,
+        "latest_start_min": 12,
         "latest_end_min": 20
       },
       {
         "id": "step-4",
         "raw_text": "When the tofu is ready, remove it from the pan and place it into a bowl and toss with the buffalo sauce to coat evenly. You may want to run the sauce pouch under warm water to loosen the texture before opening.",
-        "label": "When the tofu is ready, remove",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 20,
-        "end_min": 28,
+        "label": "Toss tofu in buffalo sauce",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 16,
+        "end_min": 18,
         "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
           "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "pan"
+          "bowl"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Run the sauce pouch under warm water to loosen texture before opening if needed.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 20,
-        "latest_end_min": 28
+        "latest_start_min": 16,
+        "latest_end_min": 18
       },
       {
         "id": "step-5",
         "raw_text": "Wipe your frying pan clean with some kitchen towel, then dry-fry the tacos (without oil) for 10–20 seconds on each side, or until warm and soft. Add a sprinkle of water if you’d like them extra soft.",
-        "label": "Wipe your frying pan clean with",
-        "type": "finish",
+        "label": "Dry-fry the tacos",
+        "type": "cook",
         "duration_min": 2,
-        "start_min": 28,
-        "end_min": 30,
+        "start_min": 18,
+        "end_min": 20,
         "requires": [
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "large frying pan",
+          "kitchen towel"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Dry-fry for 10-20 seconds on each side. Sprinkle with water for extra softness.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 28,
-        "latest_end_min": 30
+        "latest_start_min": 18,
+        "latest_end_min": 20
       },
       {
         "id": "step-6",
         "raw_text": "Divide the tacos between serving plates, then pile up with the crispy buffalo tofu , a drizzle of cashew ranch sauce , the red cabbage and pineapple . Finish with a scattering of coriander to garnish and enjoy!",
-        "label": "Divide the tacos between serving plates",
+        "label": "Assemble and garnish the tacos",
         "type": "finish",
-        "duration_min": 2,
-        "start_min": 30,
-        "end_min": 32,
+        "duration_min": 4,
+        "start_min": 20,
+        "end_min": 24,
         "requires": [
+          "step-3",
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "serving plates"
+        ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Layer tacos with tofu, ranch, cabbage, pineapple, and garnish with coriander.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 30,
-        "latest_end_min": 32
+        "latest_start_min": 20,
+        "latest_end_min": 24
       }
     ],
-    "total_time_min": 32,
-    "active_time_min": 32
+    "total_time_min": 24,
+    "active_time_min": 24
   },
   {
     "id": "crispy-buffalo-tofu-wrap-with-creamy-cashew-blue-cheese-ranch-sauce-avocado-cabbage-carrot-slaw",
@@ -7390,137 +7766,149 @@
       {
         "id": "step-1",
         "raw_text": "All you need to finish this dish is a large frying pan.",
-        "label": "All you need to finish this",
-        "type": "finish",
-        "duration_min": 2,
+        "label": "Prepare the required frying pan",
+        "type": "prep",
+        "duration_min": 1,
         "start_min": 0,
-        "end_min": 2,
+        "end_min": 1,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
-          "frying pan",
-          "pan"
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Ensure a large frying pan is ready for cooking.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 2
+        "latest_end_min": 1
       },
       {
         "id": "step-2",
         "raw_text": "Tear the tofu into bite-sized chunks with your hands, then place into a small bowl with the cornflour and season well with salt and pepper. Mix carefully with your hands to coat the tofu in the cornflour. Add a drizzle of oil to your frying pan and place over a medium-high heat. Once hot, add the tofu and fry on all sides until golden and crispy. Alternatively, toss in a little oil and air fry for 15 minutes, tossing every 5 minutes.",
-        "label": "Tear the tofu into bite-sized chunks",
+        "label": "Coat and fry the tofu",
         "type": "cook",
         "duration_min": 15,
-        "start_min": 2,
-        "end_min": 17,
+        "start_min": 1,
+        "end_min": 16,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "bowl",
+          "small bowl",
           "frying pan",
-          "pan"
+          "air fryer"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Fry until golden and crispy, or alternatively air fry for 15 minutes, tossing every 5 minutes.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 2,
-        "latest_end_min": 17
+        "latest_start_min": 1,
+        "latest_end_min": 16
       },
       {
         "id": "step-3",
         "raw_text": "Meanwhile, slice the red cabbage as thinly as you can and julienne the carrot (use a mandolin if you have one). Remove the stone and skin from the avocado and thinly slice it. Give the cashew ranch sauce a shake in its pouch before opening, in case it has separated while sitting in the fridge.",
-        "label": "Meanwhile, slice the red cabbage as",
+        "label": "Prep the vegetables and sauce",
         "type": "prep",
-        "duration_min": 3,
-        "start_min": 17,
-        "end_min": 20,
-        "requires": [
+        "duration_min": 8,
+        "start_min": 0,
+        "end_min": 8,
+        "requires": [],
+        "can_overlap_with": [
           "step-2"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "cutting board",
+          "mandolin"
+        ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 17,
-        "latest_end_min": 20
+        "notes": "Slice cabbage thinly, julienne carrot, slice avocado, and shake the ranch pouch.",
+        "is_critical": false,
+        "slack_min": 13,
+        "latest_start_min": 13,
+        "latest_end_min": 21
       },
       {
         "id": "step-4",
         "raw_text": "When the tofu is ready, remove it from the pan and place it into a bowl and toss with the buffalo sauce to coat evenly. You may want to run the sauce pouch under warm water to loosen the texture before opening.",
-        "label": "When the tofu is ready, remove",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 20,
-        "end_min": 28,
+        "label": "Toss tofu in buffalo sauce",
+        "type": "finish",
+        "duration_min": 3,
+        "start_min": 16,
+        "end_min": 19,
         "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
           "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "pan"
+          "bowl"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Toss tofu in buffalo sauce. Run the sauce pouch under warm water first if needed to loosen texture.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 20,
-        "latest_end_min": 28
+        "latest_start_min": 16,
+        "latest_end_min": 19
       },
       {
         "id": "step-5",
         "raw_text": "Wipe your frying pan clean with some kitchen towel, then dry-fry the flour tortillas (without oil) for 10–20 seconds on each side, or until warm and soft.",
-        "label": "Wipe your frying pan clean with",
+        "label": "Warm the flour tortillas",
         "type": "cook",
-        "duration_min": 8,
-        "start_min": 28,
-        "end_min": 36,
+        "duration_min": 2,
+        "start_min": 19,
+        "end_min": 21,
         "requires": [
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [
           "frying pan",
-          "pan"
+          "kitchen towel"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Wipe the pan clean, then dry-fry tortillas for 10-20 seconds on each side until warm and soft.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 28,
-        "latest_end_min": 36
+        "latest_start_min": 19,
+        "latest_end_min": 21
       },
       {
         "id": "step-6",
         "raw_text": "To serve, place a flour tortilla on each serving plate, then add the sliced red cabbage and julienned carrot to the bottom half. Top with the crispy buffalo tofu and sliced avocado , then drizzle over the cashew ranch sauce . Fold the sides of the tortilla toward the centre, roll it up tightly from the bottom, and enjoy!",
-        "label": "To serve, place a flour tortilla",
+        "label": "Assemble and serve the wraps",
         "type": "finish",
-        "duration_min": 2,
-        "start_min": 36,
-        "end_min": 38,
+        "duration_min": 5,
+        "start_min": 21,
+        "end_min": 26,
         "requires": [
+          "step-3",
           "step-5"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "serving plates"
+        ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Layer cabbage, carrot, tofu, avocado, and ranch sauce, then fold and roll tightly.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 36,
-        "latest_end_min": 38
+        "latest_start_min": 21,
+        "latest_end_min": 26
       }
     ],
-    "total_time_min": 38,
-    "active_time_min": 38
+    "total_time_min": 26,
+    "active_time_min": 26
   },
   {
     "id": "crispy-cauliflower-gnocchi-with-puttanesca-sauce-crispy-kale-fresh-parsley",
@@ -7543,125 +7931,133 @@
       {
         "id": "step-1",
         "raw_text": "Take out a saucepan, two roasting trays and preheat your oven to 200°C / 180°C fan.",
-        "label": "Take out a saucepan, two roasting",
+        "label": "Preheat oven and prepare equipment",
         "type": "prep",
-        "duration_min": 3,
+        "duration_min": 5,
         "start_min": 0,
-        "end_min": 3,
+        "end_min": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "oven",
-          "pan",
-          "roasting tray",
           "saucepan",
-          "tray"
+          "roasting trays",
+          "oven"
         ],
         "temperature_c": 200,
-        "notes": "",
+        "notes": "Preheat oven to 200°C or 180°C fan.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 3
+        "latest_end_min": 5
       },
       {
         "id": "step-2",
         "raw_text": "Place the cauliflower gnocchi in in one of your roasting trays with a drizzle of olive oil and toss to coat. Bake in the oven for 15 minutes, turning the gnocchi halfway through to ensure both sides are evenly browned. Make sure the gnocchi are well coated in oil and spaced out in the tray so they can become golden all over. NB: Do not boil this gluten-free gnocchi. It is easy to overcook and they can become soggy. Oven baking gives the best result for this recipe. Alternatively, you can fry them in a wide non-stick pan with oil for 5–6 minutes, or until golden.",
-        "label": "Place the cauliflower gnocchi in in",
+        "label": "Bake cauliflower gnocchi",
         "type": "cook",
-        "duration_min": 5,
-        "start_min": 3,
-        "end_min": 8,
+        "duration_min": 15,
+        "start_min": 5,
+        "end_min": 20,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "oven",
-          "pan",
           "roasting tray",
-          "tray"
+          "oven"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Bake for 15 minutes, turning halfway. Do not boil. Alternatively, pan-fry for 5-6 minutes.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 3,
-        "latest_end_min": 8
+        "latest_start_min": 5,
+        "latest_end_min": 20
       },
       {
         "id": "step-3",
         "raw_text": "Strip the leaves from the kale by pulling them down and away from the stalk. Roughly chop the leaves, place them in the other roasting trays, then toss with olive oil and season well with salt and pepper. Add to the oven and bake for 8–10 minutes, or until crispy. Oven temperatures may vary, so check halfway through to ensure it is not burning.",
-        "label": "Strip the leaves from the kale",
+        "label": "Prep and bake kale",
         "type": "cook",
         "duration_min": 9,
-        "start_min": 8,
-        "end_min": 17,
+        "start_min": 5,
+        "end_min": 14,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
         "equipment": [
-          "oven",
           "roasting tray",
-          "tray"
+          "oven"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 17
+        "notes": "Bake for 8-10 minutes (midpoint 9) until crispy. Check halfway to prevent burning.",
+        "is_critical": false,
+        "slack_min": 6,
+        "latest_start_min": 11,
+        "latest_end_min": 20
       },
       {
         "id": "step-4",
         "raw_text": "Place your saucepan over medium heat, add the red lentils along with 300ml of water, and bring to a boil. Cook for 10 minutes, or until the lentils are tender and absorbed most of the water. Add the puttanesca sauce , mix well, and cook for a further 2–3 minutes until the sauce is simmering. Season with salt and freshly ground pepper to taste. Meanwhile, finely chop the parsley for garnish.",
-        "label": "Place your saucepan over medium heat",
-        "type": "finish",
-        "duration_min": 2,
-        "start_min": 17,
-        "end_min": 19,
+        "label": "Cook lentils, sauce, and chop parsley",
+        "type": "cook",
+        "duration_min": 13,
+        "start_min": 5,
+        "end_min": 18,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "pan",
           "saucepan"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 17,
-        "latest_end_min": 19
+        "notes": "Cook lentils for 10 minutes, then simmer with sauce for 2-3 minutes (midpoint 2.5, total ~13 mins). Chop parsley meanwhile.",
+        "is_critical": false,
+        "slack_min": 2,
+        "latest_start_min": 7,
+        "latest_end_min": 20
       },
       {
         "id": "step-5",
         "raw_text": "Once the gnocchi are crispy and ready, remove them from the oven and fold them into the puttanesca sauce , mixing well. Divide between serving bowls, scatter over the chopped parsley , and serve the crispy kale on the side. Enjoy!",
-        "label": "Once the gnocchi are crispy and",
+        "label": "Combine, plate, and serve",
         "type": "finish",
-        "duration_min": 2,
-        "start_min": 19,
-        "end_min": 21,
+        "duration_min": 3,
+        "start_min": 20,
+        "end_min": 23,
         "requires": [
+          "step-2",
+          "step-3",
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "oven"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Fold gnocchi into sauce, plate, garnish with parsley, and serve with kale on the side.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 19,
-        "latest_end_min": 21
+        "latest_start_min": 20,
+        "latest_end_min": 23
       }
     ],
-    "total_time_min": 21,
-    "active_time_min": 2
+    "total_time_min": 23,
+    "active_time_min": 3
   },
   {
     "id": "crispy-chilli-tofu-with-toasted-cashews-short-grain-brown-rice-sesame-hispi-pear-slaw-cucumber-pickle",
@@ -7684,145 +8080,159 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle and take out a frying pan, a saucepan, and a mixing bowl.",
-        "label": "Boil your kettle and take out",
-        "type": "cook",
-        "duration_min": 8,
+        "label": "Boil kettle and prepare equipment",
+        "type": "prep",
+        "duration_min": 4,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 4,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "bowl",
+          "kettle",
           "frying pan",
-          "mixing bowl",
-          "pan",
-          "saucepan"
+          "saucepan",
+          "mixing bowl"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Boil the kettle and gather all necessary pans and bowls to start.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 4
       },
       {
         "id": "step-2",
         "raw_text": "Place your saucepan over medium-high heat and fill it with boiling water from the kettle. Add the short grain brown rice , bring it back to a boil, then reduce the heat to medium. Simmer for 15-18 minutes, until the rice is tender but still al dente. Once ready, remove from the heat, drain any excess water, then return the rice to your saucepan. Cover with a lid to steam and keep warm.",
-        "label": "Place your saucepan over medium-high heat",
+        "label": "Cook short grain brown rice",
         "type": "cook",
-        "duration_min": 16,
-        "start_min": 8,
-        "end_min": 24,
+        "duration_min": 17,
+        "start_min": 4,
+        "end_min": 21,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "lid"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Simmer for 15-18 minutes until tender but al dente, then drain and cover to steam.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 24
+        "latest_start_min": 4,
+        "latest_end_min": 21
       },
       {
         "id": "step-3",
         "raw_text": "Thinly slice the hispi cabbage and add it to your mixing bowl. Toss with a drizzle of oil and a pinch of salt and pepper. Cut the pear in half, remove the cores and seeds, then cut them into thin matchstick-like strips about 2-3mm thick (julienne). Add the pear to the seasoned cabbage and toss to combine. You may want to add a splash of the pickle juice from the pickled cucumber in this meal kit for a touch of acidity. If your hispi cabbage is particularly large, you may only need to use half for this meal. Any leftover slaw can be stored in a sealed container in the fridge and enjoyed the following day.",
-        "label": "Thinly slice the hispi cabbage and",
+        "label": "Prepare hispi and pear slaw",
         "type": "prep",
-        "duration_min": 3,
-        "start_min": 24,
-        "end_min": 27,
+        "duration_min": 8,
+        "start_min": 4,
+        "end_min": 12,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "bowl",
-          "mixing bowl"
+          "mixing bowl",
+          "knife",
+          "chopping board"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 24,
-        "latest_end_min": 27
+        "notes": "Slice cabbage and julienne pear to 2-3mm thick. Optionally add pickle juice for acidity.",
+        "is_critical": false,
+        "slack_min": 9,
+        "latest_start_min": 13,
+        "latest_end_min": 21
       },
       {
         "id": "step-4",
         "raw_text": "Place your frying pan over medium heat and dry-toast the cashews (without oil) for 2-3 minutes, until lightly golden. Remove from your pan and set aside for garnish.",
-        "label": "Place your frying pan over medium",
-        "type": "finish",
-        "duration_min": 2,
-        "start_min": 27,
-        "end_min": 29,
+        "label": "Dry-toast the cashews",
+        "type": "cook",
+        "duration_min": 3,
+        "start_min": 4,
+        "end_min": 7,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 27,
-        "latest_end_min": 29
+        "notes": "Toast without oil for 2-3 minutes until lightly golden, then set aside.",
+        "is_critical": false,
+        "slack_min": 3,
+        "latest_start_min": 7,
+        "latest_end_min": 10
       },
       {
         "id": "step-5",
         "raw_text": "Return your frying pan to medium-high heat and add a drizzle of oil (we recommend toasted sesame oil for extra flavour). Tear the tofu into bitesized pieces with your hands, then place into a bowl and toss through the cornflour until evenly coated. Cook for 5-6 minutes, until the edges start to become golden and crispy. Remove from the pan and set aside, then add the sticky chilli sauce cook for 3-4 minutes, until the sauce thickens and starts to caramelise. Turn off the heat and stir through the crispy tofu until well coated in the sauce.",
-        "label": "Return your frying pan to medium-high",
+        "label": "Cook tofu and thicken sauce",
         "type": "cook",
-        "duration_min": 5,
-        "start_min": 29,
-        "end_min": 34,
+        "duration_min": 11,
+        "start_min": 7,
+        "end_min": 18,
         "requires": [
           "step-4"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
-          "bowl",
           "frying pan",
-          "pan"
+          "bowl"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 29,
-        "latest_end_min": 34
+        "notes": "Tear tofu and coat in cornflour. Cook tofu for 5-6 minutes, then cook sauce for 3-4 minutes before coating.",
+        "is_critical": false,
+        "slack_min": 3,
+        "latest_start_min": 10,
+        "latest_end_min": 21
       },
       {
         "id": "step-6",
         "raw_text": "To serve, divide the short grain brown rice between serving bowls and top with the sticky chilli tofu . Serve the hispi & pear slaw , along with the pickled cucumber , on the side. Finish with a sprinkle of the sesame garnish and the toasted cashews , and enjoy!",
-        "label": "To serve, divide the short grain",
+        "label": "Plate and garnish the dish",
         "type": "finish",
-        "duration_min": 2,
-        "start_min": 34,
-        "end_min": 36,
+        "duration_min": 4,
+        "start_min": 21,
+        "end_min": 25,
         "requires": [
+          "step-2",
+          "step-3",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Assemble rice, tofu, slaw, and pickled cucumber. Garnish with sesame seeds and toasted cashews.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 34,
-        "latest_end_min": 36
+        "latest_start_min": 21,
+        "latest_end_min": 25
       }
     ],
-    "total_time_min": 36,
-    "active_time_min": 11
+    "total_time_min": 25,
+    "active_time_min": 12
   },
   {
     "id": "crispy-chipotle-pumpkin-black-bean-tacos-with-melted-mozzarella-guacamole-pink-onion-pickles",
@@ -7845,117 +8255,135 @@
       {
         "id": "step-1",
         "raw_text": "Finely slice the red onion and place into a small bowl. If it’s a large onion, half for two people will work well. Squeeze over half of the lime and season with salt. Give the onions a quick mix and leave to pickle while you make the tacos.",
-        "label": "Finely slice the red onion and",
+        "label": "Slice and pickle red onion",
         "type": "prep",
-        "duration_min": 3,
+        "duration_min": 5,
         "start_min": 0,
-        "end_min": 3,
+        "end_min": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
-          "bowl"
+          "knife",
+          "cutting board",
+          "small bowl"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 0,
-        "latest_end_min": 3
+        "notes": "Leave the onions to pickle in the lime juice and salt while you prepare the rest of the meal.",
+        "is_critical": false,
+        "slack_min": 6,
+        "latest_start_min": 6,
+        "latest_end_min": 11
       },
       {
         "id": "step-2",
         "raw_text": "Drain the black beans and add to a small-medium sized bowl. Mash them up with a potato masher or fork until you have a chunky paste that binds together more, then stir through the chipotle pumpkin sauce and the zest of half the lime . Season with salt and pepper. Thinly slice the plant-based mozzarella .",
-        "label": "Drain the black beans and add",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 3,
-        "end_min": 11,
-        "requires": [
+        "label": "Mash beans and slice mozzarella",
+        "type": "prep",
+        "duration_min": 6,
+        "start_min": 0,
+        "end_min": 6,
+        "requires": [],
+        "can_overlap_with": [
           "step-1"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "pot"
+          "small-medium bowl",
+          "potato masher",
+          "fork",
+          "knife",
+          "cutting board"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Mash the black beans until they form a chunky, binding paste before stirring in the sauce, lime zest, and seasoning.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 3,
-        "latest_end_min": 11
+        "latest_start_min": 0,
+        "latest_end_min": 6
       },
       {
         "id": "step-3",
         "raw_text": "Wrap the corn tortillas in a damp paper towel and microwave for about 30 seconds. This makes them more pliable and prevents cracking or breaking when folding. If you don’t have a microwave you could warm each tortilla in a frying pan without oil for 20 seconds before filling it. To fill the tacos, spread some of the chipotle pumpkin and black bean mix onto each of the tacos leaving 0.5cm of space around the edge. Divide the mozzarella between them all, then fold them over in half. Add a drizzle of oil to your frying pan and place over a medium heat. Once hot, fry the tacos for around 2 minutes on each side, or until golden and crispy. You may need to cook them in batches.",
-        "label": "Wrap the corn tortillas in a",
-        "type": "finish",
-        "duration_min": 2,
-        "start_min": 11,
-        "end_min": 13,
+        "label": "Warm, fill, and fry tacos",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 6,
+        "end_min": 16,
         "requires": [
           "step-2"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-4"
+        ],
         "equipment": [
+          "microwave",
+          "paper towel",
           "frying pan",
-          "pan",
-          "pot"
+          "stove"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Microwave tortillas for 30 seconds in a damp paper towel (or warm in a dry pan for 20 seconds). Fry filled tacos for about 2 minutes per side over medium heat until golden and crispy.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 11,
-        "latest_end_min": 13
+        "latest_start_min": 6,
+        "latest_end_min": 16
       },
       {
         "id": "step-4",
         "raw_text": "Make your guacamole while the tacos cook. Pit the avocado and finely chop the coriander . Place the avocado into a small bowl and mash it up with a fork. Add half of the coriander , the remaining half of lime juice and season well with salt. You could also add a drizzle of extra virgin olive oil.",
-        "label": "Make your guacamole while the tacos",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 13,
-        "end_min": 21,
+        "label": "Make the guacamole",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 5,
+        "end_min": 10,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
           "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "knife",
+          "cutting board",
+          "small bowl",
+          "fork"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 13,
-        "latest_end_min": 21
+        "notes": "Prepare this while the tacos are frying. Uses the remaining half of the lime juice and half of the chopped coriander.",
+        "is_critical": false,
+        "slack_min": 6,
+        "latest_start_min": 11,
+        "latest_end_min": 16
       },
       {
         "id": "step-5",
         "raw_text": "To serve up, divide the tacos between serving bowls, serve the guacamole and pickles alongside and garnish with the remaining coriander . We recommend scooping a little guac and pickles onto the tacos as you eat them. Enjoy!",
-        "label": "To serve up, divide the tacos",
+        "label": "Plate and garnish tacos",
         "type": "finish",
         "duration_min": 2,
-        "start_min": 21,
-        "end_min": 23,
+        "start_min": 16,
+        "end_min": 18,
         "requires": [
+          "step-1",
+          "step-3",
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Garnish with the remaining coriander and serve with guacamole and pickled onions on the side.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 21,
-        "latest_end_min": 23
+        "latest_start_min": 16,
+        "latest_end_min": 18
       }
     ],
-    "total_time_min": 23,
-    "active_time_min": 20
+    "total_time_min": 18,
+    "active_time_min": 18
   },
   {
     "id": "crispy-courgette-sweetcorn-fritters-with-garlic-dill-yoghurt-and-sweet-cucumber-pickle",
@@ -7999,19 +8427,23 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle, then take out a wok (any deep pan will work if you don't have a wok) and a frying pan. Julienne or grate the carrot . Finely slice the red cabbage (use a mandolin if you have one) and spring onions , separating the whites and greens.",
-        "label": "Boil your kettle, then take out",
-        "type": "cook",
+        "label": "Boil kettle and prep vegetables",
+        "type": "prep",
         "duration_min": 8,
         "start_min": 0,
         "end_min": 8,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
+          "kettle",
+          "wok",
           "frying pan",
-          "pan"
+          "knife",
+          "cutting board",
+          "mandolin"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Boil kettle first. Julienne or grate carrot, finely slice cabbage and spring onions, separating whites and greens.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
@@ -8020,7 +8452,7 @@
       {
         "id": "step-2",
         "raw_text": "Place the vermicelli noodles into a heatproof bowl, cover with boiling water from your kettle and leave the noodles to cook for 5 minutes or until tender.",
-        "label": "Place the vermicelli noodles into a",
+        "label": "Soak vermicelli noodles",
         "type": "cook",
         "duration_min": 5,
         "start_min": 8,
@@ -8028,111 +8460,127 @@
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "bowl"
+          "heatproof bowl"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 13
+        "notes": "Cover noodles with boiling water and leave to cook for 5 minutes or until tender.",
+        "is_critical": false,
+        "slack_min": 12,
+        "latest_start_min": 20,
+        "latest_end_min": 25
       },
       {
         "id": "step-3",
         "raw_text": "Take two bowls and pour some plant milk into one (water works as well if you don't have any), and the cornflour into the other. Season the cornflour generously with salt and pepper, but be sure to set aside one teaspoon of it for later, as you'll need it to thicken the sauce. Cut the cauliflower florets into bite-sized pieces, and toss them in the plant milk to coat, then dredge in the cornflour until thickly coated.",
-        "label": "Take two bowls and pour some",
+        "label": "Prep and coat cauliflower",
         "type": "prep",
-        "duration_min": 3,
-        "start_min": 13,
-        "end_min": 16,
+        "duration_min": 6,
+        "start_min": 8,
+        "end_min": 14,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "bowl",
+          "knife",
+          "cutting board"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Be sure to set aside 1 teaspoon of cornflour for later to thicken the sauce. Cut cauliflower into bite-sized pieces, coat in milk, and dredge in seasoned cornflour.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 13,
-        "latest_end_min": 16
+        "latest_start_min": 8,
+        "latest_end_min": 14
       },
       {
         "id": "step-4",
         "raw_text": "There are three ways to cook the cauliflower : 1. For the crispiest cauliflower (similar to the above image), shallow fry 1cm of neutral oil (e.g. sunflower, groundnut, vegetable but not olive oil) in a deep pan over a medium high heat until golden and crispy, around 5-8 minutes. 2. Air fry for 15-20 minutes, turning every 5 minutes. We recommend brushing them with a little oil to help them turn more golden and crispy. 3. Roast in the oven at 200°C for 20-30 minutes or until golden.",
-        "label": "There are three ways to cook",
+        "label": "Cook the cauliflower",
         "type": "cook",
-        "duration_min": 6,
-        "start_min": 16,
-        "end_min": 22,
+        "duration_min": 7,
+        "start_min": 14,
+        "end_min": 21,
         "requires": [
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
+          "deep pan",
+          "air fryer",
           "oven",
-          "pan"
+          "baking sheet"
         ],
         "temperature_c": 200,
-        "notes": "",
+        "notes": "Three cooking options: shallow fry for 5-8 minutes (default 7 mins), air fry for 15-20 minutes, or roast in the oven at 200°C for 20-30 minutes.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 22
+        "latest_start_min": 14,
+        "latest_end_min": 21
       },
       {
         "id": "step-5",
         "raw_text": "Once there’s 2-3 minutes remaining on the cauliflower, place your other frying pan over a medium-high heat and add a drizzle of oil. Once hot, toss in the carrots , cabbage , edamame and the white spring onions. Sauté until softened a little but still with some bite, around 2-3 minutes. Open the gochujang sauce pouch and add the reserved teaspoon of cornflour directly into the bag and carefully stir with a spoon until there are no lumps. Add it to the pan cook for about 1 minute, until thickened.",
-        "label": "Once there’s 2-3 minutes remaining on",
-        "type": "finish",
-        "duration_min": 2,
-        "start_min": 22,
-        "end_min": 24,
+        "label": "Sauté vegetables and add sauce",
+        "type": "cook",
+        "duration_min": 4,
+        "start_min": 21,
+        "end_min": 25,
         "requires": [
+          "step-1",
+          "step-3",
           "step-4"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
         "equipment": [
           "frying pan",
-          "pan"
+          "spoon"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Start when 2-3 minutes remain on the cauliflower. Sauté veg for 2-3 minutes. Mix reserved cornflour into the gochujang pouch, add to pan, and cook for 1 minute until thickened.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 22,
-        "latest_end_min": 24
+        "latest_start_min": 21,
+        "latest_end_min": 25
       },
       {
         "id": "step-6",
         "raw_text": "Take the sauce and vegetables off the heat (to keep the cauliflower crispy), then add the crispy cauliflower to the pan. Stir gently until the cauliflower is evenly coated. Divide the vermicelli noodles between serving bowls, top with the gochujang cauliflower and vegetables and finish with a garnish of sesame garnish and green spring onions . Enjoy!",
-        "label": "Take the sauce and vegetables off",
+        "label": "Combine, plate, and garnish",
         "type": "finish",
-        "duration_min": 2,
-        "start_min": 24,
-        "end_min": 26,
+        "duration_min": 3,
+        "start_min": 25,
+        "end_min": 28,
         "requires": [
+          "step-2",
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "pan"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Take veg off the heat before adding cauliflower to keep it crispy. Toss gently, divide noodles into bowls, top with cauliflower and veg, and garnish with sesame and green spring onions.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 24,
-        "latest_end_min": 26
+        "latest_start_min": 25,
+        "latest_end_min": 28
       }
     ],
-    "total_time_min": 26,
-    "active_time_min": 12
+    "total_time_min": 28,
+    "active_time_min": 15
   },
   {
     "id": "crispy-gochujang-tempeh-over-seasonal-savoy-cabbage-slaw-with-quinoa-gochujang-tahini-dressing",
@@ -8176,117 +8624,129 @@
       {
         "id": "step-1",
         "raw_text": "Take out a saucepan and a large frying pan.",
-        "label": "Take out a saucepan and a",
-        "type": "cook",
-        "duration_min": 8,
+        "label": "Prepare cooking pans",
+        "type": "prep",
+        "duration_min": 1,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 1,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
         "equipment": [
-          "frying pan",
-          "pan",
-          "saucepan"
+          "saucepan",
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Retrieve the saucepan and large frying pan to begin.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 1
       },
       {
         "id": "step-2",
         "raw_text": "Rinse the sushi rice under cold water until the water runs mostly clear, then drain well. Add to a saucepan with 1.25~1.5x its volume of cold water and, if you have time, leave to soak for 10–15 minutes. Bring to a boil over medium heat, then cover, reduce the heat to low, and cook for 10 minutes without lifting the lid. Turn off the heat and leave to steam, covered, until ready to serve.",
-        "label": "Rinse the sushi rice under cold",
-        "type": "finish",
-        "duration_min": 12,
-        "start_min": 8,
-        "end_min": 20,
+        "label": "Rinse and cook sushi rice",
+        "type": "cook",
+        "duration_min": 25,
+        "start_min": 1,
+        "end_min": 26,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "pan",
           "saucepan"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Optional 10-15 minute soak. Cook covered for 10 minutes, then turn off heat and steam covered until serving.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 20
+        "latest_start_min": 1,
+        "latest_end_min": 26
       },
       {
         "id": "step-3",
         "raw_text": "Meanwhile, tear the tofu into bitesized chunks. Empty the cornflour into a bowl, season with salt and pepper, then add the tofu and mix until it's evenly coated. Place your frying pan over a medium heat and add a drizzle of oil. Fry the tofu until crispy and golden on all sides (approx 8-10 minutes), then remove and set aside. Add the gochujang sauce to the pan and cook for 30-60 seconds to thicken up a little, then turn off the pan and add the tofu back in and stir through. Alternatively if you like, you could add the sauce in with the tofu and cook for 30-60 seconds, but the method above keeps the tofu nice and crispy.",
-        "label": "Meanwhile, tear the tofu into bitesized",
+        "label": "Prep and fry gochujang tofu",
         "type": "cook",
-        "duration_min": 9,
-        "start_min": 20,
-        "end_min": 29,
+        "duration_min": 14,
+        "start_min": 1,
+        "end_min": 15,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
         "equipment": [
           "bowl",
-          "frying pan",
-          "pan"
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 20,
-        "latest_end_min": 29
+        "notes": "Fry tofu for 8-10 minutes until crispy and golden. Cook sauce for 30-60 seconds to thicken before tossing tofu back in.",
+        "is_critical": false,
+        "slack_min": 11,
+        "latest_start_min": 12,
+        "latest_end_min": 26
       },
       {
         "id": "step-4",
         "raw_text": "Julienne or grate the carrots . Remove the flesh from the avocado and dice into bite-sized pieces.",
-        "label": "Julienne or grate the carrots",
+        "label": "Prep carrots and avocado",
         "type": "prep",
-        "duration_min": 3,
-        "start_min": 29,
-        "end_min": 32,
-        "requires": [
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "grater"
+        ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 29,
-        "latest_end_min": 32
+        "notes": "Julienne or grate the carrots, and dice the avocado flesh.",
+        "is_critical": false,
+        "slack_min": 21,
+        "latest_start_min": 21,
+        "latest_end_min": 26
       },
       {
         "id": "step-5",
         "raw_text": "To serve up, divide the sushi rice between serving bowls, top with the crispy gochujang tofu , then divide up the carrots , avocado and pickled cucumber . Finish everything with a sprinkle of the sesame garnish and enjoy!",
-        "label": "To serve up, divide the sushi",
+        "label": "Assemble and garnish bowls",
         "type": "finish",
-        "duration_min": 2,
-        "start_min": 32,
-        "end_min": 34,
+        "duration_min": 3,
+        "start_min": 26,
+        "end_min": 29,
         "requires": [
+          "step-2",
+          "step-3",
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Divide rice, tofu, carrots, avocado, and pickled cucumber into bowls. Finish with sesame garnish.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 32,
-        "latest_end_min": 34
+        "latest_start_min": 26,
+        "latest_end_min": 29
       }
     ],
-    "total_time_min": 34,
-    "active_time_min": 13
+    "total_time_min": 29,
+    "active_time_min": 8
   },
   {
     "id": "crispy-korean-oyster-mushroom-burger-with-kimchi-gochujang-mayo-on-soft-vegan-brioche",
@@ -8309,148 +8769,167 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan, then take out a large roasting tray and a wok or deep frying pan.",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and prepare pans",
         "type": "prep",
-        "duration_min": 3,
+        "duration_min": 5,
         "start_min": 0,
-        "end_min": 3,
+        "end_min": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-5"
+        ],
         "equipment": [
-          "frying pan",
           "oven",
-          "pan",
-          "roasting tray",
-          "tray"
+          "large roasting tray",
+          "wok",
+          "deep frying pan"
         ],
         "temperature_c": 220,
-        "notes": "",
+        "notes": "Preheat to 220°C or 200°C fan.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 3
+        "latest_end_min": 5
       },
       {
         "id": "step-2",
         "raw_text": "Cut the new potatoes into 1-1.5 square cm pieces. Place into your roasting tray, then drizzle with olive oil and season well with salt and pepper. Roast in the oven for 15-20 minutes or until golden and crispy.",
-        "label": "Cut the new potatoes into 1-1.5",
+        "label": "Chop and roast new potatoes",
         "type": "cook",
-        "duration_min": 17,
-        "start_min": 3,
-        "end_min": 20,
+        "duration_min": 20,
+        "start_min": 5,
+        "end_min": 25,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "oven",
-          "pot",
-          "roasting tray",
-          "tray"
+          "knife",
+          "cutting board",
+          "large roasting tray",
+          "oven"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Roast for 15-20 minutes until golden and crispy.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 3,
-        "latest_end_min": 20
+        "latest_start_min": 5,
+        "latest_end_min": 25
       },
       {
         "id": "step-3",
         "raw_text": "Place the dry mix into a bowl and measure out 100ml of plant milk (or water if you don’t have milk). Slowly add the milk and stir until you have a thick batter (you may need slightly less or more than 100ml). Season well with salt and pepper and stir thoroughly until combined. Place the panko breadcrumbs into a separate bowl and season well with salt and pepper. Dip the oyster mushrooms into the batter mix and then into the panko breadcrumbs to coat.",
-        "label": "Place the dry mix into a",
-        "type": "cook",
+        "label": "Batter and bread oyster mushrooms",
+        "type": "prep",
         "duration_min": 8,
-        "start_min": 20,
-        "end_min": 28,
-        "requires": [
-          "step-2"
+        "start_min": 0,
+        "end_min": 8,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-5"
         ],
-        "can_overlap_with": [],
         "equipment": [
           "bowl",
-          "pan"
+          "measuring cup",
+          "separate bowl"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 20,
-        "latest_end_min": 28
+        "notes": "Adjust milk amount to achieve a thick batter.",
+        "is_critical": false,
+        "slack_min": 9,
+        "latest_start_min": 9,
+        "latest_end_min": 17
       },
       {
         "id": "step-4",
         "raw_text": "Heat 1cm of a neutral oil (e.g. sunflower, groundnut or vegetable, but not olive oil) in a wok or deep frying pan, then fry the oyster mushrooms until golden on all sides, around 5-10 minutes. Alternatively you can brush with a little oil and air fry for 10-15 minutes or bake in the oven for 20-30 minutes. Remove and place into a bowl lined with kitchen towel, allowing them to cool slightly before serving.",
-        "label": "Heat 1cm of a neutral oil",
+        "label": "Fry the coated oyster mushrooms",
         "type": "cook",
-        "duration_min": 7,
-        "start_min": 28,
-        "end_min": 35,
+        "duration_min": 8,
+        "start_min": 8,
+        "end_min": 16,
         "requires": [
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-5"
+        ],
         "equipment": [
+          "wok",
+          "deep frying pan",
           "bowl",
-          "frying pan",
-          "oven",
-          "pan"
+          "kitchen towel"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 28,
-        "latest_end_min": 35
+        "notes": "Fry for 5-10 minutes. Alternatively, air fry for 10-15 minutes or bake for 20-30 minutes.",
+        "is_critical": false,
+        "slack_min": 9,
+        "latest_start_min": 17,
+        "latest_end_min": 25
       },
       {
         "id": "step-5",
         "raw_text": "Finely slice the baby gem lettuce . Slice the vegan brioche in half and toast in a frying pan just before serving.",
-        "label": "Finely slice the baby gem lettuce",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 35,
-        "end_min": 43,
-        "requires": [
+        "label": "Slice lettuce and toast brioche",
+        "type": "prep",
+        "duration_min": 4,
+        "start_min": 0,
+        "end_min": 4,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
           "step-4"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "knife",
+          "cutting board",
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 35,
-        "latest_end_min": 43
+        "notes": "Toast the brioche just before serving.",
+        "is_critical": false,
+        "slack_min": 21,
+        "latest_start_min": 21,
+        "latest_end_min": 25
       },
       {
         "id": "step-6",
         "raw_text": "To serve, spread a layer of gochujang mayo on the top and bottom of the brioche, then pile in some baby gem lettuce , crispy oyster mushrooms and kimchi . Serve alongside the crispy potatoes with any extra gochujang mayo for dipping. Enjoy!",
-        "label": "To serve, spread a layer of",
+        "label": "Assemble burgers and serve",
         "type": "finish",
-        "duration_min": 2,
-        "start_min": 43,
-        "end_min": 45,
+        "duration_min": 5,
+        "start_min": 25,
+        "end_min": 30,
         "requires": [
+          "step-2",
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "pot"
+          "knife",
+          "plate"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Layer gochujang mayo, lettuce, mushrooms, and kimchi. Serve with roasted potatoes.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 43,
-        "latest_end_min": 45
+        "latest_start_min": 25,
+        "latest_end_min": 30
       }
     ],
-    "total_time_min": 45,
-    "active_time_min": 18
+    "total_time_min": 30,
+    "active_time_min": 8
   },
   {
     "id": "crispy-korean-pancakes-with-mixed-vegetables-dipping-sauce-smacked-cucumber-kimchi-brown-rice",
@@ -8473,167 +8952,197 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle and take out a saucepan, a mixing bowl, and two small nonstick frying pans. This will help both pancakes cook at the same time. Alternatively, you can use one frying pan and repeat the cooking process in STEP 6.",
-        "label": "Boil your kettle and take out",
-        "type": "cook",
-        "duration_min": 8,
+        "label": "Boil kettle and prepare equipment",
+        "type": "prep",
+        "duration_min": 3,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 3,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "bowl",
-          "frying pan",
+          "kettle",
+          "saucepan",
           "mixing bowl",
-          "pan",
-          "saucepan"
+          "two small nonstick frying pans"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Boil the kettle and gather all necessary pans and bowls to streamline the cooking process.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 3
       },
       {
         "id": "step-2",
         "raw_text": "Place your saucepan over medium-high heat and fill it with boiling water from the kettle. Add the short grain brown rice , bring it back to a boil, then reduce the heat to medium. Simmer for 15-18 minutes, until the rice is tender but still al dente. Once ready, remove from the heat, drain any excess water, then return the rice to your saucepan. Cover with a lid to steam and keep warm.",
-        "label": "Place your saucepan over medium-high heat",
+        "label": "Cook brown rice",
         "type": "cook",
-        "duration_min": 16,
-        "start_min": 8,
-        "end_min": 24,
+        "duration_min": 17,
+        "start_min": 3,
+        "end_min": 20,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5",
+          "step-6"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "kettle",
+          "lid"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 24
+        "notes": "Simmer range is 15-18 minutes (midpoint used). Cover with a lid to steam and keep warm once drained.",
+        "is_critical": false,
+        "slack_min": 2,
+        "latest_start_min": 5,
+        "latest_end_min": 22
       },
       {
         "id": "step-3",
         "raw_text": "Trim the ends of the baby cucumber and lightly smash it using a rolling pin or the bottom of a jar, then slice it into bite-sized pieces. Add it to a small serving bowl and toss with a couple of spoonfuls of the gochugaru sesame dressing . Leave to marinate.",
-        "label": "Trim the ends of the baby",
+        "label": "Prepare smashed cucumber salad",
         "type": "prep",
-        "duration_min": 3,
-        "start_min": 24,
-        "end_min": 27,
-        "requires": [
-          "step-2"
+        "duration_min": 4,
+        "start_min": 0,
+        "end_min": 4,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-4",
+          "step-5",
+          "step-6"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "rolling pin or jar",
+          "knife",
+          "cutting board",
+          "small serving bowl"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 24,
-        "latest_end_min": 27
+        "notes": "Lightly smash the cucumber before slicing to help it absorb the gochugaru sesame dressing while marinating.",
+        "is_critical": false,
+        "slack_min": 18,
+        "latest_start_min": 18,
+        "latest_end_min": 22
       },
       {
         "id": "step-4",
         "raw_text": "Add the pancake batter to your mixing bowl and pour in 220ml of water (double for 4 portions) along with a teaspoon of oil, salt and pepper, then mix until smooth. You can also add some of the liquid from the kimchi for extra flavour, and the acidity will help activate the baking powder in the batter. Set aside to rest.",
-        "label": "Add the pancake batter to your",
+        "label": "Mix pancake batter",
         "type": "prep",
         "duration_min": 3,
-        "start_min": 27,
-        "end_min": 30,
+        "start_min": 3,
+        "end_min": 6,
         "requires": [
-          "step-3"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-5"
+        ],
         "equipment": [
-          "bowl",
-          "mixing bowl",
-          "pan"
+          "mixing bowl"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Mix until smooth. Optionally add kimchi liquid to help activate the baking powder and add flavor. Set aside to rest.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 27,
-        "latest_end_min": 30
+        "latest_start_min": 3,
+        "latest_end_min": 6
       },
       {
         "id": "step-5",
         "raw_text": "In the meantime, peel and trim the carrot , and trim the courgette . Cut them into thin matchstick-like strips about 2-3mm thick (julienne). Use a mandoline if you have one for even slices of carrot and courgette. Separate the white and green parts of the spring onions , then finely slice them. Set aside the green parts for garnish, and add the carrot, courgette, and white parts of the spring onions to your prepared pancake batter. Mix until well combined.",
-        "label": "In the meantime, peel and trim",
-        "type": "finish",
-        "duration_min": 2,
-        "start_min": 30,
-        "end_min": 32,
+        "label": "Prep vegetables and mix into batter",
+        "type": "prep",
+        "duration_min": 8,
+        "start_min": 6,
+        "end_min": 14,
         "requires": [
           "step-4"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
-          "pan"
+          "peeler",
+          "knife",
+          "cutting board",
+          "mandoline"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Julienne carrots and courgettes to 2-3mm thick. Reserve green spring onion parts for garnish and mix the rest into the batter.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 30,
-        "latest_end_min": 32
+        "latest_start_min": 6,
+        "latest_end_min": 14
       },
       {
         "id": "step-6",
         "raw_text": "Place your frying pans over medium heat and add enough oil to coat the bases. Once hot, add half of the pancake and vegetable mixture to each frying pan and spread thinly into circles using the back of a ladle. Cook untouched for 3-4 minutes, until the bottoms form a crust, then flip and cook for a further 3-4 minutes until crispy and golden brown. If you are using one frying pan, or cooking for 4 people, repeat the process.",
-        "label": "Place your frying pans over medium",
+        "label": "Fry the pancakes",
         "type": "cook",
-        "duration_min": 3,
-        "start_min": 32,
-        "end_min": 35,
+        "duration_min": 8,
+        "start_min": 14,
+        "end_min": 22,
         "requires": [
+          "step-1",
           "step-5"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
-          "frying pan",
-          "pan"
+          "two small nonstick frying pans",
+          "ladle",
+          "spatula"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Cook untouched for 3-4 minutes per side (midpoint used) until a crust forms and they are crispy and golden. Repeat if using only one pan.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 32,
-        "latest_end_min": 35
+        "latest_start_min": 14,
+        "latest_end_min": 22
       },
       {
         "id": "step-7",
         "raw_text": "Serve the korean pancakes on serving plates and garnish with the reserved spring onion and a sprinkle of the sesame garnish . Serve alongside a small bowl of the gochugaru sesame dressing for dipping, the kimchi and the smashed cucumber salad . The brown rice can be enjoyed as it is between bites of the pancakes, or, if you have toasted sesame oil and soy sauce to hand, toss it with some of the kimchi and a light drizzle of each for extra flavour. Enjoy!",
-        "label": "Serve the korean pancakes on serving",
+        "label": "Plate and serve",
         "type": "finish",
-        "duration_min": 2,
-        "start_min": 35,
-        "end_min": 37,
+        "duration_min": 4,
+        "start_min": 22,
+        "end_min": 26,
         "requires": [
+          "step-2",
+          "step-3",
           "step-6"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "pan"
+          "serving plates",
+          "small bowl"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Garnish pancakes with spring onion and sesame. Serve with dipping sauce, kimchi, cucumber salad, and brown rice.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 35,
-        "latest_end_min": 37
+        "latest_start_min": 22,
+        "latest_end_min": 26
       }
     ],
-    "total_time_min": 37,
-    "active_time_min": 13
+    "total_time_min": 26,
+    "active_time_min": 15
   },
   {
     "id": "crispy-lebanese-tofu-nourish-bowl-with-quinoa-tabbouleh-green-tahini-sauce-pink-pickled-onion",
@@ -8656,142 +9165,157 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle and take out a large frying pan and a saucepan. Fill your saucepan with boiling water from your kettle and place over a medium heat to bring to the boil.",
-        "label": "Boil your kettle and take out",
-        "type": "cook",
-        "duration_min": 8,
+        "label": "Boil kettle and heat saucepan",
+        "type": "prep",
+        "duration_min": 5,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "frying pan",
-          "pan",
+          "kettle",
           "saucepan"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Bring saucepan of water to a boil over medium heat.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 5
       },
       {
         "id": "step-2",
         "raw_text": "Cook the quinoa in your saucepan with boiling water until al dente, around 8 minutes. Drain and put it aside on a sieve over the saucepan to make sure it's drained very well while you prepare the rest of the dish.",
-        "label": "Cook the quinoa in your saucepan",
+        "label": "Cook and drain quinoa",
         "type": "cook",
         "duration_min": 8,
-        "start_min": 8,
-        "end_min": 16,
+        "start_min": 5,
+        "end_min": 13,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "pan",
           "saucepan",
           "sieve"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Cook for around 8 minutes until al dente, then drain thoroughly over the saucepan.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 16
+        "latest_start_min": 5,
+        "latest_end_min": 13
       },
       {
         "id": "step-3",
         "raw_text": "Cut the tofu into two blocks, lengthwise. Use a peeler or the slicer on a cheese grater to peel each block into thick ribbons (or slice very thinly with a sharp knife). Place the tofu into a container or bowl. Mix 2 tbsp of extra virgin olive oil with the tofu spice mix and stir to combine. Pour this over the tofu and gently toss to make sure it's all evenly covered.",
-        "label": "Cut the tofu into two blocks",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 16,
-        "end_min": 24,
-        "requires": [
+        "label": "Slice and marinate tofu",
+        "type": "prep",
+        "duration_min": 6,
+        "start_min": 0,
+        "end_min": 6,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "peeler",
+          "cheese grater",
+          "sharp knife",
+          "container"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 24
+        "notes": "Peel or slice tofu into thick ribbons, then toss with olive oil and spice mix.",
+        "is_critical": false,
+        "slack_min": 8,
+        "latest_start_min": 8,
+        "latest_end_min": 14
       },
       {
         "id": "step-4",
         "raw_text": "Heat your large frying pan on medium heat and fry the tofu for 4-6 mins until starting to brown on the edges. Take care not to overcook it as it could become too crispy - the slices should still be soft in the middle. Taste and season with more salt and pepper if you like.",
-        "label": "Heat your large frying pan on",
+        "label": "Fry the tofu ribbons",
         "type": "cook",
         "duration_min": 5,
-        "start_min": 24,
-        "end_min": 29,
+        "start_min": 6,
+        "end_min": 11,
         "requires": [
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-5"
+        ],
         "equipment": [
-          "frying pan",
-          "pan"
+          "large frying pan"
         ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 24,
-        "latest_end_min": 29
+        "notes": "Fry for 4-6 minutes (midpoint 5 mins) on medium heat until edges brown but centers remain soft.",
+        "is_critical": false,
+        "slack_min": 8,
+        "latest_start_min": 14,
+        "latest_end_min": 19
       },
       {
         "id": "step-5",
         "raw_text": "Finely chop the parsley , cut the cherry tomatoes and thinly slice the cucumber . Add them to a mixing bowl with the quinoa . Add a generous drizzle of extra virgin olive oil . season well with salt and pepper and give everything a good mix.",
-        "label": "Finely chop the parsley , cut",
+        "label": "Chop vegetables and mix salad",
         "type": "prep",
-        "duration_min": 3,
-        "start_min": 29,
-        "end_min": 32,
+        "duration_min": 6,
+        "start_min": 13,
+        "end_min": 19,
         "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
           "step-4"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl",
+          "knife",
+          "cutting board",
           "mixing bowl"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Finely chop parsley, cut tomatoes, slice cucumber, and mix with the drained quinoa and olive oil.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 29,
-        "latest_end_min": 32
+        "latest_start_min": 13,
+        "latest_end_min": 19
       },
       {
         "id": "step-6",
         "raw_text": "Spoon the salad into bowls and top with the tofu. Pour over the herby tahini yoghurt and top with the pink pickled onions .",
-        "label": "Spoon the salad into bowls and",
+        "label": "Assemble and garnish bowls",
         "type": "finish",
-        "duration_min": 2,
-        "start_min": 32,
-        "end_min": 34,
+        "duration_min": 3,
+        "start_min": 19,
+        "end_min": 22,
         "requires": [
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "bowls",
+          "spoon"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Spoon salad into bowls, top with tofu, herby tahini yoghurt, and pink pickled onions.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 32,
-        "latest_end_min": 34
+        "latest_start_min": 19,
+        "latest_end_min": 22
       }
     ],
-    "total_time_min": 34,
-    "active_time_min": 34
+    "total_time_min": 22,
+    "active_time_min": 22
   },
   {
     "id": "crispy-pakora-burger-with-mint-raita-mango-chutney-fresh-spinach-baby-new-potatoes",
@@ -8813,89 +9337,108 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Our spin on a popular Indian",
-        "label": "Our spin on a popular Indian",
-        "type": "cook",
-        "duration_min": 8,
+        "raw_text": "A medley of vegetables are shredded",
+        "label": "Shred vegetables",
+        "type": "prep",
+        "duration_min": 10,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 10,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Shred the medley of vegetables including red onion, carrot, green bell pepper, and white cabbage.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 10
       },
       {
         "id": "step-2",
-        "raw_text": "A medley of vegetables are shredded",
-        "label": "A medley of vegetables are shredded",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 8,
-        "end_min": 16,
+        "raw_text": "tossed in a spiced gram flour batter",
+        "label": "Batter vegetables",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 10,
+        "end_min": 15,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Toss the shredded vegetables in a spiced gram flour batter made with gram flour, rice flour, and spices.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 16
+        "latest_start_min": 10,
+        "latest_end_min": 15
       },
       {
         "id": "step-3",
-        "raw_text": "Served in a vegan brioche bun",
-        "label": "Served in a vegan brioche bun",
-        "type": "finish",
-        "duration_min": 2,
-        "start_min": 16,
-        "end_min": 18,
+        "raw_text": "then fried until light, crispy and delicious.",
+        "label": "Fry pakoras",
+        "type": "cook",
+        "duration_min": 8,
+        "start_min": 15,
+        "end_min": 23,
         "requires": [
           "step-2"
         ],
         "can_overlap_with": [],
-        "equipment": [
-          "pot"
-        ],
+        "equipment": [],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Fry the battered vegetables until they are light, crispy, and delicious.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 18
+        "latest_start_min": 15,
+        "latest_end_min": 23
       },
       {
         "id": "step-4",
-        "raw_text": "Nutrition Calories 656kcal; Protein 22.8g; Fat",
-        "label": "Nutrition Calories 656kcal; Protein 22.8g; Fat",
+        "raw_text": "served alongside crispy baby new potatoes.",
+        "label": "Cook baby new potatoes",
         "type": "cook",
-        "duration_min": 8,
-        "start_min": 18,
-        "end_min": 26,
-        "requires": [
+        "duration_min": 20,
+        "start_min": 0,
+        "end_min": 20,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
-        "equipment": [
-          "pot"
-        ],
+        "equipment": [],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Prepare and cook the baby new potatoes until they are crispy.",
+        "is_critical": false,
+        "slack_min": 3,
+        "latest_start_min": 3,
+        "latest_end_min": 23
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Served in a vegan brioche bun with mango chutney, mint raita, fresh baby spinach and served alongside crispy baby new potatoes.",
+        "label": "Assemble and serve burger",
+        "type": "finish",
+        "duration_min": 5,
+        "start_min": 23,
+        "end_min": 28,
+        "requires": [
+          "step-3",
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Assemble the pakora inside the vegan brioche bun with mango chutney, mint raita, and fresh baby spinach. Serve alongside the crispy baby new potatoes.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 18,
-        "latest_end_min": 26
+        "latest_start_min": 23,
+        "latest_end_min": 28
       }
     ],
-    "total_time_min": 26,
-    "active_time_min": 26
+    "total_time_min": 28,
+    "active_time_min": 28
   },
   {
     "id": "crispy-rice-salad-with-smacked-cucumber-avocado-edamame-black-beans-toasted-cashews-chilli-satay-dressing",
@@ -9263,142 +9806,155 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle and take out two saucepans and a frying pan.",
-        "label": "Boil your kettle and take out",
+        "label": "Boil kettle and prepare pans",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "kettle",
+          "saucepan",
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Boil the kettle and gather two saucepans and a frying pan.",
+        "is_critical": false,
+        "slack_min": 2,
+        "latest_start_min": 2,
+        "latest_end_min": 5
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Place thesushi ricein a small saucepan and pour over 2.5 times its volume of hot water from the kettle. Bring to the boil, then reduce the heat to low, cover, and cook for 8-10 minutes, or until tender but still slightly al dente. Keep the lid on to let it steam once cooked.",
+        "label": "Cook the sushi rice",
         "type": "cook",
+        "duration_min": 9,
+        "start_min": 3,
+        "end_min": 12,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "small saucepan",
+          "kettle"
+        ],
+        "temperature_c": null,
+        "notes": "Cook for 8-10 minutes (midpoint 9 minutes) until tender but al dente, then keep covered to steam.",
+        "is_critical": false,
+        "slack_min": 2,
+        "latest_start_min": 5,
+        "latest_end_min": 14
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Place your other saucepan over medium-low heat, add thekatsu curry sauce, and warm until piping hot.",
+        "label": "Warm the katsu curry sauce",
+        "type": "cook",
+        "duration_min": 5,
+        "start_min": 3,
+        "end_min": 8,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Warm over medium-low heat until piping hot.",
+        "is_critical": false,
+        "slack_min": 6,
+        "latest_start_min": 9,
+        "latest_end_min": 14
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Take out two large bowls. In one bowl, add thekatsu batter mixand measure out 40ml of plant milk (or 80ml for a 4-person portion). If you don’t have milk, water will work too. Slowly add the liquid, stirring until you have a thick batter. Season well with salt and pepper, and mix thoroughly until combined.In the second bowl, add thepanko breadcrumbsand season with salt and pepper. Cut thetofuinto four equal slices lengthwise, and pat each piece dry with kitchen towel. Coat the tofu in the batter, then dredge in the panko, pressing gently so all sides are evenly covered.",
+        "label": "Prepare and coat the tofu",
+        "type": "prep",
         "duration_min": 8,
         "start_min": 0,
         "end_min": 8,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
-          "frying pan",
-          "pan",
-          "saucepan"
+          "large bowl",
+          "kitchen towel"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Prepare the batter and panko bowls, slice and dry the tofu, then coat thoroughly.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
         "latest_end_min": 8
       },
       {
-        "id": "step-2",
-        "raw_text": "Place thesushi ricein a small saucepan and pour over 2.5 times its volume of hot water from the kettle. Bring to the boil, then reduce the heat to low, cover, and cook for 8-10 minutes, or until tender but still slightly al dente. Keep the lid on to let it steam once cooked.",
-        "label": "Place thesushi ricein a small saucepan",
+        "id": "step-5",
+        "raw_text": "Add about 1 cm of neutral oil to the frying pan and place over medium-low heat. (You can use just a drizzle of oil if you prefer, but the tofu won’t get as crispy.) When the oil is hot enough to sizzle when a small amount of panko is dropped in, carefully place the coatedtofuin the pan. Turn as each side becomes golden and crispy, cooking for around 5 minutes in total. Remove and place on kitchen paper to drain any excess oil, then cut each piece into 2cm-thick slices.",
+        "label": "Fry and slice the tofu",
         "type": "cook",
-        "duration_min": 9,
+        "duration_min": 6,
         "start_min": 8,
-        "end_min": 17,
+        "end_min": 14,
         "requires": [
-          "step-1"
+          "step-1",
+          "step-4"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "frying pan",
+          "kitchen paper"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Fry for around 5 minutes in total until golden and crispy, drain on kitchen paper, and slice into 2cm pieces.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 8,
-        "latest_end_min": 17
-      },
-      {
-        "id": "step-3",
-        "raw_text": "Place your other saucepan over medium-low heat, add thekatsu curry sauce, and warm until piping hot.",
-        "label": "Place your other saucepan over medium-low",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 17,
-        "end_min": 25,
-        "requires": [
-          "step-2"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "pan",
-          "saucepan"
-        ],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 17,
-        "latest_end_min": 25
-      },
-      {
-        "id": "step-4",
-        "raw_text": "Take out two large bowls. In one bowl, add thekatsu batter mixand measure out 40ml of plant milk (or 80ml for a 4-person portion). If you don’t have milk, water will work too. Slowly add the liquid, stirring until you have a thick batter. Season well with salt and pepper, and mix thoroughly until combined.In the second bowl, add thepanko breadcrumbsand season with salt and pepper. Cut thetofuinto four equal slices lengthwise, and pat each piece dry with kitchen towel. Coat the tofu in the batter, then dredge in the panko, pressing gently so all sides are evenly covered.",
-        "label": "Take out two large bowls. In",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 25,
-        "end_min": 33,
-        "requires": [
-          "step-3"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "bowl",
-          "pan"
-        ],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 33
-      },
-      {
-        "id": "step-5",
-        "raw_text": "Add about 1 cm of neutral oil to the frying pan and place over medium-low heat. (You can use just a drizzle of oil if you prefer, but the tofu won’t get as crispy.) When the oil is hot enough to sizzle when a small amount of panko is dropped in, carefully place the coatedtofuin the pan. Turn as each side becomes golden and crispy, cooking for around 5 minutes in total. Remove and place on kitchen paper to drain any excess oil, then cut each piece into 2cm-thick slices.",
-        "label": "Add about 1 cm of neutral",
-        "type": "cook",
-        "duration_min": 5,
-        "start_min": 33,
-        "end_min": 38,
-        "requires": [
-          "step-4"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "frying pan",
-          "pan"
-        ],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 33,
-        "latest_end_min": 38
+        "latest_end_min": 14
       },
       {
         "id": "step-6",
         "raw_text": "To serve, divide thesushi ricebetween serving bowls and spoon over thekatsu curry sauce. Top with thetofu katsuand serve alongside themixed leaf saladtossed inmiso vinaigrette. Enjoy!",
-        "label": "To serve, divide thesushi ricebetween serving",
+        "label": "Plate and serve the dish",
         "type": "finish",
-        "duration_min": 2,
-        "start_min": 38,
-        "end_min": 40,
+        "duration_min": 4,
+        "start_min": 14,
+        "end_min": 18,
         "requires": [
+          "step-2",
+          "step-3",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowl"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Assemble the rice, curry sauce, and tofu katsu, then serve with the dressed mixed leaf salad.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 38,
-        "latest_end_min": 40
+        "latest_start_min": 14,
+        "latest_end_min": 18
       }
     ],
-    "total_time_min": 40,
-    "active_time_min": 40
+    "total_time_min": 18,
+    "active_time_min": 18
   },
   {
     "id": "crispy-tofu-katsu-curry-with-sticky-rice-seasonal-mixed-leaves-in-sweet-miso-dressing-copy",
@@ -29434,285 +29990,5 @@
     ],
     "total_time_min": 23,
     "active_time_min": 23
-  },
-  {
-    "id": "aromatic-thai-green-curry-udon-noodles-with-smoked-tofu-blistered-cherry-tomatoes-summer-green-beans-charred-lime",
-    "title": "Summer Thai Green Curry Udon Noodles, With Smoked Tofu, Blistered Cherry Tomatoes, Summer Green Beans & Charred Lime",
-    "source_url": "https://planthood.co.uk/products/aromatic-thai-green-curry-udon-noodles-with-smoked-tofu-blistered-cherry-tomatoes-summer-green-beans-charred-lime",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 505.0,
-      "protein_g": 26.5,
-      "fat_g": 19.0,
-      "carbs_g": 57.4,
-      "fibre_g": 6.3,
-      "salt_g": 1.5
-    },
-    "schema_version": 1,
-    "steps": [
-      {
-        "id": "step-1",
-        "raw_text": "-",
-        "label": "-",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 0,
-        "end_min": 8,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 0,
-        "latest_end_min": 8
-      },
-      {
-        "id": "step-2",
-        "raw_text": "-",
-        "label": "-",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 8,
-        "end_min": 16,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 16
-      },
-      {
-        "id": "step-3",
-        "raw_text": "-",
-        "label": "-",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 16,
-        "end_min": 24,
-        "requires": [
-          "step-2"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 24
-      },
-      {
-        "id": "step-4",
-        "raw_text": "-",
-        "label": "-",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 24,
-        "end_min": 32,
-        "requires": [
-          "step-3"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 24,
-        "latest_end_min": 32
-      },
-      {
-        "id": "step-5",
-        "raw_text": "-",
-        "label": "-",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 32,
-        "end_min": 40,
-        "requires": [
-          "step-4"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 32,
-        "latest_end_min": 40
-      },
-      {
-        "id": "step-6",
-        "raw_text": "-",
-        "label": "-",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 40,
-        "end_min": 48,
-        "requires": [
-          "step-5"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 40,
-        "latest_end_min": 48
-      }
-    ],
-    "total_time_min": 48,
-    "active_time_min": 48
-  },
-  {
-    "id": "creamy-lemon-mafaldine-pasta-refreshing-crunchy-sugarsnaps-garden-peas-peppery-rocket-salad-chilli-pine-nut-crumb",
-    "title": "Creamy Lemon Mafaldine Pasta, Refreshing Crunchy Sugarsnaps, Garden Peas, Peppery Rocket Salad & Chilli Pine Nut Crumb",
-    "source_url": "https://planthood.co.uk/products/creamy-lemon-mafaldine-pasta-refreshing-crunchy-sugarsnaps-garden-peas-peppery-rocket-salad-chilli-pine-nut-crumb",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 505.0,
-      "protein_g": 26.5,
-      "fat_g": 19.0,
-      "carbs_g": 57.4,
-      "fibre_g": 6.3,
-      "salt_g": 1.5
-    },
-    "schema_version": 1,
-    "steps": [
-      {
-        "id": "step-1",
-        "raw_text": "-",
-        "label": "-",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 0,
-        "end_min": 8,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 0,
-        "latest_end_min": 8
-      },
-      {
-        "id": "step-2",
-        "raw_text": "-",
-        "label": "-",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 8,
-        "end_min": 16,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 16
-      },
-      {
-        "id": "step-3",
-        "raw_text": "-",
-        "label": "-",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 16,
-        "end_min": 24,
-        "requires": [
-          "step-2"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 24
-      },
-      {
-        "id": "step-4",
-        "raw_text": "-",
-        "label": "-",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 24,
-        "end_min": 32,
-        "requires": [
-          "step-3"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 24,
-        "latest_end_min": 32
-      },
-      {
-        "id": "step-5",
-        "raw_text": "-",
-        "label": "-",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 32,
-        "end_min": 40,
-        "requires": [
-          "step-4"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 32,
-        "latest_end_min": 40
-      },
-      {
-        "id": "step-6",
-        "raw_text": "-",
-        "label": "-",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 40,
-        "end_min": 48,
-        "requires": [
-          "step-5"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 40,
-        "latest_end_min": 48
-      }
-    ],
-    "total_time_min": 48,
-    "active_time_min": 48
   }
 ]
