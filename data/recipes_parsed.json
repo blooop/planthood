@@ -10125,34 +10125,39 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Our flavour-packed pho broth is the",
-        "label": "Our flavour-packed pho broth is the",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "meaty mushrooms, a medley of healthy vibrant vegetables, glass noodles, then garnish it with fresh herbs, sliced chilli and zingy lime",
+        "label": "Prepare the vegetables, herbs, chilli, and lime",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
         "requires": [],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "chopping board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Prep the mushrooms, radish, spring onion, fresh herbs, chilli, and lime."
       },
       {
         "id": "step-2",
-        "raw_text": "Our chefs slow cook the broth",
-        "label": "Our chefs slow cook the broth",
+        "raw_text": "fill it with meaty mushrooms, a medley of healthy vibrant vegetables, glass noodles",
+        "label": "Cook the pho broth with mushrooms, vegetables, and noodles",
         "type": "cook",
         "estimated_duration_minutes": 8,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "pot"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Combine the broth with the prepared mushrooms, vegetables, and vermicelli noodles, heating them through."
       },
       {
         "id": "step-3",
-        "raw_text": "At home you'll fill it with",
-        "label": "At home you'll fill it with",
+        "raw_text": "garnish it with fresh herbs, sliced chilli and zingy lime.",
+        "label": "Garnish and serve the pho",
         "type": "finish",
         "estimated_duration_minutes": 2,
         "requires": [
@@ -10161,11 +10166,11 @@
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Finish the dish by topping with fresh herbs, sliced chilli, and a squeeze of lime."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "fbd2b9365ff514b018f9646617de4bb8b37eb88f9099ce69ed606eadf4332750"
   },
   {
@@ -10309,101 +10314,134 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle and take out a large saucepan and two large frying pans. Fill the saucepan with boiling water, add salt, and place it over medium-high heat.",
-        "label": "Boil your kettle and take out",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Boil water in saucepan",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "frying pan",
-          "pan",
-          "saucepan"
+          "kettle",
+          "large saucepan",
+          "two large frying pans"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Boil kettle first to speed up heating the saucepan over medium-high heat."
       },
       {
         "id": "step-2",
         "raw_text": "Add the bucatini pasta to the salted boiling water and cook until al dente, around 9–10 minutes. Reserve a mugful of the cooking water, then drain the pasta.",
-        "label": "Add the bucatini pasta to the",
-        "type": "finish",
-        "estimated_duration_minutes": 9,
+        "label": "Cook bucatini pasta",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "large saucepan",
+          "mug",
+          "colander"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook for 9-10 minutes until al dente. Remember to reserve a mugful of cooking water before draining."
       },
       {
         "id": "step-3",
         "raw_text": "In the meantime, dice the tempeh into small cubes, about 8 mm x 8 mm. Place a frying pan over high heat and add a generous glug of olive oil. Fry the tempeh cubes until golden and crispy on all sides, about 8 to 10 minutes. Add the tempeh ‘pancetta’ marinade and toss well to ensure all the tempeh is evenly coated and the marinade starts to char slightly, about 1 minute. Alternatively, you can marinate the tempeh cubes in the tempeh ‘pancetta’ marinade with a drizzle of oil, then bake in the oven at 220°C / 200°C fan for 20 to 25 minutes, until crispy and charred at the edges.",
-        "label": "In the meantime, dice the tempeh",
+        "label": "Prep and fry tempeh pancetta",
         "type": "cook",
-        "estimated_duration_minutes": 9,
+        "estimated_duration_minutes": 13,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
+          "knife",
+          "chopping board",
           "frying pan",
           "oven",
-          "pan"
+          "baking sheet"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Dice tempeh to 8mm cubes. Fry for 8-10 minutes, then toss with marinade for 1 minute. Alternatively, bake at 220°C (200°C fan) for 20-25 minutes."
       },
       {
         "id": "step-4",
         "raw_text": "Thinly slice the chestnut mushrooms . Place your second frying pan over medium-high heat and add a generous drizzle of olive oil. Once the oil is hot, fry the mushrooms until both sides are golden and caramelised at the edges. Add the creamy mushroom sauce , lower the heat, and warm through until piping hot.",
-        "label": "Thinly slice the chestnut mushrooms",
+        "label": "Slice and fry mushrooms with sauce",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 10,
         "requires": [
-          "step-3"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-5"
+        ],
         "equipment": [
-          "frying pan",
-          "pan"
+          "knife",
+          "chopping board",
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Fry sliced mushrooms until golden and caramelized, then lower heat and warm the sauce until piping hot."
       },
       {
         "id": "step-5",
         "raw_text": "Pick the parsley leaves off the stems and chop them roughly.",
-        "label": "Pick the parsley leaves off the",
+        "label": "Chop fresh parsley",
         "type": "prep",
         "estimated_duration_minutes": 3,
-        "requires": [
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
           "step-4"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "chopping board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Pick the parsley leaves off the stems before chopping them roughly."
       },
       {
         "id": "step-6",
         "raw_text": "To finish, add the bucatini to the simmering creamy mushroom sauce with the chestnut mushrooms and toss to coat. Use the reserved pasta cooking water to adjust the consistency until nice and creamy - as the sauce can thicken a lot. Divide the pasta between serving bowls, garnish with the chopped parsley leaves, and enjoy!",
-        "label": "To finish, add the bucatini to",
+        "label": "Combine pasta, sauce, and serve",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 4,
         "requires": [
+          "step-2",
+          "step-3",
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "frying pan",
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Toss pasta in the sauce. Use reserved pasta water to adjust consistency. Garnish with chopped parsley."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "4a382427391ea570773804a5fb0c6bde361f18c39d791374de93accd6126c26c"
   },
   {
@@ -10427,88 +10465,115 @@
       {
         "id": "step-1",
         "raw_text": "-",
-        "label": "-",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Prep vegetables and nuts",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
         "requires": [],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Chop courgettes, kale, and garlic. Prepare walnuts and pine nuts for the parmesan."
       },
       {
         "id": "step-2",
         "raw_text": "-",
-        "label": "-",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Make pine nut walnut parmesan",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "food processor"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Pulse pine nuts, walnuts, nutritional yeast, and salt until a crumbly texture forms."
       },
       {
         "id": "step-3",
         "raw_text": "-",
-        "label": "-",
+        "label": "Cook tempeh bolognese base",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 15,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
+        "equipment": [
+          "large pan",
+          "wooden spoon"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Crumble and brown the tempeh, then add aromatics and tomatoes to simmer."
       },
       {
         "id": "step-4",
         "raw_text": "-",
-        "label": "-",
+        "label": "Boil mafaldine pasta",
         "type": "cook",
-        "estimated_duration_minutes": 8,
-        "requires": [
+        "estimated_duration_minutes": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "pot",
+          "colander"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook pasta in salted boiling water until al dente, then drain."
       },
       {
         "id": "step-5",
         "raw_text": "-",
-        "label": "-",
+        "label": "Add courgettes and kale",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 5,
         "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [
           "step-4"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "large pan"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Stir courgettes and kale into the bolognese sauce until wilted and tender."
       },
       {
         "id": "step-6",
         "raw_text": "-",
-        "label": "-",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Plate and garnish",
+        "type": "finish",
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-2",
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "plates",
+          "serving tongs"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Serve the mafaldine pasta topped with the tempeh bolognese and sprinkle with the pine nut & walnut parmesan."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "55480cb672c75b44f6fe3fec87c56d92bfbfe3010e0c872a254781ffe53ab432"
   },
   {
@@ -10532,109 +10597,125 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan, then take out a mixing bowl, a baking tray, a large saucepan, and a frying pan.",
-        "label": "Preheat your oven to 200°C /",
+        "label": "Preheat oven and gather equipment",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 2,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "bowl",
-          "frying pan",
-          "mixing bowl",
           "oven",
-          "pan",
-          "saucepan",
-          "tray"
+          "mixing bowl",
+          "baking tray",
+          "large saucepan",
+          "frying pan"
         ],
         "temperature_c": 200,
-        "notes": ""
+        "notes": "Preheat oven to 200°C or 180°C fan."
       },
       {
         "id": "step-2",
         "raw_text": "Using the coarse side of a grater, grate the tempeh into a fine mince. Alternatively, you can use your hands to crumble it. In a mixing bowl, combine the minced tempeh with the meatball marinade and meatball dry mix , then knead until well combined and the mixture has the consistency of a soft dough. It should hold its shape when squeezed in your hands.",
-        "label": "Using the coarse side of a",
+        "label": "Grate tempeh and mix dough",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 6,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "bowl",
+          "grater",
           "mixing bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Grate tempeh using the coarse side or crumble with hands. Knead until it holds shape."
       },
       {
         "id": "step-3",
         "raw_text": "Lightly oil your hands with olive oil and roll the tempeh mixture into bite-sized balls, slightly smaller than a golf ball. You should get around 10 meatballs in total (~20 for a 4-person box). Place them on a baking tray and spray or drizzle with a little olive oil for a crispier finish. Bake for 20 minutes (or air-fry for 10–15 minutes), turning halfway, until golden and crispy on the outside.",
-        "label": "Lightly oil your hands with olive",
-        "type": "finish",
-        "estimated_duration_minutes": 12,
+        "label": "Shape and bake tempeh meatballs",
+        "type": "cook",
+        "estimated_duration_minutes": 25,
         "requires": [
           "step-2"
         ],
-        "can_overlap_with": [],
-        "equipment": [
-          "tray"
+        "can_overlap_with": [
+          "step-4",
+          "step-5"
         ],
-        "temperature_c": null,
-        "notes": ""
+        "equipment": [
+          "baking tray",
+          "oven"
+        ],
+        "temperature_c": 200,
+        "notes": "Bake for 20 minutes, turning halfway. Alternatively, air-fry for 10-15 minutes (midpoint 12.5 minutes)."
       },
       {
         "id": "step-4",
         "raw_text": "Meanwhile, place your saucepan over medium heat and add the smoky tomato sauce along with the drained cannellini beans . Bring to a boil, then reduce the heat to low and let the sauce simmer gently for 1–2 minutes. Once the tempeh meatballs are ready, add them to the sauce and gently stir to combine.",
-        "label": "Meanwhile, place your saucepan over medium",
+        "label": "Simmer sauce and add meatballs",
         "type": "cook",
-        "estimated_duration_minutes": 1,
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-5"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "large saucepan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Simmer sauce and beans for 1-2 minutes (midpoint 1.5 minutes) before adding cooked meatballs."
       },
       {
         "id": "step-5",
         "raw_text": "Remove the hardy stems from the curly kale and tear the leaves into bite-sized pieces. Heat your frying pan over medium heat with a drizzle of olive oil. Once hot, sauté the cavolo nero with a splash of water until the leaves are bright green and tender. Season with salt and pepper to taste, then remove from the heat. For extra flavour, stir through a little butter or olive oil (optional).",
-        "label": "Remove the hardy stems from the",
+        "label": "Prep and sauté kale",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 7,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
           "step-4"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Sauté kale with a splash of water until bright green and tender."
       },
       {
         "id": "step-6",
         "raw_text": "To serve, divide the smoky tomato tempeh meatballs between bowls and serve with the sautéed kale on the side. Finish with some plant-based cheese if you like (optional). Enjoy!",
-        "label": "To serve, divide the smoky tomato",
+        "label": "Plate and serve",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide meatballs and kale between bowls. Option to top with plant-based cheese."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "c90912d13d356aa8ea2073e59c5f0a7df7586e2b5b71d36fa9a581a901c94b33"
   },
   {
@@ -10658,25 +10739,24 @@
       {
         "id": "step-1",
         "raw_text": "Pre-heat your oven to 220°C / 200°C fan, then take out two large baking trays and a large saucepan.",
-        "label": "Pre-heat your oven to 220°C /",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Preheat oven and prepare equipment",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
           "oven",
-          "pan",
-          "saucepan",
-          "tray"
+          "baking trays",
+          "saucepan"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C or 200°C fan. Retrieve two large baking trays and a large saucepan."
       },
       {
         "id": "step-2",
         "raw_text": "Drain the chickpeas and dry them thoroughly with kitchen towel. Place them in a bowl with the crispy chickpea spice mix (spice warning – use half if you don’t like too much heat!) and a couple of tablespoons of olive oil, then mix well. Cut the sweet potato into roughly 2cm cubes – the smaller you cut them, the faster they will cook.",
-        "label": "Drain the chickpeas and dry them",
-        "type": "cook",
+        "label": "Prep chickpeas and sweet potato",
+        "type": "prep",
         "estimated_duration_minutes": 8,
         "requires": [
           "step-1"
@@ -10684,66 +10764,72 @@
         "can_overlap_with": [],
         "equipment": [
           "bowl",
-          "pot"
+          "kitchen towel",
+          "knife",
+          "cutting board"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Drain and dry chickpeas thoroughly. Mix with spices and oil. Cut sweet potato into 2cm cubes."
       },
       {
         "id": "step-3",
         "raw_text": "Lay the chickpeas out on one baking tray and the sweet potato on another. Toss the sweet potato with olive oil and season well with salt and pepper. Roast in the oven for 20–30 minutes, tossing everything halfway through. If you’re in a rush, they’ll be ready after 20 minutes, but if you have time, roasting for 30 minutes will make the chickpeas crunchier. Alternatively, you can air fry them for 10–15 minutes. Taste the chickpeas when they come out of the oven and season with extra salt if needed.",
-        "label": "Lay the chickpeas out on one",
+        "label": "Roast chickpeas and sweet potato",
         "type": "cook",
         "estimated_duration_minutes": 25,
         "requires": [
           "step-2"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
         "equipment": [
           "oven",
-          "pot",
-          "tray"
+          "baking trays"
         ],
-        "temperature_c": null,
-        "notes": ""
+        "temperature_c": 220,
+        "notes": "Roast for 20–30 minutes (midpoint 25 mins), tossing halfway. Alternatively, air fry for 10–15 minutes."
       },
       {
         "id": "step-4",
         "raw_text": "When there's around 5 minutes left on the chickpeas and sweet potato, drain and rinse the lentils and add these to your saucepan along with the thai red curry soup and 100ml of water. Place over a medium heat and simmer gently until piping hot, around 3-5 minutes. Stir through the roasted sweet potato once it's ready. Meanwhile, pick and roughly chop the coriander leaves.",
-        "label": "When there's around 5 minutes left",
+        "label": "Simmer soup and chop coriander",
         "type": "cook",
         "estimated_duration_minutes": 4,
         "requires": [
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "pan",
-          "pot",
-          "saucepan"
+          "saucepan",
+          "colander",
+          "knife",
+          "cutting board"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Start when 5 minutes remain on roasting. Simmer soup for 3–5 minutes (midpoint 4 mins). Stir in sweet potato once roasted."
       },
       {
         "id": "step-5",
         "raw_text": "To serve up, divide the soup between serving bowls and top with the crispy chickpeas , fresh coriander and pickled red onion . Enjoy!",
-        "label": "To serve up, divide the soup",
+        "label": "Portion soup and garnish",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide soup into bowls. Top with crispy chickpeas, fresh coriander, and pickled red onion."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "529114b335c4ded56047c0f0f12269e80530ebade53003b9786eede0f5ed70cb"
   },
   {
@@ -10767,111 +10853,130 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a frying pan and a wide casserole dish with a lid (or an ovenproof dish / roasting tray and some tin foil).",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and prepare pans",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "casserole dish",
-          "frying pan",
           "oven",
-          "pan",
+          "frying pan",
+          "wide casserole dish with a lid",
+          "ovenproof dish",
           "roasting tray",
-          "tray"
+          "tin foil"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C (or 200°C fan). Prepare the frying pan and roasting dish."
       },
       {
         "id": "step-2",
         "raw_text": "Place your frying pan over high heat and add a drizzle of olive oil. Cut the hispi cabbage into quarters, keeping the core intact so the leaves stay together. Once the pan is hot, sear the wedges cut-side down for about 5 minutes, or until nicely charred. Season well with salt and pepper, then transfer the wedges to a roasting dish and cover with a lid or tin foil. Roast for 10–15 minutes, or until tender. If you prefer a softer texture, add a splash of water to the dish to help the cabbage steam.",
-        "label": "Place your frying pan over high",
+        "label": "Sear and roast hispi cabbage",
         "type": "cook",
-        "estimated_duration_minutes": 12,
+        "estimated_duration_minutes": 18,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
           "frying pan",
-          "pan"
+          "roasting dish",
+          "lid",
+          "tin foil",
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Sear cabbage wedges for 5 minutes until charred, then roast covered for 10-15 minutes. Optionally add a splash of water to steam."
       },
       {
         "id": "step-3",
         "raw_text": "Clean the frying pan you used for the hispi cabbage, then place it back over medium heat and add a drizzle of olive oil. Grate the garlic cloves and add them to the pan along with the panko breadcrumbs . Cook until golden, then remove from the pan and set aside. Pick the parsley leaves and finely chop them, then combine them in a small bowl with the garlic breadcrumbs once ready.",
-        "label": "Clean the frying pan you used",
+        "label": "Make garlic and herb breadcrumbs",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 6,
         "requires": [
           "step-2"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-5"
+        ],
         "equipment": [
-          "bowl",
           "frying pan",
-          "pan"
+          "grater",
+          "small bowl",
+          "knife",
+          "cutting board"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Clean the pan used for cabbage first. Cook breadcrumbs until golden, then mix with chopped parsley."
       },
       {
         "id": "step-4",
         "raw_text": "Finely dice the tempeh into small 5mm cubes. Place the frying pan back over medium-high to high heat and add a generous drizzle of olive oil. Add the tempeh cubes and fry for around 7-10 minutes or until golden and crispy, making sure they are well spread out and stirred occasionally. Once crispy, add the tempeh ‘pancetta’ marinade , stir to coat all the pieces evenly, and turn off the heat.",
-        "label": "Finely dice the tempeh into small",
+        "label": "Fry and marinate tempeh cubes",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 12,
         "requires": [
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-5"
+        ],
         "equipment": [
-          "frying pan",
-          "pan"
+          "knife",
+          "cutting board",
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Dice tempeh into 5mm cubes. Fry for 7-10 minutes until crispy, then stir in marinade off heat."
       },
       {
         "id": "step-5",
         "raw_text": "When there are 5 minutes left on the hispi cabbage, remove the cover and pour the creamy gratin sauce around the cabbage wedges. Return to the oven and cook until the sauce is piping hot and the cabbage is tender and golden.",
-        "label": "When there are 5 minutes left",
+        "label": "Add gratin sauce and bake",
         "type": "cook",
-        "estimated_duration_minutes": 5,
+        "estimated_duration_minutes": 7,
         "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-3",
           "step-4"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "oven"
+          "oven",
+          "roasting dish"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Pour sauce around cabbage with 5 minutes left of roasting. Bake uncovered until hot and golden."
       },
       {
         "id": "step-6",
         "raw_text": "To serve, you can either scatter the tempeh 'pancetta' and herby breadcrumbs over the hispi cabbage in your oven dish and place in the middle of the table to serve 'feasting style' or you could divide the saucy hispi cabbage between serving bowls and then add the garnish. Enjoy!",
-        "label": "To serve, you can either scatter",
+        "label": "Garnish and serve cabbage gratin",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-3",
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "oven",
-          "pan"
+          "serving bowls",
+          "oven dish"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Scatter tempeh and breadcrumbs over cabbage. Serve family-style or in individual bowls."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "d4faa4a4f6ec2909e4fa50e41068136d6d1a10927012ccf4d1a2dd5118fd7aff"
   },
   {
@@ -10894,47 +10999,63 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Sprinkle on salads, add to smoothies",
-        "label": "Sprinkle on salads, add to smoothies",
+        "raw_text": "Sprinkle on salads, add to smoothies, use in baking.",
+        "label": "Use raw seeds in salads, smoothies, or baking",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 1,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Seeds can be used directly from the package without prior preparation."
       },
       {
         "id": "step-2",
-        "raw_text": "Soak whole seeds overnight and add",
-        "label": "Soak whole seeds overnight and add",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
-        "requires": [
+        "raw_text": "Soak whole seeds overnight",
+        "label": "Soak whole seeds overnight",
+        "type": "prep",
+        "estimated_duration_minutes": 240,
+        "requires": [],
+        "can_overlap_with": [
           "step-1"
         ],
-        "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Soaking whole seeds overnight prepares them for easier digestion and blending."
       },
       {
         "id": "step-3",
-        "raw_text": "Containing soluble and insoluble fibre as",
-        "label": "Containing soluble and insoluble fibre as",
-        "type": "cook",
-        "estimated_duration_minutes": 30,
+        "raw_text": "add to porridge and smoothies.",
+        "label": "Add soaked seeds to porridge and smoothies",
+        "type": "finish",
+        "estimated_duration_minutes": 2,
         "requires": [
           "step-2"
         ],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Incorporate the pre-soaked seeds into your breakfast dishes."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Soak 1 tablespoon of seeds in 3 tablespoons of warm water for 30 minutes to replace one egg in vegan baking.",
+        "label": "Prepare vegan egg replacement",
+        "type": "prep",
+        "estimated_duration_minutes": 30,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Creates a gel-like consistency that acts as a binder to replace one egg in vegan baking recipes."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "f431fd6d53bf3b4c2634c4f31160c74818007d17368fb6deb4ffb7d0cbbbe667"
   },
   {
@@ -10957,19 +11078,33 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Soak 1 tablespoon of seeds in",
-        "label": "Soak 1 tablespoon of seeds in",
-        "type": "cook",
-        "estimated_duration_minutes": 30,
+        "raw_text": "Soak 1 tablespoon of seeds in 3 tablespoons of warm water",
+        "label": "Combine seeds and warm water",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Mix one tablespoon of seeds with three tablespoons of warm water."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "for 30 minutes to replace one egg in vegan baking.",
+        "label": "Soak the mixture",
+        "type": "prep",
+        "estimated_duration_minutes": 30,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Allow the mixture to stand for 30 minutes to gelatinize and act as an egg replacement."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "56486911667fe989fca4fe7ecfcb8af377cafe14329ac1a9a2900f2cf24f437d"
   },
   {
@@ -10992,47 +11127,77 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Rinse, cover with 1½ to two",
-        "label": "Rinse, cover with 1½ to two",
-        "type": "cook",
-        "estimated_duration_minutes": 15,
+        "raw_text": "Rinse",
+        "label": "Rinse quinoa",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Rinse the quinoa thoroughly before cooking."
       },
       {
         "id": "step-2",
-        "raw_text": "The grains will absorb the water",
-        "label": "The grains will absorb the water",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "cover with 1½ to two parts water or stock for each 1 part quinoa",
+        "label": "Combine quinoa and liquid",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Use 1.5 to 2 parts water or stock for every 1 part of quinoa."
       },
       {
         "id": "step-3",
-        "raw_text": "Fluff the grains apart with a",
-        "label": "Fluff the grains apart with a",
+        "raw_text": "bring to the boil",
+        "label": "Bring to boil",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-2"
         ],
         "can_overlap_with": [],
         "equipment": [],
+        "temperature_c": 100,
+        "notes": "Heat the mixture until it reaches a boil."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "simmer on a very low heat for 15 minutes. The grains will absorb the water and swell to 2 to 3 times their original size.",
+        "label": "Simmer quinoa",
+        "type": "cook",
+        "estimated_duration_minutes": 15,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Simmer on a very low heat. The grains will absorb the liquid and swell to 2 to 3 times their original size."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Fluff the grains apart with a fork.",
+        "label": "Fluff quinoa",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "fork"
+        ],
+        "temperature_c": null,
+        "notes": "Gently separate and fluff the cooked grains using a fork."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "ae7990b019086ba8239c80ff5e8a35367b93b1b8a211f46f8b8a19a9d3c23d94"
   },
   {
@@ -11055,35 +11220,75 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Add whole or milled to breads",
-        "label": "Add whole or milled to breads",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "Add whole or milled to breads, bakes and cereals",
+        "label": "Add to breads, bakes, or cereals",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Add seeds whole or milled as desired."
       },
       {
         "id": "step-2",
-        "raw_text": "Try crushing with a pestle or",
-        "label": "Try crushing with a pestle or",
+        "raw_text": "use raw or toasted as a crunchy salad topper.",
+        "label": "Use as salad topper",
+        "type": "finish",
+        "estimated_duration_minutes": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Can be used raw or toasted."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Try crushing with a pestle",
+        "label": "Crush with pestle",
         "type": "prep",
         "estimated_duration_minutes": 3,
-        "requires": [
-          "step-1"
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-4"
         ],
-        "can_overlap_with": [],
+        "equipment": [
+          "pestle"
+        ],
+        "temperature_c": null,
+        "notes": "Crush to make a coarse flour."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "whizz in a blender to make a coarse flour.",
+        "label": "Blend into coarse flour",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
           "blender"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Alternative to crushing with a pestle."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "b708e3c642b0e3eddfd497d69cbe1f21d62454ad2bc4a3a3de1df6f03a7234f3"
   },
   {
@@ -11106,33 +11311,105 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Add cooked emmer - or if",
-        "label": "Add cooked emmer - or if",
-        "type": "cook",
-        "estimated_duration_minutes": 27,
+        "raw_text": "Speed up cooking by pre-soaking for a few hours.",
+        "label": "Pre-soak emmer grains",
+        "type": "prep",
+        "estimated_duration_minutes": 120,
         "requires": [],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "bowl"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Optional step to reduce the final cooking time. Soak the grains in water for a few hours."
       },
       {
         "id": "step-2",
-        "raw_text": "Speed up cooking by pre-soaking for",
-        "label": "Speed up cooking by pre-soaking for",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "Rinse",
+        "label": "Rinse emmer grains",
+        "type": "prep",
+        "estimated_duration_minutes": 2,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
+        "equipment": [
+          "sieve"
+        ],
+        "temperature_c": null,
+        "notes": "Thoroughly rinse the grains under cold water. If you skipped the optional pre-soaking step, start here."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "bring to the boil",
+        "label": "Bring water and grains to a boil",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "pot",
+          "stove"
+        ],
+        "temperature_c": 100,
+        "notes": "Combine the rinsed grains with water in a pot and bring to a boil."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "then simmer until tender (about 25 to 30 minutes).",
+        "label": "Simmer emmer grains",
+        "type": "cook",
+        "estimated_duration_minutes": 27,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "pot",
+          "stove"
+        ],
+        "temperature_c": 95,
+        "notes": "Lower the heat and simmer until the grains are tender, typically taking 25 to 30 minutes."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "Add cooked emmer - or if cooking time allows, dry grains - to stews and casseroles.Add cooked or toasted grains to salads.",
+        "label": "Incorporate grains into dishes",
+        "type": "finish",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Add the cooked emmer to salads, stews, or casseroles. Alternatively, dry grains can be added directly to stews if they will simmer long enough to cook."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Mill uncooked emmer grains to produce a tasty and versatile flour.",
+        "label": "Mill uncooked grains into flour",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "grain mill"
+        ],
+        "temperature_c": null,
+        "notes": "An alternative preparation method to grind dry, uncooked emmer grains into flour."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "45504dc2d821996627ee3c14cce79e64802cbdd6675f42cd84f5d0816e61a521"
   },
   {
@@ -11178,104 +11455,129 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out two baking sheets, a small sauce pan, and a large cast iron griddle pan or a frying pan.",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and prepare pans",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "baking sheet",
-          "frying pan",
           "oven",
-          "pan"
+          "baking sheets",
+          "small saucepan",
+          "cast iron griddle pan",
+          "frying pan"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C / 200°C fan."
       },
       {
         "id": "step-2",
         "raw_text": "Drain the chickpeas and pat them dry with kitchen towels. Place them on one of your baking sheets along with the cherry tomatoes , then drizzle with good-quality olive oil. Season with salt and pepper, and roast for 10–15 minutes, until the tomatoes begin to burst and the chickpeas are golden and crispy. In the last 5 minutes of cooking, place the garlic and herb flatbreads on a separate baking sheet and warm them in the oven.",
-        "label": "Drain the chickpeas and pat them",
+        "label": "Roast chickpeas, tomatoes, and flatbreads",
         "type": "cook",
-        "estimated_duration_minutes": 12,
+        "estimated_duration_minutes": 13,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
-        "equipment": [
-          "baking sheet",
-          "oven"
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
         ],
-        "temperature_c": null,
-        "notes": ""
+        "equipment": [
+          "baking sheets",
+          "oven",
+          "kitchen towels"
+        ],
+        "temperature_c": 220,
+        "notes": "Roast chickpeas and tomatoes for 10-15 minutes (midpoint 12.5 rounded to 13). Warm flatbreads in the oven during the last 5 minutes."
       },
       {
         "id": "step-3",
         "raw_text": "Using a sharp knife, trim the top and end of the courgette , then slice it vertically into long, thin strips about 2 mm thick. You could also use a wide vegetable peeler or a mandolin for this process.",
-        "label": "Using a sharp knife, trim the",
+        "label": "Slice the courgette",
         "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
+        "estimated_duration_minutes": 4,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
           "step-2"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "sharp knife",
+          "vegetable peeler",
+          "mandolin"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Slice vertically into long, thin strips about 2 mm thick."
       },
       {
         "id": "step-4",
         "raw_text": "Place your cast iron griddle or frying pan over medium-high heat and add a generous drizzle of olive oil. Once the pan is searing hot, add the sliced courgette . Sprinkle over salt and black pepper to taste and cook for 3-5 minutes on each side, until slightly charred. Once cooked, transfer to a large bowl and toss with the lemon mint pesto .",
-        "label": "Place your cast iron griddle or",
-        "type": "finish",
-        "estimated_duration_minutes": 4,
+        "label": "Griddle courgette and toss with pesto",
+        "type": "cook",
+        "estimated_duration_minutes": 8,
         "requires": [
+          "step-1",
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-5"
+        ],
         "equipment": [
-          "bowl",
+          "cast iron griddle pan",
           "frying pan",
-          "pan"
+          "large bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook for 3-5 minutes on each side (midpoint 4 mins per side, 8 mins total) until slightly charred, then toss with lemon mint pesto."
       },
       {
         "id": "step-5",
         "raw_text": "Place a small saucepan over low heat and add the hot ‘honey’ . Cook gently for 1–2 minutes, until warmed through. Alternatively, place the hot ‘honey’ in a small bowl and microwave on low in 30-second increments until warmed through, stirring between each interval. Stir well before serving.",
-        "label": "Place a small saucepan over low",
+        "label": "Warm the hot honey",
         "type": "cook",
-        "estimated_duration_minutes": 1,
+        "estimated_duration_minutes": 2,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
           "step-4"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "pan",
-          "saucepan"
+          "small saucepan",
+          "small bowl",
+          "microwave"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook gently for 1-2 minutes (midpoint 1.5 rounded to 2) in a saucepan, or microwave in 30-second increments."
       },
       {
         "id": "step-6",
         "raw_text": "To serve, spread the mezze labneh onto a large plate, using the back of a spoon to create a circular indentation in the centre. Arrange the minted courgette slices, roasted cherry tomatoes and chickpeas on top, then drizzle over the ‘hot’ honey . Finish with warm flatbreads on the side and enjoy!",
-        "label": "To serve, spread the mezze labneh",
+        "label": "Plate and serve the mezze",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 4,
         "requires": [
+          "step-2",
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "large plate",
+          "spoon"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Spread labneh, arrange toppings, drizzle honey, and serve with warm flatbreads."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "c9f254d4550014cc323393251b594a8c0483abf67285d162e49da9fed6f11cb4"
   },
   {
@@ -11299,62 +11601,72 @@
       {
         "id": "step-1",
         "raw_text": "Preheat the oven to 220°C/200°C fan. Take out two large roasting trays. You'll want enough space to lay the aubergine slices in a single layer, with the cherry tomatoes and chickpeas on the second tray.",
-        "label": "Preheat the oven to 220°C/200°C fan",
+        "label": "Preheat oven and prepare roasting trays",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
           "oven",
-          "roasting tray",
-          "tray"
+          "roasting trays"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat to 220°C or 200°C fan. Prepare two large roasting trays."
       },
       {
         "id": "step-2",
         "raw_text": "Slice the aubergine into rounds, approximately 8mm thick, and arrange them in a single layer on one of the roasting trays. Drizzle generously with olive oil and season well with salt and black pepper. Place in the oven and roast for 20 minutes.",
-        "label": "Slice the aubergine into rounds, approximately",
+        "label": "Slice, season, and roast the aubergine",
         "type": "cook",
         "estimated_duration_minutes": 20,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "oven",
+          "knife",
+          "cutting board",
           "roasting tray",
-          "tray"
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Slice aubergine into 8mm rounds. Roast for 20 minutes."
       },
       {
         "id": "step-3",
         "raw_text": "Meanwhile, drain and rinse the chickpeas , then spread them in a single layer over one half of the second roasting tray. Cut the cherry tomatoes in half and arrange them cut-side down on the other half of the tray. Drizzle both the chickpeas and tomatoes with olive oil, season generously with salt and black pepper, then place the tray in the oven alongside the aubergines and roast until the tomatoes are softened and the chickpeas are crispy.",
-        "label": "Meanwhile, drain and rinse the chickpeas",
+        "label": "Prepare and roast chickpeas and tomatoes",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 20,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "oven",
+          "colander",
+          "knife",
+          "cutting board",
           "roasting tray",
-          "tray"
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast alongside aubergines until tomatoes soften and chickpeas crisp."
       },
       {
         "id": "step-4",
         "raw_text": "When the vegetables and chickpeas are nearly ready, add the garlic & herb flatbreads to the oven and bake for 3–4 minutes, until warmed through, fluffy and lightly crispy in places.",
-        "label": "When the vegetables and chickpeas are",
+        "label": "Bake garlic and herb flatbreads",
         "type": "cook",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 4,
         "requires": [
+          "step-2",
           "step-3"
         ],
         "can_overlap_with": [],
@@ -11362,25 +11674,27 @@
           "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Bake for 3–4 minutes when vegetables and chickpeas are nearly ready."
       },
       {
         "id": "step-5",
         "raw_text": "Spread the mezze labneh over the base of each serving plate. Top with the roasted aubergine , cherry tomatoes and crispy chickpeas , then drizzle generously with the herby zhoug and balsamic hot 'honey' . Serve with the warm garlic & herb flatbreads , and enjoy!",
-        "label": "Spread the mezze labneh over the",
+        "label": "Plate labneh and serve with flatbreads",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-4"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "serving plates"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Top labneh with roasted ingredients, zhoug, and hot honey. Serve with warm flatbreads."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "2a95534c5dc99a1f33902a7f9d5e0356d62d34c7de49265dc06d8d4a98ac4ff9"
   },
   {
@@ -11447,53 +11761,70 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Deliciously meaty pulled jackfruit marinated in",
-        "label": "Deliciously meaty pulled jackfruit marinated in",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "pulled jackfruit marinated in a spice blend of garlic, paprika, cumin, cloves and chipotle",
+        "label": "Marinate jackfruit",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "pot"
+          "bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Combine the pulled jackfruit with the spice blend of garlic, paprika, cumin, cloves, and chipotle to marinate."
       },
       {
         "id": "step-2",
-        "raw_text": "Served in a soft tortillas wrap",
-        "label": "Served in a soft tortillas wrap",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "raw_text": "then slowly cooked",
+        "label": "Slow cook jackfruit",
+        "type": "cook",
+        "estimated_duration_minutes": 20,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "pot"
+          "pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Slowly cook the marinated jackfruit to build flavor and soften."
       },
       {
         "id": "step-3",
-        "raw_text": "Nutrition Calories 757kcal; Protein 23.1g; Fat",
-        "label": "Nutrition Calories 757kcal; Protein 23.1g; Fat",
+        "raw_text": "then roasted until charred on the outside and falling apart in the centre.",
+        "label": "Roast jackfruit",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 15,
         "requires": [
           "step-2"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "pot"
+          "oven",
+          "baking sheet"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast the jackfruit until it is charred on the outside and tender enough to fall apart in the center."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Served in a soft tortillas wrap with smokey chipotle crema, tangy pickled cabbage, crunchy gem lettuce, fluffy rice, and protein-rich black beans.",
+        "label": "Assemble burrito",
+        "type": "finish",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "plate"
+        ],
+        "temperature_c": null,
+        "notes": "Assemble the burrito by wrapping the roasted jackfruit in a soft tortilla with chipotle crema, pickled cabbage, gem lettuce, rice, and black beans."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "056c08fcd5721fe8ac0980c63e5ef6f52509f17e636c7193131fe47e4b100b33"
   },
   {
@@ -11517,90 +11848,104 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan. Take out two baking trays and a small frying pan.",
-        "label": "Preheat your oven to 200°C /",
+        "label": "Preheat oven and prepare equipment",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "frying pan",
           "oven",
-          "pan",
-          "tray"
+          "baking trays",
+          "small frying pan"
         ],
         "temperature_c": 200,
-        "notes": ""
+        "notes": "Preheat oven to 200°C or 180°C fan."
       },
       {
         "id": "step-2",
         "raw_text": "Slice the baby potatoes into thin slices, about 3mm thick. Toss them in olive oil, salt, and pepper, then spread evenly on one of the baking trays. Roast in the oven for 15 minutes, then stir in the chaat masala paste along with the drained chickpeas . Return to the oven for a further 5 minutes, or until the paste caramelises at the edges of the potatoes.",
-        "label": "Slice the baby potatoes into thin",
+        "label": "Slice, season, and roast potatoes",
         "type": "cook",
-        "estimated_duration_minutes": 15,
+        "estimated_duration_minutes": 25,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "oven",
-          "pot",
-          "tray"
+          "knife",
+          "cutting board",
+          "baking tray",
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast potatoes for 15 minutes, then add chickpeas and chaat masala paste and roast for 5 more minutes until edges caramelise."
       },
       {
         "id": "step-3",
         "raw_text": "Peel and finely slice the red onion . Onion sizes vary, but aim for around half a small onion per person. Dice the tomato and cucumber , then add them to a bowl along with half of the mint chutney . Season to taste and give everything a good mix.",
-        "label": "Peel and finely slice the red",
+        "label": "Prepare tomato and cucumber salad",
         "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-2"
+        "estimated_duration_minutes": 6,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-4"
         ],
-        "can_overlap_with": [],
         "equipment": [
+          "knife",
+          "cutting board",
           "bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Slice onion finely (aim for half a small onion per person). Mix diced tomato, cucumber, and half of the mint chutney."
       },
       {
         "id": "step-4",
         "raw_text": "Place your small frying pan over medium heat and dry-toast (without oil) the sev for 1–2 minutes, until crispy.",
-        "label": "Place your small frying pan over",
+        "label": "Dry-toast the sev",
         "type": "cook",
-        "estimated_duration_minutes": 1,
+        "estimated_duration_minutes": 2,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "small frying pan",
+          "stove"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Toast without oil for 1 to 2 minutes over medium heat until crispy."
       },
       {
         "id": "step-5",
         "raw_text": "Divide the chickpea and potato chaat between serving plates, top with the tomato, cucumber salad then dress with the remaining mint chutney , tamarind yoghurt , red onion , and a scattering of sev . Enjoy!",
-        "label": "Divide the chickpea and potato chaat",
+        "label": "Assemble and dress the chaat",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 4,
         "requires": [
+          "step-2",
+          "step-3",
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "pot"
+          "serving plates"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Layer potatoes and chickpeas, salad, remaining chutney, yoghurt, onion, and sev."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "5ab688881609ead12e68ea08a3abc4ffbccebe00cdb43c4a6ab9da20cb6104ee"
   },
   {
@@ -11624,107 +11969,131 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan and take out a roasting tray, a small frying pan, and a large mixing bowl.",
-        "label": "Preheat your oven to 200°C /",
+        "label": "Preheat oven and prepare equipment",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
         "equipment": [
-          "bowl",
-          "frying pan",
-          "mixing bowl",
           "oven",
-          "pan",
           "roasting tray",
-          "tray"
+          "small frying pan",
+          "large mixing bowl"
         ],
         "temperature_c": 200,
-        "notes": ""
+        "notes": "Preheat to 200°C or 180°C fan."
       },
       {
         "id": "step-2",
         "raw_text": "Roughly cut or tear the ciabatta into chunky croutons, around 2cm cubes. Place them on your baking tray, toss with a drizzle of olive oil, and season with salt and pepper. You can also add a grated garlic clove for extra flavour (optional). Roast until golden, about 10 minutes.",
-        "label": "Roughly cut or tear the ciabatta",
+        "label": "Prep and roast ciabatta croutons",
         "type": "cook",
-        "estimated_duration_minutes": 10,
+        "estimated_duration_minutes": 13,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "tray"
+          "knife",
+          "baking tray",
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast for about 10 minutes until golden."
       },
       {
         "id": "step-3",
         "raw_text": "Remove any tough stems from the cavolo nero , then shred the leaves and place them in a mixing bowl. Add a pinch of salt and a drizzle of extra virgin olive oil, then massage it firmly with your hands for 2–3 minutes, or until softened and slightly wilted. Alternatively, if you prefer not to eat it raw, you can steam or boil it for 5–10 minutes.",
-        "label": "Remove any tough stems from the",
-        "type": "cook",
-        "estimated_duration_minutes": 2,
+        "label": "Prep and massage cavolo nero",
+        "type": "prep",
+        "estimated_duration_minutes": 6,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "bowl",
+          "knife",
           "mixing bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Massage for 2-3 minutes until softened, or steam/boil for 5-10 minutes."
       },
       {
         "id": "step-4",
         "raw_text": "Cut off the base of the baby gem lettuce , then slice into bite-sized pieces. Open and drain the cannellini beans .",
-        "label": "Cut off the base of the",
+        "label": "Prep lettuce and drain beans",
         "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-3"
+        "estimated_duration_minutes": 4,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-5"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "cutting board",
+          "can opener",
+          "colander"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Slice lettuce and drain cannellini beans."
       },
       {
         "id": "step-5",
         "raw_text": "Place your small frying pan over medium heat and toast the happy hormone seed sprinkle until fragrant.",
-        "label": "Place your small frying pan over",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "label": "Toast happy hormone seed sprinkle",
+        "type": "cook",
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
           "step-4"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "small frying pan",
+          "stove"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Toast over medium heat until fragrant."
       },
       {
         "id": "step-6",
         "raw_text": "Just before serving, add the cavolo nero , baby gem , ciabatta croutons , cannellini beans , and around two-thirds of the caesar dressing to a mixing bowl. Toss well to coat everything evenly. Divide the salad between serving bowls, drizzle over the remaining dressing, and sprinkle over the toasted happy hormone seed sprinkle . Enjoy!",
-        "label": "Just before serving, add the cavolo",
+        "label": "Assemble and serve Caesar salad",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 5,
         "requires": [
+          "step-2",
+          "step-3",
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "mixing bowl"
+          "mixing bowl",
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Toss with 2/3 of dressing, plate, and top with remaining dressing and seeds."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "96f4e6296e780737c31fe9a52ccda493c2e0d91f7a428e152fc15dc359fbe7f2"
   },
   {
@@ -11792,103 +12161,119 @@
       {
         "id": "step-1",
         "raw_text": "Take out two large frying pans (ideally one non-stick!). Cut the pak choi into 1-1.5cm pieces from the tip to the base, discarding the base. Slice the spring onions , keeping the greens and whites separate. Slice the portobello mushrooms 0.5cm thick.",
-        "label": "Take out two large frying pans",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Prepare pans and chop vegetables",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "two large frying pans",
+          "knife",
+          "chopping board"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cut pak choi into 1-1.5cm pieces, slice spring onions separating greens and whites, and slice mushrooms 0.5cm thick."
       },
       {
         "id": "step-2",
         "raw_text": "Heat a large pan with a good drizzle of olive oil. Add the portobello mushrooms and spring onion (white bits) along with plenty of pepper and cook for about 5 minutes on a medium heat. Don't stir them too often as it will stop them caramelising.",
-        "label": "Heat a large pan with a",
+        "label": "Cook mushrooms and spring onions",
         "type": "cook",
         "estimated_duration_minutes": 5,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
         "equipment": [
-          "pan"
+          "large frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook for about 5 minutes on medium heat. Avoid stirring too often to allow caramelisation."
       },
       {
         "id": "step-3",
         "raw_text": "Once the portobello mushrooms have started to soften, add the pak choi and cook for another 3-4 minutes until the leaves have softened and the stems still have a little bite to them. Then add the sticky mushroom sauce to the pan and stir well to combine.",
-        "label": "Once the portobello mushrooms have started",
+        "label": "Add pak choi and sauce",
         "type": "cook",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 4,
         "requires": [
           "step-2"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "pan"
+          "large frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook for 3-4 minutes until leaves soften but stems retain a bite, then stir in the sticky mushroom sauce."
       },
       {
         "id": "step-4",
         "raw_text": "To make the kimchi pancakes , pour the dry mix into a large bowl and slowly add 230ml of water while whisking vigorously to avoid any lumps. Roughly chop the kimchi and add to the bowl too.",
-        "label": "To make the kimchi pancakes",
+        "label": "Mix the kimchi pancake batter",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 4,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "pan"
+          "large bowl",
+          "whisk",
+          "knife",
+          "chopping board"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Slowly whisk 230ml of water into the dry mix to avoid lumps, then stir in the chopped kimchi."
       },
       {
         "id": "step-5",
         "raw_text": "Heat about half a tablespoon of vegetable oil in a large non-stick frying pan. Once hot, pour half of the pancake batter , then tilt the pan in a circular motion so the batter spreads evenly around the pan (use the back of a spoon to spread it out to the edges if needed). Cook for 2-3 minutes on each side. You can slide the pancake off onto a plate or chopping board and then turn the pan upside down onto the plate to help you flip it. Repeat with the second pancake.",
-        "label": "Heat about half a tablespoon of",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "label": "Fry the kimchi pancakes",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
         "requires": [
           "step-4"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
-          "frying pan",
-          "pan"
+          "large non-stick frying pan",
+          "spoon",
+          "plate"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook each pancake for 2-3 minutes per side. Use a plate to help flip if needed. Repeat for the second pancake."
       },
       {
         "id": "step-6",
         "raw_text": "To serve, layer the portobello mushro oms and pak choi over one half of the pancake , and fold it over. Top with the gochujang mayo and remaining spring onion (green bits) and sesame seeds and serve with a side of pickled cucumber . Enjoy!",
-        "label": "To serve, layer the portobello mushro",
+        "label": "Assemble and serve pancakes",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-3",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "pan"
+          "plate"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Layer mushrooms and pak choi on half of the pancake, fold, top with mayo, green spring onions, sesame seeds, and serve with pickled cucumber."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "ea2d36b73917323002fa4d6e135e1e86e4fc76a157fd420c73dc0129e2a304f3"
   },
   {
@@ -12017,87 +12402,101 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out two mixing bowls and a baking tray.",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and prepare equipment",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
         "equipment": [
-          "bowl",
-          "mixing bowl",
           "oven",
-          "tray"
+          "mixing bowls",
+          "baking tray"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C or 200°C fan."
       },
       {
         "id": "step-2",
         "raw_text": "Remove the tofu from the packaging and squeeze out as much water as possible. Crumble it into one of the mixing bowls with your hands, add ⅔ of the lahmacun sauce and mix until well combined. Season with salt, pepper and a drizzle of olive oil.",
-        "label": "Remove the tofu from the packaging",
+        "label": "Prepare and season crumbled tofu",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
         "equipment": [
-          "bowl",
           "mixing bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Squeeze out as much water as possible from the tofu before crumbling."
       },
       {
         "id": "step-3",
         "raw_text": "Lay the flatbreads on the baking tray and divide the lahmacun tofu mixture evenly between them, spreading it across the top in a thin layer. Bake for 15–20 minutes, until the flatbread edges are golden and the tofu layer is crispy on top.",
-        "label": "Lay the flatbreads on the baking",
-        "type": "finish",
-        "estimated_duration_minutes": 17,
+        "label": "Assemble and bake flatbreads",
+        "type": "cook",
+        "estimated_duration_minutes": 18,
         "requires": [
+          "step-1",
           "step-2"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
         "equipment": [
-          "tray"
+          "baking tray",
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Bake for 15–20 minutes (midpoint 18) until edges are golden and tofu is crispy."
       },
       {
         "id": "step-4",
         "raw_text": "Meanwhile, dice the cucumber and tomato . Pick and roughly chop the parsley leaves . Reserve half of the parsley for garnish, then combine the remaining parsley with the cucumber and tomato in your second mixing bowl. Season with salt, pepper and a drizzle of olive oil, then set aside to marinate.",
-        "label": "Meanwhile, dice the cucumber and tomato",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "label": "Prepare tomato and cucumber salad",
+        "type": "prep",
+        "estimated_duration_minutes": 7,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "mixing bowl"
+          "mixing bowl",
+          "knife",
+          "cutting board"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Reserve half of the chopped parsley for garnish."
       },
       {
         "id": "step-5",
         "raw_text": "To serve, drizzle the remaining lahmacun sauce over the lahmacun flatbreads and top with the tomato and cucumber salad , pickled red onion and cabbage , a drizzle of garlic yoghurt and a scattering of fresh parsley. We like cutting it up into slices like a pizza, but you could eat it with a knife and fork or wrap it up. Enjoy!",
-        "label": "To serve, drizzle the remaining lahmacun",
+        "label": "Garnish and serve flatbreads",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-3",
           "step-4"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Top with salad, pickled onion, cabbage, garlic yoghurt, and reserved parsley. Slice like a pizza if desired."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "ff2511a3e57a75b8500351f7401ecec9ce24dcd702fad94b5c9a63755467b754"
   },
   {
@@ -12142,75 +12541,33 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "This flavoursome, nourishing broth is packed",
-        "label": "This flavoursome, nourishing broth is packed",
+        "raw_text": "Tender, lemony butterbeans, slowly cooked in a rich and flavoursome tomato, garlic and white wine broth with nutty brown rice grains and lots of fresh vegetables.",
+        "label": "Slowly cook the butterbeans, brown rice, and vegetables in the broth",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 30,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Slowly cook the butterbeans, brown rice, and fresh vegetables in the tomato, garlic, and white wine broth."
       },
       {
         "id": "step-2",
-        "raw_text": "Tender, lemony butterbeans, slowly cooked in",
-        "label": "Tender, lemony butterbeans, slowly cooked in",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "Finished with a generous drizzle of vibrant salsa verde.",
+        "label": "Drizzle with salsa verde",
+        "type": "finish",
+        "estimated_duration_minutes": 2,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
-      },
-      {
-        "id": "step-3",
-        "raw_text": "Finished with a generous drizzle of",
-        "label": "Finished with a generous drizzle of",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-2"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": ""
-      },
-      {
-        "id": "step-4",
-        "raw_text": "Full of flavour and packed with",
-        "label": "Full of flavour and packed with",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
-        "requires": [
-          "step-3"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": ""
-      },
-      {
-        "id": "step-5",
-        "raw_text": "Nutrition Calories 597kcal; Protein 20.3g; Fat",
-        "label": "Nutrition Calories 597kcal; Protein 20.3g; Fat",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
-        "requires": [
-          "step-4"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": ""
+        "notes": "Finish the dish by drizzling a generous amount of vibrant salsa verde over the cooked minestrone."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "026ff38d211e245cf157b3a500fafba55f2466d9e2e940f328c9052409e65eb7"
   },
   {
