@@ -12297,88 +12297,96 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle, then take out a saucepan and a large frying pan or wok. Pour the boiling water from the kettle into the saucepan and place it over medium-high heat.",
-        "label": "Boil your kettle, then take out",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Boil water in saucepan",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "frying pan",
-          "pan",
-          "saucepan"
+          "kettle",
+          "saucepan",
+          "large frying pan or wok"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Boil kettle first, then transfer water to saucepan over medium-high heat."
       },
       {
         "id": "step-2",
         "raw_text": "Add the udon noodles to the saucepan of boiling water and cook until al dente, about 4–5 minutes. Drain the noodles, rinse them under cold water, and set them aside in a colander to drain.",
-        "label": "Add the udon noodles to the",
+        "label": "Cook and drain udon noodles",
         "type": "cook",
-        "estimated_duration_minutes": 4,
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "colander"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook noodles for 4-5 minutes until al dente, then drain and rinse under cold water."
       },
       {
         "id": "step-3",
         "raw_text": "Crumble the tempeh into small, mince-like pieces. Heat the frying pan or wok over medium-high heat, add a generous drizzle of oil, and fry the tempeh until crispy, about 6–8 minutes. Season with a dash of soy sauce, if you have some (if not, use salt), and pepper. Transfer the tempeh to a bowl, cover to keep warm, and set aside.",
-        "label": "Crumble the tempeh into small, mince-like",
+        "label": "Crumble and fry tempeh",
         "type": "cook",
-        "estimated_duration_minutes": 7,
+        "estimated_duration_minutes": 8,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-1",
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "frying pan",
-          "pan"
+          "large frying pan or wok",
+          "bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Fry tempeh for 6-8 minutes until crispy, season, and transfer to a covered bowl to keep warm."
       },
       {
         "id": "step-4",
         "raw_text": "Peel the carrot into ribbons, cut the white cabbage into bite-sized pieces, and slice the spring onions , separating the white and green parts. Wipe the frying pan or wok clean, then return it to a high heat. Add a drizzle of olive oil, then add the carrot ribbons, white cabbage, and the white parts of the spring onions. Cook for a couple of minutes to soften. Turn the heat down to medium, pour in the kimchi noodle stir fry sauce , and add the drained udon noodles . Toss everything together until the noodles and vegetables are evenly coated in the sauce. Add a splash of water if needed to prevent burning or sticking.",
-        "label": "Peel the carrot into ribbons, cut",
+        "label": "Prep vegetables and stir-fry noodles",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 10,
         "requires": [
+          "step-2",
           "step-3"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "large frying pan or wok"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Wipe pan clean before returning to high heat. Cook vegetables for a couple of minutes, then reduce to medium heat to toss with sauce and noodles."
       },
       {
         "id": "step-5",
         "raw_text": "To serve, divide the noodles between plates. Top with the crispy tempeh , some kimchi and the spring onion greens. Finish with a sprinkle of the sesa me gochugaru crunch . Enjoy!",
-        "label": "To serve, divide the noodles between",
+        "label": "Plate and garnish noodles",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
           "step-4"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "plates"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide noodles, top with crispy tempeh, kimchi, spring onion greens, and sesame gochugaru crunch."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "89e1b04f188824acb7e7f810a92a42311cf82aaa7387474c4ec91c87a6f34b4b"
   },
   {
@@ -12591,90 +12599,108 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 220°C fan, then take out a large roasting tray, a steamer and a saucepan.",
-        "label": "Preheat your oven to 200°C /",
+        "label": "Preheat oven and prepare equipment",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
           "oven",
-          "pan",
-          "roasting tray",
-          "saucepan",
-          "tray"
+          "large roasting tray",
+          "steamer",
+          "saucepan"
         ],
         "temperature_c": 200,
-        "notes": ""
+        "notes": "Preheat oven to 200°C or 220°C fan and set aside the required cookware."
       },
       {
         "id": "step-2",
         "raw_text": "Cut the top and tail off the parsnip and sweet potato , then dice into small 1cm cubes. Place into your roasting tray, toss in a drizzle of olive oil and season well with salt and pepper. Roast for 15-20 minutes or until tender and crispy.",
-        "label": "Cut the top and tail off",
+        "label": "Prep and roast root vegetables",
         "type": "cook",
-        "estimated_duration_minutes": 17,
+        "estimated_duration_minutes": 22,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "pot",
-          "roasting tray",
-          "tray"
+          "knife",
+          "cutting board",
+          "large roasting tray",
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Dice parsnip and sweet potato into 1cm cubes. Roast for 15-20 minutes until tender and crispy."
       },
       {
         "id": "step-3",
         "raw_text": "Remove any hardy stems from the cavolo nero , then roughly chop the leaves into bite-sized pieces. Steam for for 5-10 minutes or until tender. If you don't have a steamer you can boil for the same time.",
-        "label": "Remove any hardy stems from the",
+        "label": "Prep and steam cavolo nero",
         "type": "cook",
-        "estimated_duration_minutes": 7,
+        "estimated_duration_minutes": 8,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board",
+          "steamer",
+          "saucepan"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Steam chopped leaves for 5-10 minutes. Alternatively, boil for the same duration."
       },
       {
         "id": "step-4",
         "raw_text": "Drain the chickpeas , then empty into your large saucepan along with the lemon broth and 200ml of water. Place over a medium high heat, bring to the boil, then reduce the heat and continue to cook for 2-3 minutes or until the stew is piping hot and beans are cooked through. You can continue to reduce the broth for longer if you prefer a stronger flavour.",
-        "label": "Drain the chickpeas , then empty",
+        "label": "Simmer chickpeas in lemon broth",
         "type": "cook",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 6,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "pan",
           "saucepan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Bring to a boil, then simmer for 2-3 minutes. Reduce longer if you prefer a stronger flavor."
       },
       {
         "id": "step-5",
         "raw_text": "To serve up, divide the stew between serving bowls, top with the cavolo nero and roasted sweet potato and parsnips . Drizzle generously with the tangy caper salsa verde , and enjoy!",
-        "label": "To serve up, divide the stew",
+        "label": "Assemble and serve the dish",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-2",
+          "step-3",
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "pot"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide stew into bowls, top with greens and roasted vegetables, and drizzle with salsa verde."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "c14cbd637b7a4104e38431824075fdfbd864130294861d9e785b3e6cd2b0f9f9"
   },
   {
@@ -12698,124 +12724,140 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle and take out a large saucepan and a frying pan.",
-        "label": "Boil your kettle and take out",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Boil kettle and prepare pans",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan",
-          "saucepan"
+          "kettle",
+          "large saucepan",
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Boil the kettle and set up the large saucepan and frying pan."
       },
       {
         "id": "step-2",
         "raw_text": "Remove the tough stems from thecavolo neroand tear the leaves into bite-sized pieces.Trim and peel thecarrot, then cut it into matchsticks (julienne). Alternatively, use a vegetable peeler to create thin ribbons.Place your saucepan over a medium heat and fill it with the boiling water from the kettle. Add a few pinches of salt. Cook the cavolo nero for 2–3 minutes until bright green and just wilted, while still retaining a little bite. Using a slotted spoon, transfer it to a bowl and season lightly with salt or a dash of soy sauce.You can cook the carrot in the same water for 1–2 minutes until just tender, or leave it raw if you prefer a little extra crunch and freshness in your ramen. Season lightly with salt or a dash of soy sauce and set aside.",
-        "label": "Remove the tough stems from thecavolo",
+        "label": "Prep and cook cavolo nero and carrot",
         "type": "cook",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 8,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
         "equipment": [
+          "large saucepan",
+          "slotted spoon",
           "bowl",
-          "pan",
-          "saucepan"
+          "knife",
+          "cutting board",
+          "vegetable peeler"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook cavolo nero for 2–3 minutes until bright green. Cook carrot in the same water for 1–2 minutes if desired, or leave raw."
       },
       {
         "id": "step-3",
         "raw_text": "Empty the saucepan and refill it with fresh boiling water. Add theudon noodlesand cook for 5–6 minutes, or until tender but still al dente.Drain and rinse the noodles under cold water to remove excess starch and prevent them from becoming sticky. Leave them in a colander to drain.",
-        "label": "Empty the saucepan and refill it",
+        "label": "Cook and drain udon noodles",
         "type": "cook",
-        "estimated_duration_minutes": 5,
+        "estimated_duration_minutes": 7,
         "requires": [
           "step-2"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "pan",
-          "saucepan"
+          "large saucepan",
+          "colander"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook noodles for 5–6 minutes until al dente, then rinse under cold water to prevent stickiness."
       },
       {
         "id": "step-4",
         "raw_text": "Place the saucepan back over a low heat and add theshiitake & ginger lemon brothalong with 150–200ml of water (double the quantity for 4 people). Bring to a gentle simmer.",
-        "label": "Place the saucepan back over a",
+        "label": "Simmer the broth",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-5",
+          "step-6"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "large saucepan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Bring the broth and 150–200ml of water to a gentle simmer."
       },
       {
         "id": "step-5",
         "raw_text": "In the meantime, place your frying pan over a medium-high heat.Cut thelemonin half and slice two thin rounds for garnish. Set these aside. Place the remaining lemon halves, cut-side down, into the hot pan and cook until lightly charred, about 2–3 minutes.Squeeze the juice from the charred lemon into the simmering broth, tasting as you go to adjust the amount to your preference.",
-        "label": "In the meantime, place your frying",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "label": "Char lemon and season broth",
+        "type": "cook",
+        "estimated_duration_minutes": 4,
         "requires": [
+          "step-1",
           "step-4"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
         "equipment": [
           "frying pan",
-          "pan"
+          "knife",
+          "cutting board"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Char lemon halves cut-side down for 2–3 minutes, then squeeze juice into the simmering broth."
       },
       {
         "id": "step-6",
         "raw_text": "Wipe the frying pan clean and return it to a medium-high heat with a drizzle of oil.Slice thesmoked tofuin half horizontally, then add it to the pan. Cook for 3–5 minutes on each side until lightly golden. You could add a dash of soy sauce if you have some at the end of cooking to season and caramelise the tofu, otherwise just season with salt and pepper. Remove from the heat and slice into approximately 1.5cm-thick pieces (refer to the image above).",
-        "label": "Wipe the frying pan clean and",
+        "label": "Sear and slice smoked tofu",
         "type": "cook",
-        "estimated_duration_minutes": 4,
+        "estimated_duration_minutes": 8,
         "requires": [
           "step-5"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
         "equipment": [
           "frying pan",
-          "pan"
+          "knife",
+          "cutting board"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook tofu for 3–5 minutes on each side until golden, then slice into 1.5cm-thick pieces."
       },
       {
         "id": "step-7",
         "raw_text": "Just before serving, add the drainedudon noodlesto the simmering broth and warm through for 1 minute.Divide the noodles and broth between serving bowls. Top with thecavolo nero,carrotandsmoked tofu. Drizzle over thesuperspeed chilli crunchand finish with a slice oflemon. Enjoy!",
-        "label": "Just before serving, add the drainedudon",
+        "label": "Assemble and serve ramen",
         "type": "finish",
-        "estimated_duration_minutes": 1,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-2",
+          "step-3",
+          "step-4",
           "step-6"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "large saucepan",
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Warm noodles in the broth for 1 minute, then divide into bowls and top with cavolo nero, carrot, tofu, chilli crunch, and lemon."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "8ae3c6c62bdc296f1886861e084f07652a6a1e1794b28361fa1e5af9be50b4f4"
   },
   {
@@ -12861,100 +12903,107 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a large cast iron skillet or frying pan and two roasting trays. You will also need a tea towel and a grill press, heavy saucepan/frying pan, or a flat metal lid to press down the lion's mane mushroom steaks while searing.",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and gather equipment",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
-          "frying pan",
-          "grill",
           "oven",
-          "pan",
-          "roasting tray",
-          "saucepan",
-          "tray"
+          "cast iron skillet",
+          "roasting trays",
+          "tea towel",
+          "grill press"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C (or 200°C fan). Gather skillet, two roasting trays, tea towel, and grill press."
       },
       {
         "id": "step-2",
         "raw_text": "Cut the baby potatoes into roughly 1.5-2cm cubed pieces (cutting into halves, thirds or quarters works well, depending on potato size). Place them on one of the roasting trays, drizzle with olive oil, and season well with salt and pepper. Roast on the lower shelf of the oven for 20–25 minutes, or until golden and crispy.",
-        "label": "Cut the baby potatoes into roughly",
+        "label": "Chop and roast baby potatoes",
         "type": "cook",
-        "estimated_duration_minutes": 22,
+        "estimated_duration_minutes": 23,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "oven",
-          "pot",
+          "knife",
+          "chopping board",
           "roasting tray",
-          "tray"
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast potatoes on the lower shelf for 20-25 minutes (midpoint of 22.5 rounded to 23 minutes) until golden and crispy."
       },
       {
         "id": "step-3",
         "raw_text": "Place your skillet or frying pan over medium-high heat and add a generous glug of olive oil, or enough to lightly coat the base of the pan. Once the skillet is hot and nearly smoking, place the whole lion's mane mushrooms stem-side down in the pan. As the grill press will become very hot during cooking, fold your tea towel into a thick, heat-resistant pad to grasp the handle of your grill press, then press down on the mushroom and cook for 4–6 minutes, until the juices have evaporated, the bottom begins to form a golden crust and the mushroom has started to flatten. You don't need to continually press for the entire cooking time - pressing periodically as the mushroom cooks works well. Season generously with salt and freshly ground black pepper, then flip the mushrooms and press down again firmly on the other side. Continue cooking until the mushrooms have released their juices and the liquid has evaporated completely, about 6-8 minutes. Both sides should develop a deep golden, caramelised crust. Depending on the size and moisture content of the mushrooms, the searing time may vary. Remove from the heat and transfer to the other roasting tray. *We recommend leaving the lion's mane mushrooms whole, as this helps create a juicy, meaty, steak-like texture.",
-        "label": "Place your skillet or frying pan",
+        "label": "Sear lion's mane mushrooms",
         "type": "cook",
-        "estimated_duration_minutes": 5,
+        "estimated_duration_minutes": 12,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "grill",
-          "pan",
-          "roasting tray",
-          "tray"
+          "cast iron skillet",
+          "grill press",
+          "tea towel",
+          "roasting tray"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Sear 4-6 minutes on the first side, then 6-8 minutes on the second side (total midpoint of 12 minutes). Press periodically."
       },
       {
         "id": "step-4",
         "raw_text": "Place the roasting tray with searred lion's mane mushrooms in the top shelf of the oven, and bake for 10-15 minutes. If the baby potatoes are ready before the mushrooms, cover them with a sheet of aluminium foil to prevent further browning, or remove them from the oven and cover to keep warm.",
-        "label": "Place the roasting tray with searred",
+        "label": "Bake mushrooms in oven",
         "type": "cook",
-        "estimated_duration_minutes": 12,
+        "estimated_duration_minutes": 13,
         "requires": [
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
           "oven",
-          "pot",
           "roasting tray",
-          "tray"
+          "aluminium foil"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Bake on the top shelf for 10-15 minutes (midpoint of 12.5 rounded to 13 minutes). Cover potatoes with foil if they finish first."
       },
       {
         "id": "step-5",
         "raw_text": "You can serve the lion's mane 'steaks' whole on each plate, or slice them on a chopping board, then serve (as shown in the image). If you like, you can toss the watercress in a little chimichurri dressing , before drizzling the remainder over the steaks. Serve up the roasted baby potatoes , a handful of watercress and a dollop of béarnaise sauce on the side. Enjoy!",
-        "label": "You can serve the lion's mane",
+        "label": "Slice, dress, and plate",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 5,
         "requires": [
+          "step-2",
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "pot"
+          "chopping board",
+          "knife",
+          "plates"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Serve steaks whole or sliced. Toss watercress in chimichurri, plate with potatoes and béarnaise."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "6c53536bf6ad87a6ac6b11c29e20025cac5f923b14c4c59e6e7cd358d3dc1b57"
   },
   {
@@ -12978,75 +13027,79 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle, preheat your oven to 180°C / 160°C fan and take out a large saucepan and a large baking tray.",
-        "label": "Boil your kettle, preheat your oven",
+        "label": "Preheat oven and boil kettle",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
+          "kettle",
           "oven",
-          "pan",
           "saucepan",
-          "tray"
+          "baking tray"
         ],
         "temperature_c": 180,
-        "notes": ""
+        "notes": "Preheat oven to 180°C or 160°C fan."
       },
       {
         "id": "step-2",
         "raw_text": "Remove any hardy stems from the green kale and then roughly chop the leaves. Cut the broccoli into bite-sized pieces, place into your roasting tray, toss in a little olive oil and season well with salt and pepper. Roast for 10 minutes, then add the kale with a little olive oil and seasoning tossed through and roast everything for a further 5 minutes.",
-        "label": "Remove any hardy stems from the",
+        "label": "Prep and roast broccoli and kale",
         "type": "cook",
-        "estimated_duration_minutes": 10,
+        "estimated_duration_minutes": 19,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "roasting tray",
-          "tray"
+          "baking tray",
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast broccoli for 10 minutes, then add kale and roast for 5 more minutes."
       },
       {
         "id": "step-3",
         "raw_text": "Meanwhile pour boiling water from your kettle into your other saucepan and place over a high heat. Once boiling add the mezzi rigatoni and cook until al dente, around 12 minutes. Drain the pasta and set aside to keep warm.",
-        "label": "Meanwhile pour boiling water from your",
+        "label": "Boil and cook pasta",
         "type": "cook",
-        "estimated_duration_minutes": 12,
+        "estimated_duration_minutes": 14,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "colander"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook pasta for around 12 minutes until al dente, then drain."
       },
       {
         "id": "step-4",
         "raw_text": "Place the same saucepan you used for your pasta back over a low-medium heat and pour in the cashew 'cheese' sauce . Heat through for 1-2 minutes, then remove from the heat and stir through the pasta and half of the broccoli and kale . Divide the pasta between serving bowls and garnish with the remaining broccoli and kale . Season to taste with salt and pepper, and enjoy!",
-        "label": "Place the same saucepan you used",
+        "label": "Heat sauce, combine, and plate",
         "type": "finish",
-        "estimated_duration_minutes": 1,
+        "estimated_duration_minutes": 5,
         "requires": [
+          "step-2",
           "step-3"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "pan",
-          "saucepan"
+          "saucepan",
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Heat sauce for 1-2 minutes. Garnish with remaining broccoli and kale."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "43101886011cacc7c8ae654012ff125b4f9f0eb6e98a2cc02a2604857f8b263b"
   },
   {
@@ -13069,61 +13122,104 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Our brand new Sri Lankan inspired",
-        "label": "Our brand new Sri Lankan inspired",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "Cauliflower, onion, garlic, ginger, red chilli",
+        "label": "Prep vegetables and aromatics",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Chop the cauliflower into bite-sized pieces, and finely chop the onion, garlic, ginger, and red chilli."
       },
       {
         "id": "step-2",
-        "raw_text": "An array of warming spices are",
-        "label": "An array of warming spices are",
+        "raw_text": "toasted cashews",
+        "label": "Toast the cashews",
         "type": "cook",
-        "estimated_duration_minutes": 8,
-        "requires": [
-          "step-1"
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3",
+          "step-4"
         ],
-        "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Toast the cashews until they are golden brown."
       },
       {
         "id": "step-3",
-        "raw_text": "Filled with charred cauliflower bites, garden",
-        "label": "Filled with charred cauliflower bites, garden",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "raw_text": "charred cauliflower bites",
+        "label": "Char the cauliflower bites",
+        "type": "cook",
+        "estimated_duration_minutes": 12,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook the cauliflower bites until they are nicely charred."
       },
       {
         "id": "step-4",
-        "raw_text": "Nutrition Calories 681kcal; Protein 19.2g; Fat",
-        "label": "Nutrition Calories 681kcal; Protein 19.2g; Fat",
+        "raw_text": "basmati rice",
+        "label": "Cook the basmati rice",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 15,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-5"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Cook the basmati rice until it is fluffy."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "An array of warming spices are balanced with rich and creamy coconut milk, then naturally sweetened with a swirl of fresh mango . Filled with charred cauliflower bites, garden peas",
+        "label": "Prepare the curry and combine ingredients",
+        "type": "cook",
+        "estimated_duration_minutes": 15,
         "requires": [
+          "step-1",
           "step-3"
+        ],
+        "can_overlap_with": [
+          "step-4"
+        ],
+        "equipment": [],
+        "temperature_c": null,
+        "notes": "Combine the spices, coconut milk, fresh mango, charred cauliflower, and garden peas to simmer and build the curry."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "served with fluffy basmati rice",
+        "label": "Garnish and serve",
+        "type": "finish",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-2",
+          "step-4",
+          "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Serve the warm curry over the fluffy basmati rice, garnished with the toasted cashews and fresh coriander."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "727e079894d903d69111a64692530244968357d214adb7d3c19e75cefc188f27"
   },
   {
@@ -13147,108 +13243,127 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Boil your kettle, then take out a saucepan, a roasting tray, and a large mixing bowl. Line the roasting tray with a sheet of parchment paper.",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and prepare equipment",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "bowl",
-          "mixing bowl",
           "oven",
-          "pan",
-          "roasting tray",
+          "kettle",
           "saucepan",
-          "tray"
+          "roasting tray",
+          "large mixing bowl",
+          "parchment paper"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C / 200°C fan. Boil kettle and line roasting tray."
       },
       {
         "id": "step-2",
         "raw_text": "Rinse the sushi rice under cold water until the water runs mostly clear, then drain well. Add it to a saucepan with 1.25–1.5 times its volume of cold water and, if you have time, leave it to soak for 10–15 minutes. Bring to the boil over a medium heat, then cover, reduce the heat to low, and cook for 10 minutes without lifting the lid. Once cooked, remove from the heat and fluff the rice with a fork to release the steam. Stir through half of the chilli oil until evenly coated. Spread the rice in a thin, even layer over the lined roasting tray. For extra crispiness, you can lightly brush or spray the rice with a little oil if you have some to hand. Roast for 15–20 minutes, or until the rice is crisp and golden. Add the cashews to the tray for the final 5 minutes of cooking to toast.",
-        "label": "Rinse the sushi rice under cold",
+        "label": "Cook, spread, and roast rice",
         "type": "cook",
-        "estimated_duration_minutes": 12,
+        "estimated_duration_minutes": 40,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "pan",
-          "roasting tray",
           "saucepan",
-          "tray"
+          "fork",
+          "roasting tray",
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Soak rice for 10-15 minutes if time permits. Cook covered for 10 minutes. Roast for 15-20 minutes, adding cashews for the final 5 minutes."
       },
       {
         "id": "step-3",
         "raw_text": "Trim the ends off the baby cucumber and place it on a chopping board. Gently smash it along its length using a rolling pin or the flat side of a heavy pestle until it splits, then chop diagonally into bite-sized pieces. Transfer to the large mixing bowl and toss with the remaining chilli oil .",
-        "label": "Trim the ends off the baby",
+        "label": "Smash and chop baby cucumber",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 4,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4"
+        ],
         "equipment": [
-          "bowl",
-          "mixing bowl"
+          "chopping board",
+          "rolling pin",
+          "pestle",
+          "knife",
+          "large mixing bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Smash cucumber along its length before chopping diagonally. Toss with remaining chilli oil."
       },
       {
         "id": "step-4",
         "raw_text": "Meanwhile, peel, stone and dice the avocado and mango into bite-sized pieces. Drain and rinse the black beans . Pick the coriander leaves from the stalks. Cut the lime into wedges and finely slice the red chilli for garnish.",
-        "label": "Meanwhile, peel, stone and dice the",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
-        "requires": [
+        "label": "Prep avocado, mango, and garnish",
+        "type": "prep",
+        "estimated_duration_minutes": 8,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "chopping board",
+          "colander"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Peel and dice avocado and mango. Drain beans, pick coriander, and slice lime and chilli."
       },
       {
         "id": "step-5",
         "raw_text": "When the crispy rice is ready, add it to the bowl with the smashed cucumber , along with the avocado , mango , black beans and coriander leaves . Toss everything together until well combined.",
-        "label": "When the crispy rice is ready",
-        "type": "prep",
-        "estimated_duration_minutes": 3,
+        "label": "Combine salad ingredients in bowl",
+        "type": "finish",
+        "estimated_duration_minutes": 2,
         "requires": [
+          "step-2",
+          "step-3",
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "large mixing bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Toss crispy rice, cucumber, avocado, mango, black beans, and coriander together."
       },
       {
         "id": "step-6",
         "raw_text": "Divide the crispy rice salad between serving bowls. Top with the toasted cashews , drizzle over the tahini dressing , and finish with a squeeze of fresh lime juice and the sliced red chilli . Enjoy!",
-        "label": "Divide the crispy rice salad between",
+        "label": "Plate and garnish crispy rice salad",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide into bowls, top with cashews, drizzle tahini, and finish with lime juice and chilli."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "9392aa1f2b999338b0781fedcda36a097133db1ba99c244fd671efe56a57e8f7"
   },
   {
@@ -13294,85 +13409,104 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle, then take out a frying pan and a saucepan. Pour the boiling water from the kettle into the saucepan and place it over a medium heat. Once the water is bubbling, boil the edamame for 2-3 minutes then remove with a slotted spoon (so you can use the same water for the noodles), drain and rinse under cold water. Add the soba noodles and cook for 5–6 minutes, or until tender but still al dente. Once cooked, drain the noodles, rinse them under cold water, and set them aside in a colander to drain thoroughly.",
-        "label": "Boil your kettle, then take out",
+        "label": "Boil edamame and cook soba noodles",
         "type": "cook",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 11,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "frying pan",
-          "pan",
-          "saucepan"
+          "kettle",
+          "saucepan",
+          "slotted spoon",
+          "colander"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Boil edamame for 2-3 minutes, then reuse the same water to cook noodles for 5-6 minutes until al dente. Rinse both under cold water."
       },
       {
         "id": "step-2",
         "raw_text": "Remove the stem from the red chilli . Finely mince half of it and mix it with the mango soba noodle dressing in a small bowl. Thinly slice the rest of the chilli for garnish. Red chillies can vary in spiciness depending on the season, so always taste a little first to check the spiciness and decide how much you'd like to use. Add the minced chilli gradually to the dressing, tasting as you go, to make sure the heat level is just right for you!",
-        "label": "Remove the stem from the red",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-1"
+        "label": "Prepare chilli and mix dressing",
+        "type": "prep",
+        "estimated_duration_minutes": 4,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3",
+          "step-4"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "knife",
+          "cutting board",
+          "small bowl",
+          "spoon"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Mince half the chilli for the dressing and slice the rest for garnish. Taste first to adjust spiciness."
       },
       {
         "id": "step-3",
         "raw_text": "Place your frying pan over a medium heat and dry fry (without oil) the crispy onions, nuts & seeds for 2-3 minutes, tossing occasionally until lightly toasted.",
-        "label": "Place your frying pan over a",
+        "label": "Toast onions, nuts, and seeds",
         "type": "cook",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-2"
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-4"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Dry fry without oil for 2-3 minutes over medium heat, tossing occasionally until lightly toasted."
       },
       {
         "id": "step-4",
         "raw_text": "Peel and destone the avocado and mango . Cut the avocado into 2 cm chunks and slice the mango into thin strips. Roughly chop the coriander .",
-        "label": "Peel and destone the avocado and",
+        "label": "Prep avocado, mango, and coriander",
         "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cut avocado into 2 cm chunks, slice mango into thin strips, and roughly chop the coriander."
       },
       {
         "id": "step-5",
         "raw_text": "To serve, divide the soba noodles between serving bowls, then top with the avocado , mango , pickled radish , and edamame . Drizzle over the mango soba noodle dressing and give them a light toss. Sprinkle with the toasted crispy onions, nuts and seeds , then finish with the chopped coriander and red chilli slices . Enjoy!",
-        "label": "To serve, divide the soba noodles",
+        "label": "Assemble and serve noodle salad",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 4,
         "requires": [
+          "step-1",
+          "step-2",
+          "step-3",
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide noodles, top with avocado, mango, radish, and edamame. Drizzle dressing, toss lightly, and garnish with toasted onions, nuts, seeds, coriander, and sliced chilli."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "40e2bf9345bf2fa118e11a6ec3081112f3204d6de347fedf7ea5ed259786919b"
   },
   {
@@ -13516,113 +13650,126 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a roasting tray, a griddle pan or frying pan, and a saucepan.",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and prepare equipment",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "frying pan",
           "oven",
-          "pan",
           "roasting tray",
-          "saucepan",
-          "tray"
+          "griddle pan",
+          "frying pan",
+          "saucepan"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C (or 200°C fan)."
       },
       {
         "id": "step-2",
         "raw_text": "Tear the tofu into bite-sized chunks with your hands, aiming for pieces about 1.5–2 cm in size. Cut the baby potatoes into similar-sized pieces and add them to the roasting tray. Drizzle over some oil and season with salt and pepper. Place in the oven and roast for 18–20 minutes, or until golden brown and crispy at the edges.",
-        "label": "Tear the tofu into bite-sized chunks",
-        "type": "finish",
-        "estimated_duration_minutes": 19,
+        "label": "Prep and roast tofu and potatoes",
+        "type": "cook",
+        "estimated_duration_minutes": 24,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "oven",
-          "pot",
           "roasting tray",
-          "tray"
+          "oven",
+          "knife",
+          "cutting board"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast for 18-20 minutes (midpoint 19 minutes) until golden and crispy, plus 5 minutes prep."
       },
       {
         "id": "step-3",
         "raw_text": "Place a griddle pan or frying pan over medium heat and dry roast (without oil) the flaked almonds until golden. Remove from the pan and set aside.",
-        "label": "Place a griddle pan or frying",
+        "label": "Dry roast the flaked almonds",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "griddle pan",
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Dry roast without oil until golden, then set aside."
       },
       {
         "id": "step-4",
         "raw_text": "Return the pan to medium-high heat and add a drizzle of olive oil. While it heats up, trim the green beans and cut them into bite-sized pieces (or leave them whole if you prefer), then add them to the pan. Fry until they begin to char and blister, around 6–8 minutes. Season to taste with salt and pepper.",
-        "label": "Return the pan to medium-high heat",
+        "label": "Prep and fry green beans",
         "type": "cook",
-        "estimated_duration_minutes": 7,
+        "estimated_duration_minutes": 10,
         "requires": [
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
-          "pan"
+          "griddle pan",
+          "frying pan",
+          "knife",
+          "cutting board"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Fry for 6-8 minutes (midpoint 7 minutes) until charred and blistered, plus 3 minutes prep."
       },
       {
         "id": "step-5",
         "raw_text": "When the tofu and potatoes have 5 minutes to go, place the garlic & herb flatbreads in the oven to warm for 2–3 minutes. At the same time, place your saucepan over medium heat, add the massaman curry sauce, and warm until piping hot, about 2–3 minutes. Once the potatoes and tofu are ready, remove them from the oven, add them to the warmed sauce, and stir to combine.",
-        "label": "When the tofu and potatoes have",
+        "label": "Warm flatbreads and curry sauce",
         "type": "cook",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 5,
         "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
           "step-4"
         ],
-        "can_overlap_with": [],
         "equipment": [
           "oven",
-          "pan",
-          "pot",
           "saucepan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Start when tofu and potatoes have 5 minutes left. Warm flatbreads and sauce for 2-3 minutes, then combine."
       },
       {
         "id": "step-6",
         "raw_text": "To serve, divide the tofu and potato massaman curry between serving bowls. Serve with the flatbreads and blistered green beans on the side. Finish with a dollop of organic soy yoghurt and a scattering of toasted flaked almonds . Enjoy!",
-        "label": "To serve, divide the tofu and",
+        "label": "Plate and garnish the curry",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "pot"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Serve curry with flatbreads and green beans, topped with soy yoghurt and toasted almonds."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "ff69cc06ffda43dfad839b66c0c52833f97f20422cd6d772882cbdcdaabe78dc"
   },
   {
@@ -13646,73 +13793,77 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan, take out two baking trays and a frying pan.",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and prepare pans",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 10,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
-          "frying pan",
           "oven",
-          "pan",
-          "tray"
+          "baking trays",
+          "frying pan"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C or 200°C fan. Prepare two baking trays and a frying pan."
       },
       {
         "id": "step-2",
         "raw_text": "Slice the aubergine into 1cm-thick rounds and place them on one of your baking trays. Add a generous drizzle of extra virgin olive oil, sprinkle with the aubergine spice mix , and season with salt to taste. Toss to coat each piece evenly, then spread them out in a single layer. Drain, rinse, and pat dry the chickpeas , then add them to the other baking tray. Drizzle with extra virgin olive oil, season with salt and freshly ground black pepper, toss to coat, and spread them out in a single layer as well. Place both trays in the oven and roast until the aubergine is soft and beginning to char, and the chickpeas are golden and crispy, about 20-25 minutes.",
-        "label": "Slice the aubergine into 1cm-thick rounds",
-        "type": "finish",
-        "estimated_duration_minutes": 22,
+        "label": "Prep and roast aubergine and chickpeas",
+        "type": "cook",
+        "estimated_duration_minutes": 25,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
         "equipment": [
           "oven",
-          "tray"
+          "baking trays",
+          "knife",
+          "cutting board",
+          "colander"
         ],
-        "temperature_c": null,
-        "notes": ""
+        "temperature_c": 220,
+        "notes": "Roast for 20-25 minutes (midpoint 23 mins) until aubergine is soft and charred, and chickpeas are golden and crispy."
       },
       {
         "id": "step-3",
         "raw_text": "Once everything is ready, warm the flatbre ads by dry frying (without oil) in your frying pan on both sides for 30-60 seconds or until lightly toasted. You can alternatively bake or grill them in the oven until warmed through.",
-        "label": "Once everything is ready, warm the",
+        "label": "Warm the flatbreads",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 2,
         "requires": [
           "step-2"
         ],
         "can_overlap_with": [],
         "equipment": [
           "frying pan",
-          "grill",
-          "oven",
-          "pan"
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Dry fry for 30-60 seconds per side, or warm in the oven."
       },
       {
         "id": "step-4",
         "raw_text": "To serve, place a warmed flatbread on each plate and spread the labneh in the centre. Top with the roasted aubergine and crispy chickpeas , then drizzle over the garlic tahini sauce . Finish with a garnish of pomegranate seeds and picked mint leaves. Enjoy!",
-        "label": "To serve, place a warmed flatbread",
+        "label": "Assemble and garnish flatbreads",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-3"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "plates"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Layer with labneh, roasted vegetables, garlic tahini, pomegranate seeds, and fresh mint."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "4c609a8b054688da455a6aee5ecef4573f790f49ef7e1ab03c85019e6afcbfec"
   },
   {
@@ -13758,85 +13909,99 @@
       {
         "id": "step-1",
         "raw_text": "Take out a saucepan and a large wok or frying pan.",
-        "label": "Take out a saucepan and a",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Get saucepan and frying pan",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan",
-          "saucepan"
+          "saucepan",
+          "wok",
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Prepare cooking vessels."
       },
       {
         "id": "step-2",
         "raw_text": "Bring a pan of lightly salted water to the boil in your saucepan, add the farro grains and cook until tender, around 15-20 minutes. Drain and set aside.",
-        "label": "Bring a pan of lightly salted",
+        "label": "Boil and cook farro grains",
         "type": "cook",
-        "estimated_duration_minutes": 17,
+        "estimated_duration_minutes": 18,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "colander"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook farro for 15-20 minutes until tender, then drain and set aside."
       },
       {
         "id": "step-3",
         "raw_text": "Slice the base off the pak choi and pull apart the leaves with your hands. Cut the broccoli into bite-sized pieces. Trim the roots from the spring onions, then cut them in two where the pale green and white parts meet. Cut the whites into 4cm logs. Finely slice the greens. Keep the greens and whites separate. Dice the kimchi and finely slice the red chilli .",
-        "label": "Slice the base off the pak",
+        "label": "Prep vegetables, kimchi, and chilli",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 8,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
           "step-2"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Keep spring onion greens and whites separate. Slice pak choi, broccoli, onions, kimchi, and chilli."
       },
       {
         "id": "step-4",
         "raw_text": "Once the farro has been cooking for 10 minutes, place your large wok or frying pan over a medium-high heat and add a drizzle of oil. Once hot, add the thicker spring onion logs, broccoli and pak choi and cook for around 5 minutes or until lightly charred and tender.",
-        "label": "Once the farro has been cooking",
+        "label": "Char spring onions and broccoli",
         "type": "cook",
-        "estimated_duration_minutes": 10,
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
-          "frying pan",
-          "pan"
+          "wok",
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Start this step once the farro has been cooking for 10 minutes. Cook for around 5 minutes until lightly charred."
       },
       {
         "id": "step-5",
         "raw_text": "Stir through the cooked farro , kimchi , miso dressing and peas and cook until the peas are cooked through, around 1-2 minutes.",
-        "label": "Stir through the cooked farro",
+        "label": "Stir in farro and peas",
         "type": "cook",
-        "estimated_duration_minutes": 1,
+        "estimated_duration_minutes": 2,
         "requires": [
+          "step-2",
           "step-4"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "wok",
+          "frying pan"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook for 1-2 minutes until the peas are cooked through."
       },
       {
         "id": "step-6",
         "raw_text": "Divide the the farro and vegetables between serving bowls, then scatter over the remaining half of finely sliced spring onions and the sliced red chilli . Enjoy!.",
-        "label": "Divide the the farro and vegetables",
+        "label": "Plate and garnish with chilli",
         "type": "finish",
         "estimated_duration_minutes": 2,
         "requires": [
@@ -13844,14 +14009,14 @@
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide between bowls and scatter remaining spring onion greens and sliced red chilli."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "dd617ba776959e282f796ccf7aba4c368d539e1d65e5fbe8f7a8057b3383fc00"
   },
   {
@@ -13875,83 +14040,95 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle, then take out two large saucepans.",
-        "label": "Boil your kettle, then take out",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Boil kettle and prepare saucepans",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "pan",
-          "saucepan"
+          "kettle",
+          "saucepans"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Boil the kettle and set up two large saucepans for cooking."
       },
       {
         "id": "step-2",
         "raw_text": "Place one of your saucepans over medium-high heat, pour in boiling water from your kettle, and add salt as you would for cooking pasta. Once the water is bubbling, add the orzo and cook for 9 minutes or until al dente. Before draining, reserve a mugful of pasta water, then drain the orzo.",
-        "label": "Place one of your saucepans over",
-        "type": "finish",
-        "estimated_duration_minutes": 9,
+        "label": "Cook and drain the orzo",
+        "type": "cook",
+        "estimated_duration_minutes": 11,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "kettle",
+          "mug",
+          "colander"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook the orzo for 9 minutes or until al dente. Remember to reserve a mugful of pasta water before draining."
       },
       {
         "id": "step-3",
         "raw_text": "Meanwhile, finely chop the chives and set them aside. Then, thinly slice the chestnut mushrooms . Place another saucepan over medium-high heat and add a generous drizzle of olive oil. Add the sliced mushrooms and sauté for 6–8 minutes until nicely caramelised and browned at the edges. Once the mushrooms are ready, pour in the miso cream and stir occasionally to prevent sticking while warming it to a gentle simmer.",
-        "label": "Meanwhile, finely chop the chives and",
+        "label": "Prep and sauté mushrooms with miso",
         "type": "cook",
-        "estimated_duration_minutes": 7,
+        "estimated_duration_minutes": 10,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "pan",
+          "knife",
+          "chopping board",
           "saucepan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Sauté the sliced mushrooms for 6–8 minutes (midpoint 7 minutes) until caramelised, then stir in the miso cream to simmer."
       },
       {
         "id": "step-4",
         "raw_text": "Stir the cooked orzo into the warmed miso cream along with the baby spinach and cook until wilted, around 2 minutes. Season to taste with salt and add a splash of reserved pasta water if the sauce needs loosening any more.",
-        "label": "Stir the cooked orzo into the",
-        "type": "finish",
+        "label": "Combine orzo, miso, and spinach",
+        "type": "cook",
         "estimated_duration_minutes": 2,
         "requires": [
+          "step-2",
           "step-3"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "saucepan"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook for around 2 minutes until the spinach is wilted. Adjust consistency with the reserved pasta water if needed."
       },
       {
         "id": "step-5",
         "raw_text": "To serve, divide the orzotto between two plates and top with the creamy cashew labneh , plenty of cracked black pepper, the pine nut crumb , chopped chives and a final drizzle of olive oil if you like. Enjoy!",
-        "label": "To serve, divide the orzotto between",
+        "label": "Plate and garnish the orzotto",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
           "step-4"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "plates"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide between plates and top with cashew labneh, black pepper, pine nut crumb, chopped chives, and olive oil."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "2d0ef079f6421f323fb763f234d22f0cd4f10980c653a67dbc42c8f902d66a7a"
   },
   {
@@ -13975,73 +14152,83 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan. Take out a frying pan and a shallow casserole or baking dish (~25-30cm diameter / 4-5cm depth). NB: If you don't have a shallow baking dish, we recommend roasting the cauliflower separately in a baking tray, heating the sauce through in a pot on the hob and then combining.",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and prepare dishes",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
-          "frying pan",
-          "hob",
           "oven",
-          "pan",
-          "pot",
-          "tray"
+          "frying pan",
+          "shallow casserole or baking dish"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C (200°C fan). Prepare frying pan and baking dish."
       },
       {
         "id": "step-2",
         "raw_text": "Cut the cauliflower into bite-sized pieces and season with a glug of olive oil, salt, and freshly ground black pepper.",
-        "label": "Cut the cauliflower into bite-sized pieces",
+        "label": "Prep and season cauliflower",
         "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
           "step-1"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cut cauliflower into bite-sized pieces and season with olive oil, salt, and pepper."
       },
       {
         "id": "step-3",
         "raw_text": "Drain the butter beans very thoroughly and add them to your ovenproof dish along with the cauliflower florets and the cheesy pumpkin sauce . Stir well so everything is mixed together. Place the dish in the oven to bake for 25-35 minutes, or until the sauce has thickened and the top layer of sauce and cauliflower is browning.",
-        "label": "Drain the butter beans very thoroughly",
+        "label": "Mix and bake gratin",
         "type": "cook",
         "estimated_duration_minutes": 30,
         "requires": [
+          "step-1",
           "step-2"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-4"
+        ],
         "equipment": [
+          "ovenproof dish",
           "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Bake for 25-35 minutes (midpoint 30 minutes) until sauce thickens and top browns."
       },
       {
         "id": "step-4",
         "raw_text": "When the gratin is 10 minutes from being ready, remove the tough stems from the cavolo nero and slice the leaves into bite-sized pieces. Place your frying pan over medium heat, add a drizzle of olive oil, and sauté the kale for 5-6 minutes or until tender and with slightly crispy edges. We recommend adding a splash of water to help the kale steam a little in the pan. Season with salt and pepper to taste, then remove from the pan to keep warm STEP 6 Wipe the frying pan you used for the kale with a sheet of kitchen towel and place it back over medium heat. Pick the sage leaves off their stems and add them to the hot oil for around 20-30 seconds, until crispy and aromatic. The leaves will turn slightly translucent when ready. STEP 6 To serve, divide the gratin between serving bowls and top with the crispy sage leaves and a drizzle of the aromatic oil. Serve alongside the sautéed kale and enjoy!",
-        "label": "When the gratin is 10 minutes",
+        "label": "Sauté kale, fry sage, and serve",
         "type": "finish",
-        "estimated_duration_minutes": 5,
+        "estimated_duration_minutes": 10,
         "requires": [
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "bowl",
           "frying pan",
-          "pan"
+          "knife",
+          "cutting board",
+          "kitchen towel",
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Start when gratin is 10 minutes from ready. Sauté kale for 5-6 minutes, fry sage for 20-30 seconds, then plate and serve."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "1bbcdb05ca907fc58c58c518a7d1641889cf64d025809bb0fe1c233d07ad8483"
   },
   {
@@ -14065,82 +14252,94 @@
       {
         "id": "step-1",
         "raw_text": "Take out a large frying pan and a wide pan (approx 20-30cm) with a lid to cook your paella in. You can cover with foil if you don't have a pan with a lid, but ensure you are using a wide deep pan so the paella cooks evenly. Slice the courgette into 1cm rounds and cut the fennel into wedges.",
-        "label": "Take out a large frying pan",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Prepare pans and slice vegetables",
+        "type": "prep",
+        "estimated_duration_minutes": 4,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "large frying pan",
+          "wide pan with a lid",
+          "knife",
+          "chopping board"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Slice the courgette into 1cm rounds and cut the fennel into wedges."
       },
       {
         "id": "step-2",
         "raw_text": "Place your wide deep pan over a high heat. Add a drizzle of olive oil to your pan and toast the paella rice until translucent, around 1 minute. Add the paella sauce and 300ml of water to the pan and combine well with the toasted paella rice. Bring to the boil, then reduce the heat to medium and simmer on a medium heat without stirring for 15 minutes, until most of the liquid has been absorbed by the rice. If the rice looks dry when 15 minutes is up, top it up with a bit more stock / water so that there is a thin layer of moisture on top of the rice.",
-        "label": "Place your wide deep pan over",
+        "label": "Toast rice and simmer paella",
         "type": "cook",
-        "estimated_duration_minutes": 1,
+        "estimated_duration_minutes": 18,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "pan"
+          "wide deep pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Toast rice for 1 minute, then simmer for 15 minutes without stirring. Add more water if it looks dry at the end."
       },
       {
         "id": "step-3",
         "raw_text": "While the paella is simmering, char the courgette slices and fennel wedges in a hot and lightly oiled frying pan. Add the garden peas for the final 2-3 minutes of cooking time to warm through. Season and set aside.",
-        "label": "While the paella is simmering, char",
+        "label": "Char vegetables in frying pan",
         "type": "cook",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 10,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Char the courgette and fennel in a hot pan. Add garden peas for the final 2-3 minutes to warm through."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "Once the paella has been simmering for 15 minutes, reduce the heat to the lowest setting and cover the paella dish with a tight fitting lid or a piece of kitchen foil and allow the rice to finish cooking in its steam, around 5 minutes.",
+        "label": "Cover and steam paella",
+        "type": "cook",
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-2"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "wide deep pan",
+          "tight fitting lid",
+          "kitchen foil"
         ],
         "temperature_c": null,
-        "notes": ""
-      },
-      {
-        "id": "step-4",
-        "raw_text": "Once the paella has been simmering for 15 minutes, reduce the heat to the lowest setting and cover the paella dish with a tight fitting lid or a piece of kitchen foil and allow the rice to finish cooking in its steam, around 5 minutes.",
-        "label": "Once the paella has been simmering",
-        "type": "finish",
-        "estimated_duration_minutes": 15,
-        "requires": [
-          "step-3"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": ""
+        "notes": "Steam on the lowest heat setting for around 5 minutes."
       },
       {
         "id": "step-5",
         "raw_text": "Top the paella with your charred courgette and fennel , garden peas , a generous sprinkle of chopped parsley and a squeeze of fresh lemon . Season with sea salt and freshly cracked black pepper and enjoy!",
-        "label": "Top the paella with your charred",
+        "label": "Garnish and serve paella",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-3",
           "step-4"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "wide deep pan"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Top with charred vegetables, peas, chopped parsley, and fresh lemon juice. Season with sea salt and black pepper."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "766ff6017ebf54e6fb377d5ad11f98f2a11bd449c7eec4a65f939872355edd90"
   },
   {
@@ -14402,55 +14601,59 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out a large roasting tray.",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and prepare tray",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 10,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
           "oven",
-          "roasting tray",
-          "tray"
+          "roasting tray"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat to 220°C or 200°C fan."
       },
       {
         "id": "step-2",
         "raw_text": "Slice the portobello mushrooms 0.5cm thick.",
-        "label": "Slice the portobello mushrooms 0.5cm thick",
+        "label": "Slice portobello mushrooms",
         "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
+        "estimated_duration_minutes": 4,
+        "requires": [],
+        "can_overlap_with": [
           "step-1"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Slice the mushrooms 0.5cm thick."
       },
       {
         "id": "step-3",
         "raw_text": "Place the portobello mushrooms into your roasting tray, pour over the mushroom marinade , a generous drizzle of olive oil, some salt and pepper and give everything a good mix with your hands until the they are all thoroughly coated. Roast in the oven for 15 minutes or until tender.",
-        "label": "Place the portobello mushrooms into your",
+        "label": "Season and roast mushrooms",
         "type": "cook",
         "estimated_duration_minutes": 15,
         "requires": [
+          "step-1",
           "step-2"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "oven",
           "roasting tray",
-          "tray"
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast for 15 minutes or until tender."
       },
       {
         "id": "step-4",
         "raw_text": "Once the portobello mushrooms are ready, remove from the oven and place the flatbread(s) directly onto a shelf in your oven to warm through, around 1 minute. Be careful not to overcook as if they’re too crispy they won’t roll up well!",
-        "label": "Once the portobello mushrooms are ready",
+        "label": "Warm the flatbreads",
         "type": "cook",
         "estimated_duration_minutes": 1,
         "requires": [
@@ -14461,25 +14664,25 @@
           "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Warm for around 1 minute. Do not overcook or they will be too crispy to roll."
       },
       {
         "id": "step-5",
         "raw_text": "Lay out your warm flatbreads , spread a layer of tahini dressing over the bottom, pile on the mushroom shawarma , radish pickle and finish with some jalapeñ o mint s alsa (very spicy!). Wrap them up and get stuck in!",
-        "label": "Lay out your warm flatbreads",
+        "label": "Assemble and wrap shawarma",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Layer tahini, mushrooms, radish pickle, and jalapeño mint salsa, then wrap."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "3f1f90df573e22830d9e78eb6c2a2bdead7bd521f4f0af501b8661fee7e3b77b"
   },
   {
@@ -14678,75 +14881,33 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Ombar's Coco Mylk bar is incredibly",
-        "label": "Ombar's Coco Mylk bar is incredibly",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "The delightful blend of raw cacao coconut cream and caramel tasting coconut sugar",
+        "label": "Blend cacao, coconut cream, and coconut sugar",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Blend the raw cacao, coconut cream, and coconut sugar to create the creamy chocolate base."
       },
       {
         "id": "step-2",
-        "raw_text": "The delightful blend of raw cacao",
-        "label": "The delightful blend of raw cacao",
-        "type": "prep",
-        "estimated_duration_minutes": 3,
+        "raw_text": "enriched with cacao polyphenols and billions of healthy live cultures",
+        "label": "Enrich with cacao polyphenols and live cultures",
+        "type": "finish",
+        "estimated_duration_minutes": 2,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
-      },
-      {
-        "id": "step-3",
-        "raw_text": "And to top it off it's",
-        "label": "And to top it off it's",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
-        "requires": [
-          "step-2"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": ""
-      },
-      {
-        "id": "step-4",
-        "raw_text": "This product is fairly traded, gluten-free",
-        "label": "This product is fairly traded, gluten-free",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
-        "requires": [
-          "step-3"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": ""
-      },
-      {
-        "id": "step-5",
-        "raw_text": "INGREDIENTS Coconut sugar, raw cocoa mass",
-        "label": "INGREDIENTS Coconut sugar, raw cocoa mass",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
-        "requires": [
-          "step-4"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": ""
+        "notes": "Incorporate the cacao polyphenols and live cultures (bacillus coagulans) into the mixture."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "ca95eb7010f1d8617130b88fe42fd50149f5c5585fc5e93ed3f42823a98ea9ad"
   },
   {
