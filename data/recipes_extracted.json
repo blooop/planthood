@@ -12344,5 +12344,60 @@
     "extraction_method": "step_markers",
     "needs_llm_segmentation": false,
     "notes": ""
+  },
+  {
+    "id": "souvlaki-style-tofu-wrap-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
+    "title": "Souvlaki Style Tofu Wrap With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad In Soft Flatbread",
+    "source_url": "https://planthood.co.uk/products/souvlaki-style-tofu-wrap-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 523.0,
+      "protein_g": 27.6,
+      "fat_g": 21.9,
+      "carbs_g": 54.6,
+      "fibre_g": 6.0,
+      "salt_g": 1.5
+    },
+    "schema_version": 1,
+    "method_clean": "STEP 1 - STEP 2 - STEP 3 - STEP 4 - STEP 5 - STEP 6 -",
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "-",
+        "marker": 1
+      },
+      {
+        "id": "step-2",
+        "text": "-",
+        "marker": 2
+      },
+      {
+        "id": "step-3",
+        "text": "-",
+        "marker": 3
+      },
+      {
+        "id": "step-4",
+        "text": "-",
+        "marker": 4
+      },
+      {
+        "id": "step-5",
+        "text": "-",
+        "marker": 5
+      },
+      {
+        "id": "step-6",
+        "text": "-",
+        "marker": 6
+      }
+    ],
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "needs_llm_segmentation": false,
+    "notes": ""
   }
 ]

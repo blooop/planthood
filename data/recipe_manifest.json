@@ -1,7 +1,7 @@
 {
-  "total_recipes": 295,
+  "total_recipes": 296,
   "failed_recipes": 0,
-  "last_updated": "2026-07-30 05:40:34",
+  "last_updated": "2026-07-31 06:13:11",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -2065,6 +2065,13 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "souvlaki-style-tofu-wrap-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
+      "title": "Souvlaki Style Tofu Wrap With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad In Soft Flatbread",
+      "url": "https://planthood.co.uk/products/souvlaki-style-tofu-wrap-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
       "scraped": true,
       "week_label": null
     }
