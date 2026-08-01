@@ -9471,6 +9471,61 @@
     "notes": "No cooking instructions found (non-cookable)."
   },
   {
+    "id": "souvlaki-style-tofu-wrap-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
+    "title": "Souvlaki Style Tofu Wrap With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad In Soft Flatbread",
+    "source_url": "https://planthood.co.uk/products/souvlaki-style-tofu-wrap-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 523.0,
+      "protein_g": 27.6,
+      "fat_g": 21.9,
+      "carbs_g": 54.6,
+      "fibre_g": 6.0,
+      "salt_g": 1.5
+    },
+    "schema_version": 1,
+    "method_clean": "STEP 1 - STEP 2 - STEP 3 - STEP 4 - STEP 5 - STEP 6 -",
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "-",
+        "marker": 1
+      },
+      {
+        "id": "step-2",
+        "text": "-",
+        "marker": 2
+      },
+      {
+        "id": "step-3",
+        "text": "-",
+        "marker": 3
+      },
+      {
+        "id": "step-4",
+        "text": "-",
+        "marker": 4
+      },
+      {
+        "id": "step-5",
+        "text": "-",
+        "marker": 5
+      },
+      {
+        "id": "step-6",
+        "text": "-",
+        "marker": 6
+      }
+    ],
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "needs_llm_segmentation": false,
+    "notes": ""
+  },
+  {
     "id": "spiced-aubergine-saffron-yoghurt",
     "title": "Middle Eastern Spiced Aubergine With Bulgar, Saffron Yoghurt, Toasted Almonds & Pomegranate",
     "source_url": "https://planthood.co.uk/products/spiced-aubergine-saffron-yoghurt",
@@ -12338,61 +12393,6 @@
         "id": "step-4",
         "text": "Place your frying pan or wok over high heat and add a generous drizzle of neutral oil, or sesame oil if you have it, as it works well with this dish. Add the aubergine once the oil is hot and fry until soft and lightly golden on both sides, around 6-8 minutes. Then add the savoy cabbage and chestnut mushrooms and cook for a further 4-5 minutes until soft. You can add a small splash of water to help the vegetables steam and soften. Add the carrot ribbons last, along with the yaki udon sauce , and combine everything well. Finally, add the cooked and drained udon noodles. Toss everything together and cook for another minute or so over high heat to warm through the noodles. Add a splash of water or an extra drizzle of oil if it feels dry, and allow the sauce to start caramelising on the vegetables and noodles. STEP 6 To serve, divide the yaki udon between serving bowls and finish with sliced spring onions and a sprinkle of furikake seasoning . Enjoy!",
         "marker": 4
-      }
-    ],
-    "cookable": true,
-    "extraction_method": "step_markers",
-    "needs_llm_segmentation": false,
-    "notes": ""
-  },
-  {
-    "id": "souvlaki-style-tofu-wrap-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
-    "title": "Souvlaki Style Tofu Wrap With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad In Soft Flatbread",
-    "source_url": "https://planthood.co.uk/products/souvlaki-style-tofu-wrap-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 523.0,
-      "protein_g": 27.6,
-      "fat_g": 21.9,
-      "carbs_g": 54.6,
-      "fibre_g": 6.0,
-      "salt_g": 1.5
-    },
-    "schema_version": 1,
-    "method_clean": "STEP 1 - STEP 2 - STEP 3 - STEP 4 - STEP 5 - STEP 6 -",
-    "steps": [
-      {
-        "id": "step-1",
-        "text": "-",
-        "marker": 1
-      },
-      {
-        "id": "step-2",
-        "text": "-",
-        "marker": 2
-      },
-      {
-        "id": "step-3",
-        "text": "-",
-        "marker": 3
-      },
-      {
-        "id": "step-4",
-        "text": "-",
-        "marker": 4
-      },
-      {
-        "id": "step-5",
-        "text": "-",
-        "marker": 5
-      },
-      {
-        "id": "step-6",
-        "text": "-",
-        "marker": 6
       }
     ],
     "cookable": true,
