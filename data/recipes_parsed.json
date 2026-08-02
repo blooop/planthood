@@ -24338,63 +24338,118 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Our tandoori tofu wrap is a",
-        "label": "Our tandoori tofu wrap is a",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "Tender tofu bites are tossed in a tandoori marinade made with garlic, ginger, lemon and spices",
+        "label": "Marinate tofu",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
-        "equipment": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "bowl"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Toss the tofu bites in the tandoori marinade containing garlic, ginger, lemon, and spices."
       },
       {
         "id": "step-2",
-        "raw_text": "Tender tofu bites are tossed in",
-        "label": "Tender tofu bites are tossed in",
+        "raw_text": "roasted until charred",
+        "label": "Roast tofu",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 15,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "oven",
+          "baking tray"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast the marinated tofu in the oven until it gets charred."
       },
       {
         "id": "step-3",
-        "raw_text": "All wrapped in a freshly baked",
-        "label": "All wrapped in a freshly baked",
+        "raw_text": "tangy pickled red cabbage",
+        "label": "Pickle red cabbage",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Prepare the pickled red cabbage/onion using vinegar, sugar, and spices."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "cool minted yoghurt",
+        "label": "Make minted yoghurt",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-5"
+        ],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Mix the mint and oat yoghurt to create the cooling minted yoghurt."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "freshly baked, pillowy soft garlic and herb naan",
+        "label": "Bake naan",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "oven"
+        ],
+        "temperature_c": null,
+        "notes": "Bake the garlic and herb naan flatbread until soft and warm."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "smothered in a cool minted yoghurt, tangy pickled red cabbage and fresh spinach. All wrapped in a freshly baked, pillowy soft garlic and herb naan.",
+        "label": "Assemble wraps",
+        "type": "finish",
+        "estimated_duration_minutes": 5,
         "requires": [
-          "step-2"
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
-      },
-      {
-        "id": "step-4",
-        "raw_text": "Nutrition Calories 513kcal; Protein 22.8g; Fat",
-        "label": "Nutrition Calories 513kcal; Protein 22.8g; Fat",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
-        "requires": [
-          "step-3"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "pot"
-        ],
-        "temperature_c": null,
-        "notes": ""
+        "notes": "Assemble the wraps by placing the roasted tofu, minted yoghurt, pickled cabbage, and fresh spinach inside the baked naan."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "98193bd20763acba9607836ba9342c07e0e65f51c78a6b1872145fede4afe7a9"
   },
   {
@@ -24461,63 +24516,107 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "The nations favourite dish, with a",
-        "label": "The nations favourite dish, with a",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "Meaty chunks of tempeh are marinated and cooked in a tikka spiced plant-based yoghurt",
+        "label": "Marinate tempeh in tikka spiced yoghurt",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
         "requires": [],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "bowl"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Combine the tempeh chunks with the tikka spiced plant-based yoghurt to marinate."
       },
       {
         "id": "step-2",
-        "raw_text": "Meaty chunks of tempeh are marinated",
-        "label": "Meaty chunks of tempeh are marinated",
+        "raw_text": "cooked in a tikka spiced plant-based yoghurt",
+        "label": "Cook marinated tempeh",
         "type": "cook",
         "estimated_duration_minutes": 8,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "pan"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook the marinated tempeh chunks in a pan until lightly browned."
       },
       {
         "id": "step-3",
-        "raw_text": "Served with toasted flaked almonds, fresh",
-        "label": "Served with toasted flaked almonds, fresh",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
-        "requires": [
+        "raw_text": "basmati rice",
+        "label": "Cook basmati rice",
+        "type": "cook",
+        "estimated_duration_minutes": 15,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
           "step-2"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "saucepan"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Boil the basmati rice until fluffy."
       },
       {
         "id": "step-4",
-        "raw_text": "Nutrition Calories 694kcal; Protein 30.3g; Fat",
-        "label": "Nutrition Calories 694kcal; Protein 30.3g; Fat",
+        "raw_text": "then simmered in a rich and creamy masala sauce gently spiced with garlic, ginger, cumin and cardamom.",
+        "label": "Simmer tempeh in masala sauce",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 15,
         "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
           "step-3"
+        ],
+        "equipment": [
+          "pan"
+        ],
+        "temperature_c": null,
+        "notes": "Add the masala sauce ingredients (garlic, ginger, cumin, cardamom, tomato, coconut milk) to the tempeh and simmer."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "toasted flaked almonds",
+        "label": "Toast flaked almonds",
+        "type": "cook",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Gently toast the flaked almonds in a dry pan until golden."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "Served with toasted flaked almonds, fresh coriander and fluffy rice.",
+        "label": "Garnish and serve",
+        "type": "finish",
+        "estimated_duration_minutes": 5,
+        "requires": [
+          "step-3",
+          "step-4",
+          "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "pot"
+          "serving plate"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Serve the tikka masala over fluffy rice, garnished with toasted almonds and fresh coriander."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "8efa742618422009544c62a8fefc2e7c5d3ff4ca71b1b2d9a35df54f5d552921"
   },
   {
@@ -24541,103 +24640,123 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle and take out two saucepans and a frying pan.",
-        "label": "Boil your kettle and take out",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Boil kettle and prepare pans",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan",
-          "saucepan"
+          "kettle",
+          "saucepan",
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Boil the kettle and gather two saucepans and a frying pan to prepare for cooking."
       },
       {
         "id": "step-2",
         "raw_text": "Place the jasmine rice in a small saucepan and cover with 2.5x its volume in water. Bring to the boil and once it's bubbling, reduce the heat to low, cover and cook for 8-10 minutes or until tender but al dente.",
-        "label": "Place the jasmine rice in a",
+        "label": "Cook jasmine rice",
         "type": "cook",
-        "estimated_duration_minutes": 9,
+        "estimated_duration_minutes": 11,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "lid"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Bring to a boil, then cover and cook on low for 8-10 minutes until tender but al dente."
       },
       {
         "id": "step-3",
         "raw_text": "Place your frying pan over a medium heat and add a drizzle of oil. Cut the tofu into 1.5cm cubes and fry for 5-8 minutes or until golden on all sides. Season with a dash of soy sauce or salt. Remove from the pan and then add the mangetout and fry them for 3 minutes or lightly charred but still with some crunch.",
-        "label": "Place your frying pan over a",
+        "label": "Fry tofu and mangetout",
         "type": "cook",
-        "estimated_duration_minutes": 6,
+        "estimated_duration_minutes": 10,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
           "frying pan",
-          "pan"
+          "knife",
+          "cutting board"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Fry 1.5cm tofu cubes for 5-8 minutes until golden, then fry mangetout for 3 minutes until lightly charred but crunchy."
       },
       {
         "id": "step-4",
         "raw_text": "Meanwhile empty the curry sauce into your other saucepan and warm through over a medium-low heat for 3-5 minutes.",
-        "label": "Meanwhile empty the curry sauce into",
+        "label": "Warm the curry sauce",
         "type": "cook",
         "estimated_duration_minutes": 4,
         "requires": [
-          "step-3"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-5"
+        ],
         "equipment": [
-          "pan",
           "saucepan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Warm the curry sauce over medium-low heat for 3-5 minutes."
       },
       {
         "id": "step-5",
         "raw_text": "Thinly slice the red chilli and quarter the lime for garnish and set aside.",
-        "label": "Thinly slice the red chilli and",
-        "type": "finish",
+        "label": "Prep chilli and lime garnish",
+        "type": "prep",
         "estimated_duration_minutes": 2,
-        "requires": [
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
           "step-4"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Thinly slice the red chilli and quarter the lime, then set aside for serving."
       },
       {
         "id": "step-6",
         "raw_text": "To serve up, divide the sauce between serving bowls, then add the tofu , mangetout and jasmine rice . Garnish with red chilli and a squeeze of fresh lime juice. Enjoy!",
-        "label": "To serve up, divide the sauce",
+        "label": "Assemble and garnish bowls",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-2",
+          "step-3",
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide sauce, tofu, mangetout, and rice into bowls. Garnish with sliced chilli and a squeeze of lime."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "108373506db24067fde22917edc26b3b9696f027f3e4997dd77ebcd64cf2fa7d"
   },
   {
@@ -24935,105 +25054,116 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle, then take out a saucepan and a large frying pan (non-stick works best for fritters).",
-        "label": "Boil your kettle, then take out",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Boil kettle and prepare pans",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan",
-          "saucepan"
+          "kettle",
+          "saucepan",
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Boil the kettle and set up your cooking pans."
       },
       {
         "id": "step-2",
         "raw_text": "To prepare for the quinoa slaw, fill a saucepan with boiling water from the kettle and place it over medium-high heat. Once it’s bubbling, add the quinoa and cook for 6–8 minutes, or until al dente. Drain and set aside, keeping it warm. Finely slice the red and white cabbage wedges (using a mandolin if you have one), and place them in a bowl with a sprinkle of salt. Massage the cabbage to help it release its natural juices and soften. If you like, add a splash of vinegar and a drizzle of oil at this stage. Set aside until assembling the meal in Step 5.",
-        "label": "To prepare for the quinoa slaw",
-        "type": "finish",
-        "estimated_duration_minutes": 7,
+        "label": "Cook quinoa and prep cabbage",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "bowl",
-          "pan",
-          "saucepan"
+          "saucepan",
+          "mandolin",
+          "bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook quinoa for 6-8 minutes until al dente. Slice and massage cabbage with salt."
       },
       {
         "id": "step-3",
         "raw_text": "Finely slice spring onions, separating the whites and greens. Grate the sweet potato into a large mixing bowl using the medium-size side of the grater. Add the fritter dry mix , the white part of the spring onions and season well with salt and pepper, and give it all a good mix until well combined and the texture is like a dough. Make your fritters using your hands, aiming for approximately 1cm thick and 10cm in diameter. They don't need to be perfect circles as rougher edges will turn nice and crispy! If the fritters don't stick together, you can add a splash of water to the mix as required. However the less moisture in the batter, the crispier the fritters will get when cooking and they will also bind together more as they're fried.",
-        "label": "Finely slice spring onions, separating the",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Prep and shape sweet potato fritters",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "mixing bowl",
-          "pot"
+          "knife",
+          "grater",
+          "large mixing bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Grate sweet potato, mix with dry ingredients, and shape into 1cm thick, 10cm wide patties."
       },
       {
         "id": "step-4",
         "raw_text": "Place your frying pan over a medium heat and add a neutral oil (e.g. rapeseed, sunflower, groundnut oil). The example image is shallow fried to make them extra crispy, but you can just add a drizzle of oil if you prefer less. Fry the fritters in batches for 4-5 minutes on each side or until crispy on the outside and cooked through in the centre. You should get around 2-3 fritters per person.",
-        "label": "Place your frying pan over a",
+        "label": "Fry fritters until crispy",
         "type": "cook",
-        "estimated_duration_minutes": 4,
+        "estimated_duration_minutes": 10,
         "requires": [
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-5"
+        ],
         "equipment": [
-          "frying pan",
-          "pan"
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Fry in batches for 4-5 minutes on each side over medium heat until cooked through."
       },
       {
         "id": "step-5",
         "raw_text": "To finish off the quinoa slaw, combine the cooked quinoa , sliced & marinated cabbage slices, sesame seeds , spring onion greens with a splash of red Thai curry dressing . Season to taste with salt and pepper and reserve the remaining of the dressing to drizzle over the fritters. We recommend reserving some sesame seeds and spring onion for garnishing too.",
-        "label": "To finish off the quinoa slaw",
+        "label": "Assemble the quinoa slaw",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
           "step-4"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": ""
-      },
-      {
-        "id": "step-6",
-        "raw_text": "To serve up, divide the salad between serving plates or bowls, top with the fritters and drizzle over the red Thai curry dressing . Garnish with any remaining sesame seeds and spring onions and enjoy!",
-        "label": "To serve up, divide the salad",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-5"
-        ],
-        "can_overlap_with": [],
         "equipment": [
           "bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Combine cooked quinoa, marinated cabbage, sesame seeds, spring onion greens, and dressing."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "To serve up, divide the salad between serving plates or bowls, top with the fritters and drizzle over the red Thai curry dressing . Garnish with any remaining sesame seeds and spring onions and enjoy!",
+        "label": "Plate, drizzle dressing, and garnish",
+        "type": "finish",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-4",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "plates or bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Divide slaw, top with fritters, drizzle remaining dressing, and garnish with sesame seeds and spring onions."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "918a1a9b962303f0e71571b0c2b9c3c80b6b6042cbe97a089d7c66fc609a751a"
   },
   {
@@ -25057,84 +25187,101 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle then take out a deep frying pan or wok.",
-        "label": "Boil your kettle then take out",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Boil kettle and prepare pan",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "frying pan",
-          "pan"
+          "kettle",
+          "deep frying pan",
+          "wok"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Boil the kettle and set up your cooking vessel."
       },
       {
         "id": "step-2",
         "raw_text": "Place the vermicelli noodles into a heatproof bowl, pour boiling water over from your kettle to cover and leave the noodles to cook until tender, around 3-5 minutes. Drain and set aside to keep warm.",
-        "label": "Place the vermicelli noodles into a",
+        "label": "Soak and drain vermicelli noodles",
         "type": "cook",
         "estimated_duration_minutes": 4,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "bowl"
+          "heatproof bowl",
+          "kettle",
+          "colander"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Leave noodles to cook in boiling water for 3-5 minutes until tender, then drain and keep warm."
       },
       {
         "id": "step-3",
         "raw_text": "Roughly chop the coriander leaves, cut the lime into quarters and set aside for garnish. Cut the chestnut mushrooms into quarters, deseed and slice the red pepper , and cut the courgette into bite-sized pieces - about 2 cm chunks.",
-        "label": "Roughly chop the coriander leaves, cut",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
-        "requires": [
+        "label": "Chop vegetables and garnish herbs",
+        "type": "prep",
+        "estimated_duration_minutes": 8,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
           "step-2"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "chopping board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Chop coriander and quarter limes for garnish. Cut mushrooms into quarters, slice peppers, and cut courgettes into 2 cm chunks."
       },
       {
         "id": "step-4",
         "raw_text": "Place your frying pan or wok over a medium heat and add a drizzle of oil. Once hot, add the prepared chestnut mushrooms , red pepper and courgette and cook until tender but al dente, around 5-10 minutes. Pour in the red Thai curry sauce and cook until warmed through, around 2-3 minutes. Season to taste with salt or a splash of soy sauce.",
-        "label": "Place your frying pan or wok",
+        "label": "Stir-fry vegetables and warm curry",
         "type": "cook",
-        "estimated_duration_minutes": 7,
+        "estimated_duration_minutes": 10,
         "requires": [
+          "step-1",
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
-          "frying pan",
-          "pan"
+          "deep frying pan",
+          "wok"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook vegetables over medium heat for 5-10 minutes until tender but al dente. Add curry sauce and warm through for 2-3 minutes. Season to taste."
       },
       {
         "id": "step-5",
         "raw_text": "To serve up, divide the vermicelli noodles between serving bowls and ladle over the red curry sauce with vegetables . Garnish with some freshly chopped coriander and a good squeeze of fresh lime juice. Enjoy!",
-        "label": "To serve up, divide the vermicelli",
+        "label": "Assemble bowls and garnish curry",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-2",
           "step-4"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls",
+          "ladle"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide noodles, ladle curry and vegetables, then garnish with coriander and fresh lime juice."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "30dbfc4f98a16598f768e1d11f69c1c4f703dfe0bfcd0fa1cec9eaed4166cf05"
   },
   {
@@ -25158,103 +25305,120 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle, then take out two saucepans and a frying pan.",
-        "label": "Boil your kettle, then take out",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Boil kettle and prepare pans",
+        "type": "prep",
+        "estimated_duration_minutes": 4,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan",
-          "saucepan"
+          "kettle",
+          "saucepan",
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Boil the kettle and set out two saucepans and one frying pan."
       },
       {
         "id": "step-2",
         "raw_text": "Place one of your saucepans over a medium heat and fill with the boiling water from the kettle. Add the flat rice noodles and cook for 5–6 minutes, or until tender but still al dente. Drain, rinse under cold water, and set aside in a colander to drain.",
-        "label": "Place one of your saucepans over",
+        "label": "Cook and drain rice noodles",
         "type": "cook",
-        "estimated_duration_minutes": 5,
+        "estimated_duration_minutes": 6,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "colander"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook noodles for 5–6 minutes until tender but al dente, then drain and rinse under cold water."
       },
       {
         "id": "step-3",
         "raw_text": "Cut any larger button mushrooms in half and leave any smaller ones whole. Place your frying pan over a medium-high heat with a drizzle of oil and fry the mushrooms until lightly browned, about 4–5 minutes. Season with salt or a dash of soy sauce, if you have some to hand.",
-        "label": "Cut any larger button mushrooms in",
+        "label": "Prep and fry button mushrooms",
         "type": "cook",
-        "estimated_duration_minutes": 4,
+        "estimated_duration_minutes": 6,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "frying pan",
-          "pan"
+          "knife",
+          "cutting board",
+          "frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Halve larger mushrooms and fry for 4–5 minutes until lightly browned. Season with salt or soy sauce if available."
       },
       {
         "id": "step-4",
         "raw_text": "Meanwhile, trim the base of the pak choi and slice it lengthways into long pieces. Dice the tofu into bite-sized cubes. Pick the coriander leaves from the stalks, cut the lime in half, and set aside for garnish.",
-        "label": "Meanwhile, trim the base of the",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "label": "Prep pak choi, tofu, and garnish",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
         "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Trim and slice pak choi, cube tofu, pick coriander leaves (keep stalks for broth), and halve the lime."
       },
       {
         "id": "step-5",
         "raw_text": "Place the second saucepan over a medium heat and add the tom yum broth , diced tofu , and 250ml water (double the quantity for 4 portions). Bring to a gentle simmer. For extra flavour, you can add the coriander stalks and the zest of the lime to the broth. Once the broth is bubbling, add the sliced pak choi and cook for a further 2–3 minutes, until tender but still with a little bite. Add the drained flat rice noodles to the broth and warm through for about 1 minute, then remove from the heat. If you added the coriander stalks, remove these before serving.",
-        "label": "Place the second saucepan over a",
+        "label": "Simmer broth with tofu and vegetables",
         "type": "cook",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 8,
         "requires": [
+          "step-2",
           "step-4"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "pan",
           "saucepan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Simmer broth with tofu (and optional coriander stalks/lime zest). Add pak choi for 2–3 minutes, then warm noodles for 1 minute. Remove coriander stalks before serving."
       },
       {
         "id": "step-6",
         "raw_text": "To serve, divide the tom yum noodles between serving bowls and top with the sautéed button mushrooms . Finish with a scattering of coriander leaves and a generous squeeze of fresh lime juice. Enjoy!",
-        "label": "To serve, divide the tom yum",
+        "label": "Assemble and garnish noodle soup",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-3",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide noodles and broth into bowls, top with fried mushrooms, coriander leaves, and fresh lime juice."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "e4f91c81b3f94fa1108c3d26238f5652023cebdc1ef236ab910d554a0b31715f"
   },
   {
@@ -25278,74 +25442,79 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 220°C / 200°C fan and take out an ovenproof dish or roasting tray sized to snugly fit the number of enchiladas (2 for a 2-person portion and double the size for a 4-person portion).",
-        "label": "Preheat your oven to 220°C /",
+        "label": "Preheat oven and prepare baking dish",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 10,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
           "oven",
-          "roasting tray",
-          "tray"
+          "ovenproof dish or roasting tray"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C (or 200°C fan). Prepare a snugly fitting ovenproof dish or roasting tray."
       },
       {
         "id": "step-2",
         "raw_text": "Drain the black beans and add them to a mixing bowl along with the enchilada sauce to make the enchilada filling mixture. Add a few tablespoonfuls of the mixture to the bottom of the ovenproof dish or roasting tray and spread evenly to create a shallow layer of sauce. Divide the remaining mixture between the flour tortillas , wrap them, and place them on top of the sauce. Pour the cashew cheese sauce all over the enchiladas. Bake in the oven for 15–20 minutes, or until the cheese sauce and tortillas have firmed up and turned golden. Check that the enchiladas are piping hot in the centre before serving.",
-        "label": "Drain the black beans and add",
-        "type": "finish",
-        "estimated_duration_minutes": 17,
+        "label": "Assemble and bake the enchiladas",
+        "type": "cook",
+        "estimated_duration_minutes": 23,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "bowl",
           "mixing bowl",
-          "oven",
-          "roasting tray",
-          "tray"
+          "ovenproof dish or roasting tray",
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Bake for 15–20 minutes (midpoint 18 minutes used for bake time) until cheese sauce and tortillas are golden and firmed up, and the centre is piping hot."
       },
       {
         "id": "step-3",
         "raw_text": "In the meantime, finely dice the red onion and cut the cherry tomatoes into quarters. Place them in a small bowl and toss with a little extra virgin olive oil, sea salt, and a squeeze of half a fresh lime to taste. This is your cherry tomato salsa. Pick the coriander leaves and roughly chop them for garnish.",
-        "label": "In the meantime, finely dice the",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
-        "requires": [
+        "label": "Prepare cherry tomato salsa and coriander",
+        "type": "prep",
+        "estimated_duration_minutes": 8,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "knife",
+          "cutting board",
+          "small bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Can be prepared in the meantime while the oven preheats or while the enchiladas bake."
       },
       {
         "id": "step-4",
         "raw_text": "Once cooked, remove the enchiladas from the oven. Spoon over the cherry tomato salsa , scatter over the fresh coriander , and squeeze over the remaining lime juice . Divide between serving plates and enjoy!",
-        "label": "Once cooked, remove the enchiladas from",
+        "label": "Garnish and serve the enchiladas",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 3,
         "requires": [
+          "step-2",
           "step-3"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "oven"
+          "serving plates"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Spoon over salsa, scatter coriander, squeeze remaining lime juice, and plate."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "8771baf9a49ca83272e254b9cda79839439092a4b2b1b54e0e09c219268558c0"
   },
   {
@@ -25369,103 +25538,129 @@
       {
         "id": "step-1",
         "raw_text": "Take out a large frying pan, a small saucepan and a large bowl.",
-        "label": "Take out a large frying pan",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Gather pans and large bowl",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "bowl",
-          "frying pan",
-          "pan",
-          "saucepan"
+          "large frying pan",
+          "small saucepan",
+          "large bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Gather the frying pan, saucepan, and large bowl before starting."
       },
       {
         "id": "step-2",
         "raw_text": "Place the sushi rice your small saucepan and pour over 2x its volume in water. Bring to the boil and once it's bubbling, reduce the heat to low, cover with a lid and cook for 8-10 minutes until rice is tender and all water has been absorbed. Turn off the heat and let it steam.",
-        "label": "Place the sushi rice your small",
+        "label": "Cook and steam sushi rice",
         "type": "cook",
-        "estimated_duration_minutes": 9,
+        "estimated_duration_minutes": 14,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "small saucepan",
+          "lid"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook covered for 8-10 minutes once bubbling, then turn off heat to steam."
       },
       {
         "id": "step-3",
         "raw_text": "Place the cucumber on a chopping board. Smash it gently along the length using a rolling pin or a heavy pestle until it splits, then chop diagonally into 1-2 inch diagonal slices. Place them into your bowl, sprinkle with salt, and toss to coat. Let them to sit for a while you prepare the rest of the meal.",
-        "label": "Place the cucumber on a chopping",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
+        "label": "Smash and salt the cucumbers",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "bowl"
+          "chopping board",
+          "rolling pin",
+          "pestle",
+          "large bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Let the salted cucumbers sit while preparing the rest of the meal."
       },
       {
         "id": "step-4",
         "raw_text": "Cut or tear the tofu into bite-sized chunks. We recommend tearing or cutting the block in half, then in half again, and so on until you have around 16 pieces. Carefully thread the tofu pieces onto the skewers , aiming for about four large pieces per skewer.",
-        "label": "Cut or tear the tofu into",
+        "label": "Cut and thread tofu skewers",
         "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
+        "estimated_duration_minutes": 6,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
           "step-3"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "chopping board",
+          "knife",
+          "skewers"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cut or tear tofu into about 16 pieces, aiming for 4 pieces per skewer."
       },
       {
         "id": "step-5",
         "raw_text": "Place your frying pan over medium-high heat and add a drizzle of oil. Once hot, add the tofu skewers and fry until all sides are golden. Drizzle a tablespoon of satay sauce over each skewer, turning to coat all the tofu pieces. Cook for another 1–2 minutes, until the sauce is caramelised and coats the tofu. Reserve the rest of the satay sauce.",
-        "label": "Place your frying pan over medium-high",
-        "type": "finish",
-        "estimated_duration_minutes": 1,
+        "label": "Fry and glaze tofu skewers",
+        "type": "cook",
+        "estimated_duration_minutes": 8,
         "requires": [
+          "step-1",
           "step-4"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
-          "frying pan",
-          "pan"
+          "large frying pan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Fry until golden, then cook for 1-2 minutes with satay sauce until caramelized."
       },
       {
         "id": "step-6",
         "raw_text": "Roughly chop the radishes and set aside. When everything else is nearly ready, drain the excess liquid off the smacked cucumbers and then toss in the cucumber dressing . STEP 6 Divide the sushi rice between serving bowls and top with the satay tofu skewers . Drizzle over the remaining satay sauce , and serve with the smacked cucumber salad and radishes on the side. Finish with the peanut sesame garnish and enjoy!",
-        "label": "Roughly chop the radishes and set",
+        "label": "Assemble and garnish serving bowls",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 5,
         "requires": [
+          "step-2",
+          "step-3",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "chopping board",
+          "knife",
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Drain cucumbers before dressing. Assemble bowls with rice, skewers, sauce, salad, radishes, and garnish."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "86b36895d24272a00be19c1a22bd3653d1b46bad35ae4faff5822ae4ff6d2ed8"
   },
   {
@@ -25489,120 +25684,152 @@
       {
         "id": "step-1",
         "raw_text": "Preheat your oven to 200°C / 180°C fan. Take out two baking trays and a saucepan.",
-        "label": "Preheat your oven to 200°C /",
+        "label": "Preheat oven and prepare trays",
         "type": "prep",
-        "estimated_duration_minutes": 3,
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-6"
+        ],
         "equipment": [
           "oven",
-          "pan",
-          "saucepan",
-          "tray"
+          "baking trays",
+          "saucepan"
         ],
         "temperature_c": 200,
-        "notes": ""
+        "notes": "Preheat oven to 200°C or 180°C fan. Prepare two baking trays and a saucepan."
       },
       {
         "id": "step-2",
         "raw_text": "Roughly tear the tofu into chunks with your hands. We recommend tearing the block in half, then in half again, and so on until you have around 16 pieces. Place them into a bowl with the tikka marinade and mix carefully to avoid breaking them apart.",
-        "label": "Roughly tear the tofu into chunks",
+        "label": "Tear and marinate tofu chunks",
         "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-1"
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3",
+          "step-6"
         ],
-        "can_overlap_with": [],
         "equipment": [
           "bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Tear tofu into roughly 16 pieces and mix gently with the tikka marinade to avoid breaking."
       },
       {
         "id": "step-3",
         "raw_text": "Place the basmati rice into your saucepan along with the rice spice mix , then cover with twice its volume of water. Place over a medium-high heat, bring to the boil, then reduce the heat to low and cover with a lid. Leave to cook until light and fluffy, around 8 minutes.",
-        "label": "Place the basmati rice into your",
+        "label": "Cook spiced basmati rice",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 10,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4",
+          "step-5",
+          "step-6"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "lid"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Bring to a boil, then cover and simmer on low for around 8 minutes until light and fluffy."
       },
       {
         "id": "step-4",
         "raw_text": "Run the bamboo skewers under the tap (this will stop them from burning), then carefully thread the marinated tofu pieces onto the skewers, aiming for around four pieces per skewer. Place them on your baking tray and reserve any remaining marinade. Bake in the oven for 10 minutes, then turn them over, brush over the remaining marinade and bake for another 10 minutes until lightly charred at the edges.",
-        "label": "Run the bamboo skewers under the",
-        "type": "finish",
-        "estimated_duration_minutes": 10,
+        "label": "Skewer and bake tofu kebabs",
+        "type": "cook",
+        "estimated_duration_minutes": 25,
         "requires": [
-          "step-3"
+          "step-1",
+          "step-2"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-5",
+          "step-6"
+        ],
         "equipment": [
+          "bamboo skewers",
+          "baking tray",
           "oven",
-          "tray"
+          "brush"
         ],
-        "temperature_c": null,
-        "notes": ""
+        "temperature_c": 200,
+        "notes": "Soak skewers first. Bake for 10 minutes, turn, brush with remaining marinade, and bake for another 10 minutes."
       },
       {
         "id": "step-5",
         "raw_text": "Trim the green beans and place them on another baking tray. Drizzle with olive oil and season with salt and pepper. Add them to the oven for the final 8 minutes of the tofu skewers’ cooking time.",
-        "label": "Trim the green beans and place",
+        "label": "Prep and roast green beans",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 10,
         "requires": [
+          "step-1",
           "step-4"
         ],
-        "can_overlap_with": [],
-        "equipment": [
-          "oven",
-          "tray"
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-6"
         ],
-        "temperature_c": null,
-        "notes": ""
+        "equipment": [
+          "baking tray",
+          "oven"
+        ],
+        "temperature_c": 200,
+        "notes": "Trim beans, season, and roast in the oven during the final 8 minutes of the tofu's cooking time."
       },
       {
         "id": "step-6",
         "raw_text": "Meanwhile, quarter the cherry tomatoes and finely chop the mint leaves (reserving a few whole leaves for garnish). Stir the chopped mint through the organic soy yoghurt to make your mint yoghurt.",
-        "label": "Meanwhile, quarter the cherry tomatoes and",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
-        "requires": [
+        "label": "Prepare tomatoes and mint yoghurt",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-4",
           "step-5"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "chopping board",
+          "bowl"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Quarter tomatoes, chop mint (reserving some whole leaves), and stir into the soy yoghurt."
       },
       {
         "id": "step-7",
         "raw_text": "To serve, divide the spiced rice between serving bowls and top with the tofu tikka kebab skewers and roasted green beans . Add the cherry tomatoes and pickled red onion on the side. Drizzle over the mint yoghurt and garnish with the remaining mint leaves. Enjoy!",
-        "label": "To serve, divide the spiced rice",
+        "label": "Plate and garnish the kebabs",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 5,
         "requires": [
+          "step-3",
+          "step-4",
+          "step-5",
           "step-6"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Assemble spiced rice, skewers, green beans, tomatoes, pickled onion, and drizzle with mint yoghurt."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "7cb3a250cbff909d25d4dda11bf12c650faa719f3e4fe37cc0b406d29983d8b9"
   },
   {
@@ -25626,91 +25853,93 @@
       {
         "id": "step-1",
         "raw_text": "Take out a grill or griddle pan and a saucepan. If you don’t have a grill pan, any pan that can withstand high heat will work well. This will help the tofu pieces get nicely charred. Alternatively, you can follow the instructions to oven-bake the tofu instead.",
-        "label": "Take out a grill or griddle",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Prepare pans and equipment",
+        "type": "prep",
+        "estimated_duration_minutes": 1,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "grill",
-          "oven",
-          "pan",
+          "grill pan",
           "saucepan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Can use a griddle pan, any high-heat pan, or prepare to oven-bake instead."
       },
       {
         "id": "step-2",
         "raw_text": "Place your saucepan over medium heat and add the tikka sauce . Heat gently until bubbling. Once piping hot, turn off the heat and cover to keep warm.",
-        "label": "Place your saucepan over medium heat",
+        "label": "Heat tikka sauce in saucepan",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4"
+        ],
         "equipment": [
-          "pan",
           "saucepan"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Heat gently over medium heat until bubbling, then cover to keep warm."
       },
       {
         "id": "step-3",
         "raw_text": "In the meantime, tear the tofu into bite-sized pieces using your hands and add it to a mixing bowl along with a generous drizzle of olive oil and the marinade dry mix . Toss until everything is evenly coated.",
-        "label": "In the meantime, tear the tofu",
+        "label": "Tear and marinate tofu",
         "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
+        "estimated_duration_minutes": 4,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl",
           "mixing bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Tear tofu into bite-sized pieces and toss with olive oil and dry marinade mix."
       },
       {
         "id": "step-4",
         "raw_text": "Place your grill pan over medium-high to high heat to preheat. Once hot, add the flatbreads one by one and dry grill for 1 minute on each side until warmed through. Set aside and keep warm. Brush or spray the grill pan with oil, then add the marinaded tofu pieces in a single layer. Grill for 2 to 3 minutes per side, or until char marks form and the tofu releases easily from the pan. Season to taste with salt and freshly ground black pepper. Alternatively, you can roast the marinated tofu in the oven at 220°C / 200°C fan for 20-25 minutes, until crispy and charred at the edges.",
-        "label": "Place your grill pan over medium-high",
-        "type": "prep",
-        "estimated_duration_minutes": 2,
+        "label": "Grill flatbreads and tofu",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
         "requires": [
+          "step-1",
           "step-3"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2"
+        ],
         "equipment": [
-          "grill",
-          "oven",
-          "pan"
+          "grill pan"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Dry grill flatbreads for 1 minute per side. Grill tofu for 2 to 3 minutes per side until charred. Alternatively, roast in the oven at 220°C (200°C fan) for 20-25 minutes."
       },
       {
         "id": "step-5",
         "raw_text": "To serve, spread the tikka sauce over the flatbreads and top with the chargrilled tofu . Finish with dollops of coconut yoghurt , red wine vinegar pickled red onion , and a garnish of picked coriander leaves. Enjoy!",
-        "label": "To serve, spread the tikka sauce",
+        "label": "Assemble and garnish wraps",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 4,
         "requires": [
+          "step-2",
           "step-4"
         ],
         "can_overlap_with": [],
-        "equipment": [
-          "grill"
-        ],
+        "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Spread sauce on flatbreads, top with tofu, coconut yoghurt, pickled onion, and coriander."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "133b3fe1869174c9c114ef5536a472a875ba9257d04f77b86f2de779281bc8f4"
   },
   {
@@ -25755,47 +25984,79 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "One of Tuscany's most famous dishes",
-        "label": "One of Tuscany's most famous dishes",
+        "raw_text": "golden ciabatta croutons",
+        "label": "Toast the ciabatta croutons",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 10,
         "requires": [],
-        "can_overlap_with": [],
-        "equipment": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "oven",
+          "baking tray"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Toast the ciabatta until golden and crunchy."
       },
       {
         "id": "step-2",
-        "raw_text": "A chopped salad of juicy ripe",
-        "label": "A chopped salad of juicy ripe",
+        "raw_text": "chopped salad of juicy ripe tomatoes, ... plant-based mozzarella, fresh basil and butterbeans",
+        "label": "Chop tomatoes, red onion, basil, and mozzarella",
         "type": "prep",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-1"
+        "estimated_duration_minutes": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Chop the fresh ingredients and drain the butterbeans."
       },
       {
         "id": "step-3",
-        "raw_text": "Nutrition Calories 537kcal; Protein 19.4g; Fat",
-        "label": "Nutrition Calories 537kcal; Protein 19.4g; Fat",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
-        "requires": [
+        "raw_text": "tangy caper and garlic infused vinaigrette",
+        "label": "Prepare the caper and garlic vinaigrette",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
           "step-2"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "bowl",
+          "whisk"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Whisk together the capers, garlic, balsamic vinegar, red wine vinegar, extra virgin olive oil, and maple syrup."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "all tossed in a tangy caper and garlic infused vinaigrette",
+        "label": "Toss the salad with the vinaigrette",
+        "type": "finish",
+        "estimated_duration_minutes": 2,
+        "requires": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "salad bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Combine the chopped vegetables, croutons, mozzarella, butterbeans, and basil, then toss with the prepared vinaigrette."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "2d53e51f1907e42492e828f2036abb50a28f988cc3481bd2ebbb4509b5243b48"
   },
   {
@@ -25863,70 +26124,82 @@
       {
         "id": "step-1",
         "raw_text": "Boil the kettle, then fill a saucepan with one cup of boiling water and place it over a medium heat. Blanch the edamame for 1–2 minutes, then drain and set aside. Return the same pan to a medium heat and refill it with boiling water. Once bubbling, add the flat rice noodles and cook for 4–5 minutes, until tender but still al dente. Test the noodles regularly to ensure they don’t overcook and become soggy. Rinse under cold water and drain well. Transfer the noodles to a mixing bowl, toss with a drizzle of neutral oil (sesame oil is recommended) and a dash of soy sauce, then set aside.",
-        "label": "Boil the kettle, then fill a",
+        "label": "Blanch edamame and cook rice noodles",
         "type": "cook",
-        "estimated_duration_minutes": 1,
+        "estimated_duration_minutes": 13,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
-          "bowl",
-          "mixing bowl",
-          "pan",
-          "saucepan"
+          "kettle",
+          "saucepan",
+          "colander",
+          "mixing bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Blanch edamame for 1–2 minutes. Cook noodles for 4–5 minutes until al dente. Rinse under cold water and toss with oil and soy sauce to prevent sticking."
       },
       {
         "id": "step-2",
         "raw_text": "Slice the baby cucumber in half lengthways, then thinly slice each half. Finely shred the red cabbage (use a mandoline slicer if you have one). Sprinkle a little salt over each of the vegetables and gently massage them to improve the texture. Roughly chop the coriander — and that’s all your vegetables ready!",
-        "label": "Slice the baby cucumber in half",
-        "type": "finish",
-        "estimated_duration_minutes": 2,
-        "requires": [
-          "step-1"
+        "label": "Prep and massage the vegetables",
+        "type": "prep",
+        "estimated_duration_minutes": 7,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "cutting board",
+          "mandoline slicer"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Thinly slice cucumber, finely shred cabbage (using a mandoline if available), salt and massage them to improve texture, and roughly chop coriander."
       },
       {
         "id": "step-3",
         "raw_text": "Toast the peanuts and sesame seeds mix by dry frying in a small frying pan until golden, then chop or roughly crush them.",
-        "label": "Toast the peanuts and sesame seeds",
+        "label": "Toast and crush peanuts and sesame seeds",
         "type": "cook",
-        "estimated_duration_minutes": 8,
-        "requires": [
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
           "step-2"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "frying pan",
-          "pan"
+          "small frying pan",
+          "knife",
+          "cutting board"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Dry fry the mix until golden, then chop or roughly crush."
       },
       {
         "id": "step-4",
         "raw_text": "To serve, divide the the cooked flat rice noodles between two serving bowls, and top with cucumber , red cabbage , edamame and pickled carrot and daikon . Pour over the peanut lemongrass sauc e and finish with the toasted & crushed peanuts and sesame seeds mix and fresh coriander leaves. Enjoy!",
-        "label": "To serve, divide the the cooked",
+        "label": "Assemble and garnish noodle salad",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 4,
         "requires": [
+          "step-1",
+          "step-2",
           "step-3"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Divide noodles into bowls, top with cucumber, cabbage, edamame, pickled carrot, daikon, peanut lemongrass sauce, toasted nuts/seeds, and coriander."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "b9957576c558856985ead256af52b8d5889ed2f896024e9a6750b439e0cdc4c4"
   },
   {
@@ -26200,107 +26473,132 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle, pre-heat your oven to 220°C / 200°C fan, then take out a large roasting tray and a saucepan.",
-        "label": "Boil your kettle, pre-heat your oven",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "label": "Boil kettle and preheat oven",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
+          "kettle",
           "oven",
-          "pan",
           "roasting tray",
-          "saucepan",
-          "tray"
+          "saucepan"
         ],
         "temperature_c": 220,
-        "notes": ""
+        "notes": "Preheat oven to 220°C (or 200°C fan)."
       },
       {
         "id": "step-2",
         "raw_text": "Dice the sweet potato into 1.5cm cubes, place into your roasting tray, toss through a drizzle of olive oil and season with salt and pepper. Roast for 15-20 minutes or until crispy on the outside and cooked through. Add the walnuts to the roasting tray for the final 2-3 minutes of cooking time. These have already been partly roasted in our kitchen so they only need a few minutes to warm through!",
-        "label": "Dice the sweet potato into 1.5cm",
+        "label": "Dice and roast sweet potato and walnuts",
         "type": "cook",
-        "estimated_duration_minutes": 17,
+        "estimated_duration_minutes": 20,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "pot",
+          "knife",
+          "chopping board",
           "roasting tray",
-          "tray"
+          "oven"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Roast sweet potato for 15-20 minutes. Add walnuts for the final 2-3 minutes to warm through."
       },
       {
         "id": "step-3",
         "raw_text": "Pour boiling water from your kettle into your saucepan and place over a medium-high heat. Bring to the boil and once bubbling, add the quinoa . Reduce the heat to low-medium and cook until tender but al dente, around 8 minutes. Drain and set aside.",
-        "label": "Pour boiling water from your kettle",
+        "label": "Boil and cook the quinoa",
         "type": "cook",
-        "estimated_duration_minutes": 8,
+        "estimated_duration_minutes": 10,
         "requires": [
-          "step-2"
+          "step-1"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-4",
+          "step-5"
+        ],
         "equipment": [
-          "pan",
-          "saucepan"
+          "saucepan",
+          "kettle",
+          "stove",
+          "colander"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Cook quinoa for around 8 minutes until tender but al dente, then drain."
       },
       {
         "id": "step-4",
         "raw_text": "Remove any hardy stems from the cavolo nero , using your hands to strip the leaves away from the stalk. Roll the leaves up very tightly in your hands, then use a sharp knife to finely slice the leaves. Place into a large mixing bowl, add a pinch of salt and a drizzle of extra virgin olive oil (optional), then massage the cavolo nero with your hands until it softens. NB: This is a raw cavolo nero recipe, but if you're not a raw cavolo nero lover, you could boil or steam the leaves for 10 minutes or roast them in the oven for 10 minutes tossed in oil, salt and pepper to make them crispy.",
-        "label": "Remove any hardy stems from the",
-        "type": "cook",
-        "estimated_duration_minutes": 10,
-        "requires": [
-          "step-3"
+        "label": "Prep and massage the cavolo nero",
+        "type": "prep",
+        "estimated_duration_minutes": 7,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-5"
         ],
-        "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "mixing bowl",
-          "oven"
+          "knife",
+          "chopping board",
+          "mixing bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Massage with salt and olive oil until soft. Alternatively, boil, steam, or roast for 10 minutes if raw is not preferred."
       },
       {
         "id": "step-5",
         "raw_text": "Cut the apple in half, remove the core, then thinly slice.",
-        "label": "Cut the apple in half, remove",
+        "label": "Core and slice the apple",
         "type": "prep",
         "estimated_duration_minutes": 3,
-        "requires": [
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3",
           "step-4"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "chopping board"
+        ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Thinly slice the apple after removing the core."
       },
       {
         "id": "step-6",
         "raw_text": "To serve up, toss the cavolo nero , sweet potato and quinoa in half of the tahini dressing , then top with the apple slices , candied walnuts and a scattering of pomegranate seeds . Drizzle over the remaining dressing and enjoy!",
-        "label": "To serve up, toss the cavolo",
+        "label": "Assemble and dress the harvest bowls",
         "type": "finish",
-        "estimated_duration_minutes": 2,
+        "estimated_duration_minutes": 4,
         "requires": [
+          "step-2",
+          "step-3",
+          "step-4",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "pot"
+          "mixing bowl"
         ],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Toss greens, sweet potato, and quinoa with half the dressing, then top with apple, walnuts, pomegranate, and remaining dressing."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "731f4e651c11ca4cb179455f2f505548c1ff783b071d546ed3239e937eaeef22"
   },
   {
