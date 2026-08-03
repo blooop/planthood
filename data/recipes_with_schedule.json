@@ -32303,85 +32303,45 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "A nut butter-based 'ganache-style' filling, made",
-        "label": "A nut butter-based 'ganache-style' filling, made",
-        "type": "cook",
-        "duration_min": 8,
+        "raw_text": "A nut butter-based 'ganache-style' filling, made with roasted nuts, sweet dates and velvety cocoa butter",
+        "label": "Prepare the ganache-style filling",
+        "type": "prep",
+        "duration_min": 15,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 15,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Combine the roasted peanuts, dates, cocoa butter, and protein ingredients to form the ganache-style filling base.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 15
       },
       {
         "id": "step-2",
-        "raw_text": "Luxurious, plant-based and packed with protein",
-        "label": "Luxurious, plant-based and packed with protein",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 8,
-        "end_min": 16,
+        "raw_text": "all enrobed in Belgian dark chocolate.",
+        "label": "Enrobe the filling in dark chocolate",
+        "type": "finish",
+        "duration_min": 10,
+        "start_min": 15,
+        "end_min": 25,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Coat the prepared protein filling with a delicate layer of Belgian dark chocolate.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 16
-      },
-      {
-        "id": "step-3",
-        "raw_text": "Made using only the finest natural",
-        "label": "Made using only the finest natural",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 16,
-        "end_min": 24,
-        "requires": [
-          "step-2"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 24
-      },
-      {
-        "id": "step-4",
-        "raw_text": "INGREDIENTS Peanuts (27%), Organic Dark Chocolate",
-        "label": "INGREDIENTS Peanuts (27%), Organic Dark Chocolate",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 24,
-        "end_min": 32,
-        "requires": [
-          "step-3"
-        ],
-        "can_overlap_with": [],
-        "equipment": [],
-        "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 24,
-        "latest_end_min": 32
+        "latest_start_min": 15,
+        "latest_end_min": 25
       }
     ],
-    "total_time_min": 32,
-    "active_time_min": 32
+    "total_time_min": 25,
+    "active_time_min": 10
   },
   {
     "id": "wholewheat-casarecce-in-a-sweet-spicy-pumpkin-nduja-sauce-with-crispy-sage-tenderstem-broccoli",
@@ -32651,91 +32611,103 @@
       {
         "id": "step-1",
         "raw_text": "Boil your kettle, then take out a saucepan and a large frying pan or a wok. Fill your saucepan with boiling water from your kettle, place over a high heat and bring to the boil for the noodles.",
-        "label": "Boil your kettle, then take out",
-        "type": "cook",
-        "duration_min": 8,
+        "label": "Boil water in saucepan",
+        "type": "prep",
+        "duration_min": 5,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 5,
         "requires": [],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
         "equipment": [
-          "frying pan",
-          "pan",
-          "saucepan"
+          "kettle",
+          "saucepan",
+          "frying pan or wok"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Boil kettle first, then transfer to saucepan and bring to a boil over high heat.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 5
       },
       {
         "id": "step-2",
         "raw_text": "Add the udon noodles to the boiling water and cook for 5-6 minutes, or until tender but still al dente. Once cooked, drain and rinse the noodles under cold water. This helps remove excess starch and prevents them from becoming soggy. Set them aside in a colander to drain.",
-        "label": "Add the udon noodles to the",
+        "label": "Cook and drain udon noodles",
         "type": "cook",
-        "duration_min": 5,
-        "start_min": 8,
-        "end_min": 13,
+        "duration_min": 6,
+        "start_min": 5,
+        "end_min": 11,
         "requires": [
           "step-1"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "can_overlap_with": [
+          "step-3"
+        ],
+        "equipment": [
+          "saucepan",
+          "colander"
+        ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Cook for 5-6 minutes until tender but al dente. Rinse under cold water to remove excess starch.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 13
+        "latest_start_min": 5,
+        "latest_end_min": 11
       },
       {
         "id": "step-3",
         "raw_text": "Dice aubergine lengthways into ~2cm cubed pieces. Slice or quarter the chestnut mushrooms and slice the savoy cabbage ~1cm thick. Use a peeler to create carrot ribbons and thinly slice the spring onions .",
-        "label": "Dice aubergine lengthways into ~2cm cubed",
+        "label": "Prep and chop vegetables",
         "type": "prep",
-        "duration_min": 3,
-        "start_min": 13,
-        "end_min": 16,
-        "requires": [
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
           "step-2"
         ],
-        "can_overlap_with": [],
-        "equipment": [],
+        "equipment": [
+          "knife",
+          "cutting board",
+          "peeler"
+        ],
         "temperature_c": null,
-        "notes": "",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 13,
-        "latest_end_min": 16
+        "notes": "Dice aubergine to 2cm, slice cabbage 1cm thick, peel carrot ribbons, and thinly slice spring onions.",
+        "is_critical": false,
+        "slack_min": 1,
+        "latest_start_min": 1,
+        "latest_end_min": 11
       },
       {
         "id": "step-4",
         "raw_text": "Place your frying pan or wok over high heat and add a generous drizzle of neutral oil, or sesame oil if you have it, as it works well with this dish. Add the aubergine once the oil is hot and fry until soft and lightly golden on both sides, around 6-8 minutes. Then add the savoy cabbage and chestnut mushrooms and cook for a further 4-5 minutes until soft. You can add a small splash of water to help the vegetables steam and soften. Add the carrot ribbons last, along with the yaki udon sauce , and combine everything well. Finally, add the cooked and drained udon noodles. Toss everything together and cook for another minute or so over high heat to warm through the noodles. Add a splash of water or an extra drizzle of oil if it feels dry, and allow the sauce to start caramelising on the vegetables and noodles. STEP 6 To serve, divide the yaki udon between serving bowls and finish with sliced spring onions and a sprinkle of furikake seasoning . Enjoy!",
-        "label": "Place your frying pan or wok",
-        "type": "finish",
-        "duration_min": 7,
-        "start_min": 16,
-        "end_min": 23,
+        "label": "Stir-fry vegetables, noodles, and serve",
+        "type": "cook",
+        "duration_min": 14,
+        "start_min": 11,
+        "end_min": 25,
         "requires": [
+          "step-2",
           "step-3"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "bowl",
-          "frying pan",
-          "pan"
+          "frying pan or wok",
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Fry aubergine for 6-8 minutes, cabbage and mushrooms for 4-5 minutes, then toss with noodles and sauce for 1 minute. Garnish with spring onions and furikake to serve.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 23
+        "latest_start_min": 11,
+        "latest_end_min": 25
       }
     ],
-    "total_time_min": 23,
-    "active_time_min": 23
+    "total_time_min": 25,
+    "active_time_min": 25
   }
 ]
