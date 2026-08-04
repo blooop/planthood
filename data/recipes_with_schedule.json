@@ -32202,65 +32202,65 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Carefully curated with the perfect blend",
-        "label": "Carefully curated with the perfect blend",
-        "type": "cook",
-        "duration_min": 8,
+        "raw_text": "Carefully curated with the perfect blend of heavenly hazelnut butter, golden peanut butter and whole roasted golden hazelnuts",
+        "label": "Blend ingredients to form the bar base",
+        "type": "prep",
+        "duration_min": 10,
         "start_min": 0,
-        "end_min": 8,
+        "end_min": 10,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Combine the hazelnut butter, peanut butter, roasted hazelnuts, and other base ingredients from the ingredient list.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 8
+        "latest_end_min": 10
       },
       {
         "id": "step-2",
-        "raw_text": "Made using only the finest natural",
-        "label": "Made using only the finest natural",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 8,
-        "end_min": 16,
+        "raw_text": "this is the bar for you!",
+        "label": "Shape the mixture into bars",
+        "type": "finish",
+        "duration_min": 5,
+        "start_min": 10,
+        "end_min": 15,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Form the blended protein mixture into individual bar shapes.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 8,
-        "latest_end_min": 16
+        "latest_start_min": 10,
+        "latest_end_min": 15
       },
       {
         "id": "step-3",
-        "raw_text": "INGREDIENTS Hazelnuts (18%), Organic Dark Chocolate",
-        "label": "INGREDIENTS Hazelnuts (18%), Organic Dark Chocolate",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 16,
-        "end_min": 24,
+        "raw_text": "coated in a deliciously delicate layer of Belgian dark chocolate.",
+        "label": "Coat with Belgian dark chocolate",
+        "type": "finish",
+        "duration_min": 5,
+        "start_min": 15,
+        "end_min": 20,
         "requires": [
           "step-2"
         ],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": "",
+        "notes": "Apply a delicate layer of Belgian dark chocolate coating to the shaped bars.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 16,
-        "latest_end_min": 24
+        "latest_start_min": 15,
+        "latest_end_min": 20
       }
     ],
-    "total_time_min": 24,
-    "active_time_min": 24
+    "total_time_min": 20,
+    "active_time_min": 10
   },
   {
     "id": "vive-dark-chocolate-peanut-butter-jelly-protein-bar-50g",

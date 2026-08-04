@@ -26244,47 +26244,47 @@
     "steps": [
       {
         "id": "step-1",
-        "raw_text": "Carefully curated with the perfect blend",
-        "label": "Carefully curated with the perfect blend",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "Carefully curated with the perfect blend of heavenly hazelnut butter, golden peanut butter and whole roasted golden hazelnuts",
+        "label": "Blend ingredients to form the bar base",
+        "type": "prep",
+        "estimated_duration_minutes": 10,
         "requires": [],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Combine the hazelnut butter, peanut butter, roasted hazelnuts, and other base ingredients from the ingredient list."
       },
       {
         "id": "step-2",
-        "raw_text": "Made using only the finest natural",
-        "label": "Made using only the finest natural",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "this is the bar for you!",
+        "label": "Shape the mixture into bars",
+        "type": "finish",
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-1"
         ],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Form the blended protein mixture into individual bar shapes."
       },
       {
         "id": "step-3",
-        "raw_text": "INGREDIENTS Hazelnuts (18%), Organic Dark Chocolate",
-        "label": "INGREDIENTS Hazelnuts (18%), Organic Dark Chocolate",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
+        "raw_text": "coated in a deliciously delicate layer of Belgian dark chocolate.",
+        "label": "Coat with Belgian dark chocolate",
+        "type": "finish",
+        "estimated_duration_minutes": 5,
         "requires": [
           "step-2"
         ],
         "can_overlap_with": [],
         "equipment": [],
         "temperature_c": null,
-        "notes": ""
+        "notes": "Apply a delicate layer of Belgian dark chocolate coating to the shaped bars."
       }
     ],
     "cookable": true,
-    "provenance": "fallback",
+    "provenance": "llm",
     "source_hash": "a41c878f643a45f85a5641dfd9f3cf9e075b0abc394fd26fd7ceeb0f4aa76b2d"
   },
   {
