@@ -26669,5 +26669,137 @@
     "cookable": true,
     "provenance": "llm",
     "source_hash": "d4acc3e67d6a424f81e8e2a96f9f9fec2b9f71bec77e940f2013aa4c635332d5"
+  },
+  {
+    "id": "butter-bean-radiatori-red-pesto-pasta",
+    "title": "Butter Bean & Radiatori Pasta Salad With Red Pepper Pesto, Balsamic Roasted Mediterranean Vegetables & Cashew 'Burrata'",
+    "source_url": "https://planthood.co.uk/products/butter-bean-radiatori-red-pesto-pasta",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": null,
+      "protein_g": null,
+      "fat_g": null,
+      "carbs_g": null,
+      "fibre_g": null,
+      "salt_g": null
+    },
+    "schema_version": 1,
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "-",
+        "label": "Roast Mediterranean vegetables with balsamic",
+        "type": "cook",
+        "estimated_duration_minutes": 20,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "oven",
+          "baking sheet"
+        ],
+        "temperature_c": 200,
+        "notes": "Roast vegetables until tender and slightly charred, about 18-22 minutes."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "-",
+        "label": "Boil and cook radiatori pasta",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "pot",
+          "colander"
+        ],
+        "temperature_c": null,
+        "notes": "Cook pasta in salted boiling water until al dente, then drain."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "-",
+        "label": "Blend cashew burrata ingredients",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-4"
+        ],
+        "equipment": [
+          "blender"
+        ],
+        "temperature_c": null,
+        "notes": "Blend cashews with water and seasonings until smooth and creamy."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "-",
+        "label": "Combine butter beans and pesto",
+        "type": "prep",
+        "estimated_duration_minutes": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Drain the butter beans and mix thoroughly with the red pepper pesto."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "-",
+        "label": "Toss pasta, vegetables, and beans",
+        "type": "finish",
+        "estimated_duration_minutes": 4,
+        "requires": [
+          "step-1",
+          "step-2",
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Combine the cooked pasta, roasted vegetables, and pesto beans in a large bowl."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "-",
+        "label": "Plate salad and top with burrata",
+        "type": "finish",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-3",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "plates"
+        ],
+        "temperature_c": null,
+        "notes": "Divide the pasta salad onto plates and dollop with the cashew burrata."
+      }
+    ],
+    "cookable": true,
+    "provenance": "llm",
+    "source_hash": "55480cb672c75b44f6fe3fec87c56d92bfbfe3010e0c872a254781ffe53ab432"
   }
 ]

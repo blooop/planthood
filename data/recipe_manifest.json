@@ -1,7 +1,7 @@
 {
-  "total_recipes": 296,
+  "total_recipes": 297,
   "failed_recipes": 0,
-  "last_updated": "2026-08-05 05:45:23",
+  "last_updated": "2026-08-06 05:48:10",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -2072,6 +2072,13 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "butter-bean-radiatori-red-pesto-pasta",
+      "title": "Butter Bean & Radiatori Pasta Salad With Red Pepper Pesto, Balsamic Roasted Mediterranean Vegetables & Cashew 'Burrata'",
+      "url": "https://planthood.co.uk/products/butter-bean-radiatori-red-pesto-pasta",
       "scraped": true,
       "week_label": null
     }
