@@ -1844,6 +1844,173 @@
     "active_time_min": 25
   },
   {
+    "id": "butter-bean-radiatori-red-pesto-pasta",
+    "title": "Butter Bean & Radiatori Pasta Salad With Red Pepper Pesto, Balsamic Roasted Mediterranean Vegetables & Cashew 'Burrata'",
+    "source_url": "https://planthood.co.uk/products/butter-bean-radiatori-red-pesto-pasta",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": null,
+      "protein_g": null,
+      "fat_g": null,
+      "carbs_g": null,
+      "fibre_g": null,
+      "salt_g": null
+    },
+    "schema_version": 1,
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "-",
+        "label": "Roast Mediterranean vegetables with balsamic",
+        "type": "cook",
+        "duration_min": 20,
+        "start_min": 0,
+        "end_min": 20,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "oven",
+          "baking sheet"
+        ],
+        "temperature_c": 200,
+        "notes": "Roast vegetables until tender and slightly charred, about 18-22 minutes.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 20
+      },
+      {
+        "id": "step-2",
+        "raw_text": "-",
+        "label": "Boil and cook radiatori pasta",
+        "type": "cook",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "pot",
+          "colander"
+        ],
+        "temperature_c": null,
+        "notes": "Cook pasta in salted boiling water until al dente, then drain.",
+        "is_critical": false,
+        "slack_min": 10,
+        "latest_start_min": 10,
+        "latest_end_min": 20
+      },
+      {
+        "id": "step-3",
+        "raw_text": "-",
+        "label": "Blend cashew burrata ingredients",
+        "type": "prep",
+        "duration_min": 5,
+        "start_min": 0,
+        "end_min": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-4"
+        ],
+        "equipment": [
+          "blender"
+        ],
+        "temperature_c": null,
+        "notes": "Blend cashews with water and seasonings until smooth and creamy.",
+        "is_critical": false,
+        "slack_min": 19,
+        "latest_start_min": 19,
+        "latest_end_min": 24
+      },
+      {
+        "id": "step-4",
+        "raw_text": "-",
+        "label": "Combine butter beans and pesto",
+        "type": "prep",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Drain the butter beans and mix thoroughly with the red pepper pesto.",
+        "is_critical": false,
+        "slack_min": 17,
+        "latest_start_min": 17,
+        "latest_end_min": 20
+      },
+      {
+        "id": "step-5",
+        "raw_text": "-",
+        "label": "Toss pasta, vegetables, and beans",
+        "type": "finish",
+        "duration_min": 4,
+        "start_min": 20,
+        "end_min": 24,
+        "requires": [
+          "step-1",
+          "step-2",
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "large bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Combine the cooked pasta, roasted vegetables, and pesto beans in a large bowl.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 20,
+        "latest_end_min": 24
+      },
+      {
+        "id": "step-6",
+        "raw_text": "-",
+        "label": "Plate salad and top with burrata",
+        "type": "finish",
+        "duration_min": 3,
+        "start_min": 24,
+        "end_min": 27,
+        "requires": [
+          "step-3",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "plates"
+        ],
+        "temperature_c": null,
+        "notes": "Divide the pasta salad onto plates and dollop with the cashew burrata.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 24,
+        "latest_end_min": 27
+      }
+    ],
+    "total_time_min": 27,
+    "active_time_min": 13
+  },
+  {
     "id": "butterbean-caponata-with-roasted-peppers-aubergine-salsa-verde-warm-ciabatta-1",
     "title": "Butter Bean Caponata With Roasted Peppers & Aubergine, Salsa Verde & Warm Ciabatta",
     "source_url": "https://planthood.co.uk/products/butterbean-caponata-with-roasted-peppers-aubergine-salsa-verde-warm-ciabatta-1",
@@ -23695,186 +23862,6 @@
     "active_time_min": 23
   },
   {
-    "id": "smashed-falafel-tacos-with-garlic-tahini-sauce-sumac-cabbage-onion-pickle-fresh-salad-on-regenerative-wheat-tortillas-copy",
-    "title": "Souvlaki Style Tofu Bowl With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad Over Wholegrain Rice",
-    "source_url": "https://planthood.co.uk/products/smashed-falafel-tacos-with-garlic-tahini-sauce-sumac-cabbage-onion-pickle-fresh-salad-on-regenerative-wheat-tortillas-copy",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 505.0,
-      "protein_g": 26.5,
-      "fat_g": 19.0,
-      "carbs_g": 57.4,
-      "fibre_g": 6.3,
-      "salt_g": 1.5
-    },
-    "schema_version": 1,
-    "steps": [
-      {
-        "id": "step-1",
-        "raw_text": "-",
-        "label": "Cook the wholegrain rice",
-        "type": "cook",
-        "duration_min": 25,
-        "start_min": 0,
-        "end_min": 25,
-        "requires": [],
-        "can_overlap_with": [
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-5"
-        ],
-        "equipment": [
-          "pot",
-          "stove"
-        ],
-        "temperature_c": null,
-        "notes": "Simmer the rice until tender and water is absorbed.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 0,
-        "latest_end_min": 25
-      },
-      {
-        "id": "step-2",
-        "raw_text": "-",
-        "label": "Pickle sumac cabbage and onion",
-        "type": "prep",
-        "duration_min": 10,
-        "start_min": 0,
-        "end_min": 10,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-3",
-          "step-4",
-          "step-5"
-        ],
-        "equipment": [
-          "bowl",
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Thinly slice cabbage and onion, then toss with sumac and salt to pickle.",
-        "is_critical": false,
-        "slack_min": 15,
-        "latest_start_min": 15,
-        "latest_end_min": 25
-      },
-      {
-        "id": "step-3",
-        "raw_text": "-",
-        "label": "Prepare tzatziki and ezme sauce",
-        "type": "prep",
-        "duration_min": 10,
-        "start_min": 0,
-        "end_min": 10,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-4",
-          "step-5"
-        ],
-        "equipment": [
-          "bowls",
-          "grater",
-          "knife"
-        ],
-        "temperature_c": null,
-        "notes": "Mix garlic tzatziki and finely chop ingredients for the ezme chilli sauce.",
-        "is_critical": false,
-        "slack_min": 15,
-        "latest_start_min": 15,
-        "latest_end_min": 25
-      },
-      {
-        "id": "step-4",
-        "raw_text": "-",
-        "label": "Prep tofu and fresh salad",
-        "type": "prep",
-        "duration_min": 10,
-        "start_min": 0,
-        "end_min": 10,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board",
-          "bowl"
-        ],
-        "temperature_c": null,
-        "notes": "Cube the tofu and toss with souvlaki seasoning; chop fresh salad greens.",
-        "is_critical": false,
-        "slack_min": 7,
-        "latest_start_min": 7,
-        "latest_end_min": 17
-      },
-      {
-        "id": "step-5",
-        "raw_text": "-",
-        "label": "Pan-fry souvlaki style tofu",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 10,
-        "end_min": 18,
-        "requires": [
-          "step-4"
-        ],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3"
-        ],
-        "equipment": [
-          "frying pan",
-          "stove"
-        ],
-        "temperature_c": null,
-        "notes": "Cook tofu until golden brown and crispy on all sides.",
-        "is_critical": false,
-        "slack_min": 7,
-        "latest_start_min": 17,
-        "latest_end_min": 25
-      },
-      {
-        "id": "step-6",
-        "raw_text": "-",
-        "label": "Assemble tofu bowls and serve",
-        "type": "finish",
-        "duration_min": 5,
-        "start_min": 25,
-        "end_min": 30,
-        "requires": [
-          "step-1",
-          "step-2",
-          "step-3",
-          "step-5"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "serving bowls"
-        ],
-        "temperature_c": null,
-        "notes": "Layer rice, salad, pickled cabbage, and tofu; top with tzatziki and ezme.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 30
-      }
-    ],
-    "total_time_min": 30,
-    "active_time_min": 23
-  },
-  {
     "id": "smoked-tofu-chipotle-burrito-bowl-with-black-beans-avocado-charred-corn-crispy-tortillas",
     "title": "Smoked Tofu Chipotle Burrito Bowl With Black Beans, Avocado, Charred Corn & Crispy Tortillas",
     "source_url": "https://planthood.co.uk/products/smoked-tofu-chipotle-burrito-bowl-with-black-beans-avocado-charred-corn-crispy-tortillas",
@@ -32711,53 +32698,54 @@
     "active_time_min": 25
   },
   {
-    "id": "butter-bean-radiatori-red-pesto-pasta",
-    "title": "Butter Bean & Radiatori Pasta Salad With Red Pepper Pesto, Balsamic Roasted Mediterranean Vegetables & Cashew 'Burrata'",
-    "source_url": "https://planthood.co.uk/products/butter-bean-radiatori-red-pesto-pasta",
+    "id": "souvlaki-style-tofu-bowl-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-over-wholegrain-rice",
+    "title": "Souvlaki Style Tofu Bowl With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad Over Wholegrain Rice",
+    "source_url": "https://planthood.co.uk/products/souvlaki-style-tofu-bowl-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-over-wholegrain-rice",
     "week_label": null,
     "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {
-      "calories": null,
-      "protein_g": null,
-      "fat_g": null,
-      "carbs_g": null,
-      "fibre_g": null,
-      "salt_g": null
+      "calories": 505.0,
+      "protein_g": 26.5,
+      "fat_g": 19.0,
+      "carbs_g": 57.4,
+      "fibre_g": 6.3,
+      "salt_g": 1.5
     },
     "schema_version": 1,
     "steps": [
       {
         "id": "step-1",
         "raw_text": "-",
-        "label": "Roast Mediterranean vegetables with balsamic",
+        "label": "Cook the wholegrain rice",
         "type": "cook",
-        "duration_min": 20,
+        "duration_min": 25,
         "start_min": 0,
-        "end_min": 20,
+        "end_min": 25,
         "requires": [],
         "can_overlap_with": [
           "step-2",
           "step-3",
-          "step-4"
+          "step-4",
+          "step-5"
         ],
         "equipment": [
-          "oven",
-          "baking sheet"
+          "pot",
+          "stove"
         ],
-        "temperature_c": 200,
-        "notes": "Roast vegetables until tender and slightly charred, about 18-22 minutes.",
+        "temperature_c": null,
+        "notes": "Simmer the rice until tender and water is absorbed.",
         "is_critical": true,
         "slack_min": 0,
         "latest_start_min": 0,
-        "latest_end_min": 20
+        "latest_end_min": 25
       },
       {
         "id": "step-2",
         "raw_text": "-",
-        "label": "Boil and cook radiatori pasta",
-        "type": "cook",
+        "label": "Pickle sumac cabbage and onion",
+        "type": "prep",
         "duration_min": 10,
         "start_min": 0,
         "end_min": 10,
@@ -32765,51 +32753,56 @@
         "can_overlap_with": [
           "step-1",
           "step-3",
-          "step-4"
+          "step-4",
+          "step-5"
         ],
         "equipment": [
-          "pot",
-          "colander"
+          "bowl",
+          "knife",
+          "cutting board"
         ],
         "temperature_c": null,
-        "notes": "Cook pasta in salted boiling water until al dente, then drain.",
+        "notes": "Thinly slice cabbage and onion, then toss with sumac and salt to pickle.",
         "is_critical": false,
-        "slack_min": 10,
-        "latest_start_min": 10,
-        "latest_end_min": 20
+        "slack_min": 15,
+        "latest_start_min": 15,
+        "latest_end_min": 25
       },
       {
         "id": "step-3",
         "raw_text": "-",
-        "label": "Blend cashew burrata ingredients",
+        "label": "Prepare tzatziki and ezme sauce",
         "type": "prep",
-        "duration_min": 5,
+        "duration_min": 10,
         "start_min": 0,
-        "end_min": 5,
+        "end_min": 10,
         "requires": [],
         "can_overlap_with": [
           "step-1",
           "step-2",
-          "step-4"
+          "step-4",
+          "step-5"
         ],
         "equipment": [
-          "blender"
+          "bowls",
+          "grater",
+          "knife"
         ],
         "temperature_c": null,
-        "notes": "Blend cashews with water and seasonings until smooth and creamy.",
+        "notes": "Mix garlic tzatziki and finely chop ingredients for the ezme chilli sauce.",
         "is_critical": false,
-        "slack_min": 19,
-        "latest_start_min": 19,
-        "latest_end_min": 24
+        "slack_min": 15,
+        "latest_start_min": 15,
+        "latest_end_min": 25
       },
       {
         "id": "step-4",
         "raw_text": "-",
-        "label": "Combine butter beans and pesto",
+        "label": "Prep tofu and fresh salad",
         "type": "prep",
-        "duration_min": 3,
+        "duration_min": 10,
         "start_min": 0,
-        "end_min": 3,
+        "end_min": 10,
         "requires": [],
         "can_overlap_with": [
           "step-1",
@@ -32817,64 +32810,71 @@
           "step-3"
         ],
         "equipment": [
+          "knife",
+          "cutting board",
           "bowl"
         ],
         "temperature_c": null,
-        "notes": "Drain the butter beans and mix thoroughly with the red pepper pesto.",
+        "notes": "Cube the tofu and toss with souvlaki seasoning; chop fresh salad greens.",
         "is_critical": false,
-        "slack_min": 17,
-        "latest_start_min": 17,
-        "latest_end_min": 20
+        "slack_min": 7,
+        "latest_start_min": 7,
+        "latest_end_min": 17
       },
       {
         "id": "step-5",
         "raw_text": "-",
-        "label": "Toss pasta, vegetables, and beans",
-        "type": "finish",
-        "duration_min": 4,
-        "start_min": 20,
-        "end_min": 24,
+        "label": "Pan-fry souvlaki style tofu",
+        "type": "cook",
+        "duration_min": 8,
+        "start_min": 10,
+        "end_min": 18,
         "requires": [
-          "step-1",
-          "step-2",
           "step-4"
         ],
-        "can_overlap_with": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
         "equipment": [
-          "large bowl"
+          "frying pan",
+          "stove"
         ],
         "temperature_c": null,
-        "notes": "Combine the cooked pasta, roasted vegetables, and pesto beans in a large bowl.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 20,
-        "latest_end_min": 24
+        "notes": "Cook tofu until golden brown and crispy on all sides.",
+        "is_critical": false,
+        "slack_min": 7,
+        "latest_start_min": 17,
+        "latest_end_min": 25
       },
       {
         "id": "step-6",
         "raw_text": "-",
-        "label": "Plate salad and top with burrata",
+        "label": "Assemble tofu bowls and serve",
         "type": "finish",
-        "duration_min": 3,
-        "start_min": 24,
-        "end_min": 27,
+        "duration_min": 5,
+        "start_min": 25,
+        "end_min": 30,
         "requires": [
+          "step-1",
+          "step-2",
           "step-3",
           "step-5"
         ],
         "can_overlap_with": [],
         "equipment": [
-          "plates"
+          "serving bowls"
         ],
         "temperature_c": null,
-        "notes": "Divide the pasta salad onto plates and dollop with the cashew burrata.",
+        "notes": "Layer rice, salad, pickled cabbage, and tofu; top with tzatziki and ezme.",
         "is_critical": true,
         "slack_min": 0,
-        "latest_start_min": 24,
-        "latest_end_min": 27
+        "latest_start_min": 25,
+        "latest_end_min": 30
       }
     ],
-    "total_time_min": 27,
-    "active_time_min": 13
+    "total_time_min": 30,
+    "active_time_min": 23
   }
 ]

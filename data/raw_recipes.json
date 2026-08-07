@@ -306,6 +306,17 @@
     }
   },
   {
+    "id": "butter-bean-radiatori-red-pesto-pasta",
+    "title": "Butter Bean & Radiatori Pasta Salad With Red Pepper Pesto, Balsamic Roasted Mediterranean Vegetables & Cashew 'Burrata'",
+    "source_url": "https://planthood.co.uk/products/butter-bean-radiatori-red-pesto-pasta",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "method": "Butter Bean & Radiatori Pasta Salad With Red Pepper Pesto, Balsamic Roasted Mediterranean Vegetables & Cashew 'Burrata' Our delicious sun dried tomato and roasted red pepper pesto clings beautifully to our favourite radiatori pasta, made from spelt flour grown regeneratively in the UK. It's filled with with protein and fibre rich butter beans and a medley of fresh Mediterranean vegetables like courgette, cherry tomatoes and red onion, roasted in balsamic vinegar to fruity, sweet and sour perfection. Finished with dollops of our house made fermented cashew 'burrata'. Prep time 5 Total time 15 Cooking Mode:\nCooking instructions Before you start, take out all the ingredients for this recipe (see 'what’s in your box' section below). Thoroughly wash all fresh vegetables, leaves, salad ingredients and raw grains before cooking or serving. STEP 1 - STEP 2 - STEP 3 - STEP 4 - STEP 5 - STEP 6 - What’s in your box Nutritional info All nutritional values are based on a per person scale. Calories Total fat Saturated fat Salt Total carbohydrate Total sugar Fibre Protein Ingredients / Allergens Sundried tomatoes, roasted red peppers, tomato puree, soy milk ( soy beans, filtered water), nutritional yeast, garlic, extra virgin olive oil, lemon, raw organic agave nectar, basil, sea salt, chopped tomatoes, cashews ( nuts ), coconut oil, pink himalayan salt, garlic, live culture, sea salt, fresh lemon juice, organic tofu ( soy beans, water, nigari), sea salt, rapeseed oil, balsamic vinegar ( sulphites ), paprika, water, red onion, courgette, cherry tomatoes, butter beans For allergens please see ingredients in bold Our kitchen handles CELERY, SOYA, GLUTEN, TREE NUTS, PEANUTS, MUSTARD, SESAME and SULPHITES. Although we have strict allergen management procedures in place, traces of these allergens may be present.",
+    "nutrition": {}
+  },
+  {
     "id": "butterbean-caponata-with-roasted-peppers-aubergine-salsa-verde-warm-ciabatta-1",
     "title": "Butter Bean Caponata With Roasted Peppers & Aubergine, Salsa Verde & Warm Ciabatta",
     "source_url": "https://planthood.co.uk/products/butterbean-caponata-with-roasted-peppers-aubergine-salsa-verde-warm-ciabatta-1",
@@ -3942,24 +3953,6 @@
     }
   },
   {
-    "id": "smashed-falafel-tacos-with-garlic-tahini-sauce-sumac-cabbage-onion-pickle-fresh-salad-on-regenerative-wheat-tortillas-copy",
-    "title": "Souvlaki Style Tofu Bowl With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad Over Wholegrain Rice",
-    "source_url": "https://planthood.co.uk/products/smashed-falafel-tacos-with-garlic-tahini-sauce-sumac-cabbage-onion-pickle-fresh-salad-on-regenerative-wheat-tortillas-copy",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "method": "Souvlaki Style Tofu Bowl With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad Over Wholegrain Rice If you're craving fresh Mediterranean flavours and the health benefits that come with them, this is for you. Smoked tofu is marinaded in herbs and spices and roasted until juicy and meaty. Served over gut-friendly wholegrain brown rice with minty garlic tzaziki, ezme-inspired roasted red pepper chilli sauce, fresh salad and our signature sumac cabbage onion pickles. Prep time 5 Total time 15 Cooking Mode:\nCooking instructions Before you start, take out all the ingredients for this recipe (see 'what’s in your box' section below). Thoroughly wash all fresh vegetables, leaves, salad ingredients and raw grains before cooking or serving. STEP 1 - STEP 2 - STEP 3 - STEP 4 - STEP 5 - STEP 6 - What’s in your box Nutritional info All nutritional values are based on a per person scale. Calories 505kcal Total fat 19g Saturated fat 2.6g Salt 1.5g Total carbohydrate 57.4g Total sugar 10.6g Fibre 6.3g Protein 26.5g Ingredients / Allergens Organic smoked tofu (water, soya beans, nigari, sea salt), short grain brown rice, nutritional yeast, smoked paprika, garlic powder, thyme, sage, red peppers, extra virgin olive oil, rapeseed oil, tomato puree, lemon juice, gluten free low sodium soy sauce, ground cumin, ground coriander, red chilli, red onion, raw organic agave nectar, mint, organic cultured soy yoghurt (water, soya beans, selected live cultures of which bifidus and lactobacillus acidophilus), garlic, lemon, red onion, red cabbage, sumac, red wine vinegar, water, beetroot juice, raw organic cane sugar, sea salt, cucumber, cherry tomatoes, fresh parsley For allergens please see ingredients in bold Our kitchen handles CELERY, SOYA, GLUTEN, TREE NUTS, PEANUTS, MUSTARD, SESAME and SULPHITES. Although we have strict allergen management procedures in place, traces of these allergens may be present.",
-    "nutrition": {
-      "calories": 505.0,
-      "protein_g": 26.5,
-      "fat_g": 19.0,
-      "carbs_g": 57.4,
-      "fibre_g": 6.3,
-      "salt_g": 1.5
-    }
-  },
-  {
     "id": "smoked-tofu-chipotle-burrito-bowl-with-black-beans-avocado-charred-corn-crispy-tortillas",
     "title": "Smoked Tofu Chipotle Burrito Bowl With Black Beans, Avocado, Charred Corn & Crispy Tortillas",
     "source_url": "https://planthood.co.uk/products/smoked-tofu-chipotle-burrito-bowl-with-black-beans-avocado-charred-corn-crispy-tortillas",
@@ -5269,14 +5262,21 @@
     }
   },
   {
-    "id": "butter-bean-radiatori-red-pesto-pasta",
-    "title": "Butter Bean & Radiatori Pasta Salad With Red Pepper Pesto, Balsamic Roasted Mediterranean Vegetables & Cashew 'Burrata'",
-    "source_url": "https://planthood.co.uk/products/butter-bean-radiatori-red-pesto-pasta",
+    "id": "souvlaki-style-tofu-bowl-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-over-wholegrain-rice",
+    "title": "Souvlaki Style Tofu Bowl With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad Over Wholegrain Rice",
+    "source_url": "https://planthood.co.uk/products/souvlaki-style-tofu-bowl-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-over-wholegrain-rice",
     "week_label": null,
     "weeks": [],
     "category": null,
     "ingredients": [],
-    "method": "Butter Bean & Radiatori Pasta Salad With Red Pepper Pesto, Balsamic Roasted Mediterranean Vegetables & Cashew 'Burrata' Our delicious sun dried tomato and roasted red pepper pesto clings beautifully to our favourite radiatori pasta, made from spelt flour grown regeneratively in the UK. It's filled with with protein and fibre rich butter beans and a medley of fresh Mediterranean vegetables like courgette, cherry tomatoes and red onion, roasted in balsamic vinegar to fruity, sweet and sour perfection. Finished with dollops of our house made fermented cashew 'burrata'. Prep time 5 Total time 15 Cooking Mode:\nCooking instructions Before you start, take out all the ingredients for this recipe (see 'what’s in your box' section below). Thoroughly wash all fresh vegetables, leaves, salad ingredients and raw grains before cooking or serving. STEP 1 - STEP 2 - STEP 3 - STEP 4 - STEP 5 - STEP 6 - What’s in your box Nutritional info All nutritional values are based on a per person scale. Calories Total fat Saturated fat Salt Total carbohydrate Total sugar Fibre Protein Ingredients / Allergens Sundried tomatoes, roasted red peppers, tomato puree, soy milk ( soy beans, filtered water), nutritional yeast, garlic, extra virgin olive oil, lemon, raw organic agave nectar, basil, sea salt, chopped tomatoes, cashews ( nuts ), coconut oil, pink himalayan salt, garlic, live culture, sea salt, fresh lemon juice, organic tofu ( soy beans, water, nigari), sea salt, rapeseed oil, balsamic vinegar ( sulphites ), paprika, water, red onion, courgette, cherry tomatoes, butter beans For allergens please see ingredients in bold Our kitchen handles CELERY, SOYA, GLUTEN, TREE NUTS, PEANUTS, MUSTARD, SESAME and SULPHITES. Although we have strict allergen management procedures in place, traces of these allergens may be present.",
-    "nutrition": {}
+    "method": "Souvlaki Style Tofu Bowl With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad Over Wholegrain Rice If you're craving fresh Mediterranean flavours and the health benefits that come with them, this is for you. Smoked tofu is marinaded in herbs and spices and roasted until juicy and meaty. Served over gut-friendly wholegrain brown rice with minty garlic tzaziki, ezme-inspired roasted red pepper chilli sauce, fresh salad and our signature sumac cabbage onion pickles. Prep time 5 Total time 15 Cooking Mode:\nCooking instructions Before you start, take out all the ingredients for this recipe (see 'what’s in your box' section below). Thoroughly wash all fresh vegetables, leaves, salad ingredients and raw grains before cooking or serving. STEP 1 - STEP 2 - STEP 3 - STEP 4 - STEP 5 - STEP 6 - What’s in your box Nutritional info All nutritional values are based on a per person scale. Calories 505kcal Total fat 19g Saturated fat 2.6g Salt 1.5g Total carbohydrate 57.4g Total sugar 10.6g Fibre 6.3g Protein 26.5g Ingredients / Allergens Organic smoked tofu (water, soya beans, nigari, sea salt), short grain brown rice, nutritional yeast, smoked paprika, garlic powder, thyme, sage, red peppers, extra virgin olive oil, rapeseed oil, tomato puree, lemon juice, gluten free low sodium soy sauce, ground cumin, ground coriander, red chilli, red onion, raw organic agave nectar, mint, organic cultured soy yoghurt (water, soya beans, selected live cultures of which bifidus and lactobacillus acidophilus), garlic, lemon, red onion, red cabbage, sumac, red wine vinegar, water, beetroot juice, raw organic cane sugar, sea salt, cucumber, cherry tomatoes, fresh parsley For allergens please see ingredients in bold Our kitchen handles CELERY, SOYA, GLUTEN, TREE NUTS, PEANUTS, MUSTARD, SESAME and SULPHITES. Although we have strict allergen management procedures in place, traces of these allergens may be present.",
+    "nutrition": {
+      "calories": 505.0,
+      "protein_g": 26.5,
+      "fat_g": 19.0,
+      "carbs_g": 57.4,
+      "fibre_g": 6.3,
+      "salt_g": 1.5
+    }
   }
 ]

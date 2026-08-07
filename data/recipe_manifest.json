@@ -1,7 +1,7 @@
 {
   "total_recipes": 297,
   "failed_recipes": 0,
-  "last_updated": "2026-08-06 05:48:10",
+  "last_updated": "2026-08-07 04:53:57",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -119,6 +119,13 @@
       "id": "burnt-lemon-mustard-butter-beans-spelt-coonchiglietti",
       "title": "Burnt Lemon & Mustard Butter Beans With Regenerative Spelt Conchigliette, Confit Cherry Tomatoes, Cavolo Nero & Dill",
       "url": "https://planthood.co.uk/products/burnt-lemon-mustard-butter-beans-spelt-coonchiglietti",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "butter-bean-radiatori-red-pesto-pasta",
+      "title": "Butter Bean & Radiatori Pasta Salad With Red Pepper Pesto, Balsamic Roasted Mediterranean Vegetables & Cashew 'Burrata'",
+      "url": "https://planthood.co.uk/products/butter-bean-radiatori-red-pesto-pasta",
       "scraped": true,
       "week_label": null
     },
@@ -1537,13 +1544,6 @@
       "week_label": null
     },
     {
-      "id": "smashed-falafel-tacos-with-garlic-tahini-sauce-sumac-cabbage-onion-pickle-fresh-salad-on-regenerative-wheat-tortillas-copy",
-      "title": "Souvlaki Style Tofu Bowl With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad Over Wholegrain Rice",
-      "url": "https://planthood.co.uk/products/smashed-falafel-tacos-with-garlic-tahini-sauce-sumac-cabbage-onion-pickle-fresh-salad-on-regenerative-wheat-tortillas-copy",
-      "scraped": true,
-      "week_label": null
-    },
-    {
       "id": "smoked-tofu-chipotle-burrito-bowl-with-black-beans-avocado-charred-corn-crispy-tortillas",
       "title": "Smoked Tofu Chipotle Burrito Bowl With Black Beans, Avocado, Charred Corn & Crispy Tortillas",
       "url": "https://planthood.co.uk/products/smoked-tofu-chipotle-burrito-bowl-with-black-beans-avocado-charred-corn-crispy-tortillas",
@@ -2076,9 +2076,9 @@
       "week_label": null
     },
     {
-      "id": "butter-bean-radiatori-red-pesto-pasta",
-      "title": "Butter Bean & Radiatori Pasta Salad With Red Pepper Pesto, Balsamic Roasted Mediterranean Vegetables & Cashew 'Burrata'",
-      "url": "https://planthood.co.uk/products/butter-bean-radiatori-red-pesto-pasta",
+      "id": "souvlaki-style-tofu-bowl-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-over-wholegrain-rice",
+      "title": "Souvlaki Style Tofu Bowl With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad Over Wholegrain Rice",
+      "url": "https://planthood.co.uk/products/souvlaki-style-tofu-bowl-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-over-wholegrain-rice",
       "scraped": true,
       "week_label": null
     }
