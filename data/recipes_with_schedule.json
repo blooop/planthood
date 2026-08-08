@@ -24725,6 +24725,186 @@
     "active_time_min": 0
   },
   {
+    "id": "souvlaki-style-tofu-bowl-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-over-wholegrain-rice",
+    "title": "Souvlaki Style Tofu Bowl With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad Over Wholegrain Rice",
+    "source_url": "https://planthood.co.uk/products/souvlaki-style-tofu-bowl-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-over-wholegrain-rice",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 505.0,
+      "protein_g": 26.5,
+      "fat_g": 19.0,
+      "carbs_g": 57.4,
+      "fibre_g": 6.3,
+      "salt_g": 1.5
+    },
+    "schema_version": 1,
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "-",
+        "label": "Cook the wholegrain rice",
+        "type": "cook",
+        "duration_min": 25,
+        "start_min": 0,
+        "end_min": 25,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "pot",
+          "stove"
+        ],
+        "temperature_c": null,
+        "notes": "Simmer the rice until tender and water is absorbed.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 25
+      },
+      {
+        "id": "step-2",
+        "raw_text": "-",
+        "label": "Pickle sumac cabbage and onion",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "bowl",
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Thinly slice cabbage and onion, then toss with sumac and salt to pickle.",
+        "is_critical": false,
+        "slack_min": 15,
+        "latest_start_min": 15,
+        "latest_end_min": 25
+      },
+      {
+        "id": "step-3",
+        "raw_text": "-",
+        "label": "Prepare tzatziki and ezme sauce",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-4",
+          "step-5"
+        ],
+        "equipment": [
+          "bowls",
+          "grater",
+          "knife"
+        ],
+        "temperature_c": null,
+        "notes": "Mix garlic tzatziki and finely chop ingredients for the ezme chilli sauce.",
+        "is_critical": false,
+        "slack_min": 15,
+        "latest_start_min": 15,
+        "latest_end_min": 25
+      },
+      {
+        "id": "step-4",
+        "raw_text": "-",
+        "label": "Prep tofu and fresh salad",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board",
+          "bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Cube the tofu and toss with souvlaki seasoning; chop fresh salad greens.",
+        "is_critical": false,
+        "slack_min": 7,
+        "latest_start_min": 7,
+        "latest_end_min": 17
+      },
+      {
+        "id": "step-5",
+        "raw_text": "-",
+        "label": "Pan-fry souvlaki style tofu",
+        "type": "cook",
+        "duration_min": 8,
+        "start_min": 10,
+        "end_min": 18,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [
+          "step-1",
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "frying pan",
+          "stove"
+        ],
+        "temperature_c": null,
+        "notes": "Cook tofu until golden brown and crispy on all sides.",
+        "is_critical": false,
+        "slack_min": 7,
+        "latest_start_min": 17,
+        "latest_end_min": 25
+      },
+      {
+        "id": "step-6",
+        "raw_text": "-",
+        "label": "Assemble tofu bowls and serve",
+        "type": "finish",
+        "duration_min": 5,
+        "start_min": 25,
+        "end_min": 30,
+        "requires": [
+          "step-1",
+          "step-2",
+          "step-3",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Layer rice, salad, pickled cabbage, and tofu; top with tzatziki and ezme.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 25,
+        "latest_end_min": 30
+      }
+    ],
+    "total_time_min": 30,
+    "active_time_min": 23
+  },
+  {
     "id": "souvlaki-style-tofu-wrap-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
     "title": "Souvlaki Style Tofu Wrap With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad In Soft Flatbread",
     "source_url": "https://planthood.co.uk/products/souvlaki-style-tofu-wrap-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
@@ -32698,183 +32878,24 @@
     "active_time_min": 25
   },
   {
-    "id": "souvlaki-style-tofu-bowl-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-over-wholegrain-rice",
-    "title": "Souvlaki Style Tofu Bowl With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad Over Wholegrain Rice",
-    "source_url": "https://planthood.co.uk/products/souvlaki-style-tofu-bowl-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-over-wholegrain-rice",
+    "id": "momo-organic-zerbinatis-watermelon-kombucha-330ml",
+    "title": "Momo Organic Watermelon Kombucha 330ml",
+    "source_url": "https://planthood.co.uk/products/momo-organic-zerbinatis-watermelon-kombucha-330ml",
     "week_label": null,
     "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {
-      "calories": 505.0,
-      "protein_g": 26.5,
-      "fat_g": 19.0,
-      "carbs_g": 57.4,
-      "fibre_g": 6.3,
-      "salt_g": 1.5
+      "calories": null,
+      "protein_g": null,
+      "fat_g": null,
+      "carbs_g": null,
+      "fibre_g": null,
+      "salt_g": null
     },
     "schema_version": 1,
-    "steps": [
-      {
-        "id": "step-1",
-        "raw_text": "-",
-        "label": "Cook the wholegrain rice",
-        "type": "cook",
-        "duration_min": 25,
-        "start_min": 0,
-        "end_min": 25,
-        "requires": [],
-        "can_overlap_with": [
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-5"
-        ],
-        "equipment": [
-          "pot",
-          "stove"
-        ],
-        "temperature_c": null,
-        "notes": "Simmer the rice until tender and water is absorbed.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 0,
-        "latest_end_min": 25
-      },
-      {
-        "id": "step-2",
-        "raw_text": "-",
-        "label": "Pickle sumac cabbage and onion",
-        "type": "prep",
-        "duration_min": 10,
-        "start_min": 0,
-        "end_min": 10,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-3",
-          "step-4",
-          "step-5"
-        ],
-        "equipment": [
-          "bowl",
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Thinly slice cabbage and onion, then toss with sumac and salt to pickle.",
-        "is_critical": false,
-        "slack_min": 15,
-        "latest_start_min": 15,
-        "latest_end_min": 25
-      },
-      {
-        "id": "step-3",
-        "raw_text": "-",
-        "label": "Prepare tzatziki and ezme sauce",
-        "type": "prep",
-        "duration_min": 10,
-        "start_min": 0,
-        "end_min": 10,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-4",
-          "step-5"
-        ],
-        "equipment": [
-          "bowls",
-          "grater",
-          "knife"
-        ],
-        "temperature_c": null,
-        "notes": "Mix garlic tzatziki and finely chop ingredients for the ezme chilli sauce.",
-        "is_critical": false,
-        "slack_min": 15,
-        "latest_start_min": 15,
-        "latest_end_min": 25
-      },
-      {
-        "id": "step-4",
-        "raw_text": "-",
-        "label": "Prep tofu and fresh salad",
-        "type": "prep",
-        "duration_min": 10,
-        "start_min": 0,
-        "end_min": 10,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board",
-          "bowl"
-        ],
-        "temperature_c": null,
-        "notes": "Cube the tofu and toss with souvlaki seasoning; chop fresh salad greens.",
-        "is_critical": false,
-        "slack_min": 7,
-        "latest_start_min": 7,
-        "latest_end_min": 17
-      },
-      {
-        "id": "step-5",
-        "raw_text": "-",
-        "label": "Pan-fry souvlaki style tofu",
-        "type": "cook",
-        "duration_min": 8,
-        "start_min": 10,
-        "end_min": 18,
-        "requires": [
-          "step-4"
-        ],
-        "can_overlap_with": [
-          "step-1",
-          "step-2",
-          "step-3"
-        ],
-        "equipment": [
-          "frying pan",
-          "stove"
-        ],
-        "temperature_c": null,
-        "notes": "Cook tofu until golden brown and crispy on all sides.",
-        "is_critical": false,
-        "slack_min": 7,
-        "latest_start_min": 17,
-        "latest_end_min": 25
-      },
-      {
-        "id": "step-6",
-        "raw_text": "-",
-        "label": "Assemble tofu bowls and serve",
-        "type": "finish",
-        "duration_min": 5,
-        "start_min": 25,
-        "end_min": 30,
-        "requires": [
-          "step-1",
-          "step-2",
-          "step-3",
-          "step-5"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "serving bowls"
-        ],
-        "temperature_c": null,
-        "notes": "Layer rice, salad, pickled cabbage, and tofu; top with tzatziki and ezme.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 25,
-        "latest_end_min": 30
-      }
-    ],
-    "total_time_min": 30,
-    "active_time_min": 23
+    "steps": [],
+    "total_time_min": 0,
+    "active_time_min": 0
   }
 ]

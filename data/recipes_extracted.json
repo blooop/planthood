@@ -9471,6 +9471,61 @@
     "notes": "No cooking instructions found (non-cookable)."
   },
   {
+    "id": "souvlaki-style-tofu-bowl-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-over-wholegrain-rice",
+    "title": "Souvlaki Style Tofu Bowl With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad Over Wholegrain Rice",
+    "source_url": "https://planthood.co.uk/products/souvlaki-style-tofu-bowl-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-over-wholegrain-rice",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 505.0,
+      "protein_g": 26.5,
+      "fat_g": 19.0,
+      "carbs_g": 57.4,
+      "fibre_g": 6.3,
+      "salt_g": 1.5
+    },
+    "schema_version": 1,
+    "method_clean": "STEP 1 - STEP 2 - STEP 3 - STEP 4 - STEP 5 - STEP 6 -",
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "-",
+        "marker": 1
+      },
+      {
+        "id": "step-2",
+        "text": "-",
+        "marker": 2
+      },
+      {
+        "id": "step-3",
+        "text": "-",
+        "marker": 3
+      },
+      {
+        "id": "step-4",
+        "text": "-",
+        "marker": 4
+      },
+      {
+        "id": "step-5",
+        "text": "-",
+        "marker": 5
+      },
+      {
+        "id": "step-6",
+        "text": "-",
+        "marker": 6
+      }
+    ],
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "needs_llm_segmentation": false,
+    "notes": ""
+  },
+  {
     "id": "souvlaki-style-tofu-wrap-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
     "title": "Souvlaki Style Tofu Wrap With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad In Soft Flatbread",
     "source_url": "https://planthood.co.uk/products/souvlaki-style-tofu-wrap-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
@@ -12401,58 +12456,27 @@
     "notes": ""
   },
   {
-    "id": "souvlaki-style-tofu-bowl-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-over-wholegrain-rice",
-    "title": "Souvlaki Style Tofu Bowl With Creamy Garlic Tzaziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad Over Wholegrain Rice",
-    "source_url": "https://planthood.co.uk/products/souvlaki-style-tofu-bowl-with-creamy-garlic-tzaziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-over-wholegrain-rice",
+    "id": "momo-organic-zerbinatis-watermelon-kombucha-330ml",
+    "title": "Momo Organic Watermelon Kombucha 330ml",
+    "source_url": "https://planthood.co.uk/products/momo-organic-zerbinatis-watermelon-kombucha-330ml",
     "week_label": null,
     "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {
-      "calories": 505.0,
-      "protein_g": 26.5,
-      "fat_g": 19.0,
-      "carbs_g": 57.4,
-      "fibre_g": 6.3,
-      "salt_g": 1.5
+      "calories": null,
+      "protein_g": null,
+      "fat_g": null,
+      "carbs_g": null,
+      "fibre_g": null,
+      "salt_g": null
     },
     "schema_version": 1,
-    "method_clean": "STEP 1 - STEP 2 - STEP 3 - STEP 4 - STEP 5 - STEP 6 -",
-    "steps": [
-      {
-        "id": "step-1",
-        "text": "-",
-        "marker": 1
-      },
-      {
-        "id": "step-2",
-        "text": "-",
-        "marker": 2
-      },
-      {
-        "id": "step-3",
-        "text": "-",
-        "marker": 3
-      },
-      {
-        "id": "step-4",
-        "text": "-",
-        "marker": 4
-      },
-      {
-        "id": "step-5",
-        "text": "-",
-        "marker": 5
-      },
-      {
-        "id": "step-6",
-        "text": "-",
-        "marker": 6
-      }
-    ],
-    "cookable": true,
-    "extraction_method": "step_markers",
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
     "needs_llm_segmentation": false,
-    "notes": ""
+    "notes": "No cooking instructions found (non-cookable)."
   }
 ]
