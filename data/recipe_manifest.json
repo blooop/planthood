@@ -1,7 +1,7 @@
 {
   "total_recipes": 298,
   "failed_recipes": 0,
-  "last_updated": "2026-08-08 04:10:13",
+  "last_updated": "2026-08-09 04:17:05",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -1145,6 +1145,13 @@
       "week_label": null
     },
     {
+      "id": "momo-organic-zerbinatis-watermelon-kombucha-330ml",
+      "title": "Momo Organic Watermelon Kombucha 330ml",
+      "url": "https://planthood.co.uk/products/momo-organic-zerbinatis-watermelon-kombucha-330ml",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme",
       "title": "Mushroom Birria Tacos With Melted House Queso, Onion Salsa & Rich Dipping Consommé",
       "url": "https://planthood.co.uk/products/mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme",
@@ -2079,13 +2086,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "momo-organic-zerbinatis-watermelon-kombucha-330ml",
-      "title": "Momo Organic Watermelon Kombucha 330ml",
-      "url": "https://planthood.co.uk/products/momo-organic-zerbinatis-watermelon-kombucha-330ml",
       "scraped": true,
       "week_label": null
     }
