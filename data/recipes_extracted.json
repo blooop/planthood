@@ -12478,5 +12478,108 @@
     "extraction_method": "step_markers",
     "needs_llm_segmentation": false,
     "notes": ""
+  },
+  {
+    "id": "aubergine-ricotta-involtini-over-tomato-braised-chickpeas-with-baked-mozzarella-topping",
+    "title": "Aubergine & 'Ricotta' Involtini Over Tomato Braised Chickpeas With Baked 'Mozzarella' Topping",
+    "source_url": "https://planthood.co.uk/products/aubergine-ricotta-involtini-over-tomato-braised-chickpeas-with-baked-mozzarella-topping",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 840.0,
+      "protein_g": 45.7,
+      "fat_g": 29.5,
+      "carbs_g": 76.0,
+      "fibre_g": 36.2,
+      "salt_g": 3.5
+    },
+    "schema_version": 1,
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
+    "needs_llm_segmentation": false,
+    "notes": "No cooking instructions found (non-cookable)."
+  },
+  {
+    "id": "cherry-matcha-oat-pot-200g",
+    "title": "Cherry Matcha Oat Pot (200g)",
+    "source_url": "https://planthood.co.uk/products/cherry-matcha-oat-pot-200g",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 438.0,
+      "protein_g": 11.4,
+      "fat_g": 23.9,
+      "carbs_g": 40.4,
+      "fibre_g": 8.5,
+      "salt_g": 0.3
+    },
+    "schema_version": 1,
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
+    "needs_llm_segmentation": false,
+    "notes": "No cooking instructions found (non-cookable)."
+  },
+  {
+    "id": "kofte-curry-with-coconut-lime-cream-fresh-coriander-over-fluffy-wholegrain-basmati-rice",
+    "title": "25 Plant Kofte Curry With Fresh Spinach, Coconut Lime Cream & Fresh Coriander Over Fluffy Basmati Rice",
+    "source_url": "https://planthood.co.uk/products/kofte-curry-with-coconut-lime-cream-fresh-coriander-over-fluffy-wholegrain-basmati-rice",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 649.0,
+      "protein_g": 28.3,
+      "fat_g": 23.4,
+      "carbs_g": 80.2,
+      "fibre_g": 9.0,
+      "salt_g": 1.48
+    },
+    "schema_version": 1,
+    "method_clean": "STEP 1 - STEP 2 - STEP 3 - STEP 4 - STEP 5 - STEP 6 -",
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "-",
+        "marker": 1
+      },
+      {
+        "id": "step-2",
+        "text": "-",
+        "marker": 2
+      },
+      {
+        "id": "step-3",
+        "text": "-",
+        "marker": 3
+      },
+      {
+        "id": "step-4",
+        "text": "-",
+        "marker": 4
+      },
+      {
+        "id": "step-5",
+        "text": "-",
+        "marker": 5
+      },
+      {
+        "id": "step-6",
+        "text": "-",
+        "marker": 6
+      }
+    ],
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "needs_llm_segmentation": false,
+    "notes": ""
   }
 ]
