@@ -694,6 +694,28 @@
     "source_hash": "03ce0b5c3596d1d084e776fe1c0398d118f4e83ae35b5cb8f4f553fa06ebe008"
   },
   {
+    "id": "aubergine-ricotta-involtini-over-tomato-braised-chickpeas-with-baked-mozzarella-topping",
+    "title": "Aubergine & 'Ricotta' Involtini Over Tomato Braised Chickpeas With Baked 'Mozzarella' Topping",
+    "source_url": "https://planthood.co.uk/products/aubergine-ricotta-involtini-over-tomato-braised-chickpeas-with-baked-mozzarella-topping",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 840.0,
+      "protein_g": 45.7,
+      "fat_g": 29.5,
+      "carbs_g": 76.0,
+      "fibre_g": 36.2,
+      "salt_g": 3.5
+    },
+    "schema_version": 1,
+    "steps": [],
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
+  },
+  {
     "id": "aubergine-unagi-donburi-bowl-with-edamame-sweet-cucumber-pickle-spring-onion-sesame-seeds",
     "title": "Aubergine 'Unagi' Donburi Bowl With Edamame, Sweet Cucumber Pickle, Spring Onion & Sesame Seeds",
     "source_url": "https://planthood.co.uk/products/aubergine-unagi-donburi-bowl-with-edamame-sweet-cucumber-pickle-spring-onion-sesame-seeds",
@@ -3707,6 +3729,28 @@
     "cookable": true,
     "provenance": "llm",
     "source_hash": "7d9f13cbc7a8324dacac13c7e143f89f8a1c8fec46dc9d9c6fac20e175481695"
+  },
+  {
+    "id": "cherry-matcha-oat-pot-200g",
+    "title": "Cherry Matcha Oat Pot (200g)",
+    "source_url": "https://planthood.co.uk/products/cherry-matcha-oat-pot-200g",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 438.0,
+      "protein_g": 11.4,
+      "fat_g": 23.9,
+      "carbs_g": 40.4,
+      "fibre_g": 8.5,
+      "salt_g": 0.3
+    },
+    "schema_version": 1,
+    "steps": [],
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "chickpea-tuna-sushi-bowl-with-crunchy-sesame-slaw-creamy-avocado-zingy-ginger-soy-dressing",
@@ -12520,6 +12564,134 @@
     "cookable": true,
     "provenance": "llm",
     "source_hash": "89e1b04f188824acb7e7f810a92a42311cf82aaa7387474c4ec91c87a6f34b4b"
+  },
+  {
+    "id": "kofte-curry-with-coconut-lime-cream-fresh-coriander-over-fluffy-wholegrain-basmati-rice",
+    "title": "25 Plant Kofte Curry With Fresh Spinach, Coconut Lime Cream & Fresh Coriander Over Fluffy Basmati Rice",
+    "source_url": "https://planthood.co.uk/products/kofte-curry-with-coconut-lime-cream-fresh-coriander-over-fluffy-wholegrain-basmati-rice",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 649.0,
+      "protein_g": 28.3,
+      "fat_g": 23.4,
+      "carbs_g": 80.2,
+      "fibre_g": 9.0,
+      "salt_g": 1.48
+    },
+    "schema_version": 1,
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "-",
+        "label": "Cook the Basmati rice",
+        "type": "cook",
+        "estimated_duration_minutes": 15,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "saucepan",
+          "lid"
+        ],
+        "temperature_c": null,
+        "notes": "Rinse rice before cooking; simmer covered until water is absorbed."
+      },
+      {
+        "id": "step-2",
+        "raw_text": "-",
+        "label": "Prep aromatics and herbs",
+        "type": "prep",
+        "estimated_duration_minutes": 5,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board"
+        ],
+        "temperature_c": null,
+        "notes": "Chop onions, garlic, ginger, and coriander; wash spinach."
+      },
+      {
+        "id": "step-3",
+        "raw_text": "-",
+        "label": "Sear the plant kofte",
+        "type": "cook",
+        "estimated_duration_minutes": 8,
+        "requires": [
+          "step-2"
+        ],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Brown the kofte on all sides in a hot pan with oil."
+      },
+      {
+        "id": "step-4",
+        "raw_text": "-",
+        "label": "Cook the curry sauce",
+        "type": "cook",
+        "estimated_duration_minutes": 10,
+        "requires": [
+          "step-3"
+        ],
+        "can_overlap_with": [
+          "step-1"
+        ],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Sauté aromatics, add spices, coconut cream, and lime juice; simmer."
+      },
+      {
+        "id": "step-5",
+        "raw_text": "-",
+        "label": "Wilt spinach into curry",
+        "type": "cook",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-4"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Add spinach and kofte back to the sauce until spinach is wilted."
+      },
+      {
+        "id": "step-6",
+        "raw_text": "-",
+        "label": "Plate curry and garnish",
+        "type": "finish",
+        "estimated_duration_minutes": 3,
+        "requires": [
+          "step-1",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving plates"
+        ],
+        "temperature_c": null,
+        "notes": "Serve curry over fluffy rice, drizzle with coconut lime cream, and garnish with fresh coriander."
+      }
+    ],
+    "cookable": true,
+    "provenance": "llm",
+    "source_hash": "55480cb672c75b44f6fe3fec87c56d92bfbfe3010e0c872a254781ffe53ab432"
   },
   {
     "id": "lahmacun-flatbread-with-meaty-spiced-tofu-crumble-tomato-cucumber-sumac-pickled-onion-garlic-yoghurt",
@@ -26823,177 +26995,5 @@
     "cookable": true,
     "provenance": "llm",
     "source_hash": "d4acc3e67d6a424f81e8e2a96f9f9fec2b9f71bec77e940f2013aa4c635332d5"
-  },
-  {
-    "id": "aubergine-ricotta-involtini-over-tomato-braised-chickpeas-with-baked-mozzarella-topping",
-    "title": "Aubergine & 'Ricotta' Involtini Over Tomato Braised Chickpeas With Baked 'Mozzarella' Topping",
-    "source_url": "https://planthood.co.uk/products/aubergine-ricotta-involtini-over-tomato-braised-chickpeas-with-baked-mozzarella-topping",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 840.0,
-      "protein_g": 45.7,
-      "fat_g": 29.5,
-      "carbs_g": 76.0,
-      "fibre_g": 36.2,
-      "salt_g": 3.5
-    },
-    "schema_version": 1,
-    "steps": [],
-    "cookable": false,
-    "provenance": "none",
-    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
-  },
-  {
-    "id": "cherry-matcha-oat-pot-200g",
-    "title": "Cherry Matcha Oat Pot (200g)",
-    "source_url": "https://planthood.co.uk/products/cherry-matcha-oat-pot-200g",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 438.0,
-      "protein_g": 11.4,
-      "fat_g": 23.9,
-      "carbs_g": 40.4,
-      "fibre_g": 8.5,
-      "salt_g": 0.3
-    },
-    "schema_version": 1,
-    "steps": [],
-    "cookable": false,
-    "provenance": "none",
-    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
-  },
-  {
-    "id": "kofte-curry-with-coconut-lime-cream-fresh-coriander-over-fluffy-wholegrain-basmati-rice",
-    "title": "25 Plant Kofte Curry With Fresh Spinach, Coconut Lime Cream & Fresh Coriander Over Fluffy Basmati Rice",
-    "source_url": "https://planthood.co.uk/products/kofte-curry-with-coconut-lime-cream-fresh-coriander-over-fluffy-wholegrain-basmati-rice",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 649.0,
-      "protein_g": 28.3,
-      "fat_g": 23.4,
-      "carbs_g": 80.2,
-      "fibre_g": 9.0,
-      "salt_g": 1.48
-    },
-    "schema_version": 1,
-    "steps": [
-      {
-        "id": "step-1",
-        "raw_text": "-",
-        "label": "Cook the Basmati rice",
-        "type": "cook",
-        "estimated_duration_minutes": 15,
-        "requires": [],
-        "can_overlap_with": [
-          "step-2",
-          "step-3",
-          "step-4"
-        ],
-        "equipment": [
-          "saucepan",
-          "lid"
-        ],
-        "temperature_c": null,
-        "notes": "Rinse rice before cooking; simmer covered until water is absorbed."
-      },
-      {
-        "id": "step-2",
-        "raw_text": "-",
-        "label": "Prep aromatics and herbs",
-        "type": "prep",
-        "estimated_duration_minutes": 5,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board"
-        ],
-        "temperature_c": null,
-        "notes": "Chop onions, garlic, ginger, and coriander; wash spinach."
-      },
-      {
-        "id": "step-3",
-        "raw_text": "-",
-        "label": "Sear the plant kofte",
-        "type": "cook",
-        "estimated_duration_minutes": 8,
-        "requires": [
-          "step-2"
-        ],
-        "can_overlap_with": [
-          "step-1"
-        ],
-        "equipment": [
-          "frying pan"
-        ],
-        "temperature_c": null,
-        "notes": "Brown the kofte on all sides in a hot pan with oil."
-      },
-      {
-        "id": "step-4",
-        "raw_text": "-",
-        "label": "Cook the curry sauce",
-        "type": "cook",
-        "estimated_duration_minutes": 10,
-        "requires": [
-          "step-3"
-        ],
-        "can_overlap_with": [
-          "step-1"
-        ],
-        "equipment": [
-          "frying pan"
-        ],
-        "temperature_c": null,
-        "notes": "Sauté aromatics, add spices, coconut cream, and lime juice; simmer."
-      },
-      {
-        "id": "step-5",
-        "raw_text": "-",
-        "label": "Wilt spinach into curry",
-        "type": "cook",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-4"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "frying pan"
-        ],
-        "temperature_c": null,
-        "notes": "Add spinach and kofte back to the sauce until spinach is wilted."
-      },
-      {
-        "id": "step-6",
-        "raw_text": "-",
-        "label": "Plate curry and garnish",
-        "type": "finish",
-        "estimated_duration_minutes": 3,
-        "requires": [
-          "step-1",
-          "step-5"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "serving plates"
-        ],
-        "temperature_c": null,
-        "notes": "Serve curry over fluffy rice, drizzle with coconut lime cream, and garnish with fresh coriander."
-      }
-    ],
-    "cookable": true,
-    "provenance": "llm",
-    "source_hash": "55480cb672c75b44f6fe3fec87c56d92bfbfe3010e0c872a254781ffe53ab432"
   }
 ]

@@ -1,7 +1,7 @@
 {
   "total_recipes": 301,
   "failed_recipes": 0,
-  "last_updated": "2026-08-14 04:47:13",
+  "last_updated": "2026-08-15 03:37:27",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -56,6 +56,13 @@
       "id": "aubergine-parm-sandwich-with-tomato-marinara-vegan-pesto-on-soft-vegan-brioche",
       "title": "Aubergine Parmigiana Sandwich With Pesto Mayo & Rich Tomato Reduction On Soft Vegan Brioche",
       "url": "https://planthood.co.uk/products/aubergine-parm-sandwich-with-tomato-marinara-vegan-pesto-on-soft-vegan-brioche",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "aubergine-ricotta-involtini-over-tomato-braised-chickpeas-with-baked-mozzarella-topping",
+      "title": "Aubergine & 'Ricotta' Involtini Over Tomato Braised Chickpeas With Baked 'Mozzarella' Topping",
+      "url": "https://planthood.co.uk/products/aubergine-ricotta-involtini-over-tomato-braised-chickpeas-with-baked-mozzarella-topping",
       "scraped": true,
       "week_label": null
     },
@@ -273,6 +280,13 @@
       "id": "cheats-aubergine-lentil-parmigiana-with-creamy-miso-bechamel-seasonal-salad-tossed-in-vinaigrette",
       "title": "Cheats Aubergine & Lentil Parmigiana With Creamy Miso Bechamel & Seasonal Salad Tossed In Vinaigrette",
       "url": "https://planthood.co.uk/products/cheats-aubergine-lentil-parmigiana-with-creamy-miso-bechamel-seasonal-salad-tossed-in-vinaigrette",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "cherry-matcha-oat-pot-200g",
+      "title": "Cherry Matcha Oat Pot (200g)",
+      "url": "https://planthood.co.uk/products/cherry-matcha-oat-pot-200g",
       "scraped": true,
       "week_label": null
     },
@@ -966,6 +980,13 @@
       "id": "kimchi-stir-fried-noodles-with-crumbled-tempeh-baby-spinach-spring-onions-sesame-gochugaru-crunch",
       "title": "Kimchi Stir Fried Noodles With Crispy Tempeh Mince, Cabbage, Carrot, Spring Onions & Sesame Gochugaru Crunch",
       "url": "https://planthood.co.uk/products/kimchi-stir-fried-noodles-with-crumbled-tempeh-baby-spinach-spring-onions-sesame-gochugaru-crunch",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "kofte-curry-with-coconut-lime-cream-fresh-coriander-over-fluffy-wholegrain-basmati-rice",
+      "title": "25 Plant Kofte Curry With Fresh Spinach, Coconut Lime Cream & Fresh Coriander Over Fluffy Basmati Rice",
+      "url": "https://planthood.co.uk/products/kofte-curry-with-coconut-lime-cream-fresh-coriander-over-fluffy-wholegrain-basmati-rice",
       "scraped": true,
       "week_label": null
     },
@@ -2086,27 +2107,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "aubergine-ricotta-involtini-over-tomato-braised-chickpeas-with-baked-mozzarella-topping",
-      "title": "Aubergine & 'Ricotta' Involtini Over Tomato Braised Chickpeas With Baked 'Mozzarella' Topping",
-      "url": "https://planthood.co.uk/products/aubergine-ricotta-involtini-over-tomato-braised-chickpeas-with-baked-mozzarella-topping",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "cherry-matcha-oat-pot-200g",
-      "title": "Cherry Matcha Oat Pot (200g)",
-      "url": "https://planthood.co.uk/products/cherry-matcha-oat-pot-200g",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "kofte-curry-with-coconut-lime-cream-fresh-coriander-over-fluffy-wholegrain-basmati-rice",
-      "title": "25 Plant Kofte Curry With Fresh Spinach, Coconut Lime Cream & Fresh Coriander Over Fluffy Basmati Rice",
-      "url": "https://planthood.co.uk/products/kofte-curry-with-coconut-lime-cream-fresh-coriander-over-fluffy-wholegrain-basmati-rice",
       "scraped": true,
       "week_label": null
     }

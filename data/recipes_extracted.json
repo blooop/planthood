@@ -322,6 +322,30 @@
     "notes": "No STEP markers; sentence-split pending LLM segmentation."
   },
   {
+    "id": "aubergine-ricotta-involtini-over-tomato-braised-chickpeas-with-baked-mozzarella-topping",
+    "title": "Aubergine & 'Ricotta' Involtini Over Tomato Braised Chickpeas With Baked 'Mozzarella' Topping",
+    "source_url": "https://planthood.co.uk/products/aubergine-ricotta-involtini-over-tomato-braised-chickpeas-with-baked-mozzarella-topping",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 840.0,
+      "protein_g": 45.7,
+      "fat_g": 29.5,
+      "carbs_g": 76.0,
+      "fibre_g": 36.2,
+      "salt_g": 3.5
+    },
+    "schema_version": 1,
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
+    "needs_llm_segmentation": false,
+    "notes": "No cooking instructions found (non-cookable)."
+  },
+  {
     "id": "aubergine-unagi-donburi-bowl-with-edamame-sweet-cucumber-pickle-spring-onion-sesame-seeds",
     "title": "Aubergine 'Unagi' Donburi Bowl With Edamame, Sweet Cucumber Pickle, Spring Onion & Sesame Seeds",
     "source_url": "https://planthood.co.uk/products/aubergine-unagi-donburi-bowl-with-edamame-sweet-cucumber-pickle-spring-onion-sesame-seeds",
@@ -1668,6 +1692,30 @@
     "extraction_method": "step_markers",
     "needs_llm_segmentation": false,
     "notes": ""
+  },
+  {
+    "id": "cherry-matcha-oat-pot-200g",
+    "title": "Cherry Matcha Oat Pot (200g)",
+    "source_url": "https://planthood.co.uk/products/cherry-matcha-oat-pot-200g",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 438.0,
+      "protein_g": 11.4,
+      "fat_g": 23.9,
+      "carbs_g": 40.4,
+      "fibre_g": 8.5,
+      "salt_g": 0.3
+    },
+    "schema_version": 1,
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
+    "needs_llm_segmentation": false,
+    "notes": "No cooking instructions found (non-cookable)."
   },
   {
     "id": "chickpea-tuna-sushi-bowl-with-crunchy-sesame-slaw-creamy-avocado-zingy-ginger-soy-dressing",
@@ -5787,6 +5835,61 @@
         "id": "step-5",
         "text": "To serve, divide the noodles between plates. Top with the crispy tempeh , some kimchi and the spring onion greens. Finish with a sprinkle of the sesa me gochugaru crunch . Enjoy!",
         "marker": 5
+      }
+    ],
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "needs_llm_segmentation": false,
+    "notes": ""
+  },
+  {
+    "id": "kofte-curry-with-coconut-lime-cream-fresh-coriander-over-fluffy-wholegrain-basmati-rice",
+    "title": "25 Plant Kofte Curry With Fresh Spinach, Coconut Lime Cream & Fresh Coriander Over Fluffy Basmati Rice",
+    "source_url": "https://planthood.co.uk/products/kofte-curry-with-coconut-lime-cream-fresh-coriander-over-fluffy-wholegrain-basmati-rice",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 649.0,
+      "protein_g": 28.3,
+      "fat_g": 23.4,
+      "carbs_g": 80.2,
+      "fibre_g": 9.0,
+      "salt_g": 1.48
+    },
+    "schema_version": 1,
+    "method_clean": "STEP 1 - STEP 2 - STEP 3 - STEP 4 - STEP 5 - STEP 6 -",
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "-",
+        "marker": 1
+      },
+      {
+        "id": "step-2",
+        "text": "-",
+        "marker": 2
+      },
+      {
+        "id": "step-3",
+        "text": "-",
+        "marker": 3
+      },
+      {
+        "id": "step-4",
+        "text": "-",
+        "marker": 4
+      },
+      {
+        "id": "step-5",
+        "text": "-",
+        "marker": 5
+      },
+      {
+        "id": "step-6",
+        "text": "-",
+        "marker": 6
       }
     ],
     "cookable": true,
@@ -12472,109 +12575,6 @@
         "id": "step-4",
         "text": "Place your frying pan or wok over high heat and add a generous drizzle of neutral oil, or sesame oil if you have it, as it works well with this dish. Add the aubergine once the oil is hot and fry until soft and lightly golden on both sides, around 6-8 minutes. Then add the savoy cabbage and chestnut mushrooms and cook for a further 4-5 minutes until soft. You can add a small splash of water to help the vegetables steam and soften. Add the carrot ribbons last, along with the yaki udon sauce , and combine everything well. Finally, add the cooked and drained udon noodles. Toss everything together and cook for another minute or so over high heat to warm through the noodles. Add a splash of water or an extra drizzle of oil if it feels dry, and allow the sauce to start caramelising on the vegetables and noodles. STEP 6 To serve, divide the yaki udon between serving bowls and finish with sliced spring onions and a sprinkle of furikake seasoning . Enjoy!",
         "marker": 4
-      }
-    ],
-    "cookable": true,
-    "extraction_method": "step_markers",
-    "needs_llm_segmentation": false,
-    "notes": ""
-  },
-  {
-    "id": "aubergine-ricotta-involtini-over-tomato-braised-chickpeas-with-baked-mozzarella-topping",
-    "title": "Aubergine & 'Ricotta' Involtini Over Tomato Braised Chickpeas With Baked 'Mozzarella' Topping",
-    "source_url": "https://planthood.co.uk/products/aubergine-ricotta-involtini-over-tomato-braised-chickpeas-with-baked-mozzarella-topping",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 840.0,
-      "protein_g": 45.7,
-      "fat_g": 29.5,
-      "carbs_g": 76.0,
-      "fibre_g": 36.2,
-      "salt_g": 3.5
-    },
-    "schema_version": 1,
-    "method_clean": "",
-    "steps": [],
-    "cookable": false,
-    "extraction_method": "none",
-    "needs_llm_segmentation": false,
-    "notes": "No cooking instructions found (non-cookable)."
-  },
-  {
-    "id": "cherry-matcha-oat-pot-200g",
-    "title": "Cherry Matcha Oat Pot (200g)",
-    "source_url": "https://planthood.co.uk/products/cherry-matcha-oat-pot-200g",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 438.0,
-      "protein_g": 11.4,
-      "fat_g": 23.9,
-      "carbs_g": 40.4,
-      "fibre_g": 8.5,
-      "salt_g": 0.3
-    },
-    "schema_version": 1,
-    "method_clean": "",
-    "steps": [],
-    "cookable": false,
-    "extraction_method": "none",
-    "needs_llm_segmentation": false,
-    "notes": "No cooking instructions found (non-cookable)."
-  },
-  {
-    "id": "kofte-curry-with-coconut-lime-cream-fresh-coriander-over-fluffy-wholegrain-basmati-rice",
-    "title": "25 Plant Kofte Curry With Fresh Spinach, Coconut Lime Cream & Fresh Coriander Over Fluffy Basmati Rice",
-    "source_url": "https://planthood.co.uk/products/kofte-curry-with-coconut-lime-cream-fresh-coriander-over-fluffy-wholegrain-basmati-rice",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 649.0,
-      "protein_g": 28.3,
-      "fat_g": 23.4,
-      "carbs_g": 80.2,
-      "fibre_g": 9.0,
-      "salt_g": 1.48
-    },
-    "schema_version": 1,
-    "method_clean": "STEP 1 - STEP 2 - STEP 3 - STEP 4 - STEP 5 - STEP 6 -",
-    "steps": [
-      {
-        "id": "step-1",
-        "text": "-",
-        "marker": 1
-      },
-      {
-        "id": "step-2",
-        "text": "-",
-        "marker": 2
-      },
-      {
-        "id": "step-3",
-        "text": "-",
-        "marker": 3
-      },
-      {
-        "id": "step-4",
-        "text": "-",
-        "marker": 4
-      },
-      {
-        "id": "step-5",
-        "text": "-",
-        "marker": 5
-      },
-      {
-        "id": "step-6",
-        "text": "-",
-        "marker": 6
       }
     ],
     "cookable": true,
