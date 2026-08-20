@@ -1,7 +1,7 @@
 {
   "total_recipes": 301,
   "failed_recipes": 0,
-  "last_updated": "2026-08-19 03:45:10",
+  "last_updated": "2026-08-20 03:45:06",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -1635,6 +1635,13 @@
       "week_label": null
     },
     {
+      "id": "souvlaki-style-tofu-wrap-with-creamy-garlic-tzatziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
+      "title": "Souvlaki Style Tofu Wrap With Creamy Garlic Tzatziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad In Soft Flatbread",
+      "url": "https://planthood.co.uk/products/souvlaki-style-tofu-wrap-with-creamy-garlic-tzatziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "spiced-aubergine-saffron-yoghurt",
       "title": "Middle Eastern Spiced Aubergine With Bulgar, Saffron Yoghurt, Toasted Almonds & Pomegranate",
       "url": "https://planthood.co.uk/products/spiced-aubergine-saffron-yoghurt",
@@ -2100,13 +2107,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "souvlaki-style-tofu-wrap-with-creamy-garlic-tzatziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
-      "title": "Souvlaki Style Tofu Wrap With Creamy Garlic Tzatziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad In Soft Flatbread",
-      "url": "https://planthood.co.uk/products/souvlaki-style-tofu-wrap-with-creamy-garlic-tzatziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
       "scraped": true,
       "week_label": null
     }

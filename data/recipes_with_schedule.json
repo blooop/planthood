@@ -25131,6 +25131,174 @@
     "active_time_min": 23
   },
   {
+    "id": "souvlaki-style-tofu-wrap-with-creamy-garlic-tzatziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
+    "title": "Souvlaki Style Tofu Wrap With Creamy Garlic Tzatziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad In Soft Flatbread",
+    "source_url": "https://planthood.co.uk/products/souvlaki-style-tofu-wrap-with-creamy-garlic-tzatziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 523.0,
+      "protein_g": 27.6,
+      "fat_g": 21.9,
+      "carbs_g": 54.6,
+      "fibre_g": 6.0,
+      "salt_g": 1.5
+    },
+    "schema_version": 1,
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "-",
+        "label": "Prep tofu and pickle ingredients",
+        "type": "prep",
+        "duration_min": 10,
+        "start_min": 0,
+        "end_min": 10,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "knife",
+          "cutting board",
+          "mixing bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Press the tofu to remove excess moisture, then cube it. Thinly slice the cabbage and onion for the pickle.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 10
+      },
+      {
+        "id": "step-2",
+        "raw_text": "-",
+        "label": "Make sumac pickle and tzatziki",
+        "type": "prep",
+        "duration_min": 8,
+        "start_min": 10,
+        "end_min": 18,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "mixing bowls",
+          "grater",
+          "spoon"
+        ],
+        "temperature_c": null,
+        "notes": "Toss cabbage and onion with sumac and lemon juice. Grate cucumber, squeeze out water, and mix with garlic and yogurt.",
+        "is_critical": false,
+        "slack_min": 4,
+        "latest_start_min": 14,
+        "latest_end_min": 22
+      },
+      {
+        "id": "step-3",
+        "raw_text": "-",
+        "label": "Prepare ezme sauce and salad",
+        "type": "prep",
+        "duration_min": 8,
+        "start_min": 0,
+        "end_min": 8,
+        "requires": [],
+        "can_overlap_with": [
+          "step-1",
+          "step-2"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board",
+          "small bowl"
+        ],
+        "temperature_c": null,
+        "notes": "Finely mince tomatoes, peppers, herbs, and spices for the ezme chilli sauce. Chop fresh salad greens.",
+        "is_critical": false,
+        "slack_min": 14,
+        "latest_start_min": 14,
+        "latest_end_min": 22
+      },
+      {
+        "id": "step-4",
+        "raw_text": "-",
+        "label": "Cook souvlaki tofu",
+        "type": "cook",
+        "duration_min": 12,
+        "start_min": 10,
+        "end_min": 22,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2",
+          "step-3"
+        ],
+        "equipment": [
+          "frying pan",
+          "spatula"
+        ],
+        "temperature_c": null,
+        "notes": "Fry the tofu cubes with souvlaki seasoning in a hot pan until golden brown and crispy on all sides.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 10,
+        "latest_end_min": 22
+      },
+      {
+        "id": "step-5",
+        "raw_text": "-",
+        "label": "Warm the flatbreads",
+        "type": "cook",
+        "duration_min": 3,
+        "start_min": 0,
+        "end_min": 3,
+        "requires": [],
+        "can_overlap_with": [
+          "step-2",
+          "step-3",
+          "step-4"
+        ],
+        "equipment": [
+          "clean frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Warm each flatbread briefly in a dry pan to make them soft and pliable for wrapping.",
+        "is_critical": false,
+        "slack_min": 19,
+        "latest_start_min": 19,
+        "latest_end_min": 22
+      },
+      {
+        "id": "step-6",
+        "raw_text": "-",
+        "label": "Assemble and serve wraps",
+        "type": "finish",
+        "duration_min": 5,
+        "start_min": 22,
+        "end_min": 27,
+        "requires": [
+          "step-2",
+          "step-3",
+          "step-4",
+          "step-5"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "serving plate"
+        ],
+        "temperature_c": null,
+        "notes": "Spread tzatziki and ezme on flatbreads, layer with salad, cooked tofu, and sumac pickle, then roll tightly.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 22,
+        "latest_end_min": 27
+      }
+    ],
+    "total_time_min": 27,
+    "active_time_min": 27
+  },
+  {
     "id": "spiced-aubergine-saffron-yoghurt",
     "title": "Middle Eastern Spiced Aubergine With Bulgar, Saffron Yoghurt, Toasted Almonds & Pomegranate",
     "source_url": "https://planthood.co.uk/products/spiced-aubergine-saffron-yoghurt",
@@ -32928,173 +33096,5 @@
     ],
     "total_time_min": 25,
     "active_time_min": 25
-  },
-  {
-    "id": "souvlaki-style-tofu-wrap-with-creamy-garlic-tzatziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
-    "title": "Souvlaki Style Tofu Wrap With Creamy Garlic Tzatziki, Ezme Chilli Sauce, Sumac Cabbage Onion Pickle & Fresh Salad In Soft Flatbread",
-    "source_url": "https://planthood.co.uk/products/souvlaki-style-tofu-wrap-with-creamy-garlic-tzatziki-ezme-chilli-sauce-sumac-cabbage-onion-pickle-fresh-salad-in-soft-flatbread",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 523.0,
-      "protein_g": 27.6,
-      "fat_g": 21.9,
-      "carbs_g": 54.6,
-      "fibre_g": 6.0,
-      "salt_g": 1.5
-    },
-    "schema_version": 1,
-    "steps": [
-      {
-        "id": "step-1",
-        "raw_text": "-",
-        "label": "Prep tofu and pickle ingredients",
-        "type": "prep",
-        "duration_min": 10,
-        "start_min": 0,
-        "end_min": 10,
-        "requires": [],
-        "can_overlap_with": [],
-        "equipment": [
-          "knife",
-          "cutting board",
-          "mixing bowl"
-        ],
-        "temperature_c": null,
-        "notes": "Press the tofu to remove excess moisture, then cube it. Thinly slice the cabbage and onion for the pickle.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 0,
-        "latest_end_min": 10
-      },
-      {
-        "id": "step-2",
-        "raw_text": "-",
-        "label": "Make sumac pickle and tzatziki",
-        "type": "prep",
-        "duration_min": 8,
-        "start_min": 10,
-        "end_min": 18,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "mixing bowls",
-          "grater",
-          "spoon"
-        ],
-        "temperature_c": null,
-        "notes": "Toss cabbage and onion with sumac and lemon juice. Grate cucumber, squeeze out water, and mix with garlic and yogurt.",
-        "is_critical": false,
-        "slack_min": 4,
-        "latest_start_min": 14,
-        "latest_end_min": 22
-      },
-      {
-        "id": "step-3",
-        "raw_text": "-",
-        "label": "Prepare ezme sauce and salad",
-        "type": "prep",
-        "duration_min": 8,
-        "start_min": 0,
-        "end_min": 8,
-        "requires": [],
-        "can_overlap_with": [
-          "step-1",
-          "step-2"
-        ],
-        "equipment": [
-          "knife",
-          "cutting board",
-          "small bowl"
-        ],
-        "temperature_c": null,
-        "notes": "Finely mince tomatoes, peppers, herbs, and spices for the ezme chilli sauce. Chop fresh salad greens.",
-        "is_critical": false,
-        "slack_min": 14,
-        "latest_start_min": 14,
-        "latest_end_min": 22
-      },
-      {
-        "id": "step-4",
-        "raw_text": "-",
-        "label": "Cook souvlaki tofu",
-        "type": "cook",
-        "duration_min": 12,
-        "start_min": 10,
-        "end_min": 22,
-        "requires": [
-          "step-1"
-        ],
-        "can_overlap_with": [
-          "step-2",
-          "step-3"
-        ],
-        "equipment": [
-          "frying pan",
-          "spatula"
-        ],
-        "temperature_c": null,
-        "notes": "Fry the tofu cubes with souvlaki seasoning in a hot pan until golden brown and crispy on all sides.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 10,
-        "latest_end_min": 22
-      },
-      {
-        "id": "step-5",
-        "raw_text": "-",
-        "label": "Warm the flatbreads",
-        "type": "cook",
-        "duration_min": 3,
-        "start_min": 0,
-        "end_min": 3,
-        "requires": [],
-        "can_overlap_with": [
-          "step-2",
-          "step-3",
-          "step-4"
-        ],
-        "equipment": [
-          "clean frying pan"
-        ],
-        "temperature_c": null,
-        "notes": "Warm each flatbread briefly in a dry pan to make them soft and pliable for wrapping.",
-        "is_critical": false,
-        "slack_min": 19,
-        "latest_start_min": 19,
-        "latest_end_min": 22
-      },
-      {
-        "id": "step-6",
-        "raw_text": "-",
-        "label": "Assemble and serve wraps",
-        "type": "finish",
-        "duration_min": 5,
-        "start_min": 22,
-        "end_min": 27,
-        "requires": [
-          "step-2",
-          "step-3",
-          "step-4",
-          "step-5"
-        ],
-        "can_overlap_with": [],
-        "equipment": [
-          "serving plate"
-        ],
-        "temperature_c": null,
-        "notes": "Spread tzatziki and ezme on flatbreads, layer with salad, cooked tofu, and sumac pickle, then roll tightly.",
-        "is_critical": true,
-        "slack_min": 0,
-        "latest_start_min": 22,
-        "latest_end_min": 27
-      }
-    ],
-    "total_time_min": 27,
-    "active_time_min": 27
   }
 ]
