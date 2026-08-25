@@ -33096,5 +33096,26 @@
     ],
     "total_time_min": 25,
     "active_time_min": 25
+  },
+  {
+    "id": "creamy-spicy-ramen-with-udon-noodles-teriyaki-glazed-shiitake-mushrooms-edamame-pak-choi-sesame",
+    "title": "Creamy Spicy Ramen With Udon Noodles, Teriyaki Glazed Shiitake Mushrooms, Edamame, Pak Choi & Sesame",
+    "source_url": "https://planthood.co.uk/products/creamy-spicy-ramen-with-udon-noodles-teriyaki-glazed-shiitake-mushrooms-edamame-pak-choi-sesame",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 626.0,
+      "protein_g": 29.1,
+      "fat_g": 17.6,
+      "carbs_g": 88.2,
+      "fibre_g": 11.2,
+      "salt_g": 4.7
+    },
+    "schema_version": 1,
+    "steps": [],
+    "total_time_min": 0,
+    "active_time_min": 0
   }
 ]

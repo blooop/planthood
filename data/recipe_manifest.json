@@ -1,7 +1,7 @@
 {
-  "total_recipes": 301,
+  "total_recipes": 302,
   "failed_recipes": 0,
-  "last_updated": "2026-08-24 03:53:21",
+  "last_updated": "2026-08-25 03:47:59",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -2107,6 +2107,13 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "creamy-spicy-ramen-with-udon-noodles-teriyaki-glazed-shiitake-mushrooms-edamame-pak-choi-sesame",
+      "title": "Creamy Spicy Ramen With Udon Noodles, Teriyaki Glazed Shiitake Mushrooms, Edamame, Pak Choi & Sesame",
+      "url": "https://planthood.co.uk/products/creamy-spicy-ramen-with-udon-noodles-teriyaki-glazed-shiitake-mushrooms-edamame-pak-choi-sesame",
       "scraped": true,
       "week_label": null
     }
