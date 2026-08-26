@@ -5887,6 +5887,28 @@
     "source_hash": "e7930a526cf8e2d51ddf0b4adfade5104cf60061760e8da1a80b1c649713b9bc"
   },
   {
+    "id": "creamy-spicy-ramen-with-udon-noodles-teriyaki-glazed-shiitake-mushrooms-edamame-pak-choi-sesame",
+    "title": "Creamy Spicy Ramen With Udon Noodles, Teriyaki Glazed Shiitake Mushrooms, Edamame, Pak Choi & Sesame",
+    "source_url": "https://planthood.co.uk/products/creamy-spicy-ramen-with-udon-noodles-teriyaki-glazed-shiitake-mushrooms-edamame-pak-choi-sesame",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 626.0,
+      "protein_g": 29.1,
+      "fat_g": 17.6,
+      "carbs_g": 88.2,
+      "fibre_g": 11.2,
+      "salt_g": 4.7
+    },
+    "schema_version": 1,
+    "steps": [],
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
+  },
+  {
     "id": "creamy-squash-bucatini-with-wilted-cavolo-nero-crispy-tempeh-pancetta",
     "title": "High Protein Creamy Squash Bucatini With Wilted Cavolo Nero & Crispy Tempeh 'Pancetta'",
     "source_url": "https://planthood.co.uk/products/creamy-squash-bucatini-with-wilted-cavolo-nero-crispy-tempeh-pancetta",
@@ -26989,27 +27011,5 @@
     "cookable": true,
     "provenance": "llm",
     "source_hash": "d4acc3e67d6a424f81e8e2a96f9f9fec2b9f71bec77e940f2013aa4c635332d5"
-  },
-  {
-    "id": "creamy-spicy-ramen-with-udon-noodles-teriyaki-glazed-shiitake-mushrooms-edamame-pak-choi-sesame",
-    "title": "Creamy Spicy Ramen With Udon Noodles, Teriyaki Glazed Shiitake Mushrooms, Edamame, Pak Choi & Sesame",
-    "source_url": "https://planthood.co.uk/products/creamy-spicy-ramen-with-udon-noodles-teriyaki-glazed-shiitake-mushrooms-edamame-pak-choi-sesame",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 626.0,
-      "protein_g": 29.1,
-      "fat_g": 17.6,
-      "carbs_g": 88.2,
-      "fibre_g": 11.2,
-      "salt_g": 4.7
-    },
-    "schema_version": 1,
-    "steps": [],
-    "cookable": false,
-    "provenance": "none",
-    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   }
 ]
