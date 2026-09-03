@@ -1,7 +1,7 @@
 {
-  "total_recipes": 302,
+  "total_recipes": 303,
   "failed_recipes": 0,
-  "last_updated": "2026-09-02 07:39:33",
+  "last_updated": "2026-09-03 07:48:49",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -2114,6 +2114,13 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "girolle-mushroom-tagliatelli-with-creamy-roasted-garlic-miso-sauce-cavolo-nero-toasted-pine-nuts",
+      "title": "Girolle Mushroom Tagliatelli With Creamy Roasted Garlic & Miso Sauce, Cavolo Nero, Fresh Parsley & Toasted Pine Nuts",
+      "url": "https://planthood.co.uk/products/girolle-mushroom-tagliatelli-with-creamy-roasted-garlic-miso-sauce-cavolo-nero-toasted-pine-nuts",
       "scraped": true,
       "week_label": null
     }
