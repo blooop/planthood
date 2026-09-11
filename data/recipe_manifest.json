@@ -1,7 +1,7 @@
 {
-  "total_recipes": 303,
+  "total_recipes": 305,
   "failed_recipes": 0,
-  "last_updated": "2026-09-10 07:53:36",
+  "last_updated": "2026-09-11 07:49:19",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -2121,6 +2121,20 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "bold-bean-queen-butter-bean-carbonara-with-conchiglie-smoked-tofu-guanciale-courgettes-fresh-parsley",
+      "title": "Bold Bean Queen Butter Bean Carbonara With Conchiglie, Smoked Tofu Guanciale, Courgettes & Fresh Parsley",
+      "url": "https://planthood.co.uk/products/bold-bean-queen-butter-bean-carbonara-with-conchiglie-smoked-tofu-guanciale-courgettes-fresh-parsley",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "butter-bean-french-onion-soup-with-cashew-truffle-cheese-croutons-bistrot-style-dressed-salad",
+      "title": "Butter Bean French Onion Soup, With Cashew Truffle Cheese Croutons & Bistrot-Style Dressed Salad",
+      "url": "https://planthood.co.uk/products/butter-bean-french-onion-soup-with-cashew-truffle-cheese-croutons-bistrot-style-dressed-salad",
       "scraped": true,
       "week_label": null
     }
