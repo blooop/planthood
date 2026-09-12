@@ -252,6 +252,24 @@
     }
   },
   {
+    "id": "bold-bean-queen-butter-bean-carbonara-with-conchiglie-smoked-tofu-guanciale-courgettes-fresh-parsley",
+    "title": "Bold Bean Queen Butter Bean Carbonara With Conchiglie, Smoked Tofu Guanciale, Courgettes & Fresh Parsley",
+    "source_url": "https://planthood.co.uk/products/bold-bean-queen-butter-bean-carbonara-with-conchiglie-smoked-tofu-guanciale-courgettes-fresh-parsley",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "method": "Bold Bean Queen Butter Bean Carbonara With Conchiglie, Smoked Tofu Guanciale, Courgettes & Fresh Parsley Tender Bold Bean Co Queen Butter Beans simmered in a silky carbonara sauce, topped with our all natural whole food plant-based spin on guanciale, using smoked tofu, finely diced and sauteed until crispy in a sweet and smoky marinade. Served with conchiglie rigate pasta, courgettes and finished with fresh parsley to round everything off. This meal includes premium ingredients and comes with a one-off additional charge. For existing subscribers, this will be added on top of your usual subscription rate for one week only. For new customers, the surcharge will be included in your first order total only. Prep time 5 Total time 15 Cooking Mode:\nCooking instructions Before you start, take out all the ingredients for this recipe (see 'what’s in your box' section below). Thoroughly wash all fresh vegetables, leaves, salad ingredients and raw grains before cooking or serving. STEP 1 STEP 2 STEP 3 STEP 4 STEP 5 What’s in your box Nutritional info All nutritional values are based on a per person scale. Calories 759kcal Total fat 23.1g Saturated fat 2.9g Salt 4.2g Total carbohydrate 79.6g Total sugar 8.1g Fibre 24.2g Protein 48.7g Ingredients / Allergens Organic silken tofu ( soy beans, nigari, water), soya drink ( soy beans, water), nutritional yeas, miso ( soya beans), garlic, ground onion, lemon, dijon mustard , extra virgin olive oil, black pepper, black salt (kala namak), sea salt, aleppo chilli, rapeseed oil, gluten free low sodium soy sauce, raw organic agave nectar, smoked paprika, parsley, conchiglie rigate pasta (durum wheat semolina ( gluten ), water), butter beans, courgette, smoked tofu ( soya beans, nigari, water) For allergens please see ingredients in bold Our kitchen handles CELERY, SOYA, GLUTEN, TREE NUTS, PEANUTS, MUSTARD, SESAME and SULPHITES. Although we have strict allergen management procedures in place, traces of these allergens may be present.",
+    "nutrition": {
+      "calories": 759.0,
+      "protein_g": 48.7,
+      "fat_g": 23.1,
+      "carbs_g": 79.6,
+      "fibre_g": 24.2,
+      "salt_g": 4.2
+    }
+  },
+  {
     "id": "brothy-giant-cous-cous-bowl-with-smokey-tempeh-chorizo-braised-cavolo-nero",
     "title": "Brothy Giant Couscous Bowl With Smokey Tempeh 'Chorizo', Cavolo Nero & Fresh Coriander",
     "source_url": "https://planthood.co.uk/products/brothy-giant-cous-cous-bowl-with-smokey-tempeh-chorizo-braised-cavolo-nero",
@@ -321,6 +339,24 @@
       "carbs_g": 69.8,
       "fibre_g": 12.9,
       "salt_g": 1.53
+    }
+  },
+  {
+    "id": "butter-bean-french-onion-soup-with-cashew-truffle-cheese-croutons-bistrot-style-dressed-salad",
+    "title": "Butter Bean French Onion Soup, With Cashew Truffle Cheese Croutons & Bistrot-Style Dressed Salad",
+    "source_url": "https://planthood.co.uk/products/butter-bean-french-onion-soup-with-cashew-truffle-cheese-croutons-bistrot-style-dressed-salad",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "method": "Butter Bean French Onion Soup, With Cashew Truffle Cheese Croutons & Bistrot-Style Dressed Salad Our brand new bistrot-style French onion soup gets rich flavour from slow-cooking caramelised onions and enriching them in a savoury broth with miso and wine. At home you'll fill the broth with tender butter beans for extra protein and fibre, then bake it in the oven with ciabatta croutons topped with our home made cashew truffle cheese. Served with a mixed salad tossed in French vinaigrette to cut through those rich, comforting flavours. Prep time 3 Total time 15 Cooking Mode:\nCooking instructions Before you start, take out all the ingredients for this recipe (see 'what’s in your box' section below). Thoroughly wash all fresh vegetables, leaves, salad ingredients and raw grains before cooking or serving. STEP 1 STEP 2 STEP 3 STEP 4 STEP 5 STEP 6 STEP 7 What’s in your box Nutritional info All nutritional values are based on a per person scale. Calories 551kcal Total fat 21.9g Saturated fat 7g Salt 2.7g Total carbohydrate 66.2g Total sugar 14.8g Fibre 11.6g Protein 19.6g Ingredients / Allergens Onion, garlic, leek, white wine, miso ( soy beans), dijon mustard , water, nutritional yeast, thyme, extra virgin olive oil, coconut oil, raw organic agave nectar, onion powder, sea salt, black pepper, gluten free low sodium soy sauce, balsamic vinegar, soya drink ( soya beans, water), cashews ( nuts ), miso ( soya ), lemon, tapioca flour, garlic powder, truffle, butter beans, organic ciabatta (wheat flour ( gluten ), calcium carbonate, iron, niacin, thiamine, olive oil, salt, yeast), mixed salad, red wine vinegar, wholegrain mustard , water, marmite (yeast extract ( barley , wheat , oats , rye ), salt, vegetable juice concentrate, vitamins (thiamin, riboflavin, niacin, vitamin B12 and folic acid), natural flavouring ( celery ) For allergens, please see ingredients in bold Please be advised that we handle the following allergens in our kitchen: CELERY, SOYA, GLUTEN, NUTS, PEANUTS, MUSTARD, SESAME SEEDS, SULPHITES",
+    "nutrition": {
+      "calories": 551.0,
+      "protein_g": 19.6,
+      "fat_g": 21.9,
+      "carbs_g": 66.2,
+      "fibre_g": 11.6,
+      "salt_g": 2.7
     }
   },
   {
@@ -5371,42 +5407,6 @@
       "carbs_g": 107.5,
       "fibre_g": 21.5,
       "salt_g": 2.6
-    }
-  },
-  {
-    "id": "bold-bean-queen-butter-bean-carbonara-with-conchiglie-smoked-tofu-guanciale-courgettes-fresh-parsley",
-    "title": "Bold Bean Queen Butter Bean Carbonara With Conchiglie, Smoked Tofu Guanciale, Courgettes & Fresh Parsley",
-    "source_url": "https://planthood.co.uk/products/bold-bean-queen-butter-bean-carbonara-with-conchiglie-smoked-tofu-guanciale-courgettes-fresh-parsley",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "method": "Bold Bean Queen Butter Bean Carbonara With Conchiglie, Smoked Tofu Guanciale, Courgettes & Fresh Parsley Tender Bold Bean Co Queen Butter Beans simmered in a silky carbonara sauce, topped with our all natural whole food plant-based spin on guanciale, using smoked tofu, finely diced and sauteed until crispy in a sweet and smoky marinade. Served with conchiglie rigate pasta, courgettes and finished with fresh parsley to round everything off. This meal includes premium ingredients and comes with a one-off additional charge. For existing subscribers, this will be added on top of your usual subscription rate for one week only. For new customers, the surcharge will be included in your first order total only. Prep time 5 Total time 15 Cooking Mode:\nCooking instructions Before you start, take out all the ingredients for this recipe (see 'what’s in your box' section below). Thoroughly wash all fresh vegetables, leaves, salad ingredients and raw grains before cooking or serving. STEP 1 STEP 2 STEP 3 STEP 4 STEP 5 What’s in your box Nutritional info All nutritional values are based on a per person scale. Calories 759kcal Total fat 23.1g Saturated fat 2.9g Salt 4.2g Total carbohydrate 79.6g Total sugar 8.1g Fibre 24.2g Protein 48.7g Ingredients / Allergens Organic silken tofu ( soy beans, nigari, water), soya drink ( soy beans, water), nutritional yeas, miso ( soya beans), garlic, ground onion, lemon, dijon mustard , extra virgin olive oil, black pepper, black salt (kala namak), sea salt, aleppo chilli, rapeseed oil, gluten free low sodium soy sauce, raw organic agave nectar, smoked paprika, parsley, conchiglie rigate pasta (durum wheat semolina ( gluten ), water), butter beans, courgette, smoked tofu ( soya beans, nigari, water) For allergens please see ingredients in bold Our kitchen handles CELERY, SOYA, GLUTEN, TREE NUTS, PEANUTS, MUSTARD, SESAME and SULPHITES. Although we have strict allergen management procedures in place, traces of these allergens may be present.",
-    "nutrition": {
-      "calories": 759.0,
-      "protein_g": 48.7,
-      "fat_g": 23.1,
-      "carbs_g": 79.6,
-      "fibre_g": 24.2,
-      "salt_g": 4.2
-    }
-  },
-  {
-    "id": "butter-bean-french-onion-soup-with-cashew-truffle-cheese-croutons-bistrot-style-dressed-salad",
-    "title": "Butter Bean French Onion Soup, With Cashew Truffle Cheese Croutons & Bistrot-Style Dressed Salad",
-    "source_url": "https://planthood.co.uk/products/butter-bean-french-onion-soup-with-cashew-truffle-cheese-croutons-bistrot-style-dressed-salad",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "method": "Butter Bean French Onion Soup, With Cashew Truffle Cheese Croutons & Bistrot-Style Dressed Salad Our brand new bistrot-style French onion soup gets rich flavour from slow-cooking caramelised onions and enriching them in a savoury broth with miso and wine. At home you'll fill the broth with tender butter beans for extra protein and fibre, then bake it in the oven with ciabatta croutons topped with our home made cashew truffle cheese. Served with a mixed salad tossed in French vinaigrette to cut through those rich, comforting flavours. Prep time 3 Total time 15 Cooking Mode:\nCooking instructions Before you start, take out all the ingredients for this recipe (see 'what’s in your box' section below). Thoroughly wash all fresh vegetables, leaves, salad ingredients and raw grains before cooking or serving. STEP 1 STEP 2 STEP 3 STEP 4 STEP 5 STEP 6 STEP 7 What’s in your box Nutritional info All nutritional values are based on a per person scale. Calories 551kcal Total fat 21.9g Saturated fat 7g Salt 2.7g Total carbohydrate 66.2g Total sugar 14.8g Fibre 11.6g Protein 19.6g Ingredients / Allergens Onion, garlic, leek, white wine, miso ( soy beans), dijon mustard , water, nutritional yeast, thyme, extra virgin olive oil, coconut oil, raw organic agave nectar, onion powder, sea salt, black pepper, gluten free low sodium soy sauce, balsamic vinegar, soya drink ( soya beans, water), cashews ( nuts ), miso ( soya ), lemon, tapioca flour, garlic powder, truffle, butter beans, organic ciabatta (wheat flour ( gluten ), calcium carbonate, iron, niacin, thiamine, olive oil, salt, yeast), mixed salad, red wine vinegar, wholegrain mustard , water, marmite (yeast extract ( barley , wheat , oats , rye ), salt, vegetable juice concentrate, vitamins (thiamin, riboflavin, niacin, vitamin B12 and folic acid), natural flavouring ( celery ) For allergens, please see ingredients in bold Please be advised that we handle the following allergens in our kitchen: CELERY, SOYA, GLUTEN, NUTS, PEANUTS, MUSTARD, SESAME SEEDS, SULPHITES",
-    "nutrition": {
-      "calories": 551.0,
-      "protein_g": 19.6,
-      "fat_g": 21.9,
-      "carbs_g": 66.2,
-      "fibre_g": 11.6,
-      "salt_g": 2.7
     }
   }
 ]

@@ -1196,6 +1196,28 @@
     "source_hash": "cbbd5e7621c1fca4d424ade4acbe44bcb582bdda793a6ed66434cbcb9620fe5b"
   },
   {
+    "id": "bold-bean-queen-butter-bean-carbonara-with-conchiglie-smoked-tofu-guanciale-courgettes-fresh-parsley",
+    "title": "Bold Bean Queen Butter Bean Carbonara With Conchiglie, Smoked Tofu Guanciale, Courgettes & Fresh Parsley",
+    "source_url": "https://planthood.co.uk/products/bold-bean-queen-butter-bean-carbonara-with-conchiglie-smoked-tofu-guanciale-courgettes-fresh-parsley",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 759.0,
+      "protein_g": 48.7,
+      "fat_g": 23.1,
+      "carbs_g": 79.6,
+      "fibre_g": 24.2,
+      "salt_g": 4.2
+    },
+    "schema_version": 1,
+    "steps": [],
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
+  },
+  {
     "id": "brothy-giant-cous-cous-bowl-with-smokey-tempeh-chorizo-braised-cavolo-nero",
     "title": "Brothy Giant Couscous Bowl With Smokey Tempeh 'Chorizo', Cavolo Nero & Fresh Coriander",
     "source_url": "https://planthood.co.uk/products/brothy-giant-cous-cous-bowl-with-smokey-tempeh-chorizo-braised-cavolo-nero",
@@ -1527,6 +1549,28 @@
     "cookable": true,
     "provenance": "llm",
     "source_hash": "f5894e03c03e234aa0938a275c89ae8b3ff12444dee1d90e7647beb466b80cd3"
+  },
+  {
+    "id": "butter-bean-french-onion-soup-with-cashew-truffle-cheese-croutons-bistrot-style-dressed-salad",
+    "title": "Butter Bean French Onion Soup, With Cashew Truffle Cheese Croutons & Bistrot-Style Dressed Salad",
+    "source_url": "https://planthood.co.uk/products/butter-bean-french-onion-soup-with-cashew-truffle-cheese-croutons-bistrot-style-dressed-salad",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 551.0,
+      "protein_g": 19.6,
+      "fat_g": 21.9,
+      "carbs_g": 66.2,
+      "fibre_g": 11.6,
+      "salt_g": 2.7
+    },
+    "schema_version": 1,
+    "steps": [],
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
     "id": "butter-bean-radiatori-red-pesto-pasta",
@@ -27033,49 +27077,5 @@
     "cookable": true,
     "provenance": "llm",
     "source_hash": "d4acc3e67d6a424f81e8e2a96f9f9fec2b9f71bec77e940f2013aa4c635332d5"
-  },
-  {
-    "id": "bold-bean-queen-butter-bean-carbonara-with-conchiglie-smoked-tofu-guanciale-courgettes-fresh-parsley",
-    "title": "Bold Bean Queen Butter Bean Carbonara With Conchiglie, Smoked Tofu Guanciale, Courgettes & Fresh Parsley",
-    "source_url": "https://planthood.co.uk/products/bold-bean-queen-butter-bean-carbonara-with-conchiglie-smoked-tofu-guanciale-courgettes-fresh-parsley",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 759.0,
-      "protein_g": 48.7,
-      "fat_g": 23.1,
-      "carbs_g": 79.6,
-      "fibre_g": 24.2,
-      "salt_g": 4.2
-    },
-    "schema_version": 1,
-    "steps": [],
-    "cookable": false,
-    "provenance": "none",
-    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
-  },
-  {
-    "id": "butter-bean-french-onion-soup-with-cashew-truffle-cheese-croutons-bistrot-style-dressed-salad",
-    "title": "Butter Bean French Onion Soup, With Cashew Truffle Cheese Croutons & Bistrot-Style Dressed Salad",
-    "source_url": "https://planthood.co.uk/products/butter-bean-french-onion-soup-with-cashew-truffle-cheese-croutons-bistrot-style-dressed-salad",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 551.0,
-      "protein_g": 19.6,
-      "fat_g": 21.9,
-      "carbs_g": 66.2,
-      "fibre_g": 11.6,
-      "salt_g": 2.7
-    },
-    "schema_version": 1,
-    "steps": [],
-    "cookable": false,
-    "provenance": "none",
-    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   }
 ]

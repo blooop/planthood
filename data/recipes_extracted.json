@@ -570,6 +570,30 @@
     "notes": ""
   },
   {
+    "id": "bold-bean-queen-butter-bean-carbonara-with-conchiglie-smoked-tofu-guanciale-courgettes-fresh-parsley",
+    "title": "Bold Bean Queen Butter Bean Carbonara With Conchiglie, Smoked Tofu Guanciale, Courgettes & Fresh Parsley",
+    "source_url": "https://planthood.co.uk/products/bold-bean-queen-butter-bean-carbonara-with-conchiglie-smoked-tofu-guanciale-courgettes-fresh-parsley",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 759.0,
+      "protein_g": 48.7,
+      "fat_g": 23.1,
+      "carbs_g": 79.6,
+      "fibre_g": 24.2,
+      "salt_g": 4.2
+    },
+    "schema_version": 1,
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
+    "needs_llm_segmentation": false,
+    "notes": "No cooking instructions found (non-cookable)."
+  },
+  {
     "id": "brothy-giant-cous-cous-bowl-with-smokey-tempeh-chorizo-braised-cavolo-nero",
     "title": "Brothy Giant Couscous Bowl With Smokey Tempeh 'Chorizo', Cavolo Nero & Fresh Coriander",
     "source_url": "https://planthood.co.uk/products/brothy-giant-cous-cous-bowl-with-smokey-tempeh-chorizo-braised-cavolo-nero",
@@ -706,6 +730,30 @@
     "extraction_method": "step_markers",
     "needs_llm_segmentation": false,
     "notes": ""
+  },
+  {
+    "id": "butter-bean-french-onion-soup-with-cashew-truffle-cheese-croutons-bistrot-style-dressed-salad",
+    "title": "Butter Bean French Onion Soup, With Cashew Truffle Cheese Croutons & Bistrot-Style Dressed Salad",
+    "source_url": "https://planthood.co.uk/products/butter-bean-french-onion-soup-with-cashew-truffle-cheese-croutons-bistrot-style-dressed-salad",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 551.0,
+      "protein_g": 19.6,
+      "fat_g": 21.9,
+      "carbs_g": 66.2,
+      "fibre_g": 11.6,
+      "salt_g": 2.7
+    },
+    "schema_version": 1,
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
+    "needs_llm_segmentation": false,
+    "notes": "No cooking instructions found (non-cookable)."
   },
   {
     "id": "butter-bean-radiatori-red-pesto-pasta",
@@ -12629,53 +12677,5 @@
     "extraction_method": "step_markers",
     "needs_llm_segmentation": false,
     "notes": ""
-  },
-  {
-    "id": "bold-bean-queen-butter-bean-carbonara-with-conchiglie-smoked-tofu-guanciale-courgettes-fresh-parsley",
-    "title": "Bold Bean Queen Butter Bean Carbonara With Conchiglie, Smoked Tofu Guanciale, Courgettes & Fresh Parsley",
-    "source_url": "https://planthood.co.uk/products/bold-bean-queen-butter-bean-carbonara-with-conchiglie-smoked-tofu-guanciale-courgettes-fresh-parsley",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 759.0,
-      "protein_g": 48.7,
-      "fat_g": 23.1,
-      "carbs_g": 79.6,
-      "fibre_g": 24.2,
-      "salt_g": 4.2
-    },
-    "schema_version": 1,
-    "method_clean": "",
-    "steps": [],
-    "cookable": false,
-    "extraction_method": "none",
-    "needs_llm_segmentation": false,
-    "notes": "No cooking instructions found (non-cookable)."
-  },
-  {
-    "id": "butter-bean-french-onion-soup-with-cashew-truffle-cheese-croutons-bistrot-style-dressed-salad",
-    "title": "Butter Bean French Onion Soup, With Cashew Truffle Cheese Croutons & Bistrot-Style Dressed Salad",
-    "source_url": "https://planthood.co.uk/products/butter-bean-french-onion-soup-with-cashew-truffle-cheese-croutons-bistrot-style-dressed-salad",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 551.0,
-      "protein_g": 19.6,
-      "fat_g": 21.9,
-      "carbs_g": 66.2,
-      "fibre_g": 11.6,
-      "salt_g": 2.7
-    },
-    "schema_version": 1,
-    "method_clean": "",
-    "steps": [],
-    "cookable": false,
-    "extraction_method": "none",
-    "needs_llm_segmentation": false,
-    "notes": "No cooking instructions found (non-cookable)."
   }
 ]
