@@ -12677,5 +12677,29 @@
     "extraction_method": "step_markers",
     "needs_llm_segmentation": false,
     "notes": ""
+  },
+  {
+    "id": "chana-masala-with-bold-bean-queen-chickpeas-chilli-mango-chutney-lime-coconut-cream-regenerative-wholewheat-roti",
+    "title": "Chana Masala With Bold Bean Queen Chickpeas, Chilli Mango Chutney, Lime Coconut Cream & Regenerative Wholewheat Roti",
+    "source_url": "https://planthood.co.uk/products/chana-masala-with-bold-bean-queen-chickpeas-chilli-mango-chutney-lime-coconut-cream-regenerative-wholewheat-roti",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 690.0,
+      "protein_g": 24.0,
+      "fat_g": 24.0,
+      "carbs_g": 96.0,
+      "fibre_g": 25.0,
+      "salt_g": 2.9
+    },
+    "schema_version": 1,
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
+    "needs_llm_segmentation": false,
+    "notes": "No cooking instructions found (non-cookable)."
   }
 ]
