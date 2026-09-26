@@ -3069,6 +3069,28 @@
     "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
+    "id": "chana-masala-with-bold-bean-queen-chickpeas-chilli-mango-chutney-lime-coconut-cream-regenerative-wholewheat-roti",
+    "title": "Chana Masala With Bold Bean Queen Chickpeas, Chilli Mango Chutney, Lime Coconut Cream & Regenerative Wholewheat Roti",
+    "source_url": "https://planthood.co.uk/products/chana-masala-with-bold-bean-queen-chickpeas-chilli-mango-chutney-lime-coconut-cream-regenerative-wholewheat-roti",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 690.0,
+      "protein_g": 24.0,
+      "fat_g": 24.0,
+      "carbs_g": 96.0,
+      "fibre_g": 25.0,
+      "salt_g": 2.9
+    },
+    "schema_version": 1,
+    "steps": [],
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
+  },
+  {
     "id": "charred-aubergine-with-romesco-bulgar-wheat-pilaf-tahini-sauce-herby-caper-gremolata",
     "title": "Charred Aubergine With Romesco, Bulgar Wheat Pilaf, Tahini Sauce & Herby Caper Gremolata",
     "source_url": "https://planthood.co.uk/products/charred-aubergine-with-romesco-bulgar-wheat-pilaf-tahini-sauce-herby-caper-gremolata",
@@ -27077,27 +27099,5 @@
     "cookable": true,
     "provenance": "llm",
     "source_hash": "d4acc3e67d6a424f81e8e2a96f9f9fec2b9f71bec77e940f2013aa4c635332d5"
-  },
-  {
-    "id": "chana-masala-with-bold-bean-queen-chickpeas-chilli-mango-chutney-lime-coconut-cream-regenerative-wholewheat-roti",
-    "title": "Chana Masala With Bold Bean Queen Chickpeas, Chilli Mango Chutney, Lime Coconut Cream & Regenerative Wholewheat Roti",
-    "source_url": "https://planthood.co.uk/products/chana-masala-with-bold-bean-queen-chickpeas-chilli-mango-chutney-lime-coconut-cream-regenerative-wholewheat-roti",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 690.0,
-      "protein_g": 24.0,
-      "fat_g": 24.0,
-      "carbs_g": 96.0,
-      "fibre_g": 25.0,
-      "salt_g": 2.9
-    },
-    "schema_version": 1,
-    "steps": [],
-    "cookable": false,
-    "provenance": "none",
-    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   }
 ]

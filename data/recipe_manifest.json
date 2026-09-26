@@ -1,7 +1,7 @@
 {
   "total_recipes": 306,
   "failed_recipes": 0,
-  "last_updated": "2026-09-25 08:43:51",
+  "last_updated": "2026-09-26 08:20:02",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -252,6 +252,13 @@
       "id": "cauliflower-broccoli-cheese-with-garlic-hazelnut-breadcrumbs-and-lemon-herb-gremolata-dressing",
       "title": "Cauliflower & Broccoli 'Cheese' With Golden Garlic Hazelnut Breadcrumbs and Herby Gremolata Dressing",
       "url": "https://planthood.co.uk/products/cauliflower-broccoli-cheese-with-garlic-hazelnut-breadcrumbs-and-lemon-herb-gremolata-dressing",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "chana-masala-with-bold-bean-queen-chickpeas-chilli-mango-chutney-lime-coconut-cream-regenerative-wholewheat-roti",
+      "title": "Chana Masala With Bold Bean Queen Chickpeas, Chilli Mango Chutney, Lime Coconut Cream & Regenerative Wholewheat Roti",
+      "url": "https://planthood.co.uk/products/chana-masala-with-bold-bean-queen-chickpeas-chilli-mango-chutney-lime-coconut-cream-regenerative-wholewheat-roti",
       "scraped": true,
       "week_label": null
     },
@@ -2135,13 +2142,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "chana-masala-with-bold-bean-queen-chickpeas-chilli-mango-chutney-lime-coconut-cream-regenerative-wholewheat-roti",
-      "title": "Chana Masala With Bold Bean Queen Chickpeas, Chilli Mango Chutney, Lime Coconut Cream & Regenerative Wholewheat Roti",
-      "url": "https://planthood.co.uk/products/chana-masala-with-bold-bean-queen-chickpeas-chilli-mango-chutney-lime-coconut-cream-regenerative-wholewheat-roti",
       "scraped": true,
       "week_label": null
     }

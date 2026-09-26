@@ -3753,6 +3753,27 @@
     "active_time_min": 0
   },
   {
+    "id": "chana-masala-with-bold-bean-queen-chickpeas-chilli-mango-chutney-lime-coconut-cream-regenerative-wholewheat-roti",
+    "title": "Chana Masala With Bold Bean Queen Chickpeas, Chilli Mango Chutney, Lime Coconut Cream & Regenerative Wholewheat Roti",
+    "source_url": "https://planthood.co.uk/products/chana-masala-with-bold-bean-queen-chickpeas-chilli-mango-chutney-lime-coconut-cream-regenerative-wholewheat-roti",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 690.0,
+      "protein_g": 24.0,
+      "fat_g": 24.0,
+      "carbs_g": 96.0,
+      "fibre_g": 25.0,
+      "salt_g": 2.9
+    },
+    "schema_version": 1,
+    "steps": [],
+    "total_time_min": 0,
+    "active_time_min": 0
+  },
+  {
     "id": "charred-aubergine-with-romesco-bulgar-wheat-pilaf-tahini-sauce-herby-caper-gremolata",
     "title": "Charred Aubergine With Romesco, Bulgar Wheat Pilaf, Tahini Sauce & Herby Caper Gremolata",
     "source_url": "https://planthood.co.uk/products/charred-aubergine-with-romesco-bulgar-wheat-pilaf-tahini-sauce-herby-caper-gremolata",
@@ -33180,26 +33201,5 @@
     ],
     "total_time_min": 25,
     "active_time_min": 25
-  },
-  {
-    "id": "chana-masala-with-bold-bean-queen-chickpeas-chilli-mango-chutney-lime-coconut-cream-regenerative-wholewheat-roti",
-    "title": "Chana Masala With Bold Bean Queen Chickpeas, Chilli Mango Chutney, Lime Coconut Cream & Regenerative Wholewheat Roti",
-    "source_url": "https://planthood.co.uk/products/chana-masala-with-bold-bean-queen-chickpeas-chilli-mango-chutney-lime-coconut-cream-regenerative-wholewheat-roti",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 690.0,
-      "protein_g": 24.0,
-      "fat_g": 24.0,
-      "carbs_g": 96.0,
-      "fibre_g": 25.0,
-      "salt_g": 2.9
-    },
-    "schema_version": 1,
-    "steps": [],
-    "total_time_min": 0,
-    "active_time_min": 0
   }
 ]
