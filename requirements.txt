@@ -17,4 +17,4 @@ tenacity>=8.2.0
 
 # Development
 pytest>=7.4.0
-black>=23.0.0
+black>=26.5.1
