@@ -12701,5 +12701,29 @@
     "extraction_method": "step_markers",
     "needs_llm_segmentation": false,
     "notes": ""
+  },
+  {
+    "id": "moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
+    "title": "Moussaka Pasta Bake With A Rich Lentil Ragu, Ditalini Pasta, Tender Aubergine & Creamy Cashew Bechamel",
+    "source_url": "https://planthood.co.uk/products/moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 670.0,
+      "protein_g": 31.6,
+      "fat_g": 19.1,
+      "carbs_g": 82.9,
+      "fibre_g": 17.9,
+      "salt_g": 2.64
+    },
+    "schema_version": 1,
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
+    "needs_llm_segmentation": false,
+    "notes": "No cooking instructions found (non-cookable)."
   }
 ]

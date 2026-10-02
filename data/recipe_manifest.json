@@ -1,7 +1,7 @@
 {
-  "total_recipes": 306,
+  "total_recipes": 307,
   "failed_recipes": 0,
-  "last_updated": "2026-10-01 09:47:36",
+  "last_updated": "2026-10-02 09:23:42",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -2142,6 +2142,13 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
+      "title": "Moussaka Pasta Bake With A Rich Lentil Ragu, Ditalini Pasta, Tender Aubergine & Creamy Cashew Bechamel",
+      "url": "https://planthood.co.uk/products/moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
       "scraped": true,
       "week_label": null
     }
