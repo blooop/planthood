@@ -1,7 +1,7 @@
 {
   "total_recipes": 307,
   "failed_recipes": 0,
-  "last_updated": "2026-10-02 09:23:42",
+  "last_updated": "2026-10-03 08:53:12",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -1208,6 +1208,13 @@
       "week_label": null
     },
     {
+      "id": "moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
+      "title": "Moussaka Pasta Bake With A Rich Lentil Ragu, Ditalini Pasta, Tender Aubergine & Creamy Cashew Bechamel",
+      "url": "https://planthood.co.uk/products/moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme",
       "title": "Mushroom Birria Tacos With Melted House Queso, Onion Salsa & Rich Dipping Consommé",
       "url": "https://planthood.co.uk/products/mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme",
@@ -2142,13 +2149,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
-      "title": "Moussaka Pasta Bake With A Rich Lentil Ragu, Ditalini Pasta, Tender Aubergine & Creamy Cashew Bechamel",
-      "url": "https://planthood.co.uk/products/moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
       "scraped": true,
       "week_label": null
     }

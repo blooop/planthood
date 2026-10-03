@@ -3075,6 +3075,24 @@
     "nutrition": {}
   },
   {
+    "id": "moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
+    "title": "Moussaka Pasta Bake With A Rich Lentil Ragu, Ditalini Pasta, Tender Aubergine & Creamy Cashew Bechamel",
+    "source_url": "https://planthood.co.uk/products/moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "method": "Moussaka Pasta Bake With A Rich Lentil Ragu, Ditalini Pasta, Tender Aubergine & Creamy Cashew Bechamel Prep time 3 Total time 25 Cooking Mode:\nCooking instructions Before you start, take out all the ingredients for this recipe (see 'what’s in your box' section below). Thoroughly wash all fresh vegetables, leaves, salad ingredients and raw grains before cooking or serving. STEP 1 STEP 2 STEP 3 STEP 4 STEP 5 What’s in your box Nutritional info All nutritional values are based on a per person scale. Calories 670kcal Total fat 19.1g Saturated fat 2.9g Salt 2.64g Total carbohydrate 82.9g Total sugar 18.5g Fibre 17.9g Protein 31.6g Ingredients / Allergens Onion, tomatoes, garlic, water, red wine, gluten free low sodium soy sauce, raw organic agave nectar, tomato puree, cinnamon, cloves, oregano, mint, aubergine, lentils, ditalini pasta (durum wheat semolina ( gluten ), water, salt), rapeseed oil, soy drink ( soy beans, water, sea salt), nutritional yeast, cashew nuts, ground garlic, ground onion, nutmeg, miso ( soy ), dijon mustard , lemon, salt, marmite (yeast extract (contains barley , wheat , oats , rye ), salt, vegetable juice concentrate, vitamins (thiamin, riboflavin, niacin, vitamin B12 and folic acid), natural flavouring (contains celery )) For allergens, please see ingredients in bold Please be advised that we handle the following allergens in our kitchen: CELERY, SOYA, GLUTEN, NUTS, PEANUTS, MUSTARD, SESAME SEEDS, SULPHITES",
+    "nutrition": {
+      "calories": 670.0,
+      "protein_g": 31.6,
+      "fat_g": 19.1,
+      "carbs_g": 82.9,
+      "fibre_g": 17.9,
+      "salt_g": 2.64
+    }
+  },
+  {
     "id": "mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme",
     "title": "Mushroom Birria Tacos With Melted House Queso, Onion Salsa & Rich Dipping Consommé",
     "source_url": "https://planthood.co.uk/products/mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme",
@@ -5425,24 +5443,6 @@
       "carbs_g": 107.5,
       "fibre_g": 21.5,
       "salt_g": 2.6
-    }
-  },
-  {
-    "id": "moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
-    "title": "Moussaka Pasta Bake With A Rich Lentil Ragu, Ditalini Pasta, Tender Aubergine & Creamy Cashew Bechamel",
-    "source_url": "https://planthood.co.uk/products/moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "method": "Moussaka Pasta Bake With A Rich Lentil Ragu, Ditalini Pasta, Tender Aubergine & Creamy Cashew Bechamel Prep time 3 Total time 25 Cooking Mode:\nCooking instructions Before you start, take out all the ingredients for this recipe (see 'what’s in your box' section below). Thoroughly wash all fresh vegetables, leaves, salad ingredients and raw grains before cooking or serving. STEP 1 STEP 2 STEP 3 STEP 4 STEP 5 What’s in your box Nutritional info All nutritional values are based on a per person scale. Calories 670kcal Total fat 19.1g Saturated fat 2.9g Salt 2.64g Total carbohydrate 82.9g Total sugar 18.5g Fibre 17.9g Protein 31.6g Ingredients / Allergens Onion, tomatoes, garlic, water, red wine, gluten free low sodium soy sauce, raw organic agave nectar, tomato puree, cinnamon, cloves, oregano, mint, aubergine, lentils, ditalini pasta (durum wheat semolina ( gluten ), water, salt), rapeseed oil, soy drink ( soy beans, water, sea salt), nutritional yeast, cashew nuts, ground garlic, ground onion, nutmeg, miso ( soy ), dijon mustard , lemon, salt, marmite (yeast extract (contains barley , wheat , oats , rye ), salt, vegetable juice concentrate, vitamins (thiamin, riboflavin, niacin, vitamin B12 and folic acid), natural flavouring (contains celery )) For allergens, please see ingredients in bold Please be advised that we handle the following allergens in our kitchen: CELERY, SOYA, GLUTEN, NUTS, PEANUTS, MUSTARD, SESAME SEEDS, SULPHITES",
-    "nutrition": {
-      "calories": 670.0,
-      "protein_g": 31.6,
-      "fat_g": 19.1,
-      "carbs_g": 82.9,
-      "fibre_g": 17.9,
-      "salt_g": 2.64
     }
   }
 ]

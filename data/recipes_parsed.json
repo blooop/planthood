@@ -14909,6 +14909,28 @@
     "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   },
   {
+    "id": "moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
+    "title": "Moussaka Pasta Bake With A Rich Lentil Ragu, Ditalini Pasta, Tender Aubergine & Creamy Cashew Bechamel",
+    "source_url": "https://planthood.co.uk/products/moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 670.0,
+      "protein_g": 31.6,
+      "fat_g": 19.1,
+      "carbs_g": 82.9,
+      "fibre_g": 17.9,
+      "salt_g": 2.64
+    },
+    "schema_version": 1,
+    "steps": [],
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
+  },
+  {
     "id": "mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme",
     "title": "Mushroom Birria Tacos With Melted House Queso, Onion Salsa & Rich Dipping Consommé",
     "source_url": "https://planthood.co.uk/products/mushroom-birria-tacos-with-melted-vegan-mozzarella-onion-salsa-rich-dipping-consomme",
@@ -27099,27 +27121,5 @@
     "cookable": true,
     "provenance": "llm",
     "source_hash": "d4acc3e67d6a424f81e8e2a96f9f9fec2b9f71bec77e940f2013aa4c635332d5"
-  },
-  {
-    "id": "moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
-    "title": "Moussaka Pasta Bake With A Rich Lentil Ragu, Ditalini Pasta, Tender Aubergine & Creamy Cashew Bechamel",
-    "source_url": "https://planthood.co.uk/products/moussaka-pasta-bake-with-a-rich-lentil-ragu-ditalini-pasta-tender-aubergine-creamy-cashew-bechamel",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 670.0,
-      "protein_g": 31.6,
-      "fat_g": 19.1,
-      "carbs_g": 82.9,
-      "fibre_g": 17.9,
-      "salt_g": 2.64
-    },
-    "schema_version": 1,
-    "steps": [],
-    "cookable": false,
-    "provenance": "none",
-    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   }
 ]
