@@ -27121,5 +27121,27 @@
     "cookable": true,
     "provenance": "llm",
     "source_hash": "d4acc3e67d6a424f81e8e2a96f9f9fec2b9f71bec77e940f2013aa4c635332d5"
+  },
+  {
+    "id": "momo-organic-passion-fruit-kombucha-330ml",
+    "title": "Momo Organic Passion Fruit Kombucha 330ml",
+    "source_url": "https://planthood.co.uk/products/momo-organic-passion-fruit-kombucha-330ml",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 20.0,
+      "protein_g": null,
+      "fat_g": null,
+      "carbs_g": 3.2,
+      "fibre_g": 1.0,
+      "salt_g": null
+    },
+    "schema_version": 1,
+    "steps": [],
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   }
 ]

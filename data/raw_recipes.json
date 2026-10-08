@@ -5444,5 +5444,20 @@
       "fibre_g": 21.5,
       "salt_g": 2.6
     }
+  },
+  {
+    "id": "momo-organic-passion-fruit-kombucha-330ml",
+    "title": "Momo Organic Passion Fruit Kombucha 330ml",
+    "source_url": "https://planthood.co.uk/products/momo-organic-passion-fruit-kombucha-330ml",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "method": "Momo Organic Passion Fruit Kombucha 330ml Refreshingly bright with a sweet tropical burst. Tangy but sweet, with a clean tropical lift. Passion fruit's bright, tropical sweetness balances perfectly with our raw kombucha's distinctive acidity and tang. Cooking Mode:\nCooking instructions What’s in your box Nutritional info All nutritional values are based on a per person scale. Calories 20kcal Total fat <0.1g Saturated fat <0.1g Salt <0.1g Total carbohydrate 3.2g Total sugar 3.1g Fibre 1.0g Protein <0.1g Ingredients / Allergens Filtered water, kombucha culture, organic cane sugar, organic passion fruit juice (1.5%), organic tea, organic elderflower",
+    "nutrition": {
+      "calories": 20.0,
+      "carbs_g": 3.2,
+      "fibre_g": 1.0
+    }
   }
 ]

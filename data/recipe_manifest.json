@@ -1,7 +1,7 @@
 {
-  "total_recipes": 307,
+  "total_recipes": 308,
   "failed_recipes": 0,
-  "last_updated": "2026-10-07 09:52:16",
+  "last_updated": "2026-10-08 10:02:45",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -2149,6 +2149,13 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "momo-organic-passion-fruit-kombucha-330ml",
+      "title": "Momo Organic Passion Fruit Kombucha 330ml",
+      "url": "https://planthood.co.uk/products/momo-organic-passion-fruit-kombucha-330ml",
       "scraped": true,
       "week_label": null
     }
