@@ -7020,6 +7020,30 @@
     "notes": "No cooking instructions found (non-cookable)."
   },
   {
+    "id": "momo-organic-passion-fruit-kombucha-330ml",
+    "title": "Momo Organic Passion Fruit Kombucha 330ml",
+    "source_url": "https://planthood.co.uk/products/momo-organic-passion-fruit-kombucha-330ml",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 20.0,
+      "protein_g": null,
+      "fat_g": null,
+      "carbs_g": 3.2,
+      "fibre_g": 1.0,
+      "salt_g": null
+    },
+    "schema_version": 1,
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
+    "needs_llm_segmentation": false,
+    "notes": "No cooking instructions found (non-cookable)."
+  },
+  {
     "id": "momo-organic-raspberry-hibiscus-kombucha-330ml",
     "title": "Momo Organic Raspberry & Hibiscus Kombucha 330ml",
     "source_url": "https://planthood.co.uk/products/momo-organic-raspberry-hibiscus-kombucha-330ml",
@@ -12727,19 +12751,43 @@
     "notes": ""
   },
   {
-    "id": "momo-organic-passion-fruit-kombucha-330ml",
-    "title": "Momo Organic Passion Fruit Kombucha 330ml",
-    "source_url": "https://planthood.co.uk/products/momo-organic-passion-fruit-kombucha-330ml",
+    "id": "creamy-baked-dhal-with-tamarind-glazed-sweet-potato-green-chilli-chutney-pink-onion-pickles-fresh-coriander",
+    "title": "Baked Dhal With Tamarind-Glazed Sweet Potato, Green Chilli Chutney, Pink Onion Pickles & Fresh Coriander",
+    "source_url": "https://planthood.co.uk/products/creamy-baked-dhal-with-tamarind-glazed-sweet-potato-green-chilli-chutney-pink-onion-pickles-fresh-coriander",
     "week_label": null,
     "weeks": [],
     "category": null,
     "ingredients": [],
     "nutrition": {
-      "calories": 20.0,
-      "protein_g": null,
-      "fat_g": null,
-      "carbs_g": 3.2,
-      "fibre_g": 1.0,
+      "calories": 699.0,
+      "protein_g": 23.1,
+      "fat_g": 23.0,
+      "carbs_g": 93.1,
+      "fibre_g": 15.9,
+      "salt_g": 2.3
+    },
+    "schema_version": 1,
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
+    "needs_llm_segmentation": false,
+    "notes": "No cooking instructions found (non-cookable)."
+  },
+  {
+    "id": "saag-aloo-shepherds-pie-with-curry-spiced-borlotti-bean-ragu-topped-with-a-crispy-cauliflower-potato-spinach-topping",
+    "title": "Saag Aloo Shepherd's Pie With Curry Spiced Borlotti Bean Ragu Topped With A Crispy Cauliflower, Potato & Spinach Topping",
+    "source_url": "https://planthood.co.uk/products/saag-aloo-shepherds-pie-with-curry-spiced-borlotti-bean-ragu-topped-with-a-crispy-cauliflower-potato-spinach-topping",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 417.0,
+      "protein_g": 18.6,
+      "fat_g": 2.9,
+      "carbs_g": 70.4,
+      "fibre_g": 17.3,
       "salt_g": null
     },
     "schema_version": 1,

@@ -1,7 +1,7 @@
 {
-  "total_recipes": 308,
+  "total_recipes": 310,
   "failed_recipes": 0,
-  "last_updated": "2026-10-08 10:02:45",
+  "last_updated": "2026-10-09 10:05:30",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -1194,6 +1194,13 @@
       "week_label": null
     },
     {
+      "id": "momo-organic-passion-fruit-kombucha-330ml",
+      "title": "Momo Organic Passion Fruit Kombucha 330ml",
+      "url": "https://planthood.co.uk/products/momo-organic-passion-fruit-kombucha-330ml",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "momo-organic-raspberry-hibiscus-kombucha-330ml",
       "title": "Momo Organic Raspberry & Hibiscus Kombucha 330ml",
       "url": "https://planthood.co.uk/products/momo-organic-raspberry-hibiscus-kombucha-330ml",
@@ -2153,9 +2160,16 @@
       "week_label": null
     },
     {
-      "id": "momo-organic-passion-fruit-kombucha-330ml",
-      "title": "Momo Organic Passion Fruit Kombucha 330ml",
-      "url": "https://planthood.co.uk/products/momo-organic-passion-fruit-kombucha-330ml",
+      "id": "creamy-baked-dhal-with-tamarind-glazed-sweet-potato-green-chilli-chutney-pink-onion-pickles-fresh-coriander",
+      "title": "Baked Dhal With Tamarind-Glazed Sweet Potato, Green Chilli Chutney, Pink Onion Pickles & Fresh Coriander",
+      "url": "https://planthood.co.uk/products/creamy-baked-dhal-with-tamarind-glazed-sweet-potato-green-chilli-chutney-pink-onion-pickles-fresh-coriander",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "saag-aloo-shepherds-pie-with-curry-spiced-borlotti-bean-ragu-topped-with-a-crispy-cauliflower-potato-spinach-topping",
+      "title": "Saag Aloo Shepherd's Pie With Curry Spiced Borlotti Bean Ragu Topped With A Crispy Cauliflower, Potato & Spinach Topping",
+      "url": "https://planthood.co.uk/products/saag-aloo-shepherds-pie-with-curry-spiced-borlotti-bean-ragu-topped-with-a-crispy-cauliflower-potato-spinach-topping",
       "scraped": true,
       "week_label": null
     }
