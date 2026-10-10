@@ -2133,6 +2133,30 @@
     "notes": ""
   },
   {
+    "id": "creamy-baked-dhal-with-tamarind-glazed-sweet-potato-green-chilli-chutney-pink-onion-pickles-fresh-coriander",
+    "title": "Baked Dhal With Tamarind-Glazed Sweet Potato, Green Chilli Chutney, Pink Onion Pickles & Fresh Coriander",
+    "source_url": "https://planthood.co.uk/products/creamy-baked-dhal-with-tamarind-glazed-sweet-potato-green-chilli-chutney-pink-onion-pickles-fresh-coriander",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 699.0,
+      "protein_g": 23.1,
+      "fat_g": 23.0,
+      "carbs_g": 93.1,
+      "fibre_g": 15.9,
+      "salt_g": 2.3
+    },
+    "schema_version": 1,
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
+    "needs_llm_segmentation": false,
+    "notes": "No cooking instructions found (non-cookable)."
+  },
+  {
     "id": "creamy-butter-beans-with-burnt-lemon-mustard-sauce-wilted-greens-charred-cauliflower-green-olive-salsa",
     "title": "Creamy Butter Beans With Burnt Lemon & Mustard Sauce, Wilted Greens, Charred Cauliflower & Green Olive Salsa",
     "source_url": "https://planthood.co.uk/products/creamy-butter-beans-with-burnt-lemon-mustard-sauce-wilted-greens-charred-cauliflower-green-olive-salsa",
@@ -9017,6 +9041,30 @@
     "notes": "No STEP markers; sentence-split pending LLM segmentation."
   },
   {
+    "id": "saag-aloo-shepherds-pie-with-curry-spiced-borlotti-bean-ragu-topped-with-a-crispy-cauliflower-potato-spinach-topping",
+    "title": "Saag Aloo Shepherd's Pie With Curry Spiced Borlotti Bean Ragu Topped With A Crispy Cauliflower, Potato & Spinach Topping",
+    "source_url": "https://planthood.co.uk/products/saag-aloo-shepherds-pie-with-curry-spiced-borlotti-bean-ragu-topped-with-a-crispy-cauliflower-potato-spinach-topping",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 417.0,
+      "protein_g": 18.6,
+      "fat_g": 2.9,
+      "carbs_g": 70.4,
+      "fibre_g": 17.3,
+      "salt_g": null
+    },
+    "schema_version": 1,
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
+    "needs_llm_segmentation": false,
+    "notes": "No cooking instructions found (non-cookable)."
+  },
+  {
     "id": "sardinian-longevity-minestrone",
     "title": "Sardinian Longevity Minestrone With Fregola, Organic Mixed Beans, Cavolo Nero & Salsa Verde Dressing",
     "source_url": "https://planthood.co.uk/products/sardinian-longevity-minestrone",
@@ -12749,53 +12797,5 @@
     "extraction_method": "step_markers",
     "needs_llm_segmentation": false,
     "notes": ""
-  },
-  {
-    "id": "creamy-baked-dhal-with-tamarind-glazed-sweet-potato-green-chilli-chutney-pink-onion-pickles-fresh-coriander",
-    "title": "Baked Dhal With Tamarind-Glazed Sweet Potato, Green Chilli Chutney, Pink Onion Pickles & Fresh Coriander",
-    "source_url": "https://planthood.co.uk/products/creamy-baked-dhal-with-tamarind-glazed-sweet-potato-green-chilli-chutney-pink-onion-pickles-fresh-coriander",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 699.0,
-      "protein_g": 23.1,
-      "fat_g": 23.0,
-      "carbs_g": 93.1,
-      "fibre_g": 15.9,
-      "salt_g": 2.3
-    },
-    "schema_version": 1,
-    "method_clean": "",
-    "steps": [],
-    "cookable": false,
-    "extraction_method": "none",
-    "needs_llm_segmentation": false,
-    "notes": "No cooking instructions found (non-cookable)."
-  },
-  {
-    "id": "saag-aloo-shepherds-pie-with-curry-spiced-borlotti-bean-ragu-topped-with-a-crispy-cauliflower-potato-spinach-topping",
-    "title": "Saag Aloo Shepherd's Pie With Curry Spiced Borlotti Bean Ragu Topped With A Crispy Cauliflower, Potato & Spinach Topping",
-    "source_url": "https://planthood.co.uk/products/saag-aloo-shepherds-pie-with-curry-spiced-borlotti-bean-ragu-topped-with-a-crispy-cauliflower-potato-spinach-topping",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 417.0,
-      "protein_g": 18.6,
-      "fat_g": 2.9,
-      "carbs_g": 70.4,
-      "fibre_g": 17.3,
-      "salt_g": null
-    },
-    "schema_version": 1,
-    "method_clean": "",
-    "steps": [],
-    "cookable": false,
-    "extraction_method": "none",
-    "needs_llm_segmentation": false,
-    "notes": "No cooking instructions found (non-cookable)."
   }
 ]

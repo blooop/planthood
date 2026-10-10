@@ -929,6 +929,24 @@
     }
   },
   {
+    "id": "creamy-baked-dhal-with-tamarind-glazed-sweet-potato-green-chilli-chutney-pink-onion-pickles-fresh-coriander",
+    "title": "Baked Dhal With Tamarind-Glazed Sweet Potato, Green Chilli Chutney, Pink Onion Pickles & Fresh Coriander",
+    "source_url": "https://planthood.co.uk/products/creamy-baked-dhal-with-tamarind-glazed-sweet-potato-green-chilli-chutney-pink-onion-pickles-fresh-coriander",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "method": "Baked Dhal With Tamarind-Glazed Sweet Potato, Green Chilli Chutney, Pink Onion Pickles & Fresh Coriander A rich and creamy daal, heavy on the turmeric, cardamom and ginger with decadent coconut milk, topped with tamarind-glazed sweet potato and finished off with zingy Indian pink onion pickle, green chilli chutney, and fresh coriander. This one takes a little longer in the oven than usual, but the prep is quick and simple. Prep time 3 Total time 45 Cooking Mode:\nCooking instructions Before you start, take out all the ingredients for this recipe (see 'what’s in your box' section below). Thoroughly wash all fresh vegetables, leaves, salad ingredients and raw grains before cooking or serving. STEP 1 STEP 2 STEP 3 STEP 4 STEP 5 What’s in your box Nutritional info All nutritional values are based on a per person scale. Calories 699kcal Total fat 23g Saturated fat 12.6g Salt 2.3g Total carbohydrate 93.1g Total sugar 28.4g Fibre 15.9g Protein 23.1g Ingredients / Allergens Red lentils, cardamom, cinnamon, onion, garlic, ginger, green chilli, coriander powder, garam masala (coriander, cinnamon, cloves, ginger, star anise, cumin, chilli, fennel, black pepper, bay leaves, sunflower oil, nutmeg, cardamom), turmeric, coconut milk, tomatoes, brown mustard seeds, sea salt, cumin, tamarind, agave, sea salt, red onion, red wine vinegar, water, beetroot juice, raw organic cane sugar, nigella seeds, coriander, mint, lemon, green chilli, extra virgin olive oil, rapeseed oil, sweet potato For allergens, please see ingredients in bold Please be advised that we handle the following allergens in our kitchen: CELERY, SOYA, GLUTEN, NUTS, PEANUTS, MUSTARD, SESAME SEEDS, SULPHITES",
+    "nutrition": {
+      "calories": 699.0,
+      "protein_g": 23.1,
+      "fat_g": 23.0,
+      "carbs_g": 93.1,
+      "fibre_g": 15.9,
+      "salt_g": 2.3
+    }
+  },
+  {
     "id": "creamy-butter-beans-with-burnt-lemon-mustard-sauce-wilted-greens-charred-cauliflower-green-olive-salsa",
     "title": "Creamy Butter Beans With Burnt Lemon & Mustard Sauce, Wilted Greens, Charred Cauliflower & Green Olive Salsa",
     "source_url": "https://planthood.co.uk/products/creamy-butter-beans-with-burnt-lemon-mustard-sauce-wilted-greens-charred-cauliflower-green-olive-salsa",
@@ -3954,6 +3972,23 @@
     }
   },
   {
+    "id": "saag-aloo-shepherds-pie-with-curry-spiced-borlotti-bean-ragu-topped-with-a-crispy-cauliflower-potato-spinach-topping",
+    "title": "Saag Aloo Shepherd's Pie With Curry Spiced Borlotti Bean Ragu Topped With A Crispy Cauliflower, Potato & Spinach Topping",
+    "source_url": "https://planthood.co.uk/products/saag-aloo-shepherds-pie-with-curry-spiced-borlotti-bean-ragu-topped-with-a-crispy-cauliflower-potato-spinach-topping",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "method": "Saag Aloo Shepherd's Pie With Curry Spiced Borlotti Bean Ragu Topped With A Crispy Cauliflower, Potato & Spinach Topping A fusion of comfort food flavours that just work so well together. Borlotti beans in a rich curry-spiced gravy are topped with a crispy cauliflower, potato and spinach topping which is infused with cumin, mustard seeds and turmeric for extra flavour. It takes a little longer in the oven, but the prep is quick and simple, and the final result is seriously worth it. Prep time 3 Total time 45 Cooking Mode:\nCooking instructions Before you start, take out all the ingredients for this recipe (see 'what’s in your box' section below). Thoroughly wash all fresh vegetables, leaves, salad ingredients and raw grains before cooking or serving. STEP 1 STEP 2 STEP 3 STEP 4 STEP 5 What’s in your box Nutritional info All nutritional values are based on a per person scale. Calories 417kcal Total fat 2.9g Saturated fat 0.5g Salt 1.2 Total carbohydrate 70.4g Total sugar 14g Fibre 17.3g Protein 18.6g Ingredients / Allergens Borlotti beans, onion, carrot, celery , garlic, ginger, cumin, garam masala (coriander, cinnamon, cloves, ginger, star anise, cumin, chilli, fennel, black pepper, bay leaves, sunflower oil, nutmeg, cardamom), smoked paprika, turmeric, miso ( soy beans), tomatoes, raw organic agave nectar, tamarind, sea salt, cumin seeds, brown mustard seeds, turmeric, spinach, cauliflower, potatoes For allergens, please see ingredients in bold Please be advised that we handle the following allergens in our kitchen: CELERY, SOYA, GLUTEN, NUTS, PEANUTS, MUSTARD, SESAME SEEDS, SULPHITES",
+    "nutrition": {
+      "calories": 417.0,
+      "protein_g": 18.6,
+      "fat_g": 2.9,
+      "carbs_g": 70.4,
+      "fibre_g": 17.3
+    }
+  },
+  {
     "id": "sardinian-longevity-minestrone",
     "title": "Sardinian Longevity Minestrone With Fregola, Organic Mixed Beans, Cavolo Nero & Salsa Verde Dressing",
     "source_url": "https://planthood.co.uk/products/sardinian-longevity-minestrone",
@@ -5458,41 +5493,6 @@
       "carbs_g": 107.5,
       "fibre_g": 21.5,
       "salt_g": 2.6
-    }
-  },
-  {
-    "id": "creamy-baked-dhal-with-tamarind-glazed-sweet-potato-green-chilli-chutney-pink-onion-pickles-fresh-coriander",
-    "title": "Baked Dhal With Tamarind-Glazed Sweet Potato, Green Chilli Chutney, Pink Onion Pickles & Fresh Coriander",
-    "source_url": "https://planthood.co.uk/products/creamy-baked-dhal-with-tamarind-glazed-sweet-potato-green-chilli-chutney-pink-onion-pickles-fresh-coriander",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "method": "Baked Dhal With Tamarind-Glazed Sweet Potato, Green Chilli Chutney, Pink Onion Pickles & Fresh Coriander A rich and creamy daal, heavy on the turmeric, cardamom and ginger with decadent coconut milk, topped with tamarind-glazed sweet potato and finished off with zingy Indian pink onion pickle, green chilli chutney, and fresh coriander. This one takes a little longer in the oven than usual, but the prep is quick and simple. Prep time 3 Total time 45 Cooking Mode:\nCooking instructions Before you start, take out all the ingredients for this recipe (see 'what’s in your box' section below). Thoroughly wash all fresh vegetables, leaves, salad ingredients and raw grains before cooking or serving. STEP 1 STEP 2 STEP 3 STEP 4 STEP 5 What’s in your box Nutritional info All nutritional values are based on a per person scale. Calories 699kcal Total fat 23g Saturated fat 12.6g Salt 2.3g Total carbohydrate 93.1g Total sugar 28.4g Fibre 15.9g Protein 23.1g Ingredients / Allergens Red lentils, cardamom, cinnamon, onion, garlic, ginger, green chilli, coriander powder, garam masala (coriander, cinnamon, cloves, ginger, star anise, cumin, chilli, fennel, black pepper, bay leaves, sunflower oil, nutmeg, cardamom), turmeric, coconut milk, tomatoes, brown mustard seeds, sea salt, cumin, tamarind, agave, sea salt, red onion, red wine vinegar, water, beetroot juice, raw organic cane sugar, nigella seeds, coriander, mint, lemon, green chilli, extra virgin olive oil, rapeseed oil, sweet potato For allergens, please see ingredients in bold Please be advised that we handle the following allergens in our kitchen: CELERY, SOYA, GLUTEN, NUTS, PEANUTS, MUSTARD, SESAME SEEDS, SULPHITES",
-    "nutrition": {
-      "calories": 699.0,
-      "protein_g": 23.1,
-      "fat_g": 23.0,
-      "carbs_g": 93.1,
-      "fibre_g": 15.9,
-      "salt_g": 2.3
-    }
-  },
-  {
-    "id": "saag-aloo-shepherds-pie-with-curry-spiced-borlotti-bean-ragu-topped-with-a-crispy-cauliflower-potato-spinach-topping",
-    "title": "Saag Aloo Shepherd's Pie With Curry Spiced Borlotti Bean Ragu Topped With A Crispy Cauliflower, Potato & Spinach Topping",
-    "source_url": "https://planthood.co.uk/products/saag-aloo-shepherds-pie-with-curry-spiced-borlotti-bean-ragu-topped-with-a-crispy-cauliflower-potato-spinach-topping",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "method": "Saag Aloo Shepherd's Pie With Curry Spiced Borlotti Bean Ragu Topped With A Crispy Cauliflower, Potato & Spinach Topping A fusion of comfort food flavours that just work so well together. Borlotti beans in a rich curry-spiced gravy are topped with a crispy cauliflower, potato and spinach topping which is infused with cumin, mustard seeds and turmeric for extra flavour. It takes a little longer in the oven, but the prep is quick and simple, and the final result is seriously worth it. Prep time 3 Total time 45 Cooking Mode:\nCooking instructions Before you start, take out all the ingredients for this recipe (see 'what’s in your box' section below). Thoroughly wash all fresh vegetables, leaves, salad ingredients and raw grains before cooking or serving. STEP 1 STEP 2 STEP 3 STEP 4 STEP 5 What’s in your box Nutritional info All nutritional values are based on a per person scale. Calories 417kcal Total fat 2.9g Saturated fat 0.5g Salt 1.2 Total carbohydrate 70.4g Total sugar 14g Fibre 17.3g Protein 18.6g Ingredients / Allergens Borlotti beans, onion, carrot, celery , garlic, ginger, cumin, garam masala (coriander, cinnamon, cloves, ginger, star anise, cumin, chilli, fennel, black pepper, bay leaves, sunflower oil, nutmeg, cardamom), smoked paprika, turmeric, miso ( soy beans), tomatoes, raw organic agave nectar, tamarind, sea salt, cumin seeds, brown mustard seeds, turmeric, spinach, cauliflower, potatoes For allergens, please see ingredients in bold Please be advised that we handle the following allergens in our kitchen: CELERY, SOYA, GLUTEN, NUTS, PEANUTS, MUSTARD, SESAME SEEDS, SULPHITES",
-    "nutrition": {
-      "calories": 417.0,
-      "protein_g": 18.6,
-      "fat_g": 2.9,
-      "carbs_g": 70.4,
-      "fibre_g": 17.3
     }
   }
 ]
