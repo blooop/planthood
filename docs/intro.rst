@@ -5,7 +5,6 @@ A template repo for python projects
 
 This has basic setup for
 
-* pylint
 * ruff (formatting and linting)
 * pytest
 * codecov

@@ -47,7 +47,6 @@ planthood = { path = ".", editable = true }
 
 [project.optional-dependencies]
 test = [
-  "pylint>=3.2.5,<=4.0.5",
   "pytest-cov>=4.1,<=7.1.0",
   "pytest>=7.4,<=9.0.2",
   "hypothesis>=6.104.2,<=6.151.10",
@@ -78,8 +77,7 @@ pre-commit-update = "pre-commit autoupdate"
 format = "ruff format ."
 check-clean-workspace = "git diff --exit-code"
 ruff-lint = "ruff check . --fix"
-pylint = "pylint --version && echo 'running pylint...' && pylint $(git ls-files '*.py')"
-lint = { depends-on = ["ruff-lint", "pylint"] }
+lint = { depends-on = ["ruff-lint"] }
 style = { depends-on = ["format", "lint"] }
 commit-format = "git commit -a -m'autoformat code' || true"
 test = "pytest"
@@ -94,7 +92,6 @@ ci-no-cover = { depends-on = ["style", "test"] }
 ci = { depends-on = [
   "format",
   "ruff-lint",
-  "pylint",
   "coverage",
   "coverage-report",
 ] }
@@ -138,14 +135,6 @@ dev-site = { cmd = "cd site && npm run dev", depends-on = ["setup-site"] }
 start-site = "./scripts/start_site.sh"
 view-site = { depends-on = ["build-site", "start-site"] }
 
-
-[tool.pylint]
-extension-pkg-whitelist = ["numpy"]
-jobs = 16                           #detect number of cores
-
-[tool.pylint.'MESSAGES CONTROL']
-disable = "C,logging-fstring-interpolation,line-too-long,fixme,broad-exception-caught,missing-module-docstring,too-many-instance-attributes,too-few-public-methods,too-many-arguments,too-many-locals,too-many-branches,too-many-statements,use-dict-literal,cyclic-import,duplicate-code,too-many-public-methods"
-enable = "no-else-return,consider-using-in"
 
 [tool.coverage.run]
 omit = ["*/test/*", "__init__.py"]

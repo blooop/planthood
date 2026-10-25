@@ -2,7 +2,6 @@
   "recommendations": [
     "ms-python.python",
     "ms-python.vscode-pylance",
-    "ms-python.pylint",
     "njpwerner.autodocstring",
     "charliermarsh.ruff",
     "mhutchie.git-graph",
