@@ -29,7 +29,7 @@
 		},		
 		{
 			"label": "lint",
-			"detail": "Run pylint on files tracked by git",
+			"detail": "Run ruff check on the code",
 			"type": "shell",
 			"command": "pixi run lint"
 		},

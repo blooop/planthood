@@ -8,7 +8,7 @@
 
 from importlib import metadata
 
-copyright = "2023, Austin Gregg-Smith"  # pylint:disable=redefined-builtin
+copyright = "2023, Austin Gregg-Smith"
 author = "Austin Gregg-Smith"
 release = metadata.version("planthood")
 project = f"planthood {release}"

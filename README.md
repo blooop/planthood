@@ -14,7 +14,7 @@ An automated static website generator for Planthood recipes with interactive Gan
 
 ### Development Tools
 * Python development with [pixi](https://pixi.sh)
-* pylint & ruff (formatting and linting)
+* ruff (formatting and linting)
 * pytest for testing
 * GitHub Actions CI/CD
 * Automated deployments to GitHub Pages
