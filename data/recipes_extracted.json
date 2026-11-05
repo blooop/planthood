@@ -12797,5 +12797,98 @@
     "extraction_method": "step_markers",
     "needs_llm_segmentation": false,
     "notes": ""
+  },
+  {
+    "id": "creamy-bold-bean-queen-butter-beans-with-caramelised-leeks-charred-courgettes-drizzled-with-olive-almond-pesto",
+    "title": "Creamy Bold Bean Queen Butter Beans With Caramelised Leeks, Charred Courgettes, Drizzled With Olive & Almond Pesto",
+    "source_url": "https://planthood.co.uk/products/creamy-bold-bean-queen-butter-beans-with-caramelised-leeks-charred-courgettes-drizzled-with-olive-almond-pesto",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 501.0,
+      "protein_g": 23.5,
+      "fat_g": 18.2,
+      "carbs_g": 51.9,
+      "fibre_g": 23.1,
+      "salt_g": 3.8
+    },
+    "schema_version": 1,
+    "method_clean": "STEP 1 Take out a saucepan and a large frying pan. STEP 2 Finely slice the courgette into rounds approximately 5mm thick. Heat a generous drizzle of olive oil in a large frying pan and add the courgette slices in a single layer. Cook undisturbed for 3–4 minutes, then turn and continue cooking for a further 4–5 minutes until softened and charred. Season with salt and freshly ground black pepper. You may need to do this in a couple of batches, or use two pans if your pan is not large enough. STEP 3 Meanwhile, empty the caramelised leek broth and the jar of butter beans (including the water) into your saucepan and cook over a medium heat until piping hot, around 3-5 minutes. Add a splash of water if you prefer a more brothy consistency. Season to your taste with salt and plenty of pepper. STEP 4 To serve, ladle the beans into two bowls. Top with the charred courgette and olive pesto . Finish with a little lemon zest and a squeeze of lemon juice . Enjoy!",
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "Take out a saucepan and a large frying pan.",
+        "marker": 1
+      },
+      {
+        "id": "step-2",
+        "text": "Finely slice the courgette into rounds approximately 5mm thick. Heat a generous drizzle of olive oil in a large frying pan and add the courgette slices in a single layer. Cook undisturbed for 3–4 minutes, then turn and continue cooking for a further 4–5 minutes until softened and charred. Season with salt and freshly ground black pepper. You may need to do this in a couple of batches, or use two pans if your pan is not large enough.",
+        "marker": 2
+      },
+      {
+        "id": "step-3",
+        "text": "Meanwhile, empty the caramelised leek broth and the jar of butter beans (including the water) into your saucepan and cook over a medium heat until piping hot, around 3-5 minutes. Add a splash of water if you prefer a more brothy consistency. Season to your taste with salt and plenty of pepper.",
+        "marker": 3
+      },
+      {
+        "id": "step-4",
+        "text": "To serve, ladle the beans into two bowls. Top with the charred courgette and olive pesto . Finish with a little lemon zest and a squeeze of lemon juice . Enjoy!",
+        "marker": 4
+      }
+    ],
+    "cookable": true,
+    "extraction_method": "step_markers",
+    "needs_llm_segmentation": false,
+    "notes": ""
+  },
+  {
+    "id": "creamy-squash-orzo-sage-tbc",
+    "title": "Creamy Roasted Garlic, Maple & Pecan Orzo With Butternut Squash, Cashew 'Burrata', Smoky Pine Nuts & Crispy Sage",
+    "source_url": "https://planthood.co.uk/products/creamy-squash-orzo-sage-tbc",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 673.0,
+      "protein_g": 23.5,
+      "fat_g": 21.1,
+      "carbs_g": 88.2,
+      "fibre_g": 13.9,
+      "salt_g": 2.3
+    },
+    "schema_version": 1,
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
+    "needs_llm_segmentation": false,
+    "notes": "No cooking instructions found (non-cookable)."
+  },
+  {
+    "id": "squash-mac-cheese",
+    "title": "Butternut Squash Mac & Cheese With Cavolo Nero, Topped With Crispy Sage & A Cheesy Garlic Cashew Pangrattato",
+    "source_url": "https://planthood.co.uk/products/squash-mac-cheese",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 627.0,
+      "protein_g": 29.3,
+      "fat_g": 16.3,
+      "carbs_g": 84.1,
+      "fibre_g": 11.2,
+      "salt_g": 2.0
+    },
+    "schema_version": 1,
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
+    "needs_llm_segmentation": false,
+    "notes": "No cooking instructions found (non-cookable)."
   }
 ]

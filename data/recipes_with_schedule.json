@@ -33285,5 +33285,164 @@
     ],
     "total_time_min": 25,
     "active_time_min": 25
+  },
+  {
+    "id": "creamy-bold-bean-queen-butter-beans-with-caramelised-leeks-charred-courgettes-drizzled-with-olive-almond-pesto",
+    "title": "Creamy Bold Bean Queen Butter Beans With Caramelised Leeks, Charred Courgettes, Drizzled With Olive & Almond Pesto",
+    "source_url": "https://planthood.co.uk/products/creamy-bold-bean-queen-butter-beans-with-caramelised-leeks-charred-courgettes-drizzled-with-olive-almond-pesto",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 501.0,
+      "protein_g": 23.5,
+      "fat_g": 18.2,
+      "carbs_g": 51.9,
+      "fibre_g": 23.1,
+      "salt_g": 3.8
+    },
+    "schema_version": 1,
+    "steps": [
+      {
+        "id": "step-1",
+        "raw_text": "Take out a saucepan and a large frying pan.",
+        "label": "Gather saucepan and large frying pan",
+        "type": "prep",
+        "duration_min": 1,
+        "start_min": 0,
+        "end_min": 1,
+        "requires": [],
+        "can_overlap_with": [],
+        "equipment": [
+          "saucepan",
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Retrieve saucepan and frying pan needed for cooking.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 0,
+        "latest_end_min": 1
+      },
+      {
+        "id": "step-2",
+        "raw_text": "Finely slice the courgette into rounds approximately 5mm thick. Heat a generous drizzle of olive oil in a large frying pan and add the courgette slices in a single layer. Cook undisturbed for 3–4 minutes, then turn and continue cooking for a further 4–5 minutes until softened and charred. Season with salt and freshly ground black pepper. You may need to do this in a couple of batches, or use two pans if your pan is not large enough.",
+        "label": "Slice and char courgette in pan",
+        "type": "cook",
+        "duration_min": 9,
+        "start_min": 1,
+        "end_min": 10,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-3"
+        ],
+        "equipment": [
+          "knife",
+          "cutting board",
+          "large frying pan"
+        ],
+        "temperature_c": null,
+        "notes": "Cook undisturbed 3–4 mins, then turn and cook 4–5 mins (total 7–9 mins cook time midpoint 8 mins). May require working in batches.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 1,
+        "latest_end_min": 10
+      },
+      {
+        "id": "step-3",
+        "raw_text": "Meanwhile, empty the caramelised leek broth and the jar of butter beans (including the water) into your saucepan and cook over a medium heat until piping hot, around 3-5 minutes. Add a splash of water if you prefer a more brothy consistency. Season to your taste with salt and plenty of pepper.",
+        "label": "Heat leek broth and butter beans",
+        "type": "cook",
+        "duration_min": 4,
+        "start_min": 1,
+        "end_min": 5,
+        "requires": [
+          "step-1"
+        ],
+        "can_overlap_with": [
+          "step-2"
+        ],
+        "equipment": [
+          "saucepan"
+        ],
+        "temperature_c": null,
+        "notes": "Cook over medium heat for 3–5 minutes (midpoint 4 minutes) until piping hot. Add water if brothy consistency is desired.",
+        "is_critical": false,
+        "slack_min": 5,
+        "latest_start_min": 6,
+        "latest_end_min": 10
+      },
+      {
+        "id": "step-4",
+        "raw_text": "To serve, ladle the beans into two bowls. Top with the charred courgette and olive pesto . Finish with a little lemon zest and a squeeze of lemon juice . Enjoy!",
+        "label": "Plate beans and finish with garnishes",
+        "type": "finish",
+        "duration_min": 2,
+        "start_min": 10,
+        "end_min": 12,
+        "requires": [
+          "step-2",
+          "step-3"
+        ],
+        "can_overlap_with": [],
+        "equipment": [
+          "ladle",
+          "bowls"
+        ],
+        "temperature_c": null,
+        "notes": "Ladle beans into bowls, top with charred courgette, olive pesto, lemon zest, and lemon juice.",
+        "is_critical": true,
+        "slack_min": 0,
+        "latest_start_min": 10,
+        "latest_end_min": 12
+      }
+    ],
+    "total_time_min": 12,
+    "active_time_min": 12
+  },
+  {
+    "id": "creamy-squash-orzo-sage-tbc",
+    "title": "Creamy Roasted Garlic, Maple & Pecan Orzo With Butternut Squash, Cashew 'Burrata', Smoky Pine Nuts & Crispy Sage",
+    "source_url": "https://planthood.co.uk/products/creamy-squash-orzo-sage-tbc",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 673.0,
+      "protein_g": 23.5,
+      "fat_g": 21.1,
+      "carbs_g": 88.2,
+      "fibre_g": 13.9,
+      "salt_g": 2.3
+    },
+    "schema_version": 1,
+    "steps": [],
+    "total_time_min": 0,
+    "active_time_min": 0
+  },
+  {
+    "id": "squash-mac-cheese",
+    "title": "Butternut Squash Mac & Cheese With Cavolo Nero, Topped With Crispy Sage & A Cheesy Garlic Cashew Pangrattato",
+    "source_url": "https://planthood.co.uk/products/squash-mac-cheese",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 627.0,
+      "protein_g": 29.3,
+      "fat_g": 16.3,
+      "carbs_g": 84.1,
+      "fibre_g": 11.2,
+      "salt_g": 2.0
+    },
+    "schema_version": 1,
+    "steps": [],
+    "total_time_min": 0,
+    "active_time_min": 0
   }
 ]
