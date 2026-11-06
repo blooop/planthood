@@ -1,7 +1,7 @@
 {
   "total_recipes": 313,
   "failed_recipes": 0,
-  "last_updated": "2026-11-05 10:23:15",
+  "last_updated": "2026-11-06 10:24:55",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -375,6 +375,13 @@
       "week_label": null
     },
     {
+      "id": "creamy-bold-bean-queen-butter-beans-with-caramelised-leeks-charred-courgettes-drizzled-with-olive-almond-pesto",
+      "title": "Creamy Bold Bean Queen Butter Beans With Caramelised Leeks, Charred Courgettes, Drizzled With Olive & Almond Pesto",
+      "url": "https://planthood.co.uk/products/creamy-bold-bean-queen-butter-beans-with-caramelised-leeks-charred-courgettes-drizzled-with-olive-almond-pesto",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "creamy-butter-beans-with-burnt-lemon-mustard-sauce-wilted-greens-charred-cauliflower-green-olive-salsa",
       "title": "Creamy Butter Beans With Burnt Lemon & Mustard Sauce, Wilted Greens, Charred Cauliflower & Green Olive Salsa",
       "url": "https://planthood.co.uk/products/creamy-butter-beans-with-burnt-lemon-mustard-sauce-wilted-greens-charred-cauliflower-green-olive-salsa",
@@ -476,6 +483,13 @@
       "id": "creamy-squash-bucatini-with-wilted-cavolo-nero-crispy-tempeh-pancetta",
       "title": "High Protein Creamy Squash Bucatini With Wilted Cavolo Nero & Crispy Tempeh 'Pancetta'",
       "url": "https://planthood.co.uk/products/creamy-squash-bucatini-with-wilted-cavolo-nero-crispy-tempeh-pancetta",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "creamy-squash-orzo-sage-tbc",
+      "title": "Creamy Roasted Garlic, Maple & Pecan Orzo With Butternut Squash, Cashew 'Burrata', Smoky Pine Nuts & Crispy Sage",
+      "url": "https://planthood.co.uk/products/creamy-squash-orzo-sage-tbc",
       "scraped": true,
       "week_label": null
     },
@@ -1782,6 +1796,13 @@
       "week_label": null
     },
     {
+      "id": "squash-mac-cheese",
+      "title": "Butternut Squash Mac & Cheese With Cavolo Nero, Topped With Crispy Sage & A Cheesy Garlic Cashew Pangrattato",
+      "url": "https://planthood.co.uk/products/squash-mac-cheese",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
       "title": "Sri Lankan Daal With Crispy Courgette & Corn Fritters, Date Tamarind Chutney & Organic Soy Yoghurt",
       "url": "https://planthood.co.uk/products/sri-lankan-daal-with-crispy-courgette-corn-fritters-date-tamarind-chutney-organic-soy-yoghurt",
@@ -2170,27 +2191,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "creamy-bold-bean-queen-butter-beans-with-caramelised-leeks-charred-courgettes-drizzled-with-olive-almond-pesto",
-      "title": "Creamy Bold Bean Queen Butter Beans With Caramelised Leeks, Charred Courgettes, Drizzled With Olive & Almond Pesto",
-      "url": "https://planthood.co.uk/products/creamy-bold-bean-queen-butter-beans-with-caramelised-leeks-charred-courgettes-drizzled-with-olive-almond-pesto",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "creamy-squash-orzo-sage-tbc",
-      "title": "Creamy Roasted Garlic, Maple & Pecan Orzo With Butternut Squash, Cashew 'Burrata', Smoky Pine Nuts & Crispy Sage",
-      "url": "https://planthood.co.uk/products/creamy-squash-orzo-sage-tbc",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "squash-mac-cheese",
-      "title": "Butternut Squash Mac & Cheese With Cavolo Nero, Topped With Crispy Sage & A Cheesy Garlic Cashew Pangrattato",
-      "url": "https://planthood.co.uk/products/squash-mac-cheese",
       "scraped": true,
       "week_label": null
     }
