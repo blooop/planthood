@@ -33444,5 +33444,47 @@
     ],
     "total_time_min": 25,
     "active_time_min": 25
+  },
+  {
+    "id": "butter-chickpea-curry-pie-with-garden-peas-creamy-mash-wilted-seasonal-greens",
+    "title": "Butter Chickpea Curry Pie With Garden Peas, Creamy Mash & Wilted Seasonal Greens",
+    "source_url": "https://planthood.co.uk/products/butter-chickpea-curry-pie-with-garden-peas-creamy-mash-wilted-seasonal-greens",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 853.0,
+      "protein_g": 25.9,
+      "fat_g": 32.6,
+      "carbs_g": 104.6,
+      "fibre_g": 21.1,
+      "salt_g": 2.3
+    },
+    "schema_version": 1,
+    "steps": [],
+    "total_time_min": 0,
+    "active_time_min": 0
+  },
+  {
+    "id": "squash-hot-honey-tart-with-miso-bechamel-basil-sage-pesto-toasted-walnuts-fresh-rocket",
+    "title": "Squash & Hot 'Honey' Puff Pastry Tart With Miso Bechamel, Basil & Sage Pesto, Toasted Walnuts & Fresh Rocket",
+    "source_url": "https://planthood.co.uk/products/squash-hot-honey-tart-with-miso-bechamel-basil-sage-pesto-toasted-walnuts-fresh-rocket",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 878.0,
+      "protein_g": 21.7,
+      "fat_g": 50.0,
+      "carbs_g": 75.1,
+      "fibre_g": 13.3,
+      "salt_g": 3.0
+    },
+    "schema_version": 1,
+    "steps": [],
+    "total_time_min": 0,
+    "active_time_min": 0
   }
 ]

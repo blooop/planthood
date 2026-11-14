@@ -1,7 +1,7 @@
 {
-  "total_recipes": 313,
+  "total_recipes": 315,
   "failed_recipes": 0,
-  "last_updated": "2026-11-13 10:33:37",
+  "last_updated": "2026-11-14 09:49:59",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -2191,6 +2191,20 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "butter-chickpea-curry-pie-with-garden-peas-creamy-mash-wilted-seasonal-greens",
+      "title": "Butter Chickpea Curry Pie With Garden Peas, Creamy Mash & Wilted Seasonal Greens",
+      "url": "https://planthood.co.uk/products/butter-chickpea-curry-pie-with-garden-peas-creamy-mash-wilted-seasonal-greens",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "squash-hot-honey-tart-with-miso-bechamel-basil-sage-pesto-toasted-walnuts-fresh-rocket",
+      "title": "Squash & Hot 'Honey' Puff Pastry Tart With Miso Bechamel, Basil & Sage Pesto, Toasted Walnuts & Fresh Rocket",
+      "url": "https://planthood.co.uk/products/squash-hot-honey-tart-with-miso-bechamel-basil-sage-pesto-toasted-walnuts-fresh-rocket",
       "scraped": true,
       "week_label": null
     }

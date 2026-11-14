@@ -27325,5 +27325,49 @@
     "cookable": true,
     "provenance": "llm",
     "source_hash": "d4acc3e67d6a424f81e8e2a96f9f9fec2b9f71bec77e940f2013aa4c635332d5"
+  },
+  {
+    "id": "butter-chickpea-curry-pie-with-garden-peas-creamy-mash-wilted-seasonal-greens",
+    "title": "Butter Chickpea Curry Pie With Garden Peas, Creamy Mash & Wilted Seasonal Greens",
+    "source_url": "https://planthood.co.uk/products/butter-chickpea-curry-pie-with-garden-peas-creamy-mash-wilted-seasonal-greens",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 853.0,
+      "protein_g": 25.9,
+      "fat_g": 32.6,
+      "carbs_g": 104.6,
+      "fibre_g": 21.1,
+      "salt_g": 2.3
+    },
+    "schema_version": 1,
+    "steps": [],
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
+  },
+  {
+    "id": "squash-hot-honey-tart-with-miso-bechamel-basil-sage-pesto-toasted-walnuts-fresh-rocket",
+    "title": "Squash & Hot 'Honey' Puff Pastry Tart With Miso Bechamel, Basil & Sage Pesto, Toasted Walnuts & Fresh Rocket",
+    "source_url": "https://planthood.co.uk/products/squash-hot-honey-tart-with-miso-bechamel-basil-sage-pesto-toasted-walnuts-fresh-rocket",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 878.0,
+      "protein_g": 21.7,
+      "fat_g": 50.0,
+      "carbs_g": 75.1,
+      "fibre_g": 13.3,
+      "salt_g": 3.0
+    },
+    "schema_version": 1,
+    "steps": [],
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   }
 ]
