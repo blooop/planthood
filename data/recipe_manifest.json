@@ -1,7 +1,7 @@
 {
   "total_recipes": 315,
   "failed_recipes": 0,
-  "last_updated": "2026-11-14 09:49:59",
+  "last_updated": "2026-11-15 10:25:26",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -147,6 +147,13 @@
       "id": "butter-bean-radiatori-red-pesto-pasta",
       "title": "Butter Bean & Radiatori Pasta Salad With Red Pepper Pesto, Balsamic Roasted Mediterranean Vegetables & Cashew 'Burrata'",
       "url": "https://planthood.co.uk/products/butter-bean-radiatori-red-pesto-pasta",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "butter-chickpea-curry-pie-with-garden-peas-creamy-mash-wilted-seasonal-greens",
+      "title": "Butter Chickpea Curry Pie With Garden Peas, Creamy Mash & Wilted Seasonal Greens",
+      "url": "https://planthood.co.uk/products/butter-chickpea-curry-pie-with-garden-peas-creamy-mash-wilted-seasonal-greens",
       "scraped": true,
       "week_label": null
     },
@@ -1796,6 +1803,13 @@
       "week_label": null
     },
     {
+      "id": "squash-hot-honey-tart-with-miso-bechamel-basil-sage-pesto-toasted-walnuts-fresh-rocket",
+      "title": "Squash & Hot 'Honey' Puff Pastry Tart With Miso Bechamel, Basil & Sage Pesto, Toasted Walnuts & Fresh Rocket",
+      "url": "https://planthood.co.uk/products/squash-hot-honey-tart-with-miso-bechamel-basil-sage-pesto-toasted-walnuts-fresh-rocket",
+      "scraped": true,
+      "week_label": null
+    },
+    {
       "id": "squash-mac-cheese",
       "title": "Butternut Squash Mac & Cheese With Cavolo Nero, Topped With Crispy Sage & A Cheesy Garlic Cashew Pangrattato",
       "url": "https://planthood.co.uk/products/squash-mac-cheese",
@@ -2191,20 +2205,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "butter-chickpea-curry-pie-with-garden-peas-creamy-mash-wilted-seasonal-greens",
-      "title": "Butter Chickpea Curry Pie With Garden Peas, Creamy Mash & Wilted Seasonal Greens",
-      "url": "https://planthood.co.uk/products/butter-chickpea-curry-pie-with-garden-peas-creamy-mash-wilted-seasonal-greens",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "squash-hot-honey-tart-with-miso-bechamel-basil-sage-pesto-toasted-walnuts-fresh-rocket",
-      "title": "Squash & Hot 'Honey' Puff Pastry Tart With Miso Bechamel, Basil & Sage Pesto, Toasted Walnuts & Fresh Rocket",
-      "url": "https://planthood.co.uk/products/squash-hot-honey-tart-with-miso-bechamel-basil-sage-pesto-toasted-walnuts-fresh-rocket",
       "scraped": true,
       "week_label": null
     }
