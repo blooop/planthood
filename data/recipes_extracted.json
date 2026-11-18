@@ -4214,6 +4214,30 @@
     "notes": "No STEP markers; sentence-split pending LLM segmentation."
   },
   {
+    "id": "curried-coconut-udon-noodles-with-chilli-glazed-mushrooms-edamame-red-pepper-lime-sesame-coconut-chilli-dressing",
+    "title": "Curried Coconut Udon Noodles With Chilli Glazed Mushrooms, Edamame, Red Pepper, Lime & Sesame Coconut Chilli Dressing",
+    "source_url": "https://planthood.co.uk/products/curried-coconut-udon-noodles-with-chilli-glazed-mushrooms-edamame-red-pepper-lime-sesame-coconut-chilli-dressing",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 790.0,
+      "protein_g": 22.2,
+      "fat_g": 38.3,
+      "carbs_g": 83.5,
+      "fibre_g": 11.1,
+      "salt_g": 2.1
+    },
+    "schema_version": 1,
+    "method_clean": "",
+    "steps": [],
+    "cookable": false,
+    "extraction_method": "none",
+    "needs_llm_segmentation": false,
+    "notes": "No cooking instructions found (non-cookable)."
+  },
+  {
     "id": "curried-squash-udon-noodle-soup-with-crispy-coconut-chickpeas-green-kale",
     "title": "Curried Squash Noodle Soup With Rice Noodles, Crispy Coconut Chickpeas & Fresh Green Kale",
     "source_url": "https://planthood.co.uk/products/curried-squash-udon-noodle-soup-with-crispy-coconut-chickpeas-green-kale",
@@ -12938,29 +12962,5 @@
     "extraction_method": "step_markers",
     "needs_llm_segmentation": false,
     "notes": ""
-  },
-  {
-    "id": "curried-coconut-udon-noodles-with-chilli-glazed-mushrooms-edamame-red-pepper-lime-sesame-coconut-chilli-dressing",
-    "title": "Curried Coconut Udon Noodles With Chilli Glazed Mushrooms, Edamame, Red Pepper, Lime & Sesame Coconut Chilli Dressing",
-    "source_url": "https://planthood.co.uk/products/curried-coconut-udon-noodles-with-chilli-glazed-mushrooms-edamame-red-pepper-lime-sesame-coconut-chilli-dressing",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 790.0,
-      "protein_g": 22.2,
-      "fat_g": 38.3,
-      "carbs_g": 83.5,
-      "fibre_g": 11.1,
-      "salt_g": 2.1
-    },
-    "schema_version": 1,
-    "method_clean": "",
-    "steps": [],
-    "cookable": false,
-    "extraction_method": "none",
-    "needs_llm_segmentation": false,
-    "notes": "No cooking instructions found (non-cookable)."
   }
 ]

@@ -9082,6 +9082,28 @@
     "source_hash": "34fac7454cf5322503bf51652241c649c4c72e8087b2d5b4c616b7d13cd88df7"
   },
   {
+    "id": "curried-coconut-udon-noodles-with-chilli-glazed-mushrooms-edamame-red-pepper-lime-sesame-coconut-chilli-dressing",
+    "title": "Curried Coconut Udon Noodles With Chilli Glazed Mushrooms, Edamame, Red Pepper, Lime & Sesame Coconut Chilli Dressing",
+    "source_url": "https://planthood.co.uk/products/curried-coconut-udon-noodles-with-chilli-glazed-mushrooms-edamame-red-pepper-lime-sesame-coconut-chilli-dressing",
+    "week_label": null,
+    "weeks": [],
+    "category": null,
+    "ingredients": [],
+    "nutrition": {
+      "calories": 790.0,
+      "protein_g": 22.2,
+      "fat_g": 38.3,
+      "carbs_g": 83.5,
+      "fibre_g": 11.1,
+      "salt_g": 2.1
+    },
+    "schema_version": 1,
+    "steps": [],
+    "cookable": false,
+    "provenance": "none",
+    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
+  },
+  {
     "id": "curried-squash-udon-noodle-soup-with-crispy-coconut-chickpeas-green-kale",
     "title": "Curried Squash Noodle Soup With Rice Noodles, Crispy Coconut Chickpeas & Fresh Green Kale",
     "source_url": "https://planthood.co.uk/products/curried-squash-udon-noodle-soup-with-crispy-coconut-chickpeas-green-kale",
@@ -27369,27 +27391,5 @@
     "cookable": true,
     "provenance": "llm",
     "source_hash": "d4acc3e67d6a424f81e8e2a96f9f9fec2b9f71bec77e940f2013aa4c635332d5"
-  },
-  {
-    "id": "curried-coconut-udon-noodles-with-chilli-glazed-mushrooms-edamame-red-pepper-lime-sesame-coconut-chilli-dressing",
-    "title": "Curried Coconut Udon Noodles With Chilli Glazed Mushrooms, Edamame, Red Pepper, Lime & Sesame Coconut Chilli Dressing",
-    "source_url": "https://planthood.co.uk/products/curried-coconut-udon-noodles-with-chilli-glazed-mushrooms-edamame-red-pepper-lime-sesame-coconut-chilli-dressing",
-    "week_label": null,
-    "weeks": [],
-    "category": null,
-    "ingredients": [],
-    "nutrition": {
-      "calories": 790.0,
-      "protein_g": 22.2,
-      "fat_g": 38.3,
-      "carbs_g": 83.5,
-      "fibre_g": 11.1,
-      "salt_g": 2.1
-    },
-    "schema_version": 1,
-    "steps": [],
-    "cookable": false,
-    "provenance": "none",
-    "source_hash": "0dd34f9d4fa4bc9fa97f34555bb7e9f06262d5bf092ae67b8c1fbe3e570d3b69"
   }
 ]

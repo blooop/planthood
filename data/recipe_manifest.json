@@ -1,7 +1,7 @@
 {
   "total_recipes": 316,
   "failed_recipes": 0,
-  "last_updated": "2026-11-17 11:29:55",
+  "last_updated": "2026-11-18 11:10:25",
   "recipes": [
     {
       "id": "3-x-chocolate-hazelnut-snack-bar-bundle-100-raw-whole-foods",
@@ -700,6 +700,13 @@
       "id": "curried-caribbean-chickpeas-with-coconut-slaw-scotch-bonnet-chilli-jam",
       "title": "Caribbean Curried Chickpeas With Coconut Slaw & Scotch Bonnet Chilli Jam",
       "url": "https://planthood.co.uk/products/curried-caribbean-chickpeas-with-coconut-slaw-scotch-bonnet-chilli-jam",
+      "scraped": true,
+      "week_label": null
+    },
+    {
+      "id": "curried-coconut-udon-noodles-with-chilli-glazed-mushrooms-edamame-red-pepper-lime-sesame-coconut-chilli-dressing",
+      "title": "Curried Coconut Udon Noodles With Chilli Glazed Mushrooms, Edamame, Red Pepper, Lime & Sesame Coconut Chilli Dressing",
+      "url": "https://planthood.co.uk/products/curried-coconut-udon-noodles-with-chilli-glazed-mushrooms-edamame-red-pepper-lime-sesame-coconut-chilli-dressing",
       "scraped": true,
       "week_label": null
     },
@@ -2205,13 +2212,6 @@
       "id": "yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
       "title": "Yaki Udon Noodles With Aubergine, Savoy Cabbage, Carrot, Mushroom & Omega 3 Superseed Furikake",
       "url": "https://planthood.co.uk/products/yaki-udon-noodles-with-aubergine-savoy-cabbage-carrot-mushroom-super-seed-furikake",
-      "scraped": true,
-      "week_label": null
-    },
-    {
-      "id": "curried-coconut-udon-noodles-with-chilli-glazed-mushrooms-edamame-red-pepper-lime-sesame-coconut-chilli-dressing",
-      "title": "Curried Coconut Udon Noodles With Chilli Glazed Mushrooms, Edamame, Red Pepper, Lime & Sesame Coconut Chilli Dressing",
-      "url": "https://planthood.co.uk/products/curried-coconut-udon-noodles-with-chilli-glazed-mushrooms-edamame-red-pepper-lime-sesame-coconut-chilli-dressing",
       "scraped": true,
       "week_label": null
     }
